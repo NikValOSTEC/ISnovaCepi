@@ -1,0 +1,25 @@
+#ifndef WHIRE_H
+#define WHIRE_H
+
+#include <QGraphicsItem>
+#include <QObject>
+class Pin;
+#include"pin.h"
+
+class Whire : public QGraphicsItem
+{
+private:
+    QPainterPath patt;
+public:
+    Whire(Pin* p1,Pin*p2);
+    QRectF boundingRect() const override;//
+    QPainterPath shape() const override;//
+    void updateShape(bool colision=false);
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
+    Pin* p1,*p2;
+    ~Whire();
+    void CollisionFix();
+    void move(bool left_rigth,int x);
+};
+
+#endif // WHIRE_H

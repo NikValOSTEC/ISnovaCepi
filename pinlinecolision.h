@@ -1,0 +1,24 @@
+#ifndef PINLINECOLISION_H
+#define PINLINECOLISION_H
+
+class Pin;
+#include "pin.h"
+#include <QGraphicsLineItem>
+
+class PinLineColision : public QGraphicsLineItem
+{
+private:
+    QPainterPath patt,pattest;
+    Pin* p1;
+    dot* Dot;
+    qreal y();
+public:
+    QRectF boundingRect() const override;//
+    QPainterPath shape() const override;//
+    void updateShape();
+    void FixColliding();
+    PinLineColision(Pin* p);
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
+};
+
+#endif // PINLINECOLISION_H
