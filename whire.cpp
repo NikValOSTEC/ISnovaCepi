@@ -5,6 +5,16 @@
 
 Whire::Whire(Pin* p1,Pin*p2)
 {
+    if(p1->chain==nullptr&&p2->chain==nullptr)
+        chain = new Chain();
+    else if (p2->chain != nullptr)
+    {
+        chain = p2->chain;
+    }
+    else
+    {
+        chain = p1->chain;
+    }
     this->p1=p1;
     this->p2=p2;
     p1->Dot()->AddWhire(this);
@@ -19,6 +29,8 @@ Whire::Whire(Pin* p1,Pin*p2)
     p2->Dot()->AddDot(p1->Dot());
     p1->pinWhire();
     p2->pinWhire();
+    chain->AddPin(p1);
+    chain->AddPin(p2);
 }
 QRectF Whire::boundingRect() const
 {

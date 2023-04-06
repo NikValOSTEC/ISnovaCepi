@@ -52,7 +52,8 @@ QGraphicsView *View::view()
 
 QMenu* View::ContextMenu()
 {
-    QMenu* myMenu = new QMenu();    myMenu->addAction("AddPort", this, SLOT(AddPort()));
+    QMenu* myMenu = new QMenu();    
+    myMenu->addAction("AddPort", this, SLOT(AddPort()));
     return myMenu;
 }
 

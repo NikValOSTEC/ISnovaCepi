@@ -18,7 +18,11 @@ Pin::Pin(Port* port, QLineEdit* parent) :
     d = nullptr;
     pinW = new PinLineColision(this);
     port->graphicsProxyWidget()->scene()->addItem(pinW);
-    pinWhire(false);
+    pinWhire(false);    
+    this->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(this, SIGNAL(customContextMenuRequested(QPoint)),
+        this, SLOT(showContextMenu(QPoint)));
+    chain = nullptr;
 }
 
 Pin::~Pin()
@@ -154,4 +158,24 @@ void Pin::pinWhire(bool show)
 void Pin::PinWUpd()
 {
     pinW->updateShape();
+}
+
+QMenu* Pin::ContextMenu()
+{
+
+    QMenu* myMenu = new QMenu();
+    myMenu->addAction("RemoveFromChain", this, SLOT(RemoveFromChain()));
+    return myMenu;
+}
+
+void Pin::RemoveFromChain()
+{
+    chain->RemovePin(this);
+    chain = nullptr;
+}
+
+void Pin::showContextMenu(const QPoint& pos)
+{
+    QPoint globalPos = this->mapToGlobal(pos);
+    ContextMenu()->exec(globalPos);
 }

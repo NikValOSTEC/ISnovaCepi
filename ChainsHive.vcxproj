@@ -97,7 +97,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chain.h" />
+    <QtMoc Include="chain.h" />
     <ClInclude Include="dot.h" />
     <ClInclude Include="mygraphicsscene.h" />
     <ClInclude Include="pinlinecolision.h" />

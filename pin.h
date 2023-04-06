@@ -5,10 +5,13 @@ class Port;
 #include"port.h"
 #include<QLineEdit>
 #include <QWidget>
+#include<QMenu>
 class dot;
 #include"dot.h"
 class PinLineColision;
 #include"pinlinecolision.h"
+class Pin;
+#include"chain.h"
 
 namespace Ui {
 class Pin;
@@ -33,7 +36,13 @@ public:
     qreal y();
     void pinWhire(bool show=true);
     void PinWUpd();
+    Chain* chain;
+protected:
+    virtual QMenu* ContextMenu();
 
+protected slots:
+    virtual void showContextMenu(const QPoint& pos);
+    void RemoveFromChain();
 
 private:
     Ui::Pin *ui;
