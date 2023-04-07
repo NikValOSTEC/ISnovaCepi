@@ -11,6 +11,7 @@ class Chain :public QObject
     Q_OBJECT
 public:
     Chain();
+    ~Chain();
     void AddPin(Pin* p);
     void RemovePin(Pin* p);
     static QVector<Chain*>* chains;

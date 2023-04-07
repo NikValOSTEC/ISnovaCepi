@@ -6,6 +6,11 @@ Chain::Chain():QObject()
 	//chains->append(this);
 }
 
+Chain::~Chain()
+{
+	//chains->removeOne(this);
+}
+
 void Chain::AddPin(Pin* p)
 {
 	if (!pins.contains(p))
@@ -33,12 +38,12 @@ void Chain::RemovePin(Pin* p)
 				else
 				{
 					auto p1 = whires[i]->p1;
-					for(int i=0;i<pins.count();i++)
+					for(int j=0;j<pins.count();j++)
 					{
-						if (pins[i] != p1)
+						if (pins[j] != p1)
 						{
 
-							whires[i]->p1 = pins[i];
+							whires[i]->p1 = pins[j];
 						}
 					}
 				}
@@ -52,17 +57,35 @@ void Chain::RemovePin(Pin* p)
 				}
 				else
 				{
-				auto p2 = whires[i]->p2;
-					for (int i = 0; i < pins.count(); i++)
+					auto p2 = whires[i]->p2;
+					for (int j = 0; j < pins.count(); j++)
 					{
-						if (pins[i] != p2)
+						if (pins[j] != p2)
 						{
 
-							whires[i]->p2 = pins[i];
+							whires[i]->p1 = pins[j];
 						}
 					}
 				}
 			}
 		}
 	}
+	else
+	{
+		for (int j = 0; j < whires.count(); j++)
+		{
+			delete(whires[j]);
+		}
+		p->pinWhire(false);
+		p->chain = nullptr;
+		pins.removeOne(p);
+		pins[0]->pinWhire(false);
+		pins[0]->chain = nullptr;
+		pins.removeOne(pins[0]);
+		if (pins.isEmpty())
+		{
+			delete(this);
+		}
+	}
+	p->pinWhire(false);
 }

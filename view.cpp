@@ -3,6 +3,7 @@
 #include "proxyrectport.h"
 #include "qgraphicsproxywidget.h"
 #include <QStyle>
+#include<qpainter.h>
 
 View::View()
 {
@@ -11,6 +12,7 @@ View::View()
     graphicsview->setDragMode(QGraphicsView::RubberBandDrag);
     //graphicsview->setOptimizationFlags(QGraphicsView::OptimizationFlag::IndirectPainting);
     graphicsview->setViewportUpdateMode(QGraphicsView::ViewportUpdateMode::FullViewportUpdate);
+    graphicsview->setRenderHint(QPainter::RenderHint::VerticalSubpixelPositioning);
     graphicsview->setTransformationAnchor(QGraphicsView::AnchorUnderMouse);
     //setFrameStyle(Sunken | StyledPanel);
     GScene(new MYGraphicsScene());

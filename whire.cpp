@@ -31,10 +31,16 @@ Whire::Whire(Pin* p1,Pin*p2)
     p2->pinWhire();
     chain->AddPin(p1);
     chain->AddPin(p2);
+    patt = QPainterPath();
+    patt.moveTo(p1->Dot()->x(), p1->Dot()->y());
+    patt.lineTo(p2->Dot()->x(), p2->Dot()->y());
 }
 QRectF Whire::boundingRect() const
 {
-    return shape().boundingRect();
+    QPainterPath pabou = QPainterPath();
+    pabou.moveTo(p1->Dot()->x(),p1->Dot()->y());
+    pabou.lineTo(p2->Dot()->x(),p2->Dot()->y());
+    return pabou.boundingRect();
 }
 
 QPainterPath Whire::shape() const
@@ -44,11 +50,7 @@ QPainterPath Whire::shape() const
 
 void Whire::updateShape(bool colision)
 {
-    patt=QPainterPath();
-    patt.moveTo(p1->Dot()->x(),p1->Dot()->y());
-    patt.lineTo(p2->Dot()->x(),p2->Dot()->y());
-    if(colision)
-        CollisionFix();
+    CollisionFix();
 }
 
 void Whire::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
@@ -65,30 +67,76 @@ Whire::~Whire()
 
 void Whire::CollisionFix()
 {
-    bool recur=false;
+    bool recur = false;
 
-    QList<QGraphicsItem*>list = collidingItems();
+    QList<QGraphicsItem*>list = collidingItems(Qt::IntersectsItemBoundingRect);
+    QList<ProxyRectPort*>ports = QList<ProxyRectPort*>();
+    QList<Whire*>whires = QList<Whire*>();
+    QList<PinLineColision*>pinlines = QList<PinLineColision*>();
 
-    foreach (QGraphicsItem* gi, list) {
-        ProxyRectPort * itemPort= dynamic_cast<ProxyRectPort *>(gi);
-        if(itemPort)
+    foreach(QGraphicsItem * gi, list) {
+        if (ProxyRectPort* itemPort = dynamic_cast<ProxyRectPort*>(gi))
         {
-            qDebug() << p1->Dot()->x() << "  " << itemPort->XX();
-            move(p1->Dot()->x()>itemPort->XX(),50);
-            recur=true;
+            //ports.append(itemPort);
         }
-        else
+        else if (Whire* itemWh = dynamic_cast<Whire*>(gi))
         {
-            Whire* itemWh=dynamic_cast<Whire *>(gi);
-            if(itemWh)
+            whires.append(itemWh);
+        }
+        else if (PinLineColision* itemCol = dynamic_cast<PinLineColision*>(gi))
+        {
+            if (itemCol->p1->chain != p1->chain && itemCol->p1->chain != p2->chain)
             {
-                move(true,5);
-                itemWh->move(false,5);
-                itemWh->CollisionFix();
-                recur=true;
+                pinlines.append(itemCol);
             }
         }
     }
+
+    for (int i = 0; i < ports.count(); i++)
+    {
+        //move(p1->Dot()->x() > ports[i]->XX(), 50);
+    }
+    bool mv = false;
+    for (int i = 0; i < whires.count(); i++)
+    {
+
+        if (whires[i]->chain != chain)
+        {
+            whires[i]->move(false, 5);
+            mv = true;
+        }
+    }
+
+    if (mv)
+    {
+        move(true, 5);
+    }
+    std::sort(pinlines.begin(), pinlines.end(),
+        [](const PinLineColision* a, const PinLineColision* b) -> bool { return a->boundingRect().top() < b->boundingRect().top(); });
+    patt = QPainterPath();
+    Pin* top, * bottom;
+    if (p1->y() < p2->y())
+    {
+        top = p1;
+        bottom = p2;
+    }
+    else
+    {
+        top = p2;
+        bottom = p1;
+    }
+
+    patt.moveTo(top->Dot()->x(), top->Dot()->y());
+
+    for (int i = 0; i < pinlines.count(); i++)
+    {
+        patt.lineTo(top->Dot()->x(), pinlines[i]->y() - 15);
+        patt.moveTo(top->Dot()->x(), pinlines[i]->y() - 15);
+        patt.arcTo(top->Dot()->x() - 15, pinlines[i]->y() - 15, 30, 30, 90, 180);
+        patt.moveTo(top->Dot()->x(), pinlines[i]->y() + 15);
+    }
+    patt.lineTo(bottom->Dot()->x(), bottom->Dot()->y());
+
 
     if(recur)
         this->CollisionFix();

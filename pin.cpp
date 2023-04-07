@@ -171,7 +171,6 @@ QMenu* Pin::ContextMenu()
 void Pin::RemoveFromChain()
 {
     chain->RemovePin(this);
-    chain = nullptr;
 }
 
 void Pin::showContextMenu(const QPoint& pos)

@@ -99,7 +99,17 @@ void dot::AddWhire(Whire *w)
 
 void dot::RemoveWhire(Whire *w)
 {
-    whires.removeOne(w);
+    if (whires.removeOne(w))
+    {
+        if (whires.isEmpty())
+        {
+            for (int i = 0; i < verticalMove.count(); i++)
+            {
+                verticalMove[i]->verticalMove.removeOne(this);
+            }
+            verticalMove.clear();
+        }
+    }
 }
 
 void dot::AddDot(dot *w)
