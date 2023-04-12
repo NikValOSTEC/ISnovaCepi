@@ -18,6 +18,7 @@ class Port : public QWidget
 public:
     explicit Port(QWidget *parent = nullptr);
     ~Port();
+    QString name();
 
 private slots:
     void on_pushButton_clicked();

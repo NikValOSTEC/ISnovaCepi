@@ -14,7 +14,7 @@ public:
     ~Chain();
     void AddPin(Pin* p);
     void RemovePin(Pin* p);
-    static QVector<Chain*>* chains;
+    static QVector<Chain*> chains;
     QVector<Pin*> pins;
 };
 

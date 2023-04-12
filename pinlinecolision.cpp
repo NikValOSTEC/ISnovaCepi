@@ -1,6 +1,7 @@
 #include "pinlinecolision.h"
 #include "qpainter.h"
 #include<QtAlgorithms>>
+#include"qgraphicsscene.h"
 
 qreal PinLineColision::y()
 {
@@ -33,6 +34,8 @@ QPainterPath PinLineColision::shape() const
 
 void PinLineColision::updateShape()
 {
+
+    prepareGeometryChange();
     patt=QPainterPath();
     patt.moveTo(Dot->x(),Dot->y());
     if(Dot->x()<p1->x())
@@ -71,14 +74,13 @@ void PinLineColision::FixColliding()
           [](const ProxyRectPort* a, const ProxyRectPort* b) -> bool { return a->mapToScene(a->boundingRect().topLeft()).x() < b->mapToScene(b->boundingRect().topLeft()).x(); });
 
 
-    qreal left, bottom, right, y = p1->Dot()->y(), lastx = p1->Dot()->x();
-    patt.moveTo(lastx, y);
+
     if(!left_rigth)
     {
-
+        qreal left, bottom, right, y = p1->Dot()->y(), lastx = p1->Dot()->x();
+        patt.moveTo(lastx, y);
         pattest = QPainterPath();
-        qDebug() <<"Proxss: " << proxys.length();
-        /*foreach(auto prox, proxys)
+        foreach(auto prox, proxys)
         {
             
             bool reWhider = true;
@@ -127,14 +129,65 @@ void PinLineColision::FixColliding()
             pathpart.lineTo(right + (oldtms + 1) * 15, y);
             patt.addPath(pathpart);
             lastx = right + (oldtms + 1) * 15;
-            qDebug() << tms;
-        }*/
+        }
         patt.lineTo(p1->x()-(p1->width()/2),p1->y());
     }
     else
     {
+        qreal left, bottom, right, y = p1->y(), lastx = p1->x() + (p1->width() / 2);
+        patt.moveTo(lastx, y);
+        pattest = QPainterPath();
+        foreach(auto prox, proxys)
+        {
 
-        patt.lineTo(p1->x() + (p1->width() / 2), p1->y());
+            bool reWhider = true;
+
+            left = prox->mapToScene(prox->boundingRect().left(), 0).x();
+            right = prox->mapToScene(prox->boundingRect().right(), 0).x();
+            bottom = prox->mapToScene(0, prox->boundingRect().bottom()).y();
+            QPainterPath pathpart = QPainterPath();
+            int tms = 0;
+            int oldtms = 0;
+            while (reWhider)
+            {
+                tms = 0;
+                pathpart = QPainterPath();
+                pathpart.moveTo(left - (oldtms + 1) * 20, y);
+                pathpart.lineTo(left - (oldtms + 1) * 20, bottom + (oldtms + 1) * 20);
+                pathpart.lineTo(right + (oldtms + 1) * 20, bottom + (oldtms + 1) * 20);
+                pathpart.lineTo(right + (oldtms + 1) * 20, y);
+                pattest.addRect(pathpart.boundingRect());
+                pattest.addPath(pathpart);
+                auto lst = scene()->items(pathpart.boundingRect(), Qt::IntersectsItemBoundingRect);
+                reWhider = false;
+                foreach(auto i, lst)
+                {
+                    PinLineColision* x = dynamic_cast<PinLineColision*>(i);
+                    if (x)
+                    {
+                        if (x != this && x->collidesWithItem(prox, Qt::IntersectsItemBoundingRect))
+                        {
+                            tms += 1;
+                        }
+                    }
+                }
+                if (oldtms < tms)
+                {
+                    reWhider = true;
+                    oldtms = tms;
+                }
+
+            }
+            pathpart = QPainterPath();
+            pathpart.moveTo(lastx, y);
+            pathpart.lineTo(left - (oldtms + 1) * 15, y);
+            pathpart.lineTo(left - (oldtms + 1) * 15, bottom + (oldtms + 1) * 15);
+            pathpart.lineTo(right + (oldtms + 1) * 15, bottom + (oldtms + 1) * 15);
+            pathpart.lineTo(right + (oldtms + 1) * 15, y);
+            patt.addPath(pathpart);
+            lastx = right + (oldtms + 1) * 15;
+        }
+        patt.lineTo(p1->Dot()->x(), p1->Dot()->y());
     }
 }
 
@@ -157,7 +210,7 @@ void PinLineColision::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
     //painter->drawPath(pattest);
 
 
-    //painter->setPen(QPen(Qt::blue));
+    painter->setPen(QPen(Qt::blue));
 
-    //painter->drawRect(boundingRect());
+    painter->drawRect(boundingRect());
 }

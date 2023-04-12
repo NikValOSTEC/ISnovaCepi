@@ -26,6 +26,11 @@ Port::~Port()
 
 }
 
+QString Port::name()
+{
+    return ui->Name->text();
+}
+
 
 
 void Port::on_pushButton_clicked()

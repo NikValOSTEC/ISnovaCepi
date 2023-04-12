@@ -20,7 +20,7 @@ public:
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
     Pin* p1, * p2;
     ~Whire();
-    void CollisionFix();
+    void CollisionFix(bool fix=true);
     void move(bool left_rigth, int x);
     Chain* chain;
 };

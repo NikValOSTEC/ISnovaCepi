@@ -9,3 +9,4 @@ int main(int argc, char *argv[])
     w.show();
     return a.exec();
 }
+QVector<Chain*> Chain::chains;

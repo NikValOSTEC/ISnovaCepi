@@ -12,6 +12,7 @@ class PinLineColision;
 #include"pinlinecolision.h"
 class Pin;
 #include"chain.h"
+#include<qstring.h>
 
 namespace Ui {
 class Pin;
@@ -24,6 +25,7 @@ class Pin : public QLineEdit
 public:
     explicit Pin(Port* port,QLineEdit *parent = nullptr);
     ~Pin();
+    QString name();
     void Update();
     Port* parCon;
     virtual void mousePressEvent(QMouseEvent* event) override;
@@ -43,6 +45,7 @@ protected:
 protected slots:
     virtual void showContextMenu(const QPoint& pos);
     void RemoveFromChain();
+    void Remove();
 
 private:
     Ui::Pin *ui;

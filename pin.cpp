@@ -29,8 +29,10 @@ Pin::~Pin()
 {
     try
     {
+        RemoveFromChain();
         delete(d);
         delete(pinW);
+        
     }
     catch (...)
     {
@@ -39,9 +41,14 @@ Pin::~Pin()
     delete ui;
 }
 
+QString Pin::name()
+{
+    return text();
+}
+
 void Pin::Update()
 {
-    d->Uupdate();
+    d->Uupdate(true);
     PinWUpd();
     pinW->FixColliding();
 }
@@ -165,12 +172,25 @@ QMenu* Pin::ContextMenu()
 
     QMenu* myMenu = new QMenu();
     myMenu->addAction("RemoveFromChain", this, SLOT(RemoveFromChain()));
+    myMenu->addAction("Remove", this, SLOT(Remove()));
     return myMenu;
 }
 
 void Pin::RemoveFromChain()
 {
-    chain->RemovePin(this);
+    try {
+        if(chain!=nullptr)
+            chain->RemovePin(this);
+    }
+    catch(_exception ex)
+    {
+
+    }
+}
+
+void Pin::Remove()
+{
+    delete this;
 }
 
 void Pin::showContextMenu(const QPoint& pos)

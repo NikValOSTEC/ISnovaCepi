@@ -18,9 +18,10 @@
 #include<QSlider>
 #include<QMouseEvent>
 #include<QDebug>
+class MYGraphicsScene;
 #include"mygraphicsscene.h"
 
-class View : public QFrame
+class View : public QGraphicsView
 {
     Q_OBJECT
 public:
@@ -29,10 +30,10 @@ public:
     void GScene(MYGraphicsScene *scene);
     QColor backGroundColor();
     void backGroundColor(QColor color);
-    QGraphicsView* view();
 
+    void mouseMoveEvent(QMouseEvent* mouseEvent) override;
+    void mouseReleaseEvent(QMouseEvent* mouseEvent) override;
 protected:
-    QGraphicsView* graphicsview;
     int _scale;
     virtual QMenu* ContextMenu();
 protected slots:
@@ -41,6 +42,9 @@ signals:
     void SceneChanged();
 public slots:
     void AddPort();
+#if QT_CONFIG(wheelevent)
+    void wheelEvent(QWheelEvent* e);
+#endif
 };
 
 #endif // VIEW_H

@@ -83,11 +83,16 @@ void ProxyRectPort::ColiderCheck()
     qDebug() << "CollisionFix" << list.length();
     foreach(QGraphicsItem * i , list)
     {
-        PinLineColision * item= dynamic_cast<PinLineColision *>(i);
-        if (item)
+        
+        if (PinLineColision* item = dynamic_cast<PinLineColision*>(i))
         {
             item->FixColliding();
         }
+        else if (Whire* item = dynamic_cast<Whire*>(i))
+        {
+            item->CollisionFix();
+        }
+
     }
 
 }

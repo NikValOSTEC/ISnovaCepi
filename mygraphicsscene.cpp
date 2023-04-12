@@ -9,13 +9,14 @@ MYGraphicsScene::MYGraphicsScene(QObject *parent)
     : QGraphicsScene{parent}
 {
 }
-
+/*
 void MYGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
 
     QList<QGraphicsItem *> items = selectedItems();
     for(int i=0;i<items.count();i++)
     {
+       
         if(items[i]->type()==100)
         {
             ((dot*)items[i])->Uupdate();
@@ -47,3 +48,4 @@ void MYGraphicsScene::mouseReleaseEvent(QGraphicsSceneMouseEvent* mouseEvent)
 
     QGraphicsScene::mouseReleaseEvent(mouseEvent);
 }
+*/

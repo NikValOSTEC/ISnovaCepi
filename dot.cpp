@@ -15,6 +15,7 @@ dot::~dot()
 
 dot::dot(Pin* p)
 {
+    setZValue(5);
     pin=p;
     pin->parCon->graphicsProxyWidget()->scene()->addItem(this);
     setFlag(QGraphicsItem::ItemIsMovable, true);
@@ -40,11 +41,11 @@ QPainterPath dot::shape() const
     QPainterPath path;
     if(Big)
     {
-        path.addEllipse(0,0,10,10);
+        path.addEllipse(-10,-10,20,20);
     }
     else
     {
-        path.addEllipse(0,0,5,5);
+        path.addEllipse(-5,-5,10,10);
     }
     return path;
 }
