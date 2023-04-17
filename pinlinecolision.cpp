@@ -196,21 +196,16 @@ PinLineColision::PinLineColision(Pin *p)
     this->p1=p;
     setZValue(3);
     this->Dot=p->Dot();
+
 }
 
 void PinLineColision::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
 
-    painter->setPen(QPen(Qt::red,5));
+    if (p1->chain == nullptr)
+        painter->setPen(QPen(Qt::red, 5));
+    else
+        painter->setPen(QPen(p1->chain->color, 5));
 
     painter->drawPath(shape());
-    
-    //painter->setPen(QPen(Qt::green));
-
-    //painter->drawPath(pattest);
-
-
-    painter->setPen(QPen(Qt::blue));
-
-    painter->drawRect(boundingRect());
 }

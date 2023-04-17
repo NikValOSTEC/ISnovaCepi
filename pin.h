@@ -13,6 +13,7 @@ class PinLineColision;
 class Pin;
 #include"chain.h"
 #include<qstring.h>
+#include <QColorDialog>
 
 namespace Ui {
 class Pin;
@@ -46,6 +47,7 @@ protected slots:
     virtual void showContextMenu(const QPoint& pos);
     void RemoveFromChain();
     void Remove();
+    void ChangeColor();
 
 private:
     Ui::Pin *ui;

@@ -2,18 +2,29 @@
 #include "qgraphicsproxywidget.h"
 #include "qgraphicsscene.h"
 #include "qpainter.h"
+#include<qobject.h>
 
 Whire::Whire(Pin* p1,Pin*p2)
 {
+
     if(p1->chain==nullptr&&p2->chain==nullptr)
         chain = new Chain();
+    else if (p1->chain == p2->chain)
+    {
+        return;
+    }
+    else if (p2->chain != nullptr&&p1->chain!=nullptr)
+    {
+        p1->chain->moveToChain(p2->chain);
+        chain = p1->chain;
+    }
+    else if(p1->chain!=nullptr)
+    {
+        chain = p1->chain;
+    }
     else if (p2->chain != nullptr)
     {
         chain = p2->chain;
-    }
-    else
-    {
-        chain = p1->chain;
     }
     this->p1=p1;
     this->p2=p2;
@@ -90,10 +101,11 @@ void Whire::updateShape(bool colision)
 
 void Whire::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->setPen( QPen(Qt::red, 5));
+    if(chain==nullptr)
+        painter->setPen( QPen(Qt::red, 5));
+    else
+        painter->setPen(QPen(chain->color, 5));
     painter->drawPath(shape()); 
-    painter->setPen(QPen(Qt::blue, 1));
-    painter->drawRect(boundingRect());
 }
 
 Whire::~Whire()
@@ -206,3 +218,5 @@ void Whire::move(bool left_rigth, int x)
         p1->Dot()->x(p1->Dot()->x()+x);
     p1->Dot()->Uupdate();
 }
+
+

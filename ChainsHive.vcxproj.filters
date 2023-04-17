@@ -61,6 +61,15 @@
     <ClCompile Include="whire.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="minimap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GItemFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chaintable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dot.h">
@@ -78,6 +87,9 @@
     <ClInclude Include="whire.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GItemFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -93,6 +105,12 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="chain.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="minimap.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="chaintable.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

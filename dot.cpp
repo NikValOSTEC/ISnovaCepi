@@ -94,6 +94,7 @@ void dot::Uupdate(bool collision, QVector<dot*>* nnot)
 
 void dot::AddWhire(Whire *w)
 {
+    
     pin->pinWhire();
     whires.append(w);
 }

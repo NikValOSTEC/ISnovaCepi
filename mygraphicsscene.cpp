@@ -9,7 +9,7 @@ MYGraphicsScene::MYGraphicsScene(QObject *parent)
     : QGraphicsScene{parent}
 {
 }
-/*
+
 void MYGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
 
@@ -48,4 +48,4 @@ void MYGraphicsScene::mouseReleaseEvent(QGraphicsSceneMouseEvent* mouseEvent)
 
     QGraphicsScene::mouseReleaseEvent(mouseEvent);
 }
-*/
+

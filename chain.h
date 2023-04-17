@@ -16,6 +16,8 @@ public:
     void RemovePin(Pin* p);
     static QVector<Chain*> chains;
     QVector<Pin*> pins;
+    void moveToChain(Chain* chain);
+    QColor color;
 };
 
 #endif // CHAIN_H

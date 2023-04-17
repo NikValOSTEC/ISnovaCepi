@@ -1,6 +1,11 @@
 #ifndef WHIRE_H
 #define WHIRE_H
 
+#include <QColorDialog>
+#include<qcoreapplication.h>
+#include<QGraphicsItem>
+#include<QObject>
+#include<QVector>
 #include <QGraphicsItem>
 #include <QObject>
 class Chain;
@@ -8,7 +13,7 @@ class Chain;
 class Pin;
 #include"pin.h"
 
-class Whire : public QGraphicsItem
+class Whire : public QGraphicsItem,QObject
 {
 private:
     QPainterPath patt;

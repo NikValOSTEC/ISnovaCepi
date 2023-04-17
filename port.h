@@ -19,6 +19,7 @@ public:
     explicit Port(QWidget *parent = nullptr);
     ~Port();
     QString name();
+    static QVector<Port*> portsVector;
 
 private slots:
     void on_pushButton_clicked();
@@ -29,6 +30,7 @@ public slots:
     void Update();
     ProxyRectPort* proxy();
     void proxy(ProxyRectPort*prox);
+    void setFilter();
 
 
 private:

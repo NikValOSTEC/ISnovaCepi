@@ -21,19 +21,19 @@
 class MYGraphicsScene;
 #include"mygraphicsscene.h"
 
-class View : public QGraphicsView
+class View : public QFrame
 {
     Q_OBJECT
 public:
     View();
     MYGraphicsScene* GScene();
-    void GScene(MYGraphicsScene *scene);
+    void GScene(MYGraphicsScene* scene);
     QColor backGroundColor();
     void backGroundColor(QColor color);
+    QGraphicsView* view();
 
-    void mouseMoveEvent(QMouseEvent* mouseEvent) override;
-    void mouseReleaseEvent(QMouseEvent* mouseEvent) override;
 protected:
+    QGraphicsView* graphicsview;
     int _scale;
     virtual QMenu* ContextMenu();
 protected slots:
@@ -43,7 +43,7 @@ signals:
 public slots:
     void AddPort();
 #if QT_CONFIG(wheelevent)
-    void wheelEvent(QWheelEvent* e);
+        void wheelEvent(QWheelEvent* e);
 #endif
 };
 

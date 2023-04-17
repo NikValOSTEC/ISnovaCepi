@@ -97,3 +97,15 @@ void Chain::RemovePin(Pin* p)
 	}
 }
 
+void Chain::moveToChain(Chain* chain)
+{
+	for (int i = 0; i > chain->pins.size(); i++)
+	{
+		chain->pins[i]->chain = this;
+		this->pins.append(chain->pins[i]);
+		chain->pins.remove(i);
+		
+	}
+	delete chain;
+}
+

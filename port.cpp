@@ -3,7 +3,7 @@
 #include "qmenu.h"
 #include "ui_port.h"
 #include <QGridLayout>
-
+#include"mygraphicsscene.h"
 Port::Port(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Port)
@@ -13,6 +13,7 @@ Port::Port(QWidget *parent) :
     this->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this, SIGNAL(customContextMenuRequested(QPoint)),
         this, SLOT(showContextMenu(QPoint)));
+    portsVector.append(this);
 }
 
 Port::~Port()
@@ -23,6 +24,7 @@ Port::~Port()
         delete(static_cast<Pin*>(w));
     }
     delete ui;
+    portsVector.removeOne(this);
 
 }
 
@@ -30,6 +32,8 @@ QString Port::name()
 {
     return ui->Name->text();
 }
+
+
 
 
 
@@ -71,7 +75,7 @@ void Port::Remove()
 
 void Port::Update()
 {
-    for (int i = ui->PinsList->layout()->count()-1;i>=0; i--)
+    for (int i = ui->PinsList->layout()->count() - 1; i >= 0; i--)
     {
         QWidget* w = ui->PinsList->layout()->itemAt(i)->widget();
         (static_cast<Pin*>(w))->Update();
@@ -86,5 +90,10 @@ ProxyRectPort* Port::proxy()
 void Port::proxy(ProxyRectPort *prox)
 {
     _proxy=prox;
+}
+
+void Port::setFilter()
+{
+
 }
 

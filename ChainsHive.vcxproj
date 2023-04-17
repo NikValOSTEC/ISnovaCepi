@@ -83,7 +83,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chaintable.cpp" />
+    <ClCompile Include="GItemFrame.cpp" />
     <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="minimap.cpp" />
     <ClCompile Include="mygraphicsscene.cpp" />
     <ClCompile Include="pin.cpp" />
     <ClCompile Include="pinlinecolision.cpp" />
@@ -98,7 +101,10 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="chain.h" />
+    <QtMoc Include="chaintable.h" />
     <ClInclude Include="dot.h" />
+    <QtMoc Include="minimap.h" />
+    <ClInclude Include="GItemFrame.h" />
     <ClInclude Include="mygraphicsscene.h" />
     <ClInclude Include="pinlinecolision.h" />
     <ClInclude Include="proxyrectport.h" />

@@ -173,6 +173,8 @@ QMenu* Pin::ContextMenu()
     QMenu* myMenu = new QMenu();
     myMenu->addAction("RemoveFromChain", this, SLOT(RemoveFromChain()));
     myMenu->addAction("Remove", this, SLOT(Remove()));
+    myMenu->addAction("Color", this, SLOT(ChangeColor()));
+
     return myMenu;
 }
 
@@ -191,6 +193,16 @@ void Pin::RemoveFromChain()
 void Pin::Remove()
 {
     delete this;
+}
+
+void Pin::ChangeColor()
+{
+    if (chain == nullptr)
+        return;
+    bool ok;
+    QColor olor = QColorDialog::getColor(chain->color);
+    if (&ok)
+        chain->color = QColor(olor);
 }
 
 void Pin::showContextMenu(const QPoint& pos)
