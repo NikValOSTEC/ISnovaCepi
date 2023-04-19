@@ -33,6 +33,22 @@ QString Port::name()
     return ui->Name->text();
 }
 
+void Port::name(QString str)
+{
+    ui->Name->setText(str);
+}
+
+QVector<Pin*> Port::pins()
+{
+    auto objs= ui->PinsList->children().toVector();
+    QVector<Pin*> res = QVector<Pin*>();
+    foreach(auto vr, objs)
+    {
+        res.append((Pin*)vr);
+    }
+    return res;
+}
+
 
 
 

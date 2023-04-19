@@ -42,6 +42,7 @@ signals:
     void SceneChanged();
 public slots:
     void AddPort();
+    void AddPort(int x, int y,QString name);
 #if QT_CONFIG(wheelevent)
         void wheelEvent(QWheelEvent* e);
 #endif

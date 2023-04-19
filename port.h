@@ -19,7 +19,9 @@ public:
     explicit Port(QWidget *parent = nullptr);
     ~Port();
     QString name();
+    void name(QString str);
     static QVector<Port*> portsVector;
+    QVector<Pin*>pins();
 
 private slots:
     void on_pushButton_clicked();

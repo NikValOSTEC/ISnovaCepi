@@ -43,9 +43,10 @@ public:
 protected:
     virtual QMenu* ContextMenu();
 
+public slots:
+    void RemoveFromChain();
 protected slots:
     virtual void showContextMenu(const QPoint& pos);
-    void RemoveFromChain();
     void Remove();
     void ChangeColor();
 

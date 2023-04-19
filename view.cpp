@@ -1,4 +1,4 @@
-#include "view.h"
+﻿#include "view.h"
 #include "port.h"
 #include "proxyrectport.h"
 #include "qgraphicsproxywidget.h"
@@ -27,9 +27,21 @@ View::View()
 }
 
 
+void View::AddPort(int x, int y,QString name)
+{
+    Port* p = new Port();
+    ProxyRectPort* proxyControl = new ProxyRectPort(p);
+    proxyControl->geometry(QRectF(x, y + p->height(), p->width(), 30 + p->height()));
+    this->GScene()->addItem(proxyControl);
+    QGraphicsProxyWidget* const proxy = this->GScene()->addWidget(p);
+    proxy->setPos(x, y + proxyControl->boundingRect().height());
+    proxy->setParentItem(proxyControl);
+    p->name(name);
+}
+
 void View::wheelEvent(QWheelEvent* e)
 {
-    // ???????? ?? SHIFT ????/?????
+    // �������� �� SHIFT ����/�����
     if (e->modifiers() & Qt::SHIFT)
     {
         this->view()->horizontalScrollBar()->setValue(this->view()->horizontalScrollBar()->value() + (e->angleDelta().y()));
@@ -99,12 +111,6 @@ void View::showContextMenu(const QPoint& pos)
 
 void View::AddPort()
 {
-    Port* p = new Port();
     QPointF pos = graphicsview->mapToScene(mapFromGlobal(QCursor::pos()));
-    ProxyRectPort* proxyControl = new ProxyRectPort(p);
-    proxyControl->geometry(QRectF(pos.x(), pos.y() + p->height(), p->width(), 30 + p->height()));
-    this->GScene()->addItem(proxyControl);
-    QGraphicsProxyWidget* const proxy = this->GScene()->addWidget(p);
-    proxy->setPos(pos.x(), pos.y() + proxyControl->boundingRect().height());
-    proxy->setParentItem(proxyControl);
+    AddPort(pos.x(), pos.y(),"");
 }

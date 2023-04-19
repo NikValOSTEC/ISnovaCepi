@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     tabw->addTab(w, "1");
     this->setCentralWidget(tabw);
     auto table = new ChainTable();
+    table->view = v;
     tabw->addTab(table, "2");
 
     connect(tabw, SIGNAL(currentChanged(int)), table, SLOT(UpdateTable()));
