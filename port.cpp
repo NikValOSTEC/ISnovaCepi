@@ -44,7 +44,9 @@ QVector<Pin*> Port::pins()
     QVector<Pin*> res = QVector<Pin*>();
     foreach(auto vr, objs)
     {
-        res.append((Pin*)vr);
+        auto pn = dynamic_cast<Pin*>(vr);
+        if(pn)
+            res.append(pn);
     }
     return res;
 }
@@ -75,12 +77,15 @@ QMenu *Port::ContextMenu()
     return myMenu;
 }
 
-void Port::addPin()
+Pin* Port::addPin(QString name)
 {
-    this->ui->PinsList->layout()->addWidget(new Pin(this));
+    auto pn = new Pin(this);
+    pn->name(name);
+    this->ui->PinsList->layout()->addWidget(pn);
     auto rec=this->_proxy->geometry();
     rec.setHeight(60+this->height());
     this->_proxy->geometry(rec);
+    return pn;
 }
 
 void Port::Remove()
@@ -91,10 +96,9 @@ void Port::Remove()
 
 void Port::Update()
 {
-    for (int i = ui->PinsList->layout()->count() - 1; i >= 0; i--)
+    foreach (auto p, pins())
     {
-        QWidget* w = ui->PinsList->layout()->itemAt(i)->widget();
-        (static_cast<Pin*>(w))->Update();
+        p->Update();
     }
 }
 

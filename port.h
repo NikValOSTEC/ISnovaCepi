@@ -27,7 +27,7 @@ private slots:
     void on_pushButton_clicked();
 public slots:
     void showContextMenu(const QPoint& pos);
-    void addPin();
+    Pin* addPin(QString name="");
     void Remove();
     void Update();
     ProxyRectPort* proxy();

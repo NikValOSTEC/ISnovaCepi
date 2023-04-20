@@ -23,6 +23,9 @@ Pin::Pin(Port* port, QLineEdit* parent) :
     connect(this, SIGNAL(customContextMenuRequested(QPoint)),
         this, SLOT(showContextMenu(QPoint)));
     chain = nullptr;
+    thread = new QThread();
+    moveToThread(thread);
+    thread->start();
 }
 
 Pin::~Pin()
@@ -41,10 +44,17 @@ Pin::~Pin()
     delete ui;
 }
 
-QString Pin::name()
+const QString Pin::name()
 {
     return text();
 }
+
+void Pin::name(QString name)
+{
+    this->setText(name);
+}
+
+
 
 void Pin::Update()
 {
@@ -52,6 +62,7 @@ void Pin::Update()
     PinWUpd();
     pinW->FixColliding();
 }
+
 
 void Pin::mousePressEvent(QMouseEvent* event)
 {

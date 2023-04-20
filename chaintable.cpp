@@ -1,5 +1,7 @@
 #include "chaintable.h"
 #include"port.h"
+#include"QHeaderView.h"
+#include"QInputDialog.h"
 
 ChainTable::ChainTable()
 	: QTableWidget()
@@ -9,6 +11,20 @@ this, SLOT(CellChange(int, int)));
 	connect(this, SIGNAL(cellClicked(int, int)),
 	this, SLOT(CellClck(int, int)));
 
+	auto header = this->horizontalHeader();
+	connect(header, &QHeaderView::sectionClicked, [this](int logicalIndex) {
+		QString text = this->horizontalHeaderItem(logicalIndex)->text();
+		bool ok;
+		QString ntext = QInputDialog::getText(0, "New Name",
+			"Name", QLineEdit::Normal,
+			text, &ok);
+		if (ok)
+		{
+			this->horizontalHeaderItem(logicalIndex)->setText(ntext);
+			Port::portsVector[logicalIndex]->name(ntext);
+		}
+		
+	});
 }
 
 
@@ -134,14 +150,28 @@ void ChainTable::CellChange(int row, int column)
 		splt.remove(0);
 		splt.remove(splt.count() - 1);
 		auto portpns = Port::portsVector[i]->pins();
-		foreach(auto pn, portpns)
+		foreach (auto spp, splt)
 		{
-			if (splt.contains(pn->name()))
+			auto found=std::find_if(
+				portpns.begin(), portpns.end(),
+				[&spp](auto x) { return x->name() == spp;  });
+			if ((found) == portpns.end())
 			{
+				auto pn=Port::portsVector[i]->addPin(spp);
+				addPin.append(pn);
 				pins.append(pn);
-				if (i == column)
-					addPin.append(pn);
+
 			}
+			else
+			{
+				if (!chainW->pins.contains(*found))
+				{
+					addPin.append(*found);
+				}
+
+				pins.append(*found);
+			}
+
 		}
 
 
@@ -175,8 +205,6 @@ void ChainTable::CellChange(int row, int column)
 
 void ChainTable::CellClck(int row, int colum)
 {
-	qDebug() << row << "  " << colum;
-	qDebug() << this->rowCount();
 	if ((row == this->rowCount() - 1) && (colum == 1))
 	{
 		AddPort();

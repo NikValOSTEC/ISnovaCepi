@@ -2,6 +2,8 @@
 #define PIN_H
 
 class Port;
+#include<thread>
+#include<QThread>
 #include"port.h"
 #include<QLineEdit>
 #include <QWidget>
@@ -26,7 +28,8 @@ class Pin : public QLineEdit
 public:
     explicit Pin(Port* port,QLineEdit *parent = nullptr);
     ~Pin();
-    QString name();
+    const QString name();
+    void name(QString name);
     void Update();
     Port* parCon;
     virtual void mousePressEvent(QMouseEvent* event) override;
@@ -51,9 +54,11 @@ protected slots:
     void ChangeColor();
 
 private:
+    bool updaterbl;
     Ui::Pin *ui;
     dot* d;
     PinLineColision* pinW;
+    QThread* thread;
 
 };
 
