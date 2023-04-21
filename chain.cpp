@@ -59,13 +59,13 @@ void Chain::RemovePin(Pin* p)
 					}
 					else
 					{
-						auto p2 = whires[i]->p2;
+						auto p2 = whires[i]->p1;
 						for (int j = 0; j < pins.count(); j++)
 						{
 							if (pins[j] != p2)
 							{
 
-								whires[i]->p1 = pins[j];
+								whires[i]->p2 = pins[j];
 							}
 						}
 					}
