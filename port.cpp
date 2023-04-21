@@ -18,10 +18,9 @@ Port::Port(QWidget *parent) :
 
 Port::~Port()
 {
-    for (int i = 0; i < ui->PinsList->layout()->count(); ++i)
+    foreach(auto p, pins())
     {
-        QWidget* w = ui->PinsList->layout()->itemAt(i)->widget();
-        delete(static_cast<Pin*>(w));
+        delete(p);
     }
     delete ui;
     portsVector.removeOne(this);
@@ -98,7 +97,7 @@ void Port::Update()
 {
     foreach (auto p, pins())
     {
-        p->Update();
+        p->EmitUpd();
     }
 }
 

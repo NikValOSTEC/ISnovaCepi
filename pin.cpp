@@ -15,33 +15,24 @@ Pin::Pin(Port* port, QLineEdit* parent) :
 {
     ui->setupUi(this);
     parCon = port;
-    d = nullptr;
-    pinW = new PinLineColision(this);
-    port->graphicsProxyWidget()->scene()->addItem(pinW);
-    pinWhire(false);    
+    d = nullptr; 
     this->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this, SIGNAL(customContextMenuRequested(QPoint)),
         this, SLOT(showContextMenu(QPoint)));
     chain = nullptr;
     thread = new QThread();
     moveToThread(thread);
-    thread->start();
+    pinW = new PinLineColision(this, thread);    
+    port->graphicsProxyWidget()->scene()->addItem(pinW);
+    pinWhire(false);
+    connect(this, &Pin::updSignal, this, &Pin::Update);
 }
 
 Pin::~Pin()
 {
-    try
-    {
-        RemoveFromChain();
-        delete(d);
-        delete(pinW);
-        
-    }
-    catch (...)
-    {
-
-    }
-    delete ui;
+    RemoveFromChain();
+    delete(d);
+    delete(pinW);
 }
 
 const QString Pin::name()
@@ -52,17 +43,23 @@ const QString Pin::name()
 void Pin::name(QString name)
 {
     this->setText(name);
+    _name = name;
 }
 
 
 
 void Pin::Update()
 {
-    d->Uupdate(true);
+    d->Uupdate(false);
     PinWUpd();
     pinW->FixColliding();
 }
 
+
+void Pin::EmitUpd()
+{
+    emit updSignal();
+}
 
 void Pin::mousePressEvent(QMouseEvent* event)
 {
@@ -125,7 +122,9 @@ void Pin::dragMoveEvent(QDragMoveEvent* event)
 dot* Pin::Dot(bool recalc)
 {
     if (d == nullptr)
-        d = new dot(this);
+    {
+        d = new dot(this,thread);
+    }
     if (recalc)
     {
         QPointF point = QPointF();

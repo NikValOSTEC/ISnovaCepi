@@ -191,8 +191,12 @@ void PinLineColision::FixColliding()
     }
 }
 
-PinLineColision::PinLineColision(Pin *p)
+PinLineColision::PinLineColision(Pin *p,QThread* thr)
 {
+    if (thr != nullptr)
+    {
+        moveToThread(thr);
+    }
     this->p1=p;
     setZValue(3);
     this->Dot=p->Dot();

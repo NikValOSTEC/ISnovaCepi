@@ -7,11 +7,11 @@ class Pin;
 #include"pin.h"
 class Whire;
 #include "whire.h"
-class dot : public QGraphicsItem
+class dot : public QGraphicsItem,QObject
 {
 public:
     ~dot();
-    dot(Pin* p);
+    dot(Pin* p,QThread* thr=nullptr);
     QColor color;
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
     QRectF boundingRect() const override;//

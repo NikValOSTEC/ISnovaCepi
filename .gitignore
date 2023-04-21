@@ -6,6 +6,10 @@
 *.la
 *.lai
 *.so
+*.tlog
+*.vcxproj.*
+*.log
+*.object_script
 *.so.*
 *.dll
 *.dylib

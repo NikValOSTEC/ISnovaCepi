@@ -9,12 +9,15 @@ dot::~dot()
 {
     for(int i=0;i<whires.count();i++)
     {
+
         delete whires[i];
     }
 }
 
-dot::dot(Pin* p)
+dot::dot(Pin* p, QThread* thr)
 {
+    if (thr != nullptr)
+        moveToThread(thr);
     setZValue(5);
     pin=p;
     pin->parCon->graphicsProxyWidget()->scene()->addItem(this);
@@ -107,7 +110,13 @@ void dot::RemoveWhire(Whire *w)
         {
             for (int i = 0; i < verticalMove.count(); i++)
             {
-                verticalMove[i]->verticalMove.removeOne(this);
+                try {
+                    verticalMove[i]->verticalMove.removeOne(this);
+                }
+                catch(...)
+                {
+
+                }
             }
             verticalMove.clear();
         }

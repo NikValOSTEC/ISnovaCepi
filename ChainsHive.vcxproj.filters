@@ -72,9 +72,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="mygraphicsscene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -88,6 +85,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GItemFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

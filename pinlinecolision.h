@@ -5,7 +5,7 @@ class Pin;
 #include "pin.h"
 #include <QGraphicsLineItem>
 
-class PinLineColision : public QGraphicsLineItem
+class PinLineColision : public QGraphicsLineItem,QObject
 {
 private:
     QPainterPath patt,pattest;
@@ -18,7 +18,7 @@ public:
     void FixColliding();
 
     qreal y();
-    PinLineColision(Pin* p);
+    PinLineColision(Pin* p,QThread* thr=nullptr);
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
 };
 

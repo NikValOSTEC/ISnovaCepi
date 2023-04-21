@@ -30,7 +30,12 @@ public:
     ~Pin();
     const QString name();
     void name(QString name);
+public slots:
     void Update();
+signals:
+    void updSignal();
+public:
+    void EmitUpd();
     Port* parCon;
     virtual void mousePressEvent(QMouseEvent* event) override;
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
@@ -53,12 +58,14 @@ protected slots:
     void Remove();
     void ChangeColor();
 
+
 private:
     bool updaterbl;
     Ui::Pin *ui;
     dot* d;
     PinLineColision* pinW;
     QThread* thread;
+    QString _name;
 
 };
 
