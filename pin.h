@@ -16,6 +16,7 @@ class Pin;
 #include"chain.h"
 #include<qstring.h>
 #include <QColorDialog>
+#include"AddWhireCommand.h"
 
 namespace Ui {
 class Pin;

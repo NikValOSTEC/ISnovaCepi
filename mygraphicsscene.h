@@ -10,8 +10,8 @@ public:
     View* Mview;
     int _scale = 100;
     explicit MYGraphicsScene(QObject *parent = nullptr);
-    void mouseMoveEvent(QGraphicsSceneMouseEvent * mouseEvent) override;
-    void mouseReleaseEvent(QGraphicsSceneMouseEvent* mouseEvent) override;
+private:
+    int lastselected = 0;
 };
 
 #endif // MYGRAPHICSSCENE_H

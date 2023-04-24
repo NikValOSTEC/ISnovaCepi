@@ -4,10 +4,12 @@
 #include "qgraphicsproxywidget.h"
 #include <QStyle>
 #include"GItemFrame.h"
+#include"AddComand.h"
+#include<QShortCut>
 
 View::View()
 {
-    graphicsview = new QGraphicsView(this);
+    graphicsview = new GView(this);
     graphicsview->setRenderHint(QPainter::Antialiasing, false);
     graphicsview->setDragMode(QGraphicsView::RubberBandDrag);
     //graphicsview->setOptimizationFlags(QGraphicsView::OptimizationFlag::IndirectPainting);
@@ -23,21 +25,23 @@ View::View()
     lay->addWidget(graphicsview, 1, 0);
     this->setLayout(lay);
     GScene()->addItem((QGraphicsItem*)(new GItemFrame()));
+    stack = new QUndoStack();
+    auto ctrlZ = new QShortcut(this);   // Инициализируем объект
+    ctrlZ->setKey(Qt::Key_Z+ Qt::CTRL);    // Устанавливаем код клавиши
+    // цепляем обработчик нажатия клавиши
+    connect(ctrlZ, SIGNAL(activated()), this, SLOT(stckUndo()));
 
+
+
+    auto ctrlY = new QShortcut(this); 
+    // Инициализируем объект
+    ctrlY->setKey(Qt::Key_Y+Qt::CTRL );    // Устанавливаем код клавиши
+    // цепляем обработчик нажатия клавиши
+    connect(ctrlY, SIGNAL(activated()), this, SLOT(stckRedo()));
 }
 
 
-void View::AddPort(int x, int y,QString name)
-{
-    Port* p = new Port();
-    ProxyRectPort* proxyControl = new ProxyRectPort(p);
-    proxyControl->geometry(QRectF(x, y + p->height(), p->width(), 30 + p->height()));
-    this->GScene()->addItem(proxyControl);
-    QGraphicsProxyWidget* const proxy = this->GScene()->addWidget(p);
-    proxy->setPos(x, y + proxyControl->boundingRect().height());
-    proxy->setParentItem(proxyControl);
-    p->name(name);
-}
+
 
 void View::wheelEvent(QWheelEvent* e)
 {
@@ -70,9 +74,11 @@ void View::wheelEvent(QWheelEvent* e)
 
 
 
+
+
 MYGraphicsScene* View::GScene()
 {
-    return (MYGraphicsScene*)graphicsview->scene();
+    return graphicsview->GScene();
 }
 
 void View::GScene(MYGraphicsScene* scene)
@@ -92,7 +98,7 @@ void View::backGroundColor(QColor color)
     GScene()->setBackgroundBrush(QBrush(QColor(240, 255, 220)));
 }
 
-QGraphicsView* View::view()
+GView* View::view()
 {
     return graphicsview;
 }
@@ -109,8 +115,30 @@ void View::showContextMenu(const QPoint& pos)
     ContextMenu()->exec(globalPos);
 }
 
+void View::stckRedo()
+{
+    stack->redo();
+}
+
 void View::AddPort()
 {
-    QPointF pos = graphicsview->mapToScene(mapFromGlobal(QCursor::pos()));
-    AddPort(pos.x(), pos.y(),"");
+    QPoint globalPos = QCursor::pos();
+    qDebug() << globalPos;
+    QPoint pos = graphicsview->mapFromGlobal(globalPos);
+    qDebug() << pos;
+    pos = graphicsview->mapToScene(pos).toPoint();
+    qDebug() << pos;
+    new AddComand(this, pos.x(), pos.y());
+    
+}
+
+void View::AddPort(int x, int y, QString name)
+{
+
+    new AddComand(this, x, y,name);
+}
+
+void View::stckUndo()
+{
+    stack->undo();
 }

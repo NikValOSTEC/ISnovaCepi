@@ -102,7 +102,7 @@ void Pin::dropEvent(QDropEvent* event)
         Pin* fpin = (Pin*)address;
         if (fpin != this)
         {
-            auto w = new Whire(fpin, this);
+            AddWhireCommand(fpin, this);
         }
     }
     else

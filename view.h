@@ -13,6 +13,7 @@
 #include<QScrollBar>
 #include<QGraphicsItem>
 #include<QMenu>
+#include <qundostack.h>
 #include<qmath.h>
 #include<QWheelEvent>
 #include<QSlider>
@@ -20,6 +21,8 @@
 #include<QDebug>
 class MYGraphicsScene;
 #include"mygraphicsscene.h"
+class GView;
+#include "GView.h"
 
 class View : public QFrame
 {
@@ -30,10 +33,11 @@ public:
     void GScene(MYGraphicsScene* scene);
     QColor backGroundColor();
     void backGroundColor(QColor color);
-    QGraphicsView* view();
+    GView* view();
+    QUndoStack* stack;
 
 protected:
-    QGraphicsView* graphicsview;
+    GView* graphicsview;
     int _scale;
     virtual QMenu* ContextMenu();
 protected slots:
@@ -41,10 +45,13 @@ protected slots:
 signals:
     void SceneChanged();
 public slots:
+    void stckUndo();
+    void stckRedo();
     void AddPort();
-    void AddPort(int x, int y,QString name);
+    void AddPort(int x, int y, QString name);
+public:
 #if QT_CONFIG(wheelevent)
-        void wheelEvent(QWheelEvent* e);
+        void wheelEvent(QWheelEvent* e); 
 #endif
 };
 

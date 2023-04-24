@@ -83,8 +83,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddComand.cpp" />
+    <ClCompile Include="AddPinComand.cpp" />
+    <ClCompile Include="AddWhireCommand.cpp" />
     <ClCompile Include="chaintable.cpp" />
     <ClCompile Include="GItemFrame.cpp" />
+    <ClCompile Include="GView.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="minimap.cpp" />
     <ClCompile Include="mygraphicsscene.cpp" />
@@ -92,6 +96,9 @@
     <ClCompile Include="pinlinecolision.cpp" />
     <ClCompile Include="port.cpp" />
     <ClCompile Include="proxyrectport.cpp" />
+    <ClCompile Include="RemoveComand.cpp" />
+    <ClCompile Include="RemoveFromChainComand.cpp" />
+    <ClCompile Include="RemovePinCommand.cpp" />
     <ClCompile Include="view.cpp" />
     <ClCompile Include="whire.cpp" />
     <QtRcc Include="ChainsHive.qrc" />
@@ -102,12 +109,19 @@
   <ItemGroup>
     <QtMoc Include="chain.h" />
     <QtMoc Include="chaintable.h" />
+    <ClInclude Include="AddComand.h" />
+    <ClInclude Include="AddPinComand.h" />
+    <ClInclude Include="AddWhireCommand.h" />
     <ClInclude Include="dot.h" />
     <QtMoc Include="minimap.h" />
     <ClInclude Include="GItemFrame.h" />
+    <ClInclude Include="GView.h" />
     <ClInclude Include="mygraphicsscene.h" />
     <ClInclude Include="pinlinecolision.h" />
     <ClInclude Include="proxyrectport.h" />
+    <ClInclude Include="RemoveComand.h" />
+    <ClInclude Include="RemovePinCommand.h" />
+    <ClInclude Include="RemoveFromChainComand.h" />
     <ClInclude Include="whire.h" />
     <QtMoc Include="view.h" />
     <QtMoc Include="port.h" />
