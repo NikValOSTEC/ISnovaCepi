@@ -44,8 +44,8 @@ void MYGraphicsScene::mouseReleaseEvent(QGraphicsSceneMouseEvent* mouseEvent)
         {
             ((ProxyRectPort*)items[i])->Update();
         }
+        clearSelection();
     }
-
     QGraphicsScene::mouseReleaseEvent(mouseEvent);
 }
 

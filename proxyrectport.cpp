@@ -25,7 +25,10 @@ QRectF ProxyRectPort::boundingRect() const
 
 void ProxyRectPort::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->setPen(QPen(Qt::blue));
+    if(isSelected())
+        painter->setBrush(QBrush(QColor(137, 224, 8)));
+    else
+        painter->setBrush(QBrush(QColor(122, 195, 15)));
     painter->drawRect(rect);
 }
 
@@ -80,7 +83,6 @@ void ProxyRectPort::ColiderCheck()
 {
 
     QList<QGraphicsItem *> list = collidingItems(Qt::IntersectsItemBoundingRect);
-    qDebug() << "CollisionFix" << list.length();
     foreach(QGraphicsItem * i , list)
     {
         

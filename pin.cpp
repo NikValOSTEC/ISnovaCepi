@@ -50,7 +50,7 @@ void Pin::name(QString name)
 
 void Pin::Update()
 {
-    d->Uupdate(false);
+    d->Uupdate(true);
     PinWUpd();
     pinW->FixColliding();
 }

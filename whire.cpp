@@ -105,7 +105,9 @@ void Whire::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
         painter->setPen( QPen(Qt::red, 5));
     else
         painter->setPen(QPen(chain->color, 5));
-    painter->drawPath(shape()); 
+    painter->drawPath(shape());
+    painter->setPen(QPen(Qt::blue, 2));
+    painter->drawRect(boundingRect());
 }
 
 Whire::~Whire()

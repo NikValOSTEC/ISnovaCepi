@@ -212,4 +212,7 @@ void PinLineColision::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
         painter->setPen(QPen(p1->chain->color, 5));
 
     painter->drawPath(shape());
+
+    painter->setPen(QPen(Qt::blue, 2));
+    painter->drawRect(boundingRect());
 }

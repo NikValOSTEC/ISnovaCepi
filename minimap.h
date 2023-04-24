@@ -13,6 +13,9 @@ public:
 	void mouseMoveEvent(QMouseEvent* event)override;
 	void mouseReleaseEvent(QMouseEvent* event)override;
 	void mousePressEvent(QMouseEvent* event)override;
+#if QT_CONFIG(wheelevent)
+	void wheelEvent(QWheelEvent* e);
+#endif
 
 	~minimap();
 	View* v;

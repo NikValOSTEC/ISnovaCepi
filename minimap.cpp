@@ -32,11 +32,16 @@ void minimap::mousePressEvent(QMouseEvent* event)
     scene()->update();
 }
 
+void minimap::wheelEvent(QWheelEvent* e)
+{
+    fitInView(scene()->itemsBoundingRect(), Qt::KeepAspectRatio);
+}
+
 void minimap::rescale()
 {
-    setMinimumHeight(v->size().height() / sclX);
-    setMinimumWidth(v->size().width() / sclY);
-    fitInView(scene()->sceneRect(), Qt::KeepAspectRatio);
+    setFixedHeight(v->size().height() / sclX);
+    setFixedWidth(v->size().width() / sclY);
+    fitInView(scene()->itemsBoundingRect(), Qt::KeepAspectRatio);
 }
 
 minimap::~minimap()
