@@ -32,7 +32,6 @@ View::View()
     connect(ctrlZ, SIGNAL(activated()), this, SLOT(stckUndo()));
 
 
-
     auto ctrlY = new QShortcut(this); 
     // Инициализируем объект
     ctrlY->setKey(Qt::Key_Y+Qt::CTRL );    // Устанавливаем код клавиши
@@ -137,6 +136,7 @@ void View::AddPort(int x, int y, QString name)
 
     new AddComand(this, x, y,name);
 }
+
 
 void View::stckUndo()
 {

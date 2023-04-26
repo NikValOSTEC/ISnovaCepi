@@ -27,6 +27,7 @@ void GView::mouseMoveEvent(QMouseEvent* event)
             ((ProxyRectPort*)items[i])->Update();
         }
     }
+    QGraphicsView::mouseMoveEvent(event);
 }
 
 void GView::mouseReleaseEvent(QMouseEvent* event)
@@ -53,6 +54,8 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
             ((ProxyRectPort*)items[i])->Update();
         }
     }
+
+    QGraphicsView::mouseReleaseEvent(event);
 }
 
 GView::~GView()

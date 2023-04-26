@@ -21,6 +21,7 @@
 #include<QDebug>
 class MYGraphicsScene;
 #include"mygraphicsscene.h"
+#include<qevent.h>
 class GView;
 #include "GView.h"
 
@@ -49,6 +50,7 @@ public slots:
     void stckRedo();
     void AddPort();
     void AddPort(int x, int y, QString name);
+
 public:
 #if QT_CONFIG(wheelevent)
         void wheelEvent(QWheelEvent* e); 

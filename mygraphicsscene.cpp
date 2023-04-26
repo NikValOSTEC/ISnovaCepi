@@ -8,6 +8,7 @@
 MYGraphicsScene::MYGraphicsScene(QObject *parent)
     : QGraphicsScene{parent}
 {
+
 }
 
 
