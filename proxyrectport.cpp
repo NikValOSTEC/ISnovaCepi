@@ -68,10 +68,14 @@ ProxyRectPort::~ProxyRectPort()
 
 }
 
-void ProxyRectPort::Update()
+void ProxyRectPort::Update(bool upd)
 {
-    this->port->Update();
-    ColiderCheck();
+
+    this->port->Update(upd);
+    if (upd)
+    {
+        ColiderCheck();
+    }
 }
 
 int ProxyRectPort::type() const
@@ -79,7 +83,7 @@ int ProxyRectPort::type() const
     return 101;
 }
 
-void ProxyRectPort::ColiderCheck()
+void ProxyRectPort::ColiderCheck(bool upd)
 {
 
     QList<QGraphicsItem *> list = collidingItems(Qt::IntersectsItemBoundingRect);
@@ -88,10 +92,18 @@ void ProxyRectPort::ColiderCheck()
         
         if (PinLineColision* item = dynamic_cast<PinLineColision*>(i))
         {
-            item->FixColliding();
+            if (upd)
+            {
+                item->FixColliding();
+            }
+            else
+            {
+                item->updateShape();
+            }
         }
         else if (Whire* item = dynamic_cast<Whire*>(i))
         {
+
             item->CollisionFix();
         }
 
@@ -107,4 +119,14 @@ qreal ProxyRectPort::XX()
 qreal ProxyRectPort::YY()
 {
     return this->mapToScene(rect.center()).y();
+}
+
+void ProxyRectPort::XX(qreal x)
+{
+    this->rect.moveCenter(mapFromScene(x, mapToScene(rect.center()).y()));
+}
+
+void ProxyRectPort::YY(qreal y)
+{
+    this->rect.moveCenter(mapFromScene(mapToScene(rect.center()).x(),y));
 }

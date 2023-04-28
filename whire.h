@@ -8,6 +8,8 @@
 #include<QVector>
 #include <QGraphicsItem>
 #include <QObject>
+class AddWhireCommand;
+#include"AddWhireCommand.h"
 class Chain;
 #include"chain.h"
 class Pin;
@@ -18,7 +20,8 @@ class Whire : public QGraphicsItem,QObject
 private:
     QPainterPath patt;
 public:
-    Whire(Pin* p1, Pin* p2);
+    AddWhireCommand* command;
+    Whire(Pin* p1, Pin* p2, AddWhireCommand* comm);
     QRectF boundingRect() const override;//
     QPainterPath shape() const override;//
     void updateShape(bool colision = false);
@@ -28,6 +31,7 @@ public:
     void CollisionFix(bool fix=true);
     void move(bool left_rigth, int x);
     Chain* chain;
+    static void AddComandW(Pin* p1, Pin* p2);
 };
 
 #endif // WHIRE_H

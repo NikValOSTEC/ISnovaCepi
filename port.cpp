@@ -3,9 +3,12 @@
 #include "qmenu.h"
 #include "ui_port.h"
 #include <QGridLayout>
+#include<QVBoxLayout>
 #include"mygraphicsscene.h"
-Port::Port(QWidget *parent) :
-    QWidget(parent),
+class RemovePortComand;
+#include"RemoveComand.h"
+Port::Port(AddComand* com,QWidget *parent) :
+    QOpenGLWidget(parent),
     ui(new Ui::Port)
 {
     ui->setupUi(this);
@@ -14,6 +17,7 @@ Port::Port(QWidget *parent) :
     connect(this, SIGNAL(customContextMenuRequested(QPoint)),
         this, SLOT(showContextMenu(QPoint)));
     portsVector.append(this);
+    adcom = com;
 }
 
 Port::~Port()
@@ -68,23 +72,35 @@ void Port::showContextMenu(const QPoint &pos)
 QMenu *Port::ContextMenu()
 {
     QMenu* myMenu = new QMenu();
-    myMenu->addAction("addPin", this, SLOT(addPin()));
+    myMenu->addAction("addPin", this, SLOT(addPinSl()));
     QAction* actionDel = new QAction(tr("delete"), this);
-    connect(actionDel, SIGNAL(triggered()), this, SLOT(Remove()));
+    connect(actionDel, SIGNAL(triggered()), this, SLOT(RemoveSL()));
     actionDel->setMenuRole(QAction::MenuRole::QuitRole);
     myMenu->addAction(actionDel);
     return myMenu;
 }
 
-Pin* Port::addPin(QString name)
+Pin* Port::addPin(QString name,int index)
 {
     auto pn = new Pin(this);
     pn->name(name);
-    this->ui->PinsList->layout()->addWidget(pn);
+    ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertWidget(index,pn);
     auto rec=this->_proxy->geometry();
     rec.setHeight(60+this->height());
     this->_proxy->geometry(rec);
     return pn;
+}
+
+
+Pin* Port::addPinSl(QString name)
+{
+    auto x=new AddPinComand(this);
+    return x->pn;
+}
+
+void Port::RemoveSL()
+{
+    new RemovePortComand(this);
 }
 
 void Port::Remove()
@@ -93,11 +109,11 @@ void Port::Remove()
     delete (x);
 }
 
-void Port::Update()
+void Port::Update(bool updF)
 {
     foreach (auto p, pins())
     {
-        p->EmitUpd();
+        p->EmitUpd(updF);
     }
 }
 

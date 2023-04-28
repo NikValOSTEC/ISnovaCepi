@@ -24,11 +24,13 @@ public:
     QColor color();
     void color(QColor c);
     ~ProxyRectPort();
-    void Update();
+    void Update(bool upd=false);
     int type() const override;
-    void ColiderCheck();
+    void ColiderCheck(bool upd=true);
     qreal XX();
-    qreal YY();
+    qreal YY();    
+    void XX(qreal x);
+    void YY(qreal y);
 private:
     Port* port;
     QColor colo;

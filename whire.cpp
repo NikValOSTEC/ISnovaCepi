@@ -4,9 +4,10 @@
 #include "qpainter.h"
 #include<qobject.h>
 
-Whire::Whire(Pin* p1,Pin*p2)
+Whire::Whire(Pin* p1,Pin*p2,AddWhireCommand* comm)
 {
 
+    this->command = comm;
     if(p1->chain==nullptr&&p2->chain==nullptr)
         chain = new Chain();
     else if (p1->chain == p2->chain)
@@ -79,22 +80,9 @@ void Whire::updateShape(bool colision)
     }
     else
     {
-        patt = QPainterPath();
-        Pin* top, * bottom;
-        if (p1->y() < p2->y())
-        {
-            top = p1;
-            bottom = p2;
-        }
-        else
-        {
-            top = p2;
-            bottom = p1;
-        }
-
-
-        patt.moveTo(top->Dot()->x(), top->Dot()->y());
-        patt.lineTo(bottom->Dot()->x(), bottom->Dot()->y());
+        patt.clear();
+        patt.moveTo(p1->Dot()->x(), p1->Dot()->y());
+        patt.lineTo(p2->Dot()->x(), p2->Dot()->y());
     }
 
 }
@@ -106,14 +94,13 @@ void Whire::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
     else
         painter->setPen(QPen(chain->color, 5));
     painter->drawPath(shape());
-    painter->setPen(QPen(Qt::blue, 2));
-    painter->drawRect(boundingRect());
 }
 
 Whire::~Whire()
 {
     p1->Dot()->RemoveWhire(this);
     p2->Dot()->RemoveWhire(this);
+
 }
 
 void Whire::CollisionFix(bool fix)
@@ -219,6 +206,11 @@ void Whire::move(bool left_rigth, int x)
     else
         p1->Dot()->x(p1->Dot()->x()+x);
     p1->Dot()->Uupdate();
+}
+
+void Whire::AddComandW(Pin* p1, Pin* p2)
+{
+    new AddWhireCommand(p1->command, p2->command);
 }
 
 

@@ -5,6 +5,7 @@
 #include <QStyle>
 #include"GItemFrame.h"
 #include"AddComand.h"
+#include <QOpenGLPaintDevice>
 #include<QShortCut>
 
 View::View()
@@ -104,7 +105,7 @@ GView* View::view()
 
 QMenu* View::ContextMenu()
 {
-    QMenu* myMenu = new QMenu();    myMenu->addAction("AddPort", this, SLOT(AddPort()));
+    QMenu* myMenu = new QMenu();    myMenu->addAction("AddPort", this, SLOT(AdddPort()));
     return myMenu;
 }
 
@@ -119,7 +120,7 @@ void View::stckRedo()
     stack->redo();
 }
 
-void View::AddPort()
+void View::AdddPort()
 {
     QPoint globalPos = QCursor::pos();
     qDebug() << globalPos;
@@ -131,7 +132,7 @@ void View::AddPort()
     
 }
 
-void View::AddPort(int x, int y, QString name)
+void View::AdddPort(int x, int y, QString name)
 {
 
     new AddComand(this, x, y,name);
@@ -140,5 +141,6 @@ void View::AddPort(int x, int y, QString name)
 
 void View::stckUndo()
 {
+    auto com=stack->command(stack->index());
     stack->undo();
 }

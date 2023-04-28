@@ -11,4 +11,6 @@ public:
 	void undo() override;
 	void redo() override;
 	QString name;
+	AddComand* addcom;
+	View* v;
 };

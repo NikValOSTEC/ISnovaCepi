@@ -32,7 +32,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>6.3.1_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;openglwidgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -97,16 +97,17 @@
     <ClCompile Include="port.cpp" />
     <ClCompile Include="proxyrectport.cpp" />
     <ClCompile Include="RemoveComand.cpp" />
-    <ClCompile Include="RemoveFromChainComand.cpp" />
     <ClCompile Include="RemovePinCommand.cpp" />
     <ClCompile Include="view.cpp" />
     <ClCompile Include="whire.cpp" />
+    <ClCompile Include="WhireRemoveComand.cpp" />
     <QtRcc Include="ChainsHive.qrc" />
     <ClCompile Include="chain.cpp" />
     <ClCompile Include="dot.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="WhireRemoveComand.h" />
     <QtMoc Include="chain.h" />
     <QtMoc Include="chaintable.h" />
     <ClInclude Include="AddComand.h" />
@@ -121,7 +122,6 @@
     <ClInclude Include="proxyrectport.h" />
     <ClInclude Include="RemoveComand.h" />
     <ClInclude Include="RemovePinCommand.h" />
-    <ClInclude Include="RemoveFromChainComand.h" />
     <ClInclude Include="whire.h" />
     <QtMoc Include="view.h" />
     <QtMoc Include="port.h" />

@@ -48,10 +48,14 @@ signals:
 public slots:
     void stckUndo();
     void stckRedo();
-    void AddPort();
-    void AddPort(int x, int y, QString name);
+    void AdddPort();
+    void AdddPort(int x, int y, QString name);
 
 public:
+    void stackPush(QUndoCommand* com)
+    {
+        stack->push(com);
+    }
 #if QT_CONFIG(wheelevent)
         void wheelEvent(QWheelEvent* e); 
 #endif

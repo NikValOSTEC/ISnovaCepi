@@ -12,7 +12,7 @@ public:
 	ChainTable();
 	~ChainTable();
 	View* view=nullptr;
-	void AddPort();
+	void AdddPort();
 	void AddChain();
 public slots:
 	void UpdateTable();

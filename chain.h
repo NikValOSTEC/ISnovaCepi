@@ -6,6 +6,7 @@ class Pin;
 #include<QObject>
 #include"pin.h"
 #include<qobject.h>
+#include"WhireRemoveComand.h"
 class Chain :public QObject
 {
     Q_OBJECT

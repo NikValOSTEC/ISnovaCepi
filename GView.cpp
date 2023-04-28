@@ -1,5 +1,6 @@
 #include "GView.h"
 #include "proxyrectport.h"
+#include <QOpenGLPaintDevice>
 #include "dot.h"
 
 GView::GView(QObject* parent) : QGraphicsView()
@@ -19,12 +20,12 @@ void GView::mouseMoveEvent(QMouseEvent* event)
 
         if (items[i]->type() == 100)
         {
-            ((dot*)items[i])->Uupdate();
+            ((dot*)items[i])->Uupdate(false);
 
         }
         else if (items[i]->type() == 101)
         {
-            ((ProxyRectPort*)items[i])->Update();
+            ((ProxyRectPort*)items[i])->Update(false);
         }
     }
     QGraphicsView::mouseMoveEvent(event);
@@ -33,15 +34,6 @@ void GView::mouseMoveEvent(QMouseEvent* event)
 void GView::mouseReleaseEvent(QMouseEvent* event)
 {
     QList<QGraphicsItem*> items = GScene()->selectedItems();
-    if (items.count() == lastselected)
-    {
-        GScene()->clearSelection();
-        lastselected = 0;
-    }
-    else
-    {
-        lastselected = items.count();
-    }
     for (int i = 0; i < items.count(); i++)
     {
         if (items[i]->type() == 100)
@@ -51,11 +43,29 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
         }
         else if (items[i]->type() == 101)
         {
-            ((ProxyRectPort*)items[i])->Update();
+            ((ProxyRectPort*)items[i])->Update(true);
         }
     }
 
-    QGraphicsView::mouseReleaseEvent(event);
+    QGraphicsView::mouseReleaseEvent(event);    
+    if (items.count() == lastselected || items.count() == 1)
+    {
+        GScene()->clearSelection();
+        lastselected = 0;
+    }
+    else
+    {
+        lastselected = items.count();
+    }
+}
+
+void GView::mousePressEvent(QMouseEvent* event)
+{
+    QGraphicsItem* item = GScene()->itemAt(mapToScene(event->pos()),QTransform());
+
+    ((ProxyRectPort*)item)->ColiderCheck(false);
+    QGraphicsView::mousePressEvent(event);
+
 }
 
 GView::~GView()

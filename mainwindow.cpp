@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-
 #include<qtabwidget.h>
 #include"chaintable.h"
 MainWindow::MainWindow(QWidget *parent)
@@ -12,8 +11,6 @@ MainWindow::MainWindow(QWidget *parent)
     QGridLayout* lay = new QGridLayout();
     v = new View();
     minima = new minimap(v);
-    QPainter painter;
-    painter.begin(this);
     lay->addWidget(v);
     lay->addWidget(minima);
     ui->centralwidget->setLayout(lay);

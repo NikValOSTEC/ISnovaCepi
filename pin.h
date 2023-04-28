@@ -12,7 +12,7 @@ class dot;
 #include"dot.h"
 class PinLineColision;
 #include"pinlinecolision.h"
-class Pin;
+class Chain;
 #include"chain.h"
 #include<qstring.h>
 #include <QColorDialog>
@@ -29,6 +29,7 @@ class Pin : public QLineEdit
 public:
     explicit Pin(Port* port,QLineEdit *parent = nullptr);
     ~Pin();
+    int index();
     const QString name();
     void name(QString name);
 public slots:
@@ -36,7 +37,8 @@ public slots:
 signals:
     void updSignal();
 public:
-    void EmitUpd();
+    void EmitUpd(bool dot=false);
+    PinLineColision* getpinWhire();
     Port* parCon;
     virtual void mousePressEvent(QMouseEvent* event) override;
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
@@ -49,14 +51,16 @@ public:
     void pinWhire(bool show=true);
     void PinWUpd();
     Chain* chain;
+    AddPinComand* command;
 protected:
     virtual QMenu* ContextMenu();
 
+    bool upd = false; //ƒ‡ ˝ÚÓ Õ≈¬≈–Œﬂ“Õ¿ﬂ «¿À”œ¿
 public slots:
     void RemoveFromChain();
+    void Remove();
 protected slots:
     virtual void showContextMenu(const QPoint& pos);
-    void Remove();
     void ChangeColor();
 
 

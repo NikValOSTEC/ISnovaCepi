@@ -8,6 +8,7 @@
 #include<QDrag>
 #include<QMimeData>
 #include<QGraphicsScene>
+#include"RemovePinCommand.h"
 
 Pin::Pin(Port* port, QLineEdit* parent) :
     QLineEdit(parent),
@@ -35,6 +36,11 @@ Pin::~Pin()
     delete(pinW);
 }
 
+int Pin::index()
+{
+    return parCon->pins().indexOf(this);
+}
+
 const QString Pin::name()
 {
     return text();
@@ -50,15 +56,21 @@ void Pin::name(QString name)
 
 void Pin::Update()
 {
-    d->Uupdate(true);
-    PinWUpd();
-    pinW->FixColliding();
+
+    d->Uupdate(upd);
+
 }
 
 
-void Pin::EmitUpd()
+void Pin::EmitUpd(bool dot)
 {
+    upd = dot;
     emit updSignal();
+}
+
+PinLineColision* Pin::getpinWhire()
+{
+    return pinW;
 }
 
 void Pin::mousePressEvent(QMouseEvent* event)
@@ -102,7 +114,7 @@ void Pin::dropEvent(QDropEvent* event)
         Pin* fpin = (Pin*)address;
         if (fpin != this)
         {
-            AddWhireCommand(fpin, this);
+            new AddWhireCommand(fpin->command, this->command);
         }
     }
     else
@@ -202,7 +214,7 @@ void Pin::RemoveFromChain()
 
 void Pin::Remove()
 {
-    delete this;
+    new RemovePinCommand(this);
 }
 
 void Pin::ChangeColor()

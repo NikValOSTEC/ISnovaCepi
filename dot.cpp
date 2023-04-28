@@ -4,6 +4,7 @@
 #include"pin.h"
 #include<QColor>
 #include<QGraphicsScene>
+#include <QOpenGLPaintDevice>
 
 dot::~dot()
 {
@@ -29,6 +30,7 @@ dot::dot(Pin* p, QThread* thr)
 
 void dot::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+    painter = new QPainter(new QOpenGLPaintDevice());
     painter->setPen(QPen(color));
     painter->setBrush(QBrush(color));
     painter->drawPath(shape());
@@ -77,21 +79,26 @@ void dot::y(int y)
 
 void dot::Uupdate(bool collision, QVector<dot*>* nnot)
 {
-    nnot->append(this);
     y(pin->y());
-    for(int i=0;i<whires.count();i++)
+    for (int i = 0; i < whires.count(); i++)
     {
         whires[i]->updateShape(collision);
     }
-    for(int i=0;i<verticalMove.count();i++)
+    nnot->append(this);
+    for (int i = 0; i < verticalMove.count(); i++)
     {
-        if(!nnot->contains(verticalMove[i]))
+        if (!nnot->contains(verticalMove[i]))
         {
             verticalMove[i]->x(x());
-            verticalMove[i]->Uupdate(collision,nnot);
+            verticalMove[i]->Uupdate(collision, nnot);
         }
     }
+    
     pin->PinWUpd();
+    if(collision)
+    {
+        pin->getpinWhire()->FixColliding();
+    }
 }
 
 
@@ -119,6 +126,12 @@ void dot::RemoveWhire(Whire *w)
                 }
             }
             verticalMove.clear();
+            this->pin->RemoveFromChain();
+        }
+        else
+        {
+
+            pin->pinWhire(false);
         }
     }
 }

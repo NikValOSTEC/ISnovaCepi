@@ -98,7 +98,7 @@ ChainTable::~ChainTable()
 
 }
 
-void ChainTable::AddPort()
+void ChainTable::AdddPort()
 {
 	QPointF pos;
 	if (Port::portsVector.count() < 1)
@@ -111,7 +111,7 @@ void ChainTable::AddPort()
 	{
 		return;
 	}
-	view->AddPort(pos.x(), pos.y(), "");
+	view->AdddPort(pos.x(), pos.y(), "");
 	UpdateTable();
 }
 
@@ -157,7 +157,7 @@ void ChainTable::CellChange(int row, int column)
 				[&spp](auto x) { return x->name() == spp;  });
 			if ((found) == portpns.end())
 			{
-				auto pn=Port::portsVector[i]->addPin(spp);
+				auto pn=Port::portsVector[i]->addPinSl(spp);
 				addPin.append(pn);
 				pins.append(pn);
 
@@ -187,16 +187,16 @@ void ChainTable::CellChange(int row, int column)
 			{
 				addPin[i]->RemoveFromChain();
 				if (pins[0] != addPin[i])
-					new Whire(addPin[i], pins[0]);
+					Whire::AddComandW(addPin[i], pins[0]);
 				else
-					new Whire(addPin[i], pins[1]);
+					Whire::AddComandW(addPin[i], pins[1]);
 			}
 			else
 			{
 				if (pins[0] != addPin[i])
-					new Whire(addPin[i], pins[0]);
+					Whire::AddComandW(addPin[i], pins[0]);
 				else
-					new Whire(addPin[i], pins[1]);
+					Whire::AddComandW(addPin[i], pins[1]);
 
 			}
 		}
@@ -207,7 +207,7 @@ void ChainTable::CellClck(int row, int colum)
 {
 	if ((row == this->rowCount() - 1) && (colum == 1))
 	{
-		AddPort();
+		AdddPort();
 	}
 	else if ((row == this->rowCount() - 1) && (colum == 0))
 	{
