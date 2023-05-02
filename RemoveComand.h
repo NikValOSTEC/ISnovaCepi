@@ -13,4 +13,5 @@ public:
 	QString name;
 	AddComand* addcom;
 	View* v;
+	int xx, yy;
 };

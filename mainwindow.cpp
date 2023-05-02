@@ -11,9 +11,6 @@ MainWindow::MainWindow(QWidget *parent)
     QGridLayout* lay = new QGridLayout();
     v = new View();
     minima = new minimap(v);
-    lay->addWidget(v);
-    lay->addWidget(minima);
-    ui->centralwidget->setLayout(lay);
     lay->addWidget(v, 1, 0, 1, 1);
     minima->raise();
     lay->addWidget(minima, 1, 0, Qt::AlignBottom);
@@ -28,12 +25,25 @@ MainWindow::MainWindow(QWidget *parent)
     auto bar = new QMenuBar();
     setMenuBar(bar);
     auto m = new QMenu("View", this);
-    QAction* actionNew = new QAction(tr("hide"), this);
+    QAction* actionNew = new QAction(tr("Hide Map"), this);
     actionNew->setShortcutVisibleInContextMenu(true);
     connect(actionNew, SIGNAL(triggered()), this, SLOT(hidemMap()));
     m->addAction(actionNew);
     actionNew->setCheckable(true);
     bar->addMenu(m);
+
+    m = new QMenu("Edit", this);
+    actionNew = new QAction(tr("Undo"), this);
+    actionNew->setShortcutVisibleInContextMenu(true);
+    connect(actionNew, SIGNAL(triggered()), this->v, SLOT(stckUndo()));
+    m->addAction(actionNew);
+    actionNew = new QAction(tr("Redo"), this);
+    actionNew->setShortcutVisibleInContextMenu(true);
+    connect(actionNew, SIGNAL(triggered()), this->v, SLOT(stckRedo()));
+    m->addAction(actionNew);
+    bar->addMenu(m);
+
+
     hidemMap();
 
 }

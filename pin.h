@@ -16,6 +16,7 @@ class Chain;
 #include"chain.h"
 #include<qstring.h>
 #include <QColorDialog>
+#include"ui_pin.h"
 #include"AddWhireCommand.h"
 
 namespace Ui {
@@ -27,6 +28,7 @@ class Pin : public QLineEdit
     Q_OBJECT
 
 public:
+    Pin() {}
     explicit Pin(Port* port,QLineEdit *parent = nullptr);
     ~Pin();
     int index();
@@ -44,8 +46,8 @@ public:
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
     virtual void dropEvent(QDropEvent* event) override;
     virtual void dragMoveEvent(QDragMoveEvent* event) override;
-    dot* Dot(bool recalc=false);
-    dot* Dot(dot* d);
+    virtual dot* Dot(bool recalc=false);
+    virtual dot* Dot(dot* d);
     qreal x();
     qreal y();
     void pinWhire(bool show=true);
@@ -54,6 +56,7 @@ public:
     AddPinComand* command;
 protected:
     virtual QMenu* ContextMenu();
+    Ui::Pin *ui;
 
     bool upd = false; //ƒ‡ ˝ÚÓ Õ≈¬≈–Œﬂ“Õ¿ﬂ «¿À”œ¿
 public slots:
@@ -66,7 +69,6 @@ protected slots:
 
 private:
     bool updaterbl;
-    Ui::Pin *ui;
     dot* d;
     PinLineColision* pinW;
     QThread* thread;

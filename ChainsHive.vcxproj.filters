@@ -91,6 +91,12 @@
     <ClCompile Include="WhireRemoveComand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="portlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="portparent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mygraphicsscene.h">
@@ -132,6 +138,9 @@
     <ClInclude Include="WhireRemoveComand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="portlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -153,6 +162,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="chaintable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="portparent.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

@@ -29,6 +29,8 @@ Pin::Pin(Port* port, QLineEdit* parent) :
     connect(this, &Pin::updSignal, this, &Pin::Update);
 }
 
+
+
 Pin::~Pin()
 {
     RemoveFromChain();

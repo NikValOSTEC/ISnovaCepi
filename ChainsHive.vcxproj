@@ -95,6 +95,8 @@
     <ClCompile Include="pin.cpp" />
     <ClCompile Include="pinlinecolision.cpp" />
     <ClCompile Include="port.cpp" />
+    <ClCompile Include="portlib.cpp" />
+    <ClCompile Include="portparent.cpp" />
     <ClCompile Include="proxyrectport.cpp" />
     <ClCompile Include="RemoveComand.cpp" />
     <ClCompile Include="RemovePinCommand.cpp" />
@@ -107,6 +109,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="portlib.h" />
+    <QtMoc Include="portparent.h" />
     <ClInclude Include="WhireRemoveComand.h" />
     <QtMoc Include="chain.h" />
     <QtMoc Include="chaintable.h" />

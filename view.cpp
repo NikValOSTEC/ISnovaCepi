@@ -123,11 +123,8 @@ void View::stckRedo()
 void View::AdddPort()
 {
     QPoint globalPos = QCursor::pos();
-    qDebug() << globalPos;
     QPoint pos = graphicsview->mapFromGlobal(globalPos);
-    qDebug() << pos;
     pos = graphicsview->mapToScene(pos).toPoint();
-    qDebug() << pos;
     new AddComand(this, pos.x(), pos.y());
     
 }
@@ -141,6 +138,5 @@ void View::AdddPort(int x, int y, QString name)
 
 void View::stckUndo()
 {
-    auto com=stack->command(stack->index());
     stack->undo();
 }

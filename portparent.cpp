@@ -1,4 +1,4 @@
-#include "port.h"
+#include "portparent.h"
 #include "qgraphicsproxywidget.h"
 #include "qmenu.h"
 #include "ui_port.h"
@@ -9,8 +9,8 @@ class RemovePortComand;
 #include"RemoveComand.h"
 class RemovePinCommand;
 #include"RemovePinCommand.h"
-Port::Port(AddComand* com,QWidget *parent) :
-    QOpenGLWidget(parent),
+PortParent::PortParent() :
+    QOpenGLWidget(),
     ui(new Ui::Port)
 {
     ui->setupUi(this);
@@ -18,42 +18,33 @@ Port::Port(AddComand* com,QWidget *parent) :
     this->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this, SIGNAL(customContextMenuRequested(QPoint)),
         this, SLOT(showContextMenu(QPoint)));
-    portsVector.append(this);
-    adcom = com;
 }
 
 
 
-Port::~Port()
+PortParent::~PortParent()
 {
-    foreach(auto p, pins())
-    {
-        new RemovePinCommand(p);
-    }
-    delete ui;
-    portsVector.removeOne(this);
 
 }
 
-
-QString Port::name()
+QString PortParent::name()
 {
     return ui->Name->text();
 }
 
-void Port::name(QString str)
+void PortParent::name(QString str)
 {
     ui->Name->setText(str);
 }
 
-QVector<Pin*> Port::pins()
+QVector<Pin*> PortParent::pins()
 {
-    auto objs= ui->PinsList->children().toVector();
+    auto objs = ui->PinsList->children().toVector();
     QVector<Pin*> res = QVector<Pin*>();
     foreach(auto vr, objs)
     {
         auto pn = dynamic_cast<Pin*>(vr);
-        if(pn)
+        if (pn)
             res.append(pn);
     }
     return res;
@@ -63,18 +54,18 @@ QVector<Pin*> Port::pins()
 
 
 
-void Port::on_pushButton_clicked()
+void PortParent::on_pushButton_clicked()
 {
 
 }
 
-void Port::showContextMenu(const QPoint &pos)
+void PortParent::showContextMenu(const QPoint& pos)
 {
     QPoint globalPos = this->mapToGlobal(pos);
     ContextMenu()->exec(globalPos);
 }
 
-QMenu *Port::ContextMenu()
+QMenu* PortParent::ContextMenu()
 {
     QMenu* myMenu = new QMenu();
     myMenu->addAction("addPin", this, SLOT(addPinSl()));
@@ -85,54 +76,53 @@ QMenu *Port::ContextMenu()
     return myMenu;
 }
 
-Pin* Port::addPin(QString name,int index)
+Pin* PortParent::addPin(QString name, int index)
 {
-    auto pn = new Pin(this);
+    auto pn = new Pin();
     pn->name(name);
-    ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertWidget(index,pn);
-    auto rec=this->_proxy->geometry();
-    rec.setHeight(60+this->height());
+    ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertWidget(index, pn);
+    auto rec = this->_proxy->geometry();
+    rec.setHeight(60 + this->height());
     this->_proxy->geometry(rec);
     return pn;
 }
 
 
-Pin* Port::addPinSl(QString name)
+Pin* PortParent::addPinSl(QString name)
 {
-    auto x=new AddPinComand(this);
-    return x->pn;
+    return addPin();
 }
 
-void Port::RemoveSL()
+void PortParent::RemoveSL()
 {
-    new RemovePortComand(this);
+    delete this;
 }
 
-void Port::Remove()
+void PortParent::Remove()
 {
-    auto x=graphicsProxyWidget()->parentItem();
+    auto x = graphicsProxyWidget()->parentItem();
     delete (x);
 }
 
-void Port::Update(bool updF)
+void PortParent::Update(bool updF)
 {
-    foreach (auto p, pins())
+    foreach(auto p, pins())
     {
         p->EmitUpd(updF);
     }
 }
 
-ProxyRectPort* Port::proxy()
+ProxyRectPort* PortParent::proxy()
 {
     return _proxy;
 }
 
-void Port::proxy(ProxyRectPort *prox)
+void PortParent::proxy(ProxyRectPort* prox)
 {
-    _proxy=prox;
+    _proxy = prox;
 }
 
-void Port::setFilter()
+void PortParent::setFilter()
 {
 
 }
