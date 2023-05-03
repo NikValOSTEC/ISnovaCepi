@@ -7,6 +7,8 @@
 #include"AddComand.h"
 #include <QOpenGLPaintDevice>
 #include<QShortCut>
+#include<qmimedata.h>
+#include "PortTwmplateObject.h"
 
 View::View()
 {
@@ -133,6 +135,47 @@ void View::AdddPort(int x, int y, QString name)
 {
 
     new AddComand(this, x, y,name);
+}
+
+void View::dropEvent(QDropEvent* event)
+{
+    if (event->mimeData()->hasFormat("PortTemp"))
+    {
+        QVariant var = QVariant::fromValue(QString::fromUtf8(event->mimeData()->data("Pin")));
+        uintptr_t address = var.value<uintptr_t>();
+        PortTwmplateObject* obj = (PortTwmplateObject*)address;
+        if (obj)
+        {
+            auto comand = new AddComand(this, 0, 0);
+            comand->p->name(obj->templ->name());
+            foreach(auto pn, obj->templ->pins())
+            {
+                comand->p->addPin(pn->name());
+            }
+        }
+    }
+    else
+        event->ignore();
+}
+
+void View::dragEnterEvent(QDragEnterEvent* event)
+{
+    if (event->mimeData()->hasFormat("PortTemp"))
+    {
+        event->accept();
+    }
+    else
+        event->ignore();
+}
+
+void View::dragMoveEvent(QDragMoveEvent* event)
+{
+    if (event->mimeData()->hasFormat("PortTemp"))
+    {
+        event->accept();
+    }
+    else
+        event->ignore();
 }
 
 

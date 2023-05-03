@@ -28,8 +28,7 @@ class Pin : public QLineEdit
     Q_OBJECT
 
 public:
-    Pin() {}
-    explicit Pin(Port* port,QLineEdit *parent = nullptr);
+    explicit Pin(Port* port,bool bl=true,QLineEdit *parent = nullptr);
     ~Pin();
     int index();
     const QString name();

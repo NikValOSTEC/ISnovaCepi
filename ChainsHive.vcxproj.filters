@@ -94,7 +94,13 @@
     <ClCompile Include="portlib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="portparent.cpp">
+    <ClCompile Include="PinTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PortTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PortTwmplateObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -149,9 +155,6 @@
     <QtMoc Include="pin.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="port.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="view.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -164,7 +167,16 @@
     <QtMoc Include="chaintable.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="portparent.h">
+    <QtMoc Include="port.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PinTemplate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PortTemplate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PortTwmplateObject.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include<qtabwidget.h>
 #include"chaintable.h"
+#include"PortTwmplateObject.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -10,6 +11,23 @@ MainWindow::MainWindow(QWidget *parent)
     QWidget* w = new QWidget();
     QGridLayout* lay = new QGridLayout();
     v = new View();
+    QWidget* central = new QWidget();
+    central->setSizePolicy(QSizePolicy::QSizePolicy::Expanding, QSizePolicy::Expanding);
+    TempList = new QScrollArea;
+    QHBoxLayout* layou = new QHBoxLayout();
+    central->setLayout(layou);
+    TempList->setWidget(central);
+    TempList->setWidgetResizable(true);
+    TempList->widget()->layout()->setAlignment(Qt::AlignLeft);
+    central->setSizePolicy(QSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding));
+    TempList->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+    lay->addWidget(TempList);
+
+    auto plusbt = new QPushButton("+");
+    plusbt->setFixedSize(QSize(50, 50));
+
+    connect(plusbt, SIGNAL(clicked()), this, SLOT(AddTemp()));
+    TempList->widget()->layout()->addWidget(plusbt);
     minima = new minimap(v);
     lay->addWidget(v, 1, 0, 1, 1);
     minima->raise();
@@ -51,6 +69,18 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::AddTemp(Port* p)
+{
+    auto tmp=new PortTwmplateObject();
+    tmp->templ->name(p->name());
+    foreach(auto pn, p->pins())
+    {
+        tmp->templ->addPin(pn->name());
+    }
+    tmp->setFixedSize(QSize(70, 100));
+    TempList->widget()->layout()->addWidget(tmp);
 }
 
 void MainWindow::hidemMap()

@@ -50,7 +50,9 @@ public slots:
     void stckRedo();
     void AdddPort();
     void AdddPort(int x, int y, QString name);
-
+    void dropEvent(QDropEvent* event);
+    void dragEnterEvent(QDragEnterEvent* event) override;
+    void dragMoveEvent(QDragMoveEvent* event) override;
 public:
     void stackPush(QUndoCommand* com)
     {

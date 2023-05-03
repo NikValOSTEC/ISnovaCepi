@@ -1,22 +1,39 @@
 #ifndef PORT_H
 #define PORT_H
 
-#include"portparent.h"
+#include <QWidget>
+class Pin;
+#include "pin.h"
+class ProxyRectPort;
+#include"proxyrectport.h"
+#include"AddPinComand.h"
+class AddComand;
+#include "AddComand.h"
+#include <QOpenGLWidget>
 
 namespace Ui {
 class Port;
 }
 
-class Port : public PortParent,QOpenGLWidget
+class Port : public QOpenGLWidget
 {
     Q_OBJECT
 
 public:
     explicit Port(AddComand* com, QWidget *parent = nullptr);
+    Port();
     virtual ~Port();
+
+    QString name();
+    void name(QString str);
+    static QVector<Port*> portsVector;
+    QVector<Pin*>pins();
     AddComand* adcom;
-    void Remove() override;
-    Pin* addPin(QString name = "", int index = -1) override;
+    void Remove();
+private slots:
+    void on_pushButton_clicked();
+public slots:
+    virtual Pin* addPin(QString name = "", int index = -1);
     void showContextMenu(const QPoint& pos);
     virtual Pin* addPinSl(QString name="");
     virtual void RemoveSL();

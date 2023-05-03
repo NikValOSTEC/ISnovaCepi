@@ -10,7 +10,8 @@
 #include<QGraphicsScene>
 #include"RemovePinCommand.h"
 
-Pin::Pin(Port* port, QLineEdit* parent) :
+
+Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     QLineEdit(parent),
     ui(new Ui::Pin)
 {
@@ -23,10 +24,19 @@ Pin::Pin(Port* port, QLineEdit* parent) :
     chain = nullptr;
     thread = new QThread();
     moveToThread(thread);
-    pinW = new PinLineColision(this, thread);    
-    port->graphicsProxyWidget()->scene()->addItem(pinW);
-    pinWhire(false);
-    connect(this, &Pin::updSignal, this, &Pin::Update);
+
+    if (bl)
+    {
+        pinW = new PinLineColision(this, thread);
+        port->graphicsProxyWidget()->scene()->addItem(pinW);
+        pinWhire(false);
+        connect(this, &Pin::updSignal, this, &Pin::Update);
+    }
+    else
+    {
+        d = nullptr;
+        pinW = nullptr;
+    }
 }
 
 
@@ -34,8 +44,10 @@ Pin::Pin(Port* port, QLineEdit* parent) :
 Pin::~Pin()
 {
     RemoveFromChain();
-    delete(d);
-    delete(pinW);
+    if(d!=nullptr)
+        delete(d);
+    if (pinW != nullptr)
+        delete(pinW);
 }
 
 int Pin::index()

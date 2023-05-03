@@ -22,19 +22,23 @@ Port::Port(AddComand* com,QWidget *parent) :
     adcom = com;
 }
 
+Port::Port():
+    ui(new Ui::Port)
+{
+    ui->setupUi(this);
+    ui->PinsList->layout()->setAlignment(Qt::AlignTop);
+    this->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(this, SIGNAL(customContextMenuRequested(QPoint)),
+        this, SLOT(showContextMenu(QPoint)));
+}
+
 
 
 Port::~Port()
 {
-    foreach(auto p, pins())
-    {
-        new RemovePinCommand(p);
-    }
     delete ui;
-    portsVector.removeOne(this);
 
 }
-
 
 QString Port::name()
 {
@@ -111,6 +115,11 @@ void Port::RemoveSL()
 void Port::Remove()
 {
     auto x=graphicsProxyWidget()->parentItem();
+    foreach(auto p, pins())
+    {
+        new RemovePinCommand(p);
+    }
+    portsVector.removeOne(this);
     delete (x);
 }
 

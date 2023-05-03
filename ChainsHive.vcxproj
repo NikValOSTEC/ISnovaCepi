@@ -94,9 +94,11 @@
     <ClCompile Include="mygraphicsscene.cpp" />
     <ClCompile Include="pin.cpp" />
     <ClCompile Include="pinlinecolision.cpp" />
+    <ClCompile Include="PinTemplate.cpp" />
     <ClCompile Include="port.cpp" />
     <ClCompile Include="portlib.cpp" />
-    <ClCompile Include="portparent.cpp" />
+    <ClCompile Include="PortTemplate.cpp" />
+    <ClCompile Include="PortTwmplateObject.cpp" />
     <ClCompile Include="proxyrectport.cpp" />
     <ClCompile Include="RemoveComand.cpp" />
     <ClCompile Include="RemovePinCommand.cpp" />
@@ -109,8 +111,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="PinTemplate.h" />
     <ClInclude Include="portlib.h" />
-    <QtMoc Include="portparent.h" />
+    <QtMoc Include="PortTemplate.h" />
+    <QtMoc Include="PortTwmplateObject.h" />
     <ClInclude Include="WhireRemoveComand.h" />
     <QtMoc Include="chain.h" />
     <QtMoc Include="chaintable.h" />

@@ -9,6 +9,7 @@
 #include"view.h"
 #include"minimap.h"
 #include <QMainWindow>
+#include"PortTemplate.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,10 +23,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 public slots:
+    void AddTemp(Port* p=new Port());
+public slots:
     void hidemMap();
 private:
     Ui::MainWindow *ui;
     View* v;
     minimap* minima;
+    QScrollArea* TempList;
 };
 #endif // MAINWINDOW_H
