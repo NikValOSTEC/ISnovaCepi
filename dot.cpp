@@ -126,11 +126,11 @@ void dot::RemoveWhire(Whire *w)
                 }
             }
             verticalMove.clear();
+            pin->pinWhire(false);
         }
         else
         {
 
-            pin->pinWhire(false);
         }
     }
 }
