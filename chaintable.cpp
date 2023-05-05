@@ -98,7 +98,7 @@ ChainTable::~ChainTable()
 
 }
 
-void ChainTable::AdddPort()
+void ChainTable::AdddPortSL()
 {
 	QPointF pos;
 	if (Port::portsVector.count() < 1)
@@ -111,7 +111,7 @@ void ChainTable::AdddPort()
 	{
 		return;
 	}
-	view->AdddPort(pos.x(), pos.y(), "");
+	view->AdddPortSL(pos.x(), pos.y(), "");
 	UpdateTable();
 }
 
@@ -207,7 +207,7 @@ void ChainTable::CellClck(int row, int colum)
 {
 	if ((row == this->rowCount() - 1) && (colum == 1))
 	{
-		AdddPort();
+		AdddPortSL();
 	}
 	else if ((row == this->rowCount() - 1) && (colum == 0))
 	{

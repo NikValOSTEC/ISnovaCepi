@@ -24,6 +24,8 @@ class MYGraphicsScene;
 #include<qevent.h>
 class GView;
 #include "GView.h"
+class AddComand;
+#include"AddComand.h"
 
 class View : public QFrame
 {
@@ -48,12 +50,14 @@ signals:
 public slots:
     void stckUndo();
     void stckRedo();
-    void AdddPort();
-    void AdddPort(int x, int y, QString name);
-    void dropEvent(QDropEvent* event);
-    void dragEnterEvent(QDragEnterEvent* event) override;
-    void dragMoveEvent(QDragMoveEvent* event) override;
+    void AdddPortSL();
+    void AdddPortSL(int x, int y, QString name);
+
 public:
+
+    AddComand* AdddPort();
+    AddComand* AdddPort(int x, int y, QString name);
+
     void stackPush(QUndoCommand* com)
     {
         stack->push(com);

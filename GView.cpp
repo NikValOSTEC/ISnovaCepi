@@ -2,6 +2,8 @@
 #include "proxyrectport.h"
 #include <QOpenGLPaintDevice>
 #include "dot.h"
+#include"qmimedata.h"
+#include "PortTwmplateObject.h"
 
 GView::GView(QObject* parent) : QGraphicsView()
 {
@@ -66,6 +68,46 @@ void GView::mousePressEvent(QMouseEvent* event)
     ((ProxyRectPort*)item)->ColiderCheck(false);
     QGraphicsView::mousePressEvent(event);
 
+}
+
+void GView::dropEvent(QDropEvent* event)
+{
+    if (event->mimeData()->hasFormat("PortTemp"))
+    {
+        QVariant var = QVariant::fromValue(QString::fromUtf8(event->mimeData()->data("PortTemp")));
+        uintptr_t address = var.value<uintptr_t>();
+        PortTwmplateObject* obj = (PortTwmplateObject*)address;
+        if (obj)
+        {
+            auto comand = GScene()->Mview->AdddPort();
+            foreach(auto pn, obj->templ->pins())
+            {
+                comand->p->addPin(pn->name());
+            }
+        }
+    }
+    else
+        event->ignore();
+}
+
+void GView::dragEnterEvent(QDragEnterEvent* event)
+{
+    if (event->mimeData()->hasFormat("PortTemp"))
+    {
+        event->accept();
+    }
+    else
+        event->ignore();
+}
+
+void GView::dragMoveEvent(QDragMoveEvent* event)
+{
+    if (event->mimeData()->hasFormat("PortTemp"))
+    {
+        event->accept();
+    }
+    else
+        event->ignore();
 }
 
 GView::~GView()

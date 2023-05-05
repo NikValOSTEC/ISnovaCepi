@@ -107,7 +107,7 @@ GView* View::view()
 
 QMenu* View::ContextMenu()
 {
-    QMenu* myMenu = new QMenu();    myMenu->addAction("AddPort", this, SLOT(AdddPort()));
+    QMenu* myMenu = new QMenu();    myMenu->addAction("AddPort", this, SLOT(AdddPortSL()));
     return myMenu;
 }
 
@@ -122,7 +122,7 @@ void View::stckRedo()
     stack->redo();
 }
 
-void View::AdddPort()
+void View::AdddPortSL()
 {
     QPoint globalPos = QCursor::pos();
     QPoint pos = graphicsview->mapFromGlobal(globalPos);
@@ -131,52 +131,26 @@ void View::AdddPort()
     
 }
 
-void View::AdddPort(int x, int y, QString name)
+void View::AdddPortSL(int x, int y, QString name)
 {
-
     new AddComand(this, x, y,name);
 }
 
-void View::dropEvent(QDropEvent* event)
+AddComand* View::AdddPort()
 {
-    if (event->mimeData()->hasFormat("PortTemp"))
-    {
-        QVariant var = QVariant::fromValue(QString::fromUtf8(event->mimeData()->data("Pin")));
-        uintptr_t address = var.value<uintptr_t>();
-        PortTwmplateObject* obj = (PortTwmplateObject*)address;
-        if (obj)
-        {
-            auto comand = new AddComand(this, 0, 0);
-            comand->p->name(obj->templ->name());
-            foreach(auto pn, obj->templ->pins())
-            {
-                comand->p->addPin(pn->name());
-            }
-        }
-    }
-    else
-        event->ignore();
+    QPoint globalPos = QCursor::pos();
+    QPoint pos = graphicsview->mapFromGlobal(globalPos);
+    pos = graphicsview->mapToScene(pos).toPoint();
+    return new AddComand(this, pos.x(), pos.y());
+
 }
 
-void View::dragEnterEvent(QDragEnterEvent* event)
+AddComand* View::AdddPort(int x, int y, QString name)
 {
-    if (event->mimeData()->hasFormat("PortTemp"))
-    {
-        event->accept();
-    }
-    else
-        event->ignore();
+    return new AddComand(this, x, y, name);
 }
 
-void View::dragMoveEvent(QDragMoveEvent* event)
-{
-    if (event->mimeData()->hasFormat("PortTemp"))
-    {
-        event->accept();
-    }
-    else
-        event->ignore();
-}
+
 
 
 void View::stckUndo()

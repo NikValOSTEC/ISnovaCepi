@@ -26,3 +26,12 @@ void PortTemplate::RemoveSL()
 
 PortTemplate::~PortTemplate()
 {}
+
+QMenu* PortTemplate::ContextMenu()
+{
+    QMenu* myMenu = new QMenu();
+    myMenu->addAction("addPin", this, SLOT(addPinSl()));
+    return myMenu;
+}
+
+

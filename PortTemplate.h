@@ -31,4 +31,7 @@ public:
 		f->glClearColor(240, 240, 240, 1.0f);
 		f->glClear(GL_COLOR_BUFFER_BIT);
 	}
+
+
+	virtual QMenu* ContextMenu();
 };
