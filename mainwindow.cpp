@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     TempList->widget()->layout()->setAlignment(Qt::AlignLeft);
     central->setSizePolicy(QSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding));
     TempList->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+    TempList->setFixedHeight(140);
     lay->addWidget(TempList);
 
     auto plusbt = new QPushButton("+");

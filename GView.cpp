@@ -64,8 +64,8 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
 void GView::mousePressEvent(QMouseEvent* event)
 {
     QGraphicsItem* item = GScene()->itemAt(mapToScene(event->pos()),QTransform());
-
-    ((ProxyRectPort*)item)->ColiderCheck(false);
+    if(item)
+        ((ProxyRectPort*)item)->ColiderCheck(false);
     QGraphicsView::mousePressEvent(event);
 
 }
@@ -87,7 +87,9 @@ void GView::dropEvent(QDropEvent* event)
         }
     }
     else
-        event->ignore();
+    {
+        QGraphicsView::dropEvent(event);
+    }
 }
 
 void GView::dragEnterEvent(QDragEnterEvent* event)
@@ -97,7 +99,8 @@ void GView::dragEnterEvent(QDragEnterEvent* event)
         event->accept();
     }
     else
-        event->ignore();
+        QGraphicsView::dragEnterEvent(event);
+
 }
 
 void GView::dragMoveEvent(QDragMoveEvent* event)
@@ -106,8 +109,9 @@ void GView::dragMoveEvent(QDragMoveEvent* event)
     {
         event->accept();
     }
+
     else
-        event->ignore();
+        QGraphicsView::dragMoveEvent(event);
 }
 
 GView::~GView()

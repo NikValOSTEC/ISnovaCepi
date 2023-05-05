@@ -126,7 +126,6 @@ void dot::RemoveWhire(Whire *w)
                 }
             }
             verticalMove.clear();
-            this->pin->RemoveFromChain();
         }
         else
         {

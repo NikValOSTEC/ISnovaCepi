@@ -79,8 +79,6 @@ void Chain::RemovePin(Pin* p)
 				new WhireRemoveComand(whires[j]);
 			}
 			p->pinWhire(false);
-			p->chain = nullptr;
-			pins.removeOne(p);
 			pins[0]->pinWhire(false);
 			pins[0]->chain = nullptr;
 			pins.removeOne(pins[0]);
