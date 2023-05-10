@@ -100,7 +100,6 @@ Whire::~Whire()
 {
     p1->Dot()->RemoveWhire(this);
     p2->Dot()->RemoveWhire(this);
-
 }
 
 void Whire::CollisionFix(bool fix)

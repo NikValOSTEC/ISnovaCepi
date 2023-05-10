@@ -39,13 +39,16 @@ void Chain::RemovePin(Pin* p)
 					}
 					else
 					{
-						auto p1 = whires[i]->p1;
+						auto p2 = whires[i]->p2;
 						for (int j = 0; j < pins.count(); j++)
 						{
-							if (pins[j] != p1)
+							if (pins[j] != p2)
 							{
-
-								whires[i]->p1 = pins[j];
+								new WhireRemoveComand(whires[i]);
+								auto pn = pins[j];
+								pn->chain = nullptr;
+								pins.removeOne(pn);
+								new AddWhireCommand(p2->command, pn->command);
 							}
 						}
 					}
@@ -59,13 +62,16 @@ void Chain::RemovePin(Pin* p)
 					}
 					else
 					{
-						auto p2 = whires[i]->p1;
+						auto p1 = whires[i]->p1;
 						for (int j = 0; j < pins.count(); j++)
 						{
-							if (pins[j] != p2)
+							if (pins[j] != p1)
 							{
-
-								whires[i]->p2 = pins[j];
+								new WhireRemoveComand(whires[i]);
+								auto pn = pins[j];
+								pn->chain = nullptr;
+								pins.removeOne(pn);
+								new AddWhireCommand(p1->command, pn->command);
 							}
 						}
 					}

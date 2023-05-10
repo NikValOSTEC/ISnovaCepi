@@ -16,6 +16,12 @@ WhireRemoveComand::~WhireRemoveComand()
 void WhireRemoveComand::undo()
 {
 	qDebug() << "Undo " << "WRem";
+	if (p1->pn->chain != nullptr)
+	{
+		qDebug() << p1->pn->chain->pins.count();
+		p1->pn->chain->pins.removeOne(p1->pn);
+		p1->pn->chain = nullptr;
+	}
 	wc->whire=new Whire(p1->pn, p2->pn,wc);
 }
 
