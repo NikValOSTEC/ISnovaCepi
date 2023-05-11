@@ -103,6 +103,12 @@
     <ClCompile Include="PortTwmplateObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SaveTemplates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QLineEditFocusOutSignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mygraphicsscene.h">
@@ -177,6 +183,12 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="PortTwmplateObject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SaveTemplates.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QLineEditFocusOutSignal.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

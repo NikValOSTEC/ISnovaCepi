@@ -82,7 +82,7 @@ void GView::dropEvent(QDropEvent* event)
             auto comand = GScene()->Mview->AdddPort();
             foreach(auto pn, obj->templ->pins())
             {
-                comand->p->addPin(pn->name());
+                comand->p->addPinSl(pn->name());
             }
         }
     }

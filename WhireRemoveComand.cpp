@@ -1,4 +1,5 @@
 #include "WhireRemoveComand.h"
+#include<QString>
 
 WhireRemoveComand::WhireRemoveComand(Whire* w)
 {
@@ -15,7 +16,7 @@ WhireRemoveComand::~WhireRemoveComand()
 
 void WhireRemoveComand::undo()
 {
-	qDebug() << "Undo " << "WRem";
+	qDebug() << "Undo " << "WRem "<< qint64(wc->whire);
 	if (p1->pn->chain != nullptr)
 	{
 		qDebug() << p1->pn->chain->pins.count();
@@ -27,6 +28,22 @@ void WhireRemoveComand::undo()
 
 void WhireRemoveComand::redo()
 {
-	qDebug() << "Redo " << "WRem";
+	qDebug() << "Redo " << "WRem " << qint64(wc->whire);
 	delete wc->whire;
+	if (p1->pn->chain != nullptr)
+	{
+		if (p1->pn->Dot()->whires.count() < 1)
+		{
+			p1->pn->RemoveFromChain();
+		}
+	}
+
+	if (p2->pn->chain != nullptr)
+	{
+		if (p2->pn->Dot()->whires.count() < 1)
+		{
+			p2->pn->RemoveFromChain();
+		}
+	}
+	
 }

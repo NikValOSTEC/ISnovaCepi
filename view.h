@@ -38,6 +38,7 @@ public:
     void backGroundColor(QColor color);
     GView* view();
     QUndoStack* stack;
+    int scale();
 
 protected:
     GView* graphicsview;
@@ -51,6 +52,7 @@ public slots:
     void stckUndo();
     void stckRedo();
     void AdddPortSL();
+    void saveImage();
     void AdddPortSL(int x, int y, QString name);
 
 public:

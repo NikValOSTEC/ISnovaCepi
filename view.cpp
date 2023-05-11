@@ -105,6 +105,11 @@ GView* View::view()
     return graphicsview;
 }
 
+int View::scale()
+{
+    return _scale;
+}
+
 QMenu* View::ContextMenu()
 {
     QMenu* myMenu = new QMenu();    myMenu->addAction("AddPort", this, SLOT(AdddPortSL()));
@@ -129,6 +134,18 @@ void View::AdddPortSL()
     pos = graphicsview->mapToScene(pos).toPoint();
     new AddComand(this, pos.x(), pos.y());
     
+}
+
+void View::saveImage()
+{
+    graphicsview->scene()->clearSelection();                                                  // Selections would also render to the file
+    graphicsview->scene()->setSceneRect(graphicsview->scene()->itemsBoundingRect());                          // Re-shrink the scene to it's bounding contents
+    QImage image(graphicsview->scene()->sceneRect().size().toSize(), QImage::Format_ARGB32);  // Create the image with the exact size of the shrunk scene
+    image.fill(Qt::white);                                              // Start all pixels transparent
+
+    QPainter painter(&image);
+    graphicsview->scene()->render(&painter);
+    image.save("file_name.png");
 }
 
 void View::AdddPortSL(int x, int y, QString name)

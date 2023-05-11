@@ -4,6 +4,7 @@
 #include "PortTemplate.h"
 #include <qpushbutton.h>
 #include <qlineedit.h>
+#include"QLineEditFocusOutSignal.h"
 
 class PortTwmplateObject  : public QWidget
 {
@@ -13,7 +14,7 @@ public:
 	PortTemplate* templ;
 	QPushButton* editpb;
 	QPushButton* delpb;
-	QLineEdit* name;
+	QLineEditFocusOutSignal* name;
 	void dragEnterEvent(QDragEnterEvent* event) override;
 	void dropEvent(QDropEvent* event) override;
 	void dragMoveEvent(QDragMoveEvent* event) override;
@@ -22,6 +23,7 @@ public:
 public slots:
 	void editPush();
 	void delPush();
+	void namecheck(bool foc);
 public:
 	PortTwmplateObject();
 	~PortTwmplateObject();

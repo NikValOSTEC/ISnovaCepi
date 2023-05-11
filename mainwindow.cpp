@@ -63,6 +63,14 @@ MainWindow::MainWindow(QWidget *parent)
     bar->addMenu(m);
 
 
+    m = new QMenu("File", this);
+    actionNew = new QAction(tr("SaveImage"), this);
+    actionNew->setShortcutVisibleInContextMenu(true);
+    connect(actionNew, SIGNAL(triggered()), this->v, SLOT(saveImage()));
+    m->addAction(actionNew);
+    bar->addMenu(m);
+
+
     hidemMap();
 
 }

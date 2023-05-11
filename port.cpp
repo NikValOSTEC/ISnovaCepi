@@ -74,7 +74,7 @@ void Port::on_pushButton_clicked()
 
 void Port::showContextMenu(const QPoint &pos)
 {
-    QPoint globalPos = this->mapToGlobal(pos);
+    QPoint globalPos = QCursor::pos();
     ContextMenu()->exec(globalPos);
 }
 
@@ -103,7 +103,7 @@ Pin* Port::addPin(QString name,int index)
 
 Pin* Port::addPinSl(QString name)
 {
-    auto x=new AddPinComand(this);
+    auto x=new AddPinComand(this,name);
     return x->pn;
 }
 

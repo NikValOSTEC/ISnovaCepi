@@ -11,6 +11,9 @@ minimap::minimap(View* v)
     sclX = 2;
     sclY = 2;
 
+    this->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(this, SIGNAL(customContextMenuRequested(QPoint)),
+        this, SLOT(showContextMenu(QPoint)));
 }
 
 void minimap::mouseMoveEvent(QMouseEvent* event)

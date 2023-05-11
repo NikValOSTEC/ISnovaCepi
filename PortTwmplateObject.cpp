@@ -4,6 +4,7 @@
 #include"qwindow.h"
 #include <QDrag>
 #include<QMimeData>
+
 void PortTwmplateObject::dragEnterEvent(QDragEnterEvent* event)
 {
 	if (event->mimeData()->hasFormat("PortTemp"))
@@ -37,7 +38,13 @@ void PortTwmplateObject::mousePressEvent(QMouseEvent* event)
 }
 void PortTwmplateObject::delPush()
 {
+	delete this;
+}
 
+void PortTwmplateObject::namecheck(bool foc)
+{
+	if(!foc)
+		qDebug() << "bg";
 }
 
 void PortTwmplateObject::editPush()
@@ -48,15 +55,20 @@ PortTwmplateObject::PortTwmplateObject()
 {
 	templ = new PortTemplate();
 	this->editpb = new QPushButton(this);
-	this->name = new QLineEdit(this);
+	this->name = new QLineEditFocusOutSignal(this);
 	this->delpb = new QPushButton(this);
+	editpb->setText("edit");
+	delpb->setText("del");
 	this->setLayout(new QVBoxLayout());
 	this->layout()->addWidget(name);
 	this->layout()->addWidget(editpb);
 	this->layout()->addWidget(delpb);
 	connect(editpb, SIGNAL(clicked()), this, SLOT(editPush()));
-
+	connect(delpb, SIGNAL(clicked()), this, SLOT(delPush()));
+	connect(name, SIGNAL(focussed()), this, SLOT(namecheck()));
 }
 
 PortTwmplateObject::~PortTwmplateObject()
-{}
+{
+	delete templ;
+}

@@ -7,6 +7,8 @@
 Whire::Whire(Pin* p1,Pin*p2,AddWhireCommand* comm)
 {
 
+    this->p1 = p1;
+    this->p2 = p2;
     this->command = comm;
     if(p1->chain==nullptr&&p2->chain==nullptr)
         chain = new Chain();
@@ -27,8 +29,6 @@ Whire::Whire(Pin* p1,Pin*p2,AddWhireCommand* comm)
     {
         chain = p2->chain;
     }
-    this->p1=p1;
-    this->p2=p2;
     p1->Dot()->AddWhire(this);
     p2->Dot()->AddWhire(this);
     p1->Dot(true);
@@ -98,6 +98,7 @@ void Whire::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
 
 Whire::~Whire()
 {
+    qDebug()<<"Del Whire" << qint64(this);
     p1->Dot()->RemoveWhire(this);
     p2->Dot()->RemoveWhire(this);
 }
@@ -110,7 +111,6 @@ void Whire::CollisionFix(bool fix)
     {
 
         QList<QGraphicsItem*>list = collidingItems(Qt::IntersectsItemBoundingRect);
-        qDebug() << "lst: " << list.length();
         QList<ProxyRectPort*>ports = QList<ProxyRectPort*>();
         QList<Whire*>whires = QList<Whire*>();
 
