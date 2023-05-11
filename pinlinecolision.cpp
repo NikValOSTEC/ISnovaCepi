@@ -62,9 +62,24 @@ void PinLineColision::FixColliding()
         ProxyRectPort * item= dynamic_cast<ProxyRectPort *>(i);
         if (item)
         {
-
+            bool add = true;
             auto dt=item->mapToScene(item->boundingRect().topLeft());
-            if(item!=p1->parCon->proxy())
+            if((item!=p1->parCon->proxy()))
+            {
+                foreach(auto w, p1->Dot()->whires)
+                {
+                    if (w->p1->parCon->proxy() == item || w->p2->parCon->proxy() == item)
+                    {
+                        add = false;
+                    }
+                }                
+                
+            }
+            else
+            {
+                add = false;
+            }
+            if (add)
             {
                 proxys.append(item);
             }

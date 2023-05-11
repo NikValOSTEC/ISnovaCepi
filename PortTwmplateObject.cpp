@@ -43,8 +43,14 @@ void PortTwmplateObject::delPush()
 
 void PortTwmplateObject::namecheck(bool foc)
 {
-	if(!foc)
-		qDebug() << "bg";
+	if (!foc)
+	{
+		auto lst=this->parent()->children();
+		foreach(auto obj, lst)
+		{
+
+		}
+	}
 }
 
 void PortTwmplateObject::editPush()
@@ -63,9 +69,10 @@ PortTwmplateObject::PortTwmplateObject()
 	this->layout()->addWidget(name);
 	this->layout()->addWidget(editpb);
 	this->layout()->addWidget(delpb);
+	
 	connect(editpb, SIGNAL(clicked()), this, SLOT(editPush()));
 	connect(delpb, SIGNAL(clicked()), this, SLOT(delPush()));
-	connect(name, SIGNAL(focussed()), this, SLOT(namecheck()));
+	connect(name, &QLineEditFocusOutSignal::focussed, this, &PortTwmplateObject::namecheck);
 }
 
 PortTwmplateObject::~PortTwmplateObject()
