@@ -73,11 +73,19 @@ QPainterPath Dot::shape() const
 
 void Dot::VerticalDot(Dot* d)
 {
-	this->setPos(this->pos().x(), d->pos().y());
+	if (this->pos().y() != d->pos().y())
+	{
+		this->setPos(this->pos().x(), d->pos().y());
+
+		Emit_Moving();
+	}
 }
 
 void Dot::HorizontalDot(Dot* d)
 {
-
-	this->setPos(d->pos().x(),this->pos().y());
+	if (this->pos().x() != d->pos().x())
+	{
+		this->setPos(d->pos().x(), this->pos().y());
+		Emit_Moving();
+	}
 }

@@ -53,64 +53,83 @@ QPainterPath CustomColliderLineRecoursive::shape() const
 
 void CustomColliderLineRecoursive::FixColliding()
 {
+	int i = 0;
 	auto colitms = collidingItems(Qt::IntersectsItemBoundingRect);
-	foreach(auto itm, colitms)
+	auto itm = colitms[i];
+	auto pr = dynamic_cast<ProxyRectPort*>(itm);
+	while (!pr)
 	{
-		auto pr = dynamic_cast<ProxyRectPort*>(itm);
-		if(pr)
+		if (i == colitms.count() - 1)
+			break;
+		i++;
+		itm = colitms[i];
+		pr = dynamic_cast<ProxyRectPort*>(itm);
+	}
+	if (pr)
+	{
+		lastcolide = pr;
+		if (!Vertical_f_Horizontal_t)
 		{
-			if (!Vertical_f_Horizontal_t)
-			{
 
-				Dot* cd1, * cd2, * cd3, * cd4;
-				CustomColliderLineRecoursive* d1cd1, * cd1cd2, * cd2cd3, * cd3cd4, * cd4d2;
-				cd1 = new Dot();
-				cd2 = new Dot();
-				cd3 = new Dot();
-				cd4 = new Dot();
-				inside.append(cd1);
-				inside.append(cd2);
-				inside.append(cd3);
-				inside.append(cd4);
-				scene()->addItem(cd1);
-				scene()->addItem(cd2);
-				scene()->addItem(cd3);
-				scene()->addItem(cd4);
-				d1cd1 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, d1, cd1);
-				cd1cd2 = new CustomColliderLineRecoursive(!Vertical_f_Horizontal_t, cd1, cd2);
-				cd2cd3 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, cd2, cd3);
-				cd3cd4 = new CustomColliderLineRecoursive(!Vertical_f_Horizontal_t, cd3, cd4);
-				cd4d2 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, cd4, d2);
-				scene()->addItem(d1cd1);
-				scene()->addItem(cd1cd2);
-				scene()->addItem(cd2cd3);
-				scene()->addItem(cd3cd4);
-				scene()->addItem(cd4d2);
+			Dot* cd1, * cd2, * cd3, * cd4;
+			CustomColliderLineRecoursive* d1cd1, * cd1cd2, * cd2cd3, * cd3cd4, * cd4d2;
+			cd1 = new Dot();
+			cd2 = new Dot();
+			cd3 = new Dot();
+			cd4 = new Dot();
+			inside.append(cd1);
+			inside.append(cd2);
+			inside.append(cd3);
+			inside.append(cd4);
+			scene()->addItem(cd1);
+			scene()->addItem(cd2);
+			scene()->addItem(cd3);
+			scene()->addItem(cd4);
+			d1cd1 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, d1, cd1);
+			cd1cd2 = new CustomColliderLineRecoursive(!Vertical_f_Horizontal_t, cd1, cd2);
+			cd2cd3 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, cd2, cd3);
+			cd3cd4 = new CustomColliderLineRecoursive(!Vertical_f_Horizontal_t, cd3, cd4);
+			cd4d2 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, cd4, d2);
+			scene()->addItem(d1cd1);
+			scene()->addItem(cd1cd2);
+			scene()->addItem(cd2cd3);
+			scene()->addItem(cd3cd4);
+			scene()->addItem(cd4d2);
 
-				inside.append(d1cd1);
-				inside.append(cd1cd2);
-				inside.append(cd2cd3);
-				inside.append(cd3cd4);
-				inside.append(cd4d2);
+			inside.append(d1cd1);
+			inside.append(cd1cd2);
+			inside.append(cd2cd3);
+			inside.append(cd3cd4);
+			inside.append(cd4d2);
 
 
-				cd1->setPos(itm->boundingRect().left() - 15, d1->y());
-				cd2->setPos(cd1->x(), itm->boundingRect().bottom() + 5);
-				cd3->setPos( itm->boundingRect().right() + 15, cd2->y());
-				cd4->setPos(cd3->x(), d2->y());
+			auto left = itm->mapToScene(itm->boundingRect().left(), 0).x();
+			auto right = itm->mapToScene(itm->boundingRect().right(), 0).x();
+			auto bottom = itm->mapToScene(0, itm->boundingRect().bottom()).y();
 
-				qDebug() << cd1->pos() << "    " << cd2->pos() << "     " << cd3->pos() << "      " << cd4->pos();
+			lastleft = left;
+			lastbottom = bottom;
+
+			cd1->setPos(left - 10, d1->y());
+			cd2->setPos(cd1->x(), bottom + 10);
+			cd3->setPos(right + 10, cd2->y());
+			cd4->setPos(cd3->x(), d2->y());
+
+			qDebug() << cd1->pos() << "    " << cd2->pos() << "     " << cd3->pos() << "      " << cd4->pos();
 
 
-				//d1cd1->FixColliding();
-				//cd1cd2->FixColliding();
-				//cd2cd3->FixColliding();
-				//cd3cd4->FixColliding();
-				//cd4d2->FixColliding();
 
-			}
 
 		}
+		else
+		{
+
+		}
+
+	}
+	else
+	{
+		this->show();
 	}
 }
 
@@ -149,9 +168,9 @@ void CustomColliderLineRecoursive::setHorizontal()
 	QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
 }
 
-void CustomColliderLineRecoursive::SimpleShape(bool bl)
+void CustomColliderLineRecoursive::SimpleShape(bool bll)
 {
-	if (bl)
+	if (bll)
 	{
 		foreach(auto itm, inside)
 		{
@@ -161,25 +180,57 @@ void CustomColliderLineRecoursive::SimpleShape(bool bl)
 	}
 	else
 	{
-		bool bl = false;
-		foreach(auto itm, inside)
+		bool bl = true;
+		foreach (auto var, collidingItems(Qt::IntersectsItemBoundingRect))
 		{
-			auto tm = itm;
-			inside.removeOne(itm);
-			if (dynamic_cast<CustomColliderLineRecoursive*>(itm))
+			if(dynamic_cast<ProxyRectPort*>(var)==lastcolide&&lastcolide!=nullptr)
 			{
-				delete tm;
-				bl = true;
+
+				auto left = lastcolide->mapToScene(lastcolide->boundingRect().left(), 0).x();
+				auto bottom = lastcolide->mapToScene(0, lastcolide->boundingRect().bottom()).y();
+				qDebug() << "   " << left << "   " << lastleft << "   " << bottom << "   " << lastbottom;
+				if (left == lastleft && bottom == lastbottom)
+				{
+					this->hide();
+					bl = false;
+				}
 			}
-;
 		}
-		if(bl)
-			FixColliding();
+		if (bl)
+		{
+			lastcolide = nullptr;
+			foreach(auto itm, inside)
+			{
+				auto tm = itm;
+				inside.removeOne(itm);
+				if (dynamic_cast<CustomColliderLineRecoursive*>(itm))
+				{
+					delete tm;
+				}
+			}
+			if (inside.isEmpty())
+			{
+				this->hide();
+				FixColliding();
+			}
+
+			QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
+			QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
+			QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+			QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+			if (inside.isEmpty())
+			{
+				if (Vertical_f_Horizontal_t)
+					setHorizontal();
+				else
+					setVertical();
+			}
+		}
+		
 		foreach(auto itm, inside)
 		{
 			itm->show();
 		}
 
-		this->hide();
 	}
 }

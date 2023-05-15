@@ -30,5 +30,7 @@ private:
 	Dot* d1, *d2;
 	ColisionFixWay fixway;
 	QVector<QGraphicsObject*> inside;
+	ProxyRectPort* lastcolide=nullptr;
+	int lastleft, lastbottom;
 };
 
