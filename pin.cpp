@@ -76,9 +76,9 @@ void Pin::Update()
 }
 
 
-void Pin::EmitUpd(bool dot)
+void Pin::EmitUpd(bool dotold)
 {
-    upd = dot;
+    upd = dotold;
     emit updSignal();
 }
 
@@ -145,11 +145,11 @@ void Pin::dragMoveEvent(QDragMoveEvent* event)
         event->ignore();
 }
 
-dot* Pin::Dot(bool recalc)
+dotold* Pin::Dot(bool recalc)
 {
     if (d == nullptr)
     {
-        d = new dot(this,thread);
+        d = new dotold(this,thread);
     }
     if (recalc)
     {
@@ -161,14 +161,14 @@ dot* Pin::Dot(bool recalc)
     return d;
 }
 
-dot* Pin::Dot(dot* dot)
+dotold* Pin::Dot(dotold* dotold)
 {
     if (d == nullptr)
     {
         Dot(true);
     }
-    d->x(d->x() - (d->x() - dot->x()) / 2);
-    dot->x(d->x());
+    d->x(d->x() - (d->x() - dotold->x()) / 2);
+    dotold->x(d->x());
     return d;
 
 }

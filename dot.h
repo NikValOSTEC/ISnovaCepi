@@ -1,37 +1,43 @@
-#ifndef DOT_H
-#define DOT_H
-#include<QGraphicsItem>
-#include <QObject>
-#include<QList>
-class Pin;
-#include"pin.h"
-class Whire;
-#include "whire.h"
-class dot : public QGraphicsItem,QObject
-{
-public:
-    ~dot();
-    dot(Pin* p,QThread* thr=nullptr);
-    QColor color;
-    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
-    QRectF boundingRect() const override;//
-    QPainterPath shape() const override;//
-    qreal x();
-    void x(int x);
-    qreal y();
-    void y(int y);
-    void Uupdate(bool collision=false, QVector<dot*>* nnot=new QVector<dot*>());
-    void AddWhire(Whire* w);
-    void RemoveWhire(Whire*w);
-    void AddDot(dot* w);
-    void RemoveDot(dot*w);
-    int type() const override;
-    QVector<Whire*>whires;
-private:
-    QVector<dot*>verticalMove;
-    bool Big=false;
-    Pin* pin;
-    Whire* whire;
-};
+#pragma once
 
-#endif // DOT_H
+#include <QGraphicsItem>
+#include<qobject.h>
+#include<qpainter.h>
+
+class Dot  : public QGraphicsObject
+{
+	Q_OBJECT
+
+public:
+	Dot(QGraphicsObject* parent = nullptr);
+	int type() const override;
+	int x();
+	int y();
+	void x(int x);
+	void y(int y);
+	void EmitIs_inMove(bool moving)
+	{
+		emit Is_inMove(moving);
+	}
+
+	void Emit_Moving()
+	{
+		emit moving(this);
+	}
+	~Dot();
+	void WhPl();
+	void WhMin();
+	void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
+	QRectF boundingRect() const override;//
+	QPainterPath shape() const override;//
+
+signals:
+	void Is_inMove(bool moving);
+	void moving(Dot* d);
+public slots:
+	void VerticalDot(Dot* d);
+	void HorizontalDot(Dot* d);
+private:
+	int Linecounter = 0;
+
+};

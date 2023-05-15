@@ -9,14 +9,13 @@ class PinLineColision : public QGraphicsLineItem,QObject
 {
 private:
     QPainterPath patt,pattest;
-    dot* Dot;
+    dotold* Dot;
 public:
     Pin* p1;
     QRectF boundingRect() const override;//
     QPainterPath shape() const override;//
     void updateShape();
     void FixColliding();
-
     qreal y();
     PinLineColision(Pin* p,QThread* thr=nullptr);
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;

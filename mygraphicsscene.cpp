@@ -1,5 +1,5 @@
 #include "mygraphicsscene.h"
-#include "dot.h"
+#include "dotold.h"
 #include "proxyrectport.h"
 #include "qcoreevent.h"
 #include "qgraphicsitem.h"

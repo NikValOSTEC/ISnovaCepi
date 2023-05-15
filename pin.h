@@ -8,8 +8,8 @@ class Port;
 #include<QLineEdit>
 #include <QWidget>
 #include<QMenu>
-class dot;
-#include"dot.h"
+class dotold;
+#include"dotold.h"
 class PinLineColision;
 #include"pinlinecolision.h"
 class Chain;
@@ -38,15 +38,15 @@ public slots:
 signals:
     void updSignal();
 public:
-    void EmitUpd(bool dot=false);
+    void EmitUpd(bool dotold=false);
     PinLineColision* getpinWhire();
     Port* parCon;
     virtual void mousePressEvent(QMouseEvent* event) override;
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
     virtual void dropEvent(QDropEvent* event) override;
     virtual void dragMoveEvent(QDragMoveEvent* event) override;
-    virtual dot* Dot(bool recalc=false);
-    virtual dot* Dot(dot* d);
+    virtual dotold* Dot(bool recalc=false);
+    virtual dotold* Dot(dotold* d);
     qreal x();
     qreal y();
     void pinWhire(bool show=true);
@@ -68,7 +68,7 @@ protected slots:
 
 private:
     bool updaterbl;
-    dot* d;
+    dotold* d;
     PinLineColision* pinW;
     QThread* thread;
     QString _name;

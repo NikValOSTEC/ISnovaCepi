@@ -9,6 +9,8 @@
 #include<QShortCut>
 #include<qmimedata.h>
 #include "PortTwmplateObject.h"
+#include "Dot.h"
+#include"CustomColliderLineRecoursive.h"
 
 View::View()
 {
@@ -40,6 +42,11 @@ View::View()
     ctrlY->setKey(Qt::Key_Y+Qt::CTRL );    // Устанавливаем код клавиши
     // цепляем обработчик нажатия клавиши
     connect(ctrlY, SIGNAL(activated()), this, SLOT(stckRedo()));
+    Dot* d1 = new Dot();
+    Dot* d2 = new Dot();
+    GScene()->addItem(d1);
+    GScene()->addItem(d2);
+    GScene()->addItem(new CustomColliderLineRecoursive(false,d1,d2));
 }
 
 

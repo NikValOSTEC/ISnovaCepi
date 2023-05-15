@@ -30,6 +30,9 @@ void ProxyRectPort::paint(QPainter *painter, const QStyleOptionGraphicsItem *opt
     else
         painter->setBrush(QBrush(QColor(122, 195, 15)));
     painter->drawRect(rect);
+
+    painter->setBrush(QBrush(QColor(111, 111, 111)));
+    painter->drawRect(boundingRect());
 }
 
 

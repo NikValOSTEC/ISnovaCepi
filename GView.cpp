@@ -1,9 +1,10 @@
 #include "GView.h"
 #include "proxyrectport.h"
 #include <QOpenGLPaintDevice>
-#include "dot.h"
+#include "dotold.h"
 #include"qmimedata.h"
 #include "PortTwmplateObject.h"
+#include "Dot.h"
 
 GView::GView(QObject* parent) : QGraphicsView()
 {
@@ -22,12 +23,18 @@ void GView::mouseMoveEvent(QMouseEvent* event)
 
         if (items[i]->type() == 100)
         {
-            ((dot*)items[i])->Uupdate(false);
+            ((dotold*)items[i])->Uupdate(false);
 
         }
         else if (items[i]->type() == 101)
         {
             ((ProxyRectPort*)items[i])->Update(false);
+        }
+        else if (items[i]->type() == 102)
+        {
+            ((Dot*)items[i])->EmitIs_inMove(true);
+
+            ((Dot*)items[i])->Emit_Moving();
         }
     }
     QGraphicsView::mouseMoveEvent(event);
@@ -40,12 +47,16 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
     {
         if (items[i]->type() == 100)
         {
-            ((dot*)items[i])->Uupdate(true);
+            ((dotold*)items[i])->Uupdate(true);
 
         }
         else if (items[i]->type() == 101)
         {
             ((ProxyRectPort*)items[i])->Update(true);
+        }
+        else if (items[i]->type() == 102)
+        {
+            ((Dot*)items[i])->EmitIs_inMove(false);
         }
     }
 

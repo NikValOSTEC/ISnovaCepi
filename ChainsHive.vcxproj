@@ -87,6 +87,8 @@
     <ClCompile Include="AddPinComand.cpp" />
     <ClCompile Include="AddWhireCommand.cpp" />
     <ClCompile Include="chaintable.cpp" />
+    <ClCompile Include="CustomColliderLineRecoursive.cpp" />
+    <ClCompile Include="Dot.cpp" />
     <ClCompile Include="GItemFrame.cpp" />
     <ClCompile Include="GView.cpp" />
     <ClCompile Include="mainwindow.cpp" />
@@ -109,11 +111,13 @@
     <ClCompile Include="WhireRemoveComand.cpp" />
     <QtRcc Include="ChainsHive.qrc" />
     <ClCompile Include="chain.cpp" />
-    <ClCompile Include="dot.cpp" />
+    <ClCompile Include="dotold.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PinTemplate.h" />
+    <QtMoc Include="CustomColliderLineRecoursive.h" />
+    <QtMoc Include="Dot.h" />
     <ClInclude Include="portlib.h" />
     <QtMoc Include="PortTemplate.h" />
     <QtMoc Include="PortTwmplateObject.h" />
@@ -125,7 +129,7 @@
     <ClInclude Include="AddComand.h" />
     <ClInclude Include="AddPinComand.h" />
     <ClInclude Include="AddWhireCommand.h" />
-    <ClInclude Include="dot.h" />
+    <ClInclude Include="dotold.h" />
     <QtMoc Include="minimap.h" />
     <ClInclude Include="GItemFrame.h" />
     <ClInclude Include="GView.h" />
@@ -144,6 +148,9 @@
     <QtUic Include="mainwindow.ui" />
     <QtUic Include="pin.ui" />
     <QtUic Include="port.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

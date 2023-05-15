@@ -34,7 +34,7 @@
     <ClCompile Include="chain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dot.cpp">
+    <ClCompile Include="dotold.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mainwindow.cpp">
@@ -109,6 +109,12 @@
     <ClCompile Include="QLineEditFocusOutSignal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CustomColliderLineRecoursive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mygraphicsscene.h">
@@ -126,7 +132,7 @@
     <ClInclude Include="GItemFrame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dot.h">
+    <ClInclude Include="dotold.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RemoveComand.h">
@@ -191,6 +197,12 @@
     <QtMoc Include="QLineEditFocusOutSignal.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Dot.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomColliderLineRecoursive.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
@@ -202,5 +214,8 @@
     <QtUic Include="port.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

@@ -1,152 +1,83 @@
-#include "dot.h"
-#include "qgraphicsproxywidget.h"
-#include "qpainter.h"
-#include"pin.h"
-#include<QColor>
-#include<QGraphicsScene>
-#include <QOpenGLPaintDevice>
+#include "Dot.h"
 
-dot::~dot()
+Dot::Dot(QGraphicsObject* parent):
+	QGraphicsObject(parent)
 {
-    for(int i=0;i<whires.count();i++)
-    {
-
-        delete whires[i];
-    }
+	setFlag(QGraphicsItem::ItemIsMovable, true);
+	setFlag(QGraphicsItem::ItemIsSelectable, true);
+	setFlag(QGraphicsItem::ItemIsFocusable, true);
 }
 
-dot::dot(Pin* p, QThread* thr)
+int Dot::type() const
 {
-    if (thr != nullptr)
-        moveToThread(thr);
-    setZValue(5);
-    pin=p;
-    pin->parCon->graphicsProxyWidget()->scene()->addItem(this);
-    setFlag(QGraphicsItem::ItemIsMovable, true);
-    setFlag(QGraphicsItem::ItemIsSelectable, true);
-    setFlag(QGraphicsItem::ItemIsFocusable,true);
-
+	return 102;
 }
 
-void dot::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
+int Dot::x()
 {
-    painter = new QPainter(new QOpenGLPaintDevice());
-    painter->setPen(QPen(color));
-    painter->setBrush(QBrush(color));
-    painter->drawPath(shape());
+	return pos().x();
 }
 
-QRectF dot::boundingRect() const
+int Dot::y()
 {
-    return shape().boundingRect();
+	return pos().y();
 }
 
-QPainterPath dot::shape() const
+void Dot::x(int x)
 {
-    QPainterPath path;
-    if(Big)
-    {
-        path.addEllipse(-10,-10,20,20);
-    }
-    else
-    {
-        path.addEllipse(-5,-5,10,10);
-    }
-    return path;
+	setPos(x, pos().y());
 }
 
-qreal dot::x()
+void Dot::y(int y)
 {
-    qreal res= scenePos().x();
-    return res;
+	setPos(pos().x(),y);
 }
 
-void dot::x(int x)
+Dot::~Dot()
 {
-    setPos(x,scenePos().y());
-}
-
-qreal dot::y()
-{
-    return scenePos().y();
 
 }
 
-void dot::y(int y)
+void Dot::WhPl()
 {
-    setPos(scenePos().x(),y);
+	Linecounter++;
 }
 
-void dot::Uupdate(bool collision, QVector<dot*>* nnot)
+void Dot::WhMin()
 {
-    y(pin->y());
-    for (int i = 0; i < whires.count(); i++)
-    {
-        whires[i]->updateShape(collision);
-    }
-    nnot->append(this);
-    for (int i = 0; i < verticalMove.count(); i++)
-    {
-        if (!nnot->contains(verticalMove[i]))
-        {
-            verticalMove[i]->x(x());
-            verticalMove[i]->Uupdate(collision, nnot);
-        }
-    }
-    
-    pin->PinWUpd();
-    if(collision)
-    {
-        pin->getpinWhire()->FixColliding();
-    }
+	Linecounter--;
+	if (Linecounter < 1)
+	{
+		delete this;
+	}
 }
 
-
-void dot::AddWhire(Whire *w)
+void Dot::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {
-    
-    pin->pinWhire();
-    whires.append(w);
+	painter->setBrush(QBrush(QColor(137, 224, 8)));
+	painter->drawPath(shape());
 }
 
-void dot::RemoveWhire(Whire *w)
+QRectF Dot::boundingRect() const
 {
-    if (whires.removeOne(w))
-    {
-        if (whires.isEmpty())
-        {
-            for (int i = 0; i < verticalMove.count(); i++)
-            {
-                try {
-                    verticalMove[i]->verticalMove.removeOne(this);
-                }
-                catch(...)
-                {
-
-                }
-            }
-            verticalMove.clear();
-            pin->pinWhire(false);
-        }
-        else
-        {
-
-        }
-    }
+	return shape().boundingRect();
 }
 
-void dot::AddDot(dot *w)
+QPainterPath Dot::shape() const
 {
-    verticalMove.append(w);
-}
-
-void dot::RemoveDot(dot *w)
-{
-    verticalMove.removeOne(w);
+	QPainterPath path = QPainterPath();
+	path.addEllipse(-5, -5, 10, 10);
+	return path;
 }
 
 
-int dot::type() const
+void Dot::VerticalDot(Dot* d)
 {
-    return 100;
+	this->setPos(this->pos().x(), d->pos().y());
+}
+
+void Dot::HorizontalDot(Dot* d)
+{
+
+	this->setPos(d->pos().x(),this->pos().y());
 }
