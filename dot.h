@@ -3,6 +3,8 @@
 #include <QGraphicsItem>
 #include<qobject.h>
 #include<qpainter.h>
+class CustomColliderLineRecoursive;
+#include"CustomColliderLineRecoursive.h"
 
 class Dot  : public QGraphicsObject
 {
@@ -11,10 +13,12 @@ class Dot  : public QGraphicsObject
 public:
 	Dot(QGraphicsObject* parent = nullptr);
 	int type() const override;
+	QColor cl;
 	int x();
 	int y();
 	void x(int x);
 	void y(int y);
+	CustomColliderLineRecoursive*Vdot, *Hdot;
 	void EmitIs_inMove(bool moving)
 	{
 		emit Is_inMove(moving);

@@ -6,6 +6,8 @@ Dot::Dot(QGraphicsObject* parent):
 	setFlag(QGraphicsItem::ItemIsMovable, true);
 	setFlag(QGraphicsItem::ItemIsSelectable, true);
 	setFlag(QGraphicsItem::ItemIsFocusable, true);
+	Vdot = nullptr;
+	Hdot = nullptr;
 }
 
 int Dot::type() const
@@ -54,7 +56,7 @@ void Dot::WhMin()
 
 void Dot::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {
-	painter->setBrush(QBrush(QColor(137, 224, 8)));
+	painter->setBrush(QBrush(cl));
 	painter->drawPath(shape());
 }
 
@@ -66,7 +68,7 @@ QRectF Dot::boundingRect() const
 QPainterPath Dot::shape() const
 {
 	QPainterPath path = QPainterPath();
-	path.addEllipse(-5, -5, 10, 10);
+	path.addEllipse(-7, -7, 14, 14);
 	return path;
 }
 

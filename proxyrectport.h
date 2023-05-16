@@ -31,6 +31,11 @@ public:
     qreal YY();    
     void XX(qreal x);
     void YY(qreal y);
+    qreal left() {return mapToScene(boundingRect().left(), 0).x(); }
+    qreal right() { return mapToScene(boundingRect().right(), 0).x(); }
+    qreal bottom() { return mapToScene(0, boundingRect().bottom()).y(); }
+    qreal top() { return mapToScene(0, boundingRect().top()).y(); }
+    QPointF center() { return mapToScene(boundingRect().center()); }
 private:
     Port* port;
     QColor colo;
