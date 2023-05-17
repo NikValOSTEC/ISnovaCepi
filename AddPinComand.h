@@ -1,5 +1,4 @@
 #pragma once
-
 #include"port.h"
 #include <QUndoCommand>
 class AddComand;

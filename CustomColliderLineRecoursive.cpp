@@ -26,18 +26,15 @@ CustomColliderLineRecoursive::CustomColliderLineRecoursive(bool Vert_f_Horiz_t, 
 CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 {
 
-	if (!Vertical_f_Horizontal_t)
-	{
-		d1->Vdot = nullptr;
-		d2->Vdot = nullptr;
-	}
-	else
-	{
+	if (d1->Hdot == this)
 		d1->Hdot = nullptr;
+	if (d2->Hdot == this)
 		d2->Hdot = nullptr;
-	}
-	d2->WhMin();
-	d1->WhMin();
+
+	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
+	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
+	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
 
 	foreach(auto itm, inside)
 	{
@@ -47,8 +44,9 @@ CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 		{
 			delete tm;
 		}
-		;
 	}
+	d2->WhMin();
+	d1->WhMin();
 }
 
 QRectF CustomColliderLineRecoursive::boundingRect() const
@@ -155,7 +153,7 @@ void CustomColliderLineRecoursive::FixColliding()
 		}
 		else
 		{
-
+			JumpFrom(pr);
 		}
 
 	}
@@ -178,7 +176,6 @@ void CustomColliderLineRecoursive::setFixWay(ColisionFixWay fw)
 void CustomColliderLineRecoursive::setVertical()
 {
 	Vertical_f_Horizontal_t = false;
-
 
 	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
 	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
@@ -209,52 +206,67 @@ void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
 		{
 			if (auto pc = dynamic_cast<ProxyRectPort*>(itm))
 			{
-
-				if (d1->Hdot != nullptr)
+				if (this->Vertical_f_Horizontal_t)
 				{
-					if (d1->Hdot->d1 == d1)
+					if (d1->Hdot != nullptr)
 					{
-						if (d1->Hdot->d2->x() < d1->x())
+						if (d1->Hdot->d1 == d1)
 						{
-							d1->setPos(pc->right() + 10, d1->y());
+							if (d1->Hdot->d2->x() < d1->x())
+							{
+								d1->setPos(pc->right() + 10, d1->y());
+							}
+							else
+								d1->setPos(pc->left() - 10, d1->y());
 						}
-						else
-							d1->setPos(pc->left() - 10, d1->y());
-					}
-					else if (d1->Hdot->d2 == d1)
-					{
-						if (d1->Hdot->d1->x() < d1->x())
+						else if (d1->Hdot->d2 == d1)
 						{
-							d1->setPos(pc->right() + 10, d1->y());
+							if (d1->Hdot->d1->x() < d1->x())
+							{
+								d1->setPos(pc->right() + 10, d1->y());
+							}
+							else
+								d1->setPos(pc->left() - 10, d1->y());
 						}
-						else
-							d1->setPos(pc->left() - 10, d1->y());
-					}
 
-					d1->Emit_Moving();
+						d1->Emit_Moving();
+					}
+					else if (d2->Hdot != nullptr)
+					{
+						if (d2->Hdot->d1 == d2)
+						{
+							if (d2->Hdot->d2->x() < d2->x())
+							{
+								d2->setPos(pc->right() + 10, d2->y());
+							}
+							else
+								d2->setPos(pc->left() - 10, d2->y());
+						}
+						else if (d2->Hdot->d2 == d2)
+						{
+							if (d2->Hdot->d1->x() < d2->x())
+							{
+								d2->setPos(pc->right() + 10, d2->y());
+							}
+							else
+								d2->setPos(pc->left() - 10, d2->y());
+						}
+						d2->Emit_Moving();
+
+					}
 				}
-				else if (d2->Hdot != nullptr)
+				else
 				{
-					if (d2->Hdot->d1 == d2)
+					if (d1->pos().y() > pc->center().y())
 					{
-						if (d2->Hdot->d2->x() < d2->x())
-						{
-							d2->setPos(pc->right() + 10, d2->y());
-						}
-						else
-							d2->setPos(pc->left() - 10, d2->y());
+						d1->setPos(d1->pos().x(), pc->bottom()+10);
+						d1->Emit_Moving();
 					}
-					else if (d2->Hdot->d2 == d2)
+					else
 					{
-						if (d2->Hdot->d1->x() < d2->x())
-						{
-							d2->setPos(pc->right() + 10, d2->y());
-						}
-						else
-							d2->setPos(pc->left() - 10, d2->y());
+
+						d1->setPos(d1->pos().x(), pc->top()-10);
 					}
-					d2->Emit_Moving();
-					
 				}
 			}
 		}

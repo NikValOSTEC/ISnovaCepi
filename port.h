@@ -1,7 +1,6 @@
 #ifndef PORT_H
 #define PORT_H
 
-#include <QWidget>
 class Pin;
 #include "pin.h"
 class ProxyRectPort;
@@ -9,13 +8,13 @@ class ProxyRectPort;
 #include"AddPinComand.h"
 class AddComand;
 #include "AddComand.h"
-#include <QOpenGLWidget>
+#include <QWidget>
 
 namespace Ui {
 class Port;
 }
 
-class Port : public QOpenGLWidget
+class Port : public QWidget
 {
     Q_OBJECT
 

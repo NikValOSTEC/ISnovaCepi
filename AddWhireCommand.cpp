@@ -18,7 +18,7 @@ void AddWhireCommand::undo()
 	delete whire;
 	if (p1->pn->chain != nullptr)
 	{
-		if (p1->pn->Dot()->whires.count() < 1)
+		if (p1->pn->dot()->whrscount()< 1)
 		{
 			p1->pn->RemoveFromChain();
 		}
@@ -26,7 +26,7 @@ void AddWhireCommand::undo()
 
 	if (p2->pn->chain != nullptr)
 	{
-		if (p2->pn->Dot()->whires.count() < 1)
+		if (p2->pn->dot()->whrscount() < 1)
 		{
 			p2->pn->RemoveFromChain();
 		}
@@ -35,6 +35,6 @@ void AddWhireCommand::undo()
 
 void AddWhireCommand::redo()
 {
-	whire=new Whire(p1->pn, p2->pn,this);
+	whire=new NewWhire(p1->pn, p2->pn,this);
 	qDebug() << "Redo " << "AddWhire " << qint64(whire)<<" p1"<<qint64(p1) << " p2" << qint64(p2);
 }

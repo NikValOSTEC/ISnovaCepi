@@ -1,7 +1,5 @@
 #include "GView.h"
 #include "proxyrectport.h"
-#include <QOpenGLPaintDevice>
-#include "dotold.h"
 #include"qmimedata.h"
 #include "PortTwmplateObject.h"
 #include "Dot.h"
@@ -20,13 +18,7 @@ void GView::mouseMoveEvent(QMouseEvent* event)
     QList<QGraphicsItem*> items = GScene()->selectedItems();
     for (int i = 0; i < items.count(); i++)
     {
-
-        if (items[i]->type() == 100)
-        {
-            ((dotold*)items[i])->Uupdate(false);
-
-        }
-        else if (items[i]->type() == 101)
+        if (items[i]->type() == 101)
         {
             ((ProxyRectPort*)items[i])->Update(false);
         }
@@ -45,12 +37,7 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
     QList<QGraphicsItem*> items = GScene()->selectedItems();
     for (int i = 0; i < items.count(); i++)
     {
-        if (items[i]->type() == 100)
-        {
-            ((dotold*)items[i])->Uupdate(true);
-
-        }
-        else if (items[i]->type() == 101)
+        if (items[i]->type() == 101)
         {
             ((ProxyRectPort*)items[i])->Update(true);
         }

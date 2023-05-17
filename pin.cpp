@@ -27,7 +27,9 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
 
     if (bl)
     {
-        pinW = new PinLineColision(this, thread);
+        d = new Dot();
+        port->graphicsProxyWidget()->scene()->addItem(d);
+        pinW = new NewPinWhire(this, thread);
         port->graphicsProxyWidget()->scene()->addItem(pinW);
         pinWhire(false);
         connect(this, &Pin::updSignal, this, &Pin::Update);
@@ -70,9 +72,7 @@ void Pin::name(QString name)
 
 void Pin::Update()
 {
-
-    d->Uupdate(upd);
-
+    PinWUpd();
 }
 
 
@@ -82,7 +82,7 @@ void Pin::EmitUpd(bool dotold)
     emit updSignal();
 }
 
-PinLineColision* Pin::getpinWhire()
+NewPinWhire* Pin::getpinWhire()
 {
     return pinW;
 }
@@ -145,32 +145,23 @@ void Pin::dragMoveEvent(QDragMoveEvent* event)
         event->ignore();
 }
 
-dotold* Pin::Dot(bool recalc)
+Dot* Pin::dot(bool recalc)
 {
-    if (d == nullptr)
-    {
-        d = new dotold(this,thread);
-    }
-    if (recalc)
-    {
-        QPointF point = QPointF();
-        point = mapTo(parCon, QPoint(this->width() / 2, this->height() / 2));
-        point = this->parCon->graphicsProxyWidget()->mapToScene(point);
-        d->setPos(point);
-    }
     return d;
 }
 
-dotold* Pin::Dot(dotold* dotold)
-{
-    if (d == nullptr)
-    {
-        Dot(true);
-    }
-    d->x(d->x() - (d->x() - dotold->x()) / 2);
-    dotold->x(d->x());
-    return d;
 
+
+
+
+void Pin::dot(Dot* dt)
+{
+    d = dt;
+}
+
+Dot* Pin::coredot()
+{
+    return cored;
 }
 
 qreal Pin::x()
@@ -192,7 +183,7 @@ void Pin::pinWhire(bool show)
     }
     else
     {
-        pinW->updateShape();
+        //emit dot
         pinW->show();
         d->show();
     }
@@ -200,7 +191,15 @@ void Pin::pinWhire(bool show)
 
 void Pin::PinWUpd()
 {
-    pinW->updateShape();
+    if (qFabs(d->pos().x() - this->x()) < qFabs(cored->pos().x() - this->x()))
+    {
+        d->setPos(x() - width() / 2, y());
+    }
+    else
+    {
+        d->setPos(x() + width() / 2, y());
+    }
+    d->Emit_Moving();
 }
 
 QMenu* Pin::ContextMenu()

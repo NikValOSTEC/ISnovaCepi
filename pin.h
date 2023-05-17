@@ -8,16 +8,16 @@ class Port;
 #include<QLineEdit>
 #include <QWidget>
 #include<QMenu>
-class dotold;
-#include"dotold.h"
-class PinLineColision;
-#include"pinlinecolision.h"
+class Dot;
+#include"Dot.h"
 class Chain;
 #include"chain.h"
 #include<qstring.h>
 #include <QColorDialog>
 #include"ui_pin.h"
 #include"AddWhireCommand.h"
+class NewPinWhire;
+#include "NewPinWhire.h"
 
 namespace Ui {
 class Pin;
@@ -39,14 +39,16 @@ signals:
     void updSignal();
 public:
     void EmitUpd(bool dotold=false);
-    PinLineColision* getpinWhire();
+    NewPinWhire* getpinWhire();
     Port* parCon;
     virtual void mousePressEvent(QMouseEvent* event) override;
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
     virtual void dropEvent(QDropEvent* event) override;
     virtual void dragMoveEvent(QDragMoveEvent* event) override;
-    virtual dotold* Dot(bool recalc=false);
-    virtual dotold* Dot(dotold* d);
+    virtual Dot* dot(bool recalc=false);
+    virtual void dot(Dot* d);
+    Dot* coredot();
+
     qreal x();
     qreal y();
     void pinWhire(bool show=true);
@@ -68,8 +70,9 @@ protected slots:
 
 private:
     bool updaterbl;
-    dotold* d;
-    PinLineColision* pinW;
+    Dot* d;
+    Dot* cored;
+    NewPinWhire* pinW;
     QThread* thread;
     QString _name;
 

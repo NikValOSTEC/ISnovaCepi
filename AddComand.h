@@ -2,6 +2,7 @@
 class View;
 #include "view.h"
 class Port;
+
 #include "port.h"
 #include <qgraphicsproxywidget.h>
 #include <QUndoCommand>

@@ -94,8 +94,9 @@
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="minimap.cpp" />
     <ClCompile Include="mygraphicsscene.cpp" />
+    <ClCompile Include="NewPinWhire.cpp" />
+    <ClCompile Include="NewWhire.cpp" />
     <ClCompile Include="pin.cpp" />
-    <ClCompile Include="pinlinecolision.cpp" />
     <ClCompile Include="PinTemplate.cpp" />
     <ClCompile Include="port.cpp" />
     <ClCompile Include="portlib.cpp" />
@@ -107,17 +108,17 @@
     <ClCompile Include="RemovePinCommand.cpp" />
     <ClCompile Include="SaveTemplates.cpp" />
     <ClCompile Include="view.cpp" />
-    <ClCompile Include="whire.cpp" />
     <ClCompile Include="WhireRemoveComand.cpp" />
     <QtRcc Include="ChainsHive.qrc" />
     <ClCompile Include="chain.cpp" />
-    <ClCompile Include="dotold.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PinTemplate.h" />
     <QtMoc Include="CustomColliderLineRecoursive.h" />
     <QtMoc Include="Dot.h" />
+    <ClInclude Include="NewPinWhire.h" />
+    <QtMoc Include="NewWhire.h" />
     <ClInclude Include="portlib.h" />
     <QtMoc Include="PortTemplate.h" />
     <QtMoc Include="PortTwmplateObject.h" />
@@ -129,16 +130,13 @@
     <ClInclude Include="AddComand.h" />
     <ClInclude Include="AddPinComand.h" />
     <ClInclude Include="AddWhireCommand.h" />
-    <ClInclude Include="dotold.h" />
     <QtMoc Include="minimap.h" />
     <ClInclude Include="GItemFrame.h" />
     <ClInclude Include="GView.h" />
     <ClInclude Include="mygraphicsscene.h" />
-    <ClInclude Include="pinlinecolision.h" />
     <ClInclude Include="proxyrectport.h" />
     <ClInclude Include="RemoveComand.h" />
     <ClInclude Include="RemovePinCommand.h" />
-    <ClInclude Include="whire.h" />
     <QtMoc Include="view.h" />
     <QtMoc Include="port.h" />
     <QtMoc Include="pin.h" />

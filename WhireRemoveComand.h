@@ -8,7 +8,7 @@ class AddPinComand;
 class WhireRemoveComand  : public QUndoCommand
 {
 public:
-	WhireRemoveComand(Whire* w);
+	WhireRemoveComand(NewWhire* w);
 	~WhireRemoveComand();
 	void undo() override;
 	void redo() override;

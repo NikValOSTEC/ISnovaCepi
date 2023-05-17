@@ -90,7 +90,7 @@ void ProxyRectPort::ColiderCheck(bool upd)
     foreach(QGraphicsItem * i , list)
     {
         
-        if (PinLineColision* item = dynamic_cast<PinLineColision*>(i))
+        if (CustomColliderLineRecoursive* item = dynamic_cast<CustomColliderLineRecoursive*>(i))
         {
             if (upd)
             {
@@ -98,7 +98,7 @@ void ProxyRectPort::ColiderCheck(bool upd)
             }
             else
             {
-                item->updateShape();
+                item->SimpleShape(false);
             }
         }
         else if (Whire* item = dynamic_cast<Whire*>(i))

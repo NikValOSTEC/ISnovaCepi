@@ -12,12 +12,12 @@ public:
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
     virtual void dropEvent(QDropEvent* event) override;
     virtual void dragMoveEvent(QDragMoveEvent* event) override;
-    void initializeGL() {
+//    void initializeGL() {
 
-    }
-    void paintGL() {
-        glClearColor(1.f, 0.f, 0.f, 1.f);
-        glClear(GL_COLOR_BUFFER_BIT);
-    }
+//    }
+//    void paintGL() {
+//        glClearColor(1.f, 0.f, 0.f, 1.f);
+//        glClear(GL_COLOR_BUFFER_BIT);
+//    }
     ~PinTemplate();
 };

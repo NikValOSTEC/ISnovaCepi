@@ -1,8 +1,8 @@
 #pragma once
-
 #include <QUndoCommand>
 class Pin;
-class Whire;
+class NewWhire;
+#include"NewWhire.h"
 #include "pin.h"
 class AddPinComand;
 #include"AddPinComand.h"
@@ -15,5 +15,5 @@ public:
 	void undo() override;
 	void redo() override;
 	AddPinComand* p1, *p2;
-	Whire* whire;
+	NewWhire* whire;
 };

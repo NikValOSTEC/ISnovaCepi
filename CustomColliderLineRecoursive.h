@@ -1,10 +1,15 @@
 #pragma once
 
-#include <QGraphicsLineItem>
-#include "dotold.h"
+
+#include <QGraphicsItem>
 class Dot;
 #include "Dot.h"
 #include<qobject.h>
+class ProxyRectPort;
+#include"proxyrectport.h"
+#include <QGraphicsObject>
+class CustomColliderLineRecoursive;
+#include "CustomColliderLineRecoursive.h"
 
 enum ColisionFixWay
 {

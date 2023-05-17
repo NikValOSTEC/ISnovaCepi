@@ -10,7 +10,7 @@ class RemovePortComand;
 class RemovePinCommand;
 #include"RemovePinCommand.h"
 Port::Port(AddComand* com,QWidget *parent) :
-    QOpenGLWidget(parent),
+    QWidget(parent),
     ui(new Ui::Port)
 {
     ui->setupUi(this);

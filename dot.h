@@ -3,8 +3,8 @@
 #include <QGraphicsItem>
 #include<qobject.h>
 #include<qpainter.h>
-class CustomColliderLineRecoursive;
-#include"CustomColliderLineRecoursive.h"
+class NewWhire;
+#include"NewWhire.h"
 
 class Dot  : public QGraphicsObject
 {
@@ -29,11 +29,16 @@ public:
 		emit moving(this);
 	}
 	~Dot();
+	QVector<NewWhire*>whires;
 	void WhPl();
 	void WhMin();
 	void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
 	QRectF boundingRect() const override;//
 	QPainterPath shape() const override;//
+	int whrscount()
+	{
+		return Linecounter;
+	}
 
 signals:
 	void Is_inMove(bool moving);

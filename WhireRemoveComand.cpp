@@ -1,7 +1,7 @@
 #include "WhireRemoveComand.h"
 #include<QString>
 
-WhireRemoveComand::WhireRemoveComand(Whire* w)
+WhireRemoveComand::WhireRemoveComand(NewWhire* w)
 {
 	p1 = w->p1->command;
 	p2 = w->p2->command;
@@ -23,7 +23,7 @@ void WhireRemoveComand::undo()
 		p1->pn->chain->pins.removeOne(p1->pn);
 		p1->pn->chain = nullptr;
 	}
-	wc->whire=new Whire(p1->pn, p2->pn,wc);
+	wc->whire=new NewWhire(p1->pn, p2->pn,wc);
 }
 
 void WhireRemoveComand::redo()
@@ -32,7 +32,7 @@ void WhireRemoveComand::redo()
 	delete wc->whire;
 	if (p1->pn->chain != nullptr)
 	{
-		if (p1->pn->Dot()->whires.count() < 1)
+		if (p1->pn->dot()->whrscount() < 1)
 		{
 			p1->pn->RemoveFromChain();
 		}
@@ -40,7 +40,7 @@ void WhireRemoveComand::redo()
 
 	if (p2->pn->chain != nullptr)
 	{
-		if (p2->pn->Dot()->whires.count() < 1)
+		if (p2->pn->dot()->whrscount() < 1)
 		{
 			p2->pn->RemoveFromChain();
 		}

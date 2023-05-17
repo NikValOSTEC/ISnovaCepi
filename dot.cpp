@@ -8,6 +8,7 @@ Dot::Dot(QGraphicsObject* parent):
 	setFlag(QGraphicsItem::ItemIsFocusable, true);
 	Vdot = nullptr;
 	Hdot = nullptr;
+	this->whires = QVector<NewWhire*>();
 }
 
 int Dot::type() const
@@ -75,7 +76,7 @@ QPainterPath Dot::shape() const
 
 void Dot::VerticalDot(Dot* d)
 {
-	if (this->pos().y() != d->pos().y())
+	if (qFabs(this->pos().y() - d->pos().y())>2)
 	{
 		this->setPos(this->pos().x(), d->pos().y());
 
@@ -85,7 +86,7 @@ void Dot::VerticalDot(Dot* d)
 
 void Dot::HorizontalDot(Dot* d)
 {
-	if (this->pos().x() != d->pos().x())
+	if (qFabs(this->pos().x() - d->pos().x()) > 2)
 	{
 		this->setPos(d->pos().x(), this->pos().y());
 		Emit_Moving();

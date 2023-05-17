@@ -6,6 +6,7 @@
 #include "port.h"
 #include <QGraphicsLineItem>
 #include<QGraphicsProxyWidget>
+
 #include"view.h"
 #include"minimap.h"
 #include <QMainWindow>

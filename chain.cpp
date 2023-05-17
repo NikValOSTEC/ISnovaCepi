@@ -27,14 +27,14 @@ void Chain::RemovePin(Pin* p)
 		if (pins.removeOne(p))
 		{
 			p->chain = nullptr;
-			auto whires = p->Dot()->whires;
+			auto whires = p->dot()->whires;
 			if (pins.count() > 1)
 			{
 				for (int i = 0; i < whires.count(); i++)
 				{
 					if (whires[i]->p1 == p)
 					{
-						if (whires[i]->p2->Dot()->whires.count() > 1)
+						if (whires[i]->p2->dot()->whires.count() > 1)
 						{
 							new WhireRemoveComand(whires[i]);
 						}
@@ -57,7 +57,7 @@ void Chain::RemovePin(Pin* p)
 					}
 					else if (whires[i]->p2 == p)
 					{
-						if (whires[i]->p1->Dot()->whires.count() > 1)
+						if (whires[i]->p1->dot()->whires.count() > 1)
 						{
 							new WhireRemoveComand(whires[i]);
 						}
