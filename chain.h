@@ -2,8 +2,8 @@
 #define CHAIN_H
 #include<qvector.h>
 #include"whire.h"
-class Pin;
 #include<QObject>
+class Pin;
 #include"pin.h"
 #include<qobject.h>
 #include"WhireRemoveComand.h"

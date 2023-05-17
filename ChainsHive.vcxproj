@@ -117,7 +117,7 @@
     <QtMoc Include="PinTemplate.h" />
     <QtMoc Include="CustomColliderLineRecoursive.h" />
     <QtMoc Include="Dot.h" />
-    <ClInclude Include="NewPinWhire.h" />
+    <QtMoc Include="NewPinWhire.h" />
     <QtMoc Include="NewWhire.h" />
     <ClInclude Include="portlib.h" />
     <QtMoc Include="PortTemplate.h" />

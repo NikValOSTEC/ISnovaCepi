@@ -8,8 +8,6 @@ class Dot;
 class ProxyRectPort;
 #include"proxyrectport.h"
 #include <QGraphicsObject>
-class CustomColliderLineRecoursive;
-#include "CustomColliderLineRecoursive.h"
 
 enum ColisionFixWay
 {

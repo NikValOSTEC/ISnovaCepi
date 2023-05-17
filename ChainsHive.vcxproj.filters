@@ -147,9 +147,6 @@
     <ClInclude Include="portlib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NewPinWhire.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -195,6 +192,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="NewWhire.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="NewPinWhire.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

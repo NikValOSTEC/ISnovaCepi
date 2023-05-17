@@ -18,6 +18,8 @@ class Chain;
 #include"AddWhireCommand.h"
 class NewPinWhire;
 #include "NewPinWhire.h"
+class NewWhire;
+#include"NewWhire.h"
 
 namespace Ui {
 class Pin;
