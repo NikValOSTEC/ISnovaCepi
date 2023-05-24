@@ -1,32 +1,9 @@
 #ifndef VIEW_H
 #define VIEW_H
-#include<QFrame>
-#include<QGraphicsView>
-#include<QGraphicsScene>
-#include<QGridLayout>
-#include<QEvent>
-#include <QGraphicsView>
-#include<QWheelEvent>
-#include<QSlider>
-#include<QMouseEvent>
-#include<QLineEdit>
-#include<QScrollBar>
-#include<QGraphicsItem>
-#include<QMenu>
-#include <qundostack.h>
-#include<qmath.h>
-#include<QWheelEvent>
-#include<QSlider>
-#include<QMouseEvent>
-#include<QDebug>
 class MYGraphicsScene;
-#include"mygraphicsscene.h"
-#include<qevent.h>
 class GView;
-#include "GView.h"
-class AddComand;
-#include"AddComand.h"
-
+#include"GView.h"
+#include"mygraphicsscene.h"
 class View : public QFrame
 {
     Q_OBJECT

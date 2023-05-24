@@ -1,15 +1,5 @@
 #include "pin.h"
 #include "ui_pin.h"
-#include "whire.h"
-#include<QLineEdit>
-#include<QGraphicsProxyWidget>
-#include<QPoint>
-#include<QPointF>
-#include<QDrag>
-#include<QMimeData>
-#include<QGraphicsScene>
-#include"RemovePinCommand.h"
-
 
 Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     QLineEdit(parent),
@@ -24,6 +14,7 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     chain = nullptr;
     thread = new QThread();
     moveToThread(thread);
+    command = nullptr;
 
     if (bl)
     {

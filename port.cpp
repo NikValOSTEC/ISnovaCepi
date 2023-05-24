@@ -1,14 +1,6 @@
 #include "port.h"
-#include "qgraphicsproxywidget.h"
-#include "qmenu.h"
-#include "ui_port.h"
-#include <QGridLayout>
-#include<QVBoxLayout>
-#include"mygraphicsscene.h"
-class RemovePortComand;
-#include"RemoveComand.h"
-class RemovePinCommand;
-#include"RemovePinCommand.h"
+
+
 Port::Port(AddComand* com,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Port)

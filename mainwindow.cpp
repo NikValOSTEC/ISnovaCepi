@@ -1,7 +1,4 @@
 #include "mainwindow.h"
-#include<qtabwidget.h>
-#include"chaintable.h"
-#include"PortTwmplateObject.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)

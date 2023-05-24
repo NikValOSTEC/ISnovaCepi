@@ -1,14 +1,6 @@
+#include<qgraphicsitem.h>
 #ifndef PROXYRECTPORT_H
 #define PROXYRECTPORT_H
-#include<QGraphicsSceneEvent>
-#include <QGraphicsItem>
-#include<qgraphicsscene.h>
-#include <QObject>
-#include <QWidget>
-#include <QPainter>
-#include<QColor>
-class Port;
-#include "port.h"
 
 class ProxyRectPort:public QGraphicsItem
 {

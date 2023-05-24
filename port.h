@@ -1,15 +1,12 @@
 #ifndef PORT_H
 #define PORT_H
 
-class Pin;
-#include "pin.h"
+#include"ui_port.h"
+#include"qobject.h"
+class AddComand;
+#include"AddComand.h"
 class ProxyRectPort;
 #include"proxyrectport.h"
-#include"AddPinComand.h"
-class AddComand;
-#include "AddComand.h"
-#include <QWidget>
-
 namespace Ui {
 class Port;
 }

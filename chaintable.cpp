@@ -1,7 +1,4 @@
 #include "chaintable.h"
-#include"port.h"
-#include"QHeaderView.h"
-#include"QInputDialog.h"
 
 ChainTable::ChainTable()
 	: QTableWidget()

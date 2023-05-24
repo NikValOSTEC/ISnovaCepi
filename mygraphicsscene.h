@@ -1,9 +1,8 @@
 #ifndef MYGRAPHICSSCENE_H
 #define MYGRAPHICSSCENE_H
-
-#include<QGraphicsScene>
 class View;
 #include"view.h"
+
 class MYGraphicsScene : public QGraphicsScene
 {
 public:

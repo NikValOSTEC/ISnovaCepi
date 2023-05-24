@@ -1,9 +1,11 @@
 #pragma once
+class Port;
+class Pin;
+#include"pin.h"
+#include"port.h"
+#include"qobject.h"
+#include <qopenglfunctions.h>
 
-#include "Port.h"
-#include"PinTemplate.h"
-#include"ui_port.h"
-#include <QOpenGLFunctions>
 namespace Ui {
 	class Port;
 }

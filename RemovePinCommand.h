@@ -1,7 +1,8 @@
 #pragma once
-#include"pin.h"
-#include <QUndoCommand>
-
+class Port;
+class AddPinComand;
+#include"port.h";
+#include"AddPinComand.h"
 class RemovePinCommand  : public QUndoCommand
 {
 

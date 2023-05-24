@@ -1,12 +1,7 @@
-#ifndef CHAIN_H
-#define CHAIN_H
-#include<qvector.h>
-#include"whire.h"
-#include<QObject>
+#include<qobject.h>
 class Pin;
 #include"pin.h"
-#include<qobject.h>
-#include"WhireRemoveComand.h"
+#include<qcolor.h>
 class Chain :public QObject
 {
     Q_OBJECT
@@ -20,5 +15,3 @@ public:
     void moveToChain(Chain* chain); 
     QColor color;
 };
-
-#endif // CHAIN_H

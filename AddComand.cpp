@@ -1,5 +1,6 @@
 #include "AddComand.h"
-#include"port.h"
+
+
 AddComand::AddComand(View* v,int x,int y,QString name)
 {
     qDebug() << "pos" << x << "  " << y;

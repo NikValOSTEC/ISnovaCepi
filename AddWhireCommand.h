@@ -1,12 +1,8 @@
-#pragma once
-#include <QUndoCommand>
-class Pin;
-class NewWhire;
-#include"NewWhire.h"
-#include "pin.h"
+#include<QUndoCommand>
 class AddPinComand;
 #include"AddPinComand.h"
-#include"mygraphicsscene.h"
+class NewWhire;
+#include"NewWhire.h"
 class AddWhireCommand  : public QUndoCommand
 {
 public:

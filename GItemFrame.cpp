@@ -1,5 +1,4 @@
 #include "GItemFrame.h"
-#include"mygraphicsscene.h"
 
 GItemFrame::GItemFrame()
 {

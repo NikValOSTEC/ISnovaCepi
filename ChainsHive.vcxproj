@@ -115,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PinTemplate.h" />
-    <QtMoc Include="CustomColliderLineRecoursive.h" />
+    <ClInclude Include="CustomColliderLineRecoursive.h" />
     <QtMoc Include="Dot.h" />
     <QtMoc Include="NewPinWhire.h" />
     <QtMoc Include="NewWhire.h" />

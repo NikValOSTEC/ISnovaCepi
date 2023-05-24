@@ -1,10 +1,8 @@
 #pragma once
 
-#include <QGraphicsItem>
-#include<qobject.h>
-#include<qpainter.h>
 class NewWhire;
 #include"NewWhire.h"
+
 
 class Dot  : public QGraphicsObject
 {

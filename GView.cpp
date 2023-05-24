@@ -1,8 +1,4 @@
 #include "GView.h"
-#include "proxyrectport.h"
-#include"qmimedata.h"
-#include "PortTwmplateObject.h"
-#include "Dot.h"
 
 GView::GView(QObject* parent) : QGraphicsView()
 {

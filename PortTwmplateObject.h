@@ -1,10 +1,12 @@
 #pragma once
+#include<qobject.h>
+#include<qwidget.h>
+class PortTemplate;
+#include"PortTemplate.h"
+#include<qpushbutton.h>
+class QLineEditFocusOutSignal;
+#include"qlineedit.h"
 
-#include <QWidget>
-#include "PortTemplate.h"
-#include <qpushbutton.h>
-#include <qlineedit.h>
-#include"QLineEditFocusOutSignal.h"
 
 class PortTwmplateObject  : public QWidget
 {

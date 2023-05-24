@@ -1,8 +1,11 @@
-#pragma once
+class Port;
 #include"port.h"
-#include <QUndoCommand>
+class Pin;
+#include"pin.h"
+#include<QUndoCommand>
+#include<QString>
 class AddComand;
-#include "AddComand.h"
+#include"AddComand.h"
 
 class AddPinComand  : public QUndoCommand
 {

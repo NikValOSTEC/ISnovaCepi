@@ -147,6 +147,9 @@
     <ClInclude Include="portlib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CustomColliderLineRecoursive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -186,9 +189,6 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Dot.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="CustomColliderLineRecoursive.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="NewWhire.h">

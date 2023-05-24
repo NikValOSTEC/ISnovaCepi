@@ -1,5 +1,6 @@
 #pragma once
-
+class Port;
+#include"port.h"
 #include "Pin.h"
 
 class PinTemplate  : public Pin

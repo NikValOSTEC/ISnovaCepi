@@ -1,16 +1,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "ui_mainwindow.h"
-#include <QGridLayout>
-#include"proxyrectport.h"
-#include "port.h"
-#include <QGraphicsLineItem>
-#include<QGraphicsProxyWidget>
-
+#include"ui_mainwindow.h"
+class Port;
+#include"port.h"
+class View;
 #include"view.h"
+class minimap;
 #include"minimap.h"
-#include <QMainWindow>
-#include"PortTemplate.h"
+#include<qscrollarea.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -1,11 +1,5 @@
-#pragma once
-#include<QPainterPath>
-#include <QGraphicsItem>
-#include "qgraphicsproxywidget.h"
-#include "qgraphicsscene.h"
-#include "qpainter.h"
-#include<qobject.h>
 
+#include"qgraphicsitem.h"
 class GItemFrame  : public  QGraphicsItem
 {
 

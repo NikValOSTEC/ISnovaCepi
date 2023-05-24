@@ -1,9 +1,7 @@
 #pragma once
 
-#include <QGraphicsView>
-#include<qgraphicsitem.h>
-#include"mygraphicsscene.h"
-
+#include"qevent.h"
+#include<qgraphicsview.h>
 class minimap  : public QGraphicsView
 {
 	Q_OBJECT

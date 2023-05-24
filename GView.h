@@ -1,7 +1,10 @@
-#pragma once
-
-#include <QGraphicsView>
-#include "mygraphicsscene.h"
+#include<qobject.h>
+class MyGraphicsScene;
+class QGraphicsView;
+#include"qgraphicsview.h"
+#include"mygraphicsscene.h"
+#include<qdrag.h>
+#include<qevent.h>
 
 class GView  : public QGraphicsView
 {

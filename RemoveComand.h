@@ -1,7 +1,6 @@
 #pragma once
-
-#include <QUndoCommand>
-#include "port.h"
+class Port;
+#include"port.h"
 
 class RemovePortComand  : public QUndoCommand
 {

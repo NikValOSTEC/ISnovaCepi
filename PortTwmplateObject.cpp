@@ -1,9 +1,4 @@
 #include "PortTwmplateObject.h"
-#include"PortTemplate.h"
-#include<qsizepolicy.h>
-#include"qwindow.h"
-#include <QDrag>
-#include<QMimeData>
 
 void PortTwmplateObject::dragEnterEvent(QDragEnterEvent* event)
 {

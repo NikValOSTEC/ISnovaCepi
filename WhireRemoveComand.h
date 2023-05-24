@@ -1,10 +1,8 @@
 #pragma once
 
-#include <QUndoCommand>
-class AddWhireCommand;
-#include"AddWhireCommand.h"
-class AddPinComand;
-#include"AddPinComand.h"
+#include<QUndoCommand>
+class NewWhire;
+#include"NewWhire.h"
 class WhireRemoveComand  : public QUndoCommand
 {
 public:

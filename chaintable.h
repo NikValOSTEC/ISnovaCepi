@@ -1,8 +1,7 @@
-#pragma once
-
-#include <QTableWidget>
-#include<qmetaobject.h>
-#include"mygraphicsscene.h"
+#include<qobject.h>
+#include<qtablewidget.h>
+class View;
+#include"view.h"
 
 class ChainTable  : public QTableWidget
 {

@@ -1,12 +1,12 @@
 #pragma once
-
-
 class CustomColliderLineRecoursive;
-#include "CustomColliderLineRecoursive.h"
+#include"CustomColliderLineRecoursive.h"
 class Chain;
-#include "chain.h"
+#include"chain.h"
+class AddWhireCommand;
+#include"AddWhireCommand.h";
 class Pin;
-#include "pin.h"
+#include"pin.h"
 
 class NewWhire  : public CustomColliderLineRecoursive
 {

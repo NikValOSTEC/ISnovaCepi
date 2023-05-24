@@ -1,5 +1,5 @@
 #include "proxyrectport.h"
-#include<QDebug>
+
 
 ProxyRectPort::ProxyRectPort(Port*port)
 {

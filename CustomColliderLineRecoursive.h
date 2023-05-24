@@ -1,13 +1,9 @@
 #pragma once
-
-
-#include <QGraphicsItem>
+#include<QGraphicsObject>
 class Dot;
-#include "Dot.h"
-#include<qobject.h>
+#include"Dot.h"
 class ProxyRectPort;
 #include"proxyrectport.h"
-#include <QGraphicsObject>
 
 enum ColisionFixWay
 {
@@ -16,7 +12,6 @@ enum ColisionFixWay
 
 class CustomColliderLineRecoursive  : public QGraphicsObject
 {
-	Q_OBJECT
 public:
 	CustomColliderLineRecoursive(bool Vertical_f_Horiz_t,Dot* d1,Dot* d2, CustomColliderLineRecoursive* parent=nullptr);
 	~CustomColliderLineRecoursive();

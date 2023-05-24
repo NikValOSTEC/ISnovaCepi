@@ -1,11 +1,9 @@
 #pragma once
-class View;
-#include "view.h"
-class Port;
-
-#include "port.h"
-#include <qgraphicsproxywidget.h>
 #include <QUndoCommand>
+class View;
+#include"view.h"
+class Port;
+#include"port.h"
 
 class AddComand  : public QUndoCommand
 {

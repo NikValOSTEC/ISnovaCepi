@@ -1,25 +1,8 @@
 #ifndef PIN_H
 #define PIN_H
 
-class Port;
-#include<thread>
-#include<QThread>
-#include"port.h"
-#include<QLineEdit>
-#include <QWidget>
-#include<QMenu>
-class Dot;
-#include"Dot.h"
-class Chain;
-#include"chain.h"
-#include<qstring.h>
-#include <QColorDialog>
 #include"ui_pin.h"
-#include"AddWhireCommand.h"
-class NewPinWhire;
-#include "NewPinWhire.h"
-class NewWhire;
-#include"NewWhire.h"
+#include<qlineedit.h>
 
 namespace Ui {
 class Pin;
@@ -56,12 +39,12 @@ public:
     void pinWhire(bool show=true);
     void PinWUpd();
     Chain* chain;
-    AddPinComand* command;
+    AddPinComand* command=nullptr;
 protected:
     virtual QMenu* ContextMenu();
     Ui::Pin *ui;
 
-    bool upd = false; //ƒ‡ ˝ÚÓ Õ≈¬≈–Œﬂ“Õ¿ﬂ «¿À”œ¿
+    bool upd = false; 
 public slots:
     void RemoveFromChain();
     void Remove();

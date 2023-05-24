@@ -1,5 +1,4 @@
 #include "WhireRemoveComand.h"
-#include<QString>
 
 WhireRemoveComand::WhireRemoveComand(NewWhire* w)
 {
