@@ -2,7 +2,7 @@
 #define PINLINECOLISION_H
 
 class Pin;
-#include "pin.h"
+#include "Pin.h"
 #include <QGraphicsLineItem>
 
 class PinLineColision : public QGraphicsLineItem,QObject

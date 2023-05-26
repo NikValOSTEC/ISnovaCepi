@@ -101,10 +101,10 @@ void ProxyRectPort::ColiderCheck(bool upd)
                 item->SimpleShape(false);
             }
         }
-        else if (Whire* item = dynamic_cast<Whire*>(i))
+        else if (NewWhire* item = dynamic_cast<NewWhire*>(i))
         {
 
-            item->CollisionFix();
+            item->FixColliding();
         }
 
     }

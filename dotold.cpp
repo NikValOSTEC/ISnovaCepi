@@ -1,7 +1,7 @@
 #include "dotold.h"
 #include "qgraphicsproxywidget.h"
 #include "qpainter.h"
-#include"pin.h"
+#include"Pin.h"
 #include<QColor>
 #include<QGraphicsScene>
 #include <QOpenGLPaintDevice>

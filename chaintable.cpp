@@ -144,8 +144,8 @@ void ChainTable::CellChange(int row, int column)
 	{
 		auto str=this->item(row, i)->text();
 		auto splt = str.split(";");
-		splt.remove(0);
-		splt.remove(splt.count() - 1);
+        splt.removeAt(0);
+        splt.removeAt(splt.count() - 1);
 		auto portpns = Port::portsVector[i]->pins();
 		foreach (auto spp, splt)
 		{
@@ -154,7 +154,7 @@ void ChainTable::CellChange(int row, int column)
 				[&spp](auto x) { return x->name() == spp;  });
 			if ((found) == portpns.end())
 			{
-				auto pn=Port::portsVector[i]->addPinSl(spp);
+				auto pn=Port::portsVector[i]->addPin(spp);
 				addPin.append(pn);
 				pins.append(pn);
 

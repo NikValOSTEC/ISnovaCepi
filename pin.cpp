@@ -1,5 +1,4 @@
-#include "pin.h"
-#include "ui_pin.h"
+#include "Pin.h"
 
 Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     QLineEdit(parent),

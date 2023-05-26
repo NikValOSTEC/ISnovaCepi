@@ -13,7 +13,7 @@ class AddWhireCommand;
 class Chain;
 #include"chain.h"
 class Pin;
-#include"pin.h"
+#include"Pin.h"
 
 class Whire : public QGraphicsItem,QObject
 {

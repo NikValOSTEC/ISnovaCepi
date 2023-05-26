@@ -1,9 +1,40 @@
-#pragma once
-#include<QGraphicsObject>
+
+class AddComand;
+class AddPinComand;
+class AddWhireCommand;
+class Chain;
+class ChainTable;
+class CustomColliderLineRecoursive;
 class Dot;
-#include"Dot.h"
+class GItemFrame;
+class GView;
+class MainWindow;
+class minimap;
+class MYGraphicsScene;
+class NewPinWhire;
+class NewWhire;
+class Pin;
+class PinTemplate;
+class Port;
+class PortLib;
+class PortTemplate;
+class PortTwmplateObject;
+class ProxyRectPort;
+class QLineEditFocusOutSignal;
+class RemovePortComand;
+class RemovePinCommand;
+class RemovePortComand;
+class SaveTemplates;
+class View;
+class WhireRemoveComand; 
+#pragma once
+#ifndef CUSTOMCOLLIDERLINERECOURSIVE_H
+#define CUSTOMCOLLIDERLINERECOURSIVE_H
 class ProxyRectPort;
 #include"proxyrectport.h"
+class Dot;
+#include"Dot.h"
+#include <QGraphicsObject>
 
 enum ColisionFixWay
 {
@@ -12,6 +43,7 @@ enum ColisionFixWay
 
 class CustomColliderLineRecoursive  : public QGraphicsObject
 {
+	Q_OBJECT
 public:
 	CustomColliderLineRecoursive(bool Vertical_f_Horiz_t,Dot* d1,Dot* d2, CustomColliderLineRecoursive* parent=nullptr);
 	~CustomColliderLineRecoursive();
@@ -37,3 +69,4 @@ private:
 
 };
 
+#endif

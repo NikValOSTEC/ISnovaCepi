@@ -1,8 +1,41 @@
-#pragma once
+
+class AddComand;
+class AddPinComand;
+class AddWhireCommand;
+class Chain;
+class ChainTable;
+class CustomColliderLineRecoursive;
+class Dot;
+class GItemFrame;
+class GView;
+class MainWindow;
+class minimap;
+class MYGraphicsScene;
+class NewPinWhire;
+class NewWhire;
+class Pin;
+class PinTemplate;
 class Port;
+class PortLib;
+class PortTemplate;
+class PortTwmplateObject;
+class ProxyRectPort;
+class QLineEditFocusOutSignal;
+class RemovePortComand;
+class RemovePinCommand;
+class RemovePortComand;
+class SaveTemplates;
+class View;
+class WhireRemoveComand; 
+#pragma once
+#ifndef PORTTEMPLATE_H
+#define PORTTEMPLATE_H
+class Port;
+#include"port.h"
 class Pin;
 #include"pin.h"
-#include"port.h"
+class PinTemplate;
+#include"PinTemplate.h"
 #include"qobject.h"
 #include <qopenglfunctions.h>
 
@@ -16,24 +49,27 @@ class PortTemplate  : public Port
 
 public:
 	PortTemplate();
-	Pin* addPin(QString name = "", int index = -1) override;
-	virtual Pin* addPinSl(QString name = "") override;
-	virtual void RemoveSL() override;
+	Pin* addPinn(QString name = "", int index = -1);
 	~PortTemplate();
-	void initializeGL()
-	{
+private slots:
+	Pin* addPinSl(QString name = "");
+	void RemoveSL();
 
-		QOpenGLFunctions* f = QOpenGLContext::currentContext()->functions();
-		f->glClearColor(240, 240, 240, 1.0f);
-	}
+//	void initializeGL()
+//	{
 
-	void paintGL()
-	{
-		QOpenGLFunctions* f = QOpenGLContext::currentContext()->functions();
-		f->glClearColor(240, 240, 240, 1.0f);
-		f->glClear(GL_COLOR_BUFFER_BIT);
-	}
+//		QOpenGLFunctions* f = QOpenGLContext::currentContext()->functions();
+//		f->glClearColor(240, 240, 240, 1.0f);
+//	}
+
+//	void paintGL()
+//	{
+//		QOpenGLFunctions* f = QOpenGLContext::currentContext()->functions();
+//		f->glClearColor(240, 240, 240, 1.0f);
+//		f->glClear(GL_COLOR_BUFFER_BIT);
+//	}
 
 
-	virtual QMenu* ContextMenu();
+    virtual QMenu* ContextMenu();
 };
+#endif

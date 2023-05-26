@@ -112,6 +112,9 @@
     <ClCompile Include="NewWhire.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RemovePortComand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mygraphicsscene.h">
@@ -147,7 +150,7 @@
     <ClInclude Include="portlib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CustomColliderLineRecoursive.h">
+    <ClInclude Include="RemovePortComand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -197,6 +200,9 @@
     <QtMoc Include="NewPinWhire.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="CustomColliderLineRecoursive.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
@@ -211,5 +217,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

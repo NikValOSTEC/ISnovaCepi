@@ -83,7 +83,7 @@ void MainWindow::AddTemp(Port* p)
     tmp->templ->name(p->name());
     foreach(auto pn, p->pins())
     {
-        tmp->templ->addPin(pn->name());
+        tmp->templ->addPinn(pn->name());
     }
     tmp->setFixedSize(QSize(70, 100));
     TempList->widget()->layout()->addWidget(tmp);

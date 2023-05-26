@@ -1,9 +1,53 @@
+
+class AddComand;
+class AddPinComand;
+class AddWhireCommand;
+class Chain;
+class ChainTable;
+class CustomColliderLineRecoursive;
+class Dot;
+class GItemFrame;
+class GView;
+class MainWindow;
+class minimap;
+class MYGraphicsScene;
+class NewPinWhire;
+class NewWhire;
+class Pin;
+class PinTemplate;
+class Port;
+class PortLib;
+class PortTemplate;
+class PortTwmplateObject;
+class ProxyRectPort;
+class QLineEditFocusOutSignal;
+class RemovePortComand;
+class RemovePinCommand;
+class RemovePortComand;
+class SaveTemplates;
+class View;
+class WhireRemoveComand;
+#pragma once
 #ifndef PIN_H
 #define PIN_H
 
+class Dot;
+#include"Dot.h"
+class Chain;
+#include"chain.h"
+class Port;
+#include"port.h"
+class NewPinWhire;
+#include"NewPinWhire.h"
+class AddPinComand;
+#include"AddPinComand.h"
+class RemovePinCommand;
 #include"ui_pin.h"
-#include<qlineedit.h>
-
+#include"RemovePinCommand.h"
+#include<QThread>
+#include<qgraphicsproxywidget.h>
+#include<QColorDialog>
+#include<QLineEdit>
 namespace Ui {
 class Pin;
 }
@@ -26,12 +70,14 @@ public:
     void EmitUpd(bool dotold=false);
     NewPinWhire* getpinWhire();
     Port* parCon;
-    virtual void mousePressEvent(QMouseEvent* event) override;
-    virtual void dragEnterEvent(QDragEnterEvent* event) override;
-    virtual void dropEvent(QDropEvent* event) override;
-    virtual void dragMoveEvent(QDragMoveEvent* event) override;
-    virtual Dot* dot(bool recalc=false);
+    virtual Dot* dot(bool recalc = false);
     virtual void dot(Dot* d);
+private:
+    void mousePressEvent(QMouseEvent* event) override;
+    void dragEnterEvent(QDragEnterEvent* event) override;
+    void dropEvent(QDropEvent* event) override;
+    void dragMoveEvent(QDragMoveEvent* event) override;
+public:
     Dot* coredot();
 
     qreal x();

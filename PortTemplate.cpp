@@ -4,7 +4,7 @@ PortTemplate::PortTemplate()
 {
 }
 
-Pin* PortTemplate::addPin(QString name, int index)
+Pin* PortTemplate::addPinn(QString name, int index)
 {
     auto pn = new PinTemplate(this);
     pn->name(name);
@@ -15,7 +15,7 @@ Pin* PortTemplate::addPin(QString name, int index)
 
 Pin* PortTemplate::addPinSl(QString name)
 {
-	return addPin();
+	return addPinn();
     update();
 }
 

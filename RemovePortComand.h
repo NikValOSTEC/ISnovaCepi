@@ -28,32 +28,21 @@ class SaveTemplates;
 class View;
 class WhireRemoveComand; 
 #pragma once
-#ifndef CHAINTABLE_H
-#define CHAINTABLE_H
-class View;
-#include"view.h"
-class Whire;
-#include"whire.h"
-#include<qobject.h>
-#include<qtablewidget.h>
-#include<qinputdialog.h>
-#include"qheaderview.h"
+#ifndef REMOVECOMAND_H
+#define REMOVECOMAND_H
+class Port;
+#include"port.h"
 
-class ChainTable  : public QTableWidget
+class RemovePortComand  : public QUndoCommand
 {
-	Q_OBJECT
-
 public:
-	ChainTable();
-	~ChainTable();
-	View* view=nullptr;
-	void AdddPortSL();
-	void AddChain();
-public slots:
-	void UpdateTable();
-	void CellChange(int row, int column);
-	void CellClck(int row, int colum);
-protected:
-	QMetaObject::Connection m_connection;
+	RemovePortComand(Port* p);
+	~RemovePortComand();	
+	void undo() override;
+	void redo() override;
+	QString name;
+	AddComand* addcom;
+	View* v;
+	int xx, yy;
 };
 #endif

@@ -1,7 +1,39 @@
+
+class AddComand;
+class AddPinComand;
+class AddWhireCommand;
+class Chain;
+class ChainTable;
+class CustomColliderLineRecoursive;
+class Dot;
+class GItemFrame;
+class GView;
+class MainWindow;
+class minimap;
+class MYGraphicsScene;
+class NewPinWhire;
+class NewWhire;
+class Pin;
+class PinTemplate;
+class Port;
+class PortLib;
+class PortTemplate;
+class PortTwmplateObject;
+class ProxyRectPort;
+class QLineEditFocusOutSignal;
+class RemovePortComand;
+class RemovePinCommand;
+class RemovePortComand;
+class SaveTemplates;
+class View;
+class WhireRemoveComand; 
 #pragma once
+#ifndef PINTEMPLATE_H
+#define PINTEMPLATE_H
+class Pin;
+#include "Pin.h"
 class Port;
 #include"port.h"
-#include "Pin.h"
 
 class PinTemplate  : public Pin
 {
@@ -9,10 +41,7 @@ class PinTemplate  : public Pin
 
 public:
 	PinTemplate(Port* p);
-    virtual void mousePressEvent(QMouseEvent* event) override;
-    virtual void dragEnterEvent(QDragEnterEvent* event) override;
-    virtual void dropEvent(QDropEvent* event) override;
-    virtual void dragMoveEvent(QDragMoveEvent* event) override;
+    
 //    void initializeGL() {
 
 //    }
@@ -22,3 +51,4 @@ public:
 //    }
     ~PinTemplate();
 };
+#endif

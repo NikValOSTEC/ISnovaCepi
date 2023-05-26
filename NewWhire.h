@@ -1,12 +1,43 @@
-#pragma once
+
+class AddComand;
+class AddPinComand;
+class AddWhireCommand;
+class Chain;
+class ChainTable;
 class CustomColliderLineRecoursive;
-#include"CustomColliderLineRecoursive.h"
+class Dot;
+class GItemFrame;
+class GView;
+class MainWindow;
+class minimap;
+class MYGraphicsScene;
+class NewPinWhire;
+class NewWhire;
+class Pin;
+class PinTemplate;
+class Port;
+class PortLib;
+class PortTemplate;
+class PortTwmplateObject;
+class ProxyRectPort;
+class QLineEditFocusOutSignal;
+class RemovePortComand;
+class RemovePinCommand;
+class RemovePortComand;
+class SaveTemplates;
+class View;
+class WhireRemoveComand; 
+#ifndef NEWWHIRE_H
+#define NEWWHIRE_H
+#pragma once
 class Chain;
 #include"chain.h"
+class CustomColliderLineRecoursive;
+#include"CustomColliderLineRecoursive.h"
 class AddWhireCommand;
-#include"AddWhireCommand.h";
+#include"AddWhireCommand.h"
 class Pin;
-#include"pin.h"
+#include"Pin.h"
 
 class NewWhire  : public CustomColliderLineRecoursive
 {
@@ -20,3 +51,4 @@ public:
 	~NewWhire();
 	AddWhireCommand* command;
 };
+#endif

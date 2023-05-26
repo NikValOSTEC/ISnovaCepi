@@ -1,5 +1,5 @@
 #include "PortTwmplateObject.h"
-
+#include"QLineEditFocusOutSignal.h"
 void PortTwmplateObject::dragEnterEvent(QDragEnterEvent* event)
 {
 	if (event->mimeData()->hasFormat("PortTemp"))

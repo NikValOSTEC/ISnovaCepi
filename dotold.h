@@ -1,10 +1,10 @@
-#ifndef DOT_H
-#define DOT_H
+#ifndef DOTOLD_H
+#define DOTOLD_H
 #include<QGraphicsItem>
 #include <QObject>
 #include<QList>
 class Pin;
-#include"pin.h"
+#include"Pin.h"
 class Whire;
 #include "whire.h"
 class dotold : public QGraphicsItem,QObject

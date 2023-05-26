@@ -5,7 +5,7 @@ WhireRemoveComand::WhireRemoveComand(NewWhire* w)
 	p1 = w->p1->command;
 	p2 = w->p2->command;
 	wc = w->command;
-	((MYGraphicsScene*)w->scene())->Mview->stackPush(this);
+	((MYGraphicsScene*)(((CustomColliderLineRecoursive*)w)->scene()))->Mview->stackPush(this);
 }
 
 WhireRemoveComand::~WhireRemoveComand()

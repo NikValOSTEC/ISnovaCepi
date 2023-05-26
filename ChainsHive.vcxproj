@@ -106,6 +106,7 @@
     <ClCompile Include="QLineEditFocusOutSignal.cpp" />
     <ClCompile Include="RemoveComand.cpp" />
     <ClCompile Include="RemovePinCommand.cpp" />
+    <ClCompile Include="RemovePortComand.cpp" />
     <ClCompile Include="SaveTemplates.cpp" />
     <ClCompile Include="view.cpp" />
     <ClCompile Include="WhireRemoveComand.cpp" />
@@ -115,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PinTemplate.h" />
-    <ClInclude Include="CustomColliderLineRecoursive.h" />
+    <QtMoc Include="CustomColliderLineRecoursive.h" />
     <QtMoc Include="Dot.h" />
     <QtMoc Include="NewPinWhire.h" />
     <QtMoc Include="NewWhire.h" />
@@ -124,6 +125,7 @@
     <QtMoc Include="PortTwmplateObject.h" />
     <QtMoc Include="SaveTemplates.h" />
     <QtMoc Include="QLineEditFocusOutSignal.h" />
+    <ClInclude Include="RemovePortComand.h" />
     <ClInclude Include="WhireRemoveComand.h" />
     <QtMoc Include="chain.h" />
     <QtMoc Include="chaintable.h" />
@@ -148,6 +150,7 @@
     <QtUic Include="port.ui" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
