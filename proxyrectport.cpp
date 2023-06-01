@@ -1,5 +1,6 @@
 #include "proxyrectport.h"
-
+#include"port.h"
+#include"NewWhire.h"
 
 ProxyRectPort::ProxyRectPort(Port*port)
 {
@@ -19,7 +20,6 @@ QPainterPath ProxyRectPort::shape() const
 
 QRectF ProxyRectPort::boundingRect() const
 {
-
     return rect;
 }
 

@@ -1,4 +1,6 @@
 #include "PortTemplate.h"
+#include"port.h"
+#include"PinTemplate.h"
 PortTemplate::PortTemplate()
     : Port()
 {

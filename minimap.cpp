@@ -1,5 +1,8 @@
 #include "minimap.h"
-
+#include"view.h"
+#include"GView.h"
+#include"mygraphicsscene.h"
+#include<QDebug>
 minimap::minimap(View* v)
 {
     this->v = v;

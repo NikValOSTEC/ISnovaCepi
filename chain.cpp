@@ -1,5 +1,9 @@
 #include "chain.h"
-
+#include"WhireRemoveComand.h"
+#include"pin.h"
+#include"AddWhireCommand.h"
+#include"Dot.h"
+#include"NewWhire.h"
 Chain::Chain():QObject()
 {
 	pins = QVector<Pin*>();
@@ -117,5 +121,27 @@ void Chain::moveToChain(Chain* chain)
 		
 	}
 	delete chain;
+}
+
+void Chain::Dots()
+{
+	Pin* min, *max;
+	min = pins[0];
+	max = pins[0];
+	foreach(auto p, pins)
+	{
+		p->dot()->setBig(true);
+		if (p->y() < min->y())
+		{
+			min = p;
+		}
+		else if (p->y() > max->y())
+		{
+			max = p;
+		}
+	}
+
+	min->dot()->setBig(false);
+	max->dot()->setBig(false);
 }
 

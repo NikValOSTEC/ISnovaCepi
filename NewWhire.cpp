@@ -1,5 +1,9 @@
 #include "NewWhire.h"
-
+#include"pin.h"
+#include"chain.h"
+#include"Dot.h"
+#include"AddWhireCommand.h"
+#include"port.h"
 NewWhire::NewWhire(Pin* pp1, Pin* pp2, AddWhireCommand* comm):
 	CustomColliderLineRecoursive(true,pp1->dot(), pp2->dot())
 {
@@ -8,6 +12,7 @@ NewWhire::NewWhire(Pin* pp1, Pin* pp2, AddWhireCommand* comm):
 	p1 = pp1;
 	p2 = pp2;
     this->command = comm;
+
     if (p1->chain == nullptr && p2->chain == nullptr)
         chain = new Chain();
     else if (p1->chain == p2->chain)
@@ -28,6 +33,8 @@ NewWhire::NewWhire(Pin* pp1, Pin* pp2, AddWhireCommand* comm):
         chain = p2->chain;
     }
     p1->parCon->graphicsProxyWidget()->scene()->addItem(this);
+    chain->AddPin(p1);
+    chain->AddPin(p2);
 
 }
 
@@ -36,4 +43,9 @@ NewWhire::~NewWhire()
 
     p1->dot()->whires.removeOne(this);
     p2->dot()->whires.removeOne(this);
+}
+
+void NewWhire::AddComandW(Pin *p1, Pin *p2)
+{
+    new AddWhireCommand(p1->command,p2->command);
 }

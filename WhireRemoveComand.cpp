@@ -1,5 +1,14 @@
 #include "WhireRemoveComand.h"
-
+#include"NewWhire.h"
+#include"pin.h"
+#include"mygraphicsscene.h"
+#include"AddWhireCommand.h"
+#include"WhireRemoveComand.h"
+#include"AddPinComand.h"
+#include"RemovePinCommand.h"
+#include"chain.h"
+#include"Dot.h"
+#include<QDebug>
 WhireRemoveComand::WhireRemoveComand(NewWhire* w)
 {
 	p1 = w->p1->command;

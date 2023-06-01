@@ -1,6 +1,17 @@
 #include "port.h"
-
-
+#include"pin.h"
+#include"proxyrectport.h"
+#include"AddPinComand.h"
+#include"RemovePortComand.h"
+#include"RemovePinCommand.h"
+qreal Port::x()
+{
+    return _proxy->boundingRect().center().x();
+}
+qreal Port::y()
+{
+    return _proxy->boundingRect().center().y();
+}
 Port::Port(AddComand* com,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Port)

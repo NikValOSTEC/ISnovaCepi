@@ -104,7 +104,6 @@
     <ClCompile Include="PortTwmplateObject.cpp" />
     <ClCompile Include="proxyrectport.cpp" />
     <ClCompile Include="QLineEditFocusOutSignal.cpp" />
-    <ClCompile Include="RemoveComand.cpp" />
     <ClCompile Include="RemovePinCommand.cpp" />
     <ClCompile Include="RemovePortComand.cpp" />
     <ClCompile Include="SaveTemplates.cpp" />
@@ -119,7 +118,7 @@
     <QtMoc Include="CustomColliderLineRecoursive.h" />
     <QtMoc Include="Dot.h" />
     <QtMoc Include="NewPinWhire.h" />
-    <QtMoc Include="NewWhire.h" />
+    <ClInclude Include="NewWhire.h" />
     <ClInclude Include="portlib.h" />
     <QtMoc Include="PortTemplate.h" />
     <QtMoc Include="PortTwmplateObject.h" />
@@ -137,7 +136,6 @@
     <ClInclude Include="GView.h" />
     <ClInclude Include="mygraphicsscene.h" />
     <ClInclude Include="proxyrectport.h" />
-    <ClInclude Include="RemoveComand.h" />
     <ClInclude Include="RemovePinCommand.h" />
     <QtMoc Include="view.h" />
     <QtMoc Include="port.h" />

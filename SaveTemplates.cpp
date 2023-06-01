@@ -1,5 +1,7 @@
 #include "SaveTemplates.h"
-
+#include"PortTwmplateObject.h"
+#include"PortTemplate.h"
+#include"QLineEditFocusOutSignal.h"
 SaveTemplates::SaveTemplates(QObject *parent)
 	: QObject(parent)
 {}

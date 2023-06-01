@@ -1,4 +1,6 @@
 #include "Dot.h"
+#include"NewWhire.h"
+#include"pin.h"
 
 Dot::Dot(QGraphicsObject* parent):
 	QGraphicsObject(parent)
@@ -8,7 +10,11 @@ Dot::Dot(QGraphicsObject* parent):
 	setFlag(QGraphicsItem::ItemIsFocusable, true);
 	Vdot = nullptr;
 	Hdot = nullptr;
+	triangle = false;
+	Linecounter = 0;
+	bg = false;
 	this->whires = QVector<NewWhire*>();
+	_pin = nullptr;
 }
 
 int Dot::type() const
@@ -34,6 +40,26 @@ void Dot::x(int x)
 void Dot::y(int y)
 {
 	setPos(pos().x(),y);
+}
+
+void Dot::setColor(QColor cl)
+{
+	this->cl = cl;
+}
+
+void Dot::setTriangle(bool bl)
+{
+	triangle = bl;
+}
+
+void Dot::setBig(bool bl)
+{
+	bg = bl;
+}
+
+void Dot::setPin(Pin* p)
+{
+	_pin = p;
 }
 
 Dot::~Dot()
@@ -69,7 +95,27 @@ QRectF Dot::boundingRect() const
 QPainterPath Dot::shape() const
 {
 	QPainterPath path = QPainterPath();
-	path.addEllipse(-7, -7, 14, 14);
+	if (!triangle)
+	{
+		path.addEllipse(-3-(bg*3), -3-(bg*3), 6+(bg*6), 6+(bg*6));
+	}
+	else
+	{
+		if (pos().x() > _pin->x())
+		{
+			path.moveTo(0, 0 - _pin->height() / 2);
+			path.lineTo(_pin->height() / 2, 0);
+			path.lineTo(0, 0 + _pin->height() / 2);
+			path.lineTo(0, 0 - _pin->height() / 2);
+		}
+		else
+		{
+			path.moveTo(0, 0 - _pin->height() / 2);
+			path.lineTo(0-_pin->height() / 2, 0);
+			path.lineTo(0, 0 + _pin->height() / 2);
+			path.lineTo(0, 0 - _pin->height() / 2);
+		}
+	}
 	return path;
 }
 
@@ -78,8 +124,8 @@ void Dot::VerticalDot(Dot* d)
 {
 	if (qFabs(this->pos().y() - d->pos().y())>2)
 	{
-		this->setPos(this->pos().x(), d->pos().y());
-
+		if(_pin==nullptr)
+			this->setPos(this->pos().x(), d->pos().y());
 		Emit_Moving();
 	}
 }
@@ -91,4 +137,9 @@ void Dot::HorizontalDot(Dot* d)
 		this->setPos(d->pos().x(), this->pos().y());
 		Emit_Moving();
 	}
+}
+
+Pin* Dot::pn()
+{
+	return _pin;
 }

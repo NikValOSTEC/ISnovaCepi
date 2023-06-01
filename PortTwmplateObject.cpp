@@ -1,4 +1,8 @@
 #include "PortTwmplateObject.h"
+#include<qdrag.h>
+#include<qevent.h>
+#include<qmimedata.h>
+#include"PortTemplate.h"
 #include"QLineEditFocusOutSignal.h"
 void PortTwmplateObject::dragEnterEvent(QDragEnterEvent* event)
 {

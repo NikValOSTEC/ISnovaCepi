@@ -1,7 +1,9 @@
 #include "dotold.h"
+#include "NewPinWhire.h"
 #include "qgraphicsproxywidget.h"
 #include "qpainter.h"
 #include"Pin.h"
+#include"port.h"
 #include<QColor>
 #include<QGraphicsScene>
 #include <QOpenGLPaintDevice>

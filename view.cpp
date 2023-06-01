@@ -1,4 +1,10 @@
-﻿#include "view.h"
+﻿#include"GView.h"
+#include"qgridlayout.h"
+#include"GItemFrame.h"
+#include"mygraphicsscene.h"
+#include"AddComand.h"
+#include "view.h"
+#include<QtMath>
 
 View::View()
 {

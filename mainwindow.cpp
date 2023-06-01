@@ -1,4 +1,10 @@
 #include "mainwindow.h"
+#include"view.h"
+#include"minimap.h"
+#include"chaintable.h"
+#include"PortTwmplateObject.h"
+#include"PortTemplate.h"
+#include"pin.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)

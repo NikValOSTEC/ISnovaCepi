@@ -1,4 +1,8 @@
 #include "RemovePortComand.h"
+#include"mygraphicsscene.h"
+#include"port.h"
+#include"AddComand.h"
+#include"proxyrectport.h"
 
 RemovePortComand::RemovePortComand(Port* port )
 {

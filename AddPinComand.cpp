@@ -1,5 +1,9 @@
 #include "AddPinComand.h"
-
+#include"mygraphicsscene.h"
+#include"pin.h"
+#include"port.h"
+#include"AddComand.h"
+#include"proxyrectport.h"
 AddPinComand::AddPinComand(Port *p,QString nae)
 {
 	prt = p->adcom;

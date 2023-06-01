@@ -1,32 +1,3 @@
-
-class AddComand;
-class AddPinComand;
-class AddWhireCommand;
-class Chain;
-class ChainTable;
-class CustomColliderLineRecoursive;
-class Dot;
-class GItemFrame;
-class GView;
-class MainWindow;
-class minimap;
-class MYGraphicsScene;
-class NewPinWhire;
-class NewWhire;
-class Pin;
-class PinTemplate;
-class Port;
-class PortLib;
-class PortTemplate;
-class PortTwmplateObject;
-class ProxyRectPort;
-class QLineEditFocusOutSignal;
-class RemovePortComand;
-class RemovePinCommand;
-class RemovePortComand;
-class SaveTemplates;
-class View;
-class WhireRemoveComand; 
 #pragma once
 #ifndef DOT_H
 #define DOT_H
@@ -36,10 +7,8 @@ class WhireRemoveComand;
 #include<QGraphicsObject>
 #include<QPainter>
 class CustomColliderLineRecoursive;
-#include"CustomColliderLineRecoursive.h"
 class NewWhire;
-#include"NewWhire.h"
-
+class Pin;
 
 class Dot  : public QGraphicsObject
 {
@@ -49,16 +18,21 @@ public:
 	Dot(QGraphicsObject* parent = nullptr);
 	int type() const override;
 	QColor cl;
+	bool triangle;
+	bool bg;
 	int x();
 	int y();
 	void x(int x);
 	void y(int y);
+	void setColor(QColor cl);
+	void setTriangle(bool bl);
+	void setBig(bool bl);
 	CustomColliderLineRecoursive*Vdot, *Hdot;
 	void EmitIs_inMove(bool moving)
 	{
 		emit Is_inMove(moving);
 	}
-
+	void setPin(Pin* p);
 	void Emit_Moving()
 	{
 		emit moving(this);
@@ -83,6 +57,8 @@ public slots:
 	void HorizontalDot(Dot* d);
 private:
 	int Linecounter = 0;
+	Pin* _pin;
+	Pin* pn();
 
 };
 #endif

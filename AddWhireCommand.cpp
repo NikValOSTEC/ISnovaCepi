@@ -1,5 +1,12 @@
 #include "AddWhireCommand.h"
-
+#include"mygraphicsscene.h"
+#include"AddPinComand.h"
+#include"pin.h"
+#include"port.h"
+#include"NewWhire.h"
+#include"proxyrectport.h"
+#include"Dot.h"
+#include<QDebug>
 AddWhireCommand::AddWhireCommand(AddPinComand* p11, AddPinComand*p22)
 {
 	this->p1 = p11;

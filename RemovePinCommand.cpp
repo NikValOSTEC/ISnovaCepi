@@ -1,5 +1,11 @@
 #include "RemovePinCommand.h"
-
+#include"pin.h"
+#include"mygraphicsscene.h"
+#include"port.h"
+#include"proxyrectport.h"
+#include"AddPinComand.h"
+#include"RemovePinCommand.h"
+#include"AddComand.h"
 RemovePinCommand::RemovePinCommand(Pin* p)
 {
 	pinc = p->command;

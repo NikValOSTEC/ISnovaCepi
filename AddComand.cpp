@@ -1,6 +1,8 @@
 #include "AddComand.h"
-
-
+#include"view.h"
+#include"port.h"
+#include"proxyrectport.h"
+#include"mygraphicsscene.h"
 AddComand::AddComand(View* v,int x,int y,QString name)
 {
     qDebug() << "pos" << x << "  " << y;

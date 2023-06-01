@@ -1,5 +1,8 @@
-#include "CustomColliderLineRecoursive.h"
 
+#include "CustomColliderLineRecoursive.h"
+#include"Dot.h"
+#include"proxyrectport.h"
+#include<QDebug>
 CustomColliderLineRecoursive::CustomColliderLineRecoursive(bool Vert_f_Horiz_t, Dot* d11, Dot* d22,CustomColliderLineRecoursive* parent):
 	QGraphicsObject()
 {
@@ -30,11 +33,20 @@ CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 		d1->Hdot = nullptr;
 	if (d2->Hdot == this)
 		d2->Hdot = nullptr;
-
-	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
-	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
-	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
-	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+	try 
+	{
+		//d1->disconnect(d2, SLOT(VerticalDot(Dot*)));
+		//d2->disconnect(d1, SLOT(VerticalDot(Dot*)));
+		disconnect();
+	}
+	catch(_exception ex){}
+	try 
+	{
+		//d1->disconnect(d2, SLOT(HorizontalDot(Dot*)));
+		//d2->disconnect(d1, SLOT(HorizontalDot(Dot*)));
+		disconnect();
+	}
+	catch(_exception ex){}
 
 	foreach(auto itm, inside)
 	{

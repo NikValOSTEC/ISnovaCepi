@@ -1,5 +1,12 @@
 #include "GView.h"
-
+#include"mygraphicsscene.h"
+#include"proxyrectport.h"
+#include"Dot.h"
+#include"PortTwmplateObject.h"
+#include"PortTemplate.h"
+#include"pin.h"
+#include"AddComand.h"
+#include"view.h"
 GView::GView(QObject* parent) : QGraphicsView()
 {
 }

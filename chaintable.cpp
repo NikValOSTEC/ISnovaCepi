@@ -1,5 +1,9 @@
 #include "chaintable.h"
-
+#include"port.h"
+#include"chain.h"
+#include"view.h"
+#include"pin.h"
+#include"NewWhire.h"
 ChainTable::ChainTable()
 	: QTableWidget()
 {
@@ -184,16 +188,16 @@ void ChainTable::CellChange(int row, int column)
 			{
 				addPin[i]->RemoveFromChain();
 				if (pins[0] != addPin[i])
-					Whire::AddComandW(addPin[i], pins[0]);
+                    NewWhire::AddComandW(addPin[i], pins[0]);
 				else
-					Whire::AddComandW(addPin[i], pins[1]);
+                    NewWhire::AddComandW(addPin[i], pins[1]);
 			}
 			else
 			{
 				if (pins[0] != addPin[i])
-					Whire::AddComandW(addPin[i], pins[0]);
+                    NewWhire::AddComandW(addPin[i], pins[0]);
 				else
-					Whire::AddComandW(addPin[i], pins[1]);
+                    NewWhire::AddComandW(addPin[i], pins[1]);
 
 			}
 		}

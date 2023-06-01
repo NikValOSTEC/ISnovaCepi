@@ -1,5 +1,14 @@
 #include "Pin.h"
-
+#include "port.h"
+#include "NewPinWhire.h"
+#include "AddPinComand.h"
+#include "chain.h"
+#include "Dot.h"
+#include<qdrag.h>
+#include<qmimedata.h>
+#include"AddWhireCommand.h"
+#include"proxyrectport.h"
+#include"RemovePinCommand.h"
 Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     QLineEdit(parent),
     ui(new Ui::Pin)
@@ -14,6 +23,7 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     thread = new QThread();
     moveToThread(thread);
     command = nullptr;
+    cored = nullptr;
 
     if (bl)
     {
@@ -28,6 +38,7 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     {
         d = nullptr;
         pinW = nullptr;
+        cored = nullptr;
     }
 }
 
@@ -40,6 +51,9 @@ Pin::~Pin()
         delete(d);
     if (pinW != nullptr)
         delete(pinW);
+    delete (cored);
+    if (cored != nullptr)
+        delete(cored);
 }
 
 int Pin::index()
@@ -68,6 +82,10 @@ void Pin::Update()
 
 void Pin::EmitUpd(bool dotold)
 {
+    if (dotold&&chain!=nullptr)
+    {
+        chain->Dots();
+    }
     upd = dotold;
     emit updSignal();
 }
@@ -119,6 +137,8 @@ void Pin::dropEvent(QDropEvent* event)
         if (fpin != this)
         {
             new AddWhireCommand(fpin->command, this->command);
+            fpin->pinWhire();
+            this->pinWhire();
         }
     }
     else
@@ -151,6 +171,12 @@ void Pin::dot(Dot* dt)
 
 Dot* Pin::coredot()
 {
+    if (cored==nullptr)
+    {
+        cored = new Dot();
+        parCon->proxy()->scene()->addItem(cored);
+
+    }
     return cored;
 }
 
@@ -181,15 +207,15 @@ void Pin::pinWhire(bool show)
 
 void Pin::PinWUpd()
 {
-    if (qFabs(d->pos().x() - this->x()) < qFabs(cored->pos().x() - this->x()))
+    if (d->pos().x()>this->x())
     {
-        d->setPos(x() - width() / 2, y());
+        cored->setPos(x() + parCon->width()/2, y());
     }
     else
     {
-        d->setPos(x() + width() / 2, y());
+        cored->setPos(x() - parCon->width()/2, y());
     }
-    d->Emit_Moving();
+    cored->Emit_Moving();
 }
 
 QMenu* Pin::ContextMenu()

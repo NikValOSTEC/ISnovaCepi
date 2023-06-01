@@ -1,53 +1,16 @@
-
-class AddComand;
-class AddPinComand;
-class AddWhireCommand;
-class Chain;
-class ChainTable;
-class CustomColliderLineRecoursive;
-class Dot;
-class GItemFrame;
-class GView;
-class MainWindow;
-class minimap;
-class MYGraphicsScene;
-class NewPinWhire;
-class NewWhire;
-class Pin;
-class PinTemplate;
-class Port;
-class PortLib;
-class PortTemplate;
-class PortTwmplateObject;
-class ProxyRectPort;
-class QLineEditFocusOutSignal;
-class RemovePortComand;
-class RemovePinCommand;
-class RemovePortComand;
-class SaveTemplates;
-class View;
-class WhireRemoveComand;
 #pragma once
 #ifndef PIN_H
 #define PIN_H
-
-class Dot;
-#include"Dot.h"
-class Chain;
-#include"chain.h"
-class Port;
-#include"port.h"
-class NewPinWhire;
-#include"NewPinWhire.h"
-class AddPinComand;
-#include"AddPinComand.h"
-class RemovePinCommand;
-#include"ui_pin.h"
-#include"RemovePinCommand.h"
 #include<QThread>
+#include"ui_pin.h"
 #include<qgraphicsproxywidget.h>
 #include<QColorDialog>
 #include<QLineEdit>
+class Port;
+class NewPinWhire;
+class AddPinComand;
+class Chain;
+class Dot;
 namespace Ui {
 class Pin;
 }

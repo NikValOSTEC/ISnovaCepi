@@ -1,42 +1,10 @@
-
-class AddComand;
-class AddPinComand;
-class AddWhireCommand;
-class Chain;
-class ChainTable;
-class CustomColliderLineRecoursive;
-class Dot;
-class GItemFrame;
-class GView;
-class MainWindow;
-class minimap;
-class MYGraphicsScene;
-class NewPinWhire;
-class NewWhire;
-class Pin;
-class PinTemplate;
-class Port;
-class PortLib;
-class PortTemplate;
-class PortTwmplateObject;
-class ProxyRectPort;
-class QLineEditFocusOutSignal;
-class RemovePortComand;
-class RemovePinCommand;
-class RemovePortComand;
-class SaveTemplates;
-class View;
-class WhireRemoveComand;
 #pragma once
 
 #ifndef PROXYRECTPORT_H
 #define PROXYRECTPORT_H
 #include<qgraphicsitem.h>
-class Port;
-#include"port.h"
-class NewWhire;
-#include"NewWhire.h"
 #include<QPainter>
+class Port;
 class ProxyRectPort:public QGraphicsItem
 {
 public:
