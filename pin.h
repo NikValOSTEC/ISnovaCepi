@@ -26,9 +26,9 @@ public:
     const QString name();
     void name(QString name);
 public slots:
-    void Update();
+    void Update(bool dotupd);
 signals:
-    void updSignal();
+    void updSignal(bool upddots);
 public:
     void EmitUpd(bool dotold=false);
     NewPinWhire* getpinWhire();

@@ -27,6 +27,7 @@ public:
 	void setColor(QColor cl);
 	void setTriangle(bool bl);
 	void setBig(bool bl);
+	Pin* pn();
 	CustomColliderLineRecoursive*Vdot, *Hdot;
 	void EmitIs_inMove(bool moving)
 	{
@@ -58,7 +59,6 @@ public slots:
 private:
 	int Linecounter = 0;
 	Pin* _pin;
-	Pin* pn();
 
 };
 #endif
