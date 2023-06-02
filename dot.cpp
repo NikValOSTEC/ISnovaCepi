@@ -97,7 +97,10 @@ QPainterPath Dot::shape() const
 	QPainterPath path = QPainterPath();
 	if (!triangle)
 	{
-		path.addEllipse(-3-(bg*3), -3-(bg*3), 6+(bg*6), 6+(bg*6));
+		if(bg)
+			path.addEllipse(-3-3, -3-3, 6+6, 6+6);
+		else
+			path.addEllipse(-3, -3, 6, 6);
 	}
 	else
 	{

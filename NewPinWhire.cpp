@@ -10,4 +10,6 @@ NewPinWhire::NewPinWhire(Pin* p, QThread* th)
 }
 
 NewPinWhire::~NewPinWhire()
-{}
+{
+
+}

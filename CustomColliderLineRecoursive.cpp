@@ -33,30 +33,22 @@ CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 		d1->Hdot = nullptr;
 	if (d2->Hdot == this)
 		d2->Hdot = nullptr;
-	try 
-	{
-		//d1->disconnect(d2, SLOT(VerticalDot(Dot*)));
-		//d2->disconnect(d1, SLOT(VerticalDot(Dot*)));
-		disconnect();
-	}
-	catch(_exception ex){}
-	try 
-	{
-		//d1->disconnect(d2, SLOT(HorizontalDot(Dot*)));
-		//d2->disconnect(d1, SLOT(HorizontalDot(Dot*)));
-		disconnect();
-	}
-	catch(_exception ex){}
 
-	foreach(auto itm, inside)
-	{
-		auto tm = itm;
-		inside.removeOne(itm);
-		if (dynamic_cast<CustomColliderLineRecoursive*>(itm))
-		{
-			delete tm;
-		}
-	}
+    foreach(auto itm, inside)
+    {
+        auto tm = itm;
+        inside.removeOne(itm);
+        if (dynamic_cast<CustomColliderLineRecoursive*>(itm))
+        {
+            delete tm;
+        }
+    }
+        QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+        QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+        QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
+        QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
+
+
 	d2->WhMin();
 	d1->WhMin();
 }
@@ -187,27 +179,27 @@ void CustomColliderLineRecoursive::setFixWay(ColisionFixWay fw)
 
 void CustomColliderLineRecoursive::setVertical()
 {
-	Vertical_f_Horizontal_t = false;
+    Vertical_f_Horizontal_t = false;
 
-	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
-	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
-	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
-	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+    QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
+    QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
+    QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+    QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
 
-	QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
-	QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+    QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
+    QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
 }
 
 void CustomColliderLineRecoursive::setHorizontal()
 {
-	Vertical_f_Horizontal_t = true;
-	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
-	QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
-	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
-	QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+    Vertical_f_Horizontal_t = true;
+    QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
+    QObject::disconnect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
+    QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+    QObject::disconnect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
 
-	QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
-	QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+    QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
+    QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
 }
 
 void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)

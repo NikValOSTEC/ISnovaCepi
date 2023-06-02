@@ -47,13 +47,8 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
 Pin::~Pin()
 {
     RemoveFromChain();
-    if(d!=nullptr)
-        delete(d);
     if (pinW != nullptr)
         delete(pinW);
-    delete (cored);
-    if (cored != nullptr)
-        delete(cored);
 }
 
 int Pin::index()
