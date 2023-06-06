@@ -11,6 +11,14 @@ ProxyRectPort::ProxyRectPort(Port*port)
     setFlag(QGraphicsItem::ItemIsSelectable, true);
     setFlag(QGraphicsItem::ItemIsFocusable,true);
 }
+void ProxyRectPort::EmitMove()
+{
+    if (true)//!in_move)
+    {
+        //emit strartMove();
+        //in_move = true;
+    }
+}
 QPainterPath ProxyRectPort::shape() const
 {
     QPainterPath path=QPainterPath();
@@ -75,6 +83,7 @@ void ProxyRectPort::Update(bool upd)
     if (upd)
     {
         ColiderCheck();
+        //in_move = false;
     }
 }
 
@@ -95,10 +104,6 @@ void ProxyRectPort::ColiderCheck(bool upd)
             if (upd)
             {
                 item->FixColliding();
-            }
-            else
-            {
-                item->SimpleShape(false);
             }
         }
         else if (NewWhire* item = dynamic_cast<NewWhire*>(i))

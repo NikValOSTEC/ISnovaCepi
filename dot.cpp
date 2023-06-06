@@ -67,6 +67,8 @@ Dot::~Dot()
 
 }
 
+
+
 void Dot::WhPl()
 {
 	Linecounter++;

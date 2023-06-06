@@ -7,8 +7,10 @@
 class Port;
 class ProxyRectPort:public QGraphicsItem
 {
+   // Q_OBJECT
 public:
     ProxyRectPort(Port*port);
+    void EmitMove();
     QPainterPath shape()const override;
     QRectF boundingRect() const override;
     void paint (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
@@ -31,10 +33,12 @@ public:
     qreal bottom() { return mapToScene(0, boundingRect().bottom()).y(); }
     qreal top() { return mapToScene(0, boundingRect().top()).y(); }
     QPointF center() { return mapToScene(boundingRect().center()); }
+
 private:
     Port* port;
     QColor colo;
     QRectF rect;
+    //bool in_move; 
 
 };
 

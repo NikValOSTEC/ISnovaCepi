@@ -72,14 +72,6 @@ void Pin::name(QString name)
 void Pin::Update(bool upd)
 {
     PinWUpd();
-    if (true)
-    {
-        cored->EmitIs_inMove(false);
-        d->EmitIs_inMove(false);
-
-        cored->EmitIs_inMove(true);
-        d->EmitIs_inMove(true);
-    }
 }
 
 
@@ -219,6 +211,7 @@ void Pin::PinWUpd()
         cored->setPos(x() - parCon->width()/2, y());
     }
     cored->Emit_Moving();
+    //pinW->ClearInside();
 }
 
 QMenu* Pin::ContextMenu()

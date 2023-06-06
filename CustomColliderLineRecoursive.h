@@ -26,7 +26,7 @@ public:
 	void setFixWay(ColisionFixWay fw);
 	QVector<QGraphicsItem*>itsmine;
 public slots:
-	void SimpleShape(bool bl);
+	void ClearInside();
 	void setVertical();
 	void setHorizontal();
 	void JumpFrom(QGraphicsItem* itm);
