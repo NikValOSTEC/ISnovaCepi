@@ -9,11 +9,10 @@
 View::View()
 {
     graphicsview = new GView(this);
-    graphicsview->setRenderHint(QPainter::Antialiasing, false);
     graphicsview->setDragMode(QGraphicsView::RubberBandDrag);
     //graphicsview->setOptimizationFlags(QGraphicsView::OptimizationFlag::IndirectPainting);
     graphicsview->setViewportUpdateMode(QGraphicsView::ViewportUpdateMode::FullViewportUpdate);
-    graphicsview->setTransformationAnchor(QGraphicsView::AnchorUnderMouse);
+    graphicsview->setTransformationAnchor(QGraphicsView::NoAnchor);
     //setFrameStyle(Sunken | StyledPanel);
     GScene(new MYGraphicsScene());
     _scale = 0;

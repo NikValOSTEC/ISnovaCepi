@@ -4,6 +4,7 @@
 #include"Dot.h"
 #include"AddWhireCommand.h"
 #include"port.h"
+#include"proxyrectport.h"
 NewWhire::NewWhire(Pin* pp1, Pin* pp2, AddWhireCommand* comm):
 	CustomColliderLineRecoursive(true,pp1->dot(), pp2->dot())
 {
@@ -49,3 +50,5 @@ void NewWhire::AddComandW(Pin *p1, Pin *p2)
 {
     new AddWhireCommand(p1->command,p2->command);
 }
+
+

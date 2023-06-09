@@ -21,11 +21,11 @@ public:
 	~CustomColliderLineRecoursive();
 	QRectF boundingRect() const override;//
 	QPainterPath shape() const override;//
-	virtual void FixColliding();
 	void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
 	void setFixWay(ColisionFixWay fw);
 	QVector<QGraphicsItem*>itsmine;
 public slots:
+	void FixColliding();
 	void ClearInside();
 	void setVertical();
 	void setHorizontal();
@@ -38,6 +38,7 @@ protected:
 	ProxyRectPort* lastcolide=nullptr;
 	int lastleft, lastbottom;
 	CustomColliderLineRecoursive* Parent;
+	int r, g, b;
 
 };
 

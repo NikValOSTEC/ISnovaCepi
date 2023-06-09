@@ -129,11 +129,14 @@ void Pin::dropEvent(QDropEvent* event)
         QVariant var = QVariant::fromValue(QString::fromUtf8(event->mimeData()->data("Pin")));
         uintptr_t address = var.value<uintptr_t>();
         Pin* fpin = (Pin*)address;
-        if (fpin != this)
+        if (fpin->chain != chain || chain==nullptr)
         {
-            new AddWhireCommand(fpin->command, this->command);
-            fpin->pinWhire();
-            this->pinWhire();
+            if (fpin != this)
+            {
+                new AddWhireCommand(fpin->command, this->command);
+                fpin->pinWhire();
+                this->pinWhire();
+            }
         }
     }
     else
@@ -189,6 +192,7 @@ void Pin::pinWhire(bool show)
 {
     if (!show)
     {
+        pinW->ClearInside();
         pinW->hide();
         d->hide();
     }
@@ -197,6 +201,7 @@ void Pin::pinWhire(bool show)
         //emit dot
         pinW->show();
         d->show();
+        pinW->FixColliding();
     }
 }
 

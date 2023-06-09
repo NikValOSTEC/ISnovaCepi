@@ -3,7 +3,8 @@
 #include"GView.h"
 GItemFrame::GItemFrame()
 {
-
+	setZValue(3);
+	setCacheMode(QGraphicsItem::NoCache);
 }
 
 GItemFrame::~GItemFrame()

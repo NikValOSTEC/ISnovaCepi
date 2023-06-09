@@ -135,7 +135,7 @@
     <ClInclude Include="GItemFrame.h" />
     <ClInclude Include="GView.h" />
     <ClInclude Include="mygraphicsscene.h" />
-    <ClInclude Include="proxyrectport.h" />
+    <QtMoc Include="proxyrectport.h" />
     <ClInclude Include="RemovePinCommand.h" />
     <QtMoc Include="view.h" />
     <QtMoc Include="port.h" />

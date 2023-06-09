@@ -64,9 +64,6 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
 
 void GView::mousePressEvent(QMouseEvent* event)
 {
-    QGraphicsItem* item = GScene()->itemAt(mapToScene(event->pos()),QTransform());
-    if(item)
-        ((ProxyRectPort*)item)->ColiderCheck(false);
     QGraphicsView::mousePressEvent(event);
 
 }

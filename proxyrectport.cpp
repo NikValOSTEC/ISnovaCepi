@@ -1,9 +1,12 @@
 #include "proxyrectport.h"
 #include"port.h"
 #include"NewWhire.h"
+#include<qthread.h>
 
 ProxyRectPort::ProxyRectPort(Port*port)
 {
+
+    setZValue(1);
     port->proxy(this);
     this->port=port;
     this->colo=QColor(122,295,15);
@@ -13,11 +16,8 @@ ProxyRectPort::ProxyRectPort(Port*port)
 }
 void ProxyRectPort::EmitMove()
 {
-    if (true)//!in_move)
-    {
-        //emit strartMove();
-        //in_move = true;
-    }
+    emit strartMove();
+    disconnect(this, SIGNAL(strartMove()), nullptr, nullptr);
 }
 QPainterPath ProxyRectPort::shape() const
 {
@@ -37,7 +37,7 @@ void ProxyRectPort::paint(QPainter *painter, const QStyleOptionGraphicsItem *opt
         painter->setBrush(QBrush(QColor(137, 224, 8)));
     else
         painter->setBrush(QBrush(QColor(122, 195, 15)));
-    painter->drawRect(rect);
+    painter->drawRect(boundingRect());
 }
 
 
@@ -82,8 +82,9 @@ void ProxyRectPort::Update(bool upd)
     this->port->Update(upd);
     if (upd)
     {
+        EmitMove();
+        QThread::msleep(100);
         ColiderCheck();
-        //in_move = false;
     }
 }
 
@@ -95,7 +96,7 @@ int ProxyRectPort::type() const
 void ProxyRectPort::ColiderCheck(bool upd)
 {
 
-    QList<QGraphicsItem *> list = collidingItems(Qt::IntersectsItemBoundingRect);
+    QList<QGraphicsItem *> list = scene()->collidingItems(this,Qt::IntersectsItemBoundingRect);
     foreach(QGraphicsItem * i , list)
     {
         

@@ -5,9 +5,9 @@
 #include<qgraphicsitem.h>
 #include<QPainter>
 class Port;
-class ProxyRectPort:public QGraphicsItem
+class ProxyRectPort: public QObject, public QGraphicsItem
 {
-   // Q_OBJECT
+    Q_OBJECT
 public:
     ProxyRectPort(Port*port);
     void EmitMove();
@@ -33,12 +33,12 @@ public:
     qreal bottom() { return mapToScene(0, boundingRect().bottom()).y(); }
     qreal top() { return mapToScene(0, boundingRect().top()).y(); }
     QPointF center() { return mapToScene(boundingRect().center()); }
-
+signals:
+        void strartMove();
 private:
     Port* port;
     QColor colo;
     QRectF rect;
-    //bool in_move; 
 
 };
 

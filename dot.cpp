@@ -14,7 +14,8 @@ Dot::Dot(QGraphicsObject* parent):
 	Linecounter = 0;
 	bg = false;
 	this->whires = QVector<NewWhire*>();
-	_pin = nullptr;
+	_pin = nullptr; 
+	setCacheMode(QGraphicsItem::NoCache);
 }
 
 int Dot::type() const
