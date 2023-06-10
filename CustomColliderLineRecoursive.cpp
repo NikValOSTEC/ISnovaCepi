@@ -86,6 +86,7 @@ void CustomColliderLineRecoursive::FixColliding()
 
 	int i = 0;
 	int mines = 0;
+	ClearInside();
 	auto colitms = collidingItems(Qt::IntersectsItemBoundingRect);
 	auto itm = colitms[i];
 	auto pr = dynamic_cast<ProxyRectPort*>(itm);
@@ -113,7 +114,7 @@ void CustomColliderLineRecoursive::FixColliding()
 	{
 		if (pr)
 		{
-			ClearInside();
+			prepareGeometryChange();
 			this->hide();
 
 			if ((d1->pn() == nullptr || (pr != d1->pn()->parCon->proxy())) && (d2->pn() == nullptr || pr != d2->pn()->parCon->proxy()))
@@ -148,18 +149,20 @@ void CustomColliderLineRecoursive::FixColliding()
 					lastbottom = bottom;
 					if (d1->x() < d2->x())
 					{
-						cd1->setPos(left - 10, d1->y());
-						cd2->setPos(cd1->x(), bottom + 10);
-						cd3->setPos(right + 10, cd2->y());
+						cd1->setPos(left - 25, d1->y());
+						cd2->setPos(cd1->x(), bottom + 25);
+						cd3->setPos(right + 25, cd2->y());
 						cd4->setPos(cd3->x(), d2->y());
 					}
 					else
 					{
-						cd1->setPos(right + 10, d1->y());
-						cd2->setPos(cd1->x(), bottom + 10);
-						cd3->setPos(left - 10, cd2->y());
+						cd1->setPos(right + 25, d1->y());
+						cd2->setPos(cd1->x(), bottom + 25);
+						cd3->setPos(left - 25, cd2->y());
 						cd4->setPos(cd3->x(), d2->y());
 					}
+
+					prepareGeometryChange();
 					d1cd1 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, d1, cd1, this);
 					cd1cd2 = new CustomColliderLineRecoursive(!Vertical_f_Horizontal_t, cd1, cd2, this);
 					cd2cd3 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, cd2, cd3, this);
@@ -222,6 +225,8 @@ void CustomColliderLineRecoursive::FixColliding()
 
 void CustomColliderLineRecoursive::ClearInside()
 {
+
+	prepareGeometryChange();
 	foreach(auto vr, this->inside)
 	{
 		if (dynamic_cast<CustomColliderLineRecoursive*>(vr))

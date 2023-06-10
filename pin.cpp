@@ -40,6 +40,7 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
         pinW = nullptr;
         cored = nullptr;
     }
+    setFixedHeight(19);
 }
 
 
@@ -209,11 +210,13 @@ void Pin::PinWUpd()
 {
     if (d->pos().x()>this->x())
     {
-        cored->setPos(x() + parCon->width()/2, y());
+        cored->setX(parCon->proxy()->mapToScene(parCon->proxy()->boundingRect().topRight()).x());
+        cored->setY(y());
     }
     else
     {
-        cored->setPos(x() - parCon->width()/2, y());
+        cored->setX(parCon->proxy()->mapToScene(parCon->proxy()->boundingRect().topLeft()).x());
+        cored->setY(y());
     }
     cored->Emit_Moving();
     //pinW->ClearInside();

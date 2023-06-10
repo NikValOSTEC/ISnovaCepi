@@ -35,12 +35,21 @@ int Dot::y()
 
 void Dot::x(int x)
 {
-	setPos(x, pos().y());
+
+	if (x % 25 > 12)
+		x = x - x % 25 + 25;
+	else
+		x = x - x % 25;
+	setPos(x-x%25, pos().y());
 }
 
 void Dot::y(int y)
 {
-	setPos(pos().x(),y);
+	if (y % 25 > 12)
+		y = y - y % 25 + 25;
+	else
+		y = y - y % 25;
+	setPos(pos().x(),y-y%25);
 }
 
 void Dot::setColor(QColor cl)

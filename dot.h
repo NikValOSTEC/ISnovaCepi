@@ -36,6 +36,24 @@ public:
 	void setPin(Pin* p);
 	void Emit_Moving()
 	{
+		int x = pos().x();
+		int y = pos().y();
+		int mx, my;
+		mx = x % 25;
+		if (mx < 0)
+			mx += 25;
+		my = y % 25;
+		if (my < 0)
+			my += 25;
+		if (mx > 12)
+			x = x - mx + 25;
+		else
+			x = x - mx;
+		if (y % 25 > 12)
+			y = y - my + 25;
+		else
+			y = y - my;
+		setPos(x, y);
 		emit moving(this);
 	}
 	~Dot();

@@ -124,6 +124,7 @@ void View::stckRedo()
 
 void View::AdddPortSL()
 {
+    graphicsview->GScene()->addEllipse(0, 0, 1, 1);
     QPoint globalPos = QCursor::pos();
     QPoint pos = graphicsview->mapFromGlobal(globalPos);
     pos = graphicsview->mapToScene(pos).toPoint();

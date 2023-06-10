@@ -4,6 +4,7 @@
 #include"ui_port.h"
 #include"qobject.h"
 #include<QMenu>
+#include <QSpacerItem>
 #include<qwidget.h>
 class AddComand;
 class Pin;
@@ -47,6 +48,7 @@ protected:
     Ui::Port *ui;
     virtual QMenu* ContextMenu();
     ProxyRectPort* _proxy;
+    QSpacerItem* spacer;
 };
 
 #endif // PORT_H

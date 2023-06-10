@@ -5,6 +5,9 @@
 #include"mygraphicsscene.h"
 AddComand::AddComand(View* v,int x,int y,QString name)
 {
+
+    x = floor(x / 25) * 25;
+    y = floor(y / 25) * 25;
     qDebug() << "pos" << x << "  " << y;
     xx = x;
     yy = y;
@@ -33,7 +36,7 @@ void AddComand::redo()
     p->adcom = this;
     p->name(name);
     ProxyRectPort* proxyControl = new ProxyRectPort(p);
-    proxyControl->geometry(QRectF(xx, yy-30, p->width(), 30 + p->height()));
+    proxyControl->geometry(QRectF(xx, yy-25, p->width(), 25 + p->height()));
     v->GScene()->addItem(proxyControl);
     QGraphicsProxyWidget* const proxy = v->GScene()->addWidget(p);
     proxy->setPos(xx, yy);

@@ -23,6 +23,7 @@ Port::Port(AddComand* com,QWidget *parent) :
         this, SLOT(showContextMenu(QPoint)));
     portsVector.append(this);
     adcom = com;
+    spacer = nullptr;
 }
 
 Port::Port():
@@ -98,8 +99,15 @@ Pin* Port::addPin(QString name,int index)
     pn->name(name);
     ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertWidget(index,pn);
     auto rec=this->_proxy->geometry();
-    rec.setHeight(60+this->height());
+    rec.setHeight(50+this->height());
     this->_proxy->geometry(rec);
+    if (spacer == nullptr)
+    {
+        auto h=(floor(pn->y() / 25) * 25 + 25) - pn->y();
+        spacer = new QSpacerItem(
+            this->ui->PinsList->width(), h);
+        ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertItem(0, spacer);
+    }
     return pn;
 }
 
