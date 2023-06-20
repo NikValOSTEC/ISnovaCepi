@@ -16,7 +16,6 @@ AddPinComand::~AddPinComand()
 
 void AddPinComand::undo()
 {
-	qDebug() << "Undo " << "AddPin "<< qint64(pn)<<"Com "<<qint64(this);
 	name = pn->name();
 	delete pn;
 }
@@ -24,7 +23,6 @@ void AddPinComand::undo()
 void AddPinComand::redo()
 {
 	pn = prt->p->addPin(name);
-	qDebug() << "Redo " << "AddPin " << qint64(pn) << "Com " << qint64(this);
 	pn->command = this;
 	
 }

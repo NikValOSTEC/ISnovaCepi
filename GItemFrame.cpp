@@ -12,6 +12,7 @@ GItemFrame::~GItemFrame()
 
 QRectF GItemFrame::boundingRect() const
 {
+
 	return shape().boundingRect();
 }
 

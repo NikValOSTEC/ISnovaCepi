@@ -21,7 +21,6 @@ AddWhireCommand::~AddWhireCommand()
 
 void AddWhireCommand::undo()
 {
-	qDebug() << "Undo " << "AddWhire " << qint64(whire) << " p1" << qint64(p1) << " p2" << qint64(p2);
 	delete whire;
 	if (p1->pn->chain != nullptr)
 	{
@@ -43,5 +42,4 @@ void AddWhireCommand::undo()
 void AddWhireCommand::redo()
 {
 	whire=new NewWhire(p1->pn, p2->pn,this);
-	qDebug() << "Redo " << "AddWhire " << qint64(whire)<<" p1"<<qint64(p1) << " p2" << qint64(p2);
 }

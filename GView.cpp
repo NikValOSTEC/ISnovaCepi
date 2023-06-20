@@ -21,11 +21,11 @@ void GView::mouseMoveEvent(QMouseEvent* event)
     QList<QGraphicsItem*> items = GScene()->selectedItems();
     for (int i = 0; i < items.count(); i++)
     {
-        if (items[i]->type() == 101)
+        if (dynamic_cast<ProxyRectPort*>(items[i]))
         {
             ((ProxyRectPort*)items[i])->Update(false);
         }
-        else if (items[i]->type() == 102)
+        else if (dynamic_cast<Dot*>(items[i]))
         {
             ((Dot*)items[i])->EmitIs_inMove(true);
 
@@ -38,17 +38,33 @@ void GView::mouseMoveEvent(QMouseEvent* event)
 void GView::mouseReleaseEvent(QMouseEvent* event)
 {
     QList<QGraphicsItem*> items = GScene()->selectedItems();
+    QList<QGraphicsItem*> rem;
     for (int i = 0; i < items.count(); i++)
     {
-        if (items[i]->type() == 101)
-        {
-            ((ProxyRectPort*)items[i])->Update(true);
-        }
-        else if (items[i]->type() == 102)
-        {
-            ((Dot*)items[i])->EmitIs_inMove(false);
+        if (items[i]) {
+            if (dynamic_cast<Dot*>(items[i]))
+            {
+                ((Dot*)items[i])->EmitIs_inMove(false);
+                rem.append(items[i]);
+            }
         }
     }
+    foreach(auto var,rem)
+    {
+        items.removeOne(var);
+    }
+    for (int i = 0; i < items.count(); i++)
+    {
+        if (items[i]) {
+            if (dynamic_cast<ProxyRectPort*>(items[i]))
+            {
+
+                ((ProxyRectPort*)items[i])->Update(true); 
+                ((ProxyRectPort*)items[i])->Update(true);
+            }
+        }
+    }
+
 
     QGraphicsView::mouseReleaseEvent(event);    
     if (items.count() == lastselected || items.count() == 1)

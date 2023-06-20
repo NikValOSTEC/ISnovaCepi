@@ -10,7 +10,6 @@ ProxyRectPort::ProxyRectPort(Port*port)
     port->proxy(this);
     this->port=port;
     this->colo=QColor(122,295,15);
-
     setFlag(QGraphicsItem::ItemIsMovable, true);
     setFlag(QGraphicsItem::ItemIsSelectable, true);
     setFlag(QGraphicsItem::ItemIsFocusable,true);
@@ -19,18 +18,18 @@ ProxyRectPort::ProxyRectPort(Port*port)
 void ProxyRectPort::EmitMove()
 {
     emit strartMove();
-    disconnect(this, SIGNAL(strartMove()), nullptr, nullptr);
 }
 QPainterPath ProxyRectPort::shape() const
 {
-    QPainterPath path=QPainterPath();
-    path.addRect(rect);
+    QPainterPath path = QPainterPath();
+    path.addRect(QRectF(0,0, port->width(), port->height() + 25));
     return path;
 }
 
 QRectF ProxyRectPort::boundingRect() const
 {
-    return rect;
+    qDebug()<< shape().boundingRect();
+    return shape().boundingRect();
 }
 
 void ProxyRectPort::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
@@ -39,7 +38,7 @@ void ProxyRectPort::paint(QPainter* painter, const QStyleOptionGraphicsItem* opt
         painter->setBrush(QBrush(QColor(137, 224, 8)));
     else
         painter->setBrush(QBrush(QColor(122, 195, 15)));
-    painter->drawRect(boundingRect());
+    painter->drawPath(shape());
 }
 
 
@@ -87,7 +86,8 @@ void ProxyRectPort::color(QColor c)
 
 ProxyRectPort::~ProxyRectPort()
 {
-
+    hide();
+    EmitMove();
 }
 
 void ProxyRectPort::Update(bool upd)
@@ -114,24 +114,35 @@ int ProxyRectPort::type() const
 void ProxyRectPort::ColiderCheck(bool upd)
 {
 
-    QList<QGraphicsItem *> list = scene()->collidingItems(this,Qt::IntersectsItemBoundingRect);
-    foreach(QGraphicsItem * i , list)
-    {
-        
-        if (CustomColliderLineRecoursive* item = dynamic_cast<CustomColliderLineRecoursive*>(i))
+    int x = left();
+    int y = top();
+    int w = this->boundingRect().width();
+    int h = this->boundingRect().height();
+    QList<QGraphicsItem*> list = scene()->items(x, y, w, h, Qt::IntersectsItemBoundingRect, Qt::DescendingOrder);
+    QList<CustomColliderLineRecoursive*> post = QList<CustomColliderLineRecoursive*>();
+
+    if (upd) {
+        foreach(QGraphicsItem * i, list)
         {
-            if (upd)
+
+            if (CustomColliderLineRecoursive* item = dynamic_cast<CustomColliderLineRecoursive*>(i))
             {
-                item->FixColliding();
+                if (item->Vertical_f_Horizontal_t)
+                {
+                    item->FixColliding();
+                }
+                else
+                {
+                    post.append(item);
+                }
             }
         }
-        else if (NewWhire* item = dynamic_cast<NewWhire*>(i))
+        foreach(CustomColliderLineRecoursive* j, post)
         {
-
-            item->FixColliding();
+            j->FixColliding();
         }
-
     }
+
 
 }
 

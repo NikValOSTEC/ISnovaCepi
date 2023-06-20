@@ -9,6 +9,7 @@
 CustomColliderLineRecoursive::CustomColliderLineRecoursive(bool Vert_f_Horiz_t, Dot* d11, Dot* d22,CustomColliderLineRecoursive* parent):
 	QGraphicsObject()
 {
+	setActive(true);
 	setCacheMode(QGraphicsItem::NoCache);
 	setZValue(-1);
 	this->d1 = d11;
@@ -68,16 +69,20 @@ CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 
 QRectF CustomColliderLineRecoursive::boundingRect() const
 {
-	if(!this->isVisible())
-		return QRectF(d1->x(), d1->y(), d1->x(), d1->y());
-	return QRectF(QPointF(d1->x() + 1, d1->y() + 1), QPointF(d2->x() - 1, d2->y() - 1));
+
+	qDebug() << shape().boundingRect();
+	qDebug() << pos();
+	return shape().boundingRect();
+
 }
 
 QPainterPath CustomColliderLineRecoursive::shape() const
 {
-	QPainterPath path = QPainterPath();
-	path.moveTo(d1->x(), d1->y());
-	path.lineTo(d2->x(), d2->y());
+	QPainterPath path = QPainterPath(); 
+	QRectF res = QRectF(QPointF(d1->x() + 2, d1->y() + 2), QPointF(d2->x() - 2, d2->y() - 2));
+	if (!this->isVisible())
+		res = QRectF(d1->x(), d1->y(), d1->x(), d1->y());
+	path.addRect(res);
 	return path;
 }
 
@@ -87,7 +92,7 @@ void CustomColliderLineRecoursive::FixColliding()
 	int i = 0;
 	int mines = 0;
 	ClearInside();
-	auto colitms = collidingItems(Qt::IntersectsItemBoundingRect);
+	auto colitms = collidingItems(Qt::IntersectsItemShape);
 	auto itm = colitms[i];
 	auto pr = dynamic_cast<ProxyRectPort*>(itm);
 	foreach (auto var,colitms)
@@ -169,7 +174,11 @@ void CustomColliderLineRecoursive::FixColliding()
 					cd3cd4 = new CustomColliderLineRecoursive(!Vertical_f_Horizontal_t, cd3, cd4, this);
 					cd4d2 = new CustomColliderLineRecoursive(Vertical_f_Horizontal_t, cd4, d2, this);
 
-					connect(pr, SIGNAL(strartMove()), this, SLOT(FixColliding()), Qt::DirectConnection);
+					QMetaObject::Connection* const connection = new QMetaObject::Connection;
+					*connection = connect(pr, &ProxyRectPort::strartMove, this, [this, connection]()
+						{ this->FixColliding();
+					disconnect(*connection);
+					delete connection; });
 
 					if (!Vertical_f_Horizontal_t)
 					{
@@ -189,8 +198,6 @@ void CustomColliderLineRecoursive::FixColliding()
 					inside.append(cd4d2);
 
 
-					qDebug() << d1->pos() << d2->pos();
-					qDebug() << cd1->pos() << cd2->pos()<< cd3->pos() << cd4->pos();;
 					d1cd1->FixColliding();
 					cd1cd2->FixColliding();
 					cd2cd3->FixColliding();
@@ -207,7 +214,8 @@ void CustomColliderLineRecoursive::FixColliding()
 				}
 			}
 
-
+			else
+				this->show();
 
 		}
 		else
@@ -258,10 +266,7 @@ void CustomColliderLineRecoursive::ClearInside()
 
 void CustomColliderLineRecoursive::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {
-	qDebug() << d1->pos() << d2->pos();
 	painter->drawPath(shape());
-	painter->setPen(QColor(r,g,b));
-	painter->drawRect(boundingRect());
 }
 
 void CustomColliderLineRecoursive::setFixWay(ColisionFixWay fw)

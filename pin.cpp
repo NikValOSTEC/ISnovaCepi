@@ -202,7 +202,7 @@ void Pin::pinWhire(bool show)
         //emit dot
         pinW->show();
         d->show();
-        pinW->FixColliding();
+        //pinW->FixColliding();
     }
 }
 

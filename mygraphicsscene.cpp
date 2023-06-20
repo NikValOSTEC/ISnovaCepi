@@ -23,8 +23,6 @@ void MYGraphicsScene::drawBackground(QPainter* painter, const QRectF& rect)
     for (qreal y = top; y < rect.bottom(); y += gridSize)
         lines.append(QLineF(rect.left(), y, rect.right(), y));
 
-    qDebug() << lines.size();
-
     painter->drawLines(lines.data(), lines.size());
 }
 

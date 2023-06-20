@@ -31,9 +31,7 @@ void minimap::mouseReleaseEvent(QMouseEvent* event)
 void minimap::mousePressEvent(QMouseEvent* event)
 {
     auto rectt = v->view()->rect();
-    qDebug() << rectt;
     rectt.moveCenter(mapToScene(event->pos()).toPoint());
-    qDebug() << rectt;
     v->view()->fitInView(rectt);
     scene()->update();
 }

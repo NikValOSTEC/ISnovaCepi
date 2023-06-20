@@ -67,6 +67,7 @@ void View::wheelEvent(QWheelEvent* e)
         QFrame::wheelEvent(e);
     }
     this->GScene()->update();
+    graphicsview->update();
 }
 
 

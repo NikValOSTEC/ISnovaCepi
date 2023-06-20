@@ -24,6 +24,7 @@ public:
 	void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
 	void setFixWay(ColisionFixWay fw);
 	QVector<QGraphicsItem*>itsmine;
+	bool Vertical_f_Horizontal_t;
 public slots:
 	void FixColliding();
 	void ClearInside();
@@ -31,7 +32,6 @@ public slots:
 	void setHorizontal();
 	void JumpFrom(QGraphicsItem* itm);
 protected:
-	bool Vertical_f_Horizontal_t;
 	Dot* d1, *d2;
 	ColisionFixWay fixway;
 	QVector<QGraphicsObject*> inside;

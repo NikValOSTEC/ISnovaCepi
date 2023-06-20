@@ -24,10 +24,8 @@ WhireRemoveComand::~WhireRemoveComand()
 
 void WhireRemoveComand::undo()
 {
-	qDebug() << "Undo " << "WRem "<< qint64(wc->whire);
 	if (p1->pn->chain != nullptr)
 	{
-		qDebug() << p1->pn->chain->pins.count();
 		p1->pn->chain->pins.removeOne(p1->pn);
 		p1->pn->chain = nullptr;
 	}
@@ -36,7 +34,6 @@ void WhireRemoveComand::undo()
 
 void WhireRemoveComand::redo()
 {
-	qDebug() << "Redo " << "WRem " << qint64(wc->whire);
 	delete wc->whire;
 	if (p1->pn->chain != nullptr)
 	{
