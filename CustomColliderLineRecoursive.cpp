@@ -77,9 +77,6 @@ CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 
 QRectF CustomColliderLineRecoursive::boundingRect() const
 {
-
-	qDebug() << shape().boundingRect();
-	qDebug() << pos();
 	return shape().boundingRect();
 
 }

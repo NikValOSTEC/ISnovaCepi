@@ -1,2 +1,8 @@
-﻿  Dot.cpp
+﻿  AddPinComand.cpp
+  AddWhireCommand.cpp
+  GView.cpp
+  RemovePinCommand.cpp
+  WhireRemoveComand.cpp
+  pin.cpp
+  port.cpp
   ChainsHive.vcxproj -> C:\Users\valyayev.n\source\repos\ChainsHive\x64\Debug\ChainsHive.exe

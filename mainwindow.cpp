@@ -4,6 +4,7 @@
 #include"chaintable.h"
 #include"PortTwmplateObject.h"
 #include"PortTemplate.h"
+#include"SaveTemplates.h"
 #include"pin.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,11 +28,23 @@ MainWindow::MainWindow(QWidget *parent)
     TempList->setFixedHeight(140);
     lay->addWidget(TempList);
 
+
     auto plusbt = new QPushButton("+");
     plusbt->setFixedSize(QSize(50, 50));
 
     connect(plusbt, SIGNAL(clicked()), this, SLOT(AddTemp()));
     TempList->widget()->layout()->addWidget(plusbt);
+    auto lst = SaveTemplates::Load();
+    foreach (auto var,lst)
+    {
+        auto prt = new Port();
+        prt->name(var.second);
+        foreach(auto pnn, var.first)
+        {
+            prt->addPin(pnn,-1,false);
+        }
+        AddTemp(prt);
+    }
     minima = new minimap(v);
     lay->addWidget(v, 1, 0, 1, 1);
     minima->raise();

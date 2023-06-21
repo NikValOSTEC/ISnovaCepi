@@ -30,7 +30,7 @@ public:
     QVector<Pin*>pins();
     AddComand* adcom;
     void Remove();
-    virtual Pin* addPin(QString name = "", int index = -1);
+    virtual Pin* addPin(QString name = "", int index = -1,bool bl=true);
 
 private slots:
     void showContextMenu(const QPoint& pos);

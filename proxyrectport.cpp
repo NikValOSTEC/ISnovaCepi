@@ -28,7 +28,6 @@ QPainterPath ProxyRectPort::shape() const
 
 QRectF ProxyRectPort::boundingRect() const
 {
-    qDebug()<< shape().boundingRect();
     return shape().boundingRect();
 }
 

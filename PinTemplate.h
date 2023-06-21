@@ -11,6 +11,10 @@ class PinTemplate  : public Pin
 
 public:
 	PinTemplate(Port* p);
+
+    virtual void dragEnterEvent(QDragEnterEvent* event) override;
+    virtual void dropEvent(QDropEvent* event) override;
+    virtual void dragMoveEvent(QDragMoveEvent* event) override;
     
 //    void initializeGL() {
 

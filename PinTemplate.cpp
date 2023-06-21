@@ -6,6 +6,18 @@ PinTemplate::PinTemplate(Port* p)
 
 }
 
+void PinTemplate::dragEnterEvent(QDragEnterEvent* event)
+{
+}
+
+void PinTemplate::dropEvent(QDropEvent* event)
+{
+}
+
+void PinTemplate::dragMoveEvent(QDragMoveEvent* event)
+{
+}
+
 
 PinTemplate::~PinTemplate()
 {}

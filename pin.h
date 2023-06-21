@@ -37,9 +37,9 @@ public:
     virtual void dot(Dot* d);
 private:
     void mousePressEvent(QMouseEvent* event) override;
-    void dragEnterEvent(QDragEnterEvent* event) override;
-    void dropEvent(QDropEvent* event) override;
-    void dragMoveEvent(QDragMoveEvent* event) override;
+    virtual void dragEnterEvent(QDragEnterEvent* event) override;
+    virtual void dropEvent(QDropEvent* event) override;
+    virtual void dragMoveEvent(QDragMoveEvent* event) override;
 public:
     Dot* coredot();
 

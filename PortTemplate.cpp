@@ -1,12 +1,16 @@
 #include "PortTemplate.h"
 #include"port.h"
 #include"PinTemplate.h"
-PortTemplate::PortTemplate()
+#include"PortTwmplateObject.h"
+#include"SaveTemplates.h"
+#include"QLineEditFocusOutSignal.h"
+PortTemplate::PortTemplate(PortTwmplateObject* o)
     : Port()
 {
+        object = o;
 }
 
-Pin* PortTemplate::addPinn(QString name, int index)
+    Pin* PortTemplate::addPinn(QString name, int index)
 {
     auto pn = new PinTemplate(this);
     pn->name(name);
@@ -28,6 +32,17 @@ void PortTemplate::RemoveSL()
 
 PortTemplate::~PortTemplate()
 {}
+
+void PortTemplate::closeEvent(QCloseEvent* event)
+{
+
+    if (event->spontaneous()) {
+        SaveTemplates::Save(object);
+    }
+    else {
+        QWidget::closeEvent(event);
+    }
+}
 
 QMenu* PortTemplate::ContextMenu()
 {

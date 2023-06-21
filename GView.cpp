@@ -7,6 +7,7 @@
 #include"pin.h"
 #include"AddComand.h"
 #include"view.h"
+#include"AddPinComand.h"
 GView::GView(QObject* parent) : QGraphicsView()
 {
 }
@@ -98,7 +99,7 @@ void GView::dropEvent(QDropEvent* event)
             auto comand = GScene()->Mview->AdddPort();
             foreach(auto pn, obj->templ->pins())
             {
-                comand->p->addPin(pn->name());
+                new AddPinComand(comand->p, pn->name());
             }
         }
     }

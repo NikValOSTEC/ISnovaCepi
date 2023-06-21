@@ -93,20 +93,23 @@ QMenu *Port::ContextMenu()
     return myMenu;
 }
 
-Pin* Port::addPin(QString name,int index)
+Pin* Port::addPin(QString name, int index, bool bl)
 {
-    auto pn = new Pin(this);
+    auto pn = new Pin(this,bl);
     pn->name(name);
     ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertWidget(index,pn);
-    auto rec=this->_proxy->geometry();
-    rec.setHeight(50+this->height());
-    this->_proxy->geometry(rec);
-    if (spacer == nullptr)
+    if (bl)
     {
-        auto h=(floor(pn->y() / 25) * 25 + 25) - pn->y();
-        spacer = new QSpacerItem(
-            this->ui->PinsList->width(), h);
-        ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertItem(0, spacer);
+        auto rec = this->_proxy->geometry();
+        rec.setHeight(50 + this->height());
+        this->_proxy->geometry(rec);
+        if (spacer == nullptr)
+        {
+            auto h = (floor(pn->y() / 25) * 25 + 25) - pn->y();
+            spacer = new QSpacerItem(
+                this->ui->PinsList->width(), h);
+            ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertItem(0, spacer);
+        }
     }
     return pn;
 }

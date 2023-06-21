@@ -4,8 +4,9 @@
 #include"port.h"
 #include"AddComand.h"
 #include"proxyrectport.h"
-AddPinComand::AddPinComand(Port *p,QString nae)
+AddPinComand::AddPinComand(Port *p,QString nae,bool rea)
 {
+	real = rea;
 	prt = p->adcom;
 	name = nae;
 	((MYGraphicsScene*)(p->proxy()->scene()))->Mview->stackPush(this);
@@ -22,7 +23,7 @@ void AddPinComand::undo()
 
 void AddPinComand::redo()
 {
-	pn = prt->p->addPin(name);
+	pn = prt->p->addPin(name,-1,real);
 	pn->command = this;
 	prt->p->proxy()->Update(true);
 	

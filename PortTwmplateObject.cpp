@@ -58,7 +58,7 @@ void PortTwmplateObject::editPush()
 }
 PortTwmplateObject::PortTwmplateObject()
 {
-	templ = new PortTemplate();
+	templ = new PortTemplate(this);
 	this->editpb = new QPushButton(this);
 	this->name = new QLineEditFocusOutSignal(this);
 	this->delpb = new QPushButton(this);

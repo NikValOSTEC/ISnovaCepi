@@ -5,6 +5,8 @@
 #include"ui_port.h"
 #include <qopenglfunctions.h>
 #include"port.h"
+class PortTwmplateObject;
+class SaveTemplates;
 class Pin;
 
 namespace Ui {
@@ -16,12 +18,16 @@ class PortTemplate  : public Port
 	Q_OBJECT
 
 public:
-	PortTemplate();
+	PortTemplate(PortTwmplateObject* o);
 	Pin* addPinn(QString name = "", int index = -1);
 	~PortTemplate();
+private:
+
+	PortTwmplateObject* object;
 private slots:
 	Pin* addPinSl(QString name = "");
 	void RemoveSL();
+
 
 //	void initializeGL()
 //	{
@@ -37,7 +43,7 @@ private slots:
 //		f->glClear(GL_COLOR_BUFFER_BIT);
 //	}
 
-
+	void closeEvent(QCloseEvent* event) override;
     virtual QMenu* ContextMenu();
 };
 #endif
