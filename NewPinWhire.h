@@ -12,5 +12,9 @@ class NewPinWhire  : public CustomColliderLineRecoursive
 public:
 	NewPinWhire(Pin* p, QThread* th);
 	~NewPinWhire();
+
+	QColor color() override;
+private:
+	Pin* pin;
 };
 #endif

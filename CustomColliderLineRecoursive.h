@@ -17,6 +17,7 @@ class CustomColliderLineRecoursive  : public QGraphicsObject
 {
 	Q_OBJECT
 public:
+	virtual QColor color();
 	CustomColliderLineRecoursive(bool Vertical_f_Horiz_t,Dot* d1,Dot* d2, CustomColliderLineRecoursive* parent=nullptr);
 	~CustomColliderLineRecoursive();
 	QRectF boundingRect() const override;//
@@ -25,6 +26,7 @@ public:
 	void setFixWay(ColisionFixWay fw);
 	QVector<QGraphicsItem*>itsmine;
 	bool Vertical_f_Horizontal_t;
+	int JumpDerection = 1;
 public slots:
 	void FixColliding();
 	void ClearInside();

@@ -16,5 +16,6 @@ public:
 	~NewWhire();
 	AddWhireCommand* command;
     static void AddComandW(Pin* p1,Pin* p2);
+	QColor color() override;
 };
 #endif

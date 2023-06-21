@@ -6,6 +6,14 @@
 #include"port.h"
 #include<QDebug>
 #include <QRandomGenerator>
+QColor CustomColliderLineRecoursive::color()
+{
+	if (Parent)
+	{
+		return Parent->color();
+	}
+	return QColor(Qt::black);
+}
 CustomColliderLineRecoursive::CustomColliderLineRecoursive(bool Vert_f_Horiz_t, Dot* d11, Dot* d22,CustomColliderLineRecoursive* parent):
 	QGraphicsObject()
 {
@@ -203,6 +211,7 @@ void CustomColliderLineRecoursive::FixColliding()
 					cd2cd3->FixColliding();
 					cd3cd4->FixColliding();
 					cd4d2->FixColliding();
+					scene()->update();
 
 
 
@@ -266,6 +275,8 @@ void CustomColliderLineRecoursive::ClearInside()
 
 void CustomColliderLineRecoursive::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {
+	painter->setPen(QPen(color()));
+	painter->setBrush(color());
 	painter->drawPath(shape());
 }
 
@@ -318,19 +329,28 @@ void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
 					{
 						if (d1->Hdot->d2->x() < d1->x())
 						{
-							d1->setPos(pc->right() + 10, d1->y());
+							d1->setPos(pc->right() + 50, d1->y());
+							JumpDerection = 1;
 						}
 						else
-							d1->setPos(pc->left() - 10, d1->y());
+						{
+							d1->setPos(pc->left() - 50, d1->y());
+							JumpDerection = -1;
+						}
 					}
 					else if (d1->Hdot->d2 == d1)
 					{
 						if (d1->Hdot->d1->x() < d1->x())
 						{
-							d1->setPos(pc->right() + 10, d1->y());
+							d1->setPos(pc->right() + 50, d1->y());
+							JumpDerection = 1;
 						}
 						else
-							d1->setPos(pc->left() - 10, d1->y());
+						{
+							d1->setPos(pc->left() - 50, d1->y());
+
+							JumpDerection = -1;
+						}
 					}
 
 					d1->Emit_Moving();
@@ -341,19 +361,28 @@ void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
 					{
 						if (d2->Hdot->d2->x() < d2->x())
 						{
-							d2->setPos(pc->right() + 10, d2->y());
+							d2->setPos(pc->right() + 50, d2->y());
+							JumpDerection = 1;
 						}
 						else
-							d2->setPos(pc->left() - 10, d2->y());
+						{
+							d2->setPos(pc->left() - 50, d2->y());
+
+							JumpDerection = -1;
+						}
 					}
 					else if (d2->Hdot->d2 == d2)
 					{
 						if (d2->Hdot->d1->x() < d2->x())
 						{
-							d2->setPos(pc->right() + 10, d2->y());
+							d2->setPos(pc->right() + 50, d2->y());
+							JumpDerection = 1;
 						}
 						else
-							d2->setPos(pc->left() - 10, d2->y());
+						{
+							d2->setPos(pc->left() - 50, d2->y());
+							JumpDerection = -1;
+						}
 					}
 					d2->Emit_Moving();
 
@@ -363,13 +392,16 @@ void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
 			{
 				if (d1->pos().y() > pc->center().y())
 				{
-					d1->setPos(d1->pos().x(), pc->bottom() + 10);
+					d1->setPos(d1->pos().x(), pc->bottom() + 50);
 					d1->Emit_Moving();
+					JumpDerection = 1;
 				}
 				else
 				{
 
-					d1->setPos(d1->pos().x(), pc->top() - 10);
+					d1->setPos(d1->pos().x(), pc->top() - 50);
+					d1->Emit_Moving();
+					JumpDerection = -1;
 				}
 			}
 		}
@@ -377,16 +409,18 @@ void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
 		{
 			if (cl->Vertical_f_Horizontal_t == Vertical_f_Horizontal_t)
 			{
-				if (Vertical_f_Horizontal_t)
+				if (cl->Parent != Parent)
 				{
-					d1->setY(d1->y() + 10);
-					d1->Emit_Moving();
-				}
-				else
-
-				{
-					d1->setX(d1->x() + 10);
-					d1->Emit_Moving();
+					if (Vertical_f_Horizontal_t)
+					{
+						d1->setX(d1->x() + (50 * JumpDerection));
+						d1->Emit_Moving();
+					}
+					else
+					{
+						d1->setY(d1->y() + (50 * JumpDerection));
+						d1->Emit_Moving();
+					}
 				}
 			}
 		}

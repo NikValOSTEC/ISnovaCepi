@@ -45,6 +45,8 @@ void GView::mouseReleaseEvent(QMouseEvent* event)
             if (dynamic_cast<Dot*>(items[i]))
             {
                 ((Dot*)items[i])->EmitIs_inMove(false);
+                ((Dot*)items[i])->Emit_Moving();
+
                 rem.append(items[i]);
             }
         }

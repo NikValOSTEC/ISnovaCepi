@@ -24,5 +24,6 @@ void AddPinComand::redo()
 {
 	pn = prt->p->addPin(name);
 	pn->command = this;
+	prt->p->proxy()->Update(true);
 	
 }

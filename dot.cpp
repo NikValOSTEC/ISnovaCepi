@@ -95,22 +95,11 @@ void Dot::WhMin()
 
 void Dot::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {
-	painter->setBrush(QBrush(cl));
-	painter->drawPath(shape());
-}
-
-QRectF Dot::boundingRect() const
-{
-	return shape().boundingRect();
-}
-
-QPainterPath Dot::shape() const
-{
 	QPainterPath path = QPainterPath();
 	if (!triangle)
 	{
-		if(bg)
-			path.addEllipse(-3-3, -3-3, 6+6, 6+6);
+		if (bg)
+			path.addEllipse(-3 - 3, -3 - 3, 6 + 6, 6 + 6);
 		else
 			path.addEllipse(-3, -3, 6, 6);
 	}
@@ -126,11 +115,24 @@ QPainterPath Dot::shape() const
 		else
 		{
 			path.moveTo(0, 0 - _pin->height() / 2);
-			path.lineTo(0-_pin->height() / 2, 0);
+			path.lineTo(0 - _pin->height() / 2, 0);
 			path.lineTo(0, 0 + _pin->height() / 2);
 			path.lineTo(0, 0 - _pin->height() / 2);
 		}
 	}
+	painter->setBrush(QBrush(cl));
+	painter->drawPath(path);
+}
+
+QRectF Dot::boundingRect() const
+{
+	return shape().boundingRect();
+}
+
+QPainterPath Dot::shape() const
+{
+	QPainterPath path;
+	path.addRect(-10, -10, 20, 20);
 	return path;
 }
 

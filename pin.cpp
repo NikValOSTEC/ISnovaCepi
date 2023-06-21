@@ -73,6 +73,8 @@ void Pin::name(QString name)
 void Pin::Update(bool upd)
 {
     PinWUpd();
+    if(pinW->isVisible())
+        pinW->FixColliding();
 }
 
 
@@ -139,6 +141,7 @@ void Pin::dropEvent(QDropEvent* event)
                 this->pinWhire();
             }
         }
+        this->Update(true);
     }
     else
         event->ignore();
@@ -193,15 +196,17 @@ void Pin::pinWhire(bool show)
 {
     if (!show)
     {
-        pinW->ClearInside();
         pinW->hide();
         d->hide();
+        cored->hide();
     }
     else
     {
         //emit dot
         pinW->show();
         d->show();
+        cored->show();
+        Update(true);
         //pinW->FixColliding();
     }
 }

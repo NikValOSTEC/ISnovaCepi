@@ -122,6 +122,7 @@ void ProxyRectPort::ColiderCheck(bool upd)
     QList<CustomColliderLineRecoursive*> post = QList<CustomColliderLineRecoursive*>();
 
     if (upd) {
+        bool fx = true;
         foreach(QGraphicsItem * i, list)
         {
 
@@ -130,6 +131,8 @@ void ProxyRectPort::ColiderCheck(bool upd)
                 if (item->Vertical_f_Horizontal_t)
                 {
                     item->FixColliding();
+                    fx = false;
+
                 }
                 else
                 {
@@ -137,9 +140,13 @@ void ProxyRectPort::ColiderCheck(bool upd)
                 }
             }
         }
-        foreach(CustomColliderLineRecoursive* j, post)
+        if (fx)
         {
-            j->FixColliding();
+
+            foreach(CustomColliderLineRecoursive * j, post)
+            {
+                j->FixColliding();
+            }
         }
     }
 
