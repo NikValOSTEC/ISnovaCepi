@@ -46,7 +46,7 @@ public:
     qreal x();
     qreal y();
     void pinWhire(bool show=true);
-    void PinWUpd();
+    void PinWUpd(bool upd = true);
     Chain* chain;
     AddPinComand* command=nullptr;
 protected:

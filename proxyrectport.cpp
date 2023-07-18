@@ -91,14 +91,44 @@ ProxyRectPort::~ProxyRectPort()
 
 void ProxyRectPort::Update(bool upd)
 {
+    
+    int x = left()-25;
+    int y = top()-25;
+    int w = this->boundingRect().width()+25;
+    int h = this->boundingRect().height()+25;
+    QList<QGraphicsItem*> list = scene()->items(x, y, w, h, Qt::IntersectsItemBoundingRect, Qt::DescendingOrder);
+    foreach(auto prx, list)
+    {
+        try {
+            if (ProxyRectPort* prp = dynamic_cast<ProxyRectPort*>(prx))
+            {
+                if (prp != this)
+                {
+                    ProxyColider();
+                }
+                else
+                {
 
-    this->port->Update(upd);
+                    this->port->Update(upd);
+                }
+            }
+        }
+        catch(...)
+        {
+
+            int x = floor(scenePos().x() / 25) * 25;
+            int y = floor(scenePos().y() / 25) * 25;
+            this->Update(upd);
+            return;
+
+        }
+    }
     if (upd)
     {
         int x = floor(scenePos().x() / 25) * 25;
         int y = floor(scenePos().y() / 25) * 25;
         setPos(x, y);
-        
+        this->port->Update();
         EmitMove();
         QThread::msleep(100);
         ColiderCheck();
@@ -152,21 +182,70 @@ void ProxyRectPort::ColiderCheck(bool upd)
 
 }
 
+void ProxyRectPort::ProxyColider(int xx, int yy)
+{
+    int x = left()-25;
+    int y = top()-25;
+    int w = this->boundingRect().width()+50;
+    int h = this->boundingRect().height()+50;
+    QList<QGraphicsItem*> list = scene()->items(x, y, w, h, Qt::IntersectsItemBoundingRect, Qt::DescendingOrder);
+    foreach (auto prx, list)
+    {
+        if (ProxyRectPort* prp = dynamic_cast<ProxyRectPort*>(prx)) 
+        {
+            if (prp != this)
+            {
+                if (xx == 0 && yy == 0)
+                {
+                    if (prp->center().y() < this->center().y())
+                    {
+                        YY(prp->YY() + this->boundingRect().height());
+                        yy = 1;
+                    }
+                    else
+                    {
+                        YY(prp->top() - this->boundingRect().height());
+                        yy = -1;
+                    }
+
+                    if (prp->center().x() < this->center().x())
+                    {
+                        XX(prp->right() + boundingRect().width());
+                        xx = 1;
+                    }
+                    else
+                    {
+                        XX(prp->left() - this->boundingRect().width());
+                        xx = -1;
+                    }
+                }
+                else
+                {
+                    YY(YY() + (yy * 50));
+                    XX(XX() + (xx * 50));
+                }
+                ProxyColider(xx, yy);
+                break;
+            }
+        }
+    }
+}
+
 qreal ProxyRectPort::XX()
 {
-    return this->mapToScene(boundingRect().topLeft()).x();
+    return scenePos().x();
 }
 
 qreal ProxyRectPort::YY()
 {
-    return this->mapToScene(boundingRect().topLeft()).y();
+    return scenePos().y();
 }
 
 void ProxyRectPort::XX(qreal x)
 {
-    this->rect.moveCenter(mapFromScene(x, mapToScene(rect.center()).y()));
+    this->setPos(x, YY());
 }
 void ProxyRectPort::YY(qreal y)
 {
-    this->rect.moveCenter(mapFromScene(mapToScene(rect.center()).x(), y));
+    this->setPos(XX(), y);
 }

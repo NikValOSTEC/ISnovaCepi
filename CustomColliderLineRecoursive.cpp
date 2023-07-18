@@ -91,9 +91,10 @@ QPainterPath CustomColliderLineRecoursive::shape() const
 	return path;
 }
 
-void CustomColliderLineRecoursive::FixColliding()
+void CustomColliderLineRecoursive::FixColliding(int tms)
 {
-
+	if (tms > 5)
+		return;
 	int i = 0;
 	int mines = 0;
 	ClearInside();
@@ -203,11 +204,11 @@ void CustomColliderLineRecoursive::FixColliding()
 					inside.append(cd4d2);
 
 
-					d1cd1->FixColliding();
-					cd1cd2->FixColliding();
-					cd2cd3->FixColliding();
-					cd3cd4->FixColliding();
-					cd4d2->FixColliding();
+					d1cd1->FixColliding(tms+1);
+					cd1cd2->FixColliding(tms+1);
+					cd2cd3->FixColliding(tms+1);
+					cd3cd4->FixColliding(tms+1);
+					cd4d2->FixColliding(tms+1);
 					scene()->update();
 
 

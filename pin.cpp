@@ -72,8 +72,8 @@ void Pin::name(QString name)
 
 void Pin::Update(bool upd)
 {
-    PinWUpd();
-    if(pinW->isVisible())
+    PinWUpd(upd);
+    if(upd&&pinW->hasConection())
         pinW->FixColliding();
 }
 
@@ -85,7 +85,7 @@ void Pin::EmitUpd(bool dotold)
         chain->Dots();
     }
     upd = dotold;
-    emit updSignal(true);
+    emit updSignal(dotold);
 }
 
 NewPinWhire* Pin::getpinWhire()
@@ -211,16 +211,16 @@ void Pin::pinWhire(bool show)
     }
 }
 
-void Pin::PinWUpd()
+void Pin::PinWUpd(bool upd)
 {
     if (d->pos().x()>this->x())
     {
-        cored->setX(parCon->proxy()->mapToScene(parCon->proxy()->boundingRect().topRight()).x());
+        cored->setX(parCon->proxy()->mapToScene(parCon->proxy()->boundingRect().topRight()).x()+25*(int)upd);
         cored->setY(y());
     }
     else
     {
-        cored->setX(parCon->proxy()->mapToScene(parCon->proxy()->boundingRect().topLeft()).x());
+        cored->setX(parCon->proxy()->mapToScene(parCon->proxy()->boundingRect().topLeft()).x()-25 * (int)upd);
         cored->setY(y());
     }
     cored->Emit_Moving();

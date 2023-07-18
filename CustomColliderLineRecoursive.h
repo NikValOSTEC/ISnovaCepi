@@ -28,7 +28,7 @@ public:
 	bool Vertical_f_Horizontal_t;
 	int JumpDerection = 1;
 public slots:
-	void FixColliding();
+	void FixColliding(int times=0);
 	void ClearInside();
 	void setVertical();
 	void setHorizontal();

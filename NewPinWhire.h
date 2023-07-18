@@ -12,6 +12,7 @@ class NewPinWhire  : public CustomColliderLineRecoursive
 public:
 	NewPinWhire(Pin* p, QThread* th);
 	~NewPinWhire();
+	bool hasConection();
 
 	QColor color() override;
 private:

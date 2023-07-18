@@ -9,6 +9,7 @@
 class CustomColliderLineRecoursive;
 class NewWhire;
 class Pin;
+#include"pin.h"
 
 class Dot  : public QGraphicsObject
 {
@@ -31,6 +32,10 @@ public:
 	CustomColliderLineRecoursive*Vdot, *Hdot;
 	void EmitIs_inMove(bool moving)
 	{
+		if (_pin != nullptr)
+		{
+			_pin->Update(false);
+		}
 		emit Is_inMove(moving);
 	}
 	void setPin(Pin* p);

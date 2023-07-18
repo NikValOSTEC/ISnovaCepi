@@ -24,6 +24,7 @@ public:
     void Update(bool upd=false);
     int type() const override;
     void ColiderCheck(bool upd=true);
+    void ProxyColider(int xx=0,int yy=0);
     qreal XX();
     qreal YY();    
     void XX(qreal x);

@@ -16,6 +16,11 @@ NewPinWhire::~NewPinWhire()
 
 }
 
+bool NewPinWhire::hasConection()
+{
+	return (isVisible() || (inside.count() > 0));
+}
+
 QColor NewPinWhire::color()
 {
 	if(pin->chain)
