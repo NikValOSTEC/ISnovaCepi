@@ -6,6 +6,7 @@
 #include"PortTemplate.h"
 #include"SaveTemplates.h"
 #include"pin.h"
+#include"QLineEditFocusOutSignal.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -100,6 +101,7 @@ void MainWindow::AddTemp(Port* p)
 {
     auto tmp=new PortTwmplateObject();
     tmp->templ->name(p->name());
+    tmp->name->setText(p->name());
     foreach(auto pn, p->pins())
     {
         tmp->templ->addPinn(pn->name());

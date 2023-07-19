@@ -37,6 +37,7 @@ void PortTemplate::closeEvent(QCloseEvent* event)
 {
 
     if (event->spontaneous()) {
+        object->name->setText(object->templ->name());
         SaveTemplates::Save(object);
     }
     else {
