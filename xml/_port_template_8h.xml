@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_port_template_8h" kind="file" language="C++">
+    <compoundname>PortTemplate.h</compoundname>
+    <includes local="yes">qobject.h</includes>
+    <includes local="yes">ui_port.h</includes>
+    <includes local="no">qopenglfunctions.h</includes>
+    <includes refid="port_8h" local="yes">port.h</includes>
+    <includedby refid="_g_view_8cpp" local="yes">GView.cpp</includedby>
+    <includedby refid="_port_template_8cpp" local="yes">PortTemplate.cpp</includedby>
+    <includedby refid="_port_twmplate_object_8cpp" local="yes">PortTwmplateObject.cpp</includedby>
+    <includedby refid="_save_templates_8cpp" local="yes">SaveTemplates.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>PortTemplate.h</label>
+        <link refid="_port_template_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QMenu</label>
+      </node>
+      <node id="7">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="2">
+        <label>qobject.h</label>
+      </node>
+      <node id="4">
+        <label>qopenglfunctions.h</label>
+      </node>
+      <node id="8">
+        <label>qwidget.h</label>
+      </node>
+      <node id="3">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_port_template" prot="public">PortTemplate</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_port_template_8h_1aec29ef3869bc995b89038cb14008f0a1" prot="public" static="no">
+        <name>PORTTEMPLATE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="3" column="9" bodyfile="PortTemplate.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PORTTEMPLATE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORTTEMPLATE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qobject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;ui_port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qopenglfunctions.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_save_templates" kindref="compound">SaveTemplates</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port" kindref="compound">Port</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_port_template" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port_template" kindref="compound">PortTemplate</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_port" kindref="compound">Port</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_template" kindref="compound">PortTemplate</ref>(<ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref>*<sp/>o);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/><ref refid="class_port_template_1ab742c2261411d9ee00762660d1989d97" kindref="member">addPinn</ref>(QString<sp/><ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_template_1a27d10b132ebad4031ab6952603c71049" kindref="member">~PortTemplate</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref>*<sp/>object;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>addPinSl(QString<sp/><ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RemoveSL();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>closeEvent(QCloseEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QMenu*<sp/>ContextMenu();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="PortTemplate.h"/>
+  </compounddef>
+</doxygen>

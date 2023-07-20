@@ -3,7 +3,7 @@
 #include<qevent.h>
 #include<qmimedata.h>
 #include"PortTemplate.h"
-#include"QLineEditFocusOutSignal.h"
+#include"SaveTemplates.h"
 void PortTwmplateObject::dragEnterEvent(QDragEnterEvent* event)
 {
 	if (event->mimeData()->hasFormat("PortTemp"))
@@ -37,20 +37,10 @@ void PortTwmplateObject::mousePressEvent(QMouseEvent* event)
 }
 void PortTwmplateObject::delPush()
 {
+	SaveTemplates::Del(name->text());
 	delete this;
 }
 
-void PortTwmplateObject::namecheck(bool foc)
-{
-	if (!foc)
-	{
-		auto lst=this->parent()->children();
-		foreach(auto obj, lst)
-		{
-
-		}
-	}
-}
 
 void PortTwmplateObject::editPush()
 {
@@ -60,7 +50,7 @@ PortTwmplateObject::PortTwmplateObject()
 {
 	templ = new PortTemplate(this);
 	this->editpb = new QPushButton(this);
-	this->name = new QLineEditFocusOutSignal(this);
+	this->name = new QLineEdit(this);
 	this->delpb = new QPushButton(this);
 	editpb->setText("edit");
 	delpb->setText("del");
@@ -71,7 +61,6 @@ PortTwmplateObject::PortTwmplateObject()
 	
 	connect(editpb, SIGNAL(clicked()), this, SLOT(editPush()));
 	connect(delpb, SIGNAL(clicked()), this, SLOT(delPush()));
-	connect(name, &QLineEditFocusOutSignal::focussed, this, &PortTwmplateObject::namecheck);
 }
 
 PortTwmplateObject::~PortTwmplateObject()

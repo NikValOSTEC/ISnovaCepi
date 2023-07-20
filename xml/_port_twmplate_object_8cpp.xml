@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_port_twmplate_object_8cpp" kind="file" language="C++">
+    <compoundname>PortTwmplateObject.cpp</compoundname>
+    <includes refid="_port_twmplate_object_8h" local="yes">PortTwmplateObject.h</includes>
+    <includes local="no">qdrag.h</includes>
+    <includes local="no">qevent.h</includes>
+    <includes local="no">qmimedata.h</includes>
+    <includes refid="_port_template_8h" local="yes">PortTemplate.h</includes>
+    <includes refid="_save_templates_8h" local="yes">SaveTemplates.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>PortTemplate.h</label>
+        <link refid="_port_template_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PortTwmplateObject.cpp</label>
+        <link refid="_port_twmplate_object_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PortTwmplateObject.h</label>
+        <link refid="_port_twmplate_object_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>SaveTemplates.h</label>
+        <link refid="_save_templates_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QFile</label>
+      </node>
+      <node id="14">
+        <label>QMenu</label>
+      </node>
+      <node id="17">
+        <label>QObject</label>
+      </node>
+      <node id="15">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="19">
+        <label>QTextStream</label>
+      </node>
+      <node id="7">
+        <label>qdrag.h</label>
+      </node>
+      <node id="8">
+        <label>qevent.h</label>
+      </node>
+      <node id="6">
+        <label>qlineedit.h</label>
+      </node>
+      <node id="9">
+        <label>qmimedata.h</label>
+      </node>
+      <node id="3">
+        <label>qobject.h</label>
+      </node>
+      <node id="12">
+        <label>qopenglfunctions.h</label>
+      </node>
+      <node id="5">
+        <label>qpushbutton.h</label>
+      </node>
+      <node id="20">
+        <label>qsettings.h</label>
+      </node>
+      <node id="4">
+        <label>qwidget.h</label>
+      </node>
+      <node id="11">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;PortTwmplateObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qdrag.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qevent.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qmimedata.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;PortTemplate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;SaveTemplates.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1ad257ac24278cea25e940dc3ad94c923f" kindref="member">PortTwmplateObject::dragEnterEvent</ref>(QDragEnterEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event-&gt;mimeData()-&gt;hasFormat(</highlight><highlight class="stringliteral">&quot;PortTemp&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;accept();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;ignore();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1ab2a59e9f813568bf9c72249bf78188e3" kindref="member">PortTwmplateObject::dropEvent</ref>(QDropEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1a8a986b407552d4b8c95782ef92e70b0b" kindref="member">PortTwmplateObject::dragMoveEvent</ref>(QDragMoveEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event-&gt;mimeData()-&gt;hasFormat(</highlight><highlight class="stringliteral">&quot;PortTemp&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;accept();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;ignore();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1af182abd6cef9d4003858f16df826918f" kindref="member">PortTwmplateObject::mousePressEvent</ref>(QMouseEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>QDrag*<sp/>drag<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QDrag(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>QMimeData*<sp/>mimeData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMimeData();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>uintptr_t<sp/>adress<sp/>=<sp/>(uintptr_t)</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>str<sp/>=<sp/>QString::number(adress);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>mimeData-&gt;setData(</highlight><highlight class="stringliteral">&quot;PortTemp&quot;</highlight><highlight class="normal">,<sp/>str.toUtf8());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>drag-&gt;setMimeData(mimeData);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>Qt::DropAction<sp/>dropAction<sp/>=<sp/>drag-&gt;exec();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1a2290b0757ad5725ed4f40f0ff8c10af9" kindref="member">PortTwmplateObject::delPush</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_save_templates_1a73b839da3826f0665b475a0b64ff7131" kindref="member">SaveTemplates::Del</ref>(<ref refid="class_port_twmplate_object_1ac3dce326d43b398dc3b7e24a03d2043b" kindref="member">name</ref>-&gt;text());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1adb631de2e8c886d26900cdff8ca79046" kindref="member">PortTwmplateObject::editPush</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref>-&gt;show();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="class_port_twmplate_object_1aea747b1af2575c9d658982a04a24d15c" kindref="member">PortTwmplateObject::PortTwmplateObject</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_port_template" kindref="compound">PortTemplate</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_port_twmplate_object_1a4477b04ddfe153b8c1e92c3642552538" kindref="member">editpb</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_port_twmplate_object_1ac3dce326d43b398dc3b7e24a03d2043b" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLineEdit(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_port_twmplate_object_1aaca73a5dfb777e6c798b46abd15c2de0" kindref="member">delpb</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_twmplate_object_1a4477b04ddfe153b8c1e92c3642552538" kindref="member">editpb</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;edit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_twmplate_object_1aaca73a5dfb777e6c798b46abd15c2de0" kindref="member">delpb</ref>-&gt;setText(</highlight><highlight class="stringliteral">&quot;del&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setLayout(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;layout()-&gt;addWidget(<ref refid="class_port_twmplate_object_1ac3dce326d43b398dc3b7e24a03d2043b" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;layout()-&gt;addWidget(<ref refid="class_port_twmplate_object_1a4477b04ddfe153b8c1e92c3642552538" kindref="member">editpb</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;layout()-&gt;addWidget(<ref refid="class_port_twmplate_object_1aaca73a5dfb777e6c798b46abd15c2de0" kindref="member">delpb</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_port_twmplate_object_1a4477b04ddfe153b8c1e92c3642552538" kindref="member">editpb</ref>,<sp/>SIGNAL(clicked()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_port_twmplate_object_1adb631de2e8c886d26900cdff8ca79046" kindref="member">editPush</ref>()));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_port_twmplate_object_1aaca73a5dfb777e6c798b46abd15c2de0" kindref="member">delpb</ref>,<sp/>SIGNAL(clicked()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_port_twmplate_object_1a2290b0757ad5725ed4f40f0ff8c10af9" kindref="member">delPush</ref>()));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="class_port_twmplate_object_1a63d5d61c00a20aa9dee489d7629e2fb5" kindref="member">PortTwmplateObject::~PortTwmplateObject</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="PortTwmplateObject.cpp"/>
+  </compounddef>
+</doxygen>

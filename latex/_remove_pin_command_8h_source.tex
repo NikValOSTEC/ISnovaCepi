@@ -1,0 +1,28 @@
+\doxysection{Remove\+Pin\+Command.\+h}
+\hypertarget{_remove_pin_command_8h_source}{}\label{_remove_pin_command_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ REMOVEPINCOMMAND\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ REMOVEPINCOMMAND\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<QUndoCommand>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_pin_comand}{AddPinComand}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_remove_pin_command}{RemovePinCommand}}\ \ :\ \textcolor{keyword}{public}\ QUndoCommand}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_remove_pin_command}{RemovePinCommand}}(\mbox{\hyperlink{class_pin}{Pin}}*p);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_remove_pin_command_ac343119f9ed7d846738ed1592b307bb1}{\string~RemovePinCommand}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_remove_pin_command_a951f0464278bd92758d957064fa82067}{undo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_remove_pin_command_abd0042f83fc2f7bb6ee6887deb3ac236}{redo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_remove_pin_command_a478221782ad2272c8b999968cb26b1b6}{pos}}\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ QString\ \mbox{\hyperlink{class_remove_pin_command_ab0a83dd443ccb8d36ed42189c696b228}{name}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_add_pin_comand}{AddPinComand}}*\ \mbox{\hyperlink{class_remove_pin_command_ae0c467492dcf912c2ceac60dba0964b4}{pinc}};}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_port}{Port}}*\ \mbox{\hyperlink{class_remove_pin_command_ab631e473adf864172ba580ca8c414cd7}{prt}};}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ \mbox{\hyperlink{class_remove_pin_command_aef07f531384fee903eeb246368084e8a}{pin}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

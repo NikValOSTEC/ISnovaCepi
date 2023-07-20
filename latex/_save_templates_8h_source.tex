@@ -1,0 +1,23 @@
+\doxysection{Save\+Templates.\+h}
+\hypertarget{_save_templates_8h_source}{}\label{_save_templates_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ SAVETEMPLATES\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SAVETEMPLATES\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QFile>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTextStream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<qsettings.h>}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port_twmplate_object}{PortTwmplateObject}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_templates}{SaveTemplates}}\ \ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_templates_ac907c4f9743dc64cc25645a2de37a79f}{Save}}(\mbox{\hyperlink{class_port_twmplate_object}{PortTwmplateObject}}*\ o);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ QList<QPair<QStringList,\ QString>>\ \mbox{\hyperlink{class_save_templates_a7218b7ebc59f828f930b9b9fc59c58d8}{Load}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_templates_a73b839da3826f0665b475a0b64ff7131}{Del}}(QString\ path);}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

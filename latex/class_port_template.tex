@@ -1,0 +1,134 @@
+\doxysection{Класс Port\+Template}
+\hypertarget{class_port_template}{}\label{class_port_template}\index{PortTemplate@{PortTemplate}}
+
+
+Шаблон Разъема; перегрузка разъема ( убрано перемещение итд)  
+
+
+
+
+{\ttfamily \#include $<$Port\+Template.\+h$>$}
+
+Граф наследования\+:Port\+Template\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_port_template}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_port_template_a9d0d35c71d0cf676913e4840cf81543e}{Port\+Template}} (\mbox{\hyperlink{class_port_twmplate_object}{Port\+Twmplate\+Object}} \texorpdfstring{$\ast$}{*}o)
+\begin{DoxyCompactList}\small\item\em Новый Шаблон hfp\mbox{]}tvf. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_port_template_ab742c2261411d9ee00762660d1989d97}{add\+Pinn}} (QString \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}=\"{}\"{}, int index=-\/1)
+\begin{DoxyCompactList}\small\item\em Добавление контакта (шаблона контакта) \end{DoxyCompactList}\item 
+\Hypertarget{class_port_template_a27d10b132ebad4031ab6952603c71049}\label{class_port_template_a27d10b132ebad4031ab6952603c71049} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Port\+Template} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_port}{Port}}}
+\begin{DoxyCompactItemize}
+\item 
+qreal \mbox{\hyperlink{class_port_aefc2c28deb5776de74cf81eb206fbbe7}{x}} ()
+\begin{DoxyCompactList}\small\item\em Координата x на сцене \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_port_a72c13b59e385b73474e433e450bafe17}{y}} ()
+\begin{DoxyCompactList}\small\item\em Координата y на сцене \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_port_aa7d27eb09b9d9a8308adeff0f96100a4}{Port}} (\mbox{\hyperlink{class_add_comand}{Add\+Comand}} \texorpdfstring{$\ast$}{*}com, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Создает разъем \end{DoxyCompactList}\item 
+{\bfseries Port} ()
+\begin{DoxyCompactList}\small\item\em Создает разъем \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Port} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}} ()
+\begin{DoxyCompactList}\small\item\em Имя разъема \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_port_ae2c0e3be2193095b86ccf4b2f6f99783}{name}} (QString str)
+\begin{DoxyCompactList}\small\item\em Установка имени разъема \end{DoxyCompactList}\item 
+QVector$<$ \mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_port_a15a7a06e221876566463ba94873667e7}{pins}} ()
+\begin{DoxyCompactList}\small\item\em Список всех контактов разъема \end{DoxyCompactList}\item 
+void {\bfseries Remove} ()
+\begin{DoxyCompactList}\small\item\em Удаление разъема \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_port_aab356149ee33772dc2dee00a6c08bf95}{add\+Pin}} (QString \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}=\"{}\"{}, int index=-\/1, bool bl=true)
+\begin{DoxyCompactList}\small\item\em Добавление нового контакта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Открытые слоты унаследованные от \mbox{\hyperlink{class_port}{Port}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Update} (bool updF=false)
+\begin{DoxyCompactList}\small\item\em Пересчет позиции и проводов \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_proxy_rect_port}{Proxy\+Rect\+Port}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_port_a252882139d38712ad89fe27be57a4d96}{proxy}} ()
+\begin{DoxyCompactList}\small\item\em Прокси в который вложен разъем \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_port_a1735f6a74225223f4eae6feac4eab42e}{proxy}} (\mbox{\hyperlink{class_proxy_rect_port}{Proxy\+Rect\+Port}} \texorpdfstring{$\ast$}{*}prox)
+\begin{DoxyCompactList}\small\item\em Передача прокси в который вкладывается разъем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты унаследованные от \mbox{\hyperlink{class_port}{Port}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_comand}{Add\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries adcom}
+\begin{DoxyCompactList}\small\item\em Команда Undo по которой создан данный разъем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Статические открытые данные унаследованные от \mbox{\hyperlink{class_port}{Port}}}
+\begin{DoxyCompactItemize}
+\item 
+static QVector$<$ \mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries ports\+Vector}
+\begin{DoxyCompactList}\small\item\em Статический вектор для доступа ко всем разъемам из вне \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены унаследованные от \mbox{\hyperlink{class_port}{Port}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual QMenu \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_port_af1678396ebd343927fb4d68ac8fc65b6}{Context\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Контекстное меню. Удаление; добавление контакта... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_port}{Port}}}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Port \texorpdfstring{$\ast$}{*} {\bfseries ui}
+\item 
+\mbox{\hyperlink{class_proxy_rect_port}{Proxy\+Rect\+Port}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+proxy}
+\begin{DoxyCompactList}\small\item\em прокси в который вложен разъем \end{DoxyCompactList}\item 
+QSpacer\+Item \texorpdfstring{$\ast$}{*} {\bfseries spacer}
+\begin{DoxyCompactList}\small\item\em смещение для выравнивания контактов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шаблон Разъема; перегрузка разъема ( убрано перемещение итд) 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_port_template_a9d0d35c71d0cf676913e4840cf81543e}\label{class_port_template_a9d0d35c71d0cf676913e4840cf81543e} 
+\index{PortTemplate@{PortTemplate}!PortTemplate@{PortTemplate}}
+\index{PortTemplate@{PortTemplate}!PortTemplate@{PortTemplate}}
+\doxysubsubsection{\texorpdfstring{PortTemplate()}{PortTemplate()}}
+{\footnotesize\ttfamily Port\+Template\+::\+Port\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_port_twmplate_object}{Port\+Twmplate\+Object}} \texorpdfstring{$\ast$}{*}}]{o }\end{DoxyParamCaption})}
+
+
+
+Новый Шаблон hfp\mbox{]}tvf. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em o} & Объект для Drag and Drop\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_port_template_ab742c2261411d9ee00762660d1989d97}\label{class_port_template_ab742c2261411d9ee00762660d1989d97} 
+\index{PortTemplate@{PortTemplate}!addPinn@{addPinn}}
+\index{addPinn@{addPinn}!PortTemplate@{PortTemplate}}
+\doxysubsubsection{\texorpdfstring{addPinn()}{addPinn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} Port\+Template\+::add\+Pinn (\begin{DoxyParamCaption}\item[{QString}]{name = {\ttfamily \"{}\"{}},  }\item[{int}]{index = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Добавление контакта (шаблона контакта) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Добавленный контакт
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Port\+Template.\+h\item 
+Port\+Template.\+cpp\end{DoxyCompactItemize}

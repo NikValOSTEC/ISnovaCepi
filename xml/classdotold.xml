@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdotold" kind="class" language="C++" prot="public">
+    <compoundname>dotold</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsItem</basecompoundref>
+    <basecompoundref prot="private" virt="non-virtual">QObject</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdotold_1aef211b4f94f965d0a5025813609c6477" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor dotold::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>dotold::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="15" column="12" bodyfile="dotold.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdotold_1a1172eef1971c0a2a97e16fa93e977dd0" prot="public" static="no" mutable="no">
+        <type>QVector&lt; <ref refid="class_whire" kindref="compound">Whire</ref> * &gt;</type>
+        <definition>QVector&lt;Whire*&gt; dotold::whires</definition>
+        <argsstring></argsstring>
+        <name>whires</name>
+        <qualifiedname>dotold::whires</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="29" column="12" bodyfile="dotold.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdotold_1a3ff22ed9101f1ec41b2a2f147aeb185a" prot="private" static="no" mutable="no">
+        <type>QVector&lt; <ref refid="classdotold" kindref="compound">dotold</ref> * &gt;</type>
+        <definition>QVector&lt;dotold*&gt; dotold::verticalMove</definition>
+        <argsstring></argsstring>
+        <name>verticalMove</name>
+        <qualifiedname>dotold::verticalMove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="31" column="12" bodyfile="dotold.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdotold_1ab69fb4d02302cde58746676e0ddab553" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dotold::Big</definition>
+        <argsstring></argsstring>
+        <name>Big</name>
+        <qualifiedname>dotold::Big</qualifiedname>
+        <initializer>=false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="32" column="10" bodyfile="dotold.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdotold_1a126d382f9e4e2113b314f4f9a47db2f6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin* dotold::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <qualifiedname>dotold::pin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="33" column="9" bodyfile="dotold.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdotold_1af4d2d80654b835484ffaea2a1371cefc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_whire" kindref="compound">Whire</ref> *</type>
+        <definition>Whire* dotold::whire</definition>
+        <argsstring></argsstring>
+        <name>whire</name>
+        <qualifiedname>dotold::whire</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="34" column="11" bodyfile="dotold.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdotold_1a16e84feaac3516c42d41594952b07a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dotold::~dotold</definition>
+        <argsstring>()</argsstring>
+        <name>~dotold</name>
+        <qualifiedname>dotold::~dotold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="13" column="5" bodyfile="dotold.cpp" bodystart="11" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a1365a94aa8425b1c97123e8991a067c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dotold::dotold</definition>
+        <argsstring>(Pin *p, QThread *thr=nullptr)</argsstring>
+        <name>dotold</name>
+        <qualifiedname>dotold::dotold</qualifiedname>
+        <param>
+          <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>QThread *</type>
+          <declname>thr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="14" column="5" bodyfile="dotold.cpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a6ef9157693345e94b7f379e453b8c29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>dotold::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="16" column="10" bodyfile="dotold.cpp" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1affdaa5e7237f1faaf6a92260acbb05c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF dotold::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>dotold::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="17" column="12" bodyfile="dotold.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a15c598dd27c144d3eed94b9b373bf826" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath dotold::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>dotold::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="18" column="18" bodyfile="dotold.cpp" bodystart="46" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1ad71e33a33969bf13e0fe8e006612c9be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal dotold::x</definition>
+        <argsstring>()</argsstring>
+        <name>x</name>
+        <qualifiedname>dotold::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="19" column="11" bodyfile="dotold.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1afefe362f1be7ebca600415f273e33672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::x</definition>
+        <argsstring>(int x)</argsstring>
+        <name>x</name>
+        <qualifiedname>dotold::x</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="20" column="10" bodyfile="dotold.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a9e066071ec4c22951327bbce2158886f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal dotold::y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <qualifiedname>dotold::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="21" column="11" bodyfile="dotold.cpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a027a250cf2b52c79605e4fc3428f43b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::y</definition>
+        <argsstring>(int y)</argsstring>
+        <name>y</name>
+        <qualifiedname>dotold::y</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="22" column="10" bodyfile="dotold.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1aa0e39f13900c3d6fd014aa52dedae802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::Uupdate</definition>
+        <argsstring>(bool collision=false, QVector&lt; dotold * &gt; *nnot=new QVector&lt; dotold * &gt;())</argsstring>
+        <name>Uupdate</name>
+        <qualifiedname>dotold::Uupdate</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>collision</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>QVector&lt; <ref refid="classdotold" kindref="compound">dotold</ref> * &gt; *</type>
+          <declname>nnot</declname>
+          <defval>new QVector&lt; <ref refid="classdotold" kindref="compound">dotold</ref> * &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="23" column="10" bodyfile="dotold.cpp" bodystart="82" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a7681bff442fba8bd775b6e87f7c194ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::AddWhire</definition>
+        <argsstring>(Whire *w)</argsstring>
+        <name>AddWhire</name>
+        <qualifiedname>dotold::AddWhire</qualifiedname>
+        <param>
+          <type><ref refid="class_whire" kindref="compound">Whire</ref> *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="24" column="10" bodyfile="dotold.cpp" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a154668e27f66a3e9d18b40ba6bbf4031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::RemoveWhire</definition>
+        <argsstring>(Whire *w)</argsstring>
+        <name>RemoveWhire</name>
+        <qualifiedname>dotold::RemoveWhire</qualifiedname>
+        <param>
+          <type><ref refid="class_whire" kindref="compound">Whire</ref> *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="25" column="10" bodyfile="dotold.cpp" bodystart="114" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1a898082e805ea0f0ae976240bca9e1238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::AddDot</definition>
+        <argsstring>(dotold *w)</argsstring>
+        <name>AddDot</name>
+        <qualifiedname>dotold::AddDot</qualifiedname>
+        <param>
+          <type><ref refid="classdotold" kindref="compound">dotold</ref> *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="26" column="10" bodyfile="dotold.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1af137c8cff39a19ec1116ee3c7b5eac8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dotold::RemoveDot</definition>
+        <argsstring>(dotold *w)</argsstring>
+        <name>RemoveDot</name>
+        <qualifiedname>dotold::RemoveDot</qualifiedname>
+        <param>
+          <type><ref refid="classdotold" kindref="compound">dotold</ref> *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="27" column="10" bodyfile="dotold.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classdotold_1abe8c964c50d98cd3400cc28f57995852" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dotold::type</definition>
+        <argsstring>() const override</argsstring>
+        <name>type</name>
+        <qualifiedname>dotold::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dotold.h" line="28" column="9" bodyfile="dotold.cpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>dotold</label>
+        <link refid="classdotold"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>dotold</label>
+        <link refid="classdotold"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dotold.h" line="10" column="1" bodyfile="dotold.h" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classdotold_1a898082e805ea0f0ae976240bca9e1238" prot="public" virt="non-virtual"><scope>dotold</scope><name>AddDot</name></member>
+      <member refid="classdotold_1a7681bff442fba8bd775b6e87f7c194ac" prot="public" virt="non-virtual"><scope>dotold</scope><name>AddWhire</name></member>
+      <member refid="classdotold_1ab69fb4d02302cde58746676e0ddab553" prot="private" virt="non-virtual"><scope>dotold</scope><name>Big</name></member>
+      <member refid="classdotold_1affdaa5e7237f1faaf6a92260acbb05c8" prot="public" virt="non-virtual"><scope>dotold</scope><name>boundingRect</name></member>
+      <member refid="classdotold_1aef211b4f94f965d0a5025813609c6477" prot="public" virt="non-virtual"><scope>dotold</scope><name>color</name></member>
+      <member refid="classdotold_1a1365a94aa8425b1c97123e8991a067c7" prot="public" virt="non-virtual"><scope>dotold</scope><name>dotold</name></member>
+      <member refid="classdotold_1a6ef9157693345e94b7f379e453b8c29e" prot="public" virt="non-virtual"><scope>dotold</scope><name>paint</name></member>
+      <member refid="classdotold_1a126d382f9e4e2113b314f4f9a47db2f6" prot="private" virt="non-virtual"><scope>dotold</scope><name>pin</name></member>
+      <member refid="classdotold_1af137c8cff39a19ec1116ee3c7b5eac8b" prot="public" virt="non-virtual"><scope>dotold</scope><name>RemoveDot</name></member>
+      <member refid="classdotold_1a154668e27f66a3e9d18b40ba6bbf4031" prot="public" virt="non-virtual"><scope>dotold</scope><name>RemoveWhire</name></member>
+      <member refid="classdotold_1a15c598dd27c144d3eed94b9b373bf826" prot="public" virt="non-virtual"><scope>dotold</scope><name>shape</name></member>
+      <member refid="classdotold_1abe8c964c50d98cd3400cc28f57995852" prot="public" virt="non-virtual"><scope>dotold</scope><name>type</name></member>
+      <member refid="classdotold_1aa0e39f13900c3d6fd014aa52dedae802" prot="public" virt="non-virtual"><scope>dotold</scope><name>Uupdate</name></member>
+      <member refid="classdotold_1a3ff22ed9101f1ec41b2a2f147aeb185a" prot="private" virt="non-virtual"><scope>dotold</scope><name>verticalMove</name></member>
+      <member refid="classdotold_1af4d2d80654b835484ffaea2a1371cefc" prot="private" virt="non-virtual"><scope>dotold</scope><name>whire</name></member>
+      <member refid="classdotold_1a1172eef1971c0a2a97e16fa93e977dd0" prot="public" virt="non-virtual"><scope>dotold</scope><name>whires</name></member>
+      <member refid="classdotold_1ad71e33a33969bf13e0fe8e006612c9be" prot="public" virt="non-virtual"><scope>dotold</scope><name>x</name></member>
+      <member refid="classdotold_1afefe362f1be7ebca600415f273e33672" prot="public" virt="non-virtual"><scope>dotold</scope><name>x</name></member>
+      <member refid="classdotold_1a9e066071ec4c22951327bbce2158886f" prot="public" virt="non-virtual"><scope>dotold</scope><name>y</name></member>
+      <member refid="classdotold_1a027a250cf2b52c79605e4fc3428f43b4" prot="public" virt="non-virtual"><scope>dotold</scope><name>y</name></member>
+      <member refid="classdotold_1a16e84feaac3516c42d41594952b07a70" prot="public" virt="non-virtual"><scope>dotold</scope><name>~dotold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

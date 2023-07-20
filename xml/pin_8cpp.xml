@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="pin_8cpp" kind="file" language="C++">
+    <compoundname>pin.cpp</compoundname>
+    <includes refid="pin_8h" local="yes">Pin.h</includes>
+    <includes refid="port_8h" local="yes">port.h</includes>
+    <includes refid="_new_pin_whire_8h" local="yes">NewPinWhire.h</includes>
+    <includes refid="_add_pin_comand_8h" local="yes">AddPinComand.h</includes>
+    <includes refid="chain_8h" local="yes">chain.h</includes>
+    <includes refid="_dot_8h" local="yes">Dot.h</includes>
+    <includes local="no">qdrag.h</includes>
+    <includes local="no">qmimedata.h</includes>
+    <includes refid="_add_whire_command_8h" local="yes">AddWhireCommand.h</includes>
+    <includes refid="proxyrectport_8h" local="yes">proxyrectport.h</includes>
+    <includes refid="_remove_pin_command_8h" local="yes">RemovePinCommand.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>AddPinComand.h</label>
+        <link refid="_add_pin_comand_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>AddWhireCommand.h</label>
+        <link refid="_add_whire_command_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Dot.h</label>
+        <link refid="_dot_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>NewPinWhire.h</label>
+        <link refid="_new_pin_whire_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>RemovePinCommand.h</label>
+        <link refid="_remove_pin_command_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>chain.h</label>
+        <link refid="chain_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pin.cpp</label>
+        <link refid="pin_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>proxyrectport.h</label>
+        <link refid="proxyrectport_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QColorDialog</label>
+      </node>
+      <node id="27">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="7">
+        <label>QLineEdit</label>
+      </node>
+      <node id="11">
+        <label>QMenu</label>
+      </node>
+      <node id="28">
+        <label>QPainter</label>
+      </node>
+      <node id="12">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="26">
+        <label>QStyleOptionGraphicsItem</label>
+      </node>
+      <node id="3">
+        <label>QThread</label>
+      </node>
+      <node id="20">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="25">
+        <label>QWidget</label>
+      </node>
+      <node id="24">
+        <label>QtMath</label>
+      </node>
+      <node id="22">
+        <label>qcolor.h</label>
+      </node>
+      <node id="29">
+        <label>qdrag.h</label>
+      </node>
+      <node id="33">
+        <label>qgraphicsitem.h</label>
+      </node>
+      <node id="17">
+        <label>qgraphicsobject</label>
+      </node>
+      <node id="5">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="18">
+        <label>qgraphicsscene.h</label>
+      </node>
+      <node id="30">
+        <label>qmimedata.h</label>
+      </node>
+      <node id="10">
+        <label>qobject.h</label>
+      </node>
+      <node id="15">
+        <label>qthread.h</label>
+      </node>
+      <node id="13">
+        <label>qwidget.h</label>
+      </node>
+      <node id="4">
+        <label>ui_pin.h</label>
+      </node>
+      <node id="9">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;NewPinWhire.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AddPinComand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;chain.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Dot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qdrag.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qmimedata.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;AddWhireCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;proxyrectport.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;RemovePinCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="class_pin_1afae20af00be105f77b3361803e768ffe" kindref="member">Pin::Pin</ref>(<ref refid="class_port" kindref="compound">Port</ref>*<sp/>port,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl,<sp/>QLineEdit*<sp/>parent)<sp/>:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit(parent),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/>Ui::<ref refid="class_pin" kindref="compound">Pin</ref>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>parCon<sp/>=<sp/>port;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setContextMenuPolicy(Qt::CustomContextMenu);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SIGNAL(customContextMenuRequested(QPoint)),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(showContextMenu(QPoint)));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>chain<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>thread<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QThread();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>moveToThread(thread);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>command<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>cored<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bl)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_dot" kindref="compound">Dot</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;graphicsProxyWidget()-&gt;scene()-&gt;addItem(d);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinW<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_new_pin_whire" kindref="compound">NewPinWhire</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>thread);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;graphicsProxyWidget()-&gt;scene()-&gt;addItem(pinW);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinWhire(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_pin_1a60d76820ad19d336938bc9621561c11a" kindref="member">Pin::updSignal</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="class_pin_1aa660efe9484f60ceff51f8533036a6c6" kindref="member">Pin::Update</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinW<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>setFixedHeight(19);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="class_pin_1a462c14c45d3d653731dde638aa6e7bb7" kindref="member">Pin::~Pin</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" kindref="member">RemoveFromChain</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pinW<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(pinW);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_pin_1a6c228c2fac4f4276728a0fe31148bdb1" kindref="member">Pin::index</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a15a7a06e221876566463ba94873667e7" kindref="member">pins</ref>().indexOf(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/><ref refid="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" kindref="member">Pin::name</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" kindref="member">Pin::name</ref>(QString<sp/>name)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setText(<ref refid="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>_name<sp/>=<sp/><ref refid="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1aa660efe9484f60ceff51f8533036a6c6" kindref="member">Pin::Update</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>upd)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin_1a46a3f3b06bd891c8e238c6394b5e6fcf" kindref="member">PinWUpd</ref>(<ref refid="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" kindref="member">upd</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" kindref="member">upd</ref>&amp;&amp;pinW-&gt;<ref refid="class_new_pin_whire_1a7cd432d5390928eeed24ca61c1abd449" kindref="member">hasConection</ref>())</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinW-&gt;<ref refid="class_custom_collider_line_recoursive_1a29e5d4ba6ff85387b29a1803646ccb09" kindref="member">FixColliding</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1aa8478d415ed22a937dca6745a0d16539" kindref="member">Pin::EmitUpd</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dotold)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dotold&amp;&amp;<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>-&gt;<ref refid="class_chain_1ac069f3d2d8656688cf954367beea5530" kindref="member">Dots</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" kindref="member">upd</ref><sp/>=<sp/>dotold;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_pin_1a60d76820ad19d336938bc9621561c11a" kindref="member">updSignal</ref>(dotold);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="class_new_pin_whire" kindref="compound">NewPinWhire</ref>*<sp/><ref refid="class_pin_1a2df67124076280d9f7261be43ca296a3" kindref="member">Pin::getpinWhire</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pinW;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Pin::mousePressEvent(QMouseEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((event-&gt;button()<sp/>==<sp/>Qt::LeftButton))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event-&gt;modifiers()<sp/>&amp;<sp/>Qt::SHIFT)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QDrag*<sp/>drag<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QDrag(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMimeData*<sp/>mimeData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMimeData();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uintptr_t<sp/>adress<sp/>=<sp/>(uintptr_t)</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>str<sp/>=<sp/>QString::number(adress);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mimeData-&gt;setData(</highlight><highlight class="stringliteral">&quot;Pin&quot;</highlight><highlight class="normal">,<sp/>str.toUtf8());</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drag-&gt;setMimeData(mimeData);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Qt::DropAction<sp/>dropAction<sp/>=<sp/>drag-&gt;exec();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;accept();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Pin::dragEnterEvent(QDragEnterEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event-&gt;mimeData()-&gt;hasFormat(</highlight><highlight class="stringliteral">&quot;Pin&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;accept();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;ignore();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Pin::dropEvent(QDropEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event-&gt;mimeData()-&gt;hasFormat(</highlight><highlight class="stringliteral">&quot;Pin&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVariant<sp/>var<sp/>=<sp/>QVariant::fromValue(QString::fromUtf8(event-&gt;mimeData()-&gt;data(</highlight><highlight class="stringliteral">&quot;Pin&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uintptr_t<sp/>address<sp/>=<sp/>var.value&lt;uintptr_t&gt;();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>fpin<sp/>=<sp/>(<ref refid="class_pin" kindref="compound">Pin</ref>*)address;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fpin-&gt;chain<sp/>!=<sp/><ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref><sp/>||<sp/><ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>==</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fpin<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>(fpin-&gt;command,<sp/>this-&gt;command);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fpin-&gt;pinWhire();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_pin_1a4be558da5b8ed1c9b9a9cb409d90401a" kindref="member">pinWhire</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_pin_1aa8478d415ed22a937dca6745a0d16539" kindref="member">EmitUpd</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fpin-&gt;EmitUpd();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;ignore();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Pin::dragMoveEvent(QDragMoveEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event-&gt;mimeData()-&gt;hasFormat(</highlight><highlight class="stringliteral">&quot;Pin&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;accept();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;ignore();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="class_dot" kindref="compound">Dot</ref>*<sp/><ref refid="class_pin_1ad9e623eb6aae56e00d10941c205fadc6" kindref="member">Pin::dot</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recalc)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1ad9e623eb6aae56e00d10941c205fadc6" kindref="member">Pin::dot</ref>(<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>dt)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>dt;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><ref refid="class_dot" kindref="compound">Dot</ref>*<sp/><ref refid="class_pin_1a320aa7c703a51193687a7cf6f293543a" kindref="member">Pin::coredot</ref>()</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cored==</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_dot" kindref="compound">Dot</ref>();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;scene()-&gt;addItem(cored);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cored;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">qreal<sp/><ref refid="class_pin_1a91e265850820e125838e7d99f3491468" kindref="member">Pin::x</ref>()</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;graphicsProxyWidget()-&gt;mapToScene(mapTo(<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>,<sp/>QPoint(this-&gt;width()<sp/>/<sp/>2,<sp/>this-&gt;height()<sp/>/<sp/>2))).<ref refid="class_port_1aefc2c28deb5776de74cf81eb206fbbe7" kindref="member">x</ref>();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">qreal<sp/><ref refid="class_pin_1ae2b41d1cd200e5ee0804141797d69ef2" kindref="member">Pin::y</ref>()</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;graphicsProxyWidget()-&gt;mapToScene(mapTo(<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>,<sp/>QPoint(this-&gt;width()<sp/>/<sp/>2,<sp/>this-&gt;height()<sp/>/<sp/>2))).<ref refid="class_port_1a72c13b59e385b73474e433e450bafe17" kindref="member">y</ref>();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1a4be558da5b8ed1c9b9a9cb409d90401a" kindref="member">Pin::pinWhire</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>show)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!show)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinW-&gt;hide();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;hide();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored-&gt;hide();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//emit<sp/>dot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinW-&gt;show();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;show();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored-&gt;show();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pin_1aa660efe9484f60ceff51f8533036a6c6" kindref="member">Update</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pinW-&gt;FixColliding();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1a46a3f3b06bd891c8e238c6394b5e6fcf" kindref="member">Pin::PinWUpd</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>upd)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d-&gt;pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>()&gt;this-&gt;x())</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored-&gt;setX(<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;mapToScene(<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;<ref refid="class_proxy_rect_port_1af9222adec783241fd408c1581f81852c" kindref="member">boundingRect</ref>().topRight()).x()+25*(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<ref refid="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" kindref="member">upd</ref>);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored-&gt;setY(<ref refid="class_pin_1ae2b41d1cd200e5ee0804141797d69ef2" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored-&gt;setX(<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;mapToScene(<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;<ref refid="class_proxy_rect_port_1af9222adec783241fd408c1581f81852c" kindref="member">boundingRect</ref>().topLeft()).x()-25<sp/>*<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<ref refid="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" kindref="member">upd</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cored-&gt;setY(<ref refid="class_pin_1ae2b41d1cd200e5ee0804141797d69ef2" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>cored-&gt;Emit_Moving();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pinW-&gt;ClearInside();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">QMenu*<sp/><ref refid="class_pin_1a1aeab8ca221e64ebe2a1d0f8595c5e69" kindref="member">Pin::ContextMenu</ref>()</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu*<sp/>myMenu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMenu();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>myMenu-&gt;addAction(</highlight><highlight class="stringliteral">&quot;RemoveFromChain&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" kindref="member">RemoveFromChain</ref>()));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>myMenu-&gt;addAction(</highlight><highlight class="stringliteral">&quot;Remove&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_pin_1a9c3020eeb77b6815112b6543491b98f2" kindref="member">Remove</ref>()));</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>myMenu-&gt;addAction(</highlight><highlight class="stringliteral">&quot;Color&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_pin_1a0d15cb1daef712c52dabda0751f50949" kindref="member">ChangeColor</ref>()));</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myMenu;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" kindref="member">Pin::RemoveFromChain</ref>()</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>-&gt;<ref refid="class_chain_1a07e35c22d5a5b1c964abd0211ec49d7c" kindref="member">RemovePin</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(_exception<sp/>ex)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1a9c3020eeb77b6815112b6543491b98f2" kindref="member">Pin::Remove</ref>()</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_remove_pin_command" kindref="compound">RemovePinCommand</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1a0d15cb1daef712c52dabda0751f50949" kindref="member">Pin::ChangeColor</ref>()</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref><sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ok;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/>olor<sp/>=<sp/>QColorDialog::getColor(<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>-&gt;<ref refid="class_chain_1a486484c2691c53177dcf68ab0572396a" kindref="member">color</ref>);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;ok)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>-&gt;<ref refid="class_chain_1a486484c2691c53177dcf68ab0572396a" kindref="member">color</ref><sp/>=<sp/>QColor(olor);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_1ac14a3e8fdc62f882a488864592f8df38" kindref="member">Pin::showContextMenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint&amp;<sp/>pos)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/>globalPos<sp/>=<sp/>this-&gt;mapToGlobal(pos);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin_1a1aeab8ca221e64ebe2a1d0f8595c5e69" kindref="member">ContextMenu</ref>()-&gt;exec(globalPos);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="pin.cpp"/>
+  </compounddef>
+</doxygen>

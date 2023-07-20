@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_m_y_graphics_scene" kind="class" language="C++" prot="public">
+    <compoundname>MYGraphicsScene</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsScene</basecompoundref>
+    <includes refid="mygraphicsscene_8h" local="no">mygraphicsscene.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_m_y_graphics_scene_1a79ec2aff2b53d1b7eb2eb71868c1ce26" prot="public" static="no" mutable="no">
+        <type><ref refid="class_view" kindref="compound">View</ref> *</type>
+        <definition>View* MYGraphicsScene::Mview</definition>
+        <argsstring></argsstring>
+        <name>Mview</name>
+        <qualifiedname>MYGraphicsScene::Mview</qualifiedname>
+        <briefdescription>
+<para>Основное отображение </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mygraphicsscene.h" line="19" column="10" bodyfile="mygraphicsscene.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_y_graphics_scene_1a646d15e8c42e94523f761a8be8e41af2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MYGraphicsScene::_scale</definition>
+        <argsstring></argsstring>
+        <name>_scale</name>
+        <qualifiedname>MYGraphicsScene::_scale</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+<para>Zoom. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mygraphicsscene.h" line="23" column="9" bodyfile="mygraphicsscene.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_m_y_graphics_scene_1a60f1b4ab6a003786d614f9cf591d400b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MYGraphicsScene::lastselected</definition>
+        <argsstring></argsstring>
+        <name>lastselected</name>
+        <qualifiedname>MYGraphicsScene::lastselected</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>выделение нескольких разъемов для перемещения группы </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mygraphicsscene.h" line="33" column="9" bodyfile="mygraphicsscene.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_y_graphics_scene_1a42501ac071e63f39c349f95b1652cb19" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MYGraphicsScene::MYGraphicsScene</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>MYGraphicsScene</name>
+        <qualifiedname>MYGraphicsScene::MYGraphicsScene</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Стандартный конструктор </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mygraphicsscene.h" line="28" column="14" bodyfile="mygraphicsscene.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_m_y_graphics_scene_1a8a6c2a6ed978fab37f2671c84f1da5bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MYGraphicsScene::drawBackground</definition>
+        <argsstring>(QPainter *painter, const QRectF &amp;rect) override</argsstring>
+        <name>drawBackground</name>
+        <qualifiedname>MYGraphicsScene::drawBackground</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Клеточки </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>painter</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mygraphicsscene.h" line="39" column="10" bodyfile="mygraphicsscene.cpp" bodystart="9" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Наследник от QGraphicsScene. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Нужен для пересчета zoom in/out; для прямого доступа к основному отображению через Upcast scene() в graphicsitem; для клеточек </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MYGraphicsScene</label>
+        <link refid="class_m_y_graphics_scene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsScene</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MYGraphicsScene</label>
+        <link refid="class_m_y_graphics_scene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Mview</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QFrame</label>
+      </node>
+      <node id="2">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="6">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="3">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mygraphicsscene.h" line="13" column="1" bodyfile="mygraphicsscene.h" bodystart="14" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_m_y_graphics_scene_1a646d15e8c42e94523f761a8be8e41af2" prot="public" virt="non-virtual"><scope>MYGraphicsScene</scope><name>_scale</name></member>
+      <member refid="class_m_y_graphics_scene_1a8a6c2a6ed978fab37f2671c84f1da5bc" prot="private" virt="non-virtual"><scope>MYGraphicsScene</scope><name>drawBackground</name></member>
+      <member refid="class_m_y_graphics_scene_1a60f1b4ab6a003786d614f9cf591d400b" prot="private" virt="non-virtual"><scope>MYGraphicsScene</scope><name>lastselected</name></member>
+      <member refid="class_m_y_graphics_scene_1a79ec2aff2b53d1b7eb2eb71868c1ce26" prot="public" virt="non-virtual"><scope>MYGraphicsScene</scope><name>Mview</name></member>
+      <member refid="class_m_y_graphics_scene_1a42501ac071e63f39c349f95b1652cb19" prot="public" virt="non-virtual"><scope>MYGraphicsScene</scope><name>MYGraphicsScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

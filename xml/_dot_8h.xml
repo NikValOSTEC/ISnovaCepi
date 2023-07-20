@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_dot_8h" kind="file" language="C++">
+    <compoundname>Dot.h</compoundname>
+    <includes local="no">QtMath</includes>
+    <includes local="no">QWidget</includes>
+    <includes local="no">QStyleOptionGraphicsItem</includes>
+    <includes local="no">QGraphicsObject</includes>
+    <includes local="no">QPainter</includes>
+    <includes refid="pin_8h" local="yes">pin.h</includes>
+    <includedby refid="_add_whire_command_8cpp" local="yes">AddWhireCommand.cpp</includedby>
+    <includedby refid="_custom_collider_line_recoursive_8cpp" local="yes">CustomColliderLineRecoursive.cpp</includedby>
+    <includedby refid="_dot_8cpp" local="yes">Dot.cpp</includedby>
+    <includedby refid="_g_view_8cpp" local="yes">GView.cpp</includedby>
+    <includedby refid="_new_pin_whire_8cpp" local="yes">NewPinWhire.cpp</includedby>
+    <includedby refid="_new_whire_8cpp" local="yes">NewWhire.cpp</includedby>
+    <includedby refid="_whire_remove_comand_8cpp" local="yes">WhireRemoveComand.cpp</includedby>
+    <includedby refid="chain_8cpp" local="yes">chain.cpp</includedby>
+    <includedby refid="pin_8cpp" local="yes">pin.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Dot.h</label>
+        <link refid="_dot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QColorDialog</label>
+      </node>
+      <node id="5">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="12">
+        <label>QLineEdit</label>
+      </node>
+      <node id="6">
+        <label>QPainter</label>
+      </node>
+      <node id="4">
+        <label>QStyleOptionGraphicsItem</label>
+      </node>
+      <node id="8">
+        <label>QThread</label>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>QtMath</label>
+      </node>
+      <node id="10">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="9">
+        <label>ui_pin.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_dot" prot="public">Dot</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_dot_8h_1a97d0c9a3df30a10fd3ab91eefdaea365" prot="public" static="no">
+        <name>DOT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="3" column="9" bodyfile="Dot.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QtMath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QStyleOptionGraphicsItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QGraphicsObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QPainter&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_new_whire" kindref="compound">NewWhire</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_dot" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_dot" kindref="compound">Dot</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsObject</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dot" kindref="compound">Dot</ref>(QGraphicsObject*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a12d277036a07c23548e0aa59f133dac4" kindref="member">type</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38" refid="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" kindref="member">cl</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_dot_1ace3fa9da5116caaf64f902da45115824" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_dot_1ace3fa9da5116caaf64f902da45115824" kindref="member">triangle</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_dot_1ada0d526fe302f22a3ab336dcec588ff1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_dot_1ada0d526fe302f22a3ab336dcec588ff1" kindref="member">bg</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a3f1b336dc13d266fe4050ae9911c73a8" kindref="member">setColor</ref>(QColor<sp/><ref refid="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" kindref="member">cl</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a7ac1cb63d973b86023b178ca39abe20f" kindref="member">setTriangle</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1acba1bb9405225c7a3c3cbb0907756aad" kindref="member">setBig</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/><ref refid="class_dot_1af3bf823da926992a15d7b8342b1d9cf7" kindref="member">pn</ref>();</highlight></codeline>
+<codeline lineno="85" refid="class_dot_1ae67778bccc9c380f2c42f93b90f5fa3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>*<ref refid="class_dot_1ae67778bccc9c380f2c42f93b90f5fa3e" kindref="member">Vdot</ref>,<sp/>*Hdot;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EmitIs_inMove(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" kindref="member">moving</ref>)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_pin<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_pin-&gt;<ref refid="class_pin_1aa660efe9484f60ceff51f8533036a6c6" kindref="member">Update</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_dot_1abad06f4214cf3989b6576f2c605724ae" kindref="member">Is_inMove</ref>(<ref refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" kindref="member">moving</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a8e807f07f899587ef8f1b46612f72ac9" kindref="member">setPin</ref>(<ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Emit_Moving()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>=<sp/>pos().x();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>=<sp/>pos().y();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mx,<sp/>my;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mx<sp/>=<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>%<sp/>25;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mx<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mx<sp/>+=<sp/>25;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>my<sp/>=<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>%<sp/>25;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(my<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>my<sp/>+=<sp/>25;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mx<sp/>&gt;<sp/>12)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>=<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>-<sp/>mx<sp/>+<sp/>25;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>=<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>-<sp/>mx;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>%<sp/>25<sp/>&gt;<sp/>12)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>=<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>-<sp/>my<sp/>+<sp/>25;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>=<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>-<sp/>my;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setPos(<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>,<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" kindref="member">moving</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dot_1a5f989f28c9dc4a3871a8f84327ac2acb" kindref="member">~Dot</ref>();</highlight></codeline>
+<codeline lineno="128" refid="class_dot_1a436ad74b9372af9bfbdb8fe31776ba25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;NewWhire*&gt;<ref refid="class_dot_1a436ad74b9372af9bfbdb8fe31776ba25" kindref="member">whires</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1aa497c04961604be7075a415cfc227b0d" kindref="member">WhPl</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WhMin();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a917549908da2fa1bd2d5080d2a7f31c7" kindref="member">paint</ref>(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionGraphicsItem*<sp/>option,<sp/>QWidget*<sp/>widget)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/><ref refid="class_dot_1a508d06413b09f1e0ab230571c8278f7f" kindref="member">boundingRect</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/><ref refid="class_dot_1a3a7fee5c9df6512243685bee725045a8" kindref="member">shape</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>whrscount()</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Linecounter;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="161" refid="class_dot_1abad06f4214cf3989b6576f2c605724ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1abad06f4214cf3989b6576f2c605724ae" kindref="member">Is_inMove</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" kindref="member">moving</ref>);</highlight></codeline>
+<codeline lineno="165" refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" kindref="member">moving</ref>(<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>d);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a54051366618ed5375e396b2904085f1b" kindref="member">VerticalDot</ref>(<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>d);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a93ea5946db7c004e2437056a39fad0ea" kindref="member">HorizontalDot</ref>(<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>d);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Linecounter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>_pin;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Dot.h"/>
+  </compounddef>
+</doxygen>

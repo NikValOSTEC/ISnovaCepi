@@ -1,0 +1,70 @@
+\doxysection{Класс Whire\+Remove\+Comand}
+\hypertarget{class_whire_remove_comand}{}\label{class_whire_remove_comand}\index{WhireRemoveComand@{WhireRemoveComand}}
+
+
+Команда удаления провода Undo Redo.  
+
+
+
+
+{\ttfamily \#include $<$Whire\+Remove\+Comand.\+h$>$}
+
+Граф наследования\+:Whire\+Remove\+Comand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_whire_remove_comand}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_whire_remove_comand_ac19e1c39069ffb0e5d387286be6aba7f}{Whire\+Remove\+Comand}} (\mbox{\hyperlink{class_new_whire}{New\+Whire}} \texorpdfstring{$\ast$}{*}w)
+\begin{DoxyCompactList}\small\item\em Создание команды на удаление провода \end{DoxyCompactList}\item 
+\Hypertarget{class_whire_remove_comand_aa6a8132c6101c58d1b40f13672fcdc51}\label{class_whire_remove_comand_aa6a8132c6101c58d1b40f13672fcdc51} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Whire\+Remove\+Comand} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_whire_remove_comand_a97c94f65142f2aeb21ea09c41a2e8928}\label{class_whire_remove_comand_a97c94f65142f2aeb21ea09c41a2e8928} 
+void {\bfseries undo} () override
+\begin{DoxyCompactList}\small\item\em возвращение кабеля между p1 и p2 и запись в команду wc \end{DoxyCompactList}\item 
+\Hypertarget{class_whire_remove_comand_ad6b10c4141d241453f720f5652a3e4ab}\label{class_whire_remove_comand_ad6b10c4141d241453f720f5652a3e4ab} 
+void {\bfseries redo} () override
+\begin{DoxyCompactList}\small\item\em Удаление кабеля \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_whire_remove_comand_a6c9f136ccd99bcf33cd51ff4f1428eff}\label{class_whire_remove_comand_a6c9f136ccd99bcf33cd51ff4f1428eff} 
+\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries p1}
+\begin{DoxyCompactList}\small\item\em контакты p1 и p2 \end{DoxyCompactList}\item 
+\Hypertarget{class_whire_remove_comand_aaf1d9535896b02e256e025e93caf21f6}\label{class_whire_remove_comand_aaf1d9535896b02e256e025e93caf21f6} 
+\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries p2}
+\item 
+\Hypertarget{class_whire_remove_comand_a039c38bb7678de316a3943e22884b679}\label{class_whire_remove_comand_a039c38bb7678de316a3943e22884b679} 
+\mbox{\hyperlink{class_add_whire_command}{Add\+Whire\+Command}} \texorpdfstring{$\ast$}{*} {\bfseries wc}
+\begin{DoxyCompactList}\small\item\em Команда добовления удаляемого кабеля \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Команда удаления провода Undo Redo. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_whire_remove_comand_ac19e1c39069ffb0e5d387286be6aba7f}\label{class_whire_remove_comand_ac19e1c39069ffb0e5d387286be6aba7f} 
+\index{WhireRemoveComand@{WhireRemoveComand}!WhireRemoveComand@{WhireRemoveComand}}
+\index{WhireRemoveComand@{WhireRemoveComand}!WhireRemoveComand@{WhireRemoveComand}}
+\doxysubsubsection{\texorpdfstring{WhireRemoveComand()}{WhireRemoveComand()}}
+{\footnotesize\ttfamily Whire\+Remove\+Comand\+::\+Whire\+Remove\+Comand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_new_whire}{New\+Whire}} \texorpdfstring{$\ast$}{*}}]{w }\end{DoxyParamCaption})}
+
+
+
+Создание команды на удаление провода 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em w} & удаляемый провод\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Whire\+Remove\+Comand.\+h\item 
+Whire\+Remove\+Comand.\+cpp\end{DoxyCompactItemize}

@@ -36,9 +36,6 @@ CustomColliderLineRecoursive::CustomColliderLineRecoursive(bool Vert_f_Horiz_t, 
 	inside = QVector<QGraphicsObject*>();
 	itsmine = QVector<QGraphicsItem*>();
 	Parent = parent;
-	r = QRandomGenerator::global()->bounded(0, 255);
-	g = QRandomGenerator::global()->bounded(0, 255);
-	b = QRandomGenerator::global()->bounded(0, 255);
 	if (Parent != nullptr)
 	{
 		itsmine.append(Parent->itsmine);

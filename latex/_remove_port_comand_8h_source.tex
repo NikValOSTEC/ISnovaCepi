@@ -1,0 +1,26 @@
+\doxysection{Remove\+Port\+Comand.\+h}
+\hypertarget{_remove_port_comand_8h_source}{}\label{_remove_port_comand_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ REMOVECOMAND\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ REMOVECOMAND\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<QUndoCommand>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_comand}{AddComand}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view}{View}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_remove_port_comand}{RemovePortComand}}\ \ :\ \textcolor{keyword}{public}\ QUndoCommand}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_remove_port_comand}{RemovePortComand}}(\mbox{\hyperlink{class_port}{Port}}*\ p);}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_remove_port_comand_a5f854db93eb66cee6b78099f29de5aa2}{\string~RemovePortComand}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_remove_port_comand_afbf154f4ce67148e56e1de979c20fdff}{undo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_remove_port_comand_ac43040ba49d175434e567c920ca58776}{redo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_remove_port_comand_a2f93a7fbd2639aecbde288aae4154f1c}{name}};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_add_comand}{AddComand}}*\ \mbox{\hyperlink{class_remove_port_comand_abcb86d5320b5457d4715cdf0155d8868}{addcom}};}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_view}{View}}*\ \mbox{\hyperlink{class_remove_port_comand_a4dac2a52619b6617f816e1a6b0eb38e2}{v}};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_remove_port_comand_a259cfd9d5719f48dec595b74525578ab}{xx}},\ yy;}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

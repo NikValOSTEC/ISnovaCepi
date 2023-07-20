@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Кабелион графика: Исходный файл WhireRemoveComand.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LOGO.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Кабелион графика
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">WhireRemoveComand.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef WHIREREMOVECOMAND_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define WHIREREMOVECOMAND_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&lt;QUndoCommand&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_new_whire.html">NewWhire</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="class_add_pin_comand.html">AddPinComand</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="class_add_whire_command.html">AddWhireCommand</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_whire_remove_comand.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_whire_remove_comand.html">WhireRemoveComand</a>  : <span class="keyword">public</span> QUndoCommand</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="class_whire_remove_comand.html">WhireRemoveComand</a>(<a class="code hl_class" href="class_new_whire.html">NewWhire</a>* w);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="class_whire_remove_comand.html#aa6a8132c6101c58d1b40f13672fcdc51">~WhireRemoveComand</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_whire_remove_comand.html#a97c94f65142f2aeb21ea09c41a2e8928">undo</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_whire_remove_comand.html#ad6b10c4141d241453f720f5652a3e4ab">redo</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_whire_remove_comand.html#a6c9f136ccd99bcf33cd51ff4f1428eff">   34</a></span>    <a class="code hl_class" href="class_add_pin_comand.html">AddPinComand</a>* <a class="code hl_variable" href="class_whire_remove_comand.html#a6c9f136ccd99bcf33cd51ff4f1428eff">p1</a>, * p2;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_whire_remove_comand.html#a039c38bb7678de316a3943e22884b679">   38</a></span>    <a class="code hl_class" href="class_add_whire_command.html">AddWhireCommand</a>* <a class="code hl_variable" href="class_whire_remove_comand.html#a039c38bb7678de316a3943e22884b679">wc</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_add_pin_comand_html"><div class="ttname"><a href="class_add_pin_comand.html">AddPinComand</a></div><div class="ttdoc">Класс наследник от QUndoCommand на добавление нового контакта в разъем</div><div class="ttdef"><b>Definition</b> AddPinComand.h:15</div></div>
+<div class="ttc" id="aclass_add_whire_command_html"><div class="ttname"><a href="class_add_whire_command.html">AddWhireCommand</a></div><div class="ttdoc">Класс наследник от QUndoCommand на добавление нового разъема на сцену</div><div class="ttdef"><b>Definition</b> AddWhireCommand.h:14</div></div>
+<div class="ttc" id="aclass_new_whire_html"><div class="ttname"><a href="class_new_whire.html">NewWhire</a></div><div class="ttdoc">Вертикальный провод соеденяющий 2 контакта</div><div class="ttdef"><b>Definition</b> NewWhire.h:16</div></div>
+<div class="ttc" id="aclass_whire_remove_comand_html"><div class="ttname"><a href="class_whire_remove_comand.html">WhireRemoveComand</a></div><div class="ttdoc">Команда удаления провода Undo Redo.</div><div class="ttdef"><b>Definition</b> WhireRemoveComand.h:12</div></div>
+<div class="ttc" id="aclass_whire_remove_comand_html_a039c38bb7678de316a3943e22884b679"><div class="ttname"><a href="class_whire_remove_comand.html#a039c38bb7678de316a3943e22884b679">WhireRemoveComand::wc</a></div><div class="ttdeci">AddWhireCommand * wc</div><div class="ttdoc">Команда добовления удаляемого кабеля</div><div class="ttdef"><b>Definition</b> WhireRemoveComand.h:38</div></div>
+<div class="ttc" id="aclass_whire_remove_comand_html_a6c9f136ccd99bcf33cd51ff4f1428eff"><div class="ttname"><a href="class_whire_remove_comand.html#a6c9f136ccd99bcf33cd51ff4f1428eff">WhireRemoveComand::p1</a></div><div class="ttdeci">AddPinComand * p1</div><div class="ttdoc">контакты p1 и p2</div><div class="ttdef"><b>Definition</b> WhireRemoveComand.h:34</div></div>
+<div class="ttc" id="aclass_whire_remove_comand_html_a97c94f65142f2aeb21ea09c41a2e8928"><div class="ttname"><a href="class_whire_remove_comand.html#a97c94f65142f2aeb21ea09c41a2e8928">WhireRemoveComand::undo</a></div><div class="ttdeci">void undo() override</div><div class="ttdoc">возвращение кабеля между p1 и p2 и запись в команду wc</div><div class="ttdef"><b>Definition</b> WhireRemoveComand.cpp:25</div></div>
+<div class="ttc" id="aclass_whire_remove_comand_html_aa6a8132c6101c58d1b40f13672fcdc51"><div class="ttname"><a href="class_whire_remove_comand.html#aa6a8132c6101c58d1b40f13672fcdc51">WhireRemoveComand::~WhireRemoveComand</a></div><div class="ttdeci">~WhireRemoveComand()</div><div class="ttdoc">Деструктор</div><div class="ttdef"><b>Definition</b> WhireRemoveComand.cpp:20</div></div>
+<div class="ttc" id="aclass_whire_remove_comand_html_ad6b10c4141d241453f720f5652a3e4ab"><div class="ttname"><a href="class_whire_remove_comand.html#ad6b10c4141d241453f720f5652a3e4ab">WhireRemoveComand::redo</a></div><div class="ttdeci">void redo() override</div><div class="ttdoc">Удаление кабеля</div><div class="ttdef"><b>Definition</b> WhireRemoveComand.cpp:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

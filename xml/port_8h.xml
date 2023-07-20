@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="port_8h" kind="file" language="C++">
+    <compoundname>port.h</compoundname>
+    <includes local="yes">ui_port.h</includes>
+    <includes local="yes">qobject.h</includes>
+    <includes local="no">QMenu</includes>
+    <includes local="no">QSpacerItem</includes>
+    <includes local="no">qwidget.h</includes>
+    <includedby refid="_add_comand_8cpp" local="yes">AddComand.cpp</includedby>
+    <includedby refid="_add_pin_comand_8cpp" local="yes">AddPinComand.cpp</includedby>
+    <includedby refid="_add_whire_command_8cpp" local="yes">AddWhireCommand.cpp</includedby>
+    <includedby refid="_custom_collider_line_recoursive_8cpp" local="yes">CustomColliderLineRecoursive.cpp</includedby>
+    <includedby refid="_new_whire_8cpp" local="yes">NewWhire.cpp</includedby>
+    <includedby refid="_pin_template_8cpp" local="yes">PinTemplate.cpp</includedby>
+    <includedby refid="_port_template_8cpp" local="yes">PortTemplate.cpp</includedby>
+    <includedby refid="_port_template_8h" local="yes">PortTemplate.h</includedby>
+    <includedby refid="_remove_pin_command_8cpp" local="yes">RemovePinCommand.cpp</includedby>
+    <includedby refid="_remove_port_comand_8cpp" local="yes">RemovePortComand.cpp</includedby>
+    <includedby refid="chaintable_8cpp" local="yes">chaintable.cpp</includedby>
+    <includedby refid="mainwindow_8h" local="yes">mainwindow.h</includedby>
+    <includedby refid="pin_8cpp" local="yes">pin.cpp</includedby>
+    <includedby refid="port_8cpp" local="yes">port.cpp</includedby>
+    <includedby refid="proxyrectport_8cpp" local="yes">proxyrectport.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>port.h</label>
+        <link refid="port_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QMenu</label>
+      </node>
+      <node id="5">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="3">
+        <label>qobject.h</label>
+      </node>
+      <node id="6">
+        <label>qwidget.h</label>
+      </node>
+      <node id="2">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>PortTemplate.h</label>
+        <link refid="_port_template_8h_source"/>
+      </node>
+      <node id="3">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h_source"/>
+      </node>
+      <node id="1">
+        <label>port.h</label>
+        <link refid="port_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_port" prot="public">Port</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="port_8h_1a89df76f2646bce730cbe3f8d1ed89033" prot="public" static="no">
+        <name>PORT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="3" column="9" bodyfile="port.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;ui_port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qobject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QMenu&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSpacerItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qwidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_comand" kindref="compound">AddComand</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port" kindref="compound">Port</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_port" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port" kindref="compound">Port</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><ref refid="class_port_1aefc2c28deb5776de74cf81eb206fbbe7" kindref="member">x</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><ref refid="class_port_1a72c13b59e385b73474e433e450bafe17" kindref="member">y</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_port_1a2cfb70a4b6d730e715042d646ec1d960" kindref="member">Port</ref>(<ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/>com,<sp/>QWidget<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port_1a2cfb70a4b6d730e715042d646ec1d960" kindref="member">Port</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_port_1afe166c2a6b10ad34d47472a150366bc1" kindref="member">~Port</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>(QString<sp/>str);</highlight></codeline>
+<codeline lineno="64" refid="class_port_1aef88b80ef65a8e8975e6e401c3fe2532" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QVector&lt;Port*&gt;<sp/><ref refid="class_port_1aef88b80ef65a8e8975e6e401c3fe2532" kindref="member">portsVector</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;Pin*&gt;<ref refid="class_port_1a15a7a06e221876566463ba94873667e7" kindref="member">pins</ref>();</highlight></codeline>
+<codeline lineno="73" refid="class_port_1a5beafe369a13809fc03af0208417aa1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_port_1a5beafe369a13809fc03af0208417aa1d" kindref="member">adcom</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_1a6eb1a5f28f9031f22855ea702b5634f5" kindref="member">Remove</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/><ref refid="class_port_1aab356149ee33772dc2dee00a6c08bf95" kindref="member">addPin</ref>(QString<sp/><ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>-1,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>showContextMenu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint&amp;<sp/>pos);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_pushButton_clicked();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>addPinSl(QString<sp/><ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RemoveSL();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_1ae08eb4800b9a316ebe5c8a7e1dba9340" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updF=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>*<sp/><ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>(<ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>*prox);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::Port<sp/>*ui;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QMenu*<sp/><ref refid="class_port_1af1678396ebd343927fb4d68ac8fc65b6" kindref="member">ContextMenu</ref>();</highlight></codeline>
+<codeline lineno="130" refid="class_port_1a5a6bf9109d4cc0125ad9f7ae58d9c6d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>*<sp/><ref refid="class_port_1a5a6bf9109d4cc0125ad9f7ae58d9c6d0" kindref="member">_proxy</ref>;</highlight></codeline>
+<codeline lineno="134" refid="class_port_1ab0f95dc4e4708f0c26c1ef3d329958b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpacerItem*<sp/><ref refid="class_port_1ab0f95dc4e4708f0c26c1ef3d329958b3" kindref="member">spacer</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PORT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="port.h"/>
+  </compounddef>
+</doxygen>

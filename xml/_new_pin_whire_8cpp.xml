@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_new_pin_whire_8cpp" kind="file" language="C++">
+    <compoundname>NewPinWhire.cpp</compoundname>
+    <includes refid="_new_pin_whire_8h" local="yes">NewPinWhire.h</includes>
+    <includes refid="pin_8h" local="yes">pin.h</includes>
+    <includes refid="_dot_8h" local="yes">Dot.h</includes>
+    <includes refid="chain_8h" local="yes">chain.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Dot.h</label>
+        <link refid="_dot_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NewPinWhire.cpp</label>
+        <link refid="_new_pin_whire_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NewPinWhire.h</label>
+        <link refid="_new_pin_whire_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>chain.h</label>
+        <link refid="chain_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QColorDialog</label>
+      </node>
+      <node id="18">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="13">
+        <label>QLineEdit</label>
+      </node>
+      <node id="19">
+        <label>QPainter</label>
+      </node>
+      <node id="17">
+        <label>QStyleOptionGraphicsItem</label>
+      </node>
+      <node id="9">
+        <label>QThread</label>
+      </node>
+      <node id="16">
+        <label>QWidget</label>
+      </node>
+      <node id="15">
+        <label>QtMath</label>
+      </node>
+      <node id="21">
+        <label>qcolor.h</label>
+      </node>
+      <node id="6">
+        <label>qgraphicsobject</label>
+      </node>
+      <node id="11">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="7">
+        <label>qgraphicsscene.h</label>
+      </node>
+      <node id="4">
+        <label>qobject.h</label>
+      </node>
+      <node id="3">
+        <label>qthread.h</label>
+      </node>
+      <node id="10">
+        <label>ui_pin.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;NewPinWhire.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Dot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;chain.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="class_new_pin_whire_1aa25ba490d084894a5440c74fe96324f1" kindref="member">NewPinWhire::NewPinWhire</ref>(<ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p,<sp/>QThread*<sp/>th)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>(false,p-&gt;dot(),p-&gt;coredot())</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="class_pin_1a320aa7c703a51193687a7cf6f293543a" kindref="member">coredot</ref>()-&gt;<ref refid="class_dot_1a3f1b336dc13d266fe4050ae9911c73a8" kindref="member">setColor</ref>(Qt::red);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="class_pin_1a320aa7c703a51193687a7cf6f293543a" kindref="member">coredot</ref>()-&gt;<ref refid="class_dot_1a7ac1cb63d973b86023b178ca39abe20f" kindref="member">setTriangle</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="class_pin_1a320aa7c703a51193687a7cf6f293543a" kindref="member">coredot</ref>()-&gt;<ref refid="class_dot_1a8e807f07f899587ef8f1b46612f72ac9" kindref="member">setPin</ref>(p);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>pin<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="class_new_pin_whire_1a34b50bdadb21a6be13028037e8141404" kindref="member">NewPinWhire::~NewPinWhire</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_new_pin_whire_1a7cd432d5390928eeed24ca61c1abd449" kindref="member">NewPinWhire::hasConection</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(isVisible()<sp/>||<sp/>(<ref refid="class_custom_collider_line_recoursive_1ab1c47059a7df21ceb455eb4c8c0e11e4" kindref="member">inside</ref>.count()<sp/>&gt;<sp/>0));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">QColor<sp/><ref refid="class_new_pin_whire_1a67ccd5e3e8411e1afabe4b1789b13953" kindref="member">NewPinWhire::color</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pin-&gt;<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pin-&gt;<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref>-&gt;<ref refid="class_chain_1a486484c2691c53177dcf68ab0572396a" kindref="member">color</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QColor(Qt::black);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="NewPinWhire.cpp"/>
+  </compounddef>
+</doxygen>

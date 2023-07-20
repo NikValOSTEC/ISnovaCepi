@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="whire_8h" kind="file" language="C++">
+    <compoundname>whire.h</compoundname>
+    <includes local="no">QColorDialog</includes>
+    <includes local="no">qcoreapplication.h</includes>
+    <includes local="no">QGraphicsItem</includes>
+    <includes local="no">QObject</includes>
+    <includes local="no">QVector</includes>
+    <includes refid="_add_whire_command_8h" local="yes">AddWhireCommand.h</includes>
+    <includes refid="chain_8h" local="yes">chain.h</includes>
+    <includes refid="pin_8h" local="yes">Pin.h</includes>
+    <includedby refid="whire_8cpp" local="yes">whire.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>AddWhireCommand.h</label>
+        <link refid="_add_whire_command_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>chain.h</label>
+        <link refid="chain_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>whire.h</label>
+        <link refid="whire_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QColorDialog</label>
+      </node>
+      <node id="4">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="16">
+        <label>QLineEdit</label>
+      </node>
+      <node id="5">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QThread</label>
+      </node>
+      <node id="8">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="6">
+        <label>QVector</label>
+      </node>
+      <node id="11">
+        <label>qcolor.h</label>
+      </node>
+      <node id="3">
+        <label>qcoreapplication.h</label>
+      </node>
+      <node id="15">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="10">
+        <label>qobject.h</label>
+      </node>
+      <node id="14">
+        <label>ui_pin.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_whire" prot="public">Whire</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WHIRE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHIRE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColorDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qcoreapplication.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QGraphicsItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QVector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;AddWhireCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_chain" kindref="compound">Chain</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;chain.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_whire" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_whire" kindref="compound">Whire</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsItem,QObject</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/>patt;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>*<sp/>command;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_whire" kindref="compound">Whire</ref>(<ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p1,<sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p2,<sp/><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>*<sp/>comm);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/>boundingRect()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/>shape()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateShape(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>colision<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>paint(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionGraphicsItem*<sp/>option,<sp/>QWidget*<sp/>widget)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p1=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>*<sp/>p2=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_whire" kindref="compound">~Whire</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CollisionFix(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fix=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>move(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>left_rigth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_chain" kindref="compound">Chain</ref>*<sp/>chain=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddComandW(<ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p1,<sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p2);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>WHIRE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="whire.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+\doxysection{pinlinecolision.\+h}
+\hypertarget{pinlinecolision_8h_source}{}\label{pinlinecolision_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PINLINECOLISION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PINLINECOLISION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Pin.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QGraphicsLineItem>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin_line_colision}{PinLineColision}}\ :\ \textcolor{keyword}{public}\ QGraphicsLineItem,QObject}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ QPainterPath\ patt,pattest;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classdotold}{dotold}}*\ \mbox{\hyperlink{class_dot}{Dot}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ p1;}
+\DoxyCodeLine{00015\ \ \ \ \ QRectF\ boundingRect()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00016\ \ \ \ \ QPainterPath\ shape()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ updateShape();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ FixColliding();}
+\DoxyCodeLine{00019\ \ \ \ \ qreal\ y();}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_pin_line_colision}{PinLineColision}}(\mbox{\hyperlink{class_pin}{Pin}}*\ p,QThread*\ thr=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ paint(QPainter*\ painter,\ \textcolor{keyword}{const}\ QStyleOptionGraphicsItem*\ option,\ QWidget*\ widget)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PINLINECOLISION\_H}}
+
+\end{DoxyCode}

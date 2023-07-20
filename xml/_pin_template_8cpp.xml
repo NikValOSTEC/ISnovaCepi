@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_pin_template_8cpp" kind="file" language="C++">
+    <compoundname>PinTemplate.cpp</compoundname>
+    <includes refid="_pin_template_8h" local="yes">PinTemplate.h</includes>
+    <includes refid="port_8h" local="yes">port.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>PinTemplate.cpp</label>
+        <link refid="_pin_template_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PinTemplate.h</label>
+        <link refid="_pin_template_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QColorDialog</label>
+      </node>
+      <node id="8">
+        <label>QLineEdit</label>
+      </node>
+      <node id="12">
+        <label>QMenu</label>
+      </node>
+      <node id="13">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="4">
+        <label>QThread</label>
+      </node>
+      <node id="6">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="9">
+        <label>qobject.h</label>
+      </node>
+      <node id="14">
+        <label>qwidget.h</label>
+      </node>
+      <node id="5">
+        <label>ui_pin.h</label>
+      </node>
+      <node id="11">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;PinTemplate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_pin_template_1a925aa4676fa275e2317333c6b00f64dc" kindref="member">PinTemplate::PinTemplate</ref>(<ref refid="class_port" kindref="compound">Port</ref>*<sp/>p)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_pin" kindref="compound">Pin</ref>(p,false)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_template_1aa1fbad31ffeb0273fd3bda72ebc5cd68" kindref="member">PinTemplate::dragEnterEvent</ref>(QDragEnterEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_template_1ac604e335d83391936a469ca389739a52" kindref="member">PinTemplate::dropEvent</ref>(QDropEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pin_template_1a654e184292bdc0634cbf508b4eed699b" kindref="member">PinTemplate::dragMoveEvent</ref>(QDragMoveEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="class_pin_template_1aab30fedfe466de23a10070ecc4d35771" kindref="member">PinTemplate::~PinTemplate</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{}</highlight></codeline>
+    </programlisting>
+    <location file="PinTemplate.cpp"/>
+  </compounddef>
+</doxygen>

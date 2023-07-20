@@ -9,6 +9,7 @@
 #include"AddWhireCommand.h"
 #include"proxyrectport.h"
 #include"RemovePinCommand.h"
+
 Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     QLineEdit(parent),
     ui(new Ui::Pin)
@@ -141,7 +142,8 @@ void Pin::dropEvent(QDropEvent* event)
                 this->pinWhire();
             }
         }
-        this->Update(true);
+        this->EmitUpd();
+        fpin->EmitUpd();
     }
     else
         event->ignore();

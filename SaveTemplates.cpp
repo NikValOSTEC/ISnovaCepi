@@ -2,7 +2,7 @@
 #include"PortTwmplateObject.h"
 #include"PortTemplate.h"
 #include"PinTemplate.h"
-#include"QLineEditFocusOutSignal.h"
+#include"qlineedit.h"
 void SaveTemplates::Save(PortTwmplateObject* o)
 {
 	QSettings settings("./settings_demo.conf", QSettings::IniFormat);
@@ -12,6 +12,16 @@ void SaveTemplates::Save(PortTwmplateObject* o)
 		names.append(var->name());
 	}
 	settings.beginGroup("Templates");
+	int i = 1;
+	auto nm = o->templ->name();
+	if (settings.allKeys().contains(nm))
+	{
+		while (settings.allKeys().contains(nm=nm + "(" + QString::number(i) + ")"))
+		{
+			
+		}
+		o->templ->name(nm);
+	}
 	settings.setValue(o->templ->name(), names);
 	settings.endGroup();
 	settings.sync();
@@ -30,4 +40,13 @@ QList<QPair<QStringList,QString>> SaveTemplates::Load()
 		lst.append(QPair<QStringList, QString>(qvariant_cast<QStringList>(settings.value(k)), kk));
 	}
 	return lst;
+}
+
+void SaveTemplates::Del(QString name)
+{
+	QSettings settings("./settings_demo.conf", QSettings::IniFormat);	
+	settings.beginGroup("Templates");
+	settings.remove("Templates/" + name);
+	settings.endGroup();
+	settings.sync();
 }

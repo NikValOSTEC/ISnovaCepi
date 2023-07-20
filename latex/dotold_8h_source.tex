@@ -1,0 +1,42 @@
+\doxysection{dotold.\+h}
+\hypertarget{dotold_8h_source}{}\label{dotold_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DOTOLD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DOTOLD\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include<QGraphicsItem>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<QList>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}Pin.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_whire}{Whire}};}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}whire.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdotold}{dotold}}\ :\ \textcolor{keyword}{public}\ QGraphicsItem,QObject}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classdotold}{\string~dotold}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classdotold}{dotold}}(\mbox{\hyperlink{class_pin}{Pin}}*\ p,QThread*\ thr=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00015\ \ \ \ \ QColor\ color;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ paint(QPainter*\ painter,\ \textcolor{keyword}{const}\ QStyleOptionGraphicsItem*\ option,\ QWidget*\ widget)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00017\ \ \ \ \ QRectF\ boundingRect()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00018\ \ \ \ \ QPainterPath\ shape()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00019\ \ \ \ \ qreal\ x();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ x(\textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00021\ \ \ \ \ qreal\ y();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ y(\textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ Uupdate(\textcolor{keywordtype}{bool}\ collision=\textcolor{keyword}{false},\ QVector<dotold*>*\ nnot=\textcolor{keyword}{new}\ QVector<dotold*>());}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ AddWhire(\mbox{\hyperlink{class_whire}{Whire}}*\ w);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ RemoveWhire(\mbox{\hyperlink{class_whire}{Whire}}*w);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ AddDot(\mbox{\hyperlink{classdotold}{dotold}}*\ w);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ RemoveDot(\mbox{\hyperlink{classdotold}{dotold}}*w);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ type()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ \ \ \ \ QVector<Whire*>whires;}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ QVector<dotold*>verticalMove;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ Big=\textcolor{keyword}{false};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ pin;}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_whire}{Whire}}*\ whire;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DOT\_H}}
+
+\end{DoxyCode}

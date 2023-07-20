@@ -1,0 +1,913 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_pin" kind="class" language="C++" prot="public">
+    <compoundname>Pin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QLineEdit</basecompoundref>
+    <derivedcompoundref refid="class_pin_template" prot="public" virt="non-virtual">PinTemplate</derivedcompoundref>
+    <includes refid="pin_8h" local="no">pin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_pin_1a20f01bad04eb172b27d8abef697e51b3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+        <definition>Port* Pin::parCon</definition>
+        <argsstring></argsstring>
+        <name>parCon</name>
+        <qualifiedname>Pin::parCon</qualifiedname>
+        <briefdescription>
+<para>Разъем в котором лежим контакт </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="75" column="10" bodyfile="pin.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_chain" kindref="compound">Chain</ref> *</type>
+        <definition>Chain* Pin::chain</definition>
+        <argsstring></argsstring>
+        <name>chain</name>
+        <qualifiedname>Pin::chain</qualifiedname>
+        <briefdescription>
+<para>цепь к которой пренадлежит контакт </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="133" column="11" bodyfile="pin.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1a30e0bcf999b17705b095ff25cde17281" prot="public" static="no" mutable="no">
+        <type><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref> *</type>
+        <definition>AddPinComand* Pin::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <qualifiedname>Pin::command</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+<para>Команда добавления контакта Undo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="137" column="18" bodyfile="pin.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_pin_1a51191918616c49cfc3b0a32437bdc4cb" prot="protected" static="no" mutable="no">
+        <type>Ui::Pin *</type>
+        <definition>Ui::Pin* Pin::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>Pin::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="144" column="13" bodyfile="pin.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pin::upd</definition>
+        <argsstring></argsstring>
+        <name>upd</name>
+        <qualifiedname>Pin::upd</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Обновление при движении </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="148" column="10" bodyfile="pin.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pin_1aeaed12870e5e5c25ab19c8950e679c25" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pin::updaterbl</definition>
+        <argsstring></argsstring>
+        <name>updaterbl</name>
+        <qualifiedname>Pin::updaterbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="168" column="10" bodyfile="pin.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1aec780366c36f0751643fe7c5288025a1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+        <definition>Dot* Pin::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>Pin::d</qualifiedname>
+        <briefdescription>
+<para>Внешняя точка провода от контакта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="172" column="9" bodyfile="pin.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1afa3cd55b245458163f433f524455a24b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+        <definition>Dot* Pin::cored</definition>
+        <argsstring></argsstring>
+        <name>cored</name>
+        <qualifiedname>Pin::cored</qualifiedname>
+        <briefdescription>
+<para>внутрянняя точка провода от контакта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="176" column="9" bodyfile="pin.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1ace717c55ed27baa6692bb1be7ec64271" prot="private" static="no" mutable="no">
+        <type><ref refid="class_new_pin_whire" kindref="compound">NewPinWhire</ref> *</type>
+        <definition>NewPinWhire* Pin::pinW</definition>
+        <argsstring></argsstring>
+        <name>pinW</name>
+        <qualifiedname>Pin::pinW</qualifiedname>
+        <briefdescription>
+<para>Провод от контакта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="180" column="17" bodyfile="pin.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1ab4ef800f0b74a5595ea4d3e94f48be73" prot="private" static="no" mutable="no">
+        <type>QThread *</type>
+        <definition>QThread* Pin::thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <qualifiedname>Pin::thread</qualifiedname>
+        <briefdescription>
+<para>поток в котором лежит контакт </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="184" column="13" bodyfile="pin.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_1a3588700c4e0d4106d04c5a4acc0197fc" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Pin::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>Pin::_name</qualifiedname>
+        <briefdescription>
+<para>имя контакта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="188" column="13" bodyfile="pin.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pin_1afae20af00be105f77b3361803e768ffe" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pin::Pin</definition>
+        <argsstring>(Port *port, bool bl=true, QLineEdit *parent=nullptr)</argsstring>
+        <name>Pin</name>
+        <qualifiedname>Pin::Pin</qualifiedname>
+        <param>
+          <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>QLineEdit *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Создает контакт </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разъем в котором находится контакт</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Делать ли провод к контакту</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="31" column="14" bodyfile="pin.cpp" bodystart="13" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a462c14c45d3d653731dde638aa6e7bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pin::~Pin</definition>
+        <argsstring>()</argsstring>
+        <name>~Pin</name>
+        <qualifiedname>Pin::~Pin</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="35" column="5" bodyfile="pin.cpp" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a6c228c2fac4f4276728a0fe31148bdb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pin::index</definition>
+        <argsstring>()</argsstring>
+        <name>index</name>
+        <qualifiedname>Pin::index</qualifiedname>
+        <briefdescription>
+<para>положение контакта по высоте в разъеме </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="40" column="9" bodyfile="pin.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const QString</type>
+        <definition>const QString Pin::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>Pin::name</qualifiedname>
+        <briefdescription>
+<para>Имя контакта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="45" column="19" bodyfile="pin.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a06bc9c083f2864de7066836387dc75aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::name</definition>
+        <argsstring>(QString name)</argsstring>
+        <name>name</name>
+        <qualifiedname>Pin::name</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Установка имени контакта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="50" column="10" bodyfile="pin.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1aa8478d415ed22a937dca6745a0d16539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::EmitUpd</definition>
+        <argsstring>(bool dotold=false)</argsstring>
+        <name>EmitUpd</name>
+        <qualifiedname>Pin::EmitUpd</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>dotold</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>вызов сигнала обновления </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dotold</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="66" column="10" bodyfile="pin.cpp" bodystart="82" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a2df67124076280d9f7261be43ca296a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_new_pin_whire" kindref="compound">NewPinWhire</ref> *</type>
+        <definition>NewPinWhire * Pin::getpinWhire</definition>
+        <argsstring>()</argsstring>
+        <name>getpinWhire</name>
+        <qualifiedname>Pin::getpinWhire</qualifiedname>
+        <briefdescription>
+<para>Возвращает провод от данного контакта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="71" column="17" bodyfile="pin.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1ad9e623eb6aae56e00d10941c205fadc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+        <definition>Dot * Pin::dot</definition>
+        <argsstring>(bool recalc=false)</argsstring>
+        <name>dot</name>
+        <qualifiedname>Pin::dot</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>recalc</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Внешняя точка провода контакта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recalc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>пересчитывать ли провод (коллизии)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="81" column="17" bodyfile="pin.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1aabb758fde54d3d7b5f16eba6986ae2c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Pin::dot</definition>
+        <argsstring>(Dot *d)</argsstring>
+        <name>dot</name>
+        <qualifiedname>Pin::dot</qualifiedname>
+        <param>
+          <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>установка внешней точки провода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="86" column="18" bodyfile="pin.cpp" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a320aa7c703a51193687a7cf6f293543a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+        <definition>Dot * Pin::coredot</definition>
+        <argsstring>()</argsstring>
+        <name>coredot</name>
+        <qualifiedname>Pin::coredot</qualifiedname>
+        <briefdescription>
+<para>Внутренняя точка провода конткта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="110" column="9" bodyfile="pin.cpp" bodystart="176" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a91e265850820e125838e7d99f3491468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal Pin::x</definition>
+        <argsstring>()</argsstring>
+        <name>x</name>
+        <qualifiedname>Pin::x</qualifiedname>
+        <briefdescription>
+<para>координата x контакта на сцене </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="115" column="11" bodyfile="pin.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1ae2b41d1cd200e5ee0804141797d69ef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal Pin::y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <qualifiedname>Pin::y</qualifiedname>
+        <briefdescription>
+<para>координата y контакта на сцене </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="119" column="11" bodyfile="pin.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a4be558da5b8ed1c9b9a9cb409d90401a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::pinWhire</definition>
+        <argsstring>(bool show=true)</argsstring>
+        <name>pinWhire</name>
+        <qualifiedname>Pin::pinWhire</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>show</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Отображение провода контакта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>show</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="124" column="10" bodyfile="pin.cpp" bodystart="197" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a46a3f3b06bd891c8e238c6394b5e6fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::PinWUpd</definition>
+        <argsstring>(bool upd=true)</argsstring>
+        <name>PinWUpd</name>
+        <qualifiedname>Pin::PinWUpd</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>upd</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Пересчет расположения внутрнней точки провода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upd</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="129" column="10" bodyfile="pin.cpp" bodystart="216" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_pin_1aa660efe9484f60ceff51f8533036a6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::Update</definition>
+        <argsstring>(bool dotupd)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Pin::Update</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>dotupd</declname>
+        </param>
+        <briefdescription>
+<para>Обновление </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="55" column="10" bodyfile="pin.cpp" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::RemoveFromChain</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveFromChain</name>
+        <qualifiedname>Pin::RemoveFromChain</qualifiedname>
+        <briefdescription>
+<para>удаление из цепи </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="153" column="10" bodyfile="pin.cpp" bodystart="243" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_pin_1a9c3020eeb77b6815112b6543491b98f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::Remove</definition>
+        <argsstring>()</argsstring>
+        <name>Remove</name>
+        <qualifiedname>Pin::Remove</qualifiedname>
+        <briefdescription>
+<para>удаление </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="157" column="10" bodyfile="pin.cpp" bodystart="255" bodyend="258"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_pin_1a60d76820ad19d336938bc9621561c11a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::updSignal</definition>
+        <argsstring>(bool upddots)</argsstring>
+        <name>updSignal</name>
+        <qualifiedname>Pin::updSignal</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>upddots</declname>
+        </param>
+        <briefdescription>
+<para>Сигнал обновления </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="60" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pin_1ab39741554a0c86b40d470157ae514dd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>Pin::mousePressEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегрузка </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="92" column="10" bodyfile="pin.cpp" bodystart="97" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1ac8b84f4bb0f882744feac5ff8b7227c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Pin::dragEnterEvent</definition>
+        <argsstring>(QDragEnterEvent *event) override</argsstring>
+        <name>dragEnterEvent</name>
+        <qualifiedname>Pin::dragEnterEvent</qualifiedname>
+        <reimplementedby refid="class_pin_template_1aa1fbad31ffeb0273fd3bda72ebc5cd68">dragEnterEvent</reimplementedby>
+        <param>
+          <type>QDragEnterEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегрузка </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="96" column="18" bodyfile="pin.cpp" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a13229b477e918ed10abc3e55caaae56d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Pin::dropEvent</definition>
+        <argsstring>(QDropEvent *event) override</argsstring>
+        <name>dropEvent</name>
+        <qualifiedname>Pin::dropEvent</qualifiedname>
+        <reimplementedby refid="class_pin_template_1ac604e335d83391936a469ca389739a52">dropEvent</reimplementedby>
+        <param>
+          <type>QDropEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегрузка </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="100" column="18" bodyfile="pin.cpp" bodystart="129" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_1a070ba055da5ab73e4ea2b7df3d4a6ff2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Pin::dragMoveEvent</definition>
+        <argsstring>(QDragMoveEvent *event) override</argsstring>
+        <name>dragMoveEvent</name>
+        <qualifiedname>Pin::dragMoveEvent</qualifiedname>
+        <reimplementedby refid="class_pin_template_1a654e184292bdc0634cbf508b4eed699b">dragMoveEvent</reimplementedby>
+        <param>
+          <type>QDragMoveEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегрузка </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="104" column="18" bodyfile="pin.cpp" bodystart="152" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_pin_1a1aeab8ca221e64ebe2a1d0f8595c5e69" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * Pin::ContextMenu</definition>
+        <argsstring>()</argsstring>
+        <name>ContextMenu</name>
+        <qualifiedname>Pin::ContextMenu</qualifiedname>
+        <briefdescription>
+<para>Контекстное меню для удаления... по правой кнопке мыши </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="143" column="19" bodyfile="pin.cpp" bodystart="232" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="class_pin_1ac14a3e8fdc62f882a488864592f8df38" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Pin::showContextMenu</definition>
+        <argsstring>(const QPoint &amp;pos)</argsstring>
+        <name>showContextMenu</name>
+        <qualifiedname>Pin::showContextMenu</qualifiedname>
+        <param>
+          <type>const QPoint &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Демонстрация контекстного меню </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="162" column="18" bodyfile="pin.cpp" bodystart="270" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_pin_1a0d15cb1daef712c52dabda0751f50949" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pin::ChangeColor</definition>
+        <argsstring>()</argsstring>
+        <name>ChangeColor</name>
+        <qualifiedname>Pin::ChangeColor</qualifiedname>
+        <briefdescription>
+<para>Вызов colorDialog для смены цвета цепи в которую входит контакт </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pin.h" line="166" column="10" bodyfile="pin.cpp" bodystart="260" bodyend="268"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Контакт </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Pin</label>
+        <link refid="class_pin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PinTemplate</label>
+        <link refid="class_pin_template"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QLineEdit</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>AddPinComand</label>
+        <link refid="class_add_pin_comand"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>pn</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>prt</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Chain</label>
+        <link refid="class_chain"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Pin</label>
+        <link refid="class_pin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parCon</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>chain</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>command</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QFrame</label>
+      </node>
+      <node id="13">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="10">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="2">
+        <label>QLineEdit</label>
+      </node>
+      <node id="12">
+        <label>QObject</label>
+      </node>
+      <node id="6">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="7">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="pin.h" line="20" column="1" bodyfile="pin.h" bodystart="21" bodyend="190"/>
+    <listofallmembers>
+      <member refid="class_pin_1a3588700c4e0d4106d04c5a4acc0197fc" prot="private" virt="non-virtual"><scope>Pin</scope><name>_name</name></member>
+      <member refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" prot="public" virt="non-virtual"><scope>Pin</scope><name>chain</name></member>
+      <member refid="class_pin_1a0d15cb1daef712c52dabda0751f50949" prot="protected" virt="non-virtual"><scope>Pin</scope><name>ChangeColor</name></member>
+      <member refid="class_pin_1a30e0bcf999b17705b095ff25cde17281" prot="public" virt="non-virtual"><scope>Pin</scope><name>command</name></member>
+      <member refid="class_pin_1a1aeab8ca221e64ebe2a1d0f8595c5e69" prot="protected" virt="virtual"><scope>Pin</scope><name>ContextMenu</name></member>
+      <member refid="class_pin_1afa3cd55b245458163f433f524455a24b" prot="private" virt="non-virtual"><scope>Pin</scope><name>cored</name></member>
+      <member refid="class_pin_1a320aa7c703a51193687a7cf6f293543a" prot="public" virt="non-virtual"><scope>Pin</scope><name>coredot</name></member>
+      <member refid="class_pin_1aec780366c36f0751643fe7c5288025a1" prot="private" virt="non-virtual"><scope>Pin</scope><name>d</name></member>
+      <member refid="class_pin_1ad9e623eb6aae56e00d10941c205fadc6" prot="public" virt="virtual"><scope>Pin</scope><name>dot</name></member>
+      <member refid="class_pin_1aabb758fde54d3d7b5f16eba6986ae2c0" prot="public" virt="virtual"><scope>Pin</scope><name>dot</name></member>
+      <member refid="class_pin_1ac8b84f4bb0f882744feac5ff8b7227c0" prot="private" virt="virtual"><scope>Pin</scope><name>dragEnterEvent</name></member>
+      <member refid="class_pin_1a070ba055da5ab73e4ea2b7df3d4a6ff2" prot="private" virt="virtual"><scope>Pin</scope><name>dragMoveEvent</name></member>
+      <member refid="class_pin_1a13229b477e918ed10abc3e55caaae56d" prot="private" virt="virtual"><scope>Pin</scope><name>dropEvent</name></member>
+      <member refid="class_pin_1aa8478d415ed22a937dca6745a0d16539" prot="public" virt="non-virtual"><scope>Pin</scope><name>EmitUpd</name></member>
+      <member refid="class_pin_1a2df67124076280d9f7261be43ca296a3" prot="public" virt="non-virtual"><scope>Pin</scope><name>getpinWhire</name></member>
+      <member refid="class_pin_1a6c228c2fac4f4276728a0fe31148bdb1" prot="public" virt="non-virtual"><scope>Pin</scope><name>index</name></member>
+      <member refid="class_pin_1ab39741554a0c86b40d470157ae514dd6" prot="private" virt="non-virtual"><scope>Pin</scope><name>mousePressEvent</name></member>
+      <member refid="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" prot="public" virt="non-virtual"><scope>Pin</scope><name>name</name></member>
+      <member refid="class_pin_1a06bc9c083f2864de7066836387dc75aa" prot="public" virt="non-virtual"><scope>Pin</scope><name>name</name></member>
+      <member refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" prot="public" virt="non-virtual"><scope>Pin</scope><name>parCon</name></member>
+      <member refid="class_pin_1afae20af00be105f77b3361803e768ffe" prot="public" virt="non-virtual"><scope>Pin</scope><name>Pin</name></member>
+      <member refid="class_pin_1ace717c55ed27baa6692bb1be7ec64271" prot="private" virt="non-virtual"><scope>Pin</scope><name>pinW</name></member>
+      <member refid="class_pin_1a4be558da5b8ed1c9b9a9cb409d90401a" prot="public" virt="non-virtual"><scope>Pin</scope><name>pinWhire</name></member>
+      <member refid="class_pin_1a46a3f3b06bd891c8e238c6394b5e6fcf" prot="public" virt="non-virtual"><scope>Pin</scope><name>PinWUpd</name></member>
+      <member refid="class_pin_1a9c3020eeb77b6815112b6543491b98f2" prot="public" virt="non-virtual"><scope>Pin</scope><name>Remove</name></member>
+      <member refid="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" prot="public" virt="non-virtual"><scope>Pin</scope><name>RemoveFromChain</name></member>
+      <member refid="class_pin_1ac14a3e8fdc62f882a488864592f8df38" prot="protected" virt="virtual"><scope>Pin</scope><name>showContextMenu</name></member>
+      <member refid="class_pin_1ab4ef800f0b74a5595ea4d3e94f48be73" prot="private" virt="non-virtual"><scope>Pin</scope><name>thread</name></member>
+      <member refid="class_pin_1a51191918616c49cfc3b0a32437bdc4cb" prot="protected" virt="non-virtual"><scope>Pin</scope><name>ui</name></member>
+      <member refid="class_pin_1ae39d10d17a930777cc8d9023f56c84c6" prot="protected" virt="non-virtual"><scope>Pin</scope><name>upd</name></member>
+      <member refid="class_pin_1aa660efe9484f60ceff51f8533036a6c6" prot="public" virt="non-virtual"><scope>Pin</scope><name>Update</name></member>
+      <member refid="class_pin_1aeaed12870e5e5c25ab19c8950e679c25" prot="private" virt="non-virtual"><scope>Pin</scope><name>updaterbl</name></member>
+      <member refid="class_pin_1a60d76820ad19d336938bc9621561c11a" prot="public" virt="non-virtual"><scope>Pin</scope><name>updSignal</name></member>
+      <member refid="class_pin_1a91e265850820e125838e7d99f3491468" prot="public" virt="non-virtual"><scope>Pin</scope><name>x</name></member>
+      <member refid="class_pin_1ae2b41d1cd200e5ee0804141797d69ef2" prot="public" virt="non-virtual"><scope>Pin</scope><name>y</name></member>
+      <member refid="class_pin_1a462c14c45d3d653731dde638aa6e7bb7" prot="public" virt="non-virtual"><scope>Pin</scope><name>~Pin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

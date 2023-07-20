@@ -1,0 +1,35 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{mainwindow_8h_source}{}\label{mainwindow_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<qscrollarea.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include"{}port.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view}{View}};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classminimap}{minimap}};}
+\DoxyCodeLine{00009\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}};\ \}}
+\DoxyCodeLine{00011\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_main_window}{\string~MainWindow}}();}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ AddTemp(\mbox{\hyperlink{class_port}{Port}}*\ p=\textcolor{keyword}{new}\ \mbox{\hyperlink{class_port}{Port}}());}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ hidemMap();}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ Ui::MainWindow\ *ui;}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_view}{View}}*\ v;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classminimap}{minimap}}*\ minima;}
+\DoxyCodeLine{00028\ \ \ \ \ QScrollArea*\ TempList;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

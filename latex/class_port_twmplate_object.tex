@@ -1,0 +1,110 @@
+\doxysection{Класс Port\+Twmplate\+Object}
+\hypertarget{class_port_twmplate_object}{}\label{class_port_twmplate_object}\index{PortTwmplateObject@{PortTwmplateObject}}
+
+
+Объект для шаблона разъема  
+
+
+
+
+{\ttfamily \#include $<$Port\+Twmplate\+Object.\+h$>$}
+
+Граф наследования\+:Port\+Twmplate\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_port_twmplate_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_port_twmplate_object_adb631de2e8c886d26900cdff8ca79046}\label{class_port_twmplate_object_adb631de2e8c886d26900cdff8ca79046} 
+void {\bfseries edit\+Push} ()
+\begin{DoxyCompactList}\small\item\em слот на изменение \end{DoxyCompactList}\item 
+\Hypertarget{class_port_twmplate_object_a2290b0757ad5725ed4f40f0ff8c10af9}\label{class_port_twmplate_object_a2290b0757ad5725ed4f40f0ff8c10af9} 
+void {\bfseries del\+Push} ()
+\begin{DoxyCompactList}\small\item\em удаление \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_port_twmplate_object_ad257ac24278cea25e940dc3ad94c923f}{drag\+Enter\+Event}} (QDrag\+Enter\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перетягивание на сцену \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_port_twmplate_object_ab2a59e9f813568bf9c72249bf78188e3}{drop\+Event}} (QDrop\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перетягивание на сцену \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_port_twmplate_object_a8a986b407552d4b8c95782ef92e70b0b}{drag\+Move\+Event}} (QDrag\+Move\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перетягивание на сцену \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_port_twmplate_object_af182abd6cef9d4003858f16df826918f}{mouse\+Press\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перетягивание на сцену \end{DoxyCompactList}\item 
+\Hypertarget{class_port_twmplate_object_aea747b1af2575c9d658982a04a24d15c}\label{class_port_twmplate_object_aea747b1af2575c9d658982a04a24d15c} 
+{\bfseries Port\+Twmplate\+Object} ()
+\begin{DoxyCompactList}\small\item\em конструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_port_twmplate_object_a63d5d61c00a20aa9dee489d7629e2fb5}\label{class_port_twmplate_object_a63d5d61c00a20aa9dee489d7629e2fb5} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Port\+Twmplate\+Object} ()
+\begin{DoxyCompactList}\small\item\em деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_port_twmplate_object_ac2d333be49503be0d54229bb6b706be5}\label{class_port_twmplate_object_ac2d333be49503be0d54229bb6b706be5} 
+\mbox{\hyperlink{class_port_template}{Port\+Template}} \texorpdfstring{$\ast$}{*} {\bfseries templ}
+\begin{DoxyCompactList}\small\item\em Шаблон разъема \end{DoxyCompactList}\item 
+\Hypertarget{class_port_twmplate_object_a4477b04ddfe153b8c1e92c3642552538}\label{class_port_twmplate_object_a4477b04ddfe153b8c1e92c3642552538} 
+QPush\+Button \texorpdfstring{$\ast$}{*} {\bfseries editpb}
+\begin{DoxyCompactList}\small\item\em кнопка изменения \end{DoxyCompactList}\item 
+\Hypertarget{class_port_twmplate_object_aaca73a5dfb777e6c798b46abd15c2de0}\label{class_port_twmplate_object_aaca73a5dfb777e6c798b46abd15c2de0} 
+QPush\+Button \texorpdfstring{$\ast$}{*} {\bfseries delpb}
+\begin{DoxyCompactList}\small\item\em кнопка удаления \end{DoxyCompactList}\item 
+\Hypertarget{class_port_twmplate_object_ac3dce326d43b398dc3b7e24a03d2043b}\label{class_port_twmplate_object_ac3dce326d43b398dc3b7e24a03d2043b} 
+QLine\+Edit \texorpdfstring{$\ast$}{*} {\bfseries name}
+\begin{DoxyCompactList}\small\item\em строка имени \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Объект для шаблона разъема 
+
+\doxysubsection{Методы}
+\Hypertarget{class_port_twmplate_object_ad257ac24278cea25e940dc3ad94c923f}\label{class_port_twmplate_object_ad257ac24278cea25e940dc3ad94c923f} 
+\index{PortTwmplateObject@{PortTwmplateObject}!dragEnterEvent@{dragEnterEvent}}
+\index{dragEnterEvent@{dragEnterEvent}!PortTwmplateObject@{PortTwmplateObject}}
+\doxysubsubsection{\texorpdfstring{dragEnterEvent()}{dragEnterEvent()}}
+{\footnotesize\ttfamily void Port\+Twmplate\+Object\+::drag\+Enter\+Event (\begin{DoxyParamCaption}\item[{QDrag\+Enter\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перетягивание на сцену 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_port_twmplate_object_a8a986b407552d4b8c95782ef92e70b0b}\label{class_port_twmplate_object_a8a986b407552d4b8c95782ef92e70b0b} 
+\index{PortTwmplateObject@{PortTwmplateObject}!dragMoveEvent@{dragMoveEvent}}
+\index{dragMoveEvent@{dragMoveEvent}!PortTwmplateObject@{PortTwmplateObject}}
+\doxysubsubsection{\texorpdfstring{dragMoveEvent()}{dragMoveEvent()}}
+{\footnotesize\ttfamily void Port\+Twmplate\+Object\+::drag\+Move\+Event (\begin{DoxyParamCaption}\item[{QDrag\+Move\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перетягивание на сцену 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_port_twmplate_object_ab2a59e9f813568bf9c72249bf78188e3}\label{class_port_twmplate_object_ab2a59e9f813568bf9c72249bf78188e3} 
+\index{PortTwmplateObject@{PortTwmplateObject}!dropEvent@{dropEvent}}
+\index{dropEvent@{dropEvent}!PortTwmplateObject@{PortTwmplateObject}}
+\doxysubsubsection{\texorpdfstring{dropEvent()}{dropEvent()}}
+{\footnotesize\ttfamily void Port\+Twmplate\+Object\+::drop\+Event (\begin{DoxyParamCaption}\item[{QDrop\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перетягивание на сцену 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_port_twmplate_object_af182abd6cef9d4003858f16df826918f}\label{class_port_twmplate_object_af182abd6cef9d4003858f16df826918f} 
+\index{PortTwmplateObject@{PortTwmplateObject}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!PortTwmplateObject@{PortTwmplateObject}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Port\+Twmplate\+Object\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перетягивание на сцену 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Port\+Twmplate\+Object.\+h\item 
+Port\+Twmplate\+Object.\+cpp\end{DoxyCompactItemize}

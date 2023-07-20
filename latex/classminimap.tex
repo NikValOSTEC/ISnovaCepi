@@ -1,0 +1,143 @@
+\doxysection{Класс minimap}
+\hypertarget{classminimap}{}\label{classminimap}\index{minimap@{minimap}}
+
+
+Мини карта  
+
+
+
+
+{\ttfamily \#include $<$minimap.\+h$>$}
+
+Граф наследования\+:minimap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classminimap}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classminimap_aa258145892674bbb8f2b7519d88f86bd}\label{classminimap_aa258145892674bbb8f2b7519d88f86bd} 
+void {\bfseries rescale} ()
+\begin{DoxyCompactList}\small\item\em Пересчет маштаба \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classminimap_a3135edec24c914f9af18976fddda7651}{minimap}} (\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classminimap_a020cb0b130c1d1805a5f5cd6decce321}{v}})
+\begin{DoxyCompactList}\small\item\em крадем сцену у v \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classminimap_ac6f839c092231f3beee553441b406316}{mouse\+Move\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classminimap_a098d5c3f522d5a3cdc3b7c85825d885b}{mouse\+Release\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classminimap_ae693f15114622bfd83a2773219cfa450}{mouse\+Press\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classminimap_a3fbb10d21bbc9e67af2f3bc36b46e9e3}{mouse\+Double\+Click\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+\Hypertarget{classminimap_a6246ee18d06e114b55c5d8d20bd7ebb6}\label{classminimap_a6246ee18d06e114b55c5d8d20bd7ebb6} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}minimap} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classminimap_a020cb0b130c1d1805a5f5cd6decce321}\label{classminimap_a020cb0b130c1d1805a5f5cd6decce321} 
+\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*} {\bfseries v}
+\begin{DoxyCompactList}\small\item\em Основное отображение \end{DoxyCompactList}\item 
+\Hypertarget{classminimap_aec768b3ddcdd8a0b29f174a2a6673a56}\label{classminimap_aec768b3ddcdd8a0b29f174a2a6673a56} 
+float {\bfseries sclX}
+\item 
+\Hypertarget{classminimap_a0a2f166ed27c5550238837a6c1486569}\label{classminimap_a0a2f166ed27c5550238837a6c1486569} 
+float {\bfseries sclY}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Мини карта 
+
+Выводит ту же сцену что и основное отображение, но в другом маштабе 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classminimap_a3135edec24c914f9af18976fddda7651}\label{classminimap_a3135edec24c914f9af18976fddda7651} 
+\index{minimap@{minimap}!minimap@{minimap}}
+\index{minimap@{minimap}!minimap@{minimap}}
+\doxysubsubsection{\texorpdfstring{minimap()}{minimap()}}
+{\footnotesize\ttfamily minimap\+::minimap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})}
+
+
+
+крадем сцену у v 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em v} & Основное отображение\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{classminimap_a3fbb10d21bbc9e67af2f3bc36b46e9e3}\label{classminimap_a3fbb10d21bbc9e67af2f3bc36b46e9e3} 
+\index{minimap@{minimap}!mouseDoubleClickEvent@{mouseDoubleClickEvent}}
+\index{mouseDoubleClickEvent@{mouseDoubleClickEvent}!minimap@{minimap}}
+\doxysubsubsection{\texorpdfstring{mouseDoubleClickEvent()}{mouseDoubleClickEvent()}}
+{\footnotesize\ttfamily void minimap\+::mouse\+Double\+Click\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classminimap_ac6f839c092231f3beee553441b406316}\label{classminimap_ac6f839c092231f3beee553441b406316} 
+\index{minimap@{minimap}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!minimap@{minimap}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void minimap\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classminimap_ae693f15114622bfd83a2773219cfa450}\label{classminimap_ae693f15114622bfd83a2773219cfa450} 
+\index{minimap@{minimap}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!minimap@{minimap}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void minimap\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classminimap_a098d5c3f522d5a3cdc3b7c85825d885b}\label{classminimap_a098d5c3f522d5a3cdc3b7c85825d885b} 
+\index{minimap@{minimap}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!minimap@{minimap}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void minimap\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+minimap.\+h\item 
+minimap.\+cpp\end{DoxyCompactItemize}

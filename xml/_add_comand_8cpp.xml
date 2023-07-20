@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_add_comand_8cpp" kind="file" language="C++">
+    <compoundname>AddComand.cpp</compoundname>
+    <includes refid="_add_comand_8h" local="yes">AddComand.h</includes>
+    <includes refid="view_8h" local="yes">view.h</includes>
+    <includes refid="port_8h" local="yes">port.h</includes>
+    <includes refid="proxyrectport_8h" local="yes">proxyrectport.h</includes>
+    <includes refid="mygraphicsscene_8h" local="yes">mygraphicsscene.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>AddComand.cpp</label>
+        <link refid="_add_comand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AddComand.h</label>
+        <link refid="_add_comand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>proxyrectport.h</label>
+        <link refid="proxyrectport_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>view.h</label>
+        <link refid="view_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QDebug</label>
+      </node>
+      <node id="21">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="10">
+        <label>QMenu</label>
+      </node>
+      <node id="19">
+        <label>QPainter</label>
+      </node>
+      <node id="15">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="3">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="11">
+        <label>qframe.h</label>
+      </node>
+      <node id="18">
+        <label>qgraphicsitem.h</label>
+      </node>
+      <node id="5">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="14">
+        <label>qobject.h</label>
+      </node>
+      <node id="9">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="7">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="8">
+        <label>qundostack.h</label>
+      </node>
+      <node id="16">
+        <label>qwidget.h</label>
+      </node>
+      <node id="13">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;AddComand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;view.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;proxyrectport.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;mygraphicsscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_add_comand_1afce8b140974a6f369adef26e2744ddfe" kindref="member">AddComand::AddComand</ref>(<ref refid="class_view" kindref="compound">View</ref>*<sp/>v,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,QString<sp/>name)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>floor(x<sp/>/<sp/>25)<sp/>*<sp/>25;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>floor(y<sp/>/<sp/>25)<sp/>*<sp/>25;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1aadc3d9e56d633c175cb7bfaf7de8e02b" kindref="member">xx</ref><sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>yy<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;v<sp/>=<sp/><ref refid="class_add_comand_1a19a6d50f1e1b7a03a2fe772663cca669" kindref="member">v</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1a19a6d50f1e1b7a03a2fe772663cca669" kindref="member">v</ref>-&gt;<ref refid="class_view_1a2b07f18d66700f2ba5d9dcca0357d5e2" kindref="member">stackPush</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/><ref refid="class_add_comand_1a3f9b87024de33e56d7e97794d940354c" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="class_add_comand_1aa7486f143d9c0109d0d84ba4de18c6a7" kindref="member">AddComand::~AddComand</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_comand_1a36b328e17a2b6ae9b5703d42498602d3" kindref="member">AddComand::undo</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1aadc3d9e56d633c175cb7bfaf7de8e02b" kindref="member">xx</ref><sp/>=<sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;<ref refid="class_proxy_rect_port_1ac89d1cd4aaa3a56b2b68058a275f5a54" kindref="member">geometry</ref>().x();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>yy<sp/>=<sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;<ref refid="class_proxy_rect_port_1ac89d1cd4aaa3a56b2b68058a275f5a54" kindref="member">geometry</ref>().y();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1a3f9b87024de33e56d7e97794d940354c" kindref="member">name</ref><sp/>=<sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a6eb1a5f28f9031f22855ea702b5634f5" kindref="member">Remove</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_comand_1ad9e587e897f59c084c1a63c12b659ed8" kindref="member">AddComand::redo</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_port" kindref="compound">Port</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a5beafe369a13809fc03af0208417aa1d" kindref="member">adcom</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>(<ref refid="class_add_comand_1a3f9b87024de33e56d7e97794d940354c" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>*<sp/>proxyControl<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>(<ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand_1a19a6d50f1e1b7a03a2fe772663cca669" kindref="member">v</ref>-&gt;<ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>()-&gt;addItem(proxyControl);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsProxyWidget*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>proxy<sp/>=<sp/><ref refid="class_add_comand_1a19a6d50f1e1b7a03a2fe772663cca669" kindref="member">v</ref>-&gt;<ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>()-&gt;addWidget(<ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>proxy-&gt;setPos(0,<sp/>25);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>proxy-&gt;setParentItem(proxyControl);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>proxyControl-&gt;setPos(<ref refid="class_add_comand_1aadc3d9e56d633c175cb7bfaf7de8e02b" kindref="member">xx</ref>,<sp/>yy);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>proxyControl-&gt;<ref refid="class_proxy_rect_port_1a1f74dce4c5d8fc136801d655a924ff1a" kindref="member">Update</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="AddComand.cpp"/>
+  </compounddef>
+</doxygen>

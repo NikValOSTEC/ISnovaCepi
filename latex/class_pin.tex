@@ -1,0 +1,308 @@
+\doxysection{Класс Pin}
+\hypertarget{class_pin}{}\label{class_pin}\index{Pin@{Pin}}
+
+
+Контакт  
+
+
+
+
+{\ttfamily \#include $<$pin.\+h$>$}
+
+Граф наследования\+:Pin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pin_aa660efe9484f60ceff51f8533036a6c6}\label{class_pin_aa660efe9484f60ceff51f8533036a6c6} 
+void {\bfseries Update} (bool dotupd)
+\begin{DoxyCompactList}\small\item\em Обновление \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_ab52087ba185c6b7129d16ee4fc53a85c}\label{class_pin_ab52087ba185c6b7129d16ee4fc53a85c} 
+void {\bfseries Remove\+From\+Chain} ()
+\begin{DoxyCompactList}\small\item\em удаление из цепи \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_a9c3020eeb77b6815112b6543491b98f2}\label{class_pin_a9c3020eeb77b6815112b6543491b98f2} 
+void {\bfseries Remove} ()
+\begin{DoxyCompactList}\small\item\em удаление \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pin_a60d76820ad19d336938bc9621561c11a}\label{class_pin_a60d76820ad19d336938bc9621561c11a} 
+void {\bfseries upd\+Signal} (bool upddots)
+\begin{DoxyCompactList}\small\item\em Сигнал обновления \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pin_afae20af00be105f77b3361803e768ffe}{Pin}} (\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}port, bool bl=true, QLine\+Edit \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Создает контакт \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_a462c14c45d3d653731dde638aa6e7bb7}\label{class_pin_a462c14c45d3d653731dde638aa6e7bb7} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Pin} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pin_a6c228c2fac4f4276728a0fe31148bdb1}{index}} ()
+\begin{DoxyCompactList}\small\item\em положение контакта по высоте в разъеме \end{DoxyCompactList}\item 
+const QString \mbox{\hyperlink{class_pin_ac466c7e76b9d813bdae3058a8e6a8e65}{name}} ()
+\begin{DoxyCompactList}\small\item\em Имя контакта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pin_a06bc9c083f2864de7066836387dc75aa}{name}} (QString name)
+\begin{DoxyCompactList}\small\item\em Установка имени контакта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pin_aa8478d415ed22a937dca6745a0d16539}{Emit\+Upd}} (bool dotold=false)
+\begin{DoxyCompactList}\small\item\em вызов сигнала обновления \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_new_pin_whire}{New\+Pin\+Whire}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_pin_a2df67124076280d9f7261be43ca296a3}{getpin\+Whire}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает провод от данного контакта \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_pin_ad9e623eb6aae56e00d10941c205fadc6}{dot}} (bool recalc=false)
+\begin{DoxyCompactList}\small\item\em Внешняя точка провода контакта \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pin_aabb758fde54d3d7b5f16eba6986ae2c0}{dot}} (\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d)
+\begin{DoxyCompactList}\small\item\em установка внешней точки провода \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_pin_a320aa7c703a51193687a7cf6f293543a}{coredot}} ()
+\begin{DoxyCompactList}\small\item\em Внутренняя точка провода конткта \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_pin_a91e265850820e125838e7d99f3491468}{x}} ()
+\begin{DoxyCompactList}\small\item\em координата x контакта на сцене \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_ae2b41d1cd200e5ee0804141797d69ef2}\label{class_pin_ae2b41d1cd200e5ee0804141797d69ef2} 
+qreal {\bfseries y} ()
+\begin{DoxyCompactList}\small\item\em координата y контакта на сцене \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pin_a4be558da5b8ed1c9b9a9cb409d90401a}{pin\+Whire}} (bool show=true)
+\begin{DoxyCompactList}\small\item\em Отображение провода контакта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pin_a46a3f3b06bd891c8e238c6394b5e6fcf}{Pin\+WUpd}} (bool \mbox{\hyperlink{class_pin_ae39d10d17a930777cc8d9023f56c84c6}{upd}}=true)
+\begin{DoxyCompactList}\small\item\em Пересчет расположения внутрнней точки провода \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pin_a20f01bad04eb172b27d8abef697e51b3}\label{class_pin_a20f01bad04eb172b27d8abef697e51b3} 
+\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*} {\bfseries par\+Con}
+\begin{DoxyCompactList}\small\item\em Разъем в котором лежим контакт \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_afdb8e24236d8a91855d6932a36ab30e7}\label{class_pin_afdb8e24236d8a91855d6932a36ab30e7} 
+\mbox{\hyperlink{class_chain}{Chain}} \texorpdfstring{$\ast$}{*} {\bfseries chain}
+\begin{DoxyCompactList}\small\item\em цепь к которой пренадлежит контакт \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_a30e0bcf999b17705b095ff25cde17281}\label{class_pin_a30e0bcf999b17705b095ff25cde17281} 
+\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries command} =nullptr
+\begin{DoxyCompactList}\small\item\em Команда добавления контакта Undo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные слоты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pin_ac14a3e8fdc62f882a488864592f8df38}\label{class_pin_ac14a3e8fdc62f882a488864592f8df38} 
+virtual void {\bfseries show\+Context\+Menu} (const QPoint \&pos)
+\begin{DoxyCompactList}\small\item\em Демонстрация контекстного меню \end{DoxyCompactList}\item 
+\Hypertarget{class_pin_a0d15cb1daef712c52dabda0751f50949}\label{class_pin_a0d15cb1daef712c52dabda0751f50949} 
+void {\bfseries Change\+Color} ()
+\begin{DoxyCompactList}\small\item\em Вызов color\+Dialog для смены цвета цепи в которую входит контакт \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual QMenu \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_pin_a1aeab8ca221e64ebe2a1d0f8595c5e69}{Context\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Контекстное меню для удаления... по правой кнопке мыши \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pin_a51191918616c49cfc3b0a32437bdc4cb}\label{class_pin_a51191918616c49cfc3b0a32437bdc4cb} 
+Ui\+::\+Pin \texorpdfstring{$\ast$}{*} {\bfseries ui}
+\item 
+\Hypertarget{class_pin_ae39d10d17a930777cc8d9023f56c84c6}\label{class_pin_ae39d10d17a930777cc8d9023f56c84c6} 
+bool {\bfseries upd} = false
+\begin{DoxyCompactList}\small\item\em Обновление при движении \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Контакт 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_pin_afae20af00be105f77b3361803e768ffe}\label{class_pin_afae20af00be105f77b3361803e768ffe} 
+\index{Pin@{Pin}!Pin@{Pin}}
+\index{Pin@{Pin}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{Pin()}{Pin()}}
+{\footnotesize\ttfamily Pin\+::\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}}]{port,  }\item[{bool}]{bl = {\ttfamily true},  }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Создает контакт 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & Разъем в котором находится контакт\\
+\hline
+{\em bl} & Делать ли провод к контакту\\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_pin_a1aeab8ca221e64ebe2a1d0f8595c5e69}\label{class_pin_a1aeab8ca221e64ebe2a1d0f8595c5e69} 
+\index{Pin@{Pin}!ContextMenu@{ContextMenu}}
+\index{ContextMenu@{ContextMenu}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{ContextMenu()}{ContextMenu()}}
+{\footnotesize\ttfamily QMenu \texorpdfstring{$\ast$}{*} Pin\+::\+Context\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Контекстное меню для удаления... по правой кнопке мыши 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_pin_a320aa7c703a51193687a7cf6f293543a}\label{class_pin_a320aa7c703a51193687a7cf6f293543a} 
+\index{Pin@{Pin}!coredot@{coredot}}
+\index{coredot@{coredot}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{coredot()}{coredot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} Pin\+::coredot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Внутренняя точка провода конткта 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_pin_ad9e623eb6aae56e00d10941c205fadc6}\label{class_pin_ad9e623eb6aae56e00d10941c205fadc6} 
+\index{Pin@{Pin}!dot@{dot}}
+\index{dot@{dot}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} Pin\+::dot (\begin{DoxyParamCaption}\item[{bool}]{recalc = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Внешняя точка провода контакта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em recalc} & пересчитывать ли провод (коллизии)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_pin_aabb758fde54d3d7b5f16eba6986ae2c0}\label{class_pin_aabb758fde54d3d7b5f16eba6986ae2c0} 
+\index{Pin@{Pin}!dot@{dot}}
+\index{dot@{dot}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Pin\+::dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+установка внешней точки провода 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pin_aa8478d415ed22a937dca6745a0d16539}\label{class_pin_aa8478d415ed22a937dca6745a0d16539} 
+\index{Pin@{Pin}!EmitUpd@{EmitUpd}}
+\index{EmitUpd@{EmitUpd}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{EmitUpd()}{EmitUpd()}}
+{\footnotesize\ttfamily void Pin\+::\+Emit\+Upd (\begin{DoxyParamCaption}\item[{bool}]{dotold = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+вызов сигнала обновления 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em dotold} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pin_a2df67124076280d9f7261be43ca296a3}\label{class_pin_a2df67124076280d9f7261be43ca296a3} 
+\index{Pin@{Pin}!getpinWhire@{getpinWhire}}
+\index{getpinWhire@{getpinWhire}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{getpinWhire()}{getpinWhire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_new_pin_whire}{New\+Pin\+Whire}} \texorpdfstring{$\ast$}{*} Pin\+::getpin\+Whire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает провод от данного контакта 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_pin_a6c228c2fac4f4276728a0fe31148bdb1}\label{class_pin_a6c228c2fac4f4276728a0fe31148bdb1} 
+\index{Pin@{Pin}!index@{index}}
+\index{index@{index}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily int Pin\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+положение контакта по высоте в разъеме 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_pin_ac466c7e76b9d813bdae3058a8e6a8e65}\label{class_pin_ac466c7e76b9d813bdae3058a8e6a8e65} 
+\index{Pin@{Pin}!name@{name}}
+\index{name@{name}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const QString Pin\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Имя контакта 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_pin_a06bc9c083f2864de7066836387dc75aa}\label{class_pin_a06bc9c083f2864de7066836387dc75aa} 
+\index{Pin@{Pin}!name@{name}}
+\index{name@{name}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Pin\+::name (\begin{DoxyParamCaption}\item[{QString}]{name }\end{DoxyParamCaption})}
+
+
+
+Установка имени контакта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pin_a4be558da5b8ed1c9b9a9cb409d90401a}\label{class_pin_a4be558da5b8ed1c9b9a9cb409d90401a} 
+\index{Pin@{Pin}!pinWhire@{pinWhire}}
+\index{pinWhire@{pinWhire}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{pinWhire()}{pinWhire()}}
+{\footnotesize\ttfamily void Pin\+::pin\+Whire (\begin{DoxyParamCaption}\item[{bool}]{show = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Отображение провода контакта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em show} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pin_a46a3f3b06bd891c8e238c6394b5e6fcf}\label{class_pin_a46a3f3b06bd891c8e238c6394b5e6fcf} 
+\index{Pin@{Pin}!PinWUpd@{PinWUpd}}
+\index{PinWUpd@{PinWUpd}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{PinWUpd()}{PinWUpd()}}
+{\footnotesize\ttfamily void Pin\+::\+Pin\+WUpd (\begin{DoxyParamCaption}\item[{bool}]{upd = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Пересчет расположения внутрнней точки провода 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em upd} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pin_a91e265850820e125838e7d99f3491468}\label{class_pin_a91e265850820e125838e7d99f3491468} 
+\index{Pin@{Pin}!x@{x}}
+\index{x@{x}!Pin@{Pin}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily qreal Pin\+::x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+координата x контакта на сцене 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+pin.\+h\item 
+pin.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_g_view" kind="class" language="C++" prot="public">
+    <compoundname>GView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsView</basecompoundref>
+    <includes refid="_g_view_8h" local="no">GView.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_g_view_1a759c406a27639d29a0d9bf062ae24f19" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GView::lastselected</definition>
+        <argsstring></argsstring>
+        <name>lastselected</name>
+        <qualifiedname>GView::lastselected</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="68" column="5" bodyfile="GView.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_view_1a95c62558b20319b56eb34ff6eafe5c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GView::GView</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>GView</name>
+        <qualifiedname>GView::GView</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>QGraphicsView. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="24" column="1" bodyfile="GView.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1a5bd5b8767296f536deba5bd4b282eefe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GView::~GView</definition>
+        <argsstring>()</argsstring>
+        <name>~GView</name>
+        <qualifiedname>GView::~GView</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="28" column="1" bodyfile="GView.cpp" bodystart="134" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1abeac3a6133d2391cfe43a0a3d0bc67f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref> *</type>
+        <definition>MYGraphicsScene * GView::GScene</definition>
+        <argsstring>()</argsstring>
+        <name>GScene</name>
+        <qualifiedname>GView::GScene</qualifiedname>
+        <briefdescription>
+<para>Сцена в данном отображении </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="33" column="17" bodyfile="GView.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1a2d616b7a6b6f5b5fc7f27c257dd9dc38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GView::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseMoveEvent</name>
+        <qualifiedname>GView::mouseMoveEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="38" column="6" bodyfile="GView.cpp" bodystart="20" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1a2b2d91568c198cc78e4e8b0fc2de6595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GView::mouseReleaseEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>GView::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="43" column="6" bodyfile="GView.cpp" bodystart="39" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1a31d3091331dc5d08fde5495a0f11afd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GView::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>GView::mousePressEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="48" column="6" bodyfile="GView.cpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1aec6e3dff17f955aa487da46f896169c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GView::dropEvent</definition>
+        <argsstring>(QDropEvent *event) override</argsstring>
+        <name>dropEvent</name>
+        <qualifiedname>GView::dropEvent</qualifiedname>
+        <param>
+          <type>QDropEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="53" column="6" bodyfile="GView.cpp" bodystart="90" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1aed97f13d26c8f3cd82c9a8faab863380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GView::dragEnterEvent</definition>
+        <argsstring>(QDragEnterEvent *event) override</argsstring>
+        <name>dragEnterEvent</name>
+        <qualifiedname>GView::dragEnterEvent</qualifiedname>
+        <param>
+          <type>QDragEnterEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="58" column="6" bodyfile="GView.cpp" bodystart="112" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_view_1af8e4aaa3f46e3a540ca13e662104680b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GView::dragMoveEvent</definition>
+        <argsstring>(QDragMoveEvent *event) override</argsstring>
+        <name>dragMoveEvent</name>
+        <qualifiedname>GView::dragMoveEvent</qualifiedname>
+        <param>
+          <type>QDragMoveEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="63" column="6" bodyfile="GView.cpp" bodystart="123" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Наследование QGraphicsView. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Нужно для того что бы обрабатывать клики в том числе с EVENT FILTER </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsView</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsView</label>
+      </node>
+    </collaborationgraph>
+    <location file="GView.h" line="16" column="1" bodyfile="GView.h" bodystart="17" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_g_view_1aed97f13d26c8f3cd82c9a8faab863380" prot="public" virt="non-virtual"><scope>GView</scope><name>dragEnterEvent</name></member>
+      <member refid="class_g_view_1af8e4aaa3f46e3a540ca13e662104680b" prot="public" virt="non-virtual"><scope>GView</scope><name>dragMoveEvent</name></member>
+      <member refid="class_g_view_1aec6e3dff17f955aa487da46f896169c2" prot="public" virt="non-virtual"><scope>GView</scope><name>dropEvent</name></member>
+      <member refid="class_g_view_1abeac3a6133d2391cfe43a0a3d0bc67f6" prot="public" virt="non-virtual"><scope>GView</scope><name>GScene</name></member>
+      <member refid="class_g_view_1a95c62558b20319b56eb34ff6eafe5c1f" prot="public" virt="non-virtual"><scope>GView</scope><name>GView</name></member>
+      <member refid="class_g_view_1a759c406a27639d29a0d9bf062ae24f19" prot="public" virt="non-virtual"><scope>GView</scope><name>lastselected</name></member>
+      <member refid="class_g_view_1a2d616b7a6b6f5b5fc7f27c257dd9dc38" prot="public" virt="non-virtual"><scope>GView</scope><name>mouseMoveEvent</name></member>
+      <member refid="class_g_view_1a31d3091331dc5d08fde5495a0f11afd7" prot="public" virt="non-virtual"><scope>GView</scope><name>mousePressEvent</name></member>
+      <member refid="class_g_view_1a2b2d91568c198cc78e4e8b0fc2de6595" prot="public" virt="non-virtual"><scope>GView</scope><name>mouseReleaseEvent</name></member>
+      <member refid="class_g_view_1a5bd5b8767296f536deba5bd4b282eefe" prot="public" virt="non-virtual"><scope>GView</scope><name>~GView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

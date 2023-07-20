@@ -1,0 +1,57 @@
+\doxysection{port.\+h}
+\hypertarget{port_8h_source}{}\label{port_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PORT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PORT\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}ui\_port.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include"{}qobject.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<QMenu>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSpacerItem>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<qwidget.h>}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_comand}{AddComand}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_proxy_rect_port}{ProxyRectPort}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ qreal\ \mbox{\hyperlink{class_port_aefc2c28deb5776de74cf81eb206fbbe7}{x}}();}
+\DoxyCodeLine{00036\ \ \ \ \ qreal\ \mbox{\hyperlink{class_port_a72c13b59e385b73474e433e450bafe17}{y}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_port_a2cfb70a4b6d730e715042d646ec1d960}{Port}}(\mbox{\hyperlink{class_add_comand}{AddComand}}*\ com,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_port_a2cfb70a4b6d730e715042d646ec1d960}{Port}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_port_afe166c2a6b10ad34d47472a150366bc1}{\string~Port}}();}
+\DoxyCodeLine{00055\ \ \ \ \ QString\ \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}(QString\ str);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ QVector<Port*>\ \mbox{\hyperlink{class_port_aef88b80ef65a8e8975e6e401c3fe2532}{portsVector}};}
+\DoxyCodeLine{00069\ \ \ \ \ QVector<Pin*>\mbox{\hyperlink{class_port_a15a7a06e221876566463ba94873667e7}{pins}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_add_comand}{AddComand}}*\ \mbox{\hyperlink{class_port_a5beafe369a13809fc03af0208417aa1d}{adcom}};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_port_a6eb1a5f28f9031f22855ea702b5634f5}{Remove}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_pin}{Pin}}*\ \mbox{\hyperlink{class_port_aab356149ee33772dc2dee00a6c08bf95}{addPin}}(QString\ \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{int}\ index\ =\ -\/1,\textcolor{keywordtype}{bool}\ bl=\textcolor{keyword}{true});}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ showContextMenu(\textcolor{keyword}{const}\ QPoint\&\ pos);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ addPinSl(QString\ \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}=\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ RemoveSL();}
+\DoxyCodeLine{00103\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_port_ae08eb4800b9a316ebe5c8a7e1dba9340}{Update}}(\textcolor{keywordtype}{bool}\ updF=\textcolor{keyword}{false});}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_proxy_rect_port}{ProxyRectPort}}*\ \mbox{\hyperlink{class_port_a252882139d38712ad89fe27be57a4d96}{proxy}}();}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_port_a252882139d38712ad89fe27be57a4d96}{proxy}}(\mbox{\hyperlink{class_proxy_rect_port}{ProxyRectPort}}*prox);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00121\ \ \ \ \ Ui::Port\ *ui;}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{virtual}\ QMenu*\ \mbox{\hyperlink{class_port_af1678396ebd343927fb4d68ac8fc65b6}{ContextMenu}}();}
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{class_proxy_rect_port}{ProxyRectPort}}*\ \mbox{\hyperlink{class_port_a5a6bf9109d4cc0125ad9f7ae58d9c6d0}{\_proxy}};}
+\DoxyCodeLine{00134\ \ \ \ \ QSpacerItem*\ \mbox{\hyperlink{class_port_ab0f95dc4e4708f0c26c1ef3d329958b3}{spacer}};}
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PORT\_H}}
+
+\end{DoxyCode}

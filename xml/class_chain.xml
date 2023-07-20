@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_chain" kind="class" language="C++" prot="public">
+    <compoundname>Chain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="chain_8h" local="no">chain.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_chain_1ae29a1df6f15d5f74eba7ea6b549180c7" prot="public" static="yes" mutable="no">
+        <type>QVector&lt; <ref refid="class_chain" kindref="compound">Chain</ref> * &gt;</type>
+        <definition>QVector&lt; Chain * &gt; Chain::chains</definition>
+        <argsstring></argsstring>
+        <name>chains</name>
+        <qualifiedname>Chain::chains</qualifiedname>
+        <briefdescription>
+<para>статический вектор содержащий указатели на все цепи для получения ВСЕХ цепей из вне </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="41" column="20" bodyfile="chain.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_chain_1a09a71d67cb798973a8cbf95e3cdf732e" prot="public" static="no" mutable="no">
+        <type>QVector&lt; <ref refid="class_pin" kindref="compound">Pin</ref> * &gt;</type>
+        <definition>QVector&lt;Pin*&gt; Chain::pins</definition>
+        <argsstring></argsstring>
+        <name>pins</name>
+        <qualifiedname>Chain::pins</qualifiedname>
+        <briefdescription>
+<para>Контакты входящие в цепь </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="45" column="13" bodyfile="chain.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_chain_1a486484c2691c53177dcf68ab0572396a" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor Chain::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>Chain::color</qualifiedname>
+        <briefdescription>
+<para>Цвет проводов в цепи </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="58" column="12" bodyfile="chain.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_chain_1a2d0a3ba99af01718bacff6aaae1f2560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Chain::Chain</definition>
+        <argsstring>()</argsstring>
+        <name>Chain</name>
+        <qualifiedname>Chain::Chain</qualifiedname>
+        <briefdescription>
+<para>Новая цепь при соединении 2 контактов без цепей </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Сам себя пишет в статический вектор chains </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="23" column="5" bodyfile="chain.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_1a06b56afcf5b9ef0c6371b49ae2eef2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Chain::~Chain</definition>
+        <argsstring>()</argsstring>
+        <name>~Chain</name>
+        <qualifiedname>Chain::~Chain</qualifiedname>
+        <briefdescription>
+<para>Деструктоор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="27" column="5" bodyfile="chain.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_1a00259d0e75d3ce130689ab658e0ab968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Chain::AddPin</definition>
+        <argsstring>(Pin *p)</argsstring>
+        <name>AddPin</name>
+        <qualifiedname>Chain::AddPin</qualifiedname>
+        <param>
+          <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Записывает контакт в цепь при соединении его с контактом входящим в данную цепь </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контакт</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="32" column="10" bodyfile="chain.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_1a07e35c22d5a5b1c964abd0211ec49d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Chain::RemovePin</definition>
+        <argsstring>(Pin *p)</argsstring>
+        <name>RemovePin</name>
+        <qualifiedname>Chain::RemovePin</qualifiedname>
+        <param>
+          <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет контакт из цепи </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Удаляемый контакт</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="37" column="10" bodyfile="chain.cpp" bodystart="27" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_1a29d252775d7efd35696dacc02dab2fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Chain::moveToChain</definition>
+        <argsstring>(Chain *chain)</argsstring>
+        <name>moveToChain</name>
+        <qualifiedname>Chain::moveToChain</qualifiedname>
+        <param>
+          <type><ref refid="class_chain" kindref="compound">Chain</ref> *</type>
+          <declname>chain</declname>
+        </param>
+        <briefdescription>
+<para>Соединение данной цепи и chain в одну </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chain</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="50" column="10" bodyfile="chain.cpp" bodystart="114" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_1ac069f3d2d8656688cf954367beea5530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Chain::Dots</definition>
+        <argsstring>()</argsstring>
+        <name>Dots</name>
+        <qualifiedname>Chain::Dots</qualifiedname>
+        <briefdescription>
+<para>Пересчет соединений &gt;2 линий в 1 точке, в цепи </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chain.h" line="54" column="10" bodyfile="chain.cpp" bodystart="126" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс Цепи  Содержит соедененные в цепь контакты </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Chain</label>
+        <link refid="class_chain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Chain</label>
+        <link refid="class_chain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="chain.h" line="13" column="1" bodyfile="chain.h" bodystart="14" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_chain_1a00259d0e75d3ce130689ab658e0ab968" prot="public" virt="non-virtual"><scope>Chain</scope><name>AddPin</name></member>
+      <member refid="class_chain_1a2d0a3ba99af01718bacff6aaae1f2560" prot="public" virt="non-virtual"><scope>Chain</scope><name>Chain</name></member>
+      <member refid="class_chain_1ae29a1df6f15d5f74eba7ea6b549180c7" prot="public" virt="non-virtual"><scope>Chain</scope><name>chains</name></member>
+      <member refid="class_chain_1a486484c2691c53177dcf68ab0572396a" prot="public" virt="non-virtual"><scope>Chain</scope><name>color</name></member>
+      <member refid="class_chain_1ac069f3d2d8656688cf954367beea5530" prot="public" virt="non-virtual"><scope>Chain</scope><name>Dots</name></member>
+      <member refid="class_chain_1a29d252775d7efd35696dacc02dab2fd5" prot="public" virt="non-virtual"><scope>Chain</scope><name>moveToChain</name></member>
+      <member refid="class_chain_1a09a71d67cb798973a8cbf95e3cdf732e" prot="public" virt="non-virtual"><scope>Chain</scope><name>pins</name></member>
+      <member refid="class_chain_1a07e35c22d5a5b1c964abd0211ec49d7c" prot="public" virt="non-virtual"><scope>Chain</scope><name>RemovePin</name></member>
+      <member refid="class_chain_1a06b56afcf5b9ef0c6371b49ae2eef2da" prot="public" virt="non-virtual"><scope>Chain</scope><name>~Chain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

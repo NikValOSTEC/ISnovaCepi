@@ -1,0 +1,197 @@
+\doxysection{Класс GView}
+\hypertarget{class_g_view}{}\label{class_g_view}\index{GView@{GView}}
+
+
+Наследование QGraphics\+View.  
+
+
+
+
+{\ttfamily \#include $<$GView.\+h$>$}
+
+Граф наследования\+:GView\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_view_a95c62558b20319b56eb34ff6eafe5c1f}{GView}} (QObject \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em QGraphics\+View. \end{DoxyCompactList}\item 
+\Hypertarget{class_g_view_a5bd5b8767296f536deba5bd4b282eefe}\label{class_g_view_a5bd5b8767296f536deba5bd4b282eefe} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+GView} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_y_graphics_scene}{MYGraphics\+Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_g_view_abeac3a6133d2391cfe43a0a3d0bc67f6}{GScene}} ()
+\begin{DoxyCompactList}\small\item\em Сцена в данном отображении \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_view_a2d616b7a6b6f5b5fc7f27c257dd9dc38}{mouse\+Move\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_view_a2b2d91568c198cc78e4e8b0fc2de6595}{mouse\+Release\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_view_a31d3091331dc5d08fde5495a0f11afd7}{mouse\+Press\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_view_aec6e3dff17f955aa487da46f896169c2}{drop\+Event}} (QDrop\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_view_aed97f13d26c8f3cd82c9a8faab863380}{drag\+Enter\+Event}} (QDrag\+Enter\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_view_af8e4aaa3f46e3a540ca13e662104680b}{drag\+Move\+Event}} (QDrag\+Move\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_g_view_a759c406a27639d29a0d9bf062ae24f19}{lastselected}} = 0
+\begin{DoxyCompactList}\small\item\em Перегруз \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Наследование QGraphics\+View. 
+
+Нужно для того что бы обрабатывать клики в том числе с EVENT FILTER 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_g_view_a95c62558b20319b56eb34ff6eafe5c1f}\label{class_g_view_a95c62558b20319b56eb34ff6eafe5c1f} 
+\index{GView@{GView}!GView@{GView}}
+\index{GView@{GView}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{GView()}{GView()}}
+{\footnotesize\ttfamily GView\+::\+GView (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent }\end{DoxyParamCaption})}
+
+
+
+QGraphics\+View. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_g_view_aed97f13d26c8f3cd82c9a8faab863380}\label{class_g_view_aed97f13d26c8f3cd82c9a8faab863380} 
+\index{GView@{GView}!dragEnterEvent@{dragEnterEvent}}
+\index{dragEnterEvent@{dragEnterEvent}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{dragEnterEvent()}{dragEnterEvent()}}
+{\footnotesize\ttfamily void GView\+::drag\+Enter\+Event (\begin{DoxyParamCaption}\item[{QDrag\+Enter\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_view_af8e4aaa3f46e3a540ca13e662104680b}\label{class_g_view_af8e4aaa3f46e3a540ca13e662104680b} 
+\index{GView@{GView}!dragMoveEvent@{dragMoveEvent}}
+\index{dragMoveEvent@{dragMoveEvent}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{dragMoveEvent()}{dragMoveEvent()}}
+{\footnotesize\ttfamily void GView\+::drag\+Move\+Event (\begin{DoxyParamCaption}\item[{QDrag\+Move\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_view_aec6e3dff17f955aa487da46f896169c2}\label{class_g_view_aec6e3dff17f955aa487da46f896169c2} 
+\index{GView@{GView}!dropEvent@{dropEvent}}
+\index{dropEvent@{dropEvent}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{dropEvent()}{dropEvent()}}
+{\footnotesize\ttfamily void GView\+::drop\+Event (\begin{DoxyParamCaption}\item[{QDrop\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_view_abeac3a6133d2391cfe43a0a3d0bc67f6}\label{class_g_view_abeac3a6133d2391cfe43a0a3d0bc67f6} 
+\index{GView@{GView}!GScene@{GScene}}
+\index{GScene@{GScene}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{GScene()}{GScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m_y_graphics_scene}{MYGraphics\+Scene}} \texorpdfstring{$\ast$}{*} GView\+::\+GScene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Сцена в данном отображении 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_g_view_a2d616b7a6b6f5b5fc7f27c257dd9dc38}\label{class_g_view_a2d616b7a6b6f5b5fc7f27c257dd9dc38} 
+\index{GView@{GView}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void GView\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_view_a31d3091331dc5d08fde5495a0f11afd7}\label{class_g_view_a31d3091331dc5d08fde5495a0f11afd7} 
+\index{GView@{GView}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void GView\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_view_a2b2d91568c198cc78e4e8b0fc2de6595}\label{class_g_view_a2b2d91568c198cc78e4e8b0fc2de6595} 
+\index{GView@{GView}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void GView\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_g_view_a759c406a27639d29a0d9bf062ae24f19}\label{class_g_view_a759c406a27639d29a0d9bf062ae24f19} 
+\index{GView@{GView}!lastselected@{lastselected}}
+\index{lastselected@{lastselected}!GView@{GView}}
+\doxysubsubsection{\texorpdfstring{lastselected}{lastselected}}
+{\footnotesize\ttfamily int GView\+::lastselected = 0}
+
+
+
+Перегруз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+GView.\+h\item 
+GView.\+cpp\end{DoxyCompactItemize}

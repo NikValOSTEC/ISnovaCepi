@@ -155,8 +155,3 @@ void Port::proxy(ProxyRectPort *prox)
     _proxy=prox;
 }
 
-void Port::setFilter()
-{
-
-}
-

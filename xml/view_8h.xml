@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="view_8h" kind="file" language="C++">
+    <compoundname>view.h</compoundname>
+    <includes local="no">qshortcut.h</includes>
+    <includes local="no">qundostack.h</includes>
+    <includes local="no">qscrollbar.h</includes>
+    <includes local="no">QMenu</includes>
+    <includes local="no">qframe.h</includes>
+    <includedby refid="_add_comand_8cpp" local="yes">AddComand.cpp</includedby>
+    <includedby refid="_g_view_8cpp" local="yes">GView.cpp</includedby>
+    <includedby refid="chaintable_8cpp" local="yes">chaintable.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <includedby refid="minimap_8cpp" local="yes">minimap.cpp</includedby>
+    <includedby refid="mygraphicsscene_8h" local="yes">mygraphicsscene.h</includedby>
+    <includedby refid="view_8cpp" local="yes">view.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>view.h</label>
+        <link refid="view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QMenu</label>
+      </node>
+      <node id="6">
+        <label>qframe.h</label>
+      </node>
+      <node id="4">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="2">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="3">
+        <label>qundostack.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h_source"/>
+      </node>
+      <node id="1">
+        <label>view.h</label>
+        <link refid="view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_view" prot="public">View</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="view_8h_1a8cfebe43e73718a3053badebe01a63a1" prot="public" static="no">
+        <name>VIEW_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="view.h" line="3" column="9" bodyfile="view.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qshortcut.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qundostack.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qscrollbar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QMenu&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qframe.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_view" kindref="compound">GView</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_comand" kindref="compound">AddComand</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_view" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_view" kindref="compound">View</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QFrame</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a44ad60a768422d3fa8fbd7576950080a" kindref="member">View</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*<sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>(<ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*<sp/>scene);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="class_view_1a61f2152d818f5b41fd9b551d2a025496" kindref="member">backGroundColor</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a61f2152d818f5b41fd9b551d2a025496" kindref="member">backGroundColor</ref>(QColor<sp/>color);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_view" kindref="compound">GView</ref>*<sp/><ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">view</ref>();</highlight></codeline>
+<codeline lineno="51" refid="class_view_1a978519e246eba6999acdd0e752744a0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QUndoStack*<sp/><ref refid="class_view_1a978519e246eba6999acdd0e752744a0b" kindref="member">stack</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_view_1afd25b945ecb4a0958c40f9558a00146d" kindref="member">scale</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="class_view_1af10714b04e157290bec1f248dbf9ed68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_view" kindref="compound">GView</ref>*<sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_scale;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QMenu*<sp/><ref refid="class_view_1aacf97fec93b74ea76e9fc4e3a521a8da" kindref="member">ContextMenu</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1afbff70a53bd91be73e358513de402c29" kindref="member">showContextMenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint&amp;<sp/>pos);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="78" refid="class_view_1a292ccfb74c7ac7ab617a1a70dacde4f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a292ccfb74c7ac7ab617a1a70dacde4f0" kindref="member">SceneChanged</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1aa035c6974ebfa302b093621f7aa43ac9" kindref="member">stckUndo</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a0444c365f33f1f2f0e66939569a06933" kindref="member">stckRedo</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a66ca767533f7dd3fcadf8e6ef11a5e89" kindref="member">AdddPortSL</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1acc13da96a2953746d93a828b1224b8c5" kindref="member">saveImage</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a66ca767533f7dd3fcadf8e6ef11a5e89" kindref="member">AdddPortSL</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>QString<sp/>name);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_view_1a028492eae52c2a5350b2f0895f66736b" kindref="member">AdddPort</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_view_1a028492eae52c2a5350b2f0895f66736b" kindref="member">AdddPort</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>QString<sp/>name);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_view_1a2b07f18d66700f2ba5d9dcca0357d5e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a2b07f18d66700f2ba5d9dcca0357d5e2" kindref="member">stackPush</ref>(QUndoCommand*<sp/>com)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_view_1a978519e246eba6999acdd0e752744a0b" kindref="member">stack</ref>-&gt;push(com);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>QT_CONFIG(wheelevent)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wheelEvent(QWheelEvent*<sp/>e);<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>VIEW_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="view.h"/>
+  </compounddef>
+</doxygen>

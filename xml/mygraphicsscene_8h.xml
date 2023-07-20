@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="mygraphicsscene_8h" kind="file" language="C++">
+    <compoundname>mygraphicsscene.h</compoundname>
+    <includes local="no">QGraphicsScene</includes>
+    <includes local="no">QPainter</includes>
+    <includes refid="view_8h" local="yes">view.h</includes>
+    <includedby refid="_add_comand_8cpp" local="yes">AddComand.cpp</includedby>
+    <includedby refid="_add_pin_comand_8cpp" local="yes">AddPinComand.cpp</includedby>
+    <includedby refid="_add_whire_command_8cpp" local="yes">AddWhireCommand.cpp</includedby>
+    <includedby refid="_g_item_frame_8cpp" local="yes">GItemFrame.cpp</includedby>
+    <includedby refid="_g_view_8cpp" local="yes">GView.cpp</includedby>
+    <includedby refid="_remove_pin_command_8cpp" local="yes">RemovePinCommand.cpp</includedby>
+    <includedby refid="_remove_port_comand_8cpp" local="yes">RemovePortComand.cpp</includedby>
+    <includedby refid="_whire_remove_comand_8cpp" local="yes">WhireRemoveComand.cpp</includedby>
+    <includedby refid="minimap_8cpp" local="yes">minimap.cpp</includedby>
+    <includedby refid="mygraphicsscene_8cpp" local="yes">mygraphicsscene.cpp</includedby>
+    <includedby refid="view_8cpp" local="yes">view.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>view.h</label>
+        <link refid="view_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="8">
+        <label>QMenu</label>
+      </node>
+      <node id="3">
+        <label>QPainter</label>
+      </node>
+      <node id="9">
+        <label>qframe.h</label>
+      </node>
+      <node id="7">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="5">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="6">
+        <label>qundostack.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_m_y_graphics_scene" prot="public">MYGraphicsScene</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mygraphicsscene_8h_1a8917c90d4a8dc89b5bb3ac0f2c215df1" prot="public" static="no">
+        <name>MYGRAPHICSSCENE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mygraphicsscene.h" line="3" column="9" bodyfile="mygraphicsscene.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MYGRAPHICSSCENE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MYGRAPHICSSCENE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QGraphicsScene&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QPainter&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;view.h&quot;</highlight></codeline>
+<codeline lineno="13" refid="class_m_y_graphics_scene" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsScene</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_m_y_graphics_scene_1a79ec2aff2b53d1b7eb2eb71868c1ce26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view" kindref="compound">View</ref>*<sp/><ref refid="class_m_y_graphics_scene_1a79ec2aff2b53d1b7eb2eb71868c1ce26" kindref="member">Mview</ref>;</highlight></codeline>
+<codeline lineno="23" refid="class_m_y_graphics_scene_1a646d15e8c42e94523f761a8be8e41af2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_y_graphics_scene_1a646d15e8c42e94523f761a8be8e41af2" kindref="member">_scale</ref><sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>(QObject<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastselected<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drawBackground(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MYGRAPHICSSCENE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="mygraphicsscene.h"/>
+  </compounddef>
+</doxygen>

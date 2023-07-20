@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_new_pin_whire_8h" kind="file" language="C++">
+    <compoundname>NewPinWhire.h</compoundname>
+    <includes local="no">qthread.h</includes>
+    <includes local="no">qobject.h</includes>
+    <includes refid="_custom_collider_line_recoursive_8h" local="yes">CustomColliderLineRecoursive.h</includes>
+    <includedby refid="_new_pin_whire_8cpp" local="yes">NewPinWhire.cpp</includedby>
+    <includedby refid="pin_8cpp" local="yes">pin.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NewPinWhire.h</label>
+        <link refid="_new_pin_whire_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>qgraphicsobject</label>
+      </node>
+      <node id="6">
+        <label>qgraphicsscene.h</label>
+      </node>
+      <node id="3">
+        <label>qobject.h</label>
+      </node>
+      <node id="2">
+        <label>qthread.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_new_pin_whire" prot="public">NewPinWhire</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_new_pin_whire_8h_1acd2348cab06f6e76d51a079ad05d5c61" prot="public" static="no">
+        <name>NEWPINWHIRE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NewPinWhire.h" line="3" column="9" bodyfile="NewPinWhire.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NEWPINWHIRE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NEWPINWHIRE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qobject.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;CustomColliderLineRecoursive.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_new_pin_whire" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_new_pin_whire" kindref="compound">NewPinWhire</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_new_pin_whire" kindref="compound">NewPinWhire</ref>(<ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p,<sp/>QThread*<sp/>th);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_new_pin_whire_1a34b50bdadb21a6be13028037e8141404" kindref="member">~NewPinWhire</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_new_pin_whire_1a7cd432d5390928eeed24ca61c1abd449" kindref="member">hasConection</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="class_new_pin_whire_1a67ccd5e3e8411e1afabe4b1789b13953" kindref="member">color</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>pin;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="NewPinWhire.h"/>
+  </compounddef>
+</doxygen>

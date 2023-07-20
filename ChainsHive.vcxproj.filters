@@ -79,9 +79,6 @@
     <ClCompile Include="WhireRemoveComand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="portlib.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PinTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -92,9 +89,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SaveTemplates.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QLineEditFocusOutSignal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CustomColliderLineRecoursive.cpp">
@@ -138,9 +132,6 @@
     <ClInclude Include="WhireRemoveComand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="portlib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="RemovePortComand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -180,9 +171,6 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="SaveTemplates.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="QLineEditFocusOutSignal.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Dot.h">

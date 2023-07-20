@@ -13,37 +13,53 @@ namespace Ui {
 	class Port;
 }
 
+/// <summary>
+/// Шаблон Разъема; перегрузка разъема ( убрано перемещение итд)
+/// </summary>
 class PortTemplate  : public Port
 {
 	Q_OBJECT
 
 public:
+	/// <summary>
+	/// Новый Шаблон hfp]tvf
+	/// </summary>
+	/// <param name="o">Объект для Drag and Drop</param>
 	PortTemplate(PortTwmplateObject* o);
+	/// <summary>
+	/// Добавление контакта (шаблона контакта)
+	/// </summary>
+	/// <param name="name"></param>
+	/// <param name="index"></param>
+	/// <returns>Добавленный контакт</returns>
 	Pin* addPinn(QString name = "", int index = -1);
+	/// <summary>
+	/// Деструктор
+	/// </summary>
 	~PortTemplate();
 private:
-
+	/// <summary>
+	/// Объект для Drag and Drop
+	/// </summary>
 	PortTwmplateObject* object;
 private slots:
+	/// <summary>
+	/// Добавление контакта
+	/// </summary>
 	Pin* addPinSl(QString name = "");
+	/// <summary>
+	/// Удаление Шаблона
+	/// </summary>
 	void RemoveSL();
-
-
-//	void initializeGL()
-//	{
-
-//		QOpenGLFunctions* f = QOpenGLContext::currentContext()->functions();
-//		f->glClearColor(240, 240, 240, 1.0f);
-//	}
-
-//	void paintGL()
-//	{
-//		QOpenGLFunctions* f = QOpenGLContext::currentContext()->functions();
-//		f->glClearColor(240, 240, 240, 1.0f);
-//		f->glClear(GL_COLOR_BUFFER_BIT);
-//	}
-
+	/// <summary>
+	/// Закрытие окна редактирования шаблона (сохранение)
+	/// </summary>
+	/// <param name="event"></param>
 	void closeEvent(QCloseEvent* event) override;
+    /// <summary>
+    /// Контекстное меню
+    /// </summary>
+    /// <returns></returns>
     virtual QMenu* ContextMenu();
 };
 #endif

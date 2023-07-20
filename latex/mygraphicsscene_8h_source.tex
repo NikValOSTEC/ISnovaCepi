@@ -1,0 +1,23 @@
+\doxysection{mygraphicsscene.\+h}
+\hypertarget{mygraphicsscene_8h_source}{}\label{mygraphicsscene_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MYGRAPHICSSCENE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MYGRAPHICSSCENE\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<QGraphicsScene>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<QPainter>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include"{}view.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_m_y_graphics_scene}{MYGraphicsScene}}\ :\ \textcolor{keyword}{public}\ QGraphicsScene}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_view}{View}}*\ \mbox{\hyperlink{class_m_y_graphics_scene_a79ec2aff2b53d1b7eb2eb71868c1ce26}{Mview}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_m_y_graphics_scene_a646d15e8c42e94523f761a8be8e41af2}{\_scale}}\ =\ 100;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_m_y_graphics_scene}{MYGraphicsScene}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ lastselected\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ drawBackground(QPainter*\ painter,\ \textcolor{keyword}{const}\ QRectF\&\ rect)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MYGRAPHICSSCENE\_H}}
+
+\end{DoxyCode}

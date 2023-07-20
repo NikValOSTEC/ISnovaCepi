@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_g_item_frame_8h" kind="file" language="C++">
+    <compoundname>GItemFrame.h</compoundname>
+    <includes local="no">QPen</includes>
+    <includes local="no">QPainter</includes>
+    <includes local="no">qgraphicsitem.h</includes>
+    <includedby refid="_g_item_frame_8cpp" local="yes">GItemFrame.cpp</includedby>
+    <includedby refid="view_8cpp" local="yes">view.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>GItemFrame.h</label>
+        <link refid="_g_item_frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QPainter</label>
+      </node>
+      <node id="2">
+        <label>QPen</label>
+      </node>
+      <node id="4">
+        <label>qgraphicsitem.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_g_item_frame" prot="public">GItemFrame</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_g_item_frame_8h_1a348c8da4e05a6bc98ff28ac87faa884d" prot="public" static="no">
+        <name>GITEMFRAME_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GItemFrame.h" line="3" column="9" bodyfile="GItemFrame.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GITEMFRAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GITEMFRAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QPen&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QPainter&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qgraphicsitem.h&gt;</highlight></codeline>
+<codeline lineno="10" refid="class_g_item_frame" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_item_frame" kindref="compound">GItemFrame</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/>QGraphicsItem</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_item_frame_1afc5dc2db0e88168386d8a4ba2da63416" kindref="member">GItemFrame</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_item_frame_1a8dcb43dce7a0ad403984592a755d3979" kindref="member">~GItemFrame</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/><ref refid="class_g_item_frame_1a3e9be37e3aa992c2f5bef4e02365940b" kindref="member">boundingRect</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/><ref refid="class_g_item_frame_1a2b528a8cfdd9b85f1fdef3a40721ed9d" kindref="member">shape</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_item_frame_1a7c0d32b3bd2b73de98db313be87b2b6a" kindref="member">paint</ref>(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionGraphicsItem*<sp/>option,<sp/>QWidget*<sp/>widget)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="GItemFrame.h"/>
+  </compounddef>
+</doxygen>

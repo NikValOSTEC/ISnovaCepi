@@ -1,0 +1,31 @@
+\doxysection{minimap.\+h}
+\hypertarget{minimap_8h_source}{}\label{minimap_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MINIMAP\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MINIMAP\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}qevent.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view}{View}};}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<qgraphicsview.h>}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classminimap}{minimap}}\ \ :\ \textcolor{keyword}{public}\ QGraphicsView}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classminimap}{minimap}}(\mbox{\hyperlink{class_view}{View}}\ *\mbox{\hyperlink{classminimap_a020cb0b130c1d1805a5f5cd6decce321}{v}});}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classminimap_ac6f839c092231f3beee553441b406316}{mouseMoveEvent}}(QMouseEvent*\ event)\textcolor{keyword}{override};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classminimap_a098d5c3f522d5a3cdc3b7c85825d885b}{mouseReleaseEvent}}(QMouseEvent*\ event)\textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classminimap_ae693f15114622bfd83a2773219cfa450}{mousePressEvent}}(QMouseEvent*\ event)\textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classminimap_a3fbb10d21bbc9e67af2f3bc36b46e9e3}{mouseDoubleClickEvent}}(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#if\ QT\_CONFIG(wheelevent)}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ wheelEvent(QWheelEvent*\ e);}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{classminimap_a6246ee18d06e114b55c5d8d20bd7ebb6}{\string~minimap}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_view}{View}}*\ \mbox{\hyperlink{classminimap_a020cb0b130c1d1805a5f5cd6decce321}{v}};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{float}\ sclX,\ sclY;}
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classminimap_aa258145892674bbb8f2b7519d88f86bd}{rescale}}();}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

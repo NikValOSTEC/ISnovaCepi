@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_port" kind="class" language="C++" prot="public">
+    <compoundname>Port</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <derivedcompoundref refid="class_port_template" prot="public" virt="non-virtual">PortTemplate</derivedcompoundref>
+    <includes refid="port_8h" local="no">port.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_port_1aef88b80ef65a8e8975e6e401c3fe2532" prot="public" static="yes" mutable="no">
+        <type>QVector&lt; <ref refid="class_port" kindref="compound">Port</ref> * &gt;</type>
+        <definition>QVector&lt; Port * &gt; Port::portsVector</definition>
+        <argsstring></argsstring>
+        <name>portsVector</name>
+        <qualifiedname>Port::portsVector</qualifiedname>
+        <briefdescription>
+<para>Статический вектор для доступа ко всем разъемам из вне </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="64" column="20" bodyfile="port.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_port_1a5beafe369a13809fc03af0208417aa1d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_add_comand" kindref="compound">AddComand</ref> *</type>
+        <definition>AddComand* Port::adcom</definition>
+        <argsstring></argsstring>
+        <name>adcom</name>
+        <qualifiedname>Port::adcom</qualifiedname>
+        <briefdescription>
+<para>Команда Undo по которой создан данный разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="73" column="15" bodyfile="port.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_port_1ac30d86bec813d1eabb39f31b40b45487" prot="protected" static="no" mutable="no">
+        <type>Ui::Port *</type>
+        <definition>Ui::Port* Port::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>Port::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="121" column="14" bodyfile="port.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_port_1a5a6bf9109d4cc0125ad9f7ae58d9c6d0" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref> *</type>
+        <definition>ProxyRectPort* Port::_proxy</definition>
+        <argsstring></argsstring>
+        <name>_proxy</name>
+        <qualifiedname>Port::_proxy</qualifiedname>
+        <briefdescription>
+<para>прокси в который вложен разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="130" column="19" bodyfile="port.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_port_1ab0f95dc4e4708f0c26c1ef3d329958b3" prot="protected" static="no" mutable="no">
+        <type>QSpacerItem *</type>
+        <definition>QSpacerItem* Port::spacer</definition>
+        <argsstring></argsstring>
+        <name>spacer</name>
+        <qualifiedname>Port::spacer</qualifiedname>
+        <briefdescription>
+<para>смещение для выравнивания контактов </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="134" column="17" bodyfile="port.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_port_1aefc2c28deb5776de74cf81eb206fbbe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal Port::x</definition>
+        <argsstring>()</argsstring>
+        <name>x</name>
+        <qualifiedname>Port::x</qualifiedname>
+        <briefdescription>
+<para>Координата x на сцене </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="31" column="11" bodyfile="port.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1a72c13b59e385b73474e433e450bafe17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal Port::y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <qualifiedname>Port::y</qualifiedname>
+        <briefdescription>
+<para>Координата y на сцене </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="36" column="11" bodyfile="port.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1aa7d27eb09b9d9a8308adeff0f96100a4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Port::Port</definition>
+        <argsstring>(AddComand *com, QWidget *parent=nullptr)</argsstring>
+        <name>Port</name>
+        <qualifiedname>Port::Port</qualifiedname>
+        <param>
+          <type><ref refid="class_add_comand" kindref="compound">AddComand</ref> *</type>
+          <declname>com</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Создает разъем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Undo команда в которой созданданный разъем</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="42" column="14" bodyfile="port.cpp" bodystart="15" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1a2cfb70a4b6d730e715042d646ec1d960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Port::Port</definition>
+        <argsstring>()</argsstring>
+        <name>Port</name>
+        <qualifiedname>Port::Port</qualifiedname>
+        <briefdescription>
+<para>Создает разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="46" column="5" bodyfile="port.cpp" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1afe166c2a6b10ad34d47472a150366bc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Port::~Port</definition>
+        <argsstring>()</argsstring>
+        <name>~Port</name>
+        <qualifiedname>Port::~Port</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="50" column="13" bodyfile="port.cpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1a0c668bf31a6533794ce9727e0da16350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Port::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>Port::name</qualifiedname>
+        <briefdescription>
+<para>Имя разъема </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="55" column="13" bodyfile="port.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1ae2c0e3be2193095b86ccf4b2f6f99783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::name</definition>
+        <argsstring>(QString str)</argsstring>
+        <name>name</name>
+        <qualifiedname>Port::name</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Установка имени разъема </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="60" column="10" bodyfile="port.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1a15a7a06e221876566463ba94873667e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QVector&lt; <ref refid="class_pin" kindref="compound">Pin</ref> * &gt;</type>
+        <definition>QVector&lt; Pin * &gt; Port::pins</definition>
+        <argsstring>()</argsstring>
+        <name>pins</name>
+        <qualifiedname>Port::pins</qualifiedname>
+        <briefdescription>
+<para>Список всех контактов разъема </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="69" column="12" bodyfile="port.cpp" bodystart="57" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1a6eb1a5f28f9031f22855ea702b5634f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::Remove</definition>
+        <argsstring>()</argsstring>
+        <name>Remove</name>
+        <qualifiedname>Port::Remove</qualifiedname>
+        <briefdescription>
+<para>Удаление разъема </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="77" column="10" bodyfile="port.cpp" bodystart="129" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_1aab356149ee33772dc2dee00a6c08bf95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin * Port::addPin</definition>
+        <argsstring>(QString name=&quot;&quot;, int index=-1, bool bl=true)</argsstring>
+        <name>addPin</name>
+        <qualifiedname>Port::addPin</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Добавление нового контакта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя нового контакта</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>место в списке контактов в разъеме</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>выравнивание в высоту по клеточкам</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный контакт</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="85" column="17" bodyfile="port.cpp" bodystart="96" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_port_1a1270b7058cff126b9583234fdb2b8bd8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::showContextMenu</definition>
+        <argsstring>(const QPoint &amp;pos)</argsstring>
+        <name>showContextMenu</name>
+        <qualifiedname>Port::showContextMenu</qualifiedname>
+        <param>
+          <type>const QPoint &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Демонстрация контекстного меню </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="91" column="10" bodyfile="port.cpp" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_1ab88932698ac3e6749f7de2d7c7278a28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::on_pushButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_clicked</name>
+        <qualifiedname>Port::on_pushButton_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="92" column="10" bodyfile="port.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_1a90c50e992d2f4506eea14f825bcbb3ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin * Port::addPinSl</definition>
+        <argsstring>(QString name=&quot;&quot;)</argsstring>
+        <name>addPinSl</name>
+        <qualifiedname>Port::addPinSl</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Добавление контакта вниз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя нового контакта</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный контакт</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="98" column="9" bodyfile="port.cpp" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_1af02800aeaeb2150e696457b0887bb795" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::RemoveSL</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveSL</name>
+        <qualifiedname>Port::RemoveSL</qualifiedname>
+        <briefdescription>
+<para>Слот на удаление </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="102" column="10" bodyfile="port.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_port_1ae08eb4800b9a316ebe5c8a7e1dba9340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::Update</definition>
+        <argsstring>(bool updF=false)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Port::Update</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>updF</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Пересчет позиции и проводов </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="107" column="10" bodyfile="port.cpp" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_1a252882139d38712ad89fe27be57a4d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref> *</type>
+        <definition>ProxyRectPort * Port::proxy</definition>
+        <argsstring>()</argsstring>
+        <name>proxy</name>
+        <qualifiedname>Port::proxy</qualifiedname>
+        <briefdescription>
+<para>Прокси в который вложен разъем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="112" column="19" bodyfile="port.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_1a1735f6a74225223f4eae6feac4eab42e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Port::proxy</definition>
+        <argsstring>(ProxyRectPort *prox)</argsstring>
+        <name>proxy</name>
+        <qualifiedname>Port::proxy</qualifiedname>
+        <param>
+          <type><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref> *</type>
+          <declname>prox</declname>
+        </param>
+        <briefdescription>
+<para>Передача прокси в который вкладывается разъем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prox</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="117" column="10" bodyfile="port.cpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_port_1af1678396ebd343927fb4d68ac8fc65b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * Port::ContextMenu</definition>
+        <argsstring>()</argsstring>
+        <name>ContextMenu</name>
+        <qualifiedname>Port::ContextMenu</qualifiedname>
+        <briefdescription>
+<para>Контекстное меню. Удаление; добавление контакта... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port.h" line="126" column="19" bodyfile="port.cpp" bodystart="85" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Разъем на сцене </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Вкладывается в прокси </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PortTemplate</label>
+        <link refid="class_port_template"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QFrame</label>
+      </node>
+      <node id="11">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="8">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="4">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="5">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="port.h" line="22" column="1" bodyfile="port.h" bodystart="23" bodyend="135"/>
+    <listofallmembers>
+      <member refid="class_port_1a5a6bf9109d4cc0125ad9f7ae58d9c6d0" prot="protected" virt="non-virtual"><scope>Port</scope><name>_proxy</name></member>
+      <member refid="class_port_1a5beafe369a13809fc03af0208417aa1d" prot="public" virt="non-virtual"><scope>Port</scope><name>adcom</name></member>
+      <member refid="class_port_1aab356149ee33772dc2dee00a6c08bf95" prot="public" virt="virtual"><scope>Port</scope><name>addPin</name></member>
+      <member refid="class_port_1a90c50e992d2f4506eea14f825bcbb3ff" prot="private" virt="non-virtual"><scope>Port</scope><name>addPinSl</name></member>
+      <member refid="class_port_1af1678396ebd343927fb4d68ac8fc65b6" prot="protected" virt="virtual"><scope>Port</scope><name>ContextMenu</name></member>
+      <member refid="class_port_1a0c668bf31a6533794ce9727e0da16350" prot="public" virt="non-virtual"><scope>Port</scope><name>name</name></member>
+      <member refid="class_port_1ae2c0e3be2193095b86ccf4b2f6f99783" prot="public" virt="non-virtual"><scope>Port</scope><name>name</name></member>
+      <member refid="class_port_1ab88932698ac3e6749f7de2d7c7278a28" prot="private" virt="non-virtual"><scope>Port</scope><name>on_pushButton_clicked</name></member>
+      <member refid="class_port_1a15a7a06e221876566463ba94873667e7" prot="public" virt="non-virtual"><scope>Port</scope><name>pins</name></member>
+      <member refid="class_port_1aa7d27eb09b9d9a8308adeff0f96100a4" prot="public" virt="non-virtual"><scope>Port</scope><name>Port</name></member>
+      <member refid="class_port_1a2cfb70a4b6d730e715042d646ec1d960" prot="public" virt="non-virtual"><scope>Port</scope><name>Port</name></member>
+      <member refid="class_port_1aef88b80ef65a8e8975e6e401c3fe2532" prot="public" virt="non-virtual"><scope>Port</scope><name>portsVector</name></member>
+      <member refid="class_port_1a252882139d38712ad89fe27be57a4d96" prot="public" virt="non-virtual"><scope>Port</scope><name>proxy</name></member>
+      <member refid="class_port_1a1735f6a74225223f4eae6feac4eab42e" prot="public" virt="non-virtual"><scope>Port</scope><name>proxy</name></member>
+      <member refid="class_port_1a6eb1a5f28f9031f22855ea702b5634f5" prot="public" virt="non-virtual"><scope>Port</scope><name>Remove</name></member>
+      <member refid="class_port_1af02800aeaeb2150e696457b0887bb795" prot="private" virt="non-virtual"><scope>Port</scope><name>RemoveSL</name></member>
+      <member refid="class_port_1a1270b7058cff126b9583234fdb2b8bd8" prot="private" virt="non-virtual"><scope>Port</scope><name>showContextMenu</name></member>
+      <member refid="class_port_1ab0f95dc4e4708f0c26c1ef3d329958b3" prot="protected" virt="non-virtual"><scope>Port</scope><name>spacer</name></member>
+      <member refid="class_port_1ac30d86bec813d1eabb39f31b40b45487" prot="protected" virt="non-virtual"><scope>Port</scope><name>ui</name></member>
+      <member refid="class_port_1ae08eb4800b9a316ebe5c8a7e1dba9340" prot="public" virt="non-virtual"><scope>Port</scope><name>Update</name></member>
+      <member refid="class_port_1aefc2c28deb5776de74cf81eb206fbbe7" prot="public" virt="non-virtual"><scope>Port</scope><name>x</name></member>
+      <member refid="class_port_1a72c13b59e385b73474e433e450bafe17" prot="public" virt="non-virtual"><scope>Port</scope><name>y</name></member>
+      <member refid="class_port_1afe166c2a6b10ad34d47472a150366bc1" prot="public" virt="virtual"><scope>Port</scope><name>~Port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

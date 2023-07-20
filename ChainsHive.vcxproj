@@ -104,11 +104,9 @@
     <ClCompile Include="pin.cpp" />
     <ClCompile Include="PinTemplate.cpp" />
     <ClCompile Include="port.cpp" />
-    <ClCompile Include="portlib.cpp" />
     <ClCompile Include="PortTemplate.cpp" />
     <ClCompile Include="PortTwmplateObject.cpp" />
     <ClCompile Include="proxyrectport.cpp" />
-    <ClCompile Include="QLineEditFocusOutSignal.cpp" />
     <ClCompile Include="RemovePinCommand.cpp" />
     <ClCompile Include="RemovePortComand.cpp" />
     <ClCompile Include="SaveTemplates.cpp" />
@@ -124,11 +122,9 @@
     <QtMoc Include="Dot.h" />
     <QtMoc Include="NewPinWhire.h" />
     <ClInclude Include="NewWhire.h" />
-    <ClInclude Include="portlib.h" />
     <QtMoc Include="PortTemplate.h" />
     <QtMoc Include="PortTwmplateObject.h" />
     <QtMoc Include="SaveTemplates.h" />
-    <QtMoc Include="QLineEditFocusOutSignal.h" />
     <ClInclude Include="RemovePortComand.h" />
     <ClInclude Include="WhireRemoveComand.h" />
     <QtMoc Include="chain.h" />

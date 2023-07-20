@@ -1,0 +1,602 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_custom_collider_line_recoursive" kind="class" language="C++" prot="public">
+    <compoundname>CustomColliderLineRecoursive</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsObject</basecompoundref>
+    <derivedcompoundref refid="class_new_pin_whire" prot="public" virt="non-virtual">NewPinWhire</derivedcompoundref>
+    <derivedcompoundref refid="class_new_whire" prot="public" virt="non-virtual">NewWhire</derivedcompoundref>
+    <includes refid="_custom_collider_line_recoursive_8h" local="no">CustomColliderLineRecoursive.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a8f80fb06a877bfc6af449bb1bfc50199" prot="public" static="no" mutable="no">
+        <type>QVector&lt; QGraphicsItem * &gt;</type>
+        <definition>QVector&lt;QGraphicsItem*&gt; CustomColliderLineRecoursive::itsmine</definition>
+        <argsstring></argsstring>
+        <name>itsmine</name>
+        <qualifiedname>CustomColliderLineRecoursive::itsmine</qualifiedname>
+        <briefdescription>
+<para>Уже обойденные данной линией объекты </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="73" column="8" bodyfile="CustomColliderLineRecoursive.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1aaa8d9f754a4f91f2ddc3f3bdbabe9ae6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CustomColliderLineRecoursive::Vertical_f_Horizontal_t</definition>
+        <argsstring></argsstring>
+        <name>Vertical_f_Horizontal_t</name>
+        <qualifiedname>CustomColliderLineRecoursive::Vertical_f_Horizontal_t</qualifiedname>
+        <briefdescription>
+<para>Горизонтальная или вертикальная линия false - Вертикальная true - горизонтальная </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="77" column="6" bodyfile="CustomColliderLineRecoursive.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CustomColliderLineRecoursive::JumpDerection</definition>
+        <argsstring></argsstring>
+        <name>JumpDerection</name>
+        <qualifiedname>CustomColliderLineRecoursive::JumpDerection</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Направление отступления при движении обойденных ранее объектов </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="81" column="5" bodyfile="CustomColliderLineRecoursive.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1af5c0e98eca59f91818caaa334f90d85a" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+        <definition>Dot* CustomColliderLineRecoursive::d1</definition>
+        <argsstring></argsstring>
+        <name>d1</name>
+        <qualifiedname>CustomColliderLineRecoursive::d1</qualifiedname>
+        <briefdescription>
+<para>Точки соеденяемые линией </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="110" column="5" bodyfile="CustomColliderLineRecoursive.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a716ab6ae5d841555865b5503e5b18628" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+        <definition>Dot * CustomColliderLineRecoursive::d2</definition>
+        <argsstring></argsstring>
+        <name>d2</name>
+        <qualifiedname>CustomColliderLineRecoursive::d2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="110" column="8" bodyfile="CustomColliderLineRecoursive.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a5be8c91ab013083fbe0401ee0732f1f9" prot="protected" static="no" mutable="no">
+        <type>ColisionFixWay</type>
+        <definition>ColisionFixWay CustomColliderLineRecoursive::fixway</definition>
+        <argsstring></argsstring>
+        <name>fixway</name>
+        <qualifiedname>CustomColliderLineRecoursive::fixway</qualifiedname>
+        <briefdescription>
+<para>На будущее </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="114" column="16" bodyfile="CustomColliderLineRecoursive.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1ab1c47059a7df21ceb455eb4c8c0e11e4" prot="protected" static="no" mutable="no">
+        <type>QVector&lt; QGraphicsObject * &gt;</type>
+        <definition>QVector&lt;QGraphicsObject*&gt; CustomColliderLineRecoursive::inside</definition>
+        <argsstring></argsstring>
+        <name>inside</name>
+        <qualifiedname>CustomColliderLineRecoursive::inside</qualifiedname>
+        <briefdescription>
+<para>Дочерние линии </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="118" column="9" bodyfile="CustomColliderLineRecoursive.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a85e82eeb154e5b25934ee14947ef5aa1" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref> *</type>
+        <definition>ProxyRectPort* CustomColliderLineRecoursive::lastcolide</definition>
+        <argsstring></argsstring>
+        <name>lastcolide</name>
+        <qualifiedname>CustomColliderLineRecoursive::lastcolide</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+<para>последний обойденный разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="122" column="15" bodyfile="CustomColliderLineRecoursive.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a1c43278915ba3233b44f03c5d7ef0b0c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CustomColliderLineRecoursive::lastleft</definition>
+        <argsstring></argsstring>
+        <name>lastleft</name>
+        <qualifiedname>CustomColliderLineRecoursive::lastleft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="123" column="5" bodyfile="CustomColliderLineRecoursive.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1ad68cbb90e5eb9a5ed5d978c8536d3032" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CustomColliderLineRecoursive::lastbottom</definition>
+        <argsstring></argsstring>
+        <name>lastbottom</name>
+        <qualifiedname>CustomColliderLineRecoursive::lastbottom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="123" column="14" bodyfile="CustomColliderLineRecoursive.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_custom_collider_line_recoursive_1a40dd74750416108c5162884820ac5b08" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref> *</type>
+        <definition>CustomColliderLineRecoursive* CustomColliderLineRecoursive::Parent</definition>
+        <argsstring></argsstring>
+        <name>Parent</name>
+        <qualifiedname>CustomColliderLineRecoursive::Parent</qualifiedname>
+        <briefdescription>
+<para>родительская линия </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="127" column="30" bodyfile="CustomColliderLineRecoursive.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1adbb39c32411e7041d0e77851e215d2fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QColor</type>
+        <definition>QColor CustomColliderLineRecoursive::color</definition>
+        <argsstring>()</argsstring>
+        <name>color</name>
+        <qualifiedname>CustomColliderLineRecoursive::color</qualifiedname>
+        <reimplementedby refid="class_new_pin_whire_1a67ccd5e3e8411e1afabe4b1789b13953">color</reimplementedby>
+        <reimplementedby refid="class_new_whire_1abf20f59764261f1dbd0a9451437c0dcb">color</reimplementedby>
+        <briefdescription>
+<para>Цвет хранится в цепях не у линий нет прямого доступа в цепь </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="26" column="16" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="9" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1a166325da3980f3abc1723ddc22aad42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CustomColliderLineRecoursive::CustomColliderLineRecoursive</definition>
+        <argsstring>(bool Vertical_f_Horiz_t, Dot *d1, Dot *d2, CustomColliderLineRecoursive *parent=nullptr)</argsstring>
+        <name>CustomColliderLineRecoursive</name>
+        <qualifiedname>CustomColliderLineRecoursive::CustomColliderLineRecoursive</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>Vertical_f_Horiz_t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Просто QGraphicsItem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Vertical_f_Horiz_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Горизонтальная или вертикальная линия false - Вертикальная true - горизонтальная</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>крайняя точка 1</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>крайняя точка 2</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Родительская линия НУЖНА ДЛЯ КОРРЕКЦИИ КОЛЛИЗИИ РЕКУРСИЕЙ</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="34" column="1" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="17" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1a6491fcf9b4f792271ec635d96b8a577d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CustomColliderLineRecoursive::~CustomColliderLineRecoursive</definition>
+        <argsstring>()</argsstring>
+        <name>~CustomColliderLineRecoursive</name>
+        <qualifiedname>CustomColliderLineRecoursive::~CustomColliderLineRecoursive</qualifiedname>
+        <briefdescription>
+<para>Удаляет линию и все дочерние (коррекционные линии) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="38" column="1" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="45" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1a8bb3f83d68cc08e188c15b8ec0ac3e74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF CustomColliderLineRecoursive::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>CustomColliderLineRecoursive::boundingRect</qualifiedname>
+        <briefdescription>
+<para>Линия без учета коррекции даже если не видна </para>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+<para><simplesect kind="return"><para>Зона необходимая к пересечению для отображения и взаимодействия</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="46" column="8" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1ae1e4cbe9ad3d81fffbb05fdeabfd99b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath CustomColliderLineRecoursive::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>CustomColliderLineRecoursive::shape</qualifiedname>
+        <briefdescription>
+<para>Форма для отрисовки </para>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="54" column="14" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1a5ff5d9a184b77af419ba5e4850fd0cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>CustomColliderLineRecoursive::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+<para>Отрисовка </para>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>painter</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widget</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="64" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="271" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_collider_line_recoursive_1a0e5186f9d4b3d8a6494d6457cca1422b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::setFixWay</definition>
+        <argsstring>(ColisionFixWay fw)</argsstring>
+        <name>setFixWay</name>
+        <qualifiedname>CustomColliderLineRecoursive::setFixWay</qualifiedname>
+        <param>
+          <type>ColisionFixWay</type>
+          <declname>fw</declname>
+        </param>
+        <briefdescription>
+<para>Наработка на будущее... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fw</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="69" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="278" bodyend="281"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_custom_collider_line_recoursive_1a29e5d4ba6ff85387b29a1803646ccb09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::FixColliding</definition>
+        <argsstring>(int times=0)</argsstring>
+        <name>FixColliding</name>
+        <qualifiedname>CustomColliderLineRecoursive::FixColliding</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>times</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Пересчет коллизии  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>times</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>чЧто бы не уйти в вечный цикл при неудачной коллизии</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="88" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="91" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_custom_collider_line_recoursive_1acfe70cb954bafe2bb3af0b4303bc0e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::ClearInside</definition>
+        <argsstring>()</argsstring>
+        <name>ClearInside</name>
+        <qualifiedname>CustomColliderLineRecoursive::ClearInside</qualifiedname>
+        <briefdescription>
+<para>Очистка дочерних линий ( выравнивание ) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="92" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="238" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_custom_collider_line_recoursive_1a3cd32fa2a62f4cd21c55ebd244b3618d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::setVertical</definition>
+        <argsstring>()</argsstring>
+        <name>setVertical</name>
+        <qualifiedname>CustomColliderLineRecoursive::setVertical</qualifiedname>
+        <briefdescription>
+<para>Смена направления линии на вертикаль </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="96" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="283" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_custom_collider_line_recoursive_1a81098aa1c6428636b55cd37989a208d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::setHorizontal</definition>
+        <argsstring>()</argsstring>
+        <name>setHorizontal</name>
+        <qualifiedname>CustomColliderLineRecoursive::setHorizontal</qualifiedname>
+        <briefdescription>
+<para>Смена направления линии на горизонталь </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="100" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="298" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_custom_collider_line_recoursive_1a2129474398747e0388be32b93e1baf58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CustomColliderLineRecoursive::JumpFrom</definition>
+        <argsstring>(QGraphicsItem *itm)</argsstring>
+        <name>JumpFrom</name>
+        <qualifiedname>CustomColliderLineRecoursive::JumpFrom</qualifiedname>
+        <param>
+          <type>QGraphicsItem *</type>
+          <declname>itm</declname>
+        </param>
+        <briefdescription>
+<para>уход от обойденных ранее объектов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itm</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="105" column="6" bodyfile="CustomColliderLineRecoursive.cpp" bodystart="313" bodyend="423"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Линия с колизионной корекцией </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CustomColliderLineRecoursive</label>
+        <link refid="class_custom_collider_line_recoursive"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NewPinWhire</label>
+        <link refid="class_new_pin_whire"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>NewWhire</label>
+        <link refid="class_new_whire"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CustomColliderLineRecoursive</label>
+        <link refid="class_custom_collider_line_recoursive"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>d1</edgelabel>
+          <edgelabel>d2</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lastcolide</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Dot</label>
+        <link refid="class_dot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Hdot</edgelabel>
+          <edgelabel>Vdot</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="5">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="CustomColliderLineRecoursive.h" line="18" column="1" bodyfile="CustomColliderLineRecoursive.h" bodystart="19" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_custom_collider_line_recoursive_1a8bb3f83d68cc08e188c15b8ec0ac3e74" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>boundingRect</name></member>
+      <member refid="class_custom_collider_line_recoursive_1acfe70cb954bafe2bb3af0b4303bc0e75" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>ClearInside</name></member>
+      <member refid="class_custom_collider_line_recoursive_1adbb39c32411e7041d0e77851e215d2fe" prot="public" virt="virtual"><scope>CustomColliderLineRecoursive</scope><name>color</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a166325da3980f3abc1723ddc22aad42d" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>CustomColliderLineRecoursive</name></member>
+      <member refid="class_custom_collider_line_recoursive_1af5c0e98eca59f91818caaa334f90d85a" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>d1</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a716ab6ae5d841555865b5503e5b18628" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>d2</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a29e5d4ba6ff85387b29a1803646ccb09" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>FixColliding</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a5be8c91ab013083fbe0401ee0732f1f9" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>fixway</name></member>
+      <member refid="class_custom_collider_line_recoursive_1ab1c47059a7df21ceb455eb4c8c0e11e4" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>inside</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a8f80fb06a877bfc6af449bb1bfc50199" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>itsmine</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>JumpDerection</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a2129474398747e0388be32b93e1baf58" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>JumpFrom</name></member>
+      <member refid="class_custom_collider_line_recoursive_1ad68cbb90e5eb9a5ed5d978c8536d3032" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>lastbottom</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a85e82eeb154e5b25934ee14947ef5aa1" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>lastcolide</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a1c43278915ba3233b44f03c5d7ef0b0c" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>lastleft</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a5ff5d9a184b77af419ba5e4850fd0cef" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>paint</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a40dd74750416108c5162884820ac5b08" prot="protected" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>Parent</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a0e5186f9d4b3d8a6494d6457cca1422b" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>setFixWay</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a81098aa1c6428636b55cd37989a208d1" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>setHorizontal</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a3cd32fa2a62f4cd21c55ebd244b3618d" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>setVertical</name></member>
+      <member refid="class_custom_collider_line_recoursive_1ae1e4cbe9ad3d81fffbb05fdeabfd99b1" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>shape</name></member>
+      <member refid="class_custom_collider_line_recoursive_1aaa8d9f754a4f91f2ddc3f3bdbabe9ae6" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>Vertical_f_Horizontal_t</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a6491fcf9b4f792271ec635d96b8a577d" prot="public" virt="non-virtual"><scope>CustomColliderLineRecoursive</scope><name>~CustomColliderLineRecoursive</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

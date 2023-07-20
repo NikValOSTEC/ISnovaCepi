@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Кабелион графика: Исходный файл chain.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LOGO.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Кабелион графика
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">chain.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include&lt;qobject.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&quot;qcolor.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span><a class="code hl_class" href="class_pin.html">Pin</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef CHAIN_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define CHAIN_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_chain.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_chain.html">Chain</a> :<span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Q_OBJECT</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_chain.html#a2d0a3ba99af01718bacff6aaae1f2560">Chain</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="class_chain.html#a06b56afcf5b9ef0c6371b49ae2eef2da">~Chain</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_chain.html#a00259d0e75d3ce130689ab658e0ab968">AddPin</a>(<a class="code hl_class" href="class_pin.html">Pin</a>* p);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_chain.html#a07e35c22d5a5b1c964abd0211ec49d7c">RemovePin</a>(<a class="code hl_class" href="class_pin.html">Pin</a>* p);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_chain.html#ae29a1df6f15d5f74eba7ea6b549180c7">   41</a></span>    <span class="keyword">static</span> QVector&lt;Chain*&gt; <a class="code hl_variable" href="class_chain.html#ae29a1df6f15d5f74eba7ea6b549180c7">chains</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_chain.html#a09a71d67cb798973a8cbf95e3cdf732e">   45</a></span>    QVector&lt;Pin*&gt; <a class="code hl_variable" href="class_chain.html#a09a71d67cb798973a8cbf95e3cdf732e">pins</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_chain.html#a29d252775d7efd35696dacc02dab2fd5">moveToChain</a>(<a class="code hl_class" href="class_chain.html">Chain</a>* chain); </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_chain.html#ac069f3d2d8656688cf954367beea5530">Dots</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_chain.html#a486484c2691c53177dcf68ab0572396a">   58</a></span>    QColor <a class="code hl_variable" href="class_chain.html#a486484c2691c53177dcf68ab0572396a">color</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_chain_html"><div class="ttname"><a href="class_chain.html">Chain</a></div><div class="ttdoc">Класс Цепи  Содержит соедененные в цепь контакты</div><div class="ttdef"><b>Definition</b> chain.h:14</div></div>
+<div class="ttc" id="aclass_chain_html_a00259d0e75d3ce130689ab658e0ab968"><div class="ttname"><a href="class_chain.html#a00259d0e75d3ce130689ab658e0ab968">Chain::AddPin</a></div><div class="ttdeci">void AddPin(Pin *p)</div><div class="ttdoc">Записывает контакт в цепь при соединении его с контактом входящим в данную цепь</div><div class="ttdef"><b>Definition</b> chain.cpp:18</div></div>
+<div class="ttc" id="aclass_chain_html_a06b56afcf5b9ef0c6371b49ae2eef2da"><div class="ttname"><a href="class_chain.html#a06b56afcf5b9ef0c6371b49ae2eef2da">Chain::~Chain</a></div><div class="ttdeci">~Chain()</div><div class="ttdoc">Деструктоор</div><div class="ttdef"><b>Definition</b> chain.cpp:13</div></div>
+<div class="ttc" id="aclass_chain_html_a07e35c22d5a5b1c964abd0211ec49d7c"><div class="ttname"><a href="class_chain.html#a07e35c22d5a5b1c964abd0211ec49d7c">Chain::RemovePin</a></div><div class="ttdeci">void RemovePin(Pin *p)</div><div class="ttdoc">Удаляет контакт из цепи</div><div class="ttdef"><b>Definition</b> chain.cpp:27</div></div>
+<div class="ttc" id="aclass_chain_html_a09a71d67cb798973a8cbf95e3cdf732e"><div class="ttname"><a href="class_chain.html#a09a71d67cb798973a8cbf95e3cdf732e">Chain::pins</a></div><div class="ttdeci">QVector&lt; Pin * &gt; pins</div><div class="ttdoc">Контакты входящие в цепь</div><div class="ttdef"><b>Definition</b> chain.h:45</div></div>
+<div class="ttc" id="aclass_chain_html_a29d252775d7efd35696dacc02dab2fd5"><div class="ttname"><a href="class_chain.html#a29d252775d7efd35696dacc02dab2fd5">Chain::moveToChain</a></div><div class="ttdeci">void moveToChain(Chain *chain)</div><div class="ttdoc">Соединение данной цепи и chain в одну</div><div class="ttdef"><b>Definition</b> chain.cpp:114</div></div>
+<div class="ttc" id="aclass_chain_html_a2d0a3ba99af01718bacff6aaae1f2560"><div class="ttname"><a href="class_chain.html#a2d0a3ba99af01718bacff6aaae1f2560">Chain::Chain</a></div><div class="ttdeci">Chain()</div><div class="ttdoc">Новая цепь при соединении 2 контактов без цепей</div><div class="ttdef"><b>Definition</b> chain.cpp:7</div></div>
+<div class="ttc" id="aclass_chain_html_a486484c2691c53177dcf68ab0572396a"><div class="ttname"><a href="class_chain.html#a486484c2691c53177dcf68ab0572396a">Chain::color</a></div><div class="ttdeci">QColor color</div><div class="ttdoc">Цвет проводов в цепи</div><div class="ttdef"><b>Definition</b> chain.h:58</div></div>
+<div class="ttc" id="aclass_chain_html_ac069f3d2d8656688cf954367beea5530"><div class="ttname"><a href="class_chain.html#ac069f3d2d8656688cf954367beea5530">Chain::Dots</a></div><div class="ttdeci">void Dots()</div><div class="ttdoc">Пересчет соединений &gt;2 линий в 1 точке, в цепи</div><div class="ttdef"><b>Definition</b> chain.cpp:126</div></div>
+<div class="ttc" id="aclass_chain_html_ae29a1df6f15d5f74eba7ea6b549180c7"><div class="ttname"><a href="class_chain.html#ae29a1df6f15d5f74eba7ea6b549180c7">Chain::chains</a></div><div class="ttdeci">static QVector&lt; Chain * &gt; chains</div><div class="ttdoc">статический вектор содержащий указатели на все цепи для получения ВСЕХ цепей из вне</div><div class="ttdef"><b>Definition</b> chain.h:41</div></div>
+<div class="ttc" id="aclass_pin_html"><div class="ttname"><a href="class_pin.html">Pin</a></div><div class="ttdoc">Контакт</div><div class="ttdef"><b>Definition</b> pin.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

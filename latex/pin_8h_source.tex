@@ -1,0 +1,75 @@
+\doxysection{pin.\+h}
+\hypertarget{pin_8h_source}{}\label{pin_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PIN\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PIN\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<QThread>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include"{}ui\_pin.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<qgraphicsproxywidget.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<QColorDialog>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<QLineEdit>}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_new_pin_whire}{NewPinWhire}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_pin_comand}{AddPinComand}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chain}{Chain}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dot}{Dot}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00016\ \}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}}\ :\ \textcolor{keyword}{public}\ QLineEdit}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_pin}{Pin}}(\mbox{\hyperlink{class_port}{Port}}*\ port,\textcolor{keywordtype}{bool}\ bl=\textcolor{keyword}{true},QLineEdit\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_pin_a462c14c45d3d653731dde638aa6e7bb7}{\string~Pin}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pin_a6c228c2fac4f4276728a0fe31148bdb1}{index}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_pin_ac466c7e76b9d813bdae3058a8e6a8e65}{name}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_ac466c7e76b9d813bdae3058a8e6a8e65}{name}}(QString\ \mbox{\hyperlink{class_pin_ac466c7e76b9d813bdae3058a8e6a8e65}{name}});}
+\DoxyCodeLine{00051\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_aa660efe9484f60ceff51f8533036a6c6}{Update}}(\textcolor{keywordtype}{bool}\ dotupd);}
+\DoxyCodeLine{00056\ signals:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_a60d76820ad19d336938bc9621561c11a}{updSignal}}(\textcolor{keywordtype}{bool}\ upddots);}
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_aa8478d415ed22a937dca6745a0d16539}{EmitUpd}}(\textcolor{keywordtype}{bool}\ dotold=\textcolor{keyword}{false});}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_new_pin_whire}{NewPinWhire}}*\ \mbox{\hyperlink{class_pin_a2df67124076280d9f7261be43ca296a3}{getpinWhire}}();}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_port}{Port}}*\ \mbox{\hyperlink{class_pin_a20f01bad04eb172b27d8abef697e51b3}{parCon}};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_dot}{Dot}}*\ \mbox{\hyperlink{class_pin_ad9e623eb6aae56e00d10941c205fadc6}{dot}}(\textcolor{keywordtype}{bool}\ recalc\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_ad9e623eb6aae56e00d10941c205fadc6}{dot}}(\mbox{\hyperlink{class_dot}{Dot}}*\ d);}
+\DoxyCodeLine{00087\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ mousePressEvent(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ dragEnterEvent(QDragEnterEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ dropEvent(QDropEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ dragMoveEvent(QDragMoveEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00105\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{class_dot}{Dot}}*\ \mbox{\hyperlink{class_pin_a320aa7c703a51193687a7cf6f293543a}{coredot}}();}
+\DoxyCodeLine{00115\ \ \ \ \ qreal\ \mbox{\hyperlink{class_pin_a91e265850820e125838e7d99f3491468}{x}}();}
+\DoxyCodeLine{00119\ \ \ \ \ qreal\ \mbox{\hyperlink{class_pin_ae2b41d1cd200e5ee0804141797d69ef2}{y}}();}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_a4be558da5b8ed1c9b9a9cb409d90401a}{pinWhire}}(\textcolor{keywordtype}{bool}\ show=\textcolor{keyword}{true});}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_a46a3f3b06bd891c8e238c6394b5e6fcf}{PinWUpd}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pin_ae39d10d17a930777cc8d9023f56c84c6}{upd}}\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{class_chain}{Chain}}*\ \mbox{\hyperlink{class_pin_afdb8e24236d8a91855d6932a36ab30e7}{chain}};}
+\DoxyCodeLine{00137\ \ \ \ \ \mbox{\hyperlink{class_add_pin_comand}{AddPinComand}}*\ \mbox{\hyperlink{class_pin_a30e0bcf999b17705b095ff25cde17281}{command}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00138\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keyword}{virtual}\ QMenu*\ \mbox{\hyperlink{class_pin_a1aeab8ca221e64ebe2a1d0f8595c5e69}{ContextMenu}}();}
+\DoxyCodeLine{00144\ \ \ \ \ Ui::Pin\ *ui;}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pin_ae39d10d17a930777cc8d9023f56c84c6}{upd}}\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00149\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_ab52087ba185c6b7129d16ee4fc53a85c}{RemoveFromChain}}();}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_a9c3020eeb77b6815112b6543491b98f2}{Remove}}();}
+\DoxyCodeLine{00158\ \textcolor{keyword}{protected}\ slots:}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_ac14a3e8fdc62f882a488864592f8df38}{showContextMenu}}(\textcolor{keyword}{const}\ QPoint\&\ pos);}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pin_a0d15cb1daef712c52dabda0751f50949}{ChangeColor}}();}
+\DoxyCodeLine{00167\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{bool}\ updaterbl;}
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{class_dot}{Dot}}*\ d;}
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{class_dot}{Dot}}*\ cored;}
+\DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{class_new_pin_whire}{NewPinWhire}}*\ pinW;}
+\DoxyCodeLine{00184\ \ \ \ \ QThread*\ thread;}
+\DoxyCodeLine{00188\ \ \ \ \ QString\ \_name;}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \};}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PIN\_H}}
+
+\end{DoxyCode}

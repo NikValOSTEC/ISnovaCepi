@@ -1,0 +1,27 @@
+\doxysection{Add\+Comand.\+h}
+\hypertarget{_add_comand_8h_source}{}\label{_add_comand_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ ADDCOMAND\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ ADDCOMAND\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QUndoCommand>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<QDebug>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<qgraphicsproxywidget.h>}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view}{View}};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_comand}{AddComand}}\ \ :\ \textcolor{keyword}{public}\ QUndoCommand}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_add_comand}{AddComand}}(\mbox{\hyperlink{class_view}{View}}*\ \mbox{\hyperlink{class_add_comand_a19a6d50f1e1b7a03a2fe772663cca669}{v}},\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,QString\ \mbox{\hyperlink{class_add_comand_a3f9b87024de33e56d7e97794d940354c}{name}}=\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_add_comand_aa7486f143d9c0109d0d84ba4de18c6a7}{\string~AddComand}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_add_comand_a36b328e17a2b6ae9b5703d42498602d3}{undo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_add_comand_ad9e587e897f59c084c1a63c12b659ed8}{redo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_port}{Port}}*\ \mbox{\hyperlink{class_add_comand_ad9a5957b92ed0140894433c5110acb6f}{p}};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_add_comand_aadc3d9e56d633c175cb7bfaf7de8e02b}{xx}},\ yy;}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_view}{View}}*\ \mbox{\hyperlink{class_add_comand_a19a6d50f1e1b7a03a2fe772663cca669}{v}};}
+\DoxyCodeLine{00057\ \ \ \ \ QString\ \mbox{\hyperlink{class_add_comand_a3f9b87024de33e56d7e97794d940354c}{name}};}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

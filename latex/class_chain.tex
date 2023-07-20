@@ -1,0 +1,120 @@
+\doxysection{Класс Chain}
+\hypertarget{class_chain}{}\label{class_chain}\index{Chain@{Chain}}
+
+
+Класс Цепи  Содержит соедененные в цепь контакты  
+
+
+
+
+{\ttfamily \#include $<$chain.\+h$>$}
+
+Граф наследования\+:Chain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chain}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}{Chain}} ()
+\begin{DoxyCompactList}\small\item\em Новая цепь при соединении 2 контактов без цепей \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_a06b56afcf5b9ef0c6371b49ae2eef2da}\label{class_chain_a06b56afcf5b9ef0c6371b49ae2eef2da} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Chain} ()
+\begin{DoxyCompactList}\small\item\em Деструктоор \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_a00259d0e75d3ce130689ab658e0ab968}{Add\+Pin}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Записывает контакт в цепь при соединении его с контактом входящим в данную цепь \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_a07e35c22d5a5b1c964abd0211ec49d7c}{Remove\+Pin}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Удаляет контакт из цепи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_a29d252775d7efd35696dacc02dab2fd5}{move\+To\+Chain}} (\mbox{\hyperlink{class_chain}{Chain}} \texorpdfstring{$\ast$}{*}chain)
+\begin{DoxyCompactList}\small\item\em Соединение данной цепи и chain в одну \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_ac069f3d2d8656688cf954367beea5530}\label{class_chain_ac069f3d2d8656688cf954367beea5530} 
+void {\bfseries Dots} ()
+\begin{DoxyCompactList}\small\item\em Пересчет соединений \texorpdfstring{$>$}{>}2 линий в 1 точке, в цепи \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_a09a71d67cb798973a8cbf95e3cdf732e}\label{class_chain_a09a71d67cb798973a8cbf95e3cdf732e} 
+QVector$<$ \mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries pins}
+\begin{DoxyCompactList}\small\item\em Контакты входящие в цепь \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_a486484c2691c53177dcf68ab0572396a}\label{class_chain_a486484c2691c53177dcf68ab0572396a} 
+QColor {\bfseries color}
+\begin{DoxyCompactList}\small\item\em Цвет проводов в цепи \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_ae29a1df6f15d5f74eba7ea6b549180c7}\label{class_chain_ae29a1df6f15d5f74eba7ea6b549180c7} 
+static QVector$<$ \mbox{\hyperlink{class_chain}{Chain}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries chains}
+\begin{DoxyCompactList}\small\item\em статический вектор содержащий указатели на все цепи для получения ВСЕХ цепей из вне \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс Цепи  Содержит соедененные в цепь контакты 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}\label{class_chain_a2d0a3ba99af01718bacff6aaae1f2560} 
+\index{Chain@{Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}}
+{\footnotesize\ttfamily Chain\+::\+Chain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Новая цепь при соединении 2 контактов без цепей 
+
+Сам себя пишет в статический вектор chains 
+
+\doxysubsection{Методы}
+\Hypertarget{class_chain_a00259d0e75d3ce130689ab658e0ab968}\label{class_chain_a00259d0e75d3ce130689ab658e0ab968} 
+\index{Chain@{Chain}!AddPin@{AddPin}}
+\index{AddPin@{AddPin}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{AddPin()}{AddPin()}}
+{\footnotesize\ttfamily void Chain\+::\+Add\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Записывает контакт в цепь при соединении его с контактом входящим в данную цепь 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & Контакт\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_a29d252775d7efd35696dacc02dab2fd5}\label{class_chain_a29d252775d7efd35696dacc02dab2fd5} 
+\index{Chain@{Chain}!moveToChain@{moveToChain}}
+\index{moveToChain@{moveToChain}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{moveToChain()}{moveToChain()}}
+{\footnotesize\ttfamily void Chain\+::move\+To\+Chain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_chain}{Chain}} \texorpdfstring{$\ast$}{*}}]{chain }\end{DoxyParamCaption})}
+
+
+
+Соединение данной цепи и chain в одну 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em chain} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_a07e35c22d5a5b1c964abd0211ec49d7c}\label{class_chain_a07e35c22d5a5b1c964abd0211ec49d7c} 
+\index{Chain@{Chain}!RemovePin@{RemovePin}}
+\index{RemovePin@{RemovePin}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{RemovePin()}{RemovePin()}}
+{\footnotesize\ttfamily void Chain\+::\+Remove\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Удаляет контакт из цепи 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & Удаляемый контакт\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+chain.\+h\item 
+chain.\+cpp\item 
+main.\+cpp\end{DoxyCompactItemize}

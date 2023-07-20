@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Кабелион графика: Исходный файл port.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LOGO.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Кабелион графика
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">port.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef PORT_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define PORT_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&quot;ui_port.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&quot;qobject.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include&lt;QMenu&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QSpacerItem&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&lt;qwidget.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="class_add_comand.html">AddComand</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="class_pin.html">Pin</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="class_proxy_rect_port.html">ProxyRectPort</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="class_port.html">Port</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_port.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="class_port.html">Port</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Q_OBJECT</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    qreal <a class="code hl_function" href="class_port.html#aefc2c28deb5776de74cf81eb206fbbe7">x</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    qreal <a class="code hl_function" href="class_port.html#a72c13b59e385b73474e433e450bafe17">y</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_port.html#a2cfb70a4b6d730e715042d646ec1d960">Port</a>(<a class="code hl_class" href="class_add_comand.html">AddComand</a>* com, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="class_port.html#a2cfb70a4b6d730e715042d646ec1d960">Port</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_port.html#afe166c2a6b10ad34d47472a150366bc1">~Port</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QString <a class="code hl_function" href="class_port.html#a0c668bf31a6533794ce9727e0da16350">name</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_port.html#a0c668bf31a6533794ce9727e0da16350">name</a>(QString str);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_port.html#aef88b80ef65a8e8975e6e401c3fe2532">   64</a></span>    <span class="keyword">static</span> QVector&lt;Port*&gt; <a class="code hl_variable" href="class_port.html#aef88b80ef65a8e8975e6e401c3fe2532">portsVector</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    QVector&lt;Pin*&gt;<a class="code hl_function" href="class_port.html#a15a7a06e221876566463ba94873667e7">pins</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_port.html#a5beafe369a13809fc03af0208417aa1d">   73</a></span>    <a class="code hl_class" href="class_add_comand.html">AddComand</a>* <a class="code hl_variable" href="class_port.html#a5beafe369a13809fc03af0208417aa1d">adcom</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_port.html#a6eb1a5f28f9031f22855ea702b5634f5">Remove</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_pin.html">Pin</a>* <a class="code hl_function" href="class_port.html#aab356149ee33772dc2dee00a6c08bf95">addPin</a>(QString <a class="code hl_function" href="class_port.html#a0c668bf31a6533794ce9727e0da16350">name</a> = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">int</span> index = -1,<span class="keywordtype">bool</span> bl=<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> showContextMenu(<span class="keyword">const</span> QPoint&amp; pos);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> on_pushButton_clicked();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="class_pin.html">Pin</a>* addPinSl(QString <a class="code hl_function" href="class_port.html#a0c668bf31a6533794ce9727e0da16350">name</a>=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> RemoveSL();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_port.html#ae08eb4800b9a316ebe5c8a7e1dba9340">Update</a>(<span class="keywordtype">bool</span> updF=<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_class" href="class_proxy_rect_port.html">ProxyRectPort</a>* <a class="code hl_slot" href="class_port.html#a252882139d38712ad89fe27be57a4d96">proxy</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_port.html#a252882139d38712ad89fe27be57a4d96">proxy</a>(<a class="code hl_class" href="class_proxy_rect_port.html">ProxyRectPort</a>*prox);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    Ui::Port *ui;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">virtual</span> QMenu* <a class="code hl_function" href="class_port.html#af1678396ebd343927fb4d68ac8fc65b6">ContextMenu</a>();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_port.html#a5a6bf9109d4cc0125ad9f7ae58d9c6d0">  130</a></span>    <a class="code hl_class" href="class_proxy_rect_port.html">ProxyRectPort</a>* <a class="code hl_variable" href="class_port.html#a5a6bf9109d4cc0125ad9f7ae58d9c6d0">_proxy</a>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_port.html#ab0f95dc4e4708f0c26c1ef3d329958b3">  134</a></span>    QSpacerItem* <a class="code hl_variable" href="class_port.html#ab0f95dc4e4708f0c26c1ef3d329958b3">spacer</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>};</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#endif </span><span class="comment">// PORT_H</span></div>
+<div class="ttc" id="aclass_add_comand_html"><div class="ttname"><a href="class_add_comand.html">AddComand</a></div><div class="ttdoc">Класс наследник от QUndoCommand на добавление нового разъема на сцену</div><div class="ttdef"><b>Definition</b> AddComand.h:17</div></div>
+<div class="ttc" id="aclass_pin_html"><div class="ttname"><a href="class_pin.html">Pin</a></div><div class="ttdoc">Контакт</div><div class="ttdef"><b>Definition</b> pin.h:21</div></div>
+<div class="ttc" id="aclass_port_html"><div class="ttname"><a href="class_port.html">Port</a></div><div class="ttdoc">Разъем на сцене</div><div class="ttdef"><b>Definition</b> port.h:23</div></div>
+<div class="ttc" id="aclass_port_html_a0c668bf31a6533794ce9727e0da16350"><div class="ttname"><a href="class_port.html#a0c668bf31a6533794ce9727e0da16350">Port::name</a></div><div class="ttdeci">QString name()</div><div class="ttdoc">Имя разъема</div><div class="ttdef"><b>Definition</b> port.cpp:47</div></div>
+<div class="ttc" id="aclass_port_html_a15a7a06e221876566463ba94873667e7"><div class="ttname"><a href="class_port.html#a15a7a06e221876566463ba94873667e7">Port::pins</a></div><div class="ttdeci">QVector&lt; Pin * &gt; pins()</div><div class="ttdoc">Список всех контактов разъема</div><div class="ttdef"><b>Definition</b> port.cpp:57</div></div>
+<div class="ttc" id="aclass_port_html_a252882139d38712ad89fe27be57a4d96"><div class="ttname"><a href="class_port.html#a252882139d38712ad89fe27be57a4d96">Port::proxy</a></div><div class="ttdeci">ProxyRectPort * proxy()</div><div class="ttdoc">Прокси в который вложен разъем</div><div class="ttdef"><b>Definition</b> port.cpp:148</div></div>
+<div class="ttc" id="aclass_port_html_a2cfb70a4b6d730e715042d646ec1d960"><div class="ttname"><a href="class_port.html#a2cfb70a4b6d730e715042d646ec1d960">Port::Port</a></div><div class="ttdeci">Port()</div><div class="ttdoc">Создает разъем</div><div class="ttdef"><b>Definition</b> port.cpp:29</div></div>
+<div class="ttc" id="aclass_port_html_a5a6bf9109d4cc0125ad9f7ae58d9c6d0"><div class="ttname"><a href="class_port.html#a5a6bf9109d4cc0125ad9f7ae58d9c6d0">Port::_proxy</a></div><div class="ttdeci">ProxyRectPort * _proxy</div><div class="ttdoc">прокси в который вложен разъем</div><div class="ttdef"><b>Definition</b> port.h:130</div></div>
+<div class="ttc" id="aclass_port_html_a5beafe369a13809fc03af0208417aa1d"><div class="ttname"><a href="class_port.html#a5beafe369a13809fc03af0208417aa1d">Port::adcom</a></div><div class="ttdeci">AddComand * adcom</div><div class="ttdoc">Команда Undo по которой создан данный разъем</div><div class="ttdef"><b>Definition</b> port.h:73</div></div>
+<div class="ttc" id="aclass_port_html_a6eb1a5f28f9031f22855ea702b5634f5"><div class="ttname"><a href="class_port.html#a6eb1a5f28f9031f22855ea702b5634f5">Port::Remove</a></div><div class="ttdeci">void Remove()</div><div class="ttdoc">Удаление разъема</div><div class="ttdef"><b>Definition</b> port.cpp:129</div></div>
+<div class="ttc" id="aclass_port_html_a72c13b59e385b73474e433e450bafe17"><div class="ttname"><a href="class_port.html#a72c13b59e385b73474e433e450bafe17">Port::y</a></div><div class="ttdeci">qreal y()</div><div class="ttdoc">Координата y на сцене</div><div class="ttdef"><b>Definition</b> port.cpp:11</div></div>
+<div class="ttc" id="aclass_port_html_aab356149ee33772dc2dee00a6c08bf95"><div class="ttname"><a href="class_port.html#aab356149ee33772dc2dee00a6c08bf95">Port::addPin</a></div><div class="ttdeci">virtual Pin * addPin(QString name=&quot;&quot;, int index=-1, bool bl=true)</div><div class="ttdoc">Добавление нового контакта</div><div class="ttdef"><b>Definition</b> port.cpp:96</div></div>
+<div class="ttc" id="aclass_port_html_ab0f95dc4e4708f0c26c1ef3d329958b3"><div class="ttname"><a href="class_port.html#ab0f95dc4e4708f0c26c1ef3d329958b3">Port::spacer</a></div><div class="ttdeci">QSpacerItem * spacer</div><div class="ttdoc">смещение для выравнивания контактов</div><div class="ttdef"><b>Definition</b> port.h:134</div></div>
+<div class="ttc" id="aclass_port_html_ae08eb4800b9a316ebe5c8a7e1dba9340"><div class="ttname"><a href="class_port.html#ae08eb4800b9a316ebe5c8a7e1dba9340">Port::Update</a></div><div class="ttdeci">void Update(bool updF=false)</div><div class="ttdoc">Пересчет позиции и проводов</div><div class="ttdef"><b>Definition</b> port.cpp:140</div></div>
+<div class="ttc" id="aclass_port_html_aef88b80ef65a8e8975e6e401c3fe2532"><div class="ttname"><a href="class_port.html#aef88b80ef65a8e8975e6e401c3fe2532">Port::portsVector</a></div><div class="ttdeci">static QVector&lt; Port * &gt; portsVector</div><div class="ttdoc">Статический вектор для доступа ко всем разъемам из вне</div><div class="ttdef"><b>Definition</b> port.h:64</div></div>
+<div class="ttc" id="aclass_port_html_aefc2c28deb5776de74cf81eb206fbbe7"><div class="ttname"><a href="class_port.html#aefc2c28deb5776de74cf81eb206fbbe7">Port::x</a></div><div class="ttdeci">qreal x()</div><div class="ttdoc">Координата x на сцене</div><div class="ttdef"><b>Definition</b> port.cpp:7</div></div>
+<div class="ttc" id="aclass_port_html_af1678396ebd343927fb4d68ac8fc65b6"><div class="ttname"><a href="class_port.html#af1678396ebd343927fb4d68ac8fc65b6">Port::ContextMenu</a></div><div class="ttdeci">virtual QMenu * ContextMenu()</div><div class="ttdoc">Контекстное меню. Удаление; добавление контакта...</div><div class="ttdef"><b>Definition</b> port.cpp:85</div></div>
+<div class="ttc" id="aclass_port_html_afe166c2a6b10ad34d47472a150366bc1"><div class="ttname"><a href="class_port.html#afe166c2a6b10ad34d47472a150366bc1">Port::~Port</a></div><div class="ttdeci">virtual ~Port()</div><div class="ttdoc">Деструктор</div><div class="ttdef"><b>Definition</b> port.cpp:41</div></div>
+<div class="ttc" id="aclass_proxy_rect_port_html"><div class="ttname"><a href="class_proxy_rect_port.html">ProxyRectPort</a></div><div class="ttdoc">Прослойка для перемещения разъема по сцене</div><div class="ttdef"><b>Definition</b> proxyrectport.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

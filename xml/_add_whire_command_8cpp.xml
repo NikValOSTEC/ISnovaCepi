@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_add_whire_command_8cpp" kind="file" language="C++">
+    <compoundname>AddWhireCommand.cpp</compoundname>
+    <includes refid="_add_whire_command_8h" local="yes">AddWhireCommand.h</includes>
+    <includes refid="mygraphicsscene_8h" local="yes">mygraphicsscene.h</includes>
+    <includes refid="_add_pin_comand_8h" local="yes">AddPinComand.h</includes>
+    <includes refid="pin_8h" local="yes">pin.h</includes>
+    <includes refid="port_8h" local="yes">port.h</includes>
+    <includes refid="_new_whire_8h" local="yes">NewWhire.h</includes>
+    <includes refid="proxyrectport_8h" local="yes">proxyrectport.h</includes>
+    <includes refid="_dot_8h" local="yes">Dot.h</includes>
+    <includes local="no">QDebug</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>AddPinComand.h</label>
+        <link refid="_add_pin_comand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AddWhireCommand.cpp</label>
+        <link refid="_add_whire_command_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AddWhireCommand.h</label>
+        <link refid="_add_whire_command_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Dot.h</label>
+        <link refid="_dot_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>NewWhire.h</label>
+        <link refid="_new_whire_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>proxyrectport.h</label>
+        <link refid="proxyrectport_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>view.h</label>
+        <link refid="view_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QColorDialog</label>
+      </node>
+      <node id="36">
+        <label>QDebug</label>
+      </node>
+      <node id="35">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="5">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="19">
+        <label>QLineEdit</label>
+      </node>
+      <node id="11">
+        <label>QMenu</label>
+      </node>
+      <node id="6">
+        <label>QPainter</label>
+      </node>
+      <node id="23">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="34">
+        <label>QStyleOptionGraphicsItem</label>
+      </node>
+      <node id="15">
+        <label>QThread</label>
+      </node>
+      <node id="3">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="33">
+        <label>QWidget</label>
+      </node>
+      <node id="32">
+        <label>QtMath</label>
+      </node>
+      <node id="12">
+        <label>qframe.h</label>
+      </node>
+      <node id="30">
+        <label>qgraphicsitem.h</label>
+      </node>
+      <node id="27">
+        <label>qgraphicsobject</label>
+      </node>
+      <node id="17">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="28">
+        <label>qgraphicsscene.h</label>
+      </node>
+      <node id="22">
+        <label>qobject.h</label>
+      </node>
+      <node id="10">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="8">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="9">
+        <label>qundostack.h</label>
+      </node>
+      <node id="24">
+        <label>qwidget.h</label>
+      </node>
+      <node id="16">
+        <label>ui_pin.h</label>
+      </node>
+      <node id="21">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;AddWhireCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;mygraphicsscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;AddPinComand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;NewWhire.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;proxyrectport.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Dot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="class_add_whire_command_1ae647982c8cc9c12e7074d4d5501377b1" kindref="member">AddWhireCommand::AddWhireCommand</ref>(<ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*<sp/>p11,<sp/><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*p22)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" kindref="member">p1</ref><sp/>=<sp/>p11;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;p2<sp/>=<sp/>p22;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" kindref="member">whire</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>MV<sp/>=<sp/>((<ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*)(p11-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1a20f01bad04eb172b27d8abef697e51b3" kindref="member">parCon</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;scene()))-&gt;Mview;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>MV-&gt;stackPush(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="class_add_whire_command_1a085c1fcb56138f6e5312b98d129ae4bf" kindref="member">AddWhireCommand::~AddWhireCommand</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_whire_command_1ac7351ba1df94fc2dca0406a0f9ab15f0" kindref="member">AddWhireCommand::undo</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" kindref="member">whire</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" kindref="member">p1</ref>-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" kindref="member">p1</ref>-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1ad9e623eb6aae56e00d10941c205fadc6" kindref="member">dot</ref>()-&gt;whrscount()&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" kindref="member">p1</ref>-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" kindref="member">RemoveFromChain</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p2-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1afdb8e24236d8a91855d6932a36ab30e7" kindref="member">chain</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p2-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1ad9e623eb6aae56e00d10941c205fadc6" kindref="member">dot</ref>()-&gt;whrscount()<sp/>&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p2-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1ab52087ba185c6b7129d16ee4fc53a85c" kindref="member">RemoveFromChain</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_whire_command_1abfeb73f7b567beb76e41666c7d1ad8b3" kindref="member">AddWhireCommand::redo</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" kindref="member">whire</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_new_whire" kindref="compound">NewWhire</ref>(<ref refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" kindref="member">p1</ref>-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>,<sp/>p2-&gt;<ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>,</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="AddWhireCommand.cpp"/>
+  </compounddef>
+</doxygen>

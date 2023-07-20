@@ -6,7 +6,7 @@
 #include"PortTemplate.h"
 #include"SaveTemplates.h"
 #include"pin.h"
-#include"QLineEditFocusOutSignal.h"
+#include"qlineedit.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)

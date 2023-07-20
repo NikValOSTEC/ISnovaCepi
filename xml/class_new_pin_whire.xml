@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_new_pin_whire" kind="class" language="C++" prot="public">
+    <compoundname>NewPinWhire</compoundname>
+    <basecompoundref refid="class_custom_collider_line_recoursive" prot="public" virt="non-virtual">CustomColliderLineRecoursive</basecompoundref>
+    <includes refid="_new_pin_whire_8h" local="no">NewPinWhire.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_new_pin_whire_1a131bf9f66e7a808d75ece98424b65525" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin* NewPinWhire::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <qualifiedname>NewPinWhire::pin</qualifiedname>
+        <briefdescription>
+<para>Контак к которому идет провод </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NewPinWhire.h" line="49" column="5" bodyfile="NewPinWhire.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_new_pin_whire_1aa25ba490d084894a5440c74fe96324f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NewPinWhire::NewPinWhire</definition>
+        <argsstring>(Pin *p, QThread *th)</argsstring>
+        <name>NewPinWhire</name>
+        <qualifiedname>NewPinWhire::NewPinWhire</qualifiedname>
+        <param>
+          <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>QThread *</type>
+          <declname>th</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Жрет контакт и поток в котором лежит этот контакт </para>
+<para>По идее таки пошустрее в несколько потоков </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контакт к которому приложен провод</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>th</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток в который он перемещен</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NewPinWhire.h" line="30" column="1" bodyfile="NewPinWhire.cpp" bodystart="5" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_new_pin_whire_1a34b50bdadb21a6be13028037e8141404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NewPinWhire::~NewPinWhire</definition>
+        <argsstring>()</argsstring>
+        <name>~NewPinWhire</name>
+        <qualifiedname>NewPinWhire::~NewPinWhire</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NewPinWhire.h" line="34" column="1" bodyfile="NewPinWhire.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_new_pin_whire_1a7cd432d5390928eeed24ca61c1abd449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NewPinWhire::hasConection</definition>
+        <argsstring>()</argsstring>
+        <name>hasConection</name>
+        <qualifiedname>NewPinWhire::hasConection</qualifiedname>
+        <briefdescription>
+<para>наличие других связей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true - есть; false - нет</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NewPinWhire.h" line="39" column="6" bodyfile="NewPinWhire.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_new_pin_whire_1a67ccd5e3e8411e1afabe4b1789b13953" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QColor</type>
+        <definition>QColor NewPinWhire::color</definition>
+        <argsstring>() override</argsstring>
+        <name>color</name>
+        <qualifiedname>NewPinWhire::color</qualifiedname>
+        <reimplements refid="class_custom_collider_line_recoursive_1adbb39c32411e7041d0e77851e215d2fe">color</reimplements>
+        <briefdescription>
+<para>Цвет провода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NewPinWhire.h" line="44" column="8" bodyfile="NewPinWhire.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Горизонтальный провод идущий от контакта </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Всегда один у каждого контакта </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CustomColliderLineRecoursive</label>
+        <link refid="class_custom_collider_line_recoursive"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NewPinWhire</label>
+        <link refid="class_new_pin_whire"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QGraphicsObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CustomColliderLineRecoursive</label>
+        <link refid="class_custom_collider_line_recoursive"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d1</edgelabel>
+          <edgelabel>d2</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lastcolide</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Dot</label>
+        <link refid="class_dot"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Hdot</edgelabel>
+          <edgelabel>Vdot</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NewPinWhire</label>
+        <link refid="class_new_pin_whire"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="3">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="6">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="NewPinWhire.h" line="15" column="1" bodyfile="NewPinWhire.h" bodystart="16" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_custom_collider_line_recoursive_1a8bb3f83d68cc08e188c15b8ec0ac3e74" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>boundingRect</name></member>
+      <member refid="class_custom_collider_line_recoursive_1acfe70cb954bafe2bb3af0b4303bc0e75" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>ClearInside</name></member>
+      <member refid="class_new_pin_whire_1a67ccd5e3e8411e1afabe4b1789b13953" prot="public" virt="virtual"><scope>NewPinWhire</scope><name>color</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a166325da3980f3abc1723ddc22aad42d" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>CustomColliderLineRecoursive</name></member>
+      <member refid="class_custom_collider_line_recoursive_1af5c0e98eca59f91818caaa334f90d85a" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>d1</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a716ab6ae5d841555865b5503e5b18628" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>d2</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a29e5d4ba6ff85387b29a1803646ccb09" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>FixColliding</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a5be8c91ab013083fbe0401ee0732f1f9" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>fixway</name></member>
+      <member refid="class_new_pin_whire_1a7cd432d5390928eeed24ca61c1abd449" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>hasConection</name></member>
+      <member refid="class_custom_collider_line_recoursive_1ab1c47059a7df21ceb455eb4c8c0e11e4" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>inside</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a8f80fb06a877bfc6af449bb1bfc50199" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>itsmine</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>JumpDerection</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a2129474398747e0388be32b93e1baf58" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>JumpFrom</name></member>
+      <member refid="class_custom_collider_line_recoursive_1ad68cbb90e5eb9a5ed5d978c8536d3032" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>lastbottom</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a85e82eeb154e5b25934ee14947ef5aa1" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>lastcolide</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a1c43278915ba3233b44f03c5d7ef0b0c" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>lastleft</name></member>
+      <member refid="class_new_pin_whire_1aa25ba490d084894a5440c74fe96324f1" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>NewPinWhire</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a5ff5d9a184b77af419ba5e4850fd0cef" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>paint</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a40dd74750416108c5162884820ac5b08" prot="protected" virt="non-virtual"><scope>NewPinWhire</scope><name>Parent</name></member>
+      <member refid="class_new_pin_whire_1a131bf9f66e7a808d75ece98424b65525" prot="private" virt="non-virtual"><scope>NewPinWhire</scope><name>pin</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a0e5186f9d4b3d8a6494d6457cca1422b" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>setFixWay</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a81098aa1c6428636b55cd37989a208d1" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>setHorizontal</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a3cd32fa2a62f4cd21c55ebd244b3618d" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>setVertical</name></member>
+      <member refid="class_custom_collider_line_recoursive_1ae1e4cbe9ad3d81fffbb05fdeabfd99b1" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>shape</name></member>
+      <member refid="class_custom_collider_line_recoursive_1aaa8d9f754a4f91f2ddc3f3bdbabe9ae6" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>Vertical_f_Horizontal_t</name></member>
+      <member refid="class_custom_collider_line_recoursive_1a6491fcf9b4f792271ec635d96b8a577d" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>~CustomColliderLineRecoursive</name></member>
+      <member refid="class_new_pin_whire_1a34b50bdadb21a6be13028037e8141404" prot="public" virt="non-virtual"><scope>NewPinWhire</scope><name>~NewPinWhire</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

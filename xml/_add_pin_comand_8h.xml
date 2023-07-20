@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_add_pin_comand_8h" kind="file" language="C++">
+    <compoundname>AddPinComand.h</compoundname>
+    <includes local="no">QUndoCommand</includes>
+    <includedby refid="_add_pin_comand_8cpp" local="yes">AddPinComand.cpp</includedby>
+    <includedby refid="_add_whire_command_8cpp" local="yes">AddWhireCommand.cpp</includedby>
+    <includedby refid="_g_view_8cpp" local="yes">GView.cpp</includedby>
+    <includedby refid="_remove_pin_command_8cpp" local="yes">RemovePinCommand.cpp</includedby>
+    <includedby refid="_whire_remove_comand_8cpp" local="yes">WhireRemoveComand.cpp</includedby>
+    <includedby refid="pin_8cpp" local="yes">pin.cpp</includedby>
+    <includedby refid="port_8cpp" local="yes">port.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>AddPinComand.h</label>
+        <link refid="_add_pin_comand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_add_pin_comand" prot="public">AddPinComand</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_add_pin_comand_8h_1abbf22f7e6d8e23a7510780d23161cf45" prot="public" static="no">
+        <name>ADDPINCOMAND_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="3" column="9" bodyfile="AddPinComand.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADDPINCOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDPINCOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QUndoCommand&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port" kindref="compound">Port</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_comand" kindref="compound">AddComand</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_add_pin_comand" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QUndoCommand</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>(<ref refid="class_port" kindref="compound">Port</ref>*p,QString<sp/><ref refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" kindref="member">name</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rea=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1a5df4a5fcb9feb4e64736c1f4f1a1133e" kindref="member">~AddPinComand</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_pin_comand_1ac1444bc27391754e1c52ad2bcf0de517" kindref="member">undo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_pin_comand_1a4712f1eeee58a11b8b963c056a71f844" kindref="member">redo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39" refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/><ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" kindref="member">prt</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>real;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="AddPinComand.h"/>
+  </compounddef>
+</doxygen>

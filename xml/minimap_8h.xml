@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="minimap_8h" kind="file" language="C++">
+    <compoundname>minimap.h</compoundname>
+    <includes local="yes">qevent.h</includes>
+    <includes local="no">qgraphicsview.h</includes>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <includedby refid="minimap_8cpp" local="yes">minimap.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>minimap.h</label>
+        <link refid="minimap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qevent.h</label>
+      </node>
+      <node id="3">
+        <label>qgraphicsview.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classminimap" prot="public">minimap</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="minimap_8h_1a624c11838e68acaf1930598e52cd1b76" prot="public" static="no">
+        <name>MINIMAP_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="3" column="9" bodyfile="minimap.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MINIMAP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINIMAP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qevent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_view" kindref="compound">View</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qgraphicsview.h&gt;</highlight></codeline>
+<codeline lineno="13" refid="classminimap" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classminimap" kindref="compound">minimap</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsView</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classminimap" kindref="compound">minimap</ref>(<ref refid="class_view" kindref="compound">View</ref><sp/>*<ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1ac6f839c092231f3beee553441b406316" kindref="member">mouseMoveEvent</ref>(QMouseEvent*<sp/>event)</highlight><highlight class="keyword">override</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1a098d5c3f522d5a3cdc3b7c85825d885b" kindref="member">mouseReleaseEvent</ref>(QMouseEvent*<sp/>event)</highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1ae693f15114622bfd83a2773219cfa450" kindref="member">mousePressEvent</ref>(QMouseEvent*<sp/>event)</highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1a3fbb10d21bbc9e67af2f3bc36b46e9e3" kindref="member">mouseDoubleClickEvent</ref>(QMouseEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>QT_CONFIG(wheelevent)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wheelEvent(QWheelEvent*<sp/>e);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classminimap_1a6246ee18d06e114b55c5d8d20bd7ebb6" kindref="member">~minimap</ref>();</highlight></codeline>
+<codeline lineno="57" refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view" kindref="compound">View</ref>*<sp/><ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sclX,<sp/>sclY;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1aa258145892674bbb8f2b7519d88f86bd" kindref="member">rescale</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="minimap.h"/>
+  </compounddef>
+</doxygen>

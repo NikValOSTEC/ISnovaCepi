@@ -1,0 +1,92 @@
+\doxysection{Dot.\+h}
+\hypertarget{_dot_8h_source}{}\label{_dot_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ DOT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ DOT\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<QtMath>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<QWidget>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<QStyleOptionGraphicsItem>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<QGraphicsObject>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<QPainter>}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_custom_collider_line_recoursive}{CustomColliderLineRecoursive}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_new_whire}{NewWhire}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include"{}pin.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dot}{Dot}}\ \ :\ \textcolor{keyword}{public}\ QGraphicsObject}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_dot}{Dot}}(QGraphicsObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a12d277036a07c23548e0aa59f133dac4}{type}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ \ \ \ \ QColor\ \mbox{\hyperlink{class_dot_a17fa8a08a018a9c8d05dabd3a1991d70}{cl}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_dot_ace3fa9da5116caaf64f902da45115824}{triangle}};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_dot_ada0d526fe302f22a3ab336dcec588ff1}{bg}};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}});}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}});}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a3f1b336dc13d266fe4050ae9911c73a8}{setColor}}(QColor\ \mbox{\hyperlink{class_dot_a17fa8a08a018a9c8d05dabd3a1991d70}{cl}});}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a7ac1cb63d973b86023b178ca39abe20f}{setTriangle}}(\textcolor{keywordtype}{bool}\ bl);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_acba1bb9405225c7a3c3cbb0907756aad}{setBig}}(\textcolor{keywordtype}{bool}\ bl);}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ \mbox{\hyperlink{class_dot_af3bf823da926992a15d7b8342b1d9cf7}{pn}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_custom_collider_line_recoursive}{CustomColliderLineRecoursive}}*\mbox{\hyperlink{class_dot_ae67778bccc9c380f2c42f93b90f5fa3e}{Vdot}},\ *Hdot;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ EmitIs\_inMove(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}})}
+\DoxyCodeLine{00087\ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_pin\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \_pin-\/>\mbox{\hyperlink{class_pin_aa660efe9484f60ceff51f8533036a6c6}{Update}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ emit\ \mbox{\hyperlink{class_dot_abad06f4214cf3989b6576f2c605724ae}{Is\_inMove}}(\mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}});}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a8e807f07f899587ef8f1b46612f72ac9}{setPin}}(\mbox{\hyperlink{class_pin}{Pin}}*\ p);}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ Emit\_Moving()}
+\DoxyCodeLine{00100\ \ \ \ \ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}\ =\ pos().x();}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ =\ pos().y();}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mx,\ my;}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ mx\ =\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}\ \%\ 25;}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mx\ <\ 0)}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ mx\ +=\ 25;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ my\ =\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ \%\ 25;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (my\ <\ 0)}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ my\ +=\ 25;}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mx\ >\ 12)}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}\ =\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}\ -\/\ mx\ +\ 25;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}\ =\ \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}}\ -\/\ mx;}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ \%\ 25\ >\ 12)}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ =\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ -\/\ my\ +\ 25;}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ =\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}}\ -\/\ my;}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ setPos(\mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}},\ \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}});}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ emit\ \mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{class_dot_a5f989f28c9dc4a3871a8f84327ac2acb}{\string~Dot}}();}
+\DoxyCodeLine{00128\ \ \ \ \ QVector<NewWhire*>\mbox{\hyperlink{class_dot_a436ad74b9372af9bfbdb8fe31776ba25}{whires}};}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_aa497c04961604be7075a415cfc227b0d}{WhPl}}();}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ WhMin();}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a917549908da2fa1bd2d5080d2a7f31c7}{paint}}(QPainter*\ painter,\ \textcolor{keyword}{const}\ QStyleOptionGraphicsItem*\ option,\ QWidget*\ widget)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00145\ \ \ \ \ QRectF\ \mbox{\hyperlink{class_dot_a508d06413b09f1e0ab230571c8278f7f}{boundingRect}}()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00151\ \textcolor{comment}{}\ \ \ \ QPainterPath\ \mbox{\hyperlink{class_dot_a3a7fee5c9df6512243685bee725045a8}{shape}}()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{int}\ whrscount()}
+\DoxyCodeLine{00153\ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Linecounter;}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ signals:}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_abad06f4214cf3989b6576f2c605724ae}{Is\_inMove}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}});}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}}(\mbox{\hyperlink{class_dot}{Dot}}*\ d);}
+\DoxyCodeLine{00166\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a54051366618ed5375e396b2904085f1b}{VerticalDot}}(\mbox{\hyperlink{class_dot}{Dot}}*\ d);}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dot_a93ea5946db7c004e2437056a39fad0ea}{HorizontalDot}}(\mbox{\hyperlink{class_dot}{Dot}}*\ d);}
+\DoxyCodeLine{00175\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{int}\ Linecounter\ =\ 0;}
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ \_pin;}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \};}
+\DoxyCodeLine{00186\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,693 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_proxy_rect_port" kind="class" language="C++" prot="public">
+    <compoundname>ProxyRectPort</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsItem</basecompoundref>
+    <includes refid="proxyrectport_8h" local="no">proxyrectport.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_proxy_rect_port_1a3eed828e15cd375237841d282f8b7602" prot="private" static="no" mutable="no">
+        <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+        <definition>Port* ProxyRectPort::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <qualifiedname>ProxyRectPort::port</qualifiedname>
+        <briefdescription>
+<para>вложенный разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="152" column="10" bodyfile="proxyrectport.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_rect_port_1a161f35f5c8b7a0ee40b2f24f09f1b411" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor ProxyRectPort::colo</definition>
+        <argsstring></argsstring>
+        <name>colo</name>
+        <qualifiedname>ProxyRectPort::colo</qualifiedname>
+        <briefdescription>
+<para>цвет прокси </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="156" column="12" bodyfile="proxyrectport.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_rect_port_1a696805f5c53591d4d4319ae28b730397" prot="private" static="no" mutable="no">
+        <type>QRectF</type>
+        <definition>QRectF ProxyRectPort::rect</definition>
+        <argsstring></argsstring>
+        <name>rect</name>
+        <qualifiedname>ProxyRectPort::rect</qualifiedname>
+        <briefdescription>
+<para>костыль над boundingrect </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="160" column="12" bodyfile="proxyrectport.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_proxy_rect_port_1a427c41476393abf9205ce4c6c9b385a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ProxyRectPort::ProxyRectPort</definition>
+        <argsstring>(Port *port)</argsstring>
+        <name>ProxyRectPort</name>
+        <qualifiedname>ProxyRectPort::ProxyRectPort</qualifiedname>
+        <param>
+          <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Создает прослойку вкладывает в нее разъем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вложеный разъем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="19" column="5" bodyfile="proxyrectport.cpp" bodystart="6" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a98181e580c4f3236ce8af259aaf84c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::EmitMove</definition>
+        <argsstring>()</argsstring>
+        <name>EmitMove</name>
+        <qualifiedname>ProxyRectPort::EmitMove</qualifiedname>
+        <briefdescription>
+<para>Сигна о перемещении </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="23" column="10" bodyfile="proxyrectport.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a9dcd8c076532288d70ef0ac7a274c4ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath ProxyRectPort::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>ProxyRectPort::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="29" column="18" bodyfile="proxyrectport.cpp" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1af9222adec783241fd408c1581f81852c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF ProxyRectPort::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>ProxyRectPort::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="35" column="12" bodyfile="proxyrectport.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a1687a0abbbc686d145c95ac734b5358a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>ProxyRectPort::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="41" column="10" bodyfile="proxyrectport.cpp" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1ac89d1cd4aaa3a56b2b68058a275f5a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF ProxyRectPort::geometry</definition>
+        <argsstring>()</argsstring>
+        <name>geometry</name>
+        <qualifiedname>ProxyRectPort::geometry</qualifiedname>
+        <briefdescription>
+<para>костыль аля bounding rect </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="46" column="12" bodyfile="proxyrectport.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a5e66c75ef319f295d7d2ebab76dac8f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::geometry</definition>
+        <argsstring>(QRectF rec)</argsstring>
+        <name>geometry</name>
+        <qualifiedname>ProxyRectPort::geometry</qualifiedname>
+        <param>
+          <type>QRectF</type>
+          <declname>rec</declname>
+        </param>
+        <briefdescription>
+<para>установка костыл аля bounding rect </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rec</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="51" column="10" bodyfile="proxyrectport.cpp" bodystart="49" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a9c26ba4411547ad27eb04f2bb5799669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::setconnector</definition>
+        <argsstring>(Port *port)</argsstring>
+        <name>setconnector</name>
+        <qualifiedname>ProxyRectPort::setconnector</qualifiedname>
+        <param>
+          <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Установка вложенного разъема </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="56" column="10" bodyfile="proxyrectport.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a5c31d1198ac006afc2112a22d90c6758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+        <definition>Port * ProxyRectPort::getport</definition>
+        <argsstring>()</argsstring>
+        <name>getport</name>
+        <qualifiedname>ProxyRectPort::getport</qualifiedname>
+        <briefdescription>
+<para>Вложенный порт </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="61" column="10" bodyfile="proxyrectport.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1aef8331d8062971ffc9caf861b527a1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor ProxyRectPort::color</definition>
+        <argsstring>()</argsstring>
+        <name>color</name>
+        <qualifiedname>ProxyRectPort::color</qualifiedname>
+        <briefdescription>
+<para>Цвет прокси (Шапка над разъемом) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="66" column="12" bodyfile="proxyrectport.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a33ef78575c38a7442cd768f29c9c2c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::color</definition>
+        <argsstring>(QColor c)</argsstring>
+        <name>color</name>
+        <qualifiedname>ProxyRectPort::color</qualifiedname>
+        <param>
+          <type>QColor</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>установка цвета прокси (Шапка над разъемом) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="71" column="10" bodyfile="proxyrectport.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1afc3f5de95ed5daaeddfe64caaa3a627f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ProxyRectPort::~ProxyRectPort</definition>
+        <argsstring>()</argsstring>
+        <name>~ProxyRectPort</name>
+        <qualifiedname>ProxyRectPort::~ProxyRectPort</qualifiedname>
+        <briefdescription>
+<para>удаление прокси и вложенного разъема </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="75" column="5" bodyfile="proxyrectport.cpp" bodystart="86" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a1f74dce4c5d8fc136801d655a924ff1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::Update</definition>
+        <argsstring>(bool upd=false, int i=0)</argsstring>
+        <name>Update</name>
+        <qualifiedname>ProxyRectPort::Update</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>upd</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>пересчет местоположения от колизий и обновление вложенного разъема </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upd</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="81" column="10" bodyfile="proxyrectport.cpp" bodystart="92" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a31f4b879ed045aca48722e0fd17c1552" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ProxyRectPort::type</definition>
+        <argsstring>() const override</argsstring>
+        <name>type</name>
+        <qualifiedname>ProxyRectPort::type</qualifiedname>
+        <briefdescription>
+<para>Нужен для обновления через <ref refid="class_g_view" kindref="compound">GView</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="86" column="9" bodyfile="proxyrectport.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1aa265a53484c9f190bcfc2345a5e0c443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::ColiderCheck</definition>
+        <argsstring>(bool upd=true)</argsstring>
+        <name>ColiderCheck</name>
+        <qualifiedname>ProxyRectPort::ColiderCheck</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>upd</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Проверка коллизий с проводами </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upd</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="91" column="10" bodyfile="proxyrectport.cpp" bodystart="143" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1afd56b7dcc7445bd605f50ffa26f7f652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::ProxyColider</definition>
+        <argsstring>(int xx=0, int yy=0)</argsstring>
+        <name>ProxyColider</name>
+        <qualifiedname>ProxyRectPort::ProxyColider</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>xx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yy</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Проверка коллизий разъемами (рекурия) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>направление смещения в случае рекурсивного наложения</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>направление смещения в случае рекурсивного наложения</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="97" column="10" bodyfile="proxyrectport.cpp" bodystart="185" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1acbd82314cade9122e6c4d7489a7c7b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal ProxyRectPort::XX</definition>
+        <argsstring>()</argsstring>
+        <name>XX</name>
+        <qualifiedname>ProxyRectPort::XX</qualifiedname>
+        <briefdescription>
+<para>координата по x; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="102" column="11" bodyfile="proxyrectport.cpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a2d3d09203d0193a0634f1f1a50ee325c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal ProxyRectPort::YY</definition>
+        <argsstring>()</argsstring>
+        <name>YY</name>
+        <qualifiedname>ProxyRectPort::YY</qualifiedname>
+        <briefdescription>
+<para>координата по y; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="107" column="11" bodyfile="proxyrectport.cpp" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a612d12d83107c4997492841354919793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::XX</definition>
+        <argsstring>(qreal x)</argsstring>
+        <name>XX</name>
+        <qualifiedname>ProxyRectPort::XX</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>установка координаты по x; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="112" column="10" bodyfile="proxyrectport.cpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a17f0094126800b3e9d081cdf9824752e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::YY</definition>
+        <argsstring>(qreal y)</argsstring>
+        <name>YY</name>
+        <qualifiedname>ProxyRectPort::YY</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>установка координаты по x; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="117" column="10" bodyfile="proxyrectport.cpp" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1af7fbb34af9cdd970af1a4bedc6cde2bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal ProxyRectPort::left</definition>
+        <argsstring>()</argsstring>
+        <name>left</name>
+        <qualifiedname>ProxyRectPort::left</qualifiedname>
+        <briefdescription>
+<para>Левая сторона </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>x левого края</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="122" column="11" bodyfile="proxyrectport.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a5451cdf289a7f301d36b0c5eb6b111b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal ProxyRectPort::right</definition>
+        <argsstring>()</argsstring>
+        <name>right</name>
+        <qualifiedname>ProxyRectPort::right</qualifiedname>
+        <briefdescription>
+<para>Правая сторона </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>x правого края</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="127" column="11" bodyfile="proxyrectport.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a250e3fb175d75701f497ef7e563d4124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal ProxyRectPort::bottom</definition>
+        <argsstring>()</argsstring>
+        <name>bottom</name>
+        <qualifiedname>ProxyRectPort::bottom</qualifiedname>
+        <briefdescription>
+<para>Низ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>y нижнего края</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="132" column="11" bodyfile="proxyrectport.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a14a9e7497d3e6bd64c0684c7dd2c9dd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal ProxyRectPort::top</definition>
+        <argsstring>()</argsstring>
+        <name>top</name>
+        <qualifiedname>ProxyRectPort::top</qualifiedname>
+        <briefdescription>
+<para>Верх </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>y верхнего края</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="137" column="11" bodyfile="proxyrectport.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_rect_port_1a257b35ca3f66be31388c663e62d38ad8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF ProxyRectPort::center</definition>
+        <argsstring>()</argsstring>
+        <name>center</name>
+        <qualifiedname>ProxyRectPort::center</qualifiedname>
+        <briefdescription>
+<para>координаты центра </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="142" column="13" bodyfile="proxyrectport.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_proxy_rect_port_1ac791c14b682d510a7e899a792db7f5b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProxyRectPort::strartMove</definition>
+        <argsstring>()</argsstring>
+        <name>strartMove</name>
+        <qualifiedname>ProxyRectPort::strartMove</qualifiedname>
+        <briefdescription>
+<para>сигнал отметка начало перемещения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="proxyrectport.h" line="147" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Прослойка для перемещения разъема по сцене </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="proxyrectport.h" line="11" column="1" bodyfile="proxyrectport.h" bodystart="12" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_proxy_rect_port_1a250e3fb175d75701f497ef7e563d4124" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>bottom</name></member>
+      <member refid="class_proxy_rect_port_1af9222adec783241fd408c1581f81852c" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>boundingRect</name></member>
+      <member refid="class_proxy_rect_port_1a257b35ca3f66be31388c663e62d38ad8" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>center</name></member>
+      <member refid="class_proxy_rect_port_1aa265a53484c9f190bcfc2345a5e0c443" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>ColiderCheck</name></member>
+      <member refid="class_proxy_rect_port_1a161f35f5c8b7a0ee40b2f24f09f1b411" prot="private" virt="non-virtual"><scope>ProxyRectPort</scope><name>colo</name></member>
+      <member refid="class_proxy_rect_port_1aef8331d8062971ffc9caf861b527a1d9" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>color</name></member>
+      <member refid="class_proxy_rect_port_1a33ef78575c38a7442cd768f29c9c2c71" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>color</name></member>
+      <member refid="class_proxy_rect_port_1a98181e580c4f3236ce8af259aaf84c1f" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>EmitMove</name></member>
+      <member refid="class_proxy_rect_port_1ac89d1cd4aaa3a56b2b68058a275f5a54" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>geometry</name></member>
+      <member refid="class_proxy_rect_port_1a5e66c75ef319f295d7d2ebab76dac8f1" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>geometry</name></member>
+      <member refid="class_proxy_rect_port_1a5c31d1198ac006afc2112a22d90c6758" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>getport</name></member>
+      <member refid="class_proxy_rect_port_1af7fbb34af9cdd970af1a4bedc6cde2bb" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>left</name></member>
+      <member refid="class_proxy_rect_port_1a1687a0abbbc686d145c95ac734b5358a" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>paint</name></member>
+      <member refid="class_proxy_rect_port_1a3eed828e15cd375237841d282f8b7602" prot="private" virt="non-virtual"><scope>ProxyRectPort</scope><name>port</name></member>
+      <member refid="class_proxy_rect_port_1afd56b7dcc7445bd605f50ffa26f7f652" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>ProxyColider</name></member>
+      <member refid="class_proxy_rect_port_1a427c41476393abf9205ce4c6c9b385a3" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>ProxyRectPort</name></member>
+      <member refid="class_proxy_rect_port_1a696805f5c53591d4d4319ae28b730397" prot="private" virt="non-virtual"><scope>ProxyRectPort</scope><name>rect</name></member>
+      <member refid="class_proxy_rect_port_1a5451cdf289a7f301d36b0c5eb6b111b8" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>right</name></member>
+      <member refid="class_proxy_rect_port_1a9c26ba4411547ad27eb04f2bb5799669" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>setconnector</name></member>
+      <member refid="class_proxy_rect_port_1a9dcd8c076532288d70ef0ac7a274c4ae" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>shape</name></member>
+      <member refid="class_proxy_rect_port_1ac791c14b682d510a7e899a792db7f5b5" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>strartMove</name></member>
+      <member refid="class_proxy_rect_port_1a14a9e7497d3e6bd64c0684c7dd2c9dd0" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>top</name></member>
+      <member refid="class_proxy_rect_port_1a31f4b879ed045aca48722e0fd17c1552" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>type</name></member>
+      <member refid="class_proxy_rect_port_1a1f74dce4c5d8fc136801d655a924ff1a" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>Update</name></member>
+      <member refid="class_proxy_rect_port_1acbd82314cade9122e6c4d7489a7c7b9c" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>XX</name></member>
+      <member refid="class_proxy_rect_port_1a612d12d83107c4997492841354919793" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>XX</name></member>
+      <member refid="class_proxy_rect_port_1a2d3d09203d0193a0634f1f1a50ee325c" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>YY</name></member>
+      <member refid="class_proxy_rect_port_1a17f0094126800b3e9d081cdf9824752e" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>YY</name></member>
+      <member refid="class_proxy_rect_port_1afc3f5de95ed5daaeddfe64caaa3a627f" prot="public" virt="non-virtual"><scope>ProxyRectPort</scope><name>~ProxyRectPort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

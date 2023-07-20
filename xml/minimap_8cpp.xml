@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="minimap_8cpp" kind="file" language="C++">
+    <compoundname>minimap.cpp</compoundname>
+    <includes refid="minimap_8h" local="yes">minimap.h</includes>
+    <includes refid="view_8h" local="yes">view.h</includes>
+    <includes refid="_g_view_8h" local="yes">GView.h</includes>
+    <includes refid="mygraphicsscene_8h" local="yes">mygraphicsscene.h</includes>
+    <includes local="no">QDebug</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>GView.h</label>
+        <link refid="_g_view_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>minimap.cpp</label>
+        <link refid="minimap_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>minimap.h</label>
+        <link refid="minimap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>view.h</label>
+        <link refid="view_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QDebug</label>
+      </node>
+      <node id="16">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="9">
+        <label>QMenu</label>
+      </node>
+      <node id="14">
+        <label>QMimeData</label>
+      </node>
+      <node id="17">
+        <label>QPainter</label>
+      </node>
+      <node id="13">
+        <label>qdrag.h</label>
+      </node>
+      <node id="3">
+        <label>qevent.h</label>
+      </node>
+      <node id="10">
+        <label>qframe.h</label>
+      </node>
+      <node id="4">
+        <label>qgraphicsview.h</label>
+      </node>
+      <node id="12">
+        <label>qobject.h</label>
+      </node>
+      <node id="8">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="6">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="7">
+        <label>qundostack.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;minimap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;view.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;GView.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;mygraphicsscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="classminimap_1a3135edec24c914f9af18976fddda7651" kindref="member">minimap::minimap</ref>(<ref refid="class_view" kindref="compound">View</ref>*<sp/>v)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;v<sp/>=<sp/><ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setScene(<ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>-&gt;<ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>());<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>-&gt;<ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>(),<sp/>SIGNAL(changed(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QList&lt;QRectF&gt;<sp/>&amp;)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classminimap_1aa258145892674bbb8f2b7519d88f86bd" kindref="member">rescale</ref>()));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>setSizePolicy(QSizePolicy(QSizePolicy::Fixed,<sp/>QSizePolicy::Fixed));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>sclX<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>sclY<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setContextMenuPolicy(Qt::CustomContextMenu);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SIGNAL(customContextMenuRequested(QPoint)),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(showContextMenu(QPoint)));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1ac6f839c092231f3beee553441b406316" kindref="member">minimap::mouseMoveEvent</ref>(QMouseEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1a098d5c3f522d5a3cdc3b7c85825d885b" kindref="member">minimap::mouseReleaseEvent</ref>(QMouseEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1ae693f15114622bfd83a2773219cfa450" kindref="member">minimap::mousePressEvent</ref>(QMouseEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rectt<sp/>=<sp/><ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>-&gt;<ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">view</ref>()-&gt;rect();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>rectt.moveCenter(mapToScene(event-&gt;pos()).toPoint());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>-&gt;<ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">view</ref>()-&gt;fitInView(rectt);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>scene()-&gt;update();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1a3fbb10d21bbc9e67af2f3bc36b46e9e3" kindref="member">minimap::mouseDoubleClickEvent</ref>(QMouseEvent*<sp/>event)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>minimap::wheelEvent(QWheelEvent*<sp/>e)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>fitInView(scene()-&gt;itemsBoundingRect(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classminimap_1aa258145892674bbb8f2b7519d88f86bd" kindref="member">minimap::rescale</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>setFixedHeight(<ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>-&gt;size().height()<sp/>/<sp/>sclX);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>setFixedWidth(<ref refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" kindref="member">v</ref>-&gt;size().width()<sp/>/<sp/>sclY);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*scene()-&gt;setSceneRect(scene()-&gt;itemsBoundingRect());*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>fitInView(scene()-&gt;itemsBoundingRect(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="classminimap_1a6246ee18d06e114b55c5d8d20bd7ebb6" kindref="member">minimap::~minimap</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{}</highlight></codeline>
+    </programlisting>
+    <location file="minimap.cpp"/>
+  </compounddef>
+</doxygen>

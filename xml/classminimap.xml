@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="classminimap" kind="class" language="C++" prot="public">
+    <compoundname>minimap</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsView</basecompoundref>
+    <includes refid="minimap_8h" local="no">minimap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" prot="public" static="no" mutable="no">
+        <type><ref refid="class_view" kindref="compound">View</ref> *</type>
+        <definition>View* minimap::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <qualifiedname>minimap::v</qualifiedname>
+        <briefdescription>
+<para>Основное отображение </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="57" column="6" bodyfile="minimap.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classminimap_1aec768b3ddcdd8a0b29f174a2a6673a56" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float minimap::sclX</definition>
+        <argsstring></argsstring>
+        <name>sclX</name>
+        <qualifiedname>minimap::sclX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="58" column="7" bodyfile="minimap.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classminimap_1a0a2f166ed27c5550238837a6c1486569" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float minimap::sclY</definition>
+        <argsstring></argsstring>
+        <name>sclY</name>
+        <qualifiedname>minimap::sclY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="58" column="12" bodyfile="minimap.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classminimap_1a3135edec24c914f9af18976fddda7651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>minimap::minimap</definition>
+        <argsstring>(View *v)</argsstring>
+        <name>minimap</name>
+        <qualifiedname>minimap::minimap</qualifiedname>
+        <param>
+          <type><ref refid="class_view" kindref="compound">View</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>крадем сцену у v </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Основное отображение</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="22" column="1" bodyfile="minimap.cpp" bodystart="6" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classminimap_1ac6f839c092231f3beee553441b406316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void minimap::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseMoveEvent</name>
+        <qualifiedname>minimap::mouseMoveEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="27" column="6" bodyfile="minimap.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classminimap_1a098d5c3f522d5a3cdc3b7c85825d885b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void minimap::mouseReleaseEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>minimap::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="32" column="6" bodyfile="minimap.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classminimap_1ae693f15114622bfd83a2773219cfa450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void minimap::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>minimap::mousePressEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="37" column="6" bodyfile="minimap.cpp" bodystart="31" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classminimap_1a3fbb10d21bbc9e67af2f3bc36b46e9e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void minimap::mouseDoubleClickEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseDoubleClickEvent</name>
+        <qualifiedname>minimap::mouseDoubleClickEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Перегруз </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="42" column="6" bodyfile="minimap.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classminimap_1a6246ee18d06e114b55c5d8d20bd7ebb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>minimap::~minimap</definition>
+        <argsstring>()</argsstring>
+        <name>~minimap</name>
+        <qualifiedname>minimap::~minimap</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="53" column="1" bodyfile="minimap.cpp" bodystart="56" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classminimap_1aa258145892674bbb8f2b7519d88f86bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void minimap::rescale</definition>
+        <argsstring>()</argsstring>
+        <name>rescale</name>
+        <qualifiedname>minimap::rescale</qualifiedname>
+        <briefdescription>
+<para>Пересчет маштаба </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="minimap.h" line="63" column="6" bodyfile="minimap.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Мини карта </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Выводит ту же сцену что и основное отображение, но в другом маштабе </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="1">
+        <label>minimap</label>
+        <link refid="classminimap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QFrame</label>
+      </node>
+      <node id="2">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="3">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>minimap</label>
+        <link refid="classminimap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="minimap.h" line="13" column="1" bodyfile="minimap.h" bodystart="14" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classminimap_1a3135edec24c914f9af18976fddda7651" prot="public" virt="non-virtual"><scope>minimap</scope><name>minimap</name></member>
+      <member refid="classminimap_1a3fbb10d21bbc9e67af2f3bc36b46e9e3" prot="public" virt="non-virtual"><scope>minimap</scope><name>mouseDoubleClickEvent</name></member>
+      <member refid="classminimap_1ac6f839c092231f3beee553441b406316" prot="public" virt="non-virtual"><scope>minimap</scope><name>mouseMoveEvent</name></member>
+      <member refid="classminimap_1ae693f15114622bfd83a2773219cfa450" prot="public" virt="non-virtual"><scope>minimap</scope><name>mousePressEvent</name></member>
+      <member refid="classminimap_1a098d5c3f522d5a3cdc3b7c85825d885b" prot="public" virt="non-virtual"><scope>minimap</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classminimap_1aa258145892674bbb8f2b7519d88f86bd" prot="public" virt="non-virtual"><scope>minimap</scope><name>rescale</name></member>
+      <member refid="classminimap_1aec768b3ddcdd8a0b29f174a2a6673a56" prot="public" virt="non-virtual"><scope>minimap</scope><name>sclX</name></member>
+      <member refid="classminimap_1a0a2f166ed27c5550238837a6c1486569" prot="public" virt="non-virtual"><scope>minimap</scope><name>sclY</name></member>
+      <member refid="classminimap_1a020cb0b130c1d1805a5f5cd6decce321" prot="public" virt="non-virtual"><scope>minimap</scope><name>v</name></member>
+      <member refid="classminimap_1a6246ee18d06e114b55c5d8d20bd7ebb6" prot="public" virt="non-virtual"><scope>minimap</scope><name>~minimap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

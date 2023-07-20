@@ -1,0 +1,101 @@
+\doxysection{Класс Chain\+Table}
+\hypertarget{class_chain_table}{}\label{class_chain_table}\index{ChainTable@{ChainTable}}
+
+
+Табличный вид цепей  
+
+
+
+
+{\ttfamily \#include $<$chaintable.\+h$>$}
+
+Граф наследования\+:Chain\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chain_table}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_table_a75f53ce847bdaafe889925f0a431a0b0}\label{class_chain_table_a75f53ce847bdaafe889925f0a431a0b0} 
+void {\bfseries Update\+Table} ()
+\begin{DoxyCompactList}\small\item\em Обновление таблицы исходя из отображения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_table_a04a15b7732a17710e7e7fe89212ae683}{Cell\+Change}} (int row, int column)
+\begin{DoxyCompactList}\small\item\em Пересчет цепей по обновлению в таблице \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_table_a8271983e2a6869e5a09af159d97a275f}{Cell\+Clck}} (int row, int colum)
+\begin{DoxyCompactList}\small\item\em Оброботка клика на +. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_table_a578e40c7c72b035ee86fa6079f3504df}\label{class_chain_table_a578e40c7c72b035ee86fa6079f3504df} 
+{\bfseries Chain\+Table} ()
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_table_afa7a516fc5566a46e1ce8bec69809254}\label{class_chain_table_afa7a516fc5566a46e1ce8bec69809254} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Chain\+Table} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_table_a753de5db8bac800c05f524c582639003}\label{class_chain_table_a753de5db8bac800c05f524c582639003} 
+void {\bfseries Addd\+Port\+SL} ()
+\begin{DoxyCompactList}\small\item\em Добовление порта в отображеение \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_table_a72008028463e049fe41350d8826fedbb}\label{class_chain_table_a72008028463e049fe41350d8826fedbb} 
+void {\bfseries Add\+Chain} ()
+\begin{DoxyCompactList}\small\item\em Добовление Цепм в список и в отображение \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_table_aa0d66e209d4e5932e148b81ecbf37031}\label{class_chain_table_aa0d66e209d4e5932e148b81ecbf37031} 
+\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*} {\bfseries view} =nullptr
+\begin{DoxyCompactList}\small\item\em Отображение в котором выводятся цепи ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_table_a560b1cf4cc5065c26d035b73ee73e047}\label{class_chain_table_a560b1cf4cc5065c26d035b73ee73e047} 
+QMeta\+Object\+::\+Connection {\bfseries m\+\_\+connection}
+\begin{DoxyCompactList}\small\item\em связка для обновлений то нужна то мешает тч перезапись \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Табличный вид цепей 
+
+\doxysubsection{Методы}
+\Hypertarget{class_chain_table_a04a15b7732a17710e7e7fe89212ae683}\label{class_chain_table_a04a15b7732a17710e7e7fe89212ae683} 
+\index{ChainTable@{ChainTable}!CellChange@{CellChange}}
+\index{CellChange@{CellChange}!ChainTable@{ChainTable}}
+\doxysubsubsection{\texorpdfstring{CellChange}{CellChange}}
+{\footnotesize\ttfamily void Chain\+Table\+::\+Cell\+Change (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Пересчет цепей по обновлению в таблице 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & строка\\
+\hline
+{\em column} & колонка\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_table_a8271983e2a6869e5a09af159d97a275f}\label{class_chain_table_a8271983e2a6869e5a09af159d97a275f} 
+\index{ChainTable@{ChainTable}!CellClck@{CellClck}}
+\index{CellClck@{CellClck}!ChainTable@{ChainTable}}
+\doxysubsubsection{\texorpdfstring{CellClck}{CellClck}}
+{\footnotesize\ttfamily void Chain\+Table\+::\+Cell\+Clck (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{colum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Оброботка клика на +. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & строка\\
+\hline
+{\em colum} & колонка\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+chaintable.\+h\item 
+chaintable.\+cpp\end{DoxyCompactItemize}

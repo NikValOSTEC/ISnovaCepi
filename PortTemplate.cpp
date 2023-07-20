@@ -3,7 +3,6 @@
 #include"PinTemplate.h"
 #include"PortTwmplateObject.h"
 #include"SaveTemplates.h"
-#include"QLineEditFocusOutSignal.h"
 PortTemplate::PortTemplate(PortTwmplateObject* o)
     : Port()
 {

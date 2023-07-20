@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_g_item_frame" kind="class" language="C++" prot="public">
+    <compoundname>GItemFrame</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsItem</basecompoundref>
+    <includes refid="_g_item_frame_8h" local="no">GItemFrame.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_item_frame_1afc5dc2db0e88168386d8a4ba2da63416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GItemFrame::GItemFrame</definition>
+        <argsstring>()</argsstring>
+        <name>GItemFrame</name>
+        <qualifiedname>GItemFrame::GItemFrame</qualifiedname>
+        <briefdescription>
+<para>QGraphicsItem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GItemFrame.h" line="17" column="1" bodyfile="GItemFrame.cpp" bodystart="4" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_item_frame_1a8dcb43dce7a0ad403984592a755d3979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GItemFrame::~GItemFrame</definition>
+        <argsstring>()</argsstring>
+        <name>~GItemFrame</name>
+        <qualifiedname>GItemFrame::~GItemFrame</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GItemFrame.h" line="21" column="1" bodyfile="GItemFrame.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_item_frame_1a3e9be37e3aa992c2f5bef4e02365940b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF GItemFrame::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>GItemFrame::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GItemFrame.h" line="27" column="8" bodyfile="GItemFrame.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_item_frame_1a2b528a8cfdd9b85f1fdef3a40721ed9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath GItemFrame::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>GItemFrame::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GItemFrame.h" line="33" column="14" bodyfile="GItemFrame.cpp" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_item_frame_1a7c0d32b3bd2b73de98db313be87b2b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GItemFrame::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>GItemFrame::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GItemFrame.h" line="39" column="6" bodyfile="GItemFrame.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Красная рамка </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GItemFrame</label>
+        <link refid="class_g_item_frame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsItem</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GItemFrame</label>
+        <link refid="class_g_item_frame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsItem</label>
+      </node>
+    </collaborationgraph>
+    <location file="GItemFrame.h" line="10" column="1" bodyfile="GItemFrame.h" bodystart="11" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_g_item_frame_1a3e9be37e3aa992c2f5bef4e02365940b" prot="public" virt="non-virtual"><scope>GItemFrame</scope><name>boundingRect</name></member>
+      <member refid="class_g_item_frame_1afc5dc2db0e88168386d8a4ba2da63416" prot="public" virt="non-virtual"><scope>GItemFrame</scope><name>GItemFrame</name></member>
+      <member refid="class_g_item_frame_1a7c0d32b3bd2b73de98db313be87b2b6a" prot="public" virt="non-virtual"><scope>GItemFrame</scope><name>paint</name></member>
+      <member refid="class_g_item_frame_1a2b528a8cfdd9b85f1fdef3a40721ed9d" prot="public" virt="non-virtual"><scope>GItemFrame</scope><name>shape</name></member>
+      <member refid="class_g_item_frame_1a8dcb43dce7a0ad403984592a755d3979" prot="public" virt="non-virtual"><scope>GItemFrame</scope><name>~GItemFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

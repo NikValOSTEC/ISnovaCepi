@@ -1,0 +1,74 @@
+\doxysection{Класс Remove\+Port\+Comand}
+\hypertarget{class_remove_port_comand}{}\label{class_remove_port_comand}\index{RemovePortComand@{RemovePortComand}}
+
+
+Undo Redo Удаление разъема  
+
+
+
+
+{\ttfamily \#include $<$Remove\+Port\+Comand.\+h$>$}
+
+Граф наследования\+:Remove\+Port\+Comand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_remove_port_comand}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_remove_port_comand_a0178019ebef7c6b564cfa56ef3056bdf}{Remove\+Port\+Comand}} (\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}p)
+\item 
+\Hypertarget{class_remove_port_comand_a5f854db93eb66cee6b78099f29de5aa2}\label{class_remove_port_comand_a5f854db93eb66cee6b78099f29de5aa2} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Remove\+Port\+Comand} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_port_comand_afbf154f4ce67148e56e1de979c20fdff}\label{class_remove_port_comand_afbf154f4ce67148e56e1de979c20fdff} 
+void {\bfseries undo} () override
+\begin{DoxyCompactList}\small\item\em Создает разъем снова и закладывает его в ту же команду создания для сохранения цепочки \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_port_comand_ac43040ba49d175434e567c920ca58776}\label{class_remove_port_comand_ac43040ba49d175434e567c920ca58776} 
+void {\bfseries redo} () override
+\begin{DoxyCompactList}\small\item\em Удаляет разъем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_remove_port_comand_a2f93a7fbd2639aecbde288aae4154f1c}\label{class_remove_port_comand_a2f93a7fbd2639aecbde288aae4154f1c} 
+QString {\bfseries name}
+\begin{DoxyCompactList}\small\item\em имя разъема \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_port_comand_abcb86d5320b5457d4715cdf0155d8868}\label{class_remove_port_comand_abcb86d5320b5457d4715cdf0155d8868} 
+\mbox{\hyperlink{class_add_comand}{Add\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries addcom}
+\begin{DoxyCompactList}\small\item\em Команда создания удаляемого разъема (для перезаписи при откате) \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_port_comand_a4dac2a52619b6617f816e1a6b0eb38e2}\label{class_remove_port_comand_a4dac2a52619b6617f816e1a6b0eb38e2} 
+\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*} {\bfseries v}
+\begin{DoxyCompactList}\small\item\em отображение в котором лежит разъем \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_port_comand_a259cfd9d5719f48dec595b74525578ab}\label{class_remove_port_comand_a259cfd9d5719f48dec595b74525578ab} 
+int {\bfseries xx}
+\begin{DoxyCompactList}\small\item\em координаты разъема \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_port_comand_af6b1df2d9d69910d203ffd5473166b7b}\label{class_remove_port_comand_af6b1df2d9d69910d203ffd5473166b7b} 
+int {\bfseries yy}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Undo Redo Удаление разъема 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_remove_port_comand_a0178019ebef7c6b564cfa56ef3056bdf}\label{class_remove_port_comand_a0178019ebef7c6b564cfa56ef3056bdf} 
+\index{RemovePortComand@{RemovePortComand}!RemovePortComand@{RemovePortComand}}
+\index{RemovePortComand@{RemovePortComand}!RemovePortComand@{RemovePortComand}}
+\doxysubsubsection{\texorpdfstring{RemovePortComand()}{RemovePortComand()}}
+{\footnotesize\ttfamily Remove\+Port\+Comand\+::\+Remove\+Port\+Comand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+создание команды в стэк
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & удаляемый разъем\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Remove\+Port\+Comand.\+h\item 
+Remove\+Port\+Comand.\+cpp\end{DoxyCompactItemize}

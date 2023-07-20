@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_whire_remove_comand_8h" kind="file" language="C++">
+    <compoundname>WhireRemoveComand.h</compoundname>
+    <includes local="no">QUndoCommand</includes>
+    <includedby refid="_whire_remove_comand_8cpp" local="yes">WhireRemoveComand.cpp</includedby>
+    <includedby refid="chain_8cpp" local="yes">chain.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>WhireRemoveComand.h</label>
+        <link refid="_whire_remove_comand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_whire_remove_comand" prot="public">WhireRemoveComand</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_whire_remove_comand_8h_1ab372af6f24da7d789016b82708b2816a" prot="public" static="no">
+        <name>WHIREREMOVECOMAND_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WhireRemoveComand.h" line="3" column="9" bodyfile="WhireRemoveComand.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WHIREREMOVECOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHIREREMOVECOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QUndoCommand&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_new_whire" kindref="compound">NewWhire</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_whire_remove_comand" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_whire_remove_comand" kindref="compound">WhireRemoveComand</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QUndoCommand</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_whire_remove_comand" kindref="compound">WhireRemoveComand</ref>(<ref refid="class_new_whire" kindref="compound">NewWhire</ref>*<sp/>w);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_whire_remove_comand_1aa6a8132c6101c58d1b40f13672fcdc51" kindref="member">~WhireRemoveComand</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_whire_remove_comand_1a97c94f65142f2aeb21ea09c41a2e8928" kindref="member">undo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_whire_remove_comand_1ad6b10c4141d241453f720f5652a3e4ab" kindref="member">redo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34" refid="class_whire_remove_comand_1a6c9f136ccd99bcf33cd51ff4f1428eff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*<sp/><ref refid="class_whire_remove_comand_1a6c9f136ccd99bcf33cd51ff4f1428eff" kindref="member">p1</ref>,<sp/>*<sp/>p2;</highlight></codeline>
+<codeline lineno="38" refid="class_whire_remove_comand_1a039c38bb7678de316a3943e22884b679" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>*<sp/><ref refid="class_whire_remove_comand_1a039c38bb7678de316a3943e22884b679" kindref="member">wc</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="WhireRemoveComand.h"/>
+  </compounddef>
+</doxygen>

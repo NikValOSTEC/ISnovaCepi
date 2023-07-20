@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_chain_table" kind="class" language="C++" prot="public">
+    <compoundname>ChainTable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QTableWidget</basecompoundref>
+    <includes refid="chaintable_8h" local="no">chaintable.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_chain_table_1aa0d66e209d4e5932e148b81ecbf37031" prot="public" static="no" mutable="no">
+        <type><ref refid="class_view" kindref="compound">View</ref> *</type>
+        <definition>View* ChainTable::view</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <qualifiedname>ChainTable::view</qualifiedname>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+<para>Отображение в котором выводятся цепи <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="28" column="6" bodyfile="chaintable.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_chain_table_1a560b1cf4cc5065c26d035b73ee73e047" prot="protected" static="no" mutable="no">
+        <type>QMetaObject::Connection</type>
+        <definition>QMetaObject::Connection ChainTable::m_connection</definition>
+        <argsstring></argsstring>
+        <name>m_connection</name>
+        <qualifiedname>ChainTable::m_connection</qualifiedname>
+        <briefdescription>
+<para>связка для обновлений то нужна то мешает тч перезапись </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="58" column="25" bodyfile="chaintable.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_chain_table_1a578e40c7c72b035ee86fa6079f3504df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChainTable::ChainTable</definition>
+        <argsstring>()</argsstring>
+        <name>ChainTable</name>
+        <qualifiedname>ChainTable::ChainTable</qualifiedname>
+        <briefdescription>
+<para>Конструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="20" column="1" bodyfile="chaintable.cpp" bodystart="7" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_table_1afa7a516fc5566a46e1ce8bec69809254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChainTable::~ChainTable</definition>
+        <argsstring>()</argsstring>
+        <name>~ChainTable</name>
+        <qualifiedname>ChainTable::~ChainTable</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="24" column="1" bodyfile="chaintable.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_table_1a753de5db8bac800c05f524c582639003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainTable::AdddPortSL</definition>
+        <argsstring>()</argsstring>
+        <name>AdddPortSL</name>
+        <qualifiedname>ChainTable::AdddPortSL</qualifiedname>
+        <briefdescription>
+<para>Добовление порта в отображеение </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="32" column="6" bodyfile="chaintable.cpp" bodystart="102" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_chain_table_1a72008028463e049fe41350d8826fedbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainTable::AddChain</definition>
+        <argsstring>()</argsstring>
+        <name>AddChain</name>
+        <qualifiedname>ChainTable::AddChain</qualifiedname>
+        <briefdescription>
+<para>Добовление Цепм в список и в отображение </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="36" column="6" bodyfile="chaintable.cpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_chain_table_1a75f53ce847bdaafe889925f0a431a0b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainTable::UpdateTable</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateTable</name>
+        <qualifiedname>ChainTable::UpdateTable</qualifiedname>
+        <briefdescription>
+<para>Обновление таблицы исходя из отображения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="41" column="6" bodyfile="chaintable.cpp" bodystart="32" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_chain_table_1a04a15b7732a17710e7e7fe89212ae683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainTable::CellChange</definition>
+        <argsstring>(int row, int column)</argsstring>
+        <name>CellChange</name>
+        <qualifiedname>ChainTable::CellChange</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Пересчет цепей по обновлению в таблице </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строка</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>колонка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="47" column="6" bodyfile="chaintable.cpp" bodystart="125" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_chain_table_1a8271983e2a6869e5a09af159d97a275f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChainTable::CellClck</definition>
+        <argsstring>(int row, int colum)</argsstring>
+        <name>CellClck</name>
+        <qualifiedname>ChainTable::CellClck</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colum</declname>
+        </param>
+        <briefdescription>
+<para>Оброботка клика на +. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строка</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>колонка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="chaintable.h" line="53" column="6" bodyfile="chaintable.cpp" bodystart="207" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Табличный вид цепей </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ChainTable</label>
+        <link refid="class_chain_table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QTableWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ChainTable</label>
+        <link refid="class_chain_table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>view</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QFrame</label>
+      </node>
+      <node id="6">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="2">
+        <label>QTableWidget</label>
+      </node>
+      <node id="3">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="chaintable.h" line="12" column="1" bodyfile="chaintable.h" bodystart="13" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_chain_table_1a72008028463e049fe41350d8826fedbb" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>AddChain</name></member>
+      <member refid="class_chain_table_1a753de5db8bac800c05f524c582639003" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>AdddPortSL</name></member>
+      <member refid="class_chain_table_1a04a15b7732a17710e7e7fe89212ae683" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>CellChange</name></member>
+      <member refid="class_chain_table_1a8271983e2a6869e5a09af159d97a275f" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>CellClck</name></member>
+      <member refid="class_chain_table_1a578e40c7c72b035ee86fa6079f3504df" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>ChainTable</name></member>
+      <member refid="class_chain_table_1a560b1cf4cc5065c26d035b73ee73e047" prot="protected" virt="non-virtual"><scope>ChainTable</scope><name>m_connection</name></member>
+      <member refid="class_chain_table_1a75f53ce847bdaafe889925f0a431a0b0" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>UpdateTable</name></member>
+      <member refid="class_chain_table_1aa0d66e209d4e5932e148b81ecbf37031" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>view</name></member>
+      <member refid="class_chain_table_1afa7a516fc5566a46e1ce8bec69809254" prot="public" virt="non-virtual"><scope>ChainTable</scope><name>~ChainTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

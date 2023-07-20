@@ -1,0 +1,74 @@
+\doxysection{Класс Add\+Whire\+Command}
+\hypertarget{class_add_whire_command}{}\label{class_add_whire_command}\index{AddWhireCommand@{AddWhireCommand}}
+
+
+Класс наследник от QUndo\+Command на добавление нового разъема на сцену  
+
+
+
+
+{\ttfamily \#include $<$Add\+Whire\+Command.\+h$>$}
+
+Граф наследования\+:Add\+Whire\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_whire_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_whire_command_ae647982c8cc9c12e7074d4d5501377b1}{Add\+Whire\+Command}} (\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*}p11, \mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*}p22)
+\begin{DoxyCompactList}\small\item\em Сам в себе высерает себя же в стэк из контакта p11 и добавляет на сцену, из view в разъеме контакта p11 провод,. \end{DoxyCompactList}\item 
+\Hypertarget{class_add_whire_command_a085c1fcb56138f6e5312b98d129ae4bf}\label{class_add_whire_command_a085c1fcb56138f6e5312b98d129ae4bf} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Add\+Whire\+Command} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_add_whire_command_ac7351ba1df94fc2dca0406a0f9ab15f0}\label{class_add_whire_command_ac7351ba1df94fc2dca0406a0f9ab15f0} 
+void {\bfseries undo} () override
+\begin{DoxyCompactList}\small\item\em Удаляет провод \end{DoxyCompactList}\item 
+\Hypertarget{class_add_whire_command_abfeb73f7b567beb76e41666c7d1ad8b3}\label{class_add_whire_command_abfeb73f7b567beb76e41666c7d1ad8b3} 
+void {\bfseries redo} () override
+\begin{DoxyCompactList}\small\item\em Создает провод \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_add_whire_command_adf93147b5d190ef3bec6b7def6ab9996}\label{class_add_whire_command_adf93147b5d190ef3bec6b7def6ab9996} 
+\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries p1}
+\begin{DoxyCompactList}\small\item\em Контакты соедененные проводом \end{DoxyCompactList}\item 
+\Hypertarget{class_add_whire_command_a7d051fc9583ecb9e243e9c56eec63716}\label{class_add_whire_command_a7d051fc9583ecb9e243e9c56eec63716} 
+\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries p2}
+\item 
+\Hypertarget{class_add_whire_command_a212872ee851c13ccd52a656cfe1ed837}\label{class_add_whire_command_a212872ee851c13ccd52a656cfe1ed837} 
+\mbox{\hyperlink{class_new_whire}{New\+Whire}} \texorpdfstring{$\ast$}{*} {\bfseries whire}
+\begin{DoxyCompactList}\small\item\em Созданный провод \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс наследник от QUndo\+Command на добавление нового разъема на сцену 
+
+Класс \"{}сам в себе\"{}, жрет ы конструкторе там же пушится в стэк.... 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_add_whire_command_ae647982c8cc9c12e7074d4d5501377b1}\label{class_add_whire_command_ae647982c8cc9c12e7074d4d5501377b1} 
+\index{AddWhireCommand@{AddWhireCommand}!AddWhireCommand@{AddWhireCommand}}
+\index{AddWhireCommand@{AddWhireCommand}!AddWhireCommand@{AddWhireCommand}}
+\doxysubsubsection{\texorpdfstring{AddWhireCommand()}{AddWhireCommand()}}
+{\footnotesize\ttfamily Add\+Whire\+Command\+::\+Add\+Whire\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*}}]{p11,  }\item[{\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*}}]{p22 }\end{DoxyParamCaption})}
+
+
+
+Сам в себе высерает себя же в стэк из контакта p11 и добавляет на сцену, из view в разъеме контакта p11 провод,. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p11} & Первый контакт соедененный проводом\\
+\hline
+{\em p22} & Второй контакт соедененный проводом\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Add\+Whire\+Command.\+h\item 
+Add\+Whire\+Command.\+cpp\end{DoxyCompactItemize}

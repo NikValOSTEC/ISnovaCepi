@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_pin_line_colision" kind="class" language="C++" prot="public">
+    <compoundname>PinLineColision</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsLineItem</basecompoundref>
+    <basecompoundref prot="private" virt="non-virtual">QObject</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pin_line_colision_1a7ff13ff7e0443da51c7bfc8b85d48807" prot="private" static="no" mutable="no">
+        <type>QPainterPath</type>
+        <definition>QPainterPath PinLineColision::patt</definition>
+        <argsstring></argsstring>
+        <name>patt</name>
+        <qualifiedname>PinLineColision::patt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="11" column="18" bodyfile="pinlinecolision.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_line_colision_1a3e3a708c6653236aea6aed4d4a3e1f7d" prot="private" static="no" mutable="no">
+        <type>QPainterPath</type>
+        <definition>QPainterPath PinLineColision::pattest</definition>
+        <argsstring></argsstring>
+        <name>pattest</name>
+        <qualifiedname>PinLineColision::pattest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="11" column="22" bodyfile="pinlinecolision.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pin_line_colision_1a92fa77c4644a871f5ce4238616a76f7f" prot="private" static="no" mutable="no">
+        <type><ref refid="classdotold" kindref="compound">dotold</ref> *</type>
+        <definition>dotold* PinLineColision::Dot</definition>
+        <argsstring></argsstring>
+        <name>Dot</name>
+        <qualifiedname>PinLineColision::Dot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="12" column="12" bodyfile="pinlinecolision.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_pin_line_colision_1a3875dbce93072f630fafedb5f67f24b5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin* PinLineColision::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <qualifiedname>PinLineColision::p1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="14" column="9" bodyfile="pinlinecolision.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pin_line_colision_1a55eaacbaca89099587f1a36b5b0206ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF PinLineColision::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>PinLineColision::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="15" column="12" bodyfile="pinlinecolision.cpp" bodystart="11" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_line_colision_1ad314ac341f197bcac871d16f3f754eed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath PinLineColision::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>PinLineColision::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="16" column="18" bodyfile="pinlinecolision.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_line_colision_1ac193b74ec661573d241bc967f2a2b9ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PinLineColision::updateShape</definition>
+        <argsstring>()</argsstring>
+        <name>updateShape</name>
+        <qualifiedname>PinLineColision::updateShape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="17" column="10" bodyfile="pinlinecolision.cpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_line_colision_1af44a22b03c04c9f185b9b9bee43eac70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PinLineColision::FixColliding</definition>
+        <argsstring>()</argsstring>
+        <name>FixColliding</name>
+        <qualifiedname>PinLineColision::FixColliding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="18" column="10" bodyfile="pinlinecolision.cpp" bodystart="47" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_line_colision_1a12a16aac173629d816a54160acd55c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal PinLineColision::y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <qualifiedname>PinLineColision::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="19" column="11" bodyfile="pinlinecolision.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_line_colision_1a5afac1a83487e11d87056807a1a5fbd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PinLineColision::PinLineColision</definition>
+        <argsstring>(Pin *p, QThread *thr=nullptr)</argsstring>
+        <name>PinLineColision</name>
+        <qualifiedname>PinLineColision::PinLineColision</qualifiedname>
+        <param>
+          <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>QThread *</type>
+          <declname>thr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="20" column="5" bodyfile="pinlinecolision.cpp" bodystart="209" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pin_line_colision_1aa772a3bc897e7fb7910126b1fb8fa927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PinLineColision::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>PinLineColision::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pinlinecolision.h" line="21" column="10" bodyfile="pinlinecolision.cpp" bodystart="221" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PinLineColision</label>
+        <link refid="class_pin_line_colision"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsLineItem</label>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>AddPinComand</label>
+        <link refid="class_add_pin_comand"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>pn</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>prt</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Chain</label>
+        <link refid="class_chain"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Pin</label>
+        <link refid="class_pin"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>parCon</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>chain</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>command</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PinLineColision</label>
+        <link refid="class_pin_line_colision"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p1</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QFrame</label>
+      </node>
+      <node id="15">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="2">
+        <label>QGraphicsLineItem</label>
+      </node>
+      <node id="13">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="5">
+        <label>QLineEdit</label>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="9">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="7">
+        <label>QWidget</label>
+      </node>
+      <node id="10">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="pinlinecolision.h" line="8" column="1" bodyfile="pinlinecolision.h" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_pin_line_colision_1a55eaacbaca89099587f1a36b5b0206ab" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>boundingRect</name></member>
+      <member refid="class_pin_line_colision_1a92fa77c4644a871f5ce4238616a76f7f" prot="private" virt="non-virtual"><scope>PinLineColision</scope><name>Dot</name></member>
+      <member refid="class_pin_line_colision_1af44a22b03c04c9f185b9b9bee43eac70" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>FixColliding</name></member>
+      <member refid="class_pin_line_colision_1a3875dbce93072f630fafedb5f67f24b5" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>p1</name></member>
+      <member refid="class_pin_line_colision_1aa772a3bc897e7fb7910126b1fb8fa927" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>paint</name></member>
+      <member refid="class_pin_line_colision_1a7ff13ff7e0443da51c7bfc8b85d48807" prot="private" virt="non-virtual"><scope>PinLineColision</scope><name>patt</name></member>
+      <member refid="class_pin_line_colision_1a3e3a708c6653236aea6aed4d4a3e1f7d" prot="private" virt="non-virtual"><scope>PinLineColision</scope><name>pattest</name></member>
+      <member refid="class_pin_line_colision_1a5afac1a83487e11d87056807a1a5fbd2" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>PinLineColision</name></member>
+      <member refid="class_pin_line_colision_1ad314ac341f197bcac871d16f3f754eed" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>shape</name></member>
+      <member refid="class_pin_line_colision_1ac193b74ec661573d241bc967f2a2b9ee" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>updateShape</name></member>
+      <member refid="class_pin_line_colision_1a12a16aac173629d816a54160acd55c48" prot="public" virt="non-virtual"><scope>PinLineColision</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

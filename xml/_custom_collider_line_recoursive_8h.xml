@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_custom_collider_line_recoursive_8h" kind="file" language="C++">
+    <compoundname>CustomColliderLineRecoursive.h</compoundname>
+    <includes local="no">qobject.h</includes>
+    <includes local="no">qgraphicsobject</includes>
+    <includes local="yes">qgraphicsscene.h</includes>
+    <includedby refid="_custom_collider_line_recoursive_8cpp" local="yes">CustomColliderLineRecoursive.cpp</includedby>
+    <includedby refid="_new_pin_whire_8h" local="yes">NewPinWhire.h</includedby>
+    <includedby refid="_new_whire_8h" local="yes">NewWhire.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qgraphicsobject</label>
+      </node>
+      <node id="4">
+        <label>qgraphicsscene.h</label>
+      </node>
+      <node id="2">
+        <label>qobject.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NewPinWhire.h</label>
+        <link refid="_new_pin_whire_8h_source"/>
+      </node>
+      <node id="3">
+        <label>NewWhire.h</label>
+        <link refid="_new_whire_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_custom_collider_line_recoursive" prot="public">CustomColliderLineRecoursive</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_custom_collider_line_recoursive_8h_1a6499883d1ed8178792c3280b8f1c51c1" prot="public" static="no">
+        <name>CUSTOMCOLLIDERLINERECOURSIVE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="3" column="9" bodyfile="CustomColliderLineRecoursive.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_custom_collider_line_recoursive_8h_1a77d4762446442db135b6c9fc7b479b69" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ColisionFixWay</name>
+        <enumvalue id="_custom_collider_line_recoursive_8h_1a77d4762446442db135b6c9fc7b479b69ab7e4e0120a041dbe6528b050c04269e0" prot="public">
+          <name>none</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_custom_collider_line_recoursive_8h_1a77d4762446442db135b6c9fc7b479b69a28587bd6fdb2fda96552863fb27851cd" prot="public">
+          <name>run</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_custom_collider_line_recoursive_8h_1a77d4762446442db135b6c9fc7b479b69ad0cf92ec45de7b8e5f5ba706ad557e71" prot="public">
+          <name>flow</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CustomColliderLineRecoursive.h" line="11" column="1" bodyfile="CustomColliderLineRecoursive.h" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CUSTOMCOLLIDERLINERECOURSIVE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CUSTOMCOLLIDERLINERECOURSIVE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qobject.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qgraphicsobject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qgraphicsscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_dot" kindref="compound">Dot</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>ColisionFixWay</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>none,<sp/>run,<sp/>flow</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18" refid="class_custom_collider_line_recoursive" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsObject</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QColor<sp/><ref refid="class_custom_collider_line_recoursive_1adbb39c32411e7041d0e77851e215d2fe" kindref="member">color</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Vertical_f_Horiz_t,<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/><ref refid="class_custom_collider_line_recoursive_1af5c0e98eca59f91818caaa334f90d85a" kindref="member">d1</ref>,<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>d2,<sp/><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>*<sp/>parent=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_custom_collider_line_recoursive_1a6491fcf9b4f792271ec635d96b8a577d" kindref="member">~CustomColliderLineRecoursive</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/><ref refid="class_custom_collider_line_recoursive_1a8bb3f83d68cc08e188c15b8ec0ac3e74" kindref="member">boundingRect</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/><ref refid="class_custom_collider_line_recoursive_1ae1e4cbe9ad3d81fffbb05fdeabfd99b1" kindref="member">shape</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a5ff5d9a184b77af419ba5e4850fd0cef" kindref="member">paint</ref>(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionGraphicsItem*<sp/>option,<sp/>QWidget*<sp/>widget)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a0e5186f9d4b3d8a6494d6457cca1422b" kindref="member">setFixWay</ref>(ColisionFixWay<sp/>fw);</highlight></codeline>
+<codeline lineno="73" refid="class_custom_collider_line_recoursive_1a8f80fb06a877bfc6af449bb1bfc50199" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;QGraphicsItem*&gt;<ref refid="class_custom_collider_line_recoursive_1a8f80fb06a877bfc6af449bb1bfc50199" kindref="member">itsmine</ref>;</highlight></codeline>
+<codeline lineno="77" refid="class_custom_collider_line_recoursive_1aaa8d9f754a4f91f2ddc3f3bdbabe9ae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1aaa8d9f754a4f91f2ddc3f3bdbabe9ae6" kindref="member">Vertical_f_Horizontal_t</ref>;</highlight></codeline>
+<codeline lineno="81" refid="class_custom_collider_line_recoursive_1a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3" kindref="member">JumpDerection</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a29e5d4ba6ff85387b29a1803646ccb09" kindref="member">FixColliding</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>times=0);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1acfe70cb954bafe2bb3af0b4303bc0e75" kindref="member">ClearInside</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a3cd32fa2a62f4cd21c55ebd244b3618d" kindref="member">setVertical</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a81098aa1c6428636b55cd37989a208d1" kindref="member">setHorizontal</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_custom_collider_line_recoursive_1a2129474398747e0388be32b93e1baf58" kindref="member">JumpFrom</ref>(QGraphicsItem*<sp/>itm);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110" refid="class_custom_collider_line_recoursive_1af5c0e98eca59f91818caaa334f90d85a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dot" kindref="compound">Dot</ref>*<sp/><ref refid="class_custom_collider_line_recoursive_1af5c0e98eca59f91818caaa334f90d85a" kindref="member">d1</ref>,<sp/>*d2;</highlight></codeline>
+<codeline lineno="114" refid="class_custom_collider_line_recoursive_1a5be8c91ab013083fbe0401ee0732f1f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ColisionFixWay<sp/><ref refid="class_custom_collider_line_recoursive_1a5be8c91ab013083fbe0401ee0732f1f9" kindref="member">fixway</ref>;</highlight></codeline>
+<codeline lineno="118" refid="class_custom_collider_line_recoursive_1ab1c47059a7df21ceb455eb4c8c0e11e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;QGraphicsObject*&gt;<sp/><ref refid="class_custom_collider_line_recoursive_1ab1c47059a7df21ceb455eb4c8c0e11e4" kindref="member">inside</ref>;</highlight></codeline>
+<codeline lineno="122" refid="class_custom_collider_line_recoursive_1a85e82eeb154e5b25934ee14947ef5aa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_proxy_rect_port" kindref="compound">ProxyRectPort</ref>*<sp/><ref refid="class_custom_collider_line_recoursive_1a85e82eeb154e5b25934ee14947ef5aa1" kindref="member">lastcolide</ref>=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastleft,<sp/>lastbottom;</highlight></codeline>
+<codeline lineno="127" refid="class_custom_collider_line_recoursive_1a40dd74750416108c5162884820ac5b08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref>*<sp/><ref refid="class_custom_collider_line_recoursive_1a40dd74750416108c5162884820ac5b08" kindref="member">Parent</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="CustomColliderLineRecoursive.h"/>
+  </compounddef>
+</doxygen>

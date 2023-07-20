@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_remove_pin_command_8h" kind="file" language="C++">
+    <compoundname>RemovePinCommand.h</compoundname>
+    <includes local="no">QUndoCommand</includes>
+    <includedby refid="_remove_pin_command_8cpp" local="yes">RemovePinCommand.cpp</includedby>
+    <includedby refid="_whire_remove_comand_8cpp" local="yes">WhireRemoveComand.cpp</includedby>
+    <includedby refid="pin_8cpp" local="yes">pin.cpp</includedby>
+    <includedby refid="port_8cpp" local="yes">port.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>RemovePinCommand.h</label>
+        <link refid="_remove_pin_command_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_remove_pin_command" prot="public">RemovePinCommand</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_remove_pin_command_8h_1aab6b34b8d2bd2e6cdc27e65a908a3237" prot="public" static="no">
+        <name>REMOVEPINCOMMAND_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePinCommand.h" line="3" column="9" bodyfile="RemovePinCommand.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>REMOVEPINCOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REMOVEPINCOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QUndoCommand&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port" kindref="compound">Port</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_remove_pin_command" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_remove_pin_command" kindref="compound">RemovePinCommand</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QUndoCommand</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_remove_pin_command" kindref="compound">RemovePinCommand</ref>(<ref refid="class_pin" kindref="compound">Pin</ref>*p);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_remove_pin_command_1ac343119f9ed7d846738ed1592b307bb1" kindref="member">~RemovePinCommand</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_remove_pin_command_1a951f0464278bd92758d957064fa82067" kindref="member">undo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_remove_pin_command_1abd0042f83fc2f7bb6ee6887deb3ac236" kindref="member">redo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35" refid="class_remove_pin_command_1a478221782ad2272c8b999968cb26b1b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_remove_pin_command_1a478221782ad2272c8b999968cb26b1b6" kindref="member">pos</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39" refid="class_remove_pin_command_1ab0a83dd443ccb8d36ed42189c696b228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_remove_pin_command_1ab0a83dd443ccb8d36ed42189c696b228" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="class_remove_pin_command_1ae0c467492dcf912c2ceac60dba0964b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*<sp/><ref refid="class_remove_pin_command_1ae0c467492dcf912c2ceac60dba0964b4" kindref="member">pinc</ref>;</highlight></codeline>
+<codeline lineno="47" refid="class_remove_pin_command_1ab631e473adf864172ba580ca8c414cd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_port" kindref="compound">Port</ref>*<sp/><ref refid="class_remove_pin_command_1ab631e473adf864172ba580ca8c414cd7" kindref="member">prt</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_remove_pin_command_1aef07f531384fee903eeb246368084e8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/><ref refid="class_remove_pin_command_1aef07f531384fee903eeb246368084e8a" kindref="member">pin</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="RemovePinCommand.h"/>
+  </compounddef>
+</doxygen>

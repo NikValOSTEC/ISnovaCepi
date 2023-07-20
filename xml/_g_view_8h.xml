@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_g_view_8h" kind="file" language="C++">
+    <compoundname>GView.h</compoundname>
+    <includes local="no">qobject.h</includes>
+    <includes local="yes">qgraphicsview.h</includes>
+    <includes local="no">qdrag.h</includes>
+    <includes local="no">qevent.h</includes>
+    <includes local="no">QMimeData</includes>
+    <includedby refid="_g_item_frame_8cpp" local="yes">GItemFrame.cpp</includedby>
+    <includedby refid="_g_view_8cpp" local="yes">GView.cpp</includedby>
+    <includedby refid="minimap_8cpp" local="yes">minimap.cpp</includedby>
+    <includedby refid="view_8cpp" local="yes">view.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>GView.h</label>
+        <link refid="_g_view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QMimeData</label>
+      </node>
+      <node id="4">
+        <label>qdrag.h</label>
+      </node>
+      <node id="5">
+        <label>qevent.h</label>
+      </node>
+      <node id="3">
+        <label>qgraphicsview.h</label>
+      </node>
+      <node id="2">
+        <label>qobject.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_g_view" prot="public">GView</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_g_view_8h_1a8889d61970e84c60184f9ddb5316e631" prot="public" static="no">
+        <name>GVIEW_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GView.h" line="3" column="9" bodyfile="GView.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GVIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GVIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qobject.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qgraphicsview.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qdrag.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qevent.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QMimeData&gt;</highlight></codeline>
+<codeline lineno="16" refid="class_g_view" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_view" kindref="compound">GView</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsView</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_view" kindref="compound">GView</ref>(QObject<sp/>*parent);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_view_1a5bd5b8767296f536deba5bd4b282eefe" kindref="member">~GView</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*<sp/><ref refid="class_g_view_1abeac3a6133d2391cfe43a0a3d0bc67f6" kindref="member">GScene</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1a2d616b7a6b6f5b5fc7f27c257dd9dc38" kindref="member">mouseMoveEvent</ref>(QMouseEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1a2b2d91568c198cc78e4e8b0fc2de6595" kindref="member">mouseReleaseEvent</ref>(QMouseEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1a31d3091331dc5d08fde5495a0f11afd7" kindref="member">mousePressEvent</ref>(QMouseEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1aec6e3dff17f955aa487da46f896169c2" kindref="member">dropEvent</ref>(QDropEvent*<sp/>event)</highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1aed97f13d26c8f3cd82c9a8faab863380" kindref="member">dragEnterEvent</ref>(QDragEnterEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1af8e4aaa3f46e3a540ca13e662104680b" kindref="member">dragMoveEvent</ref>(QDragMoveEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68" refid="class_g_view_1a759c406a27639d29a0d9bf062ae24f19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_view_1a759c406a27639d29a0d9bf062ae24f19" kindref="member">lastselected</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="GView.h"/>
+  </compounddef>
+</doxygen>

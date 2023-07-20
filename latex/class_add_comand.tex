@@ -1,0 +1,86 @@
+\doxysection{Класс Add\+Comand}
+\hypertarget{class_add_comand}{}\label{class_add_comand}\index{AddComand@{AddComand}}
+
+
+Класс наследник от QUndo\+Command на добавление нового разъема на сцену  
+
+
+
+
+{\ttfamily \#include $<$Add\+Comand.\+h$>$}
+
+Граф наследования\+:Add\+Comand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_comand}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_comand_afce8b140974a6f369adef26e2744ddfe}{Add\+Comand}} (\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_add_comand_a19a6d50f1e1b7a03a2fe772663cca669}{v}}, int x, int y, QString \mbox{\hyperlink{class_add_comand_a3f9b87024de33e56d7e97794d940354c}{name}}=\"{}\"{})
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_add_comand_aa7486f143d9c0109d0d84ba4de18c6a7}\label{class_add_comand_aa7486f143d9c0109d0d84ba4de18c6a7} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Add\+Comand} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_add_comand_a36b328e17a2b6ae9b5703d42498602d3}\label{class_add_comand_a36b328e17a2b6ae9b5703d42498602d3} 
+void {\bfseries undo} () override
+\begin{DoxyCompactList}\small\item\em Запоминает координаты и имя, и удаляет разъем \end{DoxyCompactList}\item 
+\Hypertarget{class_add_comand_ad9e587e897f59c084c1a63c12b659ed8}\label{class_add_comand_ad9e587e897f59c084c1a63c12b659ed8} 
+void {\bfseries redo} () override
+\begin{DoxyCompactList}\small\item\em Создает разъем в переданных или запомненных координатах, с переданным или запомненным именем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_add_comand_ad9a5957b92ed0140894433c5110acb6f}\label{class_add_comand_ad9a5957b92ed0140894433c5110acb6f} 
+\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*} {\bfseries p}
+\begin{DoxyCompactList}\small\item\em Создаваемый разъем \end{DoxyCompactList}\item 
+\Hypertarget{class_add_comand_aadc3d9e56d633c175cb7bfaf7de8e02b}\label{class_add_comand_aadc3d9e56d633c175cb7bfaf7de8e02b} 
+int {\bfseries xx}
+\begin{DoxyCompactList}\small\item\em Координаты \end{DoxyCompactList}\item 
+\Hypertarget{class_add_comand_acd756ce088a4217bd0ee58993ee5644a}\label{class_add_comand_acd756ce088a4217bd0ee58993ee5644a} 
+int {\bfseries yy}
+\item 
+\Hypertarget{class_add_comand_a19a6d50f1e1b7a03a2fe772663cca669}\label{class_add_comand_a19a6d50f1e1b7a03a2fe772663cca669} 
+\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*} {\bfseries v}
+\begin{DoxyCompactList}\small\item\em Отображение в котором работает команда \end{DoxyCompactList}\item 
+\Hypertarget{class_add_comand_a3f9b87024de33e56d7e97794d940354c}\label{class_add_comand_a3f9b87024de33e56d7e97794d940354c} 
+QString {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Имя создоваемого порта \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс наследник от QUndo\+Command на добавление нового разъема на сцену 
+
+Класс \"{}сам в себе\"{}, жрет ы конструкторе там же пушится в стэк.... 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_add_comand_afce8b140974a6f369adef26e2744ddfe}\label{class_add_comand_afce8b140974a6f369adef26e2744ddfe} 
+\index{AddComand@{AddComand}!AddComand@{AddComand}}
+\index{AddComand@{AddComand}!AddComand@{AddComand}}
+\doxysubsubsection{\texorpdfstring{AddComand()}{AddComand()}}
+{\footnotesize\ttfamily Add\+Comand\+::\+Add\+Comand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_view}{View}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{QString}]{name = {\ttfamily \"{}\"{}} }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+Сам в себе высерает себя же в стэк из {\itshape v}  и добавляет на сцену, из view, \doxylink{class_port}{Port} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em v} & Отображение в котором нахоодится нужная сцена и нужный Undo стэк\\
+\hline
+{\em x} & Координата x разъема на сцене\\
+\hline
+{\em y} & Координата y разъема на сцене\\
+\hline
+{\em name} & Имя раъема\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Add\+Comand.\+h\item 
+Add\+Comand.\+cpp\end{DoxyCompactItemize}

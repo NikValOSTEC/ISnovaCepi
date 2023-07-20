@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_remove_port_comand_8h" kind="file" language="C++">
+    <compoundname>RemovePortComand.h</compoundname>
+    <includes local="no">QUndoCommand</includes>
+    <includedby refid="_remove_port_comand_8cpp" local="yes">RemovePortComand.cpp</includedby>
+    <includedby refid="port_8cpp" local="yes">port.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>RemovePortComand.h</label>
+        <link refid="_remove_port_comand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_remove_port_comand" prot="public">RemovePortComand</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_remove_port_comand_8h_1a37cf9e36496387299c91255b99513fdd" prot="public" static="no">
+        <name>REMOVECOMAND_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="3" column="9" bodyfile="RemovePortComand.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>REMOVECOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REMOVECOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QUndoCommand&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port" kindref="compound">Port</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_comand" kindref="compound">AddComand</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_view" kindref="compound">View</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_remove_port_comand" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_remove_port_comand" kindref="compound">RemovePortComand</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QUndoCommand</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_remove_port_comand" kindref="compound">RemovePortComand</ref>(<ref refid="class_port" kindref="compound">Port</ref>*<sp/>p);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_remove_port_comand_1a5f854db93eb66cee6b78099f29de5aa2" kindref="member">~RemovePortComand</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_remove_port_comand_1afbf154f4ce67148e56e1de979c20fdff" kindref="member">undo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_remove_port_comand_1ac43040ba49d175434e567c920ca58776" kindref="member">redo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34" refid="class_remove_port_comand_1a2f93a7fbd2639aecbde288aae4154f1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_remove_port_comand_1a2f93a7fbd2639aecbde288aae4154f1c" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="38" refid="class_remove_port_comand_1abcb86d5320b5457d4715cdf0155d8868" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_remove_port_comand_1abcb86d5320b5457d4715cdf0155d8868" kindref="member">addcom</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_remove_port_comand_1a4dac2a52619b6617f816e1a6b0eb38e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view" kindref="compound">View</ref>*<sp/><ref refid="class_remove_port_comand_1a4dac2a52619b6617f816e1a6b0eb38e2" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_remove_port_comand_1a259cfd9d5719f48dec595b74525578ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_remove_port_comand_1a259cfd9d5719f48dec595b74525578ab" kindref="member">xx</ref>,<sp/>yy;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="RemovePortComand.h"/>
+  </compounddef>
+</doxygen>

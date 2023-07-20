@@ -1,0 +1,79 @@
+\doxysection{Класс Add\+Pin\+Comand}
+\hypertarget{class_add_pin_comand}{}\label{class_add_pin_comand}\index{AddPinComand@{AddPinComand}}
+
+
+Класс наследник от QUndo\+Command на добавление нового контакта в разъем  
+
+
+
+
+{\ttfamily \#include $<$Add\+Pin\+Comand.\+h$>$}
+
+Граф наследования\+:Add\+Pin\+Comand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_pin_comand}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_pin_comand_a0a98feb765f5674cfade2dac11756d8c}{Add\+Pin\+Comand}} (\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}p, QString \mbox{\hyperlink{class_add_pin_comand_aadc33ab624c6d20a7160e389711b75b7}{name}}=\"{}\"{}, bool rea=true)
+\begin{DoxyCompactList}\small\item\em Сам в себе высерает себя же в стэк в котором лежит команда создания разъема p. \end{DoxyCompactList}\item 
+\Hypertarget{class_add_pin_comand_a5df4a5fcb9feb4e64736c1f4f1a1133e}\label{class_add_pin_comand_a5df4a5fcb9feb4e64736c1f4f1a1133e} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Add\+Pin\+Comand} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_add_pin_comand_ac1444bc27391754e1c52ad2bcf0de517}\label{class_add_pin_comand_ac1444bc27391754e1c52ad2bcf0de517} 
+void {\bfseries undo} () override
+\begin{DoxyCompactList}\small\item\em Удаляет контакт \end{DoxyCompactList}\item 
+\Hypertarget{class_add_pin_comand_a4712f1eeee58a11b8b963c056a71f844}\label{class_add_pin_comand_a4712f1eeee58a11b8b963c056a71f844} 
+void {\bfseries redo} () override
+\begin{DoxyCompactList}\small\item\em Создает контакт \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_add_pin_comand_aadc33ab624c6d20a7160e389711b75b7}\label{class_add_pin_comand_aadc33ab624c6d20a7160e389711b75b7} 
+QString {\bfseries name} = \"{}\"{}
+\begin{DoxyCompactList}\small\item\em Имя контакта \end{DoxyCompactList}\item 
+\Hypertarget{class_add_pin_comand_ac116493c9a6c212b1ab026b2db15e822}\label{class_add_pin_comand_ac116493c9a6c212b1ab026b2db15e822} 
+\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} {\bfseries pn} = nullptr
+\begin{DoxyCompactList}\small\item\em Созданный контакт для удаления в дальнейшем \end{DoxyCompactList}\item 
+\Hypertarget{class_add_pin_comand_a5a80759acbabe2a66b6a26ac7582ad4f}\label{class_add_pin_comand_a5a80759acbabe2a66b6a26ac7582ad4f} 
+\mbox{\hyperlink{class_add_comand}{Add\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries prt}
+\begin{DoxyCompactList}\small\item\em Команда создания разъема для вытягивания разъема так как он может быть перезаписан а команда останется \end{DoxyCompactList}\item 
+\Hypertarget{class_add_pin_comand_abdcfad848bad0c90ecadff6b7b867182}\label{class_add_pin_comand_abdcfad848bad0c90ecadff6b7b867182} 
+bool {\bfseries real}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс наследник от QUndo\+Command на добавление нового контакта в разъем 
+
+Класс \"{}сам в себе\"{}, жрет ы конструкторе там же пушится в стэк.... 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_add_pin_comand_a0a98feb765f5674cfade2dac11756d8c}\label{class_add_pin_comand_a0a98feb765f5674cfade2dac11756d8c} 
+\index{AddPinComand@{AddPinComand}!AddPinComand@{AddPinComand}}
+\index{AddPinComand@{AddPinComand}!AddPinComand@{AddPinComand}}
+\doxysubsubsection{\texorpdfstring{AddPinComand()}{AddPinComand()}}
+{\footnotesize\ttfamily Add\+Pin\+Comand\+::\+Add\+Pin\+Comand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{QString}]{name = {\ttfamily \"{}\"{}},  }\item[{bool}]{rea = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Сам в себе высерает себя же в стэк в котором лежит команда создания разъема p. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & Разъем в который добовляем крнтакт\\
+\hline
+{\em name} & имя создоваемого контакта\\
+\hline
+{\em rea} & false если шаблон порта, true если порт на сцене \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Add\+Pin\+Comand.\+h\item 
+Add\+Pin\+Comand.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,239 @@
+\doxysection{Класс Custom\+Collider\+Line\+Recoursive}
+\hypertarget{class_custom_collider_line_recoursive}{}\label{class_custom_collider_line_recoursive}\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+
+
+Линия с колизионной корекцией  
+
+
+
+
+{\ttfamily \#include $<$Custom\+Collider\+Line\+Recoursive.\+h$>$}
+
+Граф наследования\+:Custom\+Collider\+Line\+Recoursive\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_custom_collider_line_recoursive}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a29e5d4ba6ff85387b29a1803646ccb09}{Fix\+Colliding}} (int times=0)
+\begin{DoxyCompactList}\small\item\em Пересчет коллизии  \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_acfe70cb954bafe2bb3af0b4303bc0e75}\label{class_custom_collider_line_recoursive_acfe70cb954bafe2bb3af0b4303bc0e75} 
+void {\bfseries Clear\+Inside} ()
+\begin{DoxyCompactList}\small\item\em Очистка дочерних линий ( выравнивание ) \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a3cd32fa2a62f4cd21c55ebd244b3618d}\label{class_custom_collider_line_recoursive_a3cd32fa2a62f4cd21c55ebd244b3618d} 
+void {\bfseries set\+Vertical} ()
+\begin{DoxyCompactList}\small\item\em Смена направления линии на вертикаль \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a81098aa1c6428636b55cd37989a208d1}\label{class_custom_collider_line_recoursive_a81098aa1c6428636b55cd37989a208d1} 
+void {\bfseries set\+Horizontal} ()
+\begin{DoxyCompactList}\small\item\em Смена направления линии на горизонталь \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a2129474398747e0388be32b93e1baf58}{Jump\+From}} (QGraphics\+Item \texorpdfstring{$\ast$}{*}itm)
+\begin{DoxyCompactList}\small\item\em уход от обойденных ранее объектов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual QColor \mbox{\hyperlink{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}{color}} ()
+\begin{DoxyCompactList}\small\item\em Цвет хранится в цепях не у линий нет прямого доступа в цепь \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_custom_collider_line_recoursive_a166325da3980f3abc1723ddc22aad42d}{Custom\+Collider\+Line\+Recoursive}} (bool Vertical\+\_\+f\+\_\+\+Horiz\+\_\+t, \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a}{d1}}, \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d2, \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Просто QGraphics\+Item. \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a6491fcf9b4f792271ec635d96b8a577d}\label{class_custom_collider_line_recoursive_a6491fcf9b4f792271ec635d96b8a577d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Custom\+Collider\+Line\+Recoursive} ()
+\begin{DoxyCompactList}\small\item\em Удаляет линию и все дочерние (коррекционные линии) \end{DoxyCompactList}\item 
+QRectF \mbox{\hyperlink{class_custom_collider_line_recoursive_a8bb3f83d68cc08e188c15b8ec0ac3e74}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em Линия без учета коррекции даже если не видна \end{DoxyCompactList}\item 
+QPainter\+Path \mbox{\hyperlink{class_custom_collider_line_recoursive_ae1e4cbe9ad3d81fffbb05fdeabfd99b1}{shape}} () const override
+\begin{DoxyCompactList}\small\item\em Форма для отрисовки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a5ff5d9a184b77af419ba5e4850fd0cef}{paint}} (QPainter \texorpdfstring{$\ast$}{*}painter, const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}option, QWidget \texorpdfstring{$\ast$}{*}widget) override
+\begin{DoxyCompactList}\small\item\em Отрисовка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a0e5186f9d4b3d8a6494d6457cca1422b}{set\+Fix\+Way}} (Colision\+Fix\+Way fw)
+\begin{DoxyCompactList}\small\item\em Наработка на будущее... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_custom_collider_line_recoursive_a8f80fb06a877bfc6af449bb1bfc50199}\label{class_custom_collider_line_recoursive_a8f80fb06a877bfc6af449bb1bfc50199} 
+QVector$<$ QGraphics\+Item \texorpdfstring{$\ast$}{*} $>$ {\bfseries itsmine}
+\begin{DoxyCompactList}\small\item\em Уже обойденные данной линией объекты \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_aaa8d9f754a4f91f2ddc3f3bdbabe9ae6}\label{class_custom_collider_line_recoursive_aaa8d9f754a4f91f2ddc3f3bdbabe9ae6} 
+bool {\bfseries Vertical\+\_\+f\+\_\+\+Horizontal\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Горизонтальная или вертикальная линия false -\/ Вертикальная true -\/ горизонтальная \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3}\label{class_custom_collider_line_recoursive_a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3} 
+int {\bfseries Jump\+Derection} = 1
+\begin{DoxyCompactList}\small\item\em Направление отступления при движении обойденных ранее объектов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a}\label{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a} 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} {\bfseries d1}
+\begin{DoxyCompactList}\small\item\em Точки соеденяемые линией \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a716ab6ae5d841555865b5503e5b18628}\label{class_custom_collider_line_recoursive_a716ab6ae5d841555865b5503e5b18628} 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} {\bfseries d2}
+\item 
+\Hypertarget{class_custom_collider_line_recoursive_a5be8c91ab013083fbe0401ee0732f1f9}\label{class_custom_collider_line_recoursive_a5be8c91ab013083fbe0401ee0732f1f9} 
+Colision\+Fix\+Way {\bfseries fixway}
+\begin{DoxyCompactList}\small\item\em На будущее \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_ab1c47059a7df21ceb455eb4c8c0e11e4}\label{class_custom_collider_line_recoursive_ab1c47059a7df21ceb455eb4c8c0e11e4} 
+QVector$<$ QGraphics\+Object \texorpdfstring{$\ast$}{*} $>$ {\bfseries inside}
+\begin{DoxyCompactList}\small\item\em Дочерние линии \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a85e82eeb154e5b25934ee14947ef5aa1}\label{class_custom_collider_line_recoursive_a85e82eeb154e5b25934ee14947ef5aa1} 
+\mbox{\hyperlink{class_proxy_rect_port}{Proxy\+Rect\+Port}} \texorpdfstring{$\ast$}{*} {\bfseries lastcolide} =nullptr
+\begin{DoxyCompactList}\small\item\em последний обойденный разъем \end{DoxyCompactList}\item 
+\Hypertarget{class_custom_collider_line_recoursive_a1c43278915ba3233b44f03c5d7ef0b0c}\label{class_custom_collider_line_recoursive_a1c43278915ba3233b44f03c5d7ef0b0c} 
+int {\bfseries lastleft}
+\item 
+\Hypertarget{class_custom_collider_line_recoursive_ad68cbb90e5eb9a5ed5d978c8536d3032}\label{class_custom_collider_line_recoursive_ad68cbb90e5eb9a5ed5d978c8536d3032} 
+int {\bfseries lastbottom}
+\item 
+\Hypertarget{class_custom_collider_line_recoursive_a40dd74750416108c5162884820ac5b08}\label{class_custom_collider_line_recoursive_a40dd74750416108c5162884820ac5b08} 
+\mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*} {\bfseries Parent}
+\begin{DoxyCompactList}\small\item\em родительская линия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Линия с колизионной корекцией 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_custom_collider_line_recoursive_a166325da3980f3abc1723ddc22aad42d}\label{class_custom_collider_line_recoursive_a166325da3980f3abc1723ddc22aad42d} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{CustomColliderLineRecoursive()}{CustomColliderLineRecoursive()}}
+{\footnotesize\ttfamily Custom\+Collider\+Line\+Recoursive\+::\+Custom\+Collider\+Line\+Recoursive (\begin{DoxyParamCaption}\item[{bool}]{Vertical\+\_\+f\+\_\+\+Horiz\+\_\+t,  }\item[{\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}}]{d1,  }\item[{\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}}]{d2,  }\item[{\mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Просто QGraphics\+Item. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Vertical\+\_\+f\+\_\+\+Horiz\+\_\+t} & Горизонтальная или вертикальная линия false -\/ Вертикальная true -\/ горизонтальная\\
+\hline
+{\em d1} & крайняя точка 1\\
+\hline
+{\em d2} & крайняя точка 2\\
+\hline
+{\em parent} & Родительская линия НУЖНА ДЛЯ КОРРЕКЦИИ КОЛЛИЗИИ РЕКУРСИЕЙ\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_custom_collider_line_recoursive_a8bb3f83d68cc08e188c15b8ec0ac3e74}\label{class_custom_collider_line_recoursive_a8bb3f83d68cc08e188c15b8ec0ac3e74} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{boundingRect()}{boundingRect()}}
+{\footnotesize\ttfamily QRectF Custom\+Collider\+Line\+Recoursive\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Линия без учета коррекции даже если не видна 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} 
+
+\begin{DoxyReturn}{Возвращает}
+Зона необходимая к пересечению для отображения и взаимодействия
+\end{DoxyReturn}
+\Hypertarget{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}\label{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!color@{color}}
+\index{color@{color}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily QColor Custom\+Collider\+Line\+Recoursive\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Цвет хранится в цепях не у линий нет прямого доступа в цепь 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Переопределяется в \mbox{\hyperlink{class_new_pin_whire_a67ccd5e3e8411e1afabe4b1789b13953}{New\+Pin\+Whire}} и \mbox{\hyperlink{class_new_whire_abf20f59764261f1dbd0a9451437c0dcb}{New\+Whire}}.
+
+\Hypertarget{class_custom_collider_line_recoursive_a29e5d4ba6ff85387b29a1803646ccb09}\label{class_custom_collider_line_recoursive_a29e5d4ba6ff85387b29a1803646ccb09} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!FixColliding@{FixColliding}}
+\index{FixColliding@{FixColliding}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{FixColliding}{FixColliding}}
+{\footnotesize\ttfamily void Custom\+Collider\+Line\+Recoursive\+::\+Fix\+Colliding (\begin{DoxyParamCaption}\item[{int}]{times = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Пересчет коллизии  
+
+
+\begin{DoxyParams}{Аргументы}
+{\em times} & чЧто бы не уйти в вечный цикл при неудачной коллизии\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_custom_collider_line_recoursive_a2129474398747e0388be32b93e1baf58}\label{class_custom_collider_line_recoursive_a2129474398747e0388be32b93e1baf58} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!JumpFrom@{JumpFrom}}
+\index{JumpFrom@{JumpFrom}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{JumpFrom}{JumpFrom}}
+{\footnotesize\ttfamily void Custom\+Collider\+Line\+Recoursive\+::\+Jump\+From (\begin{DoxyParamCaption}\item[{QGraphics\+Item \texorpdfstring{$\ast$}{*}}]{itm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+уход от обойденных ранее объектов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em itm} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_custom_collider_line_recoursive_a5ff5d9a184b77af419ba5e4850fd0cef}\label{class_custom_collider_line_recoursive_a5ff5d9a184b77af419ba5e4850fd0cef} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!paint@{paint}}
+\index{paint@{paint}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Custom\+Collider\+Line\+Recoursive\+::paint (\begin{DoxyParamCaption}\item[{QPainter \texorpdfstring{$\ast$}{*}}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}}]{option,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Отрисовка 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_custom_collider_line_recoursive_a0e5186f9d4b3d8a6494d6457cca1422b}\label{class_custom_collider_line_recoursive_a0e5186f9d4b3d8a6494d6457cca1422b} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!setFixWay@{setFixWay}}
+\index{setFixWay@{setFixWay}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{setFixWay()}{setFixWay()}}
+{\footnotesize\ttfamily void Custom\+Collider\+Line\+Recoursive\+::set\+Fix\+Way (\begin{DoxyParamCaption}\item[{Colision\+Fix\+Way}]{fw }\end{DoxyParamCaption})}
+
+
+
+Наработка на будущее... 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em fw} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_custom_collider_line_recoursive_ae1e4cbe9ad3d81fffbb05fdeabfd99b1}\label{class_custom_collider_line_recoursive_ae1e4cbe9ad3d81fffbb05fdeabfd99b1} 
+\index{CustomColliderLineRecoursive@{CustomColliderLineRecoursive}!shape@{shape}}
+\index{shape@{shape}!CustomColliderLineRecoursive@{CustomColliderLineRecoursive}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path Custom\+Collider\+Line\+Recoursive\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Форма для отрисовки 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Collider\+Line\+Recoursive.\+h\item 
+Custom\+Collider\+Line\+Recoursive.\+cpp\end{DoxyCompactItemize}

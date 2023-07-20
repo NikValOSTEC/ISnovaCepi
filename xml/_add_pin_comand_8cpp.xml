@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_add_pin_comand_8cpp" kind="file" language="C++">
+    <compoundname>AddPinComand.cpp</compoundname>
+    <includes refid="_add_pin_comand_8h" local="yes">AddPinComand.h</includes>
+    <includes refid="mygraphicsscene_8h" local="yes">mygraphicsscene.h</includes>
+    <includes refid="pin_8h" local="yes">pin.h</includes>
+    <includes refid="port_8h" local="yes">port.h</includes>
+    <includes refid="_add_comand_8h" local="yes">AddComand.h</includes>
+    <includes refid="proxyrectport_8h" local="yes">proxyrectport.h</includes>
+    <incdepgraph>
+      <node id="24">
+        <label>AddComand.h</label>
+        <link refid="_add_comand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AddPinComand.cpp</label>
+        <link refid="_add_pin_comand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AddPinComand.h</label>
+        <link refid="_add_pin_comand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>proxyrectport.h</label>
+        <link refid="proxyrectport_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>view.h</label>
+        <link refid="view_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>QColorDialog</label>
+      </node>
+      <node id="25">
+        <label>QDebug</label>
+      </node>
+      <node id="5">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="18">
+        <label>QLineEdit</label>
+      </node>
+      <node id="11">
+        <label>QMenu</label>
+      </node>
+      <node id="6">
+        <label>QPainter</label>
+      </node>
+      <node id="22">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="14">
+        <label>QThread</label>
+      </node>
+      <node id="3">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="12">
+        <label>qframe.h</label>
+      </node>
+      <node id="27">
+        <label>qgraphicsitem.h</label>
+      </node>
+      <node id="16">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="21">
+        <label>qobject.h</label>
+      </node>
+      <node id="10">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="8">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="9">
+        <label>qundostack.h</label>
+      </node>
+      <node id="23">
+        <label>qwidget.h</label>
+      </node>
+      <node id="15">
+        <label>ui_pin.h</label>
+      </node>
+      <node id="20">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;AddPinComand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;mygraphicsscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;AddComand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;proxyrectport.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_add_pin_comand_1a0a98feb765f5674cfade2dac11756d8c" kindref="member">AddPinComand::AddPinComand</ref>(<ref refid="class_port" kindref="compound">Port</ref><sp/>*p,QString<sp/>nae,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rea)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>real<sp/>=<sp/>rea;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" kindref="member">prt</ref><sp/>=<sp/>p-&gt;<ref refid="class_port_1a5beafe369a13809fc03af0208417aa1d" kindref="member">adcom</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" kindref="member">name</ref><sp/>=<sp/>nae;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*)(p-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;scene()))-&gt;Mview-&gt;stackPush(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_add_pin_comand_1a5df4a5fcb9feb4e64736c1f4f1a1133e" kindref="member">AddPinComand::~AddPinComand</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_pin_comand_1ac1444bc27391754e1c52ad2bcf0de517" kindref="member">AddPinComand::undo</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" kindref="member">name</ref><sp/>=<sp/><ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1ac466c7e76b9d813bdae3058a8e6a8e65" kindref="member">name</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_pin_comand_1a4712f1eeee58a11b8b963c056a71f844" kindref="member">AddPinComand::redo</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref><sp/>=<sp/><ref refid="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" kindref="member">prt</ref>-&gt;<ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1aab356149ee33772dc2dee00a6c08bf95" kindref="member">addPin</ref>(<ref refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" kindref="member">name</ref>,-1,real);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" kindref="member">pn</ref>-&gt;<ref refid="class_pin_1a30e0bcf999b17705b095ff25cde17281" kindref="member">command</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" kindref="member">prt</ref>-&gt;<ref refid="class_add_comand_1ad9a5957b92ed0140894433c5110acb6f" kindref="member">p</ref>-&gt;<ref refid="class_port_1a252882139d38712ad89fe27be57a4d96" kindref="member">proxy</ref>()-&gt;<ref refid="class_proxy_rect_port_1a1f74dce4c5d8fc136801d655a924ff1a" kindref="member">Update</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="AddPinComand.cpp"/>
+  </compounddef>
+</doxygen>

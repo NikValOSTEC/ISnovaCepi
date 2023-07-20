@@ -1,0 +1,25 @@
+\doxysection{Add\+Pin\+Comand.\+h}
+\hypertarget{_add_pin_comand_8h_source}{}\label{_add_pin_comand_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ ADDPINCOMAND\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ ADDPINCOMAND\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QUndoCommand>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_comand}{AddComand}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_pin_comand}{AddPinComand}}\ \ :\ \textcolor{keyword}{public}\ QUndoCommand}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_add_pin_comand}{AddPinComand}}(\mbox{\hyperlink{class_port}{Port}}*p,QString\ \mbox{\hyperlink{class_add_pin_comand_aadc33ab624c6d20a7160e389711b75b7}{name}}=\textcolor{stringliteral}{"{}"{}},\textcolor{keywordtype}{bool}\ rea=\textcolor{keyword}{true});}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_add_pin_comand_a5df4a5fcb9feb4e64736c1f4f1a1133e}{\string~AddPinComand}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_add_pin_comand_ac1444bc27391754e1c52ad2bcf0de517}{undo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_add_pin_comand_a4712f1eeee58a11b8b963c056a71f844}{redo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ QString\ \mbox{\hyperlink{class_add_pin_comand_aadc33ab624c6d20a7160e389711b75b7}{name}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ \mbox{\hyperlink{class_add_pin_comand_ac116493c9a6c212b1ab026b2db15e822}{pn}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_add_comand}{AddComand}}*\ \mbox{\hyperlink{class_add_pin_comand_a5a80759acbabe2a66b6a26ac7582ad4f}{prt}};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ real;}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

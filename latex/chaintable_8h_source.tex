@@ -1,0 +1,31 @@
+\doxysection{chaintable.\+h}
+\hypertarget{chaintable_8h_source}{}\label{chaintable_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ CHAINTABLE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ CHAINTABLE\_H}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view}{View}};}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<qobject.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<qtablewidget.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<qinputdialog.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include"{}qheaderview.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chain_table}{ChainTable}}\ \ :\ \textcolor{keyword}{public}\ QTableWidget}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_chain_table_a578e40c7c72b035ee86fa6079f3504df}{ChainTable}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_chain_table_afa7a516fc5566a46e1ce8bec69809254}{\string~ChainTable}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_view}{View}}*\ \mbox{\hyperlink{class_chain_table_aa0d66e209d4e5932e148b81ecbf37031}{view}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_table_a753de5db8bac800c05f524c582639003}{AdddPortSL}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_table_a72008028463e049fe41350d8826fedbb}{AddChain}}();}
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_table_a75f53ce847bdaafe889925f0a431a0b0}{UpdateTable}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_table_a04a15b7732a17710e7e7fe89212ae683}{CellChange}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_table_a8271983e2a6869e5a09af159d97a275f}{CellClck}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ colum);}
+\DoxyCodeLine{00054\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00058\ \ \ \ \ QMetaObject::Connection\ \mbox{\hyperlink{class_chain_table_a560b1cf4cc5065c26d035b73ee73e047}{m\_connection}};}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

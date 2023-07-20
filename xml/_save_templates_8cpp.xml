@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_save_templates_8cpp" kind="file" language="C++">
+    <compoundname>SaveTemplates.cpp</compoundname>
+    <includes refid="_save_templates_8h" local="yes">SaveTemplates.h</includes>
+    <includes refid="_port_twmplate_object_8h" local="yes">PortTwmplateObject.h</includes>
+    <includes refid="_port_template_8h" local="yes">PortTemplate.h</includes>
+    <includes refid="_pin_template_8h" local="yes">PinTemplate.h</includes>
+    <includes local="yes">qlineedit.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>PinTemplate.h</label>
+        <link refid="_pin_template_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PortTemplate.h</label>
+        <link refid="_port_template_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PortTwmplateObject.h</label>
+        <link refid="_port_twmplate_object_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SaveTemplates.cpp</label>
+        <link refid="_save_templates_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SaveTemplates.h</label>
+        <link refid="_save_templates_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QColorDialog</label>
+      </node>
+      <node id="4">
+        <label>QFile</label>
+      </node>
+      <node id="24">
+        <label>QLineEdit</label>
+      </node>
+      <node id="16">
+        <label>QMenu</label>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="17">
+        <label>QSpacerItem</label>
+      </node>
+      <node id="5">
+        <label>QTextStream</label>
+      </node>
+      <node id="20">
+        <label>QThread</label>
+      </node>
+      <node id="22">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="11">
+        <label>qlineedit.h</label>
+      </node>
+      <node id="8">
+        <label>qobject.h</label>
+      </node>
+      <node id="14">
+        <label>qopenglfunctions.h</label>
+      </node>
+      <node id="10">
+        <label>qpushbutton.h</label>
+      </node>
+      <node id="6">
+        <label>qsettings.h</label>
+      </node>
+      <node id="9">
+        <label>qwidget.h</label>
+      </node>
+      <node id="21">
+        <label>ui_pin.h</label>
+      </node>
+      <node id="13">
+        <label>ui_port.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;SaveTemplates.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;PortTwmplateObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;PortTemplate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;PinTemplate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qlineedit.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_save_templates_1ac907c4f9743dc64cc25645a2de37a79f" kindref="member">SaveTemplates::Save</ref>(<ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref>*<sp/>o)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/>settings(</highlight><highlight class="stringliteral">&quot;./settings_demo.conf&quot;</highlight><highlight class="normal">,<sp/>QSettings::IniFormat);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QString&gt;<sp/>names;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>var,<sp/>o-&gt;<ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref>-&gt;<ref refid="class_port_1a15a7a06e221876566463ba94873667e7" kindref="member">pins</ref>())</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>names.append(var-&gt;name());</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.beginGroup(</highlight><highlight class="stringliteral">&quot;Templates&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>nm<sp/>=<sp/>o-&gt;<ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref>-&gt;<ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(settings.allKeys().contains(nm))</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(settings.allKeys().contains(nm=nm<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>+<sp/>QString::number(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>o-&gt;<ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref>-&gt;<ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>(nm);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(o-&gt;<ref refid="class_port_twmplate_object_1ac2d333be49503be0d54229bb6b706be5" kindref="member">templ</ref>-&gt;<ref refid="class_port_1a0c668bf31a6533794ce9727e0da16350" kindref="member">name</ref>(),<sp/>names);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.endGroup();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.sync();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">QList&lt;QPair&lt;QStringList,QString&gt;&gt;<sp/><ref refid="class_save_templates_1a7218b7ebc59f828f930b9b9fc59c58d8" kindref="member">SaveTemplates::Load</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/>settings(</highlight><highlight class="stringliteral">&quot;./settings_demo.conf&quot;</highlight><highlight class="normal">,<sp/>QSettings::IniFormat);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QPair&lt;QStringList,<sp/>QString&gt;&gt;<sp/>lst<sp/>=<sp/>QList&lt;QPair&lt;QStringList,<sp/>QString&gt;&gt;();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>keys=settings.allKeys();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>k,<sp/>keys)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>kk<sp/>=<sp/>k;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kk.remove(</highlight><highlight class="stringliteral">&quot;Templates/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lst.append(QPair&lt;QStringList,<sp/>QString&gt;(qvariant_cast&lt;QStringList&gt;(settings.value(k)),<sp/>kk));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lst;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_save_templates_1a73b839da3826f0665b475a0b64ff7131" kindref="member">SaveTemplates::Del</ref>(QString<sp/>name)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/>settings(</highlight><highlight class="stringliteral">&quot;./settings_demo.conf&quot;</highlight><highlight class="normal">,<sp/>QSettings::IniFormat);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.beginGroup(</highlight><highlight class="stringliteral">&quot;Templates&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.remove(</highlight><highlight class="stringliteral">&quot;Templates/&quot;</highlight><highlight class="normal"><sp/>+<sp/>name);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.endGroup();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.sync();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="SaveTemplates.cpp"/>
+  </compounddef>
+</doxygen>

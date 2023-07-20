@@ -1,0 +1,76 @@
+\doxysection{Класс Remove\+Pin\+Command}
+\hypertarget{class_remove_pin_command}{}\label{class_remove_pin_command}\index{RemovePinCommand@{RemovePinCommand}}
+
+
+Undo Redo Удаление контакта  
+
+
+
+
+{\ttfamily \#include $<$Remove\+Pin\+Command.\+h$>$}
+
+Граф наследования\+:Remove\+Pin\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_remove_pin_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_remove_pin_command_a767bff9271fa3715a7a5f31159f6187d}{Remove\+Pin\+Command}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em создание команды в стэк \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_ac343119f9ed7d846738ed1592b307bb1}\label{class_remove_pin_command_ac343119f9ed7d846738ed1592b307bb1} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Remove\+Pin\+Command} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_a951f0464278bd92758d957064fa82067}\label{class_remove_pin_command_a951f0464278bd92758d957064fa82067} 
+void {\bfseries undo} () override
+\begin{DoxyCompactList}\small\item\em Создает контакт снова и закладывает его в ту же команду создания для сохранения цепочки \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_abd0042f83fc2f7bb6ee6887deb3ac236}\label{class_remove_pin_command_abd0042f83fc2f7bb6ee6887deb3ac236} 
+void {\bfseries redo} () override
+\begin{DoxyCompactList}\small\item\em Удаляет контакт запоминая его разъем и позицию в нем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_remove_pin_command_a478221782ad2272c8b999968cb26b1b6}\label{class_remove_pin_command_a478221782ad2272c8b999968cb26b1b6} 
+int {\bfseries pos} = 0
+\begin{DoxyCompactList}\small\item\em позиция удаляемого контакта в разъеме \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_ab0a83dd443ccb8d36ed42189c696b228}\label{class_remove_pin_command_ab0a83dd443ccb8d36ed42189c696b228} 
+QString {\bfseries name} = \"{}\"{}
+\begin{DoxyCompactList}\small\item\em имя удаляемого контакта \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_ae0c467492dcf912c2ceac60dba0964b4}\label{class_remove_pin_command_ae0c467492dcf912c2ceac60dba0964b4} 
+\mbox{\hyperlink{class_add_pin_comand}{Add\+Pin\+Comand}} \texorpdfstring{$\ast$}{*} {\bfseries pinc}
+\begin{DoxyCompactList}\small\item\em Команда создания удаляемого контакта (для перезаписи при откате \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_ab631e473adf864172ba580ca8c414cd7}\label{class_remove_pin_command_ab631e473adf864172ba580ca8c414cd7} 
+\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*} {\bfseries prt}
+\begin{DoxyCompactList}\small\item\em Разъем в котором находится контакт \end{DoxyCompactList}\item 
+\Hypertarget{class_remove_pin_command_aef07f531384fee903eeb246368084e8a}\label{class_remove_pin_command_aef07f531384fee903eeb246368084e8a} 
+\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} {\bfseries pin}
+\begin{DoxyCompactList}\small\item\em Удаляемый контакт \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Undo Redo Удаление контакта 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_remove_pin_command_a767bff9271fa3715a7a5f31159f6187d}\label{class_remove_pin_command_a767bff9271fa3715a7a5f31159f6187d} 
+\index{RemovePinCommand@{RemovePinCommand}!RemovePinCommand@{RemovePinCommand}}
+\index{RemovePinCommand@{RemovePinCommand}!RemovePinCommand@{RemovePinCommand}}
+\doxysubsubsection{\texorpdfstring{RemovePinCommand()}{RemovePinCommand()}}
+{\footnotesize\ttfamily Remove\+Pin\+Command\+::\+Remove\+Pin\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+создание команды в стэк 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & удаляемый контакт\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Remove\+Pin\+Command.\+h\item 
+Remove\+Pin\+Command.\+cpp\end{DoxyCompactItemize}

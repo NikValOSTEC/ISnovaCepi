@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_q_line_edit_focus_out_signal_8h" kind="file" language="C++">
+    <compoundname>QLineEditFocusOutSignal.h</compoundname>
+    <includes local="no">QLineEdit</includes>
+    <includedby refid="_port_template_8cpp" local="yes">PortTemplate.cpp</includedby>
+    <includedby refid="_port_twmplate_object_8cpp" local="yes">PortTwmplateObject.cpp</includedby>
+    <includedby refid="_q_line_edit_focus_out_signal_8cpp" local="yes">QLineEditFocusOutSignal.cpp</includedby>
+    <includedby refid="_save_templates_8cpp" local="yes">SaveTemplates.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>QLineEditFocusOutSignal.h</label>
+        <link refid="_q_line_edit_focus_out_signal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QLineEdit</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_q_line_edit_focus_out_signal" prot="public">QLineEditFocusOutSignal</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_q_line_edit_focus_out_signal_8h_1afb3f088422b6f1285a6a5e7aa6ad4e8f" prot="public" static="no">
+        <name>QLINEEDITFOCUSOUTSIGNAL_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QLineEditFocusOutSignal.h" line="3" column="9" bodyfile="QLineEditFocusOutSignal.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QLINEEDITFOCUSOUTSIGNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QLINEEDITFOCUSOUTSIGNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLineEdit&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_q_line_edit_focus_out_signal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_q_line_edit_focus_out_signal" kindref="compound">QLineEditFocusOutSignal</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QLineEdit</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_q_line_edit_focus_out_signal" kindref="compound">QLineEditFocusOutSignal</ref>(QWidget<sp/>*parent);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_q_line_edit_focus_out_signal" kindref="compound">~QLineEditFocusOutSignal</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>focusInEvent(QFocusEvent*<sp/>e);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>focusOutEvent(QFocusEvent*<sp/>e);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>focussed(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasFocus);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="QLineEditFocusOutSignal.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_dot" kind="class" language="C++" prot="public">
+    <compoundname>Dot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsObject</basecompoundref>
+    <includes refid="_dot_8h" local="no">Dot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor Dot::cl</definition>
+        <argsstring></argsstring>
+        <name>cl</name>
+        <qualifiedname>Dot::cl</qualifiedname>
+        <briefdescription>
+<para>Цвет Линии </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="38" column="8" bodyfile="Dot.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dot_1ace3fa9da5116caaf64f902da45115824" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Dot::triangle</definition>
+        <argsstring></argsstring>
+        <name>triangle</name>
+        <qualifiedname>Dot::triangle</qualifiedname>
+        <briefdescription>
+<para>треугольная ли точка </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="42" column="6" bodyfile="Dot.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dot_1ada0d526fe302f22a3ab336dcec588ff1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Dot::bg</definition>
+        <argsstring></argsstring>
+        <name>bg</name>
+        <qualifiedname>Dot::bg</qualifiedname>
+        <briefdescription>
+<para>Большая ли точка </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="46" column="6" bodyfile="Dot.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dot_1ae67778bccc9c380f2c42f93b90f5fa3e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref> *</type>
+        <definition>CustomColliderLineRecoursive* Dot::Vdot</definition>
+        <argsstring></argsstring>
+        <name>Vdot</name>
+        <qualifiedname>Dot::Vdot</qualifiedname>
+        <briefdescription>
+<para>Линии использующие данную точку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="85" column="29" bodyfile="Dot.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dot_1ae4568b5f2bab953b0b0be546c8a8dc94" prot="public" static="no" mutable="no">
+        <type><ref refid="class_custom_collider_line_recoursive" kindref="compound">CustomColliderLineRecoursive</ref> *</type>
+        <definition>CustomColliderLineRecoursive * Dot::Hdot</definition>
+        <argsstring></argsstring>
+        <name>Hdot</name>
+        <qualifiedname>Dot::Hdot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="85" column="34" bodyfile="Dot.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dot_1a436ad74b9372af9bfbdb8fe31776ba25" prot="public" static="no" mutable="no">
+        <type>QVector&lt; <ref refid="class_new_whire" kindref="compound">NewWhire</ref> * &gt;</type>
+        <definition>QVector&lt;NewWhire*&gt; Dot::whires</definition>
+        <argsstring></argsstring>
+        <name>whires</name>
+        <qualifiedname>Dot::whires</qualifiedname>
+        <briefdescription>
+<para>провода использующие данную точку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="128" column="8" bodyfile="Dot.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dot_1a19f7bf25bd36c6b03acfc388d4fe3313" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dot::Linecounter</definition>
+        <argsstring></argsstring>
+        <name>Linecounter</name>
+        <qualifiedname>Dot::Linecounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>счетчик линий </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="179" column="5" bodyfile="Dot.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dot_1a5be64be687220fbaf0d50a4a0b959811" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin* Dot::_pin</definition>
+        <argsstring></argsstring>
+        <name>_pin</name>
+        <qualifiedname>Dot::_pin</qualifiedname>
+        <briefdescription>
+<para>Контакт за которым данная точка ВОЗМОЖНО закрепленна </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="183" column="5" bodyfile="Dot.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dot_1a2b5337b001f9d588d1204f4975a48308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dot::Dot</definition>
+        <argsstring>(QGraphicsObject *parent=nullptr)</argsstring>
+        <name>Dot</name>
+        <qualifiedname>Dot::Dot</qualifiedname>
+        <param>
+          <type>QGraphicsObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>QGraphicsItem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="29" column="1" bodyfile="Dot.cpp" bodystart="5" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a12d277036a07c23548e0aa59f133dac4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dot::type</definition>
+        <argsstring>() const override</argsstring>
+        <name>type</name>
+        <qualifiedname>Dot::type</qualifiedname>
+        <briefdescription>
+<para>для работы через <ref refid="class_g_view" kindref="compound">GView</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="34" column="5" bodyfile="Dot.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a2a1786546bd54708b07036f12b51c379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dot::x</definition>
+        <argsstring>()</argsstring>
+        <name>x</name>
+        <qualifiedname>Dot::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Координату x</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="50" column="5" bodyfile="Dot.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a4959999894d474462c2d2e1b598f5fd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dot::y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <qualifiedname>Dot::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Координату y</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="54" column="5" bodyfile="Dot.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1adabf375b234a605380ae78f63d8795b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::x</definition>
+        <argsstring>(int x)</argsstring>
+        <name>x</name>
+        <qualifiedname>Dot::x</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координату по оси x. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="58" column="6" bodyfile="Dot.cpp" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1aaa52e8314f02ab85f3caf51b8869aef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::y</definition>
+        <argsstring>(int y)</argsstring>
+        <name>y</name>
+        <qualifiedname>Dot::y</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координату по оси y. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="62" column="6" bodyfile="Dot.cpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a3f1b336dc13d266fe4050ae9911c73a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::setColor</definition>
+        <argsstring>(QColor cl)</argsstring>
+        <name>setColor</name>
+        <qualifiedname>Dot::setColor</qualifiedname>
+        <param>
+          <type>QColor</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает Цвет </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>цвет</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="67" column="6" bodyfile="Dot.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a7ac1cb63d973b86023b178ca39abe20f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::setTriangle</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>setTriangle</name>
+        <qualifiedname>Dot::setTriangle</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>Делает треугольной или круглой </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bl</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="72" column="6" bodyfile="Dot.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1acba1bb9405225c7a3c3cbb0907756aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::setBig</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>setBig</name>
+        <qualifiedname>Dot::setBig</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>Делает большой или маленькой </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bl</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="77" column="6" bodyfile="Dot.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1af3bf823da926992a15d7b8342b1d9cf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin * Dot::pn</definition>
+        <argsstring>()</argsstring>
+        <name>pn</name>
+        <qualifiedname>Dot::pn</qualifiedname>
+        <briefdescription>
+<para>Контакт за которым данная точка ВОЗМОЖНО закрепленна </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="81" column="5" bodyfile="Dot.cpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a8b56d48ed0643dce2bdb9d17c5d36893" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::EmitIs_inMove</definition>
+        <argsstring>(bool moving)</argsstring>
+        <name>EmitIs_inMove</name>
+        <qualifiedname>Dot::EmitIs_inMove</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>moving</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="86" column="6" bodyfile="Dot.h" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a8e807f07f899587ef8f1b46612f72ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::setPin</definition>
+        <argsstring>(Pin *p)</argsstring>
+        <name>setPin</name>
+        <qualifiedname>Dot::setPin</qualifiedname>
+        <param>
+          <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Закрепление за контактом </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="98" column="6" bodyfile="Dot.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1abf4b2af6686b60c4de0953b270d18107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::Emit_Moving</definition>
+        <argsstring>()</argsstring>
+        <name>Emit_Moving</name>
+        <qualifiedname>Dot::Emit_Moving</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="99" column="6" bodyfile="Dot.h" bodystart="99" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a5f989f28c9dc4a3871a8f84327ac2acb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dot::~Dot</definition>
+        <argsstring>()</argsstring>
+        <name>~Dot</name>
+        <qualifiedname>Dot::~Dot</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="124" column="1" bodyfile="Dot.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1aa497c04961604be7075a415cfc227b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::WhPl</definition>
+        <argsstring>()</argsstring>
+        <name>WhPl</name>
+        <qualifiedname>Dot::WhPl</qualifiedname>
+        <briefdescription>
+<para>Счетчик проводов когда их 0 удаление </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="132" column="6" bodyfile="Dot.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a1451171a80b2743502cde4b49d5166db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::WhMin</definition>
+        <argsstring>()</argsstring>
+        <name>WhMin</name>
+        <qualifiedname>Dot::WhMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="133" column="6" bodyfile="Dot.cpp" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a917549908da2fa1bd2d5080d2a7f31c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>Dot::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="139" column="6" bodyfile="Dot.cpp" bodystart="96" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a508d06413b09f1e0ab230571c8278f7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF Dot::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>Dot::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="145" column="8" bodyfile="Dot.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a3a7fee5c9df6512243685bee725045a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath Dot::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>Dot::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>см. <ulink url="https://doc.qt.io/qt-6/qgraphicsitem.html">https://doc.qt.io/qt-6/qgraphicsitem.html</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="151" column="14" bodyfile="Dot.cpp" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dot_1a6390684a077fc1ae809e4ec4ea35ad37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dot::whrscount</definition>
+        <argsstring>()</argsstring>
+        <name>whrscount</name>
+        <qualifiedname>Dot::whrscount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="152" column="5" bodyfile="Dot.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_dot_1abad06f4214cf3989b6576f2c605724ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::Is_inMove</definition>
+        <argsstring>(bool moving)</argsstring>
+        <name>Is_inMove</name>
+        <qualifiedname>Dot::Is_inMove</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>moving</declname>
+        </param>
+        <briefdescription>
+<para>Сигнал о смещении точки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="161" column="6"/>
+      </memberdef>
+      <memberdef kind="signal" id="class_dot_1a4734f981074275e58377a1314b6eb7fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::moving</definition>
+        <argsstring>(Dot *d)</argsstring>
+        <name>moving</name>
+        <qualifiedname>Dot::moving</qualifiedname>
+        <param>
+          <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Сигнал о перемещении точки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="165" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_dot_1a54051366618ed5375e396b2904085f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::VerticalDot</definition>
+        <argsstring>(Dot *d)</argsstring>
+        <name>VerticalDot</name>
+        <qualifiedname>Dot::VerticalDot</qualifiedname>
+        <param>
+          <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Слот на обработку смещения другой связанной точки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="170" column="6" bodyfile="Dot.cpp" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_dot_1a93ea5946db7c004e2437056a39fad0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dot::HorizontalDot</definition>
+        <argsstring>(Dot *d)</argsstring>
+        <name>HorizontalDot</name>
+        <qualifiedname>Dot::HorizontalDot</qualifiedname>
+        <param>
+          <type><ref refid="class_dot" kindref="compound">Dot</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Слот на обработку смещения другой связанной точки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dot.h" line="174" column="6" bodyfile="Dot.cpp" bodystart="150" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс Точки дляпостроения линий </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Dot</label>
+        <link refid="class_dot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CustomColliderLineRecoursive</label>
+        <link refid="class_custom_collider_line_recoursive"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>d1</edgelabel>
+          <edgelabel>d2</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lastcolide</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Dot</label>
+        <link refid="class_dot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Hdot</edgelabel>
+          <edgelabel>Vdot</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="5">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="Dot.h" line="17" column="1" bodyfile="Dot.h" bodystart="18" bodyend="185"/>
+    <listofallmembers>
+      <member refid="class_dot_1a5be64be687220fbaf0d50a4a0b959811" prot="private" virt="non-virtual"><scope>Dot</scope><name>_pin</name></member>
+      <member refid="class_dot_1ada0d526fe302f22a3ab336dcec588ff1" prot="public" virt="non-virtual"><scope>Dot</scope><name>bg</name></member>
+      <member refid="class_dot_1a508d06413b09f1e0ab230571c8278f7f" prot="public" virt="non-virtual"><scope>Dot</scope><name>boundingRect</name></member>
+      <member refid="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" prot="public" virt="non-virtual"><scope>Dot</scope><name>cl</name></member>
+      <member refid="class_dot_1a2b5337b001f9d588d1204f4975a48308" prot="public" virt="non-virtual"><scope>Dot</scope><name>Dot</name></member>
+      <member refid="class_dot_1abf4b2af6686b60c4de0953b270d18107" prot="public" virt="non-virtual"><scope>Dot</scope><name>Emit_Moving</name></member>
+      <member refid="class_dot_1a8b56d48ed0643dce2bdb9d17c5d36893" prot="public" virt="non-virtual"><scope>Dot</scope><name>EmitIs_inMove</name></member>
+      <member refid="class_dot_1ae4568b5f2bab953b0b0be546c8a8dc94" prot="public" virt="non-virtual"><scope>Dot</scope><name>Hdot</name></member>
+      <member refid="class_dot_1a93ea5946db7c004e2437056a39fad0ea" prot="public" virt="non-virtual"><scope>Dot</scope><name>HorizontalDot</name></member>
+      <member refid="class_dot_1abad06f4214cf3989b6576f2c605724ae" prot="public" virt="non-virtual"><scope>Dot</scope><name>Is_inMove</name></member>
+      <member refid="class_dot_1a19f7bf25bd36c6b03acfc388d4fe3313" prot="private" virt="non-virtual"><scope>Dot</scope><name>Linecounter</name></member>
+      <member refid="class_dot_1a4734f981074275e58377a1314b6eb7fc" prot="public" virt="non-virtual"><scope>Dot</scope><name>moving</name></member>
+      <member refid="class_dot_1a917549908da2fa1bd2d5080d2a7f31c7" prot="public" virt="non-virtual"><scope>Dot</scope><name>paint</name></member>
+      <member refid="class_dot_1af3bf823da926992a15d7b8342b1d9cf7" prot="public" virt="non-virtual"><scope>Dot</scope><name>pn</name></member>
+      <member refid="class_dot_1acba1bb9405225c7a3c3cbb0907756aad" prot="public" virt="non-virtual"><scope>Dot</scope><name>setBig</name></member>
+      <member refid="class_dot_1a3f1b336dc13d266fe4050ae9911c73a8" prot="public" virt="non-virtual"><scope>Dot</scope><name>setColor</name></member>
+      <member refid="class_dot_1a8e807f07f899587ef8f1b46612f72ac9" prot="public" virt="non-virtual"><scope>Dot</scope><name>setPin</name></member>
+      <member refid="class_dot_1a7ac1cb63d973b86023b178ca39abe20f" prot="public" virt="non-virtual"><scope>Dot</scope><name>setTriangle</name></member>
+      <member refid="class_dot_1a3a7fee5c9df6512243685bee725045a8" prot="public" virt="non-virtual"><scope>Dot</scope><name>shape</name></member>
+      <member refid="class_dot_1ace3fa9da5116caaf64f902da45115824" prot="public" virt="non-virtual"><scope>Dot</scope><name>triangle</name></member>
+      <member refid="class_dot_1a12d277036a07c23548e0aa59f133dac4" prot="public" virt="non-virtual"><scope>Dot</scope><name>type</name></member>
+      <member refid="class_dot_1ae67778bccc9c380f2c42f93b90f5fa3e" prot="public" virt="non-virtual"><scope>Dot</scope><name>Vdot</name></member>
+      <member refid="class_dot_1a54051366618ed5375e396b2904085f1b" prot="public" virt="non-virtual"><scope>Dot</scope><name>VerticalDot</name></member>
+      <member refid="class_dot_1a436ad74b9372af9bfbdb8fe31776ba25" prot="public" virt="non-virtual"><scope>Dot</scope><name>whires</name></member>
+      <member refid="class_dot_1a1451171a80b2743502cde4b49d5166db" prot="public" virt="non-virtual"><scope>Dot</scope><name>WhMin</name></member>
+      <member refid="class_dot_1aa497c04961604be7075a415cfc227b0d" prot="public" virt="non-virtual"><scope>Dot</scope><name>WhPl</name></member>
+      <member refid="class_dot_1a6390684a077fc1ae809e4ec4ea35ad37" prot="public" virt="non-virtual"><scope>Dot</scope><name>whrscount</name></member>
+      <member refid="class_dot_1a2a1786546bd54708b07036f12b51c379" prot="public" virt="non-virtual"><scope>Dot</scope><name>x</name></member>
+      <member refid="class_dot_1adabf375b234a605380ae78f63d8795b7" prot="public" virt="non-virtual"><scope>Dot</scope><name>x</name></member>
+      <member refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" prot="public" virt="non-virtual"><scope>Dot</scope><name>y</name></member>
+      <member refid="class_dot_1aaa52e8314f02ab85f3caf51b8869aef1" prot="public" virt="non-virtual"><scope>Dot</scope><name>y</name></member>
+      <member refid="class_dot_1a5f989f28c9dc4a3871a8f84327ac2acb" prot="public" virt="non-virtual"><scope>Dot</scope><name>~Dot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

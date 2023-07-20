@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_dot_8cpp" kind="file" language="C++">
+    <compoundname>Dot.cpp</compoundname>
+    <includes refid="_dot_8h" local="yes">Dot.h</includes>
+    <includes refid="_new_whire_8h" local="yes">NewWhire.h</includes>
+    <includes refid="pin_8h" local="yes">pin.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>CustomColliderLineRecoursive.h</label>
+        <link refid="_custom_collider_line_recoursive_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Dot.cpp</label>
+        <link refid="_dot_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Dot.h</label>
+        <link refid="_dot_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>NewWhire.h</label>
+        <link refid="_new_whire_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>pin.h</label>
+        <link refid="pin_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QColorDialog</label>
+      </node>
+      <node id="6">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="13">
+        <label>QLineEdit</label>
+      </node>
+      <node id="7">
+        <label>QPainter</label>
+      </node>
+      <node id="5">
+        <label>QStyleOptionGraphicsItem</label>
+      </node>
+      <node id="9">
+        <label>QThread</label>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="3">
+        <label>QtMath</label>
+      </node>
+      <node id="17">
+        <label>qgraphicsobject</label>
+      </node>
+      <node id="11">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="18">
+        <label>qgraphicsscene.h</label>
+      </node>
+      <node id="16">
+        <label>qobject.h</label>
+      </node>
+      <node id="10">
+        <label>ui_pin.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Dot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;NewWhire.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;pin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="class_dot_1a2b5337b001f9d588d1204f4975a48308" kindref="member">Dot::Dot</ref>(QGraphicsObject*<sp/>parent):</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsObject(parent)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>setFlag(QGraphicsItem::ItemIsMovable,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>setFlag(QGraphicsItem::ItemIsSelectable,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>setFlag(QGraphicsItem::ItemIsFocusable,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Vdot<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>Hdot<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>triangle<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Linecounter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>bg<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;whires<sp/>=<sp/>QVector&lt;NewWhire*&gt;();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>_pin<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>setCacheMode(QGraphicsItem::NoCache);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a12d277036a07c23548e0aa59f133dac4" kindref="member">Dot::type</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="22"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>102;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">Dot::x</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos().x();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">Dot::y</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos().y();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">Dot::x</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>%<sp/>25<sp/>&gt;<sp/>12)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>=<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>-<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>%<sp/>25<sp/>+<sp/>25;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>=<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>-<sp/><ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref><sp/>%<sp/>25;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>setPos(<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>-<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>%25,<sp/>pos().<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">Dot::y</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>%<sp/>25<sp/>&gt;<sp/>12)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>=<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>-<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>%<sp/>25<sp/>+<sp/>25;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>=<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>-<sp/><ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref><sp/>%<sp/>25;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>setPos(pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>(),<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>-<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>%25);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a3f1b336dc13d266fe4050ae9911c73a8" kindref="member">Dot::setColor</ref>(QColor<sp/>cl)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;cl<sp/>=<sp/><ref refid="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" kindref="member">cl</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a7ac1cb63d973b86023b178ca39abe20f" kindref="member">Dot::setTriangle</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dot_1ace3fa9da5116caaf64f902da45115824" kindref="member">triangle</ref><sp/>=<sp/>bl;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1acba1bb9405225c7a3c3cbb0907756aad" kindref="member">Dot::setBig</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dot_1ada0d526fe302f22a3ab336dcec588ff1" kindref="member">bg</ref><sp/>=<sp/>bl;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a8e807f07f899587ef8f1b46612f72ac9" kindref="member">Dot::setPin</ref>(<ref refid="class_pin" kindref="compound">Pin</ref>*<sp/>p)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>_pin<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><ref refid="class_dot_1a5f989f28c9dc4a3871a8f84327ac2acb" kindref="member">Dot::~Dot</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1aa497c04961604be7075a415cfc227b0d" kindref="member">Dot::WhPl</ref>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>Linecounter++;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dot::WhMin()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>Linecounter--;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Linecounter<sp/>&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a917549908da2fa1bd2d5080d2a7f31c7" kindref="member">Dot::paint</ref>(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionGraphicsItem*<sp/>option,<sp/>QWidget*<sp/>widget)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/>path<sp/>=<sp/>QPainterPath();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_dot_1ace3fa9da5116caaf64f902da45115824" kindref="member">triangle</ref>)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_dot_1ada0d526fe302f22a3ab336dcec588ff1" kindref="member">bg</ref>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.addEllipse(-3<sp/>-<sp/>3,<sp/>-3<sp/>-<sp/>3,<sp/>6<sp/>+<sp/>6,<sp/>6<sp/>+<sp/>6);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.addEllipse(-3,<sp/>-3,<sp/>6,<sp/>6);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>()<sp/>&gt;<sp/>_pin-&gt;<ref refid="class_pin_1a91e265850820e125838e7d99f3491468" kindref="member">x</ref>())</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.moveTo(0,<sp/>0<sp/>-<sp/>_pin-&gt;height()<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.lineTo(_pin-&gt;height()<sp/>/<sp/>2,<sp/>0);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.lineTo(0,<sp/>0<sp/>+<sp/>_pin-&gt;height()<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.lineTo(0,<sp/>0<sp/>-<sp/>_pin-&gt;height()<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.moveTo(0,<sp/>0<sp/>-<sp/>_pin-&gt;height()<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.lineTo(0<sp/>-<sp/>_pin-&gt;height()<sp/>/<sp/>2,<sp/>0);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.lineTo(0,<sp/>0<sp/>+<sp/>_pin-&gt;height()<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.lineTo(0,<sp/>0<sp/>-<sp/>_pin-&gt;height()<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>painter-&gt;setBrush(QBrush(<ref refid="class_dot_1a17fa8a08a018a9c8d05dabd3a1991d70" kindref="member">cl</ref>));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>painter-&gt;drawPath(path);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">QRectF<sp/><ref refid="class_dot_1a508d06413b09f1e0ab230571c8278f7f" kindref="member">Dot::boundingRect</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="128"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a3a7fee5c9df6512243685bee725045a8" kindref="member">shape</ref>().boundingRect();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">QPainterPath<sp/><ref refid="class_dot_1a3a7fee5c9df6512243685bee725045a8" kindref="member">Dot::shape</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="133"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>QPainterPath<sp/>path;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>path.addRect(-10,<sp/>-10,<sp/>20,<sp/>20);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a54051366618ed5375e396b2904085f1b" kindref="member">Dot::VerticalDot</ref>(<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>d)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qFabs(this-&gt;pos().<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>()<sp/>-<sp/>d-&gt;pos().<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>())&gt;2)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_pin==</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;setPos(this-&gt;pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>(),<sp/>d-&gt;pos().<ref refid="class_dot_1a4959999894d474462c2d2e1b598f5fd4" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Emit_Moving();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dot_1a93ea5946db7c004e2437056a39fad0ea" kindref="member">Dot::HorizontalDot</ref>(<ref refid="class_dot" kindref="compound">Dot</ref>*<sp/>d)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qFabs(this-&gt;pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>()<sp/>-<sp/>d-&gt;pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>())<sp/>&gt;<sp/>2)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;setPos(d-&gt;pos().<ref refid="class_dot_1a2a1786546bd54708b07036f12b51c379" kindref="member">x</ref>(),<sp/>this-&gt;pos().y());</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Emit_Moving();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><ref refid="class_pin" kindref="compound">Pin</ref>*<sp/><ref refid="class_dot_1af3bf823da926992a15d7b8342b1d9cf7" kindref="member">Dot::pn</ref>()</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_pin;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Dot.cpp"/>
+  </compounddef>
+</doxygen>

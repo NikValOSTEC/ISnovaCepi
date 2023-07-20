@@ -1,0 +1,249 @@
+\doxysection{Класс Dot}
+\hypertarget{class_dot}{}\label{class_dot}\index{Dot@{Dot}}
+
+
+Класс Точки дляпостроения линий  
+
+
+
+
+{\ttfamily \#include $<$Dot.\+h$>$}
+
+Граф наследования\+:Dot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dot_a54051366618ed5375e396b2904085f1b}\label{class_dot_a54051366618ed5375e396b2904085f1b} 
+void {\bfseries Vertical\+Dot} (\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d)
+\begin{DoxyCompactList}\small\item\em Слот на обработку смещения другой связанной точки \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_a93ea5946db7c004e2437056a39fad0ea}\label{class_dot_a93ea5946db7c004e2437056a39fad0ea} 
+void {\bfseries Horizontal\+Dot} (\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d)
+\begin{DoxyCompactList}\small\item\em Слот на обработку смещения другой связанной точки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dot_abad06f4214cf3989b6576f2c605724ae}\label{class_dot_abad06f4214cf3989b6576f2c605724ae} 
+void {\bfseries Is\+\_\+in\+Move} (bool \mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}})
+\begin{DoxyCompactList}\small\item\em Сигнал о смещении точки \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_a4734f981074275e58377a1314b6eb7fc}\label{class_dot_a4734f981074275e58377a1314b6eb7fc} 
+void {\bfseries moving} (\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d)
+\begin{DoxyCompactList}\small\item\em Сигнал о перемещении точки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dot_a2b5337b001f9d588d1204f4975a48308}{Dot}} (QGraphics\+Object \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em QGraphics\+Item. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_dot_a12d277036a07c23548e0aa59f133dac4}{type}} () const override
+\begin{DoxyCompactList}\small\item\em для работы через \doxylink{class_g_view}{GView} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_dot_a2a1786546bd54708b07036f12b51c379}{x}} ()
+\item 
+int \mbox{\hyperlink{class_dot_a4959999894d474462c2d2e1b598f5fd4}{y}} ()
+\item 
+\Hypertarget{class_dot_adabf375b234a605380ae78f63d8795b7}\label{class_dot_adabf375b234a605380ae78f63d8795b7} 
+void {\bfseries x} (int x)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату по оси x. \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_aaa52e8314f02ab85f3caf51b8869aef1}\label{class_dot_aaa52e8314f02ab85f3caf51b8869aef1} 
+void {\bfseries y} (int y)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату по оси y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dot_a3f1b336dc13d266fe4050ae9911c73a8}{set\+Color}} (QColor \mbox{\hyperlink{class_dot_a17fa8a08a018a9c8d05dabd3a1991d70}{cl}})
+\begin{DoxyCompactList}\small\item\em Устанавливает Цвет \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dot_a7ac1cb63d973b86023b178ca39abe20f}{set\+Triangle}} (bool bl)
+\begin{DoxyCompactList}\small\item\em Делает треугольной или круглой \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dot_acba1bb9405225c7a3c3cbb0907756aad}{set\+Big}} (bool bl)
+\begin{DoxyCompactList}\small\item\em Делает большой или маленькой \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_af3bf823da926992a15d7b8342b1d9cf7}\label{class_dot_af3bf823da926992a15d7b8342b1d9cf7} 
+\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} {\bfseries pn} ()
+\begin{DoxyCompactList}\small\item\em Контакт за которым данная точка ВОЗМОЖНО закрепленна \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_a8b56d48ed0643dce2bdb9d17c5d36893}\label{class_dot_a8b56d48ed0643dce2bdb9d17c5d36893} 
+void {\bfseries Emit\+Is\+\_\+in\+Move} (bool \mbox{\hyperlink{class_dot_a4734f981074275e58377a1314b6eb7fc}{moving}})
+\item 
+void \mbox{\hyperlink{class_dot_a8e807f07f899587ef8f1b46612f72ac9}{set\+Pin}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Закрепление за контактом \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_abf4b2af6686b60c4de0953b270d18107}\label{class_dot_abf4b2af6686b60c4de0953b270d18107} 
+void {\bfseries Emit\+\_\+\+Moving} ()
+\item 
+\Hypertarget{class_dot_a5f989f28c9dc4a3871a8f84327ac2acb}\label{class_dot_a5f989f28c9dc4a3871a8f84327ac2acb} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Dot} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_aa497c04961604be7075a415cfc227b0d}\label{class_dot_aa497c04961604be7075a415cfc227b0d} 
+void {\bfseries Wh\+Pl} ()
+\begin{DoxyCompactList}\small\item\em Счетчик проводов когда их 0 удаление \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_a1451171a80b2743502cde4b49d5166db}\label{class_dot_a1451171a80b2743502cde4b49d5166db} 
+void {\bfseries Wh\+Min} ()
+\item 
+void \mbox{\hyperlink{class_dot_a917549908da2fa1bd2d5080d2a7f31c7}{paint}} (QPainter \texorpdfstring{$\ast$}{*}painter, const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}option, QWidget \texorpdfstring{$\ast$}{*}widget) override
+\item 
+QRectF \mbox{\hyperlink{class_dot_a508d06413b09f1e0ab230571c8278f7f}{bounding\+Rect}} () const override
+\item 
+QPainter\+Path \mbox{\hyperlink{class_dot_a3a7fee5c9df6512243685bee725045a8}{shape}} () const override
+\item 
+\Hypertarget{class_dot_a6390684a077fc1ae809e4ec4ea35ad37}\label{class_dot_a6390684a077fc1ae809e4ec4ea35ad37} 
+int {\bfseries whrscount} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dot_a17fa8a08a018a9c8d05dabd3a1991d70}\label{class_dot_a17fa8a08a018a9c8d05dabd3a1991d70} 
+QColor {\bfseries cl}
+\begin{DoxyCompactList}\small\item\em Цвет Линии \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_ace3fa9da5116caaf64f902da45115824}\label{class_dot_ace3fa9da5116caaf64f902da45115824} 
+bool {\bfseries triangle}
+\begin{DoxyCompactList}\small\item\em треугольная ли точка \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_ada0d526fe302f22a3ab336dcec588ff1}\label{class_dot_ada0d526fe302f22a3ab336dcec588ff1} 
+bool {\bfseries bg}
+\begin{DoxyCompactList}\small\item\em Большая ли точка \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_ae67778bccc9c380f2c42f93b90f5fa3e}\label{class_dot_ae67778bccc9c380f2c42f93b90f5fa3e} 
+\mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*} {\bfseries Vdot}
+\begin{DoxyCompactList}\small\item\em Линии использующие данную точку \end{DoxyCompactList}\item 
+\Hypertarget{class_dot_ae4568b5f2bab953b0b0be546c8a8dc94}\label{class_dot_ae4568b5f2bab953b0b0be546c8a8dc94} 
+\mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*} {\bfseries Hdot}
+\item 
+\Hypertarget{class_dot_a436ad74b9372af9bfbdb8fe31776ba25}\label{class_dot_a436ad74b9372af9bfbdb8fe31776ba25} 
+QVector$<$ \mbox{\hyperlink{class_new_whire}{New\+Whire}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries whires}
+\begin{DoxyCompactList}\small\item\em провода использующие данную точку \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс Точки дляпостроения линий 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_dot_a2b5337b001f9d588d1204f4975a48308}\label{class_dot_a2b5337b001f9d588d1204f4975a48308} 
+\index{Dot@{Dot}!Dot@{Dot}}
+\index{Dot@{Dot}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily Dot\+::\+Dot (\begin{DoxyParamCaption}\item[{QGraphics\+Object \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+QGraphics\+Item. 
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_dot_a508d06413b09f1e0ab230571c8278f7f}\label{class_dot_a508d06413b09f1e0ab230571c8278f7f} 
+\index{Dot@{Dot}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{boundingRect()}{boundingRect()}}
+{\footnotesize\ttfamily QRectF Dot\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_dot_a917549908da2fa1bd2d5080d2a7f31c7}\label{class_dot_a917549908da2fa1bd2d5080d2a7f31c7} 
+\index{Dot@{Dot}!paint@{paint}}
+\index{paint@{paint}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Dot\+::paint (\begin{DoxyParamCaption}\item[{QPainter \texorpdfstring{$\ast$}{*}}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}}]{option,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_dot_acba1bb9405225c7a3c3cbb0907756aad}\label{class_dot_acba1bb9405225c7a3c3cbb0907756aad} 
+\index{Dot@{Dot}!setBig@{setBig}}
+\index{setBig@{setBig}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{setBig()}{setBig()}}
+{\footnotesize\ttfamily void Dot\+::set\+Big (\begin{DoxyParamCaption}\item[{bool}]{bl }\end{DoxyParamCaption})}
+
+
+
+Делает большой или маленькой 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em bl} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dot_a3f1b336dc13d266fe4050ae9911c73a8}\label{class_dot_a3f1b336dc13d266fe4050ae9911c73a8} 
+\index{Dot@{Dot}!setColor@{setColor}}
+\index{setColor@{setColor}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Dot\+::set\+Color (\begin{DoxyParamCaption}\item[{QColor}]{cl }\end{DoxyParamCaption})}
+
+
+
+Устанавливает Цвет 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em cl} & цвет\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dot_a8e807f07f899587ef8f1b46612f72ac9}\label{class_dot_a8e807f07f899587ef8f1b46612f72ac9} 
+\index{Dot@{Dot}!setPin@{setPin}}
+\index{setPin@{setPin}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{setPin()}{setPin()}}
+{\footnotesize\ttfamily void Dot\+::set\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Закрепление за контактом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dot_a7ac1cb63d973b86023b178ca39abe20f}\label{class_dot_a7ac1cb63d973b86023b178ca39abe20f} 
+\index{Dot@{Dot}!setTriangle@{setTriangle}}
+\index{setTriangle@{setTriangle}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{setTriangle()}{setTriangle()}}
+{\footnotesize\ttfamily void Dot\+::set\+Triangle (\begin{DoxyParamCaption}\item[{bool}]{bl }\end{DoxyParamCaption})}
+
+
+
+Делает треугольной или круглой 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em bl} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dot_a3a7fee5c9df6512243685bee725045a8}\label{class_dot_a3a7fee5c9df6512243685bee725045a8} 
+\index{Dot@{Dot}!shape@{shape}}
+\index{shape@{shape}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path Dot\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_dot_a12d277036a07c23548e0aa59f133dac4}\label{class_dot_a12d277036a07c23548e0aa59f133dac4} 
+\index{Dot@{Dot}!type@{type}}
+\index{type@{type}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily int Dot\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+для работы через \doxylink{class_g_view}{GView} 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_dot_a2a1786546bd54708b07036f12b51c379}\label{class_dot_a2a1786546bd54708b07036f12b51c379} 
+\index{Dot@{Dot}!x@{x}}
+\index{x@{x}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily int Dot\+::x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Возвращает}
+Координату x
+\end{DoxyReturn}
+\Hypertarget{class_dot_a4959999894d474462c2d2e1b598f5fd4}\label{class_dot_a4959999894d474462c2d2e1b598f5fd4} 
+\index{Dot@{Dot}!y@{y}}
+\index{y@{y}!Dot@{Dot}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}}
+{\footnotesize\ttfamily int Dot\+::y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Возвращает}
+Координату y
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Dot.\+h\item 
+Dot.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_add_whire_command" kind="class" language="C++" prot="public">
+    <compoundname>AddWhireCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QUndoCommand</basecompoundref>
+    <includes refid="_add_whire_command_8h" local="no">AddWhireCommand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" prot="public" static="no" mutable="no">
+        <type><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref> *</type>
+        <definition>AddPinComand* AddWhireCommand::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <qualifiedname>AddWhireCommand::p1</qualifiedname>
+        <briefdescription>
+<para>Контакты соедененные проводом </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="37" column="14" bodyfile="AddWhireCommand.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_add_whire_command_1a7d051fc9583ecb9e243e9c56eec63716" prot="public" static="no" mutable="no">
+        <type><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref> *</type>
+        <definition>AddPinComand * AddWhireCommand::p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <qualifiedname>AddWhireCommand::p2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="37" column="17" bodyfile="AddWhireCommand.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" prot="public" static="no" mutable="no">
+        <type><ref refid="class_new_whire" kindref="compound">NewWhire</ref> *</type>
+        <definition>NewWhire* AddWhireCommand::whire</definition>
+        <argsstring></argsstring>
+        <name>whire</name>
+        <qualifiedname>AddWhireCommand::whire</qualifiedname>
+        <briefdescription>
+<para>Созданный провод </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="41" column="10" bodyfile="AddWhireCommand.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_add_whire_command_1ae647982c8cc9c12e7074d4d5501377b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddWhireCommand::AddWhireCommand</definition>
+        <argsstring>(AddPinComand *p11, AddPinComand *p22)</argsstring>
+        <name>AddWhireCommand</name>
+        <qualifiedname>AddWhireCommand::AddWhireCommand</qualifiedname>
+        <param>
+          <type><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref> *</type>
+          <declname>p11</declname>
+        </param>
+        <param>
+          <type><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref> *</type>
+          <declname>p22</declname>
+        </param>
+        <briefdescription>
+<para>Сам в себе высерает себя же в стэк из контакта p11 и добавляет на сцену, из view в разъеме контакта p11 провод,. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p11</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первый контакт соедененный проводом</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p22</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Второй контакт соедененный проводом</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="21" column="1" bodyfile="AddWhireCommand.cpp" bodystart="10" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_whire_command_1a085c1fcb56138f6e5312b98d129ae4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddWhireCommand::~AddWhireCommand</definition>
+        <argsstring>()</argsstring>
+        <name>~AddWhireCommand</name>
+        <qualifiedname>AddWhireCommand::~AddWhireCommand</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="25" column="1" bodyfile="AddWhireCommand.cpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_whire_command_1ac7351ba1df94fc2dca0406a0f9ab15f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddWhireCommand::undo</definition>
+        <argsstring>() override</argsstring>
+        <name>undo</name>
+        <qualifiedname>AddWhireCommand::undo</qualifiedname>
+        <briefdescription>
+<para>Удаляет провод </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="29" column="6" bodyfile="AddWhireCommand.cpp" bodystart="22" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_whire_command_1abfeb73f7b567beb76e41666c7d1ad8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddWhireCommand::redo</definition>
+        <argsstring>() override</argsstring>
+        <name>redo</name>
+        <qualifiedname>AddWhireCommand::redo</qualifiedname>
+        <briefdescription>
+<para>Создает провод </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="33" column="6" bodyfile="AddWhireCommand.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс наследник от QUndoCommand на добавление нового разъема на сцену </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Класс &quot;сам в себе&quot;, жрет ы конструкторе там же пушится в стэк.... </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddWhireCommand</label>
+        <link refid="class_add_whire_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AddPinComand</label>
+        <link refid="class_add_pin_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>pn</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>prt</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AddWhireCommand</label>
+        <link refid="class_add_whire_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p1</edgelabel>
+          <edgelabel>p2</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>whire</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Chain</label>
+        <link refid="class_chain"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>CustomColliderLineRecoursive</label>
+        <link refid="class_custom_collider_line_recoursive"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>d1</edgelabel>
+          <edgelabel>d2</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>lastcolide</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Dot</label>
+        <link refid="class_dot"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Hdot</edgelabel>
+          <edgelabel>Vdot</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>NewWhire</label>
+        <link refid="class_new_whire"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p1</edgelabel>
+          <edgelabel>p2</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>chain</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>command</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Pin</label>
+        <link refid="class_pin"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>parCon</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>chain</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>command</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QFrame</label>
+      </node>
+      <node id="15">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="19">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="12">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="5">
+        <label>QLineEdit</label>
+      </node>
+      <node id="14">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="7">
+        <label>QWidget</label>
+      </node>
+      <node id="9">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="AddWhireCommand.h" line="13" column="1" bodyfile="AddWhireCommand.h" bodystart="14" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_add_whire_command_1ae647982c8cc9c12e7074d4d5501377b1" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>AddWhireCommand</name></member>
+      <member refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>p1</name></member>
+      <member refid="class_add_whire_command_1a7d051fc9583ecb9e243e9c56eec63716" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>p2</name></member>
+      <member refid="class_add_whire_command_1abfeb73f7b567beb76e41666c7d1ad8b3" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>redo</name></member>
+      <member refid="class_add_whire_command_1ac7351ba1df94fc2dca0406a0f9ab15f0" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>undo</name></member>
+      <member refid="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>whire</name></member>
+      <member refid="class_add_whire_command_1a085c1fcb56138f6e5312b98d129ae4bf" prot="public" virt="non-virtual"><scope>AddWhireCommand</scope><name>~AddWhireCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

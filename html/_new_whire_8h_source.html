@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Кабелион графика: Исходный файл NewWhire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LOGO.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Кабелион графика
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NewWhire.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef NEWWHIRE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define NEWWHIRE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&quot;CustomColliderLineRecoursive.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_pin.html">Pin</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="class_add_whire_command.html">AddWhireCommand</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="class_chain.html">Chain</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_new_whire.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_new_whire.html">NewWhire</a>  : <span class="keyword">public</span> <a class="code hl_class" href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//Q_OBJECT</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_new_whire.html#a2691f3cddeff6e960bff7fc7bdfaa62c">   22</a></span>    <a class="code hl_class" href="class_pin.html">Pin</a> *<a class="code hl_variable" href="class_new_whire.html#a2691f3cddeff6e960bff7fc7bdfaa62c">p1</a> = <span class="keyword">nullptr</span>, *p2 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_new_whire.html#af8bb29b31fc64dee7f0e4c7f66629d41">   26</a></span>    <a class="code hl_class" href="class_chain.html">Chain</a>* <a class="code hl_variable" href="class_new_whire.html#af8bb29b31fc64dee7f0e4c7f66629d41">chain</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_new_whire.html">NewWhire</a>(<a class="code hl_class" href="class_pin.html">Pin</a>*pp1,<a class="code hl_class" href="class_pin.html">Pin</a>*pp2,<a class="code hl_class" href="class_add_whire_command.html">AddWhireCommand</a>* comm);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="class_new_whire.html#ab2501405c84096a9fd5ee7c312d3367d">~NewWhire</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_new_whire.html#ae40efe8589d1fffa127b3d5e165f0128">   41</a></span>    <a class="code hl_class" href="class_add_whire_command.html">AddWhireCommand</a>* <a class="code hl_variable" href="class_new_whire.html#ae40efe8589d1fffa127b3d5e165f0128">command</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_new_whire.html#aabdaabf6e689e62feea542b70d77655d">AddComandW</a>(<a class="code hl_class" href="class_pin.html">Pin</a>* <a class="code hl_variable" href="class_new_whire.html#a2691f3cddeff6e960bff7fc7bdfaa62c">p1</a>,<a class="code hl_class" href="class_pin.html">Pin</a>* p2);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    QColor <a class="code hl_function" href="class_new_whire.html#abf20f59764261f1dbd0a9451437c0dcb">color</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_add_whire_command_html"><div class="ttname"><a href="class_add_whire_command.html">AddWhireCommand</a></div><div class="ttdoc">Класс наследник от QUndoCommand на добавление нового разъема на сцену</div><div class="ttdef"><b>Definition</b> AddWhireCommand.h:14</div></div>
+<div class="ttc" id="aclass_chain_html"><div class="ttname"><a href="class_chain.html">Chain</a></div><div class="ttdoc">Класс Цепи  Содержит соедененные в цепь контакты</div><div class="ttdef"><b>Definition</b> chain.h:14</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html"><div class="ttname"><a href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a></div><div class="ttdoc">Линия с колизионной корекцией</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:19</div></div>
+<div class="ttc" id="aclass_new_whire_html"><div class="ttname"><a href="class_new_whire.html">NewWhire</a></div><div class="ttdoc">Вертикальный провод соеденяющий 2 контакта</div><div class="ttdef"><b>Definition</b> NewWhire.h:16</div></div>
+<div class="ttc" id="aclass_new_whire_html_a2691f3cddeff6e960bff7fc7bdfaa62c"><div class="ttname"><a href="class_new_whire.html#a2691f3cddeff6e960bff7fc7bdfaa62c">NewWhire::p1</a></div><div class="ttdeci">Pin * p1</div><div class="ttdoc">Контакты соедененные проводом</div><div class="ttdef"><b>Definition</b> NewWhire.h:22</div></div>
+<div class="ttc" id="aclass_new_whire_html_aabdaabf6e689e62feea542b70d77655d"><div class="ttname"><a href="class_new_whire.html#aabdaabf6e689e62feea542b70d77655d">NewWhire::AddComandW</a></div><div class="ttdeci">static void AddComandW(Pin *p1, Pin *p2)</div><div class="ttdoc">static для создания команды AddWhireCommand =&gt; провод</div><div class="ttdef"><b>Definition</b> NewWhire.cpp:58</div></div>
+<div class="ttc" id="aclass_new_whire_html_ab2501405c84096a9fd5ee7c312d3367d"><div class="ttname"><a href="class_new_whire.html#ab2501405c84096a9fd5ee7c312d3367d">NewWhire::~NewWhire</a></div><div class="ttdeci">~NewWhire()</div><div class="ttdoc">Деструктор</div><div class="ttdef"><b>Definition</b> NewWhire.cpp:51</div></div>
+<div class="ttc" id="aclass_new_whire_html_abf20f59764261f1dbd0a9451437c0dcb"><div class="ttname"><a href="class_new_whire.html#abf20f59764261f1dbd0a9451437c0dcb">NewWhire::color</a></div><div class="ttdeci">QColor color() override</div><div class="ttdoc">Цвет провода</div><div class="ttdef"><b>Definition</b> NewWhire.cpp:63</div></div>
+<div class="ttc" id="aclass_new_whire_html_ae40efe8589d1fffa127b3d5e165f0128"><div class="ttname"><a href="class_new_whire.html#ae40efe8589d1fffa127b3d5e165f0128">NewWhire::command</a></div><div class="ttdeci">AddWhireCommand * command</div><div class="ttdoc">Команда Undo создания провода</div><div class="ttdef"><b>Definition</b> NewWhire.h:41</div></div>
+<div class="ttc" id="aclass_new_whire_html_af8bb29b31fc64dee7f0e4c7f66629d41"><div class="ttname"><a href="class_new_whire.html#af8bb29b31fc64dee7f0e4c7f66629d41">NewWhire::chain</a></div><div class="ttdeci">Chain * chain</div><div class="ttdoc">Цепь в которую входит данный провод и соедененные им контакты</div><div class="ttdef"><b>Definition</b> NewWhire.h:26</div></div>
+<div class="ttc" id="aclass_pin_html"><div class="ttname"><a href="class_pin.html">Pin</a></div><div class="ttdoc">Контакт</div><div class="ttdef"><b>Definition</b> pin.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

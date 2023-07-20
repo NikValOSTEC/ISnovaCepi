@@ -1,0 +1,156 @@
+\doxysection{Класс New\+Pin\+Whire}
+\hypertarget{class_new_pin_whire}{}\label{class_new_pin_whire}\index{NewPinWhire@{NewPinWhire}}
+
+
+Горизонтальный провод идущий от контакта  
+
+
+
+
+{\ttfamily \#include $<$New\+Pin\+Whire.\+h$>$}
+
+Граф наследования\+:New\+Pin\+Whire\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_new_pin_whire}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_new_pin_whire_aa25ba490d084894a5440c74fe96324f1}{New\+Pin\+Whire}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}p, QThread \texorpdfstring{$\ast$}{*}th)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\Hypertarget{class_new_pin_whire_a34b50bdadb21a6be13028037e8141404}\label{class_new_pin_whire_a34b50bdadb21a6be13028037e8141404} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+New\+Pin\+Whire} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_new_pin_whire_a7cd432d5390928eeed24ca61c1abd449}{has\+Conection}} ()
+\begin{DoxyCompactList}\small\item\em наличие других связей \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{class_new_pin_whire_a67ccd5e3e8411e1afabe4b1789b13953}{color}} () override
+\begin{DoxyCompactList}\small\item\em Цвет провода \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual QColor \mbox{\hyperlink{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}{color}} ()
+\begin{DoxyCompactList}\small\item\em Цвет хранится в цепях не у линий нет прямого доступа в цепь \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_custom_collider_line_recoursive_a166325da3980f3abc1723ddc22aad42d}{Custom\+Collider\+Line\+Recoursive}} (bool Vertical\+\_\+f\+\_\+\+Horiz\+\_\+t, \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a}{d1}}, \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d2, \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Просто QGraphics\+Item. \end{DoxyCompactList}\item 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Custom\+Collider\+Line\+Recoursive} ()
+\begin{DoxyCompactList}\small\item\em Удаляет линию и все дочерние (коррекционные линии) \end{DoxyCompactList}\item 
+QRectF \mbox{\hyperlink{class_custom_collider_line_recoursive_a8bb3f83d68cc08e188c15b8ec0ac3e74}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em Линия без учета коррекции даже если не видна \end{DoxyCompactList}\item 
+QPainter\+Path \mbox{\hyperlink{class_custom_collider_line_recoursive_ae1e4cbe9ad3d81fffbb05fdeabfd99b1}{shape}} () const override
+\begin{DoxyCompactList}\small\item\em Форма для отрисовки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a5ff5d9a184b77af419ba5e4850fd0cef}{paint}} (QPainter \texorpdfstring{$\ast$}{*}painter, const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}option, QWidget \texorpdfstring{$\ast$}{*}widget) override
+\begin{DoxyCompactList}\small\item\em Отрисовка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a0e5186f9d4b3d8a6494d6457cca1422b}{set\+Fix\+Way}} (Colision\+Fix\+Way fw)
+\begin{DoxyCompactList}\small\item\em Наработка на будущее... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Открытые слоты унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a29e5d4ba6ff85387b29a1803646ccb09}{Fix\+Colliding}} (int times=0)
+\begin{DoxyCompactList}\small\item\em Пересчет коллизии  \end{DoxyCompactList}\item 
+void {\bfseries Clear\+Inside} ()
+\begin{DoxyCompactList}\small\item\em Очистка дочерних линий ( выравнивание ) \end{DoxyCompactList}\item 
+void {\bfseries set\+Vertical} ()
+\begin{DoxyCompactList}\small\item\em Смена направления линии на вертикаль \end{DoxyCompactList}\item 
+void {\bfseries set\+Horizontal} ()
+\begin{DoxyCompactList}\small\item\em Смена направления линии на горизонталь \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a2129474398747e0388be32b93e1baf58}{Jump\+From}} (QGraphics\+Item \texorpdfstring{$\ast$}{*}itm)
+\begin{DoxyCompactList}\small\item\em уход от обойденных ранее объектов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+QVector$<$ QGraphics\+Item \texorpdfstring{$\ast$}{*} $>$ {\bfseries itsmine}
+\begin{DoxyCompactList}\small\item\em Уже обойденные данной линией объекты \end{DoxyCompactList}\item 
+bool {\bfseries Vertical\+\_\+f\+\_\+\+Horizontal\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Горизонтальная или вертикальная линия false -\/ Вертикальная true -\/ горизонтальная \end{DoxyCompactList}\item 
+int {\bfseries Jump\+Derection} = 1
+\begin{DoxyCompactList}\small\item\em Направление отступления при движении обойденных ранее объектов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} {\bfseries d1}
+\begin{DoxyCompactList}\small\item\em Точки соеденяемые линией \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} {\bfseries d2}
+\item 
+Colision\+Fix\+Way {\bfseries fixway}
+\begin{DoxyCompactList}\small\item\em На будущее \end{DoxyCompactList}\item 
+QVector$<$ QGraphics\+Object \texorpdfstring{$\ast$}{*} $>$ {\bfseries inside}
+\begin{DoxyCompactList}\small\item\em Дочерние линии \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_proxy_rect_port}{Proxy\+Rect\+Port}} \texorpdfstring{$\ast$}{*} {\bfseries lastcolide} =nullptr
+\begin{DoxyCompactList}\small\item\em последний обойденный разъем \end{DoxyCompactList}\item 
+int {\bfseries lastleft}
+\item 
+int {\bfseries lastbottom}
+\item 
+\mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*} {\bfseries Parent}
+\begin{DoxyCompactList}\small\item\em родительская линия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Горизонтальный провод идущий от контакта 
+
+Всегда один у каждого контакта 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_new_pin_whire_aa25ba490d084894a5440c74fe96324f1}\label{class_new_pin_whire_aa25ba490d084894a5440c74fe96324f1} 
+\index{NewPinWhire@{NewPinWhire}!NewPinWhire@{NewPinWhire}}
+\index{NewPinWhire@{NewPinWhire}!NewPinWhire@{NewPinWhire}}
+\doxysubsubsection{\texorpdfstring{NewPinWhire()}{NewPinWhire()}}
+{\footnotesize\ttfamily New\+Pin\+Whire\+::\+New\+Pin\+Whire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{QThread \texorpdfstring{$\ast$}{*}}]{th }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+Жрет контакт и поток в котором лежит этот контакт 
+
+По идее таки пошустрее в несколько потоков 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & Контакт к которому приложен провод\\
+\hline
+{\em th} & Поток в который он перемещен\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_new_pin_whire_a67ccd5e3e8411e1afabe4b1789b13953}\label{class_new_pin_whire_a67ccd5e3e8411e1afabe4b1789b13953} 
+\index{NewPinWhire@{NewPinWhire}!color@{color}}
+\index{color@{color}!NewPinWhire@{NewPinWhire}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily QColor New\+Pin\+Whire\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Цвет провода 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}{Custom\+Collider\+Line\+Recoursive}}.
+
+\Hypertarget{class_new_pin_whire_a7cd432d5390928eeed24ca61c1abd449}\label{class_new_pin_whire_a7cd432d5390928eeed24ca61c1abd449} 
+\index{NewPinWhire@{NewPinWhire}!hasConection@{hasConection}}
+\index{hasConection@{hasConection}!NewPinWhire@{NewPinWhire}}
+\doxysubsubsection{\texorpdfstring{hasConection()}{hasConection()}}
+{\footnotesize\ttfamily bool New\+Pin\+Whire\+::has\+Conection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+наличие других связей 
+
+\begin{DoxyReturn}{Возвращает}
+true -\/ есть; false -\/ нет
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+New\+Pin\+Whire.\+h\item 
+New\+Pin\+Whire.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_remove_port_comand" kind="class" language="C++" prot="public">
+    <compoundname>RemovePortComand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QUndoCommand</basecompoundref>
+    <includes refid="_remove_port_comand_8h" local="no">RemovePortComand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_remove_port_comand_1a2f93a7fbd2639aecbde288aae4154f1c" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString RemovePortComand::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>RemovePortComand::name</qualifiedname>
+        <briefdescription>
+<para>имя разъема </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="34" column="9" bodyfile="RemovePortComand.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_remove_port_comand_1abcb86d5320b5457d4715cdf0155d8868" prot="public" static="no" mutable="no">
+        <type><ref refid="class_add_comand" kindref="compound">AddComand</ref> *</type>
+        <definition>AddComand* RemovePortComand::addcom</definition>
+        <argsstring></argsstring>
+        <name>addcom</name>
+        <qualifiedname>RemovePortComand::addcom</qualifiedname>
+        <briefdescription>
+<para>Команда создания удаляемого разъема (для перезаписи при откате) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="38" column="11" bodyfile="RemovePortComand.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_remove_port_comand_1a4dac2a52619b6617f816e1a6b0eb38e2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_view" kindref="compound">View</ref> *</type>
+        <definition>View* RemovePortComand::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <qualifiedname>RemovePortComand::v</qualifiedname>
+        <briefdescription>
+<para>отображение в котором лежит разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="42" column="6" bodyfile="RemovePortComand.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_remove_port_comand_1a259cfd9d5719f48dec595b74525578ab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RemovePortComand::xx</definition>
+        <argsstring></argsstring>
+        <name>xx</name>
+        <qualifiedname>RemovePortComand::xx</qualifiedname>
+        <briefdescription>
+<para>координаты разъема </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="46" column="5" bodyfile="RemovePortComand.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_remove_port_comand_1af6b1df2d9d69910d203ffd5473166b7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RemovePortComand::yy</definition>
+        <argsstring></argsstring>
+        <name>yy</name>
+        <qualifiedname>RemovePortComand::yy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="46" column="8" bodyfile="RemovePortComand.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_remove_port_comand_1a0178019ebef7c6b564cfa56ef3056bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RemovePortComand::RemovePortComand</definition>
+        <argsstring>(Port *p)</argsstring>
+        <name>RemovePortComand</name>
+        <qualifiedname>RemovePortComand::RemovePortComand</qualifiedname>
+        <param>
+          <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>создание команды в стэк</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>удаляемый разъем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="18" column="1" bodyfile="RemovePortComand.cpp" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_remove_port_comand_1a5f854db93eb66cee6b78099f29de5aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RemovePortComand::~RemovePortComand</definition>
+        <argsstring>()</argsstring>
+        <name>~RemovePortComand</name>
+        <qualifiedname>RemovePortComand::~RemovePortComand</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="22" column="1" bodyfile="RemovePortComand.cpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_remove_port_comand_1afbf154f4ce67148e56e1de979c20fdff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RemovePortComand::undo</definition>
+        <argsstring>() override</argsstring>
+        <name>undo</name>
+        <qualifiedname>RemovePortComand::undo</qualifiedname>
+        <briefdescription>
+<para>Создает разъем снова и закладывает его в ту же команду создания для сохранения цепочки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="26" column="6" bodyfile="RemovePortComand.cpp" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_remove_port_comand_1ac43040ba49d175434e567c920ca58776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RemovePortComand::redo</definition>
+        <argsstring>() override</argsstring>
+        <name>redo</name>
+        <qualifiedname>RemovePortComand::redo</qualifiedname>
+        <briefdescription>
+<para>Удаляет разъем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RemovePortComand.h" line="30" column="6" bodyfile="RemovePortComand.cpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Undo Redo Удаление разъема </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="1">
+        <label>RemovePortComand</label>
+        <link refid="class_remove_port_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QFrame</label>
+      </node>
+      <node id="8">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="12">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="7">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="5">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>RemovePortComand</label>
+        <link refid="class_remove_port_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>addcom</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="RemovePortComand.h" line="12" column="1" bodyfile="RemovePortComand.h" bodystart="13" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_remove_port_comand_1abcb86d5320b5457d4715cdf0155d8868" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>addcom</name></member>
+      <member refid="class_remove_port_comand_1a2f93a7fbd2639aecbde288aae4154f1c" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>name</name></member>
+      <member refid="class_remove_port_comand_1ac43040ba49d175434e567c920ca58776" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>redo</name></member>
+      <member refid="class_remove_port_comand_1a0178019ebef7c6b564cfa56ef3056bdf" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>RemovePortComand</name></member>
+      <member refid="class_remove_port_comand_1afbf154f4ce67148e56e1de979c20fdff" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>undo</name></member>
+      <member refid="class_remove_port_comand_1a4dac2a52619b6617f816e1a6b0eb38e2" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>v</name></member>
+      <member refid="class_remove_port_comand_1a259cfd9d5719f48dec595b74525578ab" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>xx</name></member>
+      <member refid="class_remove_port_comand_1af6b1df2d9d69910d203ffd5473166b7b" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>yy</name></member>
+      <member refid="class_remove_port_comand_1a5f854db93eb66cee6b78099f29de5aa2" prot="public" virt="non-virtual"><scope>RemovePortComand</scope><name>~RemovePortComand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

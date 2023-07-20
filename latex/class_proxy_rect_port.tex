@@ -1,0 +1,387 @@
+\doxysection{Класс Proxy\+Rect\+Port}
+\hypertarget{class_proxy_rect_port}{}\label{class_proxy_rect_port}\index{ProxyRectPort@{ProxyRectPort}}
+
+
+Прослойка для перемещения разъема по сцене  
+
+
+
+
+{\ttfamily \#include $<$proxyrectport.\+h$>$}
+
+Граф наследования\+:Proxy\+Rect\+Port\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proxy_rect_port}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_proxy_rect_port_ac791c14b682d510a7e899a792db7f5b5}\label{class_proxy_rect_port_ac791c14b682d510a7e899a792db7f5b5} 
+void {\bfseries strart\+Move} ()
+\begin{DoxyCompactList}\small\item\em сигнал отметка начало перемещения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_proxy_rect_port_a427c41476393abf9205ce4c6c9b385a3}{Proxy\+Rect\+Port}} (\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}port)
+\begin{DoxyCompactList}\small\item\em Создает прослойку вкладывает в нее разъем \end{DoxyCompactList}\item 
+\Hypertarget{class_proxy_rect_port_a98181e580c4f3236ce8af259aaf84c1f}\label{class_proxy_rect_port_a98181e580c4f3236ce8af259aaf84c1f} 
+void {\bfseries Emit\+Move} ()
+\begin{DoxyCompactList}\small\item\em Сигна о перемещении \end{DoxyCompactList}\item 
+QPainter\+Path \mbox{\hyperlink{class_proxy_rect_port_a9dcd8c076532288d70ef0ac7a274c4ae}{shape}} () const override
+\item 
+QRectF \mbox{\hyperlink{class_proxy_rect_port_af9222adec783241fd408c1581f81852c}{bounding\+Rect}} () const override
+\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a1687a0abbbc686d145c95ac734b5358a}{paint}} (QPainter \texorpdfstring{$\ast$}{*}painter, const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}option, QWidget \texorpdfstring{$\ast$}{*}widget) override
+\item 
+QRectF \mbox{\hyperlink{class_proxy_rect_port_ac89d1cd4aaa3a56b2b68058a275f5a54}{geometry}} ()
+\begin{DoxyCompactList}\small\item\em костыль аля bounding rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a5e66c75ef319f295d7d2ebab76dac8f1}{geometry}} (QRectF rec)
+\begin{DoxyCompactList}\small\item\em установка костыл аля bounding rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a9c26ba4411547ad27eb04f2bb5799669}{setconnector}} (\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}port)
+\begin{DoxyCompactList}\small\item\em Установка вложенного разъема \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_proxy_rect_port_a5c31d1198ac006afc2112a22d90c6758}{getport}} ()
+\begin{DoxyCompactList}\small\item\em Вложенный порт \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{class_proxy_rect_port_aef8331d8062971ffc9caf861b527a1d9}{color}} ()
+\begin{DoxyCompactList}\small\item\em Цвет прокси (Шапка над разъемом) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a33ef78575c38a7442cd768f29c9c2c71}{color}} (QColor c)
+\begin{DoxyCompactList}\small\item\em установка цвета прокси (Шапка над разъемом) \end{DoxyCompactList}\item 
+\Hypertarget{class_proxy_rect_port_afc3f5de95ed5daaeddfe64caaa3a627f}\label{class_proxy_rect_port_afc3f5de95ed5daaeddfe64caaa3a627f} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Proxy\+Rect\+Port} ()
+\begin{DoxyCompactList}\small\item\em удаление прокси и вложенного разъема \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a1f74dce4c5d8fc136801d655a924ff1a}{Update}} (bool upd=false, int i=0)
+\begin{DoxyCompactList}\small\item\em пересчет местоположения от колизий и обновление вложенного разъема \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_proxy_rect_port_a31f4b879ed045aca48722e0fd17c1552}{type}} () const override
+\begin{DoxyCompactList}\small\item\em Нужен для обновления через \doxylink{class_g_view}{GView}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_aa265a53484c9f190bcfc2345a5e0c443}{Colider\+Check}} (bool upd=true)
+\begin{DoxyCompactList}\small\item\em Проверка коллизий с проводами \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_afd56b7dcc7445bd605f50ffa26f7f652}{Proxy\+Colider}} (int xx=0, int yy=0)
+\begin{DoxyCompactList}\small\item\em Проверка коллизий разъемами (рекурия) \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_proxy_rect_port_acbd82314cade9122e6c4d7489a7c7b9c}{XX}} ()
+\begin{DoxyCompactList}\small\item\em координата по x; \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_proxy_rect_port_a2d3d09203d0193a0634f1f1a50ee325c}{YY}} ()
+\begin{DoxyCompactList}\small\item\em координата по y; \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a612d12d83107c4997492841354919793}{XX}} (qreal x)
+\begin{DoxyCompactList}\small\item\em установка координаты по x; \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proxy_rect_port_a17f0094126800b3e9d081cdf9824752e}{YY}} (qreal y)
+\begin{DoxyCompactList}\small\item\em установка координаты по x; \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_proxy_rect_port_af7fbb34af9cdd970af1a4bedc6cde2bb}{left}} ()
+\begin{DoxyCompactList}\small\item\em Левая сторона \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_proxy_rect_port_a5451cdf289a7f301d36b0c5eb6b111b8}{right}} ()
+\begin{DoxyCompactList}\small\item\em Правая сторона \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_proxy_rect_port_a250e3fb175d75701f497ef7e563d4124}{bottom}} ()
+\begin{DoxyCompactList}\small\item\em Низ \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_proxy_rect_port_a14a9e7497d3e6bd64c0684c7dd2c9dd0}{top}} ()
+\begin{DoxyCompactList}\small\item\em Верх \end{DoxyCompactList}\item 
+QPointF \mbox{\hyperlink{class_proxy_rect_port_a257b35ca3f66be31388c663e62d38ad8}{center}} ()
+\begin{DoxyCompactList}\small\item\em координаты центра \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Прослойка для перемещения разъема по сцене 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_proxy_rect_port_a427c41476393abf9205ce4c6c9b385a3}\label{class_proxy_rect_port_a427c41476393abf9205ce4c6c9b385a3} 
+\index{ProxyRectPort@{ProxyRectPort}!ProxyRectPort@{ProxyRectPort}}
+\index{ProxyRectPort@{ProxyRectPort}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{ProxyRectPort()}{ProxyRectPort()}}
+{\footnotesize\ttfamily Proxy\+Rect\+Port\+::\+Proxy\+Rect\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}}]{port }\end{DoxyParamCaption})}
+
+
+
+Создает прослойку вкладывает в нее разъем 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & Вложеный разъем\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_proxy_rect_port_a250e3fb175d75701f497ef7e563d4124}\label{class_proxy_rect_port_a250e3fb175d75701f497ef7e563d4124} 
+\index{ProxyRectPort@{ProxyRectPort}!bottom@{bottom}}
+\index{bottom@{bottom}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily qreal Proxy\+Rect\+Port\+::bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Низ 
+
+\begin{DoxyReturn}{Возвращает}
+y нижнего края
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_af9222adec783241fd408c1581f81852c}\label{class_proxy_rect_port_af9222adec783241fd408c1581f81852c} 
+\index{ProxyRectPort@{ProxyRectPort}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{boundingRect()}{boundingRect()}}
+{\footnotesize\ttfamily QRectF Proxy\+Rect\+Port\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_proxy_rect_port_a257b35ca3f66be31388c663e62d38ad8}\label{class_proxy_rect_port_a257b35ca3f66be31388c663e62d38ad8} 
+\index{ProxyRectPort@{ProxyRectPort}!center@{center}}
+\index{center@{center}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily QPointF Proxy\+Rect\+Port\+::center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+координаты центра 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_aa265a53484c9f190bcfc2345a5e0c443}\label{class_proxy_rect_port_aa265a53484c9f190bcfc2345a5e0c443} 
+\index{ProxyRectPort@{ProxyRectPort}!ColiderCheck@{ColiderCheck}}
+\index{ColiderCheck@{ColiderCheck}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{ColiderCheck()}{ColiderCheck()}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::\+Colider\+Check (\begin{DoxyParamCaption}\item[{bool}]{upd = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Проверка коллизий с проводами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em upd} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proxy_rect_port_aef8331d8062971ffc9caf861b527a1d9}\label{class_proxy_rect_port_aef8331d8062971ffc9caf861b527a1d9} 
+\index{ProxyRectPort@{ProxyRectPort}!color@{color}}
+\index{color@{color}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily QColor Proxy\+Rect\+Port\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Цвет прокси (Шапка над разъемом) 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a33ef78575c38a7442cd768f29c9c2c71}\label{class_proxy_rect_port_a33ef78575c38a7442cd768f29c9c2c71} 
+\index{ProxyRectPort@{ProxyRectPort}!color@{color}}
+\index{color@{color}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::color (\begin{DoxyParamCaption}\item[{QColor}]{c }\end{DoxyParamCaption})}
+
+
+
+установка цвета прокси (Шапка над разъемом) 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_ac89d1cd4aaa3a56b2b68058a275f5a54}\label{class_proxy_rect_port_ac89d1cd4aaa3a56b2b68058a275f5a54} 
+\index{ProxyRectPort@{ProxyRectPort}!geometry@{geometry}}
+\index{geometry@{geometry}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{geometry()}{geometry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily QRectF Proxy\+Rect\+Port\+::geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+костыль аля bounding rect 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a5e66c75ef319f295d7d2ebab76dac8f1}\label{class_proxy_rect_port_a5e66c75ef319f295d7d2ebab76dac8f1} 
+\index{ProxyRectPort@{ProxyRectPort}!geometry@{geometry}}
+\index{geometry@{geometry}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{geometry()}{geometry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::geometry (\begin{DoxyParamCaption}\item[{QRectF}]{rec }\end{DoxyParamCaption})}
+
+
+
+установка костыл аля bounding rect 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em rec} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proxy_rect_port_a5c31d1198ac006afc2112a22d90c6758}\label{class_proxy_rect_port_a5c31d1198ac006afc2112a22d90c6758} 
+\index{ProxyRectPort@{ProxyRectPort}!getport@{getport}}
+\index{getport@{getport}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{getport()}{getport()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*} Proxy\+Rect\+Port\+::getport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вложенный порт 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_af7fbb34af9cdd970af1a4bedc6cde2bb}\label{class_proxy_rect_port_af7fbb34af9cdd970af1a4bedc6cde2bb} 
+\index{ProxyRectPort@{ProxyRectPort}!left@{left}}
+\index{left@{left}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily qreal Proxy\+Rect\+Port\+::left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Левая сторона 
+
+\begin{DoxyReturn}{Возвращает}
+x левого края
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a1687a0abbbc686d145c95ac734b5358a}\label{class_proxy_rect_port_a1687a0abbbc686d145c95ac734b5358a} 
+\index{ProxyRectPort@{ProxyRectPort}!paint@{paint}}
+\index{paint@{paint}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::paint (\begin{DoxyParamCaption}\item[{QPainter \texorpdfstring{$\ast$}{*}}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}}]{option,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_proxy_rect_port_afd56b7dcc7445bd605f50ffa26f7f652}\label{class_proxy_rect_port_afd56b7dcc7445bd605f50ffa26f7f652} 
+\index{ProxyRectPort@{ProxyRectPort}!ProxyColider@{ProxyColider}}
+\index{ProxyColider@{ProxyColider}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{ProxyColider()}{ProxyColider()}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::\+Proxy\+Colider (\begin{DoxyParamCaption}\item[{int}]{xx = {\ttfamily 0},  }\item[{int}]{yy = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Проверка коллизий разъемами (рекурия) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em xx} & направление смещения в случае рекурсивного наложения\\
+\hline
+{\em yy} & направление смещения в случае рекурсивного наложения\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proxy_rect_port_a5451cdf289a7f301d36b0c5eb6b111b8}\label{class_proxy_rect_port_a5451cdf289a7f301d36b0c5eb6b111b8} 
+\index{ProxyRectPort@{ProxyRectPort}!right@{right}}
+\index{right@{right}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily qreal Proxy\+Rect\+Port\+::right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Правая сторона 
+
+\begin{DoxyReturn}{Возвращает}
+x правого края
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a9c26ba4411547ad27eb04f2bb5799669}\label{class_proxy_rect_port_a9c26ba4411547ad27eb04f2bb5799669} 
+\index{ProxyRectPort@{ProxyRectPort}!setconnector@{setconnector}}
+\index{setconnector@{setconnector}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{setconnector()}{setconnector()}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::setconnector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_port}{Port}} \texorpdfstring{$\ast$}{*}}]{port }\end{DoxyParamCaption})}
+
+
+
+Установка вложенного разъема 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proxy_rect_port_a9dcd8c076532288d70ef0ac7a274c4ae}\label{class_proxy_rect_port_a9dcd8c076532288d70ef0ac7a274c4ae} 
+\index{ProxyRectPort@{ProxyRectPort}!shape@{shape}}
+\index{shape@{shape}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path Proxy\+Rect\+Port\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+см. \href{https://doc.qt.io/qt-6/qgraphicsitem.html}{\texttt{ https\+://doc.\+qt.\+io/qt-\/6/qgraphicsitem.\+html}} \Hypertarget{class_proxy_rect_port_a14a9e7497d3e6bd64c0684c7dd2c9dd0}\label{class_proxy_rect_port_a14a9e7497d3e6bd64c0684c7dd2c9dd0} 
+\index{ProxyRectPort@{ProxyRectPort}!top@{top}}
+\index{top@{top}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily qreal Proxy\+Rect\+Port\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Верх 
+
+\begin{DoxyReturn}{Возвращает}
+y верхнего края
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a31f4b879ed045aca48722e0fd17c1552}\label{class_proxy_rect_port_a31f4b879ed045aca48722e0fd17c1552} 
+\index{ProxyRectPort@{ProxyRectPort}!type@{type}}
+\index{type@{type}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily int Proxy\+Rect\+Port\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Нужен для обновления через \doxylink{class_g_view}{GView}. 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a1f74dce4c5d8fc136801d655a924ff1a}\label{class_proxy_rect_port_a1f74dce4c5d8fc136801d655a924ff1a} 
+\index{ProxyRectPort@{ProxyRectPort}!Update@{Update}}
+\index{Update@{Update}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::\+Update (\begin{DoxyParamCaption}\item[{bool}]{upd = {\ttfamily false},  }\item[{int}]{i = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+пересчет местоположения от колизий и обновление вложенного разъема 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em upd} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proxy_rect_port_acbd82314cade9122e6c4d7489a7c7b9c}\label{class_proxy_rect_port_acbd82314cade9122e6c4d7489a7c7b9c} 
+\index{ProxyRectPort@{ProxyRectPort}!XX@{XX}}
+\index{XX@{XX}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{XX()}{XX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily qreal Proxy\+Rect\+Port\+::\+XX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+координата по x; 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a612d12d83107c4997492841354919793}\label{class_proxy_rect_port_a612d12d83107c4997492841354919793} 
+\index{ProxyRectPort@{ProxyRectPort}!XX@{XX}}
+\index{XX@{XX}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{XX()}{XX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::\+XX (\begin{DoxyParamCaption}\item[{qreal}]{x }\end{DoxyParamCaption})}
+
+
+
+установка координаты по x; 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a2d3d09203d0193a0634f1f1a50ee325c}\label{class_proxy_rect_port_a2d3d09203d0193a0634f1f1a50ee325c} 
+\index{ProxyRectPort@{ProxyRectPort}!YY@{YY}}
+\index{YY@{YY}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{YY()}{YY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily qreal Proxy\+Rect\+Port\+::\+YY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+координата по y; 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\Hypertarget{class_proxy_rect_port_a17f0094126800b3e9d081cdf9824752e}\label{class_proxy_rect_port_a17f0094126800b3e9d081cdf9824752e} 
+\index{ProxyRectPort@{ProxyRectPort}!YY@{YY}}
+\index{YY@{YY}!ProxyRectPort@{ProxyRectPort}}
+\doxysubsubsection{\texorpdfstring{YY()}{YY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Proxy\+Rect\+Port\+::\+YY (\begin{DoxyParamCaption}\item[{qreal}]{y }\end{DoxyParamCaption})}
+
+
+
+установка координаты по x; 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+proxyrectport.\+h\item 
+proxyrectport.\+cpp\end{DoxyCompactItemize}

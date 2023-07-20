@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_port_template" kind="class" language="C++" prot="public">
+    <compoundname>PortTemplate</compoundname>
+    <basecompoundref refid="class_port" prot="public" virt="non-virtual">Port</basecompoundref>
+    <includes refid="_port_template_8h" local="no">PortTemplate.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_port_template_1a0d97ba6ff503c7448c51e234ff2daf97" prot="private" static="no" mutable="no">
+        <type><ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref> *</type>
+        <definition>PortTwmplateObject* PortTemplate::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <qualifiedname>PortTemplate::object</qualifiedname>
+        <briefdescription>
+<para>Объект для Drag and Drop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="44" column="20" bodyfile="PortTemplate.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_port_template_1a9d0d35c71d0cf676913e4840cf81543e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PortTemplate::PortTemplate</definition>
+        <argsstring>(PortTwmplateObject *o)</argsstring>
+        <name>PortTemplate</name>
+        <qualifiedname>PortTemplate::PortTemplate</qualifiedname>
+        <param>
+          <type><ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref> *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Новый Шаблон hfp]tvf. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект для Drag and Drop</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="28" column="1" bodyfile="PortTemplate.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_template_1ab742c2261411d9ee00762660d1989d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin * PortTemplate::addPinn</definition>
+        <argsstring>(QString name=&quot;&quot;, int index=-1)</argsstring>
+        <name>addPinn</name>
+        <qualifiedname>PortTemplate::addPinn</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Добавление контакта (шаблона контакта) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Добавленный контакт</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="35" column="5" bodyfile="PortTemplate.cpp" bodystart="12" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_template_1a27d10b132ebad4031ab6952603c71049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PortTemplate::~PortTemplate</definition>
+        <argsstring>()</argsstring>
+        <name>~PortTemplate</name>
+        <qualifiedname>PortTemplate::~PortTemplate</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="39" column="1" bodyfile="PortTemplate.cpp" bodystart="32" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_port_template_1a480058271b88ea22ae3ad08fb8a170d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin * PortTemplate::addPinSl</definition>
+        <argsstring>(QString name=&quot;&quot;)</argsstring>
+        <name>addPinSl</name>
+        <qualifiedname>PortTemplate::addPinSl</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Добавление контакта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="49" column="5" bodyfile="PortTemplate.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_template_1a566311db49f0f9e16d8e3b06a32c1a00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PortTemplate::RemoveSL</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveSL</name>
+        <qualifiedname>PortTemplate::RemoveSL</qualifiedname>
+        <briefdescription>
+<para>Удаление Шаблона </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="53" column="6" bodyfile="PortTemplate.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_template_1a9871f89f442341d090e1db011420e753" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PortTemplate::closeEvent</definition>
+        <argsstring>(QCloseEvent *event) override</argsstring>
+        <name>closeEvent</name>
+        <qualifiedname>PortTemplate::closeEvent</qualifiedname>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Закрытие окна редактирования шаблона (сохранение) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="58" column="6" bodyfile="PortTemplate.cpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_port_template_1aff76185c4d08f4a832786ba53862c3e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * PortTemplate::ContextMenu</definition>
+        <argsstring>()</argsstring>
+        <name>ContextMenu</name>
+        <qualifiedname>PortTemplate::ContextMenu</qualifiedname>
+        <briefdescription>
+<para>Контекстное меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PortTemplate.h" line="63" column="19" bodyfile="PortTemplate.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Шаблон Разъема; перегрузка разъема ( убрано перемещение итд) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PortTemplate</label>
+        <link refid="class_port_template"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PortTemplate</label>
+        <link refid="class_port_template"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QFrame</label>
+      </node>
+      <node id="12">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="9">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="11">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="6">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PortTemplate.h" line="19" column="1" bodyfile="PortTemplate.h" bodystart="20" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_port_1a5a6bf9109d4cc0125ad9f7ae58d9c6d0" prot="protected" virt="non-virtual"><scope>PortTemplate</scope><name>_proxy</name></member>
+      <member refid="class_port_1a5beafe369a13809fc03af0208417aa1d" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>adcom</name></member>
+      <member refid="class_port_1aab356149ee33772dc2dee00a6c08bf95" prot="public" virt="virtual"><scope>PortTemplate</scope><name>addPin</name></member>
+      <member refid="class_port_template_1ab742c2261411d9ee00762660d1989d97" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>addPinn</name></member>
+      <member refid="class_port_template_1a480058271b88ea22ae3ad08fb8a170d8" prot="private" virt="non-virtual"><scope>PortTemplate</scope><name>addPinSl</name></member>
+      <member refid="class_port_template_1a9871f89f442341d090e1db011420e753" prot="private" virt="non-virtual"><scope>PortTemplate</scope><name>closeEvent</name></member>
+      <member refid="class_port_template_1aff76185c4d08f4a832786ba53862c3e7" prot="private" virt="virtual"><scope>PortTemplate</scope><name>ContextMenu</name></member>
+      <member refid="class_port_1a0c668bf31a6533794ce9727e0da16350" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>name</name></member>
+      <member refid="class_port_1ae2c0e3be2193095b86ccf4b2f6f99783" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>name</name></member>
+      <member refid="class_port_template_1a0d97ba6ff503c7448c51e234ff2daf97" prot="private" virt="non-virtual"><scope>PortTemplate</scope><name>object</name></member>
+      <member refid="class_port_1a15a7a06e221876566463ba94873667e7" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>pins</name></member>
+      <member refid="class_port_1aa7d27eb09b9d9a8308adeff0f96100a4" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>Port</name></member>
+      <member refid="class_port_1a2cfb70a4b6d730e715042d646ec1d960" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>Port</name></member>
+      <member refid="class_port_1aef88b80ef65a8e8975e6e401c3fe2532" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>portsVector</name></member>
+      <member refid="class_port_template_1a9d0d35c71d0cf676913e4840cf81543e" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>PortTemplate</name></member>
+      <member refid="class_port_1a252882139d38712ad89fe27be57a4d96" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>proxy</name></member>
+      <member refid="class_port_1a1735f6a74225223f4eae6feac4eab42e" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>proxy</name></member>
+      <member refid="class_port_1a6eb1a5f28f9031f22855ea702b5634f5" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>Remove</name></member>
+      <member refid="class_port_template_1a566311db49f0f9e16d8e3b06a32c1a00" prot="private" virt="non-virtual"><scope>PortTemplate</scope><name>RemoveSL</name></member>
+      <member refid="class_port_1ab0f95dc4e4708f0c26c1ef3d329958b3" prot="protected" virt="non-virtual"><scope>PortTemplate</scope><name>spacer</name></member>
+      <member refid="class_port_1ac30d86bec813d1eabb39f31b40b45487" prot="protected" virt="non-virtual"><scope>PortTemplate</scope><name>ui</name></member>
+      <member refid="class_port_1ae08eb4800b9a316ebe5c8a7e1dba9340" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>Update</name></member>
+      <member refid="class_port_1aefc2c28deb5776de74cf81eb206fbbe7" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>x</name></member>
+      <member refid="class_port_1a72c13b59e385b73474e433e450bafe17" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>y</name></member>
+      <member refid="class_port_1afe166c2a6b10ad34d47472a150366bc1" prot="public" virt="virtual"><scope>PortTemplate</scope><name>~Port</name></member>
+      <member refid="class_port_template_1a27d10b132ebad4031ab6952603c71049" prot="public" virt="non-virtual"><scope>PortTemplate</scope><name>~PortTemplate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

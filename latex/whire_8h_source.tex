@@ -1,0 +1,42 @@
+\doxysection{whire.\+h}
+\hypertarget{whire_8h_source}{}\label{whire_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WHIRE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WHIRE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QColorDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<qcoreapplication.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<QGraphicsItem>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<QObject>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<QVector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QGraphicsItem>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_whire_command}{AddWhireCommand}};}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include"{}AddWhireCommand.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chain}{Chain}};}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include"{}chain.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include"{}Pin.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_whire}{Whire}}\ :\ \textcolor{keyword}{public}\ QGraphicsItem,QObject}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ QPainterPath\ patt;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_add_whire_command}{AddWhireCommand}}*\ command;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_whire}{Whire}}(\mbox{\hyperlink{class_pin}{Pin}}*\ p1,\ \mbox{\hyperlink{class_pin}{Pin}}*\ p2,\ \mbox{\hyperlink{class_add_whire_command}{AddWhireCommand}}*\ comm);}
+\DoxyCodeLine{00025\ \ \ \ \ QRectF\ boundingRect()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00026\ \ \ \ \ QPainterPath\ shape()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ updateShape(\textcolor{keywordtype}{bool}\ colision\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ paint(QPainter*\ painter,\ \textcolor{keyword}{const}\ QStyleOptionGraphicsItem*\ option,\ QWidget*\ widget)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ p1=\textcolor{keyword}{nullptr},\ *\ p2=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_whire}{\string~Whire}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ CollisionFix(\textcolor{keywordtype}{bool}\ fix=\textcolor{keyword}{true});}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ move(\textcolor{keywordtype}{bool}\ left\_rigth,\ \textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_chain}{Chain}}*\ chain=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ AddComandW(\mbox{\hyperlink{class_pin}{Pin}}*\ p1,\ \mbox{\hyperlink{class_pin}{Pin}}*\ p2);}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WHIRE\_H}}
+
+\end{DoxyCode}

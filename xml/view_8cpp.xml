@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="view_8cpp" kind="file" language="C++">
+    <compoundname>view.cpp</compoundname>
+    <includes refid="_g_view_8h" local="yes">GView.h</includes>
+    <includes local="yes">qgridlayout.h</includes>
+    <includes refid="_g_item_frame_8h" local="yes">GItemFrame.h</includes>
+    <includes refid="mygraphicsscene_8h" local="yes">mygraphicsscene.h</includes>
+    <includes refid="_add_comand_8h" local="yes">AddComand.h</includes>
+    <includes refid="view_8h" local="yes">view.h</includes>
+    <includes local="no">QtMath</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>AddComand.h</label>
+        <link refid="_add_comand_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GItemFrame.h</label>
+        <link refid="_g_item_frame_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GView.h</label>
+        <link refid="_g_view_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mygraphicsscene.h</label>
+        <link refid="mygraphicsscene_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>view.cpp</label>
+        <link refid="view_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>view.h</label>
+        <link refid="view_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QDebug</label>
+      </node>
+      <node id="14">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="19">
+        <label>QMenu</label>
+      </node>
+      <node id="7">
+        <label>QMimeData</label>
+      </node>
+      <node id="11">
+        <label>QPainter</label>
+      </node>
+      <node id="10">
+        <label>QPen</label>
+      </node>
+      <node id="22">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="25">
+        <label>QtMath</label>
+      </node>
+      <node id="5">
+        <label>qdrag.h</label>
+      </node>
+      <node id="6">
+        <label>qevent.h</label>
+      </node>
+      <node id="20">
+        <label>qframe.h</label>
+      </node>
+      <node id="12">
+        <label>qgraphicsitem.h</label>
+      </node>
+      <node id="24">
+        <label>qgraphicsproxywidget.h</label>
+      </node>
+      <node id="4">
+        <label>qgraphicsview.h</label>
+      </node>
+      <node id="8">
+        <label>qgridlayout.h</label>
+      </node>
+      <node id="3">
+        <label>qobject.h</label>
+      </node>
+      <node id="18">
+        <label>qscrollbar.h</label>
+      </node>
+      <node id="16">
+        <label>qshortcut.h</label>
+      </node>
+      <node id="17">
+        <label>qundostack.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&quot;GView.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;qgridlayout.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;GItemFrame.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;mygraphicsscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;AddComand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;view.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QtMath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="class_view_1a44ad60a768422d3fa8fbd7576950080a" kindref="member">View::View</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_view" kindref="compound">GView</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;setDragMode(QGraphicsView::RubberBandDrag);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//graphicsview-&gt;setOptimizationFlags(QGraphicsView::OptimizationFlag::IndirectPainting);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;setViewportUpdateMode(QGraphicsView::ViewportUpdateMode::FullViewportUpdate);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;setTransformationAnchor(QGraphicsView::NoAnchor);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//setFrameStyle(Sunken<sp/>|<sp/>StyledPanel);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>_scale<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setContextMenuPolicy(Qt::CustomContextMenu);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SIGNAL(customContextMenuRequested(QPoint)),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_view_1afbff70a53bd91be73e358513de402c29" kindref="member">showContextMenu</ref>(QPoint)));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/>lay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>lay-&gt;addWidget(<ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setLayout(lay);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>()-&gt;addItem((QGraphicsItem*)(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_item_frame" kindref="compound">GItemFrame</ref>()));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a978519e246eba6999acdd0e752744a0b" kindref="member">stack</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QUndoStack();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ctrlZ<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QShortcut(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Инициализируем<sp/>объект</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlZ-&gt;setKey(Qt::Key_Z+<sp/>Qt::CTRL);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Устанавливаем<sp/>код<sp/>клавиши</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>цепляем<sp/>обработчик<sp/>нажатия<sp/>клавиши</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ctrlZ,<sp/>SIGNAL(activated()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_view_1aa035c6974ebfa302b093621f7aa43ac9" kindref="member">stckUndo</ref>()));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ctrlY<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QShortcut(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Инициализируем<sp/>объект</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlY-&gt;setKey(Qt::Key_Y+Qt::CTRL<sp/>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Устанавливаем<sp/>код<sp/>клавиши</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>цепляем<sp/>обработчик<sp/>нажатия<sp/>клавиши</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ctrlY,<sp/>SIGNAL(activated()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_view_1a0444c365f33f1f2f0e66939569a06933" kindref="member">stckRedo</ref>()));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>View::wheelEvent(QWheelEvent*<sp/>e)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>��������<sp/>��<sp/>SHIFT<sp/>����/�����</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;modifiers()<sp/>&amp;<sp/>Qt::SHIFT)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">view</ref>()-&gt;horizontalScrollBar()-&gt;setValue(this-&gt;<ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">view</ref>()-&gt;horizontalScrollBar()-&gt;value()<sp/>+<sp/>(e-&gt;angleDelta().y()));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;modifiers()<sp/>&amp;<sp/>Qt::ControlModifier)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;angleDelta().y()<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_scale<sp/>+=<sp/>6;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_scale<sp/>-=<sp/>6;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_scale<sp/>&lt;<sp/>(-250))</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_scale<sp/>=<sp/>-250;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_scale<sp/>&gt;<sp/>250)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_scale<sp/>=<sp/>250;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/>__scale<sp/>=<sp/>qPow(qreal(2),<sp/>_scale<sp/>/<sp/>qreal(50));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTransform<sp/>matrix;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matrix.scale(__scale,<sp/>__scale);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">view</ref>()-&gt;setTransform(matrix);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFrame::wheelEvent(e);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>()-&gt;update();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;update();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*<sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">View::GScene</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;<ref refid="class_g_view_1abeac3a6133d2391cfe43a0a3d0bc67f6" kindref="member">GScene</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">View::GScene</ref>(<ref refid="class_m_y_graphics_scene" kindref="compound">MYGraphicsScene</ref>*<sp/>scene)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;setScene(scene);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>scene-&gt;<ref refid="class_m_y_graphics_scene_1a79ec2aff2b53d1b7eb2eb71868c1ce26" kindref="member">Mview</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_view_1a292ccfb74c7ac7ab617a1a70dacde4f0" kindref="member">SceneChanged</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">QColor<sp/><ref refid="class_view_1a61f2152d818f5b41fd9b551d2a025496" kindref="member">View::backGroundColor</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>()-&gt;backgroundBrush().color();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a61f2152d818f5b41fd9b551d2a025496" kindref="member">View::backGroundColor</ref>(QColor<sp/>color)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a2764833ddc3ca16385fdb4829800a6f8" kindref="member">GScene</ref>()-&gt;setBackgroundBrush(QBrush(QColor(240,<sp/>255,<sp/>220)));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="class_g_view" kindref="compound">GView</ref>*<sp/><ref refid="class_view_1aaf7c97f744add0edfbd2584d5d57d6be" kindref="member">View::view</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_view_1afd25b945ecb4a0958c40f9558a00146d" kindref="member">View::scale</ref>()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_scale;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">QMenu*<sp/><ref refid="class_view_1aacf97fec93b74ea76e9fc4e3a521a8da" kindref="member">View::ContextMenu</ref>()</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu*<sp/>myMenu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMenu();<sp/><sp/><sp/><sp/>myMenu-&gt;addAction(</highlight><highlight class="stringliteral">&quot;AddPort&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_view_1a66ca767533f7dd3fcadf8e6ef11a5e89" kindref="member">AdddPortSL</ref>()));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myMenu;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1afbff70a53bd91be73e358513de402c29" kindref="member">View::showContextMenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint&amp;<sp/>pos)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/>globalPos<sp/>=<sp/>this-&gt;mapToGlobal(pos);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1aacf97fec93b74ea76e9fc4e3a521a8da" kindref="member">ContextMenu</ref>()-&gt;exec(globalPos);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a0444c365f33f1f2f0e66939569a06933" kindref="member">View::stckRedo</ref>()</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a978519e246eba6999acdd0e752744a0b" kindref="member">stack</ref>-&gt;redo();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a66ca767533f7dd3fcadf8e6ef11a5e89" kindref="member">View::AdddPortSL</ref>()</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;<ref refid="class_g_view_1abeac3a6133d2391cfe43a0a3d0bc67f6" kindref="member">GScene</ref>()-&gt;addEllipse(0,<sp/>0,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/>globalPos<sp/>=<sp/>QCursor::pos();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/>pos<sp/>=<sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;mapFromGlobal(globalPos);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;mapToScene(pos).toPoint();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>pos.x(),<sp/>pos.y());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1acc13da96a2953746d93a828b1224b8c5" kindref="member">View::saveImage</ref>()</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;scene()-&gt;clearSelection();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Selections<sp/>would<sp/>also<sp/>render<sp/>to<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;scene()-&gt;setSceneRect(<ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;scene()-&gt;itemsBoundingRect());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Re-shrink<sp/>the<sp/>scene<sp/>to<sp/>it&apos;s<sp/>bounding<sp/>contents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/>image(<ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;scene()-&gt;sceneRect().size().toSize(),<sp/>QImage::Format_ARGB32);<sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>the<sp/>image<sp/>with<sp/>the<sp/>exact<sp/>size<sp/>of<sp/>the<sp/>shrunk<sp/>scene</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>image.fill(Qt::white);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>all<sp/>pixels<sp/>transparent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>QPainter<sp/>painter(&amp;image);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;scene()-&gt;render(&amp;painter);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>image.save(</highlight><highlight class="stringliteral">&quot;file_name.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1a66ca767533f7dd3fcadf8e6ef11a5e89" kindref="member">View::AdddPortSL</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>QString<sp/>name)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>x,<sp/>y,name);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_view_1a028492eae52c2a5350b2f0895f66736b" kindref="member">View::AdddPort</ref>()</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/>globalPos<sp/>=<sp/>QCursor::pos();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/>pos<sp/>=<sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;mapFromGlobal(globalPos);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/><ref refid="class_view_1af10714b04e157290bec1f248dbf9ed68" kindref="member">graphicsview</ref>-&gt;mapToScene(pos).toPoint();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>pos.x(),<sp/>pos.y());</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="class_add_comand" kindref="compound">AddComand</ref>*<sp/><ref refid="class_view_1a028492eae52c2a5350b2f0895f66736b" kindref="member">View::AdddPort</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>QString<sp/>name)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_add_comand" kindref="compound">AddComand</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>x,<sp/>y,<sp/>name);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1aa035c6974ebfa302b093621f7aa43ac9" kindref="member">View::stckUndo</ref>()</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_view_1a978519e246eba6999acdd0e752744a0b" kindref="member">stack</ref>-&gt;undo();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="view.cpp"/>
+  </compounddef>
+</doxygen>

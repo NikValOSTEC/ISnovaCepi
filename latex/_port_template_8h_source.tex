@@ -1,0 +1,37 @@
+\doxysection{Port\+Template.\+h}
+\hypertarget{_port_template_8h_source}{}\label{_port_template_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PORTTEMPLATE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PORTTEMPLATE\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}qobject.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include"{}ui\_port.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <qopenglfunctions.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}port.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port_twmplate_object}{PortTwmplateObject}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_templates}{SaveTemplates}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pin}{Pin}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port}{Port}};}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_port_template}{PortTemplate}}\ \ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_port}{Port}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_port_template}{PortTemplate}}(\mbox{\hyperlink{class_port_twmplate_object}{PortTwmplateObject}}*\ o);}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ \mbox{\hyperlink{class_port_template_ab742c2261411d9ee00762660d1989d97}{addPinn}}(QString\ \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{int}\ index\ =\ -\/1);}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_port_template_a27d10b132ebad4031ab6952603c71049}{\string~PortTemplate}}();}
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_port_twmplate_object}{PortTwmplateObject}}*\ object;}
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_pin}{Pin}}*\ addPinSl(QString\ \mbox{\hyperlink{class_port_a0c668bf31a6533794ce9727e0da16350}{name}}\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ RemoveSL();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ closeEvent(QCloseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ QMenu*\ ContextMenu();}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

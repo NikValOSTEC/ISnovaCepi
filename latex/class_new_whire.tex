@@ -1,0 +1,176 @@
+\doxysection{Класс New\+Whire}
+\hypertarget{class_new_whire}{}\label{class_new_whire}\index{NewWhire@{NewWhire}}
+
+
+Вертикальный провод соеденяющий 2 контакта  
+
+
+
+
+{\ttfamily \#include $<$New\+Whire.\+h$>$}
+
+Граф наследования\+:New\+Whire\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_new_whire}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_new_whire_aa20a944b73b8c8a72445dc27d8b97935}{New\+Whire}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}pp1, \mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}pp2, \mbox{\hyperlink{class_add_whire_command}{Add\+Whire\+Command}} \texorpdfstring{$\ast$}{*}comm)
+\begin{DoxyCompactList}\small\item\em Добавляет провод на сцену \end{DoxyCompactList}\item 
+\Hypertarget{class_new_whire_ab2501405c84096a9fd5ee7c312d3367d}\label{class_new_whire_ab2501405c84096a9fd5ee7c312d3367d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+New\+Whire} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{class_new_whire_abf20f59764261f1dbd0a9451437c0dcb}{color}} () override
+\begin{DoxyCompactList}\small\item\em Цвет провода \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual QColor \mbox{\hyperlink{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}{color}} ()
+\begin{DoxyCompactList}\small\item\em Цвет хранится в цепях не у линий нет прямого доступа в цепь \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_custom_collider_line_recoursive_a166325da3980f3abc1723ddc22aad42d}{Custom\+Collider\+Line\+Recoursive}} (bool Vertical\+\_\+f\+\_\+\+Horiz\+\_\+t, \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a}{d1}}, \mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*}d2, \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Просто QGraphics\+Item. \end{DoxyCompactList}\item 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Custom\+Collider\+Line\+Recoursive} ()
+\begin{DoxyCompactList}\small\item\em Удаляет линию и все дочерние (коррекционные линии) \end{DoxyCompactList}\item 
+QRectF \mbox{\hyperlink{class_custom_collider_line_recoursive_a8bb3f83d68cc08e188c15b8ec0ac3e74}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em Линия без учета коррекции даже если не видна \end{DoxyCompactList}\item 
+QPainter\+Path \mbox{\hyperlink{class_custom_collider_line_recoursive_ae1e4cbe9ad3d81fffbb05fdeabfd99b1}{shape}} () const override
+\begin{DoxyCompactList}\small\item\em Форма для отрисовки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a5ff5d9a184b77af419ba5e4850fd0cef}{paint}} (QPainter \texorpdfstring{$\ast$}{*}painter, const QStyle\+Option\+Graphics\+Item \texorpdfstring{$\ast$}{*}option, QWidget \texorpdfstring{$\ast$}{*}widget) override
+\begin{DoxyCompactList}\small\item\em Отрисовка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a0e5186f9d4b3d8a6494d6457cca1422b}{set\+Fix\+Way}} (Colision\+Fix\+Way fw)
+\begin{DoxyCompactList}\small\item\em Наработка на будущее... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_new_whire_aabdaabf6e689e62feea542b70d77655d}{Add\+ComandW}} (\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_new_whire_a2691f3cddeff6e960bff7fc7bdfaa62c}{p1}}, \mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}p2)
+\begin{DoxyCompactList}\small\item\em static для создания команды \doxylink{class_add_whire_command}{Add\+Whire\+Command} =\texorpdfstring{$>$}{>} провод \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_new_whire_a2691f3cddeff6e960bff7fc7bdfaa62c}\label{class_new_whire_a2691f3cddeff6e960bff7fc7bdfaa62c} 
+\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} {\bfseries p1} = nullptr
+\begin{DoxyCompactList}\small\item\em Контакты соедененные проводом \end{DoxyCompactList}\item 
+\Hypertarget{class_new_whire_aee563e66e83430f509d5c69140bb7c30}\label{class_new_whire_aee563e66e83430f509d5c69140bb7c30} 
+\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*} {\bfseries p2} = nullptr
+\item 
+\Hypertarget{class_new_whire_af8bb29b31fc64dee7f0e4c7f66629d41}\label{class_new_whire_af8bb29b31fc64dee7f0e4c7f66629d41} 
+\mbox{\hyperlink{class_chain}{Chain}} \texorpdfstring{$\ast$}{*} {\bfseries chain} = nullptr
+\begin{DoxyCompactList}\small\item\em Цепь в которую входит данный провод и соедененные им контакты \end{DoxyCompactList}\item 
+\Hypertarget{class_new_whire_ae40efe8589d1fffa127b3d5e165f0128}\label{class_new_whire_ae40efe8589d1fffa127b3d5e165f0128} 
+\mbox{\hyperlink{class_add_whire_command}{Add\+Whire\+Command}} \texorpdfstring{$\ast$}{*} {\bfseries command}
+\begin{DoxyCompactList}\small\item\em Команда Undo создания провода \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+QVector$<$ QGraphics\+Item \texorpdfstring{$\ast$}{*} $>$ {\bfseries itsmine}
+\begin{DoxyCompactList}\small\item\em Уже обойденные данной линией объекты \end{DoxyCompactList}\item 
+bool {\bfseries Vertical\+\_\+f\+\_\+\+Horizontal\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Горизонтальная или вертикальная линия false -\/ Вертикальная true -\/ горизонтальная \end{DoxyCompactList}\item 
+int {\bfseries Jump\+Derection} = 1
+\begin{DoxyCompactList}\small\item\em Направление отступления при движении обойденных ранее объектов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Открытые слоты унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a29e5d4ba6ff85387b29a1803646ccb09}{Fix\+Colliding}} (int times=0)
+\begin{DoxyCompactList}\small\item\em Пересчет коллизии  \end{DoxyCompactList}\item 
+void {\bfseries Clear\+Inside} ()
+\begin{DoxyCompactList}\small\item\em Очистка дочерних линий ( выравнивание ) \end{DoxyCompactList}\item 
+void {\bfseries set\+Vertical} ()
+\begin{DoxyCompactList}\small\item\em Смена направления линии на вертикаль \end{DoxyCompactList}\item 
+void {\bfseries set\+Horizontal} ()
+\begin{DoxyCompactList}\small\item\em Смена направления линии на горизонталь \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custom_collider_line_recoursive_a2129474398747e0388be32b93e1baf58}{Jump\+From}} (QGraphics\+Item \texorpdfstring{$\ast$}{*}itm)
+\begin{DoxyCompactList}\small\item\em уход от обойденных ранее объектов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} {\bfseries d1}
+\begin{DoxyCompactList}\small\item\em Точки соеденяемые линией \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dot}{Dot}} \texorpdfstring{$\ast$}{*} {\bfseries d2}
+\item 
+Colision\+Fix\+Way {\bfseries fixway}
+\begin{DoxyCompactList}\small\item\em На будущее \end{DoxyCompactList}\item 
+QVector$<$ QGraphics\+Object \texorpdfstring{$\ast$}{*} $>$ {\bfseries inside}
+\begin{DoxyCompactList}\small\item\em Дочерние линии \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_proxy_rect_port}{Proxy\+Rect\+Port}} \texorpdfstring{$\ast$}{*} {\bfseries lastcolide} =nullptr
+\begin{DoxyCompactList}\small\item\em последний обойденный разъем \end{DoxyCompactList}\item 
+int {\bfseries lastleft}
+\item 
+int {\bfseries lastbottom}
+\item 
+\mbox{\hyperlink{class_custom_collider_line_recoursive}{Custom\+Collider\+Line\+Recoursive}} \texorpdfstring{$\ast$}{*} {\bfseries Parent}
+\begin{DoxyCompactList}\small\item\em родительская линия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Вертикальный провод соеденяющий 2 контакта 
+
+соеденяет 2 внешние точки \doxylink{class_new_pin_whire}{New\+Pin\+Whire} 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_new_whire_aa20a944b73b8c8a72445dc27d8b97935}\label{class_new_whire_aa20a944b73b8c8a72445dc27d8b97935} 
+\index{NewWhire@{NewWhire}!NewWhire@{NewWhire}}
+\index{NewWhire@{NewWhire}!NewWhire@{NewWhire}}
+\doxysubsubsection{\texorpdfstring{NewWhire()}{NewWhire()}}
+{\footnotesize\ttfamily New\+Whire\+::\+New\+Whire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{pp1,  }\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{pp2,  }\item[{\mbox{\hyperlink{class_add_whire_command}{Add\+Whire\+Command}} \texorpdfstring{$\ast$}{*}}]{comm }\end{DoxyParamCaption})}
+
+
+
+Добавляет провод на сцену 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em pp1} & Первый Контакт\\
+\hline
+{\em pp2} & Второрй Контакт\\
+\hline
+{\em comm} & Команда Undo в которой создается провод (передается из com как this)\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_new_whire_aabdaabf6e689e62feea542b70d77655d}\label{class_new_whire_aabdaabf6e689e62feea542b70d77655d} 
+\index{NewWhire@{NewWhire}!AddComandW@{AddComandW}}
+\index{AddComandW@{AddComandW}!NewWhire@{NewWhire}}
+\doxysubsubsection{\texorpdfstring{AddComandW()}{AddComandW()}}
+{\footnotesize\ttfamily void New\+Whire\+::\+Add\+ComandW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p1,  }\item[{\mbox{\hyperlink{class_pin}{Pin}} \texorpdfstring{$\ast$}{*}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+static для создания команды \doxylink{class_add_whire_command}{Add\+Whire\+Command} =\texorpdfstring{$>$}{>} провод 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p1} & Первый Контакт\\
+\hline
+{\em p2} & Второрй Контакт\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_new_whire_abf20f59764261f1dbd0a9451437c0dcb}\label{class_new_whire_abf20f59764261f1dbd0a9451437c0dcb} 
+\index{NewWhire@{NewWhire}!color@{color}}
+\index{color@{color}!NewWhire@{NewWhire}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily QColor New\+Whire\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Цвет провода 
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}{Custom\+Collider\+Line\+Recoursive}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+New\+Whire.\+h\item 
+New\+Whire.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="class_add_pin_comand" kind="class" language="C++" prot="public">
+    <compoundname>AddPinComand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QUndoCommand</basecompoundref>
+    <includes refid="_add_pin_comand_8h" local="no">AddPinComand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString AddPinComand::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AddPinComand::name</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+<para>Имя контакта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="39" column="9" bodyfile="AddPinComand.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" prot="public" static="no" mutable="no">
+        <type><ref refid="class_pin" kindref="compound">Pin</ref> *</type>
+        <definition>Pin* AddPinComand::pn</definition>
+        <argsstring></argsstring>
+        <name>pn</name>
+        <qualifiedname>AddPinComand::pn</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Созданный контакт для удаления в дальнейшем </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="43" column="5" bodyfile="AddPinComand.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_add_comand" kindref="compound">AddComand</ref> *</type>
+        <definition>AddComand* AddPinComand::prt</definition>
+        <argsstring></argsstring>
+        <name>prt</name>
+        <qualifiedname>AddPinComand::prt</qualifiedname>
+        <briefdescription>
+<para>Команда создания разъема для вытягивания разъема так как он может быть перезаписан а команда останется </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="47" column="11" bodyfile="AddPinComand.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_add_pin_comand_1abdcfad848bad0c90ecadff6b7b867182" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AddPinComand::real</definition>
+        <argsstring></argsstring>
+        <name>real</name>
+        <qualifiedname>AddPinComand::real</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="48" column="6" bodyfile="AddPinComand.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_add_pin_comand_1a0a98feb765f5674cfade2dac11756d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddPinComand::AddPinComand</definition>
+        <argsstring>(Port *p, QString name=&quot;&quot;, bool rea=true)</argsstring>
+        <name>AddPinComand</name>
+        <qualifiedname>AddPinComand::AddPinComand</qualifiedname>
+        <param>
+          <type><ref refid="class_port" kindref="compound">Port</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rea</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Сам в себе высерает себя же в стэк в котором лежит команда создания разъема p. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разъем в который добовляем крнтакт</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя создоваемого контакта</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>false если шаблон порта, true если порт на сцене </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="23" column="1" bodyfile="AddPinComand.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_pin_comand_1a5df4a5fcb9feb4e64736c1f4f1a1133e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddPinComand::~AddPinComand</definition>
+        <argsstring>()</argsstring>
+        <name>~AddPinComand</name>
+        <qualifiedname>AddPinComand::~AddPinComand</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="27" column="1" bodyfile="AddPinComand.cpp" bodystart="15" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_pin_comand_1ac1444bc27391754e1c52ad2bcf0de517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddPinComand::undo</definition>
+        <argsstring>() override</argsstring>
+        <name>undo</name>
+        <qualifiedname>AddPinComand::undo</qualifiedname>
+        <briefdescription>
+<para>Удаляет контакт </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="31" column="6" bodyfile="AddPinComand.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_pin_comand_1a4712f1eeee58a11b8b963c056a71f844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddPinComand::redo</definition>
+        <argsstring>() override</argsstring>
+        <name>redo</name>
+        <qualifiedname>AddPinComand::redo</qualifiedname>
+        <briefdescription>
+<para>Создает контакт </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddPinComand.h" line="35" column="6" bodyfile="AddPinComand.cpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс наследник от QUndoCommand на добавление нового контакта в разъем </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Класс &quot;сам в себе&quot;, жрет ы конструкторе там же пушится в стэк.... </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddPinComand</label>
+        <link refid="class_add_pin_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>AddComand</label>
+        <link refid="class_add_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AddPinComand</label>
+        <link refid="class_add_pin_comand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pn</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>prt</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Chain</label>
+        <link refid="class_chain"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GView</label>
+        <link refid="class_g_view"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Pin</label>
+        <link refid="class_pin"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>parCon</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>chain</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>command</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Port</label>
+        <link refid="class_port"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adcom</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_proxy</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ProxyRectPort</label>
+        <link refid="class_proxy_rect_port"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QFrame</label>
+      </node>
+      <node id="14">
+        <label>QGraphicsItem</label>
+      </node>
+      <node id="11">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="4">
+        <label>QLineEdit</label>
+      </node>
+      <node id="13">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+      <node id="6">
+        <label>QWidget</label>
+      </node>
+      <node id="8">
+        <label>View</label>
+        <link refid="class_view"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>graphicsview</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="AddPinComand.h" line="14" column="1" bodyfile="AddPinComand.h" bodystart="15" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_add_pin_comand_1a0a98feb765f5674cfade2dac11756d8c" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>AddPinComand</name></member>
+      <member refid="class_add_pin_comand_1aadc33ab624c6d20a7160e389711b75b7" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>name</name></member>
+      <member refid="class_add_pin_comand_1ac116493c9a6c212b1ab026b2db15e822" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>pn</name></member>
+      <member refid="class_add_pin_comand_1a5a80759acbabe2a66b6a26ac7582ad4f" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>prt</name></member>
+      <member refid="class_add_pin_comand_1abdcfad848bad0c90ecadff6b7b867182" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>real</name></member>
+      <member refid="class_add_pin_comand_1a4712f1eeee58a11b8b963c056a71f844" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>redo</name></member>
+      <member refid="class_add_pin_comand_1ac1444bc27391754e1c52ad2bcf0de517" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>undo</name></member>
+      <member refid="class_add_pin_comand_1a5df4a5fcb9feb4e64736c1f4f1a1133e" prot="public" virt="non-virtual"><scope>AddPinComand</scope><name>~AddPinComand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

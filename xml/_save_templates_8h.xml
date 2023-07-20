@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_save_templates_8h" kind="file" language="C++">
+    <compoundname>SaveTemplates.h</compoundname>
+    <includes local="no">QObject</includes>
+    <includes local="no">QFile</includes>
+    <includes local="no">QTextStream</includes>
+    <includes local="no">qsettings.h</includes>
+    <includedby refid="_port_template_8cpp" local="yes">PortTemplate.cpp</includedby>
+    <includedby refid="_port_twmplate_object_8cpp" local="yes">PortTwmplateObject.cpp</includedby>
+    <includedby refid="_save_templates_8cpp" local="yes">SaveTemplates.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>SaveTemplates.h</label>
+        <link refid="_save_templates_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QFile</label>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="4">
+        <label>QTextStream</label>
+      </node>
+      <node id="5">
+        <label>qsettings.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_save_templates" prot="public">SaveTemplates</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_save_templates_8h_1a627125b6803fa927affdee90876c20a5" prot="public" static="no">
+        <name>SAVETEMPLATES_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SaveTemplates.h" line="3" column="9" bodyfile="SaveTemplates.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SAVETEMPLATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAVETEMPLATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFile&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTextStream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;qsettings.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_save_templates" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_save_templates" kindref="compound">SaveTemplates</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_save_templates_1ac907c4f9743dc64cc25645a2de37a79f" kindref="member">Save</ref>(<ref refid="class_port_twmplate_object" kindref="compound">PortTwmplateObject</ref>*<sp/>o);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QList&lt;QPair&lt;QStringList,<sp/>QString&gt;&gt;<sp/><ref refid="class_save_templates_1a7218b7ebc59f828f930b9b9fc59c58d8" kindref="member">Load</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_save_templates_1a73b839da3826f0665b475a0b64ff7131" kindref="member">Del</ref>(QString<sp/>path);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="SaveTemplates.h"/>
+  </compounddef>
+</doxygen>

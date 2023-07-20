@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_q_line_edit_focus_out_signal" kind="class" language="C++" prot="public">
+    <compoundname>QLineEditFocusOutSignal</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QLineEdit</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_line_edit_focus_out_signal_1adc48f54fbe8dd29011bea71975cdbd61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QLineEditFocusOutSignal::QLineEditFocusOutSignal</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>QLineEditFocusOutSignal</name>
+        <qualifiedname>QLineEditFocusOutSignal::QLineEditFocusOutSignal</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QLineEditFocusOutSignal.h" line="11" column="1" bodyfile="QLineEditFocusOutSignal.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_line_edit_focus_out_signal_1ace5372d3c027c19f3b595a105f15b508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QLineEditFocusOutSignal::~QLineEditFocusOutSignal</definition>
+        <argsstring>()</argsstring>
+        <name>~QLineEditFocusOutSignal</name>
+        <qualifiedname>QLineEditFocusOutSignal::~QLineEditFocusOutSignal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QLineEditFocusOutSignal.h" line="12" column="1" bodyfile="QLineEditFocusOutSignal.cpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_line_edit_focus_out_signal_1a5f97ba3076430bcef6ac1b71a4bab3bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QLineEditFocusOutSignal::focusInEvent</definition>
+        <argsstring>(QFocusEvent *e)</argsstring>
+        <name>focusInEvent</name>
+        <qualifiedname>QLineEditFocusOutSignal::focusInEvent</qualifiedname>
+        <param>
+          <type>QFocusEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QLineEditFocusOutSignal.h" line="13" column="14" bodyfile="QLineEditFocusOutSignal.cpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_line_edit_focus_out_signal_1a2196fc0224f9c2a5cea41d86b46e4db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QLineEditFocusOutSignal::focusOutEvent</definition>
+        <argsstring>(QFocusEvent *e)</argsstring>
+        <name>focusOutEvent</name>
+        <qualifiedname>QLineEditFocusOutSignal::focusOutEvent</qualifiedname>
+        <param>
+          <type>QFocusEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QLineEditFocusOutSignal.h" line="14" column="14" bodyfile="QLineEditFocusOutSignal.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_q_line_edit_focus_out_signal_1ad52bb7ee90fd6d1e5db54adddb8fdb0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QLineEditFocusOutSignal::focussed</definition>
+        <argsstring>(bool hasFocus)</argsstring>
+        <name>focussed</name>
+        <qualifiedname>QLineEditFocusOutSignal::focussed</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>hasFocus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QLineEditFocusOutSignal.h" line="16" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QLineEdit</label>
+      </node>
+      <node id="1">
+        <label>QLineEditFocusOutSignal</label>
+        <link refid="class_q_line_edit_focus_out_signal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QLineEdit</label>
+      </node>
+      <node id="1">
+        <label>QLineEditFocusOutSignal</label>
+        <link refid="class_q_line_edit_focus_out_signal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="QLineEditFocusOutSignal.h" line="6" column="1" bodyfile="QLineEditFocusOutSignal.h" bodystart="7" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_q_line_edit_focus_out_signal_1a5f97ba3076430bcef6ac1b71a4bab3bd" prot="public" virt="virtual"><scope>QLineEditFocusOutSignal</scope><name>focusInEvent</name></member>
+      <member refid="class_q_line_edit_focus_out_signal_1a2196fc0224f9c2a5cea41d86b46e4db3" prot="public" virt="virtual"><scope>QLineEditFocusOutSignal</scope><name>focusOutEvent</name></member>
+      <member refid="class_q_line_edit_focus_out_signal_1ad52bb7ee90fd6d1e5db54adddb8fdb0f" prot="public" virt="non-virtual"><scope>QLineEditFocusOutSignal</scope><name>focussed</name></member>
+      <member refid="class_q_line_edit_focus_out_signal_1adc48f54fbe8dd29011bea71975cdbd61" prot="public" virt="non-virtual"><scope>QLineEditFocusOutSignal</scope><name>QLineEditFocusOutSignal</name></member>
+      <member refid="class_q_line_edit_focus_out_signal_1ace5372d3c027c19f3b595a105f15b508" prot="public" virt="non-virtual"><scope>QLineEditFocusOutSignal</scope><name>~QLineEditFocusOutSignal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

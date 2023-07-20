@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="ru">
+  <compounddef id="_add_whire_command_8h" kind="file" language="C++">
+    <compoundname>AddWhireCommand.h</compoundname>
+    <includes local="no">QUndoCommand</includes>
+    <includedby refid="_add_whire_command_8cpp" local="yes">AddWhireCommand.cpp</includedby>
+    <includedby refid="_new_whire_8cpp" local="yes">NewWhire.cpp</includedby>
+    <includedby refid="_whire_remove_comand_8cpp" local="yes">WhireRemoveComand.cpp</includedby>
+    <includedby refid="chain_8cpp" local="yes">chain.cpp</includedby>
+    <includedby refid="pin_8cpp" local="yes">pin.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>AddWhireCommand.h</label>
+        <link refid="_add_whire_command_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QUndoCommand</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_add_whire_command" prot="public">AddWhireCommand</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_add_whire_command_8h_1ad5af925d652f5a58d5fa14ff150cfec2" prot="public" static="no">
+        <name>ADDWHIRECOMAND_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddWhireCommand.h" line="3" column="9" bodyfile="AddWhireCommand.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADDWHIRECOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDWHIRECOMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;QUndoCommand&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_new_whire" kindref="compound">NewWhire</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_add_whire_command" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QUndoCommand</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command" kindref="compound">AddWhireCommand</ref>(<ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*<sp/>p11,<sp/><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*<sp/>p22);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_whire_command_1a085c1fcb56138f6e5312b98d129ae4bf" kindref="member">~AddWhireCommand</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_whire_command_1ac7351ba1df94fc2dca0406a0f9ab15f0" kindref="member">undo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_add_whire_command_1abfeb73f7b567beb76e41666c7d1ad8b3" kindref="member">redo</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_add_pin_comand" kindref="compound">AddPinComand</ref>*<sp/><ref refid="class_add_whire_command_1adf93147b5d190ef3bec6b7def6ab9996" kindref="member">p1</ref>,<sp/>*p2;</highlight></codeline>
+<codeline lineno="41" refid="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_new_whire" kindref="compound">NewWhire</ref>*<sp/><ref refid="class_add_whire_command_1a212872ee851c13ccd52a656cfe1ed837" kindref="member">whire</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="AddWhireCommand.h"/>
+  </compounddef>
+</doxygen>

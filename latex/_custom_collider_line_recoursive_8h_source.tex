@@ -1,0 +1,50 @@
+\doxysection{Custom\+Collider\+Line\+Recoursive.\+h}
+\hypertarget{_custom_collider_line_recoursive_8h_source}{}\label{_custom_collider_line_recoursive_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ CUSTOMCOLLIDERLINERECOURSIVE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ CUSTOMCOLLIDERLINERECOURSIVE\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<qobject.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<qgraphicsobject>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}qgraphicsscene.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dot}{Dot}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_proxy_rect_port}{ProxyRectPort}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{enum}\ ColisionFixWay}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ none,\ run,\ flow}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_custom_collider_line_recoursive}{CustomColliderLineRecoursive}}\ \ :\ \textcolor{keyword}{public}\ QGraphicsObject}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ QColor\ \mbox{\hyperlink{class_custom_collider_line_recoursive_adbb39c32411e7041d0e77851e215d2fe}{color}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_custom_collider_line_recoursive}{CustomColliderLineRecoursive}}(\textcolor{keywordtype}{bool}\ Vertical\_f\_Horiz\_t,\mbox{\hyperlink{class_dot}{Dot}}*\ \mbox{\hyperlink{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a}{d1}},\mbox{\hyperlink{class_dot}{Dot}}*\ d2,\ \mbox{\hyperlink{class_custom_collider_line_recoursive}{CustomColliderLineRecoursive}}*\ parent=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_custom_collider_line_recoursive_a6491fcf9b4f792271ec635d96b8a577d}{\string~CustomColliderLineRecoursive}}();}
+\DoxyCodeLine{00046\ \ \ \ \ QRectF\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a8bb3f83d68cc08e188c15b8ec0ac3e74}{boundingRect}}()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00054\ \textcolor{comment}{}\ \ \ \ QPainterPath\ \mbox{\hyperlink{class_custom_collider_line_recoursive_ae1e4cbe9ad3d81fffbb05fdeabfd99b1}{shape}}()\ \textcolor{keyword}{const\ override};\textcolor{comment}{//}}
+\DoxyCodeLine{00064\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a5ff5d9a184b77af419ba5e4850fd0cef}{paint}}(QPainter*\ painter,\ \textcolor{keyword}{const}\ QStyleOptionGraphicsItem*\ option,\ QWidget*\ widget)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a0e5186f9d4b3d8a6494d6457cca1422b}{setFixWay}}(ColisionFixWay\ fw);}
+\DoxyCodeLine{00073\ \ \ \ \ QVector<QGraphicsItem*>\mbox{\hyperlink{class_custom_collider_line_recoursive_a8f80fb06a877bfc6af449bb1bfc50199}{itsmine}};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_aaa8d9f754a4f91f2ddc3f3bdbabe9ae6}{Vertical\_f\_Horizontal\_t}};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3}{JumpDerection}}\ =\ 1;}
+\DoxyCodeLine{00082\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a29e5d4ba6ff85387b29a1803646ccb09}{FixColliding}}(\textcolor{keywordtype}{int}\ times=0);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_acfe70cb954bafe2bb3af0b4303bc0e75}{ClearInside}}();}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a3cd32fa2a62f4cd21c55ebd244b3618d}{setVertical}}();}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a81098aa1c6428636b55cd37989a208d1}{setHorizontal}}();}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a2129474398747e0388be32b93e1baf58}{JumpFrom}}(QGraphicsItem*\ itm);}
+\DoxyCodeLine{00106\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{class_dot}{Dot}}*\ \mbox{\hyperlink{class_custom_collider_line_recoursive_af5c0e98eca59f91818caaa334f90d85a}{d1}},\ *d2;}
+\DoxyCodeLine{00114\ \ \ \ \ ColisionFixWay\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a5be8c91ab013083fbe0401ee0732f1f9}{fixway}};}
+\DoxyCodeLine{00118\ \ \ \ \ QVector<QGraphicsObject*>\ \mbox{\hyperlink{class_custom_collider_line_recoursive_ab1c47059a7df21ceb455eb4c8c0e11e4}{inside}};}
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{class_proxy_rect_port}{ProxyRectPort}}*\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a85e82eeb154e5b25934ee14947ef5aa1}{lastcolide}}=\textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{int}\ lastleft,\ lastbottom;}
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{class_custom_collider_line_recoursive}{CustomColliderLineRecoursive}}*\ \mbox{\hyperlink{class_custom_collider_line_recoursive_a40dd74750416108c5162884820ac5b08}{Parent}};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_port_lib" kind="class" language="C++" prot="public">
+    <compoundname>PortLib</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QHBoxLayout</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_port_lib_1ab05a24c578f9ef34e50a91eef634ebab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PortLib::PortLib</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>PortLib</name>
+        <qualifiedname>PortLib::PortLib</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="portlib.h" line="9" column="1" bodyfile="portlib.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_port_lib_1a0570b67b1ca8442cbdf785c051d124c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PortLib::~PortLib</definition>
+        <argsstring>()</argsstring>
+        <name>~PortLib</name>
+        <qualifiedname>PortLib::~PortLib</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="portlib.h" line="10" column="1" bodyfile="portlib.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PortLib</label>
+        <link refid="class_port_lib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QHBoxLayout</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PortLib</label>
+        <link refid="class_port_lib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QHBoxLayout</label>
+      </node>
+    </collaborationgraph>
+    <location file="portlib.h" line="6" column="1" bodyfile="portlib.h" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_port_lib_1ab05a24c578f9ef34e50a91eef634ebab" prot="public" virt="non-virtual"><scope>PortLib</scope><name>PortLib</name></member>
+      <member refid="class_port_lib_1a0570b67b1ca8442cbdf785c051d124c8" prot="public" virt="non-virtual"><scope>PortLib</scope><name>~PortLib</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

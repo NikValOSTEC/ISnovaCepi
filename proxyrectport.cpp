@@ -89,14 +89,20 @@ ProxyRectPort::~ProxyRectPort()
     EmitMove();
 }
 
-void ProxyRectPort::Update(bool upd)
+void ProxyRectPort::Update(bool upd,int i)
 {
-    
+    if (i > 4)
+    {
+        int x = floor(scenePos().x() / 25) * 25+50;
+        int y = floor(scenePos().y() / 25) * 25+50;
+        setPos(x, y);
+    }
     int x = left()-25;
     int y = top()-25;
     int w = this->boundingRect().width()+25;
     int h = this->boundingRect().height()+25;
     QList<QGraphicsItem*> list = scene()->items(x, y, w, h, Qt::IntersectsItemBoundingRect, Qt::DescendingOrder);
+    qDebug() << list.size();
     foreach(auto prx, list)
     {
         try {
@@ -106,11 +112,6 @@ void ProxyRectPort::Update(bool upd)
                 {
                     ProxyColider();
                 }
-                else
-                {
-
-                    this->port->Update(upd);
-                }
             }
         }
         catch(...)
@@ -118,17 +119,16 @@ void ProxyRectPort::Update(bool upd)
 
             int x = floor(scenePos().x() / 25) * 25;
             int y = floor(scenePos().y() / 25) * 25;
-            this->Update(upd);
-            return;
+            this->Update(upd,i++);
 
         }
     }
+    int xx = floor(scenePos().x() / 25) * 25;
+    int yy = floor(scenePos().y() / 25) * 25;
+    setPos(xx, yy);
+    this->port->Update();
     if (upd)
     {
-        int x = floor(scenePos().x() / 25) * 25;
-        int y = floor(scenePos().y() / 25) * 25;
-        setPos(x, y);
-        this->port->Update();
         EmitMove();
         QThread::msleep(100);
         ColiderCheck();

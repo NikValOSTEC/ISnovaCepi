@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Кабелион графика: Исходный файл CustomColliderLineRecoursive.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LOGO.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Кабелион графика
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CustomColliderLineRecoursive.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef CUSTOMCOLLIDERLINERECOURSIVE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define CUSTOMCOLLIDERLINERECOURSIVE_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&lt;qobject.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include&lt;qgraphicsobject&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include&quot;qgraphicsscene.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="class_dot.html">Dot</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="class_proxy_rect_port.html">ProxyRectPort</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">enum</span> ColisionFixWay</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    none, run, flow</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a>  : <span class="keyword">public</span> QGraphicsObject</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">virtual</span> QColor <a class="code hl_function" href="class_custom_collider_line_recoursive.html#adbb39c32411e7041d0e77851e215d2fe">color</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a>(<span class="keywordtype">bool</span> Vertical_f_Horiz_t,<a class="code hl_class" href="class_dot.html">Dot</a>* <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#af5c0e98eca59f91818caaa334f90d85a">d1</a>,<a class="code hl_class" href="class_dot.html">Dot</a>* d2, <a class="code hl_class" href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a>* parent=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="class_custom_collider_line_recoursive.html#a6491fcf9b4f792271ec635d96b8a577d">~CustomColliderLineRecoursive</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    QRectF <a class="code hl_function" href="class_custom_collider_line_recoursive.html#a8bb3f83d68cc08e188c15b8ec0ac3e74">boundingRect</a>() <span class="keyword">const override</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span>    QPainterPath <a class="code hl_function" href="class_custom_collider_line_recoursive.html#ae1e4cbe9ad3d81fffbb05fdeabfd99b1">shape</a>() <span class="keyword">const override</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_custom_collider_line_recoursive.html#a5ff5d9a184b77af419ba5e4850fd0cef">paint</a>(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_custom_collider_line_recoursive.html#a0e5186f9d4b3d8a6494d6457cca1422b">setFixWay</a>(ColisionFixWay fw);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#a8f80fb06a877bfc6af449bb1bfc50199">   73</a></span>    QVector&lt;QGraphicsItem*&gt;<a class="code hl_variable" href="class_custom_collider_line_recoursive.html#a8f80fb06a877bfc6af449bb1bfc50199">itsmine</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#aaa8d9f754a4f91f2ddc3f3bdbabe9ae6">   77</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#aaa8d9f754a4f91f2ddc3f3bdbabe9ae6">Vertical_f_Horizontal_t</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3">   81</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3">JumpDerection</a> = 1;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_custom_collider_line_recoursive.html#a29e5d4ba6ff85387b29a1803646ccb09">FixColliding</a>(<span class="keywordtype">int</span> times=0);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_custom_collider_line_recoursive.html#acfe70cb954bafe2bb3af0b4303bc0e75">ClearInside</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_custom_collider_line_recoursive.html#a3cd32fa2a62f4cd21c55ebd244b3618d">setVertical</a>();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_custom_collider_line_recoursive.html#a81098aa1c6428636b55cd37989a208d1">setHorizontal</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_custom_collider_line_recoursive.html#a2129474398747e0388be32b93e1baf58">JumpFrom</a>(QGraphicsItem* itm);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#af5c0e98eca59f91818caaa334f90d85a">  110</a></span>    <a class="code hl_class" href="class_dot.html">Dot</a>* <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#af5c0e98eca59f91818caaa334f90d85a">d1</a>, *d2;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#a5be8c91ab013083fbe0401ee0732f1f9">  114</a></span>    ColisionFixWay <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#a5be8c91ab013083fbe0401ee0732f1f9">fixway</a>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#ab1c47059a7df21ceb455eb4c8c0e11e4">  118</a></span>    QVector&lt;QGraphicsObject*&gt; <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#ab1c47059a7df21ceb455eb4c8c0e11e4">inside</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#a85e82eeb154e5b25934ee14947ef5aa1">  122</a></span>    <a class="code hl_class" href="class_proxy_rect_port.html">ProxyRectPort</a>* <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#a85e82eeb154e5b25934ee14947ef5aa1">lastcolide</a>=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">int</span> lastleft, lastbottom;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_custom_collider_line_recoursive.html#a40dd74750416108c5162884820ac5b08">  127</a></span>    <a class="code hl_class" href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a>* <a class="code hl_variable" href="class_custom_collider_line_recoursive.html#a40dd74750416108c5162884820ac5b08">Parent</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>};</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html"><div class="ttname"><a href="class_custom_collider_line_recoursive.html">CustomColliderLineRecoursive</a></div><div class="ttdoc">Линия с колизионной корекцией</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:19</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a0e5186f9d4b3d8a6494d6457cca1422b"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a0e5186f9d4b3d8a6494d6457cca1422b">CustomColliderLineRecoursive::setFixWay</a></div><div class="ttdeci">void setFixWay(ColisionFixWay fw)</div><div class="ttdoc">Наработка на будущее...</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:278</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a2129474398747e0388be32b93e1baf58"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a2129474398747e0388be32b93e1baf58">CustomColliderLineRecoursive::JumpFrom</a></div><div class="ttdeci">void JumpFrom(QGraphicsItem *itm)</div><div class="ttdoc">уход от обойденных ранее объектов</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:313</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a29e5d4ba6ff85387b29a1803646ccb09"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a29e5d4ba6ff85387b29a1803646ccb09">CustomColliderLineRecoursive::FixColliding</a></div><div class="ttdeci">void FixColliding(int times=0)</div><div class="ttdoc">Пересчет коллизии</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:91</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a2cabfc7f5b1a6fb1a1ed4787e3b5ccf3">CustomColliderLineRecoursive::JumpDerection</a></div><div class="ttdeci">int JumpDerection</div><div class="ttdoc">Направление отступления при движении обойденных ранее объектов</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:81</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a3cd32fa2a62f4cd21c55ebd244b3618d"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a3cd32fa2a62f4cd21c55ebd244b3618d">CustomColliderLineRecoursive::setVertical</a></div><div class="ttdeci">void setVertical()</div><div class="ttdoc">Смена направления линии на вертикаль</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:283</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a40dd74750416108c5162884820ac5b08"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a40dd74750416108c5162884820ac5b08">CustomColliderLineRecoursive::Parent</a></div><div class="ttdeci">CustomColliderLineRecoursive * Parent</div><div class="ttdoc">родительская линия</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:127</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a5be8c91ab013083fbe0401ee0732f1f9"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a5be8c91ab013083fbe0401ee0732f1f9">CustomColliderLineRecoursive::fixway</a></div><div class="ttdeci">ColisionFixWay fixway</div><div class="ttdoc">На будущее</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:114</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a5ff5d9a184b77af419ba5e4850fd0cef"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a5ff5d9a184b77af419ba5e4850fd0cef">CustomColliderLineRecoursive::paint</a></div><div class="ttdeci">void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</div><div class="ttdoc">Отрисовка</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:271</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a6491fcf9b4f792271ec635d96b8a577d"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a6491fcf9b4f792271ec635d96b8a577d">CustomColliderLineRecoursive::~CustomColliderLineRecoursive</a></div><div class="ttdeci">~CustomColliderLineRecoursive()</div><div class="ttdoc">Удаляет линию и все дочерние (коррекционные линии)</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:45</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a81098aa1c6428636b55cd37989a208d1"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a81098aa1c6428636b55cd37989a208d1">CustomColliderLineRecoursive::setHorizontal</a></div><div class="ttdeci">void setHorizontal()</div><div class="ttdoc">Смена направления линии на горизонталь</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:298</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a85e82eeb154e5b25934ee14947ef5aa1"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a85e82eeb154e5b25934ee14947ef5aa1">CustomColliderLineRecoursive::lastcolide</a></div><div class="ttdeci">ProxyRectPort * lastcolide</div><div class="ttdoc">последний обойденный разъем</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:122</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a8bb3f83d68cc08e188c15b8ec0ac3e74"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a8bb3f83d68cc08e188c15b8ec0ac3e74">CustomColliderLineRecoursive::boundingRect</a></div><div class="ttdeci">QRectF boundingRect() const override</div><div class="ttdoc">Линия без учета коррекции даже если не видна</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:75</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_a8f80fb06a877bfc6af449bb1bfc50199"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#a8f80fb06a877bfc6af449bb1bfc50199">CustomColliderLineRecoursive::itsmine</a></div><div class="ttdeci">QVector&lt; QGraphicsItem * &gt; itsmine</div><div class="ttdoc">Уже обойденные данной линией объекты</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:73</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_aaa8d9f754a4f91f2ddc3f3bdbabe9ae6"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#aaa8d9f754a4f91f2ddc3f3bdbabe9ae6">CustomColliderLineRecoursive::Vertical_f_Horizontal_t</a></div><div class="ttdeci">bool Vertical_f_Horizontal_t</div><div class="ttdoc">Горизонтальная или вертикальная линия false - Вертикальная true - горизонтальная</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:77</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_ab1c47059a7df21ceb455eb4c8c0e11e4"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#ab1c47059a7df21ceb455eb4c8c0e11e4">CustomColliderLineRecoursive::inside</a></div><div class="ttdeci">QVector&lt; QGraphicsObject * &gt; inside</div><div class="ttdoc">Дочерние линии</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:118</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_acfe70cb954bafe2bb3af0b4303bc0e75"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#acfe70cb954bafe2bb3af0b4303bc0e75">CustomColliderLineRecoursive::ClearInside</a></div><div class="ttdeci">void ClearInside()</div><div class="ttdoc">Очистка дочерних линий ( выравнивание )</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:238</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_adbb39c32411e7041d0e77851e215d2fe"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#adbb39c32411e7041d0e77851e215d2fe">CustomColliderLineRecoursive::color</a></div><div class="ttdeci">virtual QColor color()</div><div class="ttdoc">Цвет хранится в цепях не у линий нет прямого доступа в цепь</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:9</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_ae1e4cbe9ad3d81fffbb05fdeabfd99b1"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#ae1e4cbe9ad3d81fffbb05fdeabfd99b1">CustomColliderLineRecoursive::shape</a></div><div class="ttdeci">QPainterPath shape() const override</div><div class="ttdoc">Форма для отрисовки</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.cpp:81</div></div>
+<div class="ttc" id="aclass_custom_collider_line_recoursive_html_af5c0e98eca59f91818caaa334f90d85a"><div class="ttname"><a href="class_custom_collider_line_recoursive.html#af5c0e98eca59f91818caaa334f90d85a">CustomColliderLineRecoursive::d1</a></div><div class="ttdeci">Dot * d1</div><div class="ttdoc">Точки соеденяемые линией</div><div class="ttdef"><b>Definition</b> CustomColliderLineRecoursive.h:110</div></div>
+<div class="ttc" id="aclass_dot_html"><div class="ttname"><a href="class_dot.html">Dot</a></div><div class="ttdoc">Класс Точки дляпостроения линий</div><div class="ttdef"><b>Definition</b> Dot.h:18</div></div>
+<div class="ttc" id="aclass_proxy_rect_port_html"><div class="ttname"><a href="class_proxy_rect_port.html">ProxyRectPort</a></div><div class="ttdoc">Прослойка для перемещения разъема по сцене</div><div class="ttdef"><b>Definition</b> proxyrectport.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
