@@ -41,6 +41,16 @@ public:
 	/// ÷вет провода
 	/// </summary>
 	/// <returns></returns>
+	/// 
+	
+
+
+	/// <summary>
+	/// ќчистка дочерних линий ( выравнивание )
+	/// </summary>
+	virtual void ClearInside();
+
+
 	QColor color() override;
 private:
 	/// <summary>

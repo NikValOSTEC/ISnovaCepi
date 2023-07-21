@@ -89,7 +89,7 @@ public slots:
 	/// <summary>
 	/// Очистка дочерних линий ( выравнивание )
 	/// </summary>
-	void ClearInside();
+	virtual void ClearInside();
 	/// <summary>
 	/// Смена направления линии на вертикаль
 	/// </summary>

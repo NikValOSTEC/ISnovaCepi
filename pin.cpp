@@ -140,6 +140,8 @@ void Pin::dropEvent(QDropEvent* event)
                 new AddWhireCommand(fpin->command, this->command);
                 fpin->pinWhire();
                 this->pinWhire();
+                fpin->getpinWhire()->FixColliding();
+                this->getpinWhire()->FixColliding();
             }
         }
         this->EmitUpd();
@@ -208,7 +210,7 @@ void Pin::pinWhire(bool show)
         pinW->show();
         d->show();
         cored->show();
-        Update(true);
+        //Update(true);
         //pinW->FixColliding();
     }
 }

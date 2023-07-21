@@ -4,6 +4,7 @@
 #include"AddWhireCommand.h"
 #include"Dot.h"
 #include"NewWhire.h"
+#include"NewPinWhire.h"
 Chain::Chain():QObject()
 {
 	pins = QVector<Pin*>();
@@ -30,6 +31,7 @@ void Chain::RemovePin(Pin* p)
 	{
 		if (pins.removeOne(p))
 		{
+			p->getpinWhire()->ClearInside();
 			p->chain = nullptr;
 			auto whires = p->dot()->whires;
 			if (pins.count() > 1)
@@ -93,9 +95,8 @@ void Chain::RemovePin(Pin* p)
 					whires[j]->p2->chain = nullptr;
 					new WhireRemoveComand(whires[j]);
 				}
-				p->pinWhire(false);
-				pins[0]->pinWhire(false);
 				pins[0]->chain = nullptr;
+				pins[0]->getpinWhire()->ClearInside();
 				pins.removeOne(pins[0]);
 				if (pins.isEmpty())
 				{

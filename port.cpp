@@ -40,6 +40,8 @@ Port::Port():
 
 Port::~Port()
 {
+
+    portsVector.removeOne(this);
     delete ui;
 
 }
@@ -133,7 +135,6 @@ void Port::Remove()
     {
         new RemovePinCommand(p);
     }
-    portsVector.removeOne(this);
     delete (x);
 }
 
