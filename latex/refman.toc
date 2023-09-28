@@ -1,0 +1,243 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Иерархический список классов}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Иерархия классов}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Алфавитный указатель классов}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Классы}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Список файлов}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Файлы}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Классы}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Класс Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Подробное описание}{8}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Конструктор(ы)}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}AddComand()}{8}{subsubsection.4.1.2.1}%
+\contentsline {section}{\numberline {4.2}Класс Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Подробное описание}{9}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Конструктор(ы)}{9}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}AddPinComand()}{9}{subsubsection.4.2.2.1}%
+\contentsline {section}{\numberline {4.3}Класс Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Whire\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Подробное описание}{10}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Конструктор(ы)}{10}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}AddWhireCommand()}{10}{subsubsection.4.3.2.1}%
+\contentsline {section}{\numberline {4.4}Класс Chain}{11}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Подробное описание}{12}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Конструктор(ы)}{12}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Chain()}{12}{subsubsection.4.4.2.1}%
+\contentsline {subsection}{\numberline {4.4.3}Методы}{12}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}AddPin()}{12}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}moveToChain()}{12}{subsubsection.4.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}RemovePin()}{12}{subsubsection.4.4.3.3}%
+\contentsline {section}{\numberline {4.5}Класс Chain\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Table}{13}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Подробное описание}{14}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Методы}{14}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}CellChange}{14}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}CellClck}{14}{subsubsection.4.5.2.2}%
+\contentsline {section}{\numberline {4.6}Класс Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recoursive}{15}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Подробное описание}{16}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Конструктор(ы)}{16}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}CustomColliderLineRecoursive()}{16}{subsubsection.4.6.2.1}%
+\contentsline {subsection}{\numberline {4.6.3}Методы}{17}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}boundingRect()}{17}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}color()}{17}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}FixColliding}{17}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}JumpFrom}{17}{subsubsection.4.6.3.4}%
+\contentsline {subsubsection}{\numberline {4.6.3.5}paint()}{18}{subsubsection.4.6.3.5}%
+\contentsline {subsubsection}{\numberline {4.6.3.6}setFixWay()}{18}{subsubsection.4.6.3.6}%
+\contentsline {subsubsection}{\numberline {4.6.3.7}shape()}{18}{subsubsection.4.6.3.7}%
+\contentsline {section}{\numberline {4.7}Класс Dot}{19}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Подробное описание}{20}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Конструктор(ы)}{20}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Dot()}{20}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Методы}{21}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}boundingRect()}{21}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}paint()}{21}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}setBig()}{21}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}setColor()}{21}{subsubsection.4.7.3.4}%
+\contentsline {subsubsection}{\numberline {4.7.3.5}setPin()}{21}{subsubsection.4.7.3.5}%
+\contentsline {subsubsection}{\numberline {4.7.3.6}setTriangle()}{22}{subsubsection.4.7.3.6}%
+\contentsline {subsubsection}{\numberline {4.7.3.7}shape()}{22}{subsubsection.4.7.3.7}%
+\contentsline {subsubsection}{\numberline {4.7.3.8}type()}{22}{subsubsection.4.7.3.8}%
+\contentsline {subsubsection}{\numberline {4.7.3.9}x()}{22}{subsubsection.4.7.3.9}%
+\contentsline {subsubsection}{\numberline {4.7.3.10}y()}{22}{subsubsection.4.7.3.10}%
+\contentsline {section}{\numberline {4.8}Класс GItem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Frame}{23}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Подробное описание}{23}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Методы}{23}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}boundingRect()}{23}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}paint()}{23}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}shape()}{24}{subsubsection.4.8.2.3}%
+\contentsline {section}{\numberline {4.9}Класс GView}{24}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Подробное описание}{25}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Конструктор(ы)}{25}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}GView()}{25}{subsubsection.4.9.2.1}%
+\contentsline {subsection}{\numberline {4.9.3}Методы}{25}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}dragEnterEvent()}{25}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}dragMoveEvent()}{25}{subsubsection.4.9.3.2}%
+\contentsline {subsubsection}{\numberline {4.9.3.3}dropEvent()}{25}{subsubsection.4.9.3.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.4}GScene()}{26}{subsubsection.4.9.3.4}%
+\contentsline {subsubsection}{\numberline {4.9.3.5}mouseMoveEvent()}{26}{subsubsection.4.9.3.5}%
+\contentsline {subsubsection}{\numberline {4.9.3.6}mousePressEvent()}{26}{subsubsection.4.9.3.6}%
+\contentsline {subsubsection}{\numberline {4.9.3.7}mouseReleaseEvent()}{26}{subsubsection.4.9.3.7}%
+\contentsline {subsection}{\numberline {4.9.4}Данные класса}{27}{subsection.4.9.4}%
+\contentsline {subsubsection}{\numberline {4.9.4.1}lastselected}{27}{subsubsection.4.9.4.1}%
+\contentsline {section}{\numberline {4.10}Класс Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window}{27}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Класс minimap}{28}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Подробное описание}{28}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Конструктор(ы)}{28}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}minimap()}{28}{subsubsection.4.11.2.1}%
+\contentsline {subsection}{\numberline {4.11.3}Методы}{29}{subsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.1}mouseDoubleClickEvent()}{29}{subsubsection.4.11.3.1}%
+\contentsline {subsubsection}{\numberline {4.11.3.2}mouseMoveEvent()}{29}{subsubsection.4.11.3.2}%
+\contentsline {subsubsection}{\numberline {4.11.3.3}mousePressEvent()}{29}{subsubsection.4.11.3.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.4}mouseReleaseEvent()}{29}{subsubsection.4.11.3.4}%
+\contentsline {section}{\numberline {4.12}Класс MYGraphics\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene}{30}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Подробное описание}{30}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Конструктор(ы)}{30}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}MYGraphicsScene()}{30}{subsubsection.4.12.2.1}%
+\contentsline {section}{\numberline {4.13}Класс New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Whire}{31}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Подробное описание}{32}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Конструктор(ы)}{33}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}NewPinWhire()}{33}{subsubsection.4.13.2.1}%
+\contentsline {subsection}{\numberline {4.13.3}Методы}{33}{subsection.4.13.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.1}color()}{33}{subsubsection.4.13.3.1}%
+\contentsline {subsubsection}{\numberline {4.13.3.2}hasConection()}{33}{subsubsection.4.13.3.2}%
+\contentsline {section}{\numberline {4.14}Класс New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Whire}{34}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Подробное описание}{36}{subsection.4.14.1}%
+\contentsline {subsection}{\numberline {4.14.2}Конструктор(ы)}{36}{subsection.4.14.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.1}NewWhire()}{36}{subsubsection.4.14.2.1}%
+\contentsline {subsection}{\numberline {4.14.3}Методы}{36}{subsection.4.14.3}%
+\contentsline {subsubsection}{\numberline {4.14.3.1}AddComandW()}{36}{subsubsection.4.14.3.1}%
+\contentsline {subsubsection}{\numberline {4.14.3.2}color()}{36}{subsubsection.4.14.3.2}%
+\contentsline {section}{\numberline {4.15}Класс Pin}{37}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Подробное описание}{39}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Конструктор(ы)}{39}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}Pin()}{39}{subsubsection.4.15.2.1}%
+\contentsline {subsection}{\numberline {4.15.3}Методы}{39}{subsection.4.15.3}%
+\contentsline {subsubsection}{\numberline {4.15.3.1}ContextMenu()}{39}{subsubsection.4.15.3.1}%
+\contentsline {subsubsection}{\numberline {4.15.3.2}coredot()}{39}{subsubsection.4.15.3.2}%
+\contentsline {subsubsection}{\numberline {4.15.3.3}dot()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{40}{subsubsection.4.15.3.3}%
+\contentsline {subsubsection}{\numberline {4.15.3.4}dot()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{40}{subsubsection.4.15.3.4}%
+\contentsline {subsubsection}{\numberline {4.15.3.5}EmitUpd()}{40}{subsubsection.4.15.3.5}%
+\contentsline {subsubsection}{\numberline {4.15.3.6}getpinWhire()}{40}{subsubsection.4.15.3.6}%
+\contentsline {subsubsection}{\numberline {4.15.3.7}index()}{41}{subsubsection.4.15.3.7}%
+\contentsline {subsubsection}{\numberline {4.15.3.8}name()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{41}{subsubsection.4.15.3.8}%
+\contentsline {subsubsection}{\numberline {4.15.3.9}name()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{41}{subsubsection.4.15.3.9}%
+\contentsline {subsubsection}{\numberline {4.15.3.10}pinWhire()}{41}{subsubsection.4.15.3.10}%
+\contentsline {subsubsection}{\numberline {4.15.3.11}PinWUpd()}{41}{subsubsection.4.15.3.11}%
+\contentsline {subsubsection}{\numberline {4.15.3.12}x()}{43}{subsubsection.4.15.3.12}%
+\contentsline {section}{\numberline {4.16}Класс Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Template}{43}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Подробное описание}{45}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Конструктор(ы)}{45}{subsection.4.16.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.1}PinTemplate()}{45}{subsubsection.4.16.2.1}%
+\contentsline {subsection}{\numberline {4.16.3}Методы}{46}{subsection.4.16.3}%
+\contentsline {subsubsection}{\numberline {4.16.3.1}dragEnterEvent()}{46}{subsubsection.4.16.3.1}%
+\contentsline {subsubsection}{\numberline {4.16.3.2}dragMoveEvent()}{46}{subsubsection.4.16.3.2}%
+\contentsline {subsubsection}{\numberline {4.16.3.3}dropEvent()}{46}{subsubsection.4.16.3.3}%
+\contentsline {section}{\numberline {4.17}Класс Port}{46}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Подробное описание}{48}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Конструктор(ы)}{48}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}Port()}{48}{subsubsection.4.17.2.1}%
+\contentsline {subsection}{\numberline {4.17.3}Методы}{48}{subsection.4.17.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.1}addPin()}{48}{subsubsection.4.17.3.1}%
+\contentsline {subsubsection}{\numberline {4.17.3.2}ContextMenu()}{49}{subsubsection.4.17.3.2}%
+\contentsline {subsubsection}{\numberline {4.17.3.3}name()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{49}{subsubsection.4.17.3.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.4}name()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{49}{subsubsection.4.17.3.4}%
+\contentsline {subsubsection}{\numberline {4.17.3.5}pins()}{49}{subsubsection.4.17.3.5}%
+\contentsline {subsubsection}{\numberline {4.17.3.6}proxy\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{50}{subsubsection.4.17.3.6}%
+\contentsline {subsubsection}{\numberline {4.17.3.7}proxy\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{50}{subsubsection.4.17.3.7}%
+\contentsline {subsubsection}{\numberline {4.17.3.8}x()}{50}{subsubsection.4.17.3.8}%
+\contentsline {subsubsection}{\numberline {4.17.3.9}y()}{50}{subsubsection.4.17.3.9}%
+\contentsline {section}{\numberline {4.18}Класс Port\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Template}{51}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Подробное описание}{52}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}Конструктор(ы)}{52}{subsection.4.18.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.1}PortTemplate()}{52}{subsubsection.4.18.2.1}%
+\contentsline {subsection}{\numberline {4.18.3}Методы}{53}{subsection.4.18.3}%
+\contentsline {subsubsection}{\numberline {4.18.3.1}addPinn()}{53}{subsubsection.4.18.3.1}%
+\contentsline {section}{\numberline {4.19}Класс Port\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Twmplate\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object}{53}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Подробное описание}{54}{subsection.4.19.1}%
+\contentsline {subsection}{\numberline {4.19.2}Методы}{54}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}dragEnterEvent()}{54}{subsubsection.4.19.2.1}%
+\contentsline {subsubsection}{\numberline {4.19.2.2}dragMoveEvent()}{54}{subsubsection.4.19.2.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.3}dropEvent()}{55}{subsubsection.4.19.2.3}%
+\contentsline {subsubsection}{\numberline {4.19.2.4}mousePressEvent()}{55}{subsubsection.4.19.2.4}%
+\contentsline {section}{\numberline {4.20}Класс Proxy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rect\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Port}{55}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Подробное описание}{57}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Конструктор(ы)}{57}{subsection.4.20.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.1}ProxyRectPort()}{57}{subsubsection.4.20.2.1}%
+\contentsline {subsection}{\numberline {4.20.3}Методы}{57}{subsection.4.20.3}%
+\contentsline {subsubsection}{\numberline {4.20.3.1}bottom()}{57}{subsubsection.4.20.3.1}%
+\contentsline {subsubsection}{\numberline {4.20.3.2}boundingRect()}{57}{subsubsection.4.20.3.2}%
+\contentsline {subsubsection}{\numberline {4.20.3.3}center()}{57}{subsubsection.4.20.3.3}%
+\contentsline {subsubsection}{\numberline {4.20.3.4}ColiderCheck()}{57}{subsubsection.4.20.3.4}%
+\contentsline {subsubsection}{\numberline {4.20.3.5}color()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{58}{subsubsection.4.20.3.5}%
+\contentsline {subsubsection}{\numberline {4.20.3.6}color()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{58}{subsubsection.4.20.3.6}%
+\contentsline {subsubsection}{\numberline {4.20.3.7}geometry()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{58}{subsubsection.4.20.3.7}%
+\contentsline {subsubsection}{\numberline {4.20.3.8}geometry()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{58}{subsubsection.4.20.3.8}%
+\contentsline {subsubsection}{\numberline {4.20.3.9}getport()}{59}{subsubsection.4.20.3.9}%
+\contentsline {subsubsection}{\numberline {4.20.3.10}left()}{59}{subsubsection.4.20.3.10}%
+\contentsline {subsubsection}{\numberline {4.20.3.11}paint()}{59}{subsubsection.4.20.3.11}%
+\contentsline {subsubsection}{\numberline {4.20.3.12}ProxyColider()}{59}{subsubsection.4.20.3.12}%
+\contentsline {subsubsection}{\numberline {4.20.3.13}right()}{59}{subsubsection.4.20.3.13}%
+\contentsline {subsubsection}{\numberline {4.20.3.14}setconnector()}{60}{subsubsection.4.20.3.14}%
+\contentsline {subsubsection}{\numberline {4.20.3.15}shape()}{60}{subsubsection.4.20.3.15}%
+\contentsline {subsubsection}{\numberline {4.20.3.16}top()}{60}{subsubsection.4.20.3.16}%
+\contentsline {subsubsection}{\numberline {4.20.3.17}type()}{60}{subsubsection.4.20.3.17}%
+\contentsline {subsubsection}{\numberline {4.20.3.18}Update()}{60}{subsubsection.4.20.3.18}%
+\contentsline {subsubsection}{\numberline {4.20.3.19}XX()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{61}{subsubsection.4.20.3.19}%
+\contentsline {subsubsection}{\numberline {4.20.3.20}XX()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{61}{subsubsection.4.20.3.20}%
+\contentsline {subsubsection}{\numberline {4.20.3.21}YY()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{61}{subsubsection.4.20.3.21}%
+\contentsline {subsubsection}{\numberline {4.20.3.22}YY()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{61}{subsubsection.4.20.3.22}%
+\contentsline {section}{\numberline {4.21}Класс Remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command}{62}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Подробное описание}{62}{subsection.4.21.1}%
+\contentsline {subsection}{\numberline {4.21.2}Конструктор(ы)}{62}{subsection.4.21.2}%
+\contentsline {subsubsection}{\numberline {4.21.2.1}RemovePinCommand()}{62}{subsubsection.4.21.2.1}%
+\contentsline {section}{\numberline {4.22}Класс Remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Port\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand}{63}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}Подробное описание}{63}{subsection.4.22.1}%
+\contentsline {subsection}{\numberline {4.22.2}Конструктор(ы)}{64}{subsection.4.22.2}%
+\contentsline {subsubsection}{\numberline {4.22.2.1}RemovePortComand()}{64}{subsubsection.4.22.2.1}%
+\contentsline {section}{\numberline {4.23}Класс Save\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Templates}{64}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Подробное описание}{64}{subsection.4.23.1}%
+\contentsline {subsection}{\numberline {4.23.2}Методы}{64}{subsection.4.23.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.1}Del()}{64}{subsubsection.4.23.2.1}%
+\contentsline {subsubsection}{\numberline {4.23.2.2}Load()}{65}{subsubsection.4.23.2.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.3}Save()}{65}{subsubsection.4.23.2.3}%
+\contentsline {section}{\numberline {4.24}Класс View}{65}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Подробное описание}{67}{subsection.4.24.1}%
+\contentsline {subsection}{\numberline {4.24.2}Методы}{67}{subsection.4.24.2}%
+\contentsline {subsubsection}{\numberline {4.24.2.1}backGroundColor()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{67}{subsubsection.4.24.2.1}%
+\contentsline {subsubsection}{\numberline {4.24.2.2}backGroundColor()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{67}{subsubsection.4.24.2.2}%
+\contentsline {subsubsection}{\numberline {4.24.2.3}ContextMenu()}{67}{subsubsection.4.24.2.3}%
+\contentsline {subsubsection}{\numberline {4.24.2.4}GScene()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{68}{subsubsection.4.24.2.4}%
+\contentsline {subsubsection}{\numberline {4.24.2.5}GScene()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{68}{subsubsection.4.24.2.5}%
+\contentsline {subsubsection}{\numberline {4.24.2.6}scale()}{68}{subsubsection.4.24.2.6}%
+\contentsline {subsubsection}{\numberline {4.24.2.7}view()}{68}{subsubsection.4.24.2.7}%
+\contentsline {section}{\numberline {4.25}Класс Whire\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand}{69}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}Подробное описание}{69}{subsection.4.25.1}%
+\contentsline {subsection}{\numberline {4.25.2}Конструктор(ы)}{69}{subsection.4.25.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.1}WhireRemoveComand()}{69}{subsubsection.4.25.2.1}%
+\contentsline {chapter}{\numberline {5}Файлы}{71}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{71}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{71}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Whire\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{71}{section.5.3}%
+\contentsline {section}{\numberline {5.4}chain.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{72}{section.5.4}%
+\contentsline {section}{\numberline {5.5}chaintable.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{72}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recoursive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{72}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Dot.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{73}{section.5.7}%
+\contentsline {section}{\numberline {5.8}GItem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Frame.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{74}{section.5.8}%
+\contentsline {section}{\numberline {5.9}GView.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{74}{section.5.9}%
+\contentsline {section}{\numberline {5.10}mainwindow.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{75}{section.5.10}%
+\contentsline {section}{\numberline {5.11}minimap.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{75}{section.5.11}%
+\contentsline {section}{\numberline {5.12}mygraphicsscene.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{76}{section.5.12}%
+\contentsline {section}{\numberline {5.13}New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Whire.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{76}{section.5.13}%
+\contentsline {section}{\numberline {5.14}New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Whire.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{76}{section.5.14}%
+\contentsline {section}{\numberline {5.15}pin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{76}{section.5.15}%
+\contentsline {section}{\numberline {5.16}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Template.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{77}{section.5.16}%
+\contentsline {section}{\numberline {5.17}port.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{78}{section.5.17}%
+\contentsline {section}{\numberline {5.18}Port\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Template.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{78}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Port\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Twmplate\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{79}{section.5.19}%
+\contentsline {section}{\numberline {5.20}proxyrectport.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{79}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{80}{section.5.21}%
+\contentsline {section}{\numberline {5.22}Remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Port\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{80}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Save\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Templates.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{80}{section.5.23}%
+\contentsline {section}{\numberline {5.24}view.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{81}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Whire\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comand.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{81}{section.5.25}%
+\contentsline {chapter}{{\cyrillictext \CYRP \cyrr \cyre \cyrd \cyrm \cyre \cyrt \cyrn \cyrery \cyrishrt \ \cyru \cyrk \cyra \cyrz \cyra \cyrt \cyre \cyrl \cyrsftsn }}{83}{section*.120}%

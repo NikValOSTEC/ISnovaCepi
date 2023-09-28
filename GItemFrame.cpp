@@ -8,7 +8,9 @@ GItemFrame::GItemFrame()
 }
 
 GItemFrame::~GItemFrame()
-{}
+{
+	removeFromIndex();
+}
 
 QRectF GItemFrame::boundingRect() const
 {

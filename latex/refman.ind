@@ -1,0 +1,357 @@
+\begin{theindex}
+
+  \item {AddComand}, \hyperpage{7}
+    \subitem {AddComand}, \hyperpage{8}
+  \item {AddComandW}
+    \subitem {NewWhire}, \hyperpage{36}
+  \item {AddPin}
+    \subitem {Chain}, \hyperpage{12}
+  \item {addPin}
+    \subitem {Port}, \hyperpage{48}
+  \item {AddPinComand}, \hyperpage{8}
+    \subitem {AddPinComand}, \hyperpage{9}
+  \item {addPinn}
+    \subitem {PortTemplate}, \hyperpage{53}
+  \item {AddWhireCommand}, \hyperpage{10}
+    \subitem {AddWhireCommand}, \hyperpage{10}
+
+  \indexspace
+
+  \item {backGroundColor}
+    \subitem {View}, \hyperpage{67}
+  \item {bottom}
+    \subitem {ProxyRectPort}, \hyperpage{57}
+  \item {boundingRect}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{17}
+    \subitem {Dot}, \hyperpage{21}
+    \subitem {GItemFrame}, \hyperpage{23}
+    \subitem {ProxyRectPort}, \hyperpage{57}
+
+  \indexspace
+
+  \item {CellChange}
+    \subitem {ChainTable}, \hyperpage{14}
+  \item {CellClck}
+    \subitem {ChainTable}, \hyperpage{14}
+  \item {center}
+    \subitem {ProxyRectPort}, \hyperpage{57}
+  \item {Chain}, \hyperpage{11}
+    \subitem {AddPin}, \hyperpage{12}
+    \subitem {Chain}, \hyperpage{12}
+    \subitem {moveToChain}, \hyperpage{12}
+    \subitem {RemovePin}, \hyperpage{12}
+  \item {ChainTable}, \hyperpage{13}
+    \subitem {CellChange}, \hyperpage{14}
+    \subitem {CellClck}, \hyperpage{14}
+  \item {ColiderCheck}
+    \subitem {ProxyRectPort}, \hyperpage{57}
+  \item {color}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{17}
+    \subitem {NewPinWhire}, \hyperpage{33}
+    \subitem {NewWhire}, \hyperpage{36}
+    \subitem {ProxyRectPort}, \hyperpage{58}
+  \item {ContextMenu}
+    \subitem {Pin}, \hyperpage{39}
+    \subitem {Port}, \hyperpage{49}
+    \subitem {View}, \hyperpage{67}
+  \item {coredot}
+    \subitem {Pin}, \hyperpage{39}
+  \item {CustomColliderLineRecoursive}, \hyperpage{15}
+    \subitem {boundingRect}, \hyperpage{17}
+    \subitem {color}, \hyperpage{17}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{16}
+    \subitem {FixColliding}, \hyperpage{17}
+    \subitem {JumpFrom}, \hyperpage{17}
+    \subitem {paint}, \hyperpage{18}
+    \subitem {setFixWay}, \hyperpage{18}
+    \subitem {shape}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Del}
+    \subitem {SaveTemplates}, \hyperpage{64}
+  \item {Dot}, \hyperpage{19}
+    \subitem {boundingRect}, \hyperpage{21}
+    \subitem {Dot}, \hyperpage{20}
+    \subitem {paint}, \hyperpage{21}
+    \subitem {setBig}, \hyperpage{21}
+    \subitem {setColor}, \hyperpage{21}
+    \subitem {setPin}, \hyperpage{21}
+    \subitem {setTriangle}, \hyperpage{22}
+    \subitem {shape}, \hyperpage{22}
+    \subitem {type}, \hyperpage{22}
+    \subitem {x}, \hyperpage{22}
+    \subitem {y}, \hyperpage{22}
+  \item {dot}
+    \subitem {Pin}, \hyperpage{39, 40}
+  \item {dragEnterEvent}
+    \subitem {GView}, \hyperpage{25}
+    \subitem {PinTemplate}, \hyperpage{46}
+    \subitem {PortTwmplateObject}, \hyperpage{54}
+  \item {dragMoveEvent}
+    \subitem {GView}, \hyperpage{25}
+    \subitem {PinTemplate}, \hyperpage{46}
+    \subitem {PortTwmplateObject}, \hyperpage{54}
+  \item {dropEvent}
+    \subitem {GView}, \hyperpage{25}
+    \subitem {PinTemplate}, \hyperpage{46}
+    \subitem {PortTwmplateObject}, \hyperpage{54}
+
+  \indexspace
+
+  \item {EmitUpd}
+    \subitem {Pin}, \hyperpage{40}
+
+  \indexspace
+
+  \item {FixColliding}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{17}
+
+  \indexspace
+
+  \item {geometry}
+    \subitem {ProxyRectPort}, \hyperpage{58}
+  \item {getpinWhire}
+    \subitem {Pin}, \hyperpage{40}
+  \item {getport}
+    \subitem {ProxyRectPort}, \hyperpage{59}
+  \item {GItemFrame}, \hyperpage{23}
+    \subitem {boundingRect}, \hyperpage{23}
+    \subitem {paint}, \hyperpage{23}
+    \subitem {shape}, \hyperpage{23}
+  \item {GScene}
+    \subitem {GView}, \hyperpage{26}
+    \subitem {View}, \hyperpage{67, 68}
+  \item {GView}, \hyperpage{24}
+    \subitem {dragEnterEvent}, \hyperpage{25}
+    \subitem {dragMoveEvent}, \hyperpage{25}
+    \subitem {dropEvent}, \hyperpage{25}
+    \subitem {GScene}, \hyperpage{26}
+    \subitem {GView}, \hyperpage{25}
+    \subitem {lastselected}, \hyperpage{27}
+    \subitem {mouseMoveEvent}, \hyperpage{26}
+    \subitem {mousePressEvent}, \hyperpage{26}
+    \subitem {mouseReleaseEvent}, \hyperpage{26}
+
+  \indexspace
+
+  \item {hasConection}
+    \subitem {NewPinWhire}, \hyperpage{33}
+
+  \indexspace
+
+  \item {index}
+    \subitem {Pin}, \hyperpage{40}
+
+  \indexspace
+
+  \item {JumpFrom}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{17}
+
+  \indexspace
+
+  \item {lastselected}
+    \subitem {GView}, \hyperpage{27}
+  \item {left}
+    \subitem {ProxyRectPort}, \hyperpage{59}
+  \item {Load}
+    \subitem {SaveTemplates}, \hyperpage{65}
+
+  \indexspace
+
+  \item {MainWindow}, \hyperpage{27}
+  \item {minimap}, \hyperpage{28}
+    \subitem {minimap}, \hyperpage{28}
+    \subitem {mouseDoubleClickEvent}, \hyperpage{29}
+    \subitem {mouseMoveEvent}, \hyperpage{29}
+    \subitem {mousePressEvent}, \hyperpage{29}
+    \subitem {mouseReleaseEvent}, \hyperpage{29}
+  \item {mouseDoubleClickEvent}
+    \subitem {minimap}, \hyperpage{29}
+  \item {mouseMoveEvent}
+    \subitem {GView}, \hyperpage{26}
+    \subitem {minimap}, \hyperpage{29}
+  \item {mousePressEvent}
+    \subitem {GView}, \hyperpage{26}
+    \subitem {minimap}, \hyperpage{29}
+    \subitem {PortTwmplateObject}, \hyperpage{55}
+  \item {mouseReleaseEvent}
+    \subitem {GView}, \hyperpage{26}
+    \subitem {minimap}, \hyperpage{29}
+  \item {moveToChain}
+    \subitem {Chain}, \hyperpage{12}
+  \item {MYGraphicsScene}, \hyperpage{30}
+    \subitem {MYGraphicsScene}, \hyperpage{30}
+
+  \indexspace
+
+  \item {name}
+    \subitem {Pin}, \hyperpage{41}
+    \subitem {Port}, \hyperpage{49}
+  \item {NewPinWhire}, \hyperpage{31}
+    \subitem {color}, \hyperpage{33}
+    \subitem {hasConection}, \hyperpage{33}
+    \subitem {NewPinWhire}, \hyperpage{33}
+  \item {NewWhire}, \hyperpage{34}
+    \subitem {AddComandW}, \hyperpage{36}
+    \subitem {color}, \hyperpage{36}
+    \subitem {NewWhire}, \hyperpage{36}
+
+  \indexspace
+
+  \item {paint}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{18}
+    \subitem {Dot}, \hyperpage{21}
+    \subitem {GItemFrame}, \hyperpage{23}
+    \subitem {ProxyRectPort}, \hyperpage{59}
+  \item {Pin}, \hyperpage{37}
+    \subitem {ContextMenu}, \hyperpage{39}
+    \subitem {coredot}, \hyperpage{39}
+    \subitem {dot}, \hyperpage{39, 40}
+    \subitem {EmitUpd}, \hyperpage{40}
+    \subitem {getpinWhire}, \hyperpage{40}
+    \subitem {index}, \hyperpage{40}
+    \subitem {name}, \hyperpage{41}
+    \subitem {Pin}, \hyperpage{39}
+    \subitem {pinWhire}, \hyperpage{41}
+    \subitem {PinWUpd}, \hyperpage{41}
+    \subitem {x}, \hyperpage{43}
+  \item {pins}
+    \subitem {Port}, \hyperpage{49}
+  \item {PinTemplate}, \hyperpage{43}
+    \subitem {dragEnterEvent}, \hyperpage{46}
+    \subitem {dragMoveEvent}, \hyperpage{46}
+    \subitem {dropEvent}, \hyperpage{46}
+    \subitem {PinTemplate}, \hyperpage{45}
+  \item {pinWhire}
+    \subitem {Pin}, \hyperpage{41}
+  \item {PinWUpd}
+    \subitem {Pin}, \hyperpage{41}
+  \item {Port}, \hyperpage{46}
+    \subitem {addPin}, \hyperpage{48}
+    \subitem {ContextMenu}, \hyperpage{49}
+    \subitem {name}, \hyperpage{49}
+    \subitem {pins}, \hyperpage{49}
+    \subitem {Port}, \hyperpage{48}
+    \subitem {proxy}, \hyperpage{49, 50}
+    \subitem {x}, \hyperpage{50}
+    \subitem {y}, \hyperpage{50}
+  \item {PortTemplate}, \hyperpage{51}
+    \subitem {addPinn}, \hyperpage{53}
+    \subitem {PortTemplate}, \hyperpage{52}
+  \item {PortTwmplateObject}, \hyperpage{53}
+    \subitem {dragEnterEvent}, \hyperpage{54}
+    \subitem {dragMoveEvent}, \hyperpage{54}
+    \subitem {dropEvent}, \hyperpage{54}
+    \subitem {mousePressEvent}, \hyperpage{55}
+  \item {proxy}
+    \subitem {Port}, \hyperpage{49, 50}
+  \item {ProxyColider}
+    \subitem {ProxyRectPort}, \hyperpage{59}
+  \item {ProxyRectPort}, \hyperpage{55}
+    \subitem {bottom}, \hyperpage{57}
+    \subitem {boundingRect}, \hyperpage{57}
+    \subitem {center}, \hyperpage{57}
+    \subitem {ColiderCheck}, \hyperpage{57}
+    \subitem {color}, \hyperpage{58}
+    \subitem {geometry}, \hyperpage{58}
+    \subitem {getport}, \hyperpage{59}
+    \subitem {left}, \hyperpage{59}
+    \subitem {paint}, \hyperpage{59}
+    \subitem {ProxyColider}, \hyperpage{59}
+    \subitem {ProxyRectPort}, \hyperpage{57}
+    \subitem {right}, \hyperpage{59}
+    \subitem {setconnector}, \hyperpage{60}
+    \subitem {shape}, \hyperpage{60}
+    \subitem {top}, \hyperpage{60}
+    \subitem {type}, \hyperpage{60}
+    \subitem {Update}, \hyperpage{60}
+    \subitem {XX}, \hyperpage{61}
+    \subitem {YY}, \hyperpage{61}
+
+  \indexspace
+
+  \item {RemovePin}
+    \subitem {Chain}, \hyperpage{12}
+  \item {RemovePinCommand}, \hyperpage{62}
+    \subitem {RemovePinCommand}, \hyperpage{62}
+  \item {RemovePortComand}, \hyperpage{63}
+    \subitem {RemovePortComand}, \hyperpage{64}
+  \item {right}
+    \subitem {ProxyRectPort}, \hyperpage{59}
+
+  \indexspace
+
+  \item {Save}
+    \subitem {SaveTemplates}, \hyperpage{65}
+  \item {SaveTemplates}, \hyperpage{64}
+    \subitem {Del}, \hyperpage{64}
+    \subitem {Load}, \hyperpage{65}
+    \subitem {Save}, \hyperpage{65}
+  \item {scale}
+    \subitem {View}, \hyperpage{68}
+  \item {setBig}
+    \subitem {Dot}, \hyperpage{21}
+  \item {setColor}
+    \subitem {Dot}, \hyperpage{21}
+  \item {setconnector}
+    \subitem {ProxyRectPort}, \hyperpage{60}
+  \item {setFixWay}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{18}
+  \item {setPin}
+    \subitem {Dot}, \hyperpage{21}
+  \item {setTriangle}
+    \subitem {Dot}, \hyperpage{22}
+  \item {shape}
+    \subitem {CustomColliderLineRecoursive}, \hyperpage{18}
+    \subitem {Dot}, \hyperpage{22}
+    \subitem {GItemFrame}, \hyperpage{23}
+    \subitem {ProxyRectPort}, \hyperpage{60}
+
+  \indexspace
+
+  \item {top}
+    \subitem {ProxyRectPort}, \hyperpage{60}
+  \item {type}
+    \subitem {Dot}, \hyperpage{22}
+    \subitem {ProxyRectPort}, \hyperpage{60}
+
+  \indexspace
+
+  \item {Update}
+    \subitem {ProxyRectPort}, \hyperpage{60}
+
+  \indexspace
+
+  \item {View}, \hyperpage{65}
+    \subitem {backGroundColor}, \hyperpage{67}
+    \subitem {ContextMenu}, \hyperpage{67}
+    \subitem {GScene}, \hyperpage{67, 68}
+    \subitem {scale}, \hyperpage{68}
+    \subitem {view}, \hyperpage{68}
+  \item {view}
+    \subitem {View}, \hyperpage{68}
+
+  \indexspace
+
+  \item {WhireRemoveComand}, \hyperpage{69}
+    \subitem {WhireRemoveComand}, \hyperpage{69}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Dot}, \hyperpage{22}
+    \subitem {Pin}, \hyperpage{43}
+    \subitem {Port}, \hyperpage{50}
+  \item {XX}
+    \subitem {ProxyRectPort}, \hyperpage{61}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Dot}, \hyperpage{22}
+    \subitem {Port}, \hyperpage{50}
+  \item {YY}
+    \subitem {ProxyRectPort}, \hyperpage{61}
+
+\end{theindex}

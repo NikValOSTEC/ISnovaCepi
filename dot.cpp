@@ -1,6 +1,7 @@
 #include "Dot.h"
 #include"NewWhire.h"
 #include"pin.h"
+#include "MessageHandler.h"
 
 Dot::Dot(QGraphicsObject* parent):
 	QGraphicsObject(parent)
@@ -16,6 +17,7 @@ Dot::Dot(QGraphicsObject* parent):
 	this->whires = QVector<NewWhire*>();
 	_pin = nullptr; 
 	setCacheMode(QGraphicsItem::NoCache);
+	myMessageHandler( "Dot");
 }
 
 int Dot::type() const
@@ -74,7 +76,6 @@ void Dot::setPin(Pin* p)
 
 Dot::~Dot()
 {
-
 }
 
 
@@ -82,6 +83,7 @@ Dot::~Dot()
 void Dot::WhPl()
 {
 	Linecounter++;
+	myMessageHandler( "DotWhPl");
 }
 
 void Dot::WhMin()
@@ -91,6 +93,8 @@ void Dot::WhMin()
 	{
 		delete this;
 	}
+
+	myMessageHandler( "DotWhMin");
 }
 
 void Dot::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
@@ -145,6 +149,8 @@ void Dot::VerticalDot(Dot* d)
 			this->setPos(this->pos().x(), d->pos().y());
 		Emit_Moving();
 	}
+
+	myMessageHandler( "DotVertDot");
 }
 
 void Dot::HorizontalDot(Dot* d)
@@ -154,6 +160,8 @@ void Dot::HorizontalDot(Dot* d)
 		this->setPos(d->pos().x(), this->pos().y());
 		Emit_Moving();
 	}
+
+	myMessageHandler( "DotHorizontalDot");
 }
 
 Pin* Dot::pn()

@@ -6,8 +6,10 @@
 #include"port.h"
 #include<QDebug>
 #include <QRandomGenerator>
+#include "MessageHandler.h"
 QColor CustomColliderLineRecoursive::color()
 {
+	myMessageHandler( "CustomColliderLineRecoursiveColor");
 	if (Parent)
 	{
 		return Parent->color();
@@ -40,6 +42,7 @@ CustomColliderLineRecoursive::CustomColliderLineRecoursive(bool Vert_f_Horiz_t, 
 	{
 		itsmine.append(Parent->itsmine);
 	}
+	myMessageHandler( "CustomColliderLineRecoursive");
 }
 
 CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
@@ -70,6 +73,7 @@ CustomColliderLineRecoursive::~CustomColliderLineRecoursive()
 
 	d2->WhMin();
 	d1->WhMin();
+	myMessageHandler( "~CustomColliderLineRecoursive");
 }
 
 QRectF CustomColliderLineRecoursive::boundingRect() const
@@ -233,6 +237,7 @@ void CustomColliderLineRecoursive::FixColliding(int tms)
 
 	d1->Emit_Moving();
 	d2->Emit_Moving();
+	myMessageHandler( "CustomColliderLineRecoursiveFixCol");
 }
 
 void CustomColliderLineRecoursive::ClearInside()
@@ -266,6 +271,7 @@ void CustomColliderLineRecoursive::ClearInside()
 		QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
 		QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
 	}
+	myMessageHandler( "CustomColliderLineRecoursiveClear");
 }
 
 void CustomColliderLineRecoursive::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
@@ -293,6 +299,7 @@ void CustomColliderLineRecoursive::setVertical()
 
     QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
     QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
+	myMessageHandler( "CustomColliderLineRecoursiveSetV");
 }
 
 void CustomColliderLineRecoursive::setHorizontal()
@@ -308,6 +315,7 @@ void CustomColliderLineRecoursive::setHorizontal()
 
     QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(HorizontalDot(Dot*)));
     QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(HorizontalDot(Dot*)));
+	myMessageHandler( "CustomColliderLineRecoursiveSetH");
 }
 
 void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
@@ -420,4 +428,5 @@ void CustomColliderLineRecoursive::JumpFrom(QGraphicsItem* itm)
 			}
 		}
 	}
+	myMessageHandler( "CustomColliderLineRecoursiveJumpFor");
 }

@@ -7,6 +7,7 @@
 #include"proxyrectport.h"
 #include"Dot.h"
 #include<QDebug>
+#include "MessageHandler.h"
 AddWhireCommand::AddWhireCommand(AddPinComand* p11, AddPinComand*p22)
 {
 	this->p1 = p11;
@@ -14,10 +15,13 @@ AddWhireCommand::AddWhireCommand(AddPinComand* p11, AddPinComand*p22)
 	whire = nullptr;
 	auto MV = ((MYGraphicsScene*)(p11->pn->parCon->proxy()->scene()))->Mview;
 	MV->stackPush(this);
+	myMessageHandler( "AddWhire");
 }
 
 AddWhireCommand::~AddWhireCommand()
-{}
+{
+	myMessageHandler( "~AddWhire");
+}
 
 void AddWhireCommand::undo()
 {
@@ -37,9 +41,18 @@ void AddWhireCommand::undo()
 			p2->pn->RemoveFromChain();
 		}
 	}
+	myMessageHandler("AddWhireUndo");
 }
 
 void AddWhireCommand::redo()
 {
-	whire=new NewWhire(p1->pn, p2->pn,this);
+	try { whire = new NewWhire(p1->pn, p2->pn, this); }
+	catch (_exception exp)
+	{
+		if (exp.type == 9999)
+		{
+			delete whire;
+		}
+	}
+	myMessageHandler("AddWhireRedo");
 }

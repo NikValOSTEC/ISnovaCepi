@@ -3,12 +3,14 @@
 #include"port.h"
 #include"AddComand.h"
 #include"proxyrectport.h"
+#include "MessageHandler.h"
 
 RemovePortComand::RemovePortComand(Port* port )
 {
 	addcom = port->adcom;
 	((MYGraphicsScene*)(port->proxy()->scene()))->Mview->stackPush(this);
     v = addcom->v;
+    myMessageHandler( "RemovePortCommand");
 }
 
 RemovePortComand::~RemovePortComand()
@@ -25,6 +27,7 @@ void RemovePortComand::undo()
     QGraphicsProxyWidget* const proxy = v->GScene()->addWidget(addcom->p);
     proxy->setPos(xx, yy);
     proxy->setParentItem(proxyControl);
+    myMessageHandler( "RemovePortCommandUndo");
 }
 
 void RemovePortComand::redo()
@@ -32,4 +35,5 @@ void RemovePortComand::redo()
     xx = addcom->p->proxy()->geometry().x();
     yy = addcom->p->proxy()->geometry().y();
 	addcom->p->Remove();
+    myMessageHandler( "RemovePortCommandRedo");
 }

@@ -54,4 +54,5 @@ void minimap::rescale()
 }
 
 minimap::~minimap()
-{}
+{
+}

@@ -9,6 +9,7 @@
 #include"AddWhireCommand.h"
 #include"proxyrectport.h"
 #include"RemovePinCommand.h"
+#include "MessageHandler.h"
 
 Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
     QLineEdit(parent),
@@ -42,15 +43,20 @@ Pin::Pin(Port* port, bool bl, QLineEdit* parent) :
         cored = nullptr;
     }
     setFixedHeight(19);
+    myMessageHandler( "Pin");
 }
 
 
 
 Pin::~Pin()
 {
+
+    myMessageHandler("~PinHead");
     RemoveFromChain();
     if (pinW != nullptr)
         delete(pinW);
+
+    myMessageHandler( "~Pin");
 }
 
 int Pin::index()
@@ -76,6 +82,7 @@ void Pin::Update(bool upd)
     PinWUpd(upd);
     if(upd&&pinW->hasConection())
         pinW->FixColliding();
+    myMessageHandler( "PinUpdate");
 }
 
 
@@ -87,6 +94,7 @@ void Pin::EmitUpd(bool dotold)
     }
     upd = dotold;
     emit updSignal(dotold);
+    myMessageHandler( "PinEmitUpdate");
 }
 
 NewPinWhire* Pin::getpinWhire()
@@ -229,6 +237,7 @@ void Pin::PinWUpd(bool upd)
     }
     cored->Emit_Moving();
     //pinW->ClearInside();
+    myMessageHandler( "PinPinWhUpdate");
 }
 
 QMenu* Pin::ContextMenu()
@@ -244,6 +253,7 @@ QMenu* Pin::ContextMenu()
 
 void Pin::RemoveFromChain()
 {
+    myMessageHandler( "PinRemoveFromChain");
     try {
         if(chain!=nullptr)
             chain->RemovePin(this);
@@ -256,6 +266,7 @@ void Pin::RemoveFromChain()
 
 void Pin::Remove()
 {
+    myMessageHandler( "PinRemove");
     new RemovePinCommand(this);
 }
 

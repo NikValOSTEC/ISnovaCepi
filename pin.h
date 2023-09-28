@@ -77,7 +77,7 @@ public:
     /// Внешняя точка провода контакта
     /// </summary>
     /// <param name="recalc">пересчитывать ли провод (коллизии)</param>
-    /// <returns></returns>
+    /// <returns>внешняя точка пина</returns>
     virtual Dot* dot(bool recalc = false);
     /// <summary>
     /// установка внешней точки провода

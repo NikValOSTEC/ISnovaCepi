@@ -97,6 +97,7 @@
     <ClCompile Include="GItemFrame.cpp" />
     <ClCompile Include="GView.cpp" />
     <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="MessageHandler.cpp" />
     <ClCompile Include="minimap.cpp" />
     <ClCompile Include="mygraphicsscene.cpp" />
     <ClCompile Include="NewPinWhire.cpp" />
@@ -121,6 +122,7 @@
     <QtMoc Include="CustomColliderLineRecoursive.h" />
     <QtMoc Include="Dot.h" />
     <QtMoc Include="NewPinWhire.h" />
+    <ClInclude Include="MessageHandler.h" />
     <ClInclude Include="NewWhire.h" />
     <QtMoc Include="PortTemplate.h" />
     <QtMoc Include="PortTwmplateObject.h" />

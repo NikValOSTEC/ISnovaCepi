@@ -2,6 +2,7 @@
 #include"pin.h"
 #include"Dot.h"
 #include"chain.h"
+#include "MessageHandler.h"
 NewPinWhire::NewPinWhire(Pin* p, QThread* th)
 	: CustomColliderLineRecoursive(false,p->dot(),p->coredot())
 {
@@ -9,11 +10,14 @@ NewPinWhire::NewPinWhire(Pin* p, QThread* th)
 	p->coredot()->setTriangle(true);
 	p->coredot()->setPin(p);
 	pin = p;
+
+	myMessageHandler( "NewPinWhire");
 }
 
 NewPinWhire::~NewPinWhire()
 {
-
+	myMessageHandler( "~NewPinWhire");
+	
 }
 
 bool NewPinWhire::hasConection()
@@ -56,6 +60,7 @@ void NewPinWhire::ClearInside()
 		QObject::connect(d1, SIGNAL(moving(Dot*)), d2, SLOT(VerticalDot(Dot*)));
 		QObject::connect(d2, SIGNAL(moving(Dot*)), d1, SLOT(VerticalDot(Dot*)));
 	}
+	myMessageHandler( "NewPinWhireClearInside");
 }
 
 QColor NewPinWhire::color()

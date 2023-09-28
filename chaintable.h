@@ -26,15 +26,15 @@ public:
 	/// Отображение в котором выводятся цепи  
 	/// </summary>
 	View* view=nullptr;
-	/// <summary>
-	/// Добовление порта в отображеение
-	/// </summary>
-	void AdddPortSL();
+public slots:	
 	/// <summary>
 	/// Добовление Цепм в список и в отображение
 	/// </summary>
 	void AddChain();
-public slots:
+	/// <summary>
+	/// Добовление порта в отображеение
+	/// </summary>
+	void AdddPortSL();
 	/// <summary>
 	/// Обновление таблицы исходя из отображения
 	/// </summary>
@@ -45,12 +45,6 @@ public slots:
 	/// <param name="row">строка</param>
 	/// <param name="column">колонка</param>
 	void CellChange(int row, int column);
-	/// <summary>
-	/// Оброботка клика на +
-	/// </summary>
-	/// <param name="row">строка</param>
-	/// <param name="colum">колонка</param>
-	void CellClck(int row, int colum);
 protected:
 	/// <summary>
 	/// связка для обновлений то нужна то мешает тч перезапись

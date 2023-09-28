@@ -21,6 +21,7 @@ public:
     /// Сигна о перемещении
     /// </summary>
     void EmitMove();
+    void DeleteLater();
     /// <summary>
     /// <para> 
     /// см. https://doc.qt.io/qt-6/qgraphicsitem.html

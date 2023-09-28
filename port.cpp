@@ -4,6 +4,8 @@
 #include"AddPinComand.h"
 #include"RemovePortComand.h"
 #include"RemovePinCommand.h"
+#include<qgraphicsscene.h>
+#include "MessageHandler.h"
 qreal Port::x()
 {
     return _proxy->boundingRect().center().x();
@@ -24,6 +26,7 @@ Port::Port(AddComand* com,QWidget *parent) :
     portsVector.append(this);
     adcom = com;
     spacer = nullptr;
+    myMessageHandler( "Port");
 }
 
 Port::Port():
@@ -34,6 +37,7 @@ Port::Port():
     this->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this, SIGNAL(customContextMenuRequested(QPoint)),
         this, SLOT(showContextMenu(QPoint)));
+    myMessageHandler( "Port");
 }
 
 
@@ -43,7 +47,7 @@ Port::~Port()
 
     portsVector.removeOne(this);
     delete ui;
-
+    myMessageHandler( "~Port");
 }
 
 QString Port::name()
@@ -113,6 +117,8 @@ Pin* Port::addPin(QString name, int index, bool bl)
             ((QVBoxLayout*)(this->ui->PinsList->layout()))->insertItem(0, spacer);
         }
     }
+
+    myMessageHandler( "PortAddPin");
     return pn;
 }
 
@@ -120,22 +126,25 @@ Pin* Port::addPin(QString name, int index, bool bl)
 Pin* Port::addPinSl(QString name)
 {
     auto x=new AddPinComand(this,name);
+    myMessageHandler( "PortAddPinSl");
     return x->pn;
 }
 
 void Port::RemoveSL()
 {
     new RemovePortComand(this);
+    myMessageHandler( "PortRemoveSl");
 }
 
 void Port::Remove()
 {
-    auto x=graphicsProxyWidget()->parentItem();
     foreach(auto p, pins())
     {
         new RemovePinCommand(p);
     }
-    delete (x);
+    //x->scene()->removeItem(x);
+    _proxy->DeleteLater();
+    myMessageHandler( "PortRemove");
 }
 
 void Port::Update(bool updF)
@@ -144,6 +153,8 @@ void Port::Update(bool updF)
     {
         p->EmitUpd(updF);
     }
+
+    myMessageHandler( "PortUpdate");
 }
 
 ProxyRectPort* Port::proxy()

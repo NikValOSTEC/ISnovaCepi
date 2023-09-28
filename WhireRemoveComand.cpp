@@ -9,17 +9,35 @@
 #include"chain.h"
 #include"Dot.h"
 #include<QDebug>
+#include "MessageHandler.h"
 WhireRemoveComand::WhireRemoveComand(NewWhire* w)
 {
+	const void* address = static_cast<const void*>(w);
+	QString addressString;
+	QTextStream addressStream(&addressString);
+	addressStream << "WhireRemoveCommandHead    " << address;    
+	std::string str = addressString.toStdString();
+	const char* p = str.c_str();
+	myMessageHandler(p,QtWarningMsg);
+	const void* addressp1 = static_cast<const void*>(w->p1);
+	const void* addressp2 = static_cast<const void*>(w->p2);	
+	QString addressString2;
+	QTextStream addressStream2(&addressString2);
+	addressStream2 << "Pins    " << addressp1<<"      "<<addressp2;
+	std::string str2 = addressString2.toStdString();
+	p = str2.c_str();
+	myMessageHandler(p, QtWarningMsg);
+
 	p1 = w->p1->command;
 	p2 = w->p2->command;
 	wc = w->command;
-	((MYGraphicsScene*)(((CustomColliderLineRecoursive*)w)->scene()))->Mview->stackPush(this);
+	((MYGraphicsScene*)(w->scene()))->Mview->stackPush(this);
+	myMessageHandler( "WhireRemoveCommand");
 }
 
 WhireRemoveComand::~WhireRemoveComand()
 {
-	
+	myMessageHandler( "~WhireRemoveCommand");
 }
 
 void WhireRemoveComand::undo()
@@ -30,6 +48,8 @@ void WhireRemoveComand::undo()
 		p1->pn->chain = nullptr;
 	}
 	wc->whire=new NewWhire(p1->pn, p2->pn,wc);
+
+	myMessageHandler( "WhireRemoveCommandUndo");
 }
 
 void WhireRemoveComand::redo()
@@ -37,7 +57,7 @@ void WhireRemoveComand::redo()
 	delete wc->whire;
 	if (p1->pn->chain != nullptr)
 	{
-		if (p1->pn->dot()->whrscount() < 1)
+		if (p1->pn->dot()->whires.count() < 1)
 		{
 			p1->pn->RemoveFromChain();
 		}
@@ -45,10 +65,11 @@ void WhireRemoveComand::redo()
 
 	if (p2->pn->chain != nullptr)
 	{
-		if (p2->pn->dot()->whrscount() < 1)
+		if (p2->pn->dot()->whires.count() < 1)
 		{
 			p2->pn->RemoveFromChain();
 		}
 	}
-	
+
+	myMessageHandler( "WhireRemoveCommandRedo");
 }

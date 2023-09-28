@@ -3,7 +3,7 @@
 MYGraphicsScene::MYGraphicsScene(QObject *parent)
     : QGraphicsScene{parent}
 {
-   
+    setItemIndexMethod(QGraphicsScene::NoIndex);
 }
 
 void MYGraphicsScene::drawBackground(QPainter* painter, const QRectF& rect)

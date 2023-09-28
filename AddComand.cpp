@@ -3,6 +3,7 @@
 #include"port.h"
 #include"proxyrectport.h"
 #include"mygraphicsscene.h"
+#include "MessageHandler.h"
 AddComand::AddComand(View* v,int x,int y,QString name)
 {
 
@@ -14,10 +15,13 @@ AddComand::AddComand(View* v,int x,int y,QString name)
 
     v->stackPush(this);
     this->name = name;
+    myMessageHandler( "AddComand");
 }
 
 AddComand::~AddComand()
-{}
+{
+    myMessageHandler( "~AddComand");
+}
 
 void AddComand::undo()
 {
@@ -25,6 +29,7 @@ void AddComand::undo()
     yy = p->proxy()->geometry().y();
     name = p->name();
     p->Remove();
+    myMessageHandler( "AddComand undo");
 }
 
 void AddComand::redo()
@@ -38,5 +43,6 @@ void AddComand::redo()
     proxy->setPos(0, 25);
     proxy->setParentItem(proxyControl);
     proxyControl->setPos(xx, yy);
-    proxyControl->Update(true);
+    proxyControl->Update(true);    
+    myMessageHandler( "AddComand redo");
 }

@@ -4,6 +4,7 @@
 #include"view.h"
 #include"pin.h"
 #include"NewWhire.h"
+#include "MessageHandler.h"
 ChainTable::ChainTable()
 	: QTableWidget()
 {
@@ -14,18 +15,22 @@ this, SLOT(CellChange(int, int)));
 
 	auto header = this->horizontalHeader();
 	connect(header, &QHeaderView::sectionClicked, [this](int logicalIndex) {
-		QString text = this->horizontalHeaderItem(logicalIndex)->text();
-		bool ok;
-		QString ntext = QInputDialog::getText(0, "New Name",
-			"Name", QLineEdit::Normal,
-			text, &ok);
-		if (ok)
+		if (logicalIndex > 0)
 		{
-			this->horizontalHeaderItem(logicalIndex)->setText(ntext);
-			Port::portsVector[logicalIndex]->name(ntext);
+			QString text = this->horizontalHeaderItem(logicalIndex)->text();
+			bool ok;
+			QString ntext = QInputDialog::getText(0, "New Name",
+				"Name", QLineEdit::Normal,
+				text, &ok);
+			if (ok)
+			{
+				this->horizontalHeaderItem(logicalIndex)->setText(ntext);
+				Port::portsVector[logicalIndex - 1]->name(ntext);
+			}
 		}
-		
+
 	});
+	myMessageHandler( "ChainTable");
 }
 
 
@@ -45,20 +50,35 @@ void ChainTable::UpdateTable()
 			chains.remove(i);
 		}
 	}
+	HeadersVertical.append(" ");
+	HeadersVertical.append(" ");
 	for (int i = 0; i < chains.size(); i++)
 	{
 		HeadersVertical.append(QString::number(i+1));
 	}
+	HeadersHorizontal.append(" ");
 	for (int i = 0; i < connectors.size(); i++)
 	{
 		HeadersHorizontal.append(connectors[i]->name());
 	}
 
-	setRowCount(chains.size()+1);
-	if (connectors.size() < 2)
-		setColumnCount(2);
-	else
-		setColumnCount(connectors.size());
+	setRowCount(chains.size()+2);
+	setColumnCount(connectors.size()+1);
+	for (int i = 0; i < chains.size() + 2;i++)
+	{
+		QTableWidgetItem* itemss = new QTableWidgetItem("");
+		itemss->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+		setItem(i, 0, itemss);
+	}
+	for (int i = 0; i < connectors.size() + 1; i++)
+	{
+		QTableWidgetItem* itemss = new QTableWidgetItem("");
+		itemss->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+		setItem(0, i, itemss);
+		itemss = new QTableWidgetItem("");
+		itemss->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+		setItem(1, i, itemss);
+	}
 	setHorizontalHeaderLabels(HeadersHorizontal);
 	setVerticalHeaderLabels(HeadersVertical);
 	QVector<QVector<QString>>vals = QVector<QVector<QString>>();
@@ -84,19 +104,49 @@ void ChainTable::UpdateTable()
 	{
 		for (int j = 0; j < connectors.size(); j++)
 		{
-			this->setItem(i, j, new QTableWidgetItem(vals[i][j]+";"));
+			this->setItem(i+2, j+1, new QTableWidgetItem(vals[i][j]+";"));
 		}
 	}
-	this->setItem(chains.size(), 0, new QTableWidgetItem("+"));
-	this->setItem(chains.size(), 1, new QTableWidgetItem("+"));
+
+
+	QWidget* pWidget = new QWidget();
+	QPushButton* btn_edit = new QPushButton();
+	btn_edit->setText("+ port");
+	QHBoxLayout* pLayout = new QHBoxLayout(pWidget);
+	pLayout->addWidget(btn_edit);
+	pLayout->setAlignment(Qt::AlignCenter);
+	pLayout->setContentsMargins(0, 0, 0, 0);
+	pWidget->setLayout(pLayout);
+	this->setCellWidget(0, 0, pWidget);
+
+	connect(btn_edit, SIGNAL(clicked()), this, SLOT(AdddPortSL()));
+
+
+	QWidget* pcWidget = new QWidget();
+	QPushButton* btnc_edit = new QPushButton();
+	btnc_edit->setText("+ chain");
+	QHBoxLayout* pcLayout = new QHBoxLayout(pcWidget);
+	pcLayout->addWidget(btnc_edit);
+	pcLayout->setAlignment(Qt::AlignCenter);
+	pcLayout->setContentsMargins(0, 0, 0, 0);
+	pcWidget->setLayout(pcLayout);
+	this->setCellWidget(1, 0, pcWidget);
+
+	connect(btnc_edit, SIGNAL(clicked()), this, SLOT(AddChain()));
+
+
+
+
+
 	m_connection= connect(this, SIGNAL(cellChanged(int, int)),
 this, SLOT(CellChange(int, int)));
+	myMessageHandler( "ChainTableUpdate");
 	
 }
 
 ChainTable::~ChainTable()
 {
-
+	myMessageHandler( "~ChainTable");
 }
 
 void ChainTable::AdddPortSL()
@@ -114,74 +164,81 @@ void ChainTable::AdddPortSL()
 	}
 	view->AdddPortSL(pos.x(), pos.y(), "");
 	UpdateTable();
+	myMessageHandler( "ChainTableAddPortSL");
 }
 
 void ChainTable::AddChain()
 {
 	new Chain();
 	UpdateTable();
+	myMessageHandler( "ChainTableAddChain");
 }
 
 void ChainTable::CellChange(int row, int column)
 {
-	auto chainW=Chain::chains[row];
-	for (int i = 0; i < chainW->pins.size(); i++)
+	if (Chain::chains.size() > row - 2)
 	{
-		auto clm = (Port::portsVector.indexOf(chainW->pins[i]->parCon));
-		if (clm == column)
+		auto chainW = Chain::chains[row - 2];
+		for (int i = 0; i < chainW->pins.size(); i++)
 		{
-			if (!(item(row, column)->text().contains(";" + chainW->pins[i]->name() + ";")))
+			auto clm = (Port::portsVector.indexOf(chainW->pins[i]->parCon)) + 1;
+			if (clm == column)
 			{
-				chainW->pins[i]->RemoveFromChain();
+				if (!(item(row, column)->text().contains(";" + chainW->pins[i]->name() + ";")))
+				{
+					chainW->pins[i]->RemoveFromChain();
+				}
 			}
 		}
 	}
+///*	
 	auto str = item(row, column)->text();
 	auto spl = str.split(";");
-	if (!Chain::chains.contains(chainW))
+	Chain* chainWt;
+	if (Chain::chains.size() <= row - 2)
 	{
-		chainW = new Chain();
+		chainWt = new Chain();
+	}
+	else
+	{
+		chainWt = Chain::chains[row - 2];
 	}
 	QVector<Pin*>pins = QVector<Pin*>();
 	QVector<Pin*>addPin = QVector<Pin*>();
-	for (int i = 0; i < Port::portsVector.size(); i++)
+	str=this->item(row, column)->text();
+	auto splt = str.split(";");
+    splt.removeAt(0);
+    splt.removeAt(splt.count() - 1);
+	auto portpns = Port::portsVector[column-1]->pins();
+	foreach (auto spp, splt)
 	{
-		auto str=this->item(row, i)->text();
-		auto splt = str.split(";");
-        splt.removeAt(0);
-        splt.removeAt(splt.count() - 1);
-		auto portpns = Port::portsVector[i]->pins();
-		foreach (auto spp, splt)
+		auto found=std::find_if(
+			portpns.begin(), portpns.end(),
+			[&spp](auto x) { return x->name() == spp;  });
+		if ((found) == portpns.end())
 		{
-			auto found=std::find_if(
-				portpns.begin(), portpns.end(),
-				[&spp](auto x) { return x->name() == spp;  });
-			if ((found) == portpns.end())
-			{
-				auto pn=Port::portsVector[i]->addPin(spp);
-				addPin.append(pn);
-				pins.append(pn);
-
-			}
-			else
-			{
-				if (!chainW->pins.contains(*found))
-				{
-					addPin.append(*found);
-				}
-
-				pins.append(*found);
-			}
+			auto pn=Port::portsVector[column-1]->addPin(spp);
+			addPin.append(pn);
+			pins.append(pn);
 
 		}
+		else
+		{
+			if (!chainWt->pins.contains(*found))
+			{
+				addPin.append(*found);
+			}
 
+			pins.append(*found);
+		}
 
 	}
+
 	if (pins.count() > 2)
 	{
 		for (int i = 0; i < addPin.count(); i++)
 		{
-			if (addPin[i]->chain == chainW)
+			if (addPin[i]->chain == chainWt)
 			{
 			}
 			else if (addPin[i]->chain != nullptr)
@@ -202,17 +259,7 @@ void ChainTable::CellChange(int row, int column)
 			}
 		}
 	}
-}
-
-void ChainTable::CellClck(int row, int colum)
-{
-	if ((row == this->rowCount() - 1) && (colum == 1))
-	{
-		AdddPortSL();
-	}
-	else if ((row == this->rowCount() - 1) && (colum == 0))
-	{
-		AddChain();
-	}
+	//*/
+	myMessageHandler( "ChainTableCellChange");
 }
 

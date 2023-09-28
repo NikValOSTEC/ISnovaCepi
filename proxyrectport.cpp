@@ -2,6 +2,7 @@
 #include"port.h"
 #include"NewWhire.h"
 #include<qthread.h>
+#include "MessageHandler.h"
 
 ProxyRectPort::ProxyRectPort(Port*port)
 {
@@ -13,16 +14,28 @@ ProxyRectPort::ProxyRectPort(Port*port)
     setFlag(QGraphicsItem::ItemIsMovable, true);
     setFlag(QGraphicsItem::ItemIsSelectable, true);
     setFlag(QGraphicsItem::ItemIsFocusable,true);
+    myMessageHandler( "ProxyRectPort");
 }
 
 void ProxyRectPort::EmitMove()
 {
     emit strartMove();
 }
+void ProxyRectPort::DeleteLater()
+{
+    deleteLater();
+}
 QPainterPath ProxyRectPort::shape() const
 {
     QPainterPath path = QPainterPath();
-    path.addRect(QRectF(0,0, port->width(), port->height() + 25));
+    try 
+    {
+        path.addRect(QRectF(0, 0, port->width(), port->height() + 25));
+    }
+    catch (_exception ex)
+    {
+
+    }
     return path;
 }
 
@@ -85,8 +98,11 @@ void ProxyRectPort::color(QColor c)
 
 ProxyRectPort::~ProxyRectPort()
 {
+    QGraphicsItem::prepareGeometryChange();
     hide();
     EmitMove();
+    delete(port);
+    myMessageHandler( "~ProxyRectPort");
 }
 
 void ProxyRectPort::Update(bool upd,int i)
@@ -102,7 +118,6 @@ void ProxyRectPort::Update(bool upd,int i)
     int w = this->boundingRect().width()+25;
     int h = this->boundingRect().height()+25;
     QList<QGraphicsItem*> list = scene()->items(x, y, w, h, Qt::IntersectsItemBoundingRect, Qt::DescendingOrder);
-    qDebug() << list.size();
     foreach(auto prx, list)
     {
         try {
@@ -133,6 +148,7 @@ void ProxyRectPort::Update(bool upd,int i)
         QThread::msleep(100);
         ColiderCheck();
     }
+    myMessageHandler( "ProxyRectPortUpdate");
 }
 
 int ProxyRectPort::type() const
@@ -178,6 +194,7 @@ void ProxyRectPort::ColiderCheck(bool upd)
             }
         }
     }
+    myMessageHandler( "ProxyRectPortColliderCheck");
 
 
 }
@@ -229,6 +246,7 @@ void ProxyRectPort::ProxyColider(int xx, int yy)
             }
         }
     }
+    myMessageHandler( "ProxyRectPortCollider(x,y)");
 }
 
 qreal ProxyRectPort::XX()
