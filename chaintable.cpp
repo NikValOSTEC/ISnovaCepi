@@ -191,50 +191,54 @@ void ChainTable::CellChange(int row, int column)
 			}
 		}
 	}
-///*	
-	auto str = item(row, column)->text();
-	auto spl = str.split(";");
+	///*
+
 	Chain* chainWt;
-	if (Chain::chains.size() <= row - 2)
-	{
-		chainWt = new Chain();
-	}
-	else
-	{
-		chainWt = Chain::chains[row - 2];
-	}
 	QVector<Pin*>pins = QVector<Pin*>();
 	QVector<Pin*>addPin = QVector<Pin*>();
-	str=this->item(row, column)->text();
-	auto splt = str.split(";");
-    splt.removeAt(0);
-    splt.removeAt(splt.count() - 1);
-	auto portpns = Port::portsVector[column-1]->pins();
-	foreach (auto spp, splt)
+	for (int i = 1; i < this->columnCount(); i++)
 	{
-		auto found=std::find_if(
-			portpns.begin(), portpns.end(),
-			[&spp](auto x) { return x->name() == spp;  });
-		if ((found) == portpns.end())
+		auto str = item(row, i)->text();
+		auto spl = str.split(";");
+		if (Chain::chains.size() <= row - 2)
 		{
-			auto pn=Port::portsVector[column-1]->addPin(spp);
-			addPin.append(pn);
-			pins.append(pn);
-
+			chainWt = new Chain();
 		}
 		else
 		{
-			if (!chainWt->pins.contains(*found))
+			chainWt = Chain::chains[row - 2];
+		}
+		str = this->item(row, i)->text();
+		auto splt = str.split(";");
+		splt.removeAt(0);
+		splt.removeAt(splt.count() - 1);
+		auto portpns = Port::portsVector[i - 1]->pins();
+		foreach(auto spp, splt)
+		{
+			auto found = std::find_if(
+				portpns.begin(), portpns.end(),
+				[&spp](auto x) { return x->name() == spp;  });
+			if ((found) == portpns.end())
 			{
-				addPin.append(*found);
+				auto pn = Port::portsVector[i - 1]->addPin(spp);
+				addPin.append(pn);
+				pins.append(pn);
+
+			}
+			else
+			{
+				if (!chainWt->pins.contains(*found))
+				{
+					addPin.append(*found);
+				}
+
+				pins.append(*found);
 			}
 
-			pins.append(*found);
 		}
-
 	}
 
-	if (pins.count() > 2)
+	if (pins.count() >= 2)
 	{
 		for (int i = 0; i < addPin.count(); i++)
 		{
