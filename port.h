@@ -91,16 +91,16 @@ private slots:
     void showContextMenu(const QPoint& pos);
     void on_pushButton_clicked();
     /// <summary>
-    /// Добавление контакта вниз
-    /// </summary>
-    /// <param name="name">имя нового контакта</param>
-    /// <returns>Созданный контакт</returns>
-    Pin* addPinSl(QString name="");
-    /// <summary>
     /// Слот на удаление
     /// </summary>
     void RemoveSL();
 public slots:
+    /// <summary>
+    /// Добавление контакта вниз
+    /// </summary>
+    /// <param name="name">имя нового контакта</param>
+    /// <returns>Созданный контакт</returns>
+    Pin* addPinSl(QString name = "");
     /// <summary>
     /// Пересчет позиции и проводов
     /// </summary>
